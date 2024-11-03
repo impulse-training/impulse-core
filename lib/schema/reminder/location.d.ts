@@ -5,7 +5,6 @@ export declare const locationReminderSchema: yup.ObjectSchema<{
     createdAt: {
         isEqual?: any;
         toMillis?: any;
-        toJSON?: any;
         seconds: number;
         nanoseconds: number;
         toDate: Function;
@@ -13,7 +12,6 @@ export declare const locationReminderSchema: yup.ObjectSchema<{
     updatedAt: {
         isEqual?: any;
         toMillis?: any;
-        toJSON?: any;
         seconds: number;
         nanoseconds: number;
         toDate: Function;

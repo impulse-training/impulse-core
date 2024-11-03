@@ -12,7 +12,6 @@ export declare const originalProfileStrategySchema: yup.ObjectSchema<{
     createdAt: {
         isEqual?: any;
         toMillis?: any;
-        toJSON?: any;
         seconds: number;
         nanoseconds: number;
         toDate: Function;
@@ -20,7 +19,6 @@ export declare const originalProfileStrategySchema: yup.ObjectSchema<{
     updatedAt: {
         isEqual?: any;
         toMillis?: any;
-        toJSON?: any;
         seconds: number;
         nanoseconds: number;
         toDate: Function;
@@ -29,7 +27,6 @@ export declare const originalProfileStrategySchema: yup.ObjectSchema<{
         createdAt?: {
             isEqual?: any;
             toMillis?: any;
-            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
@@ -37,7 +34,6 @@ export declare const originalProfileStrategySchema: yup.ObjectSchema<{
         updatedAt?: {
             isEqual?: any;
             toMillis?: any;
-            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
@@ -51,7 +47,6 @@ export declare const originalProfileStrategySchema: yup.ObjectSchema<{
         createdAt?: {
             isEqual?: any;
             toMillis?: any;
-            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
@@ -59,7 +54,6 @@ export declare const originalProfileStrategySchema: yup.ObjectSchema<{
         updatedAt?: {
             isEqual?: any;
             toMillis?: any;
-            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
@@ -74,7 +68,6 @@ export declare const originalProfileStrategySchema: yup.ObjectSchema<{
         createdAt?: {
             isEqual?: any;
             toMillis?: any;
-            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
@@ -82,7 +75,6 @@ export declare const originalProfileStrategySchema: yup.ObjectSchema<{
         updatedAt?: {
             isEqual?: any;
             toMillis?: any;
-            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
@@ -95,7 +87,6 @@ export declare const originalProfileStrategySchema: yup.ObjectSchema<{
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -103,7 +94,6 @@ export declare const originalProfileStrategySchema: yup.ObjectSchema<{
                 updatedAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -129,7 +119,7 @@ export declare const originalProfileStrategySchema: yup.ObjectSchema<{
                     thumbnailUri?: yup.Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
-                } | null | undefined;
+                } | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
@@ -149,7 +139,6 @@ export declare const originalProfileStrategySchema: yup.ObjectSchema<{
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -157,7 +146,6 @@ export declare const originalProfileStrategySchema: yup.ObjectSchema<{
                 updatedAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -184,7 +172,7 @@ export declare const originalProfileStrategySchema: yup.ObjectSchema<{
                     thumbnailUri?: yup.Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
-                } | null | undefined;
+                } | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
@@ -198,7 +186,6 @@ export declare const originalProfileStrategySchema: yup.ObjectSchema<{
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -206,7 +193,6 @@ export declare const originalProfileStrategySchema: yup.ObjectSchema<{
                 updatedAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -232,7 +218,7 @@ export declare const originalProfileStrategySchema: yup.ObjectSchema<{
                     thumbnailUri?: yup.Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
-                } | null | undefined;
+                } | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
@@ -244,7 +230,6 @@ export declare const originalProfileStrategySchema: yup.ObjectSchema<{
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -252,7 +237,6 @@ export declare const originalProfileStrategySchema: yup.ObjectSchema<{
                 updatedAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -278,7 +262,7 @@ export declare const originalProfileStrategySchema: yup.ObjectSchema<{
                     thumbnailUri?: yup.Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
-                } | null | undefined;
+                } | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
@@ -290,7 +274,6 @@ export declare const originalProfileStrategySchema: yup.ObjectSchema<{
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -298,7 +281,6 @@ export declare const originalProfileStrategySchema: yup.ObjectSchema<{
                 updatedAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -324,7 +306,7 @@ export declare const originalProfileStrategySchema: yup.ObjectSchema<{
                     thumbnailUri?: yup.Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
-                } | null | undefined;
+                } | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
@@ -336,7 +318,6 @@ export declare const originalProfileStrategySchema: yup.ObjectSchema<{
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -344,7 +325,6 @@ export declare const originalProfileStrategySchema: yup.ObjectSchema<{
                 updatedAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -370,7 +350,7 @@ export declare const originalProfileStrategySchema: yup.ObjectSchema<{
                     thumbnailUri?: yup.Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
-                } | null | undefined;
+                } | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
@@ -381,7 +361,6 @@ export declare const originalProfileStrategySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -389,7 +368,6 @@ export declare const originalProfileStrategySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -468,7 +446,6 @@ export declare const originalProfileStrategySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -476,7 +453,6 @@ export declare const originalProfileStrategySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -554,7 +530,6 @@ export declare const originalProfileStrategySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -562,7 +537,6 @@ export declare const originalProfileStrategySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -641,7 +615,6 @@ export declare const originalProfileStrategySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -649,7 +622,6 @@ export declare const originalProfileStrategySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -730,7 +702,6 @@ export declare const originalProfileStrategySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -738,7 +709,6 @@ export declare const originalProfileStrategySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -816,7 +786,6 @@ export declare const originalProfileStrategySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -824,7 +793,6 @@ export declare const originalProfileStrategySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -904,7 +872,6 @@ export declare const originalProfileStrategySchema: yup.ObjectSchema<{
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -912,7 +879,6 @@ export declare const originalProfileStrategySchema: yup.ObjectSchema<{
                 updatedAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -938,7 +904,7 @@ export declare const originalProfileStrategySchema: yup.ObjectSchema<{
                     thumbnailUri?: yup.Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
-                } | null | undefined;
+                } | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
@@ -950,7 +916,6 @@ export declare const originalProfileStrategySchema: yup.ObjectSchema<{
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -958,7 +923,6 @@ export declare const originalProfileStrategySchema: yup.ObjectSchema<{
                 updatedAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -983,7 +947,7 @@ export declare const originalProfileStrategySchema: yup.ObjectSchema<{
                     thumbnailUri?: yup.Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
-                } | null | undefined;
+                } | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
@@ -995,7 +959,6 @@ export declare const originalProfileStrategySchema: yup.ObjectSchema<{
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -1003,7 +966,6 @@ export declare const originalProfileStrategySchema: yup.ObjectSchema<{
                 updatedAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -1029,7 +991,7 @@ export declare const originalProfileStrategySchema: yup.ObjectSchema<{
                     thumbnailUri?: yup.Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
-                } | null | undefined;
+                } | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
@@ -1052,7 +1014,6 @@ export declare const originalProfileStrategySchema: yup.ObjectSchema<{
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -1060,7 +1021,6 @@ export declare const originalProfileStrategySchema: yup.ObjectSchema<{
             updatedAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -1086,7 +1046,7 @@ export declare const originalProfileStrategySchema: yup.ObjectSchema<{
                 thumbnailUri?: yup.Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
-            } | null | undefined;
+            } | undefined;
             backgroundColor?: string | undefined;
             likesCount?: number | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
@@ -1106,7 +1066,6 @@ export declare const originalProfileStrategySchema: yup.ObjectSchema<{
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -1114,7 +1073,6 @@ export declare const originalProfileStrategySchema: yup.ObjectSchema<{
             updatedAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -1141,7 +1099,7 @@ export declare const originalProfileStrategySchema: yup.ObjectSchema<{
                 thumbnailUri?: yup.Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
-            } | null | undefined;
+            } | undefined;
             backgroundColor?: string | undefined;
             likesCount?: number | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
@@ -1155,7 +1113,6 @@ export declare const originalProfileStrategySchema: yup.ObjectSchema<{
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -1163,7 +1120,6 @@ export declare const originalProfileStrategySchema: yup.ObjectSchema<{
             updatedAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -1189,7 +1145,7 @@ export declare const originalProfileStrategySchema: yup.ObjectSchema<{
                 thumbnailUri?: yup.Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
-            } | null | undefined;
+            } | undefined;
             backgroundColor?: string | undefined;
             likesCount?: number | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
@@ -1201,7 +1157,6 @@ export declare const originalProfileStrategySchema: yup.ObjectSchema<{
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -1209,7 +1164,6 @@ export declare const originalProfileStrategySchema: yup.ObjectSchema<{
             updatedAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -1235,7 +1189,7 @@ export declare const originalProfileStrategySchema: yup.ObjectSchema<{
                 thumbnailUri?: yup.Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
-            } | null | undefined;
+            } | undefined;
             backgroundColor?: string | undefined;
             likesCount?: number | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
@@ -1247,7 +1201,6 @@ export declare const originalProfileStrategySchema: yup.ObjectSchema<{
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -1255,7 +1208,6 @@ export declare const originalProfileStrategySchema: yup.ObjectSchema<{
             updatedAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -1281,7 +1233,7 @@ export declare const originalProfileStrategySchema: yup.ObjectSchema<{
                 thumbnailUri?: yup.Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
-            } | null | undefined;
+            } | undefined;
             backgroundColor?: string | undefined;
             likesCount?: number | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
@@ -1293,7 +1245,6 @@ export declare const originalProfileStrategySchema: yup.ObjectSchema<{
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -1301,7 +1252,6 @@ export declare const originalProfileStrategySchema: yup.ObjectSchema<{
             updatedAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -1327,7 +1277,7 @@ export declare const originalProfileStrategySchema: yup.ObjectSchema<{
                 thumbnailUri?: yup.Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
-            } | null | undefined;
+            } | undefined;
             backgroundColor?: string | undefined;
             likesCount?: number | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
@@ -1338,7 +1288,6 @@ export declare const originalProfileStrategySchema: yup.ObjectSchema<{
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -1346,7 +1295,6 @@ export declare const originalProfileStrategySchema: yup.ObjectSchema<{
                 updatedAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -1425,7 +1373,6 @@ export declare const originalProfileStrategySchema: yup.ObjectSchema<{
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -1433,7 +1380,6 @@ export declare const originalProfileStrategySchema: yup.ObjectSchema<{
                 updatedAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -1511,7 +1457,6 @@ export declare const originalProfileStrategySchema: yup.ObjectSchema<{
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -1519,7 +1464,6 @@ export declare const originalProfileStrategySchema: yup.ObjectSchema<{
                 updatedAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -1598,7 +1542,6 @@ export declare const originalProfileStrategySchema: yup.ObjectSchema<{
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -1606,7 +1549,6 @@ export declare const originalProfileStrategySchema: yup.ObjectSchema<{
                 updatedAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -1687,7 +1629,6 @@ export declare const originalProfileStrategySchema: yup.ObjectSchema<{
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -1695,7 +1636,6 @@ export declare const originalProfileStrategySchema: yup.ObjectSchema<{
                 updatedAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -1773,7 +1713,6 @@ export declare const originalProfileStrategySchema: yup.ObjectSchema<{
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -1781,7 +1720,6 @@ export declare const originalProfileStrategySchema: yup.ObjectSchema<{
                 updatedAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -1861,7 +1799,6 @@ export declare const originalProfileStrategySchema: yup.ObjectSchema<{
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -1869,7 +1806,6 @@ export declare const originalProfileStrategySchema: yup.ObjectSchema<{
             updatedAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -1895,7 +1831,7 @@ export declare const originalProfileStrategySchema: yup.ObjectSchema<{
                 thumbnailUri?: yup.Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
-            } | null | undefined;
+            } | undefined;
             backgroundColor?: string | undefined;
             likesCount?: number | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
@@ -1907,7 +1843,6 @@ export declare const originalProfileStrategySchema: yup.ObjectSchema<{
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -1915,7 +1850,6 @@ export declare const originalProfileStrategySchema: yup.ObjectSchema<{
             updatedAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -1940,7 +1874,7 @@ export declare const originalProfileStrategySchema: yup.ObjectSchema<{
                 thumbnailUri?: yup.Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
-            } | null | undefined;
+            } | undefined;
             backgroundColor?: string | undefined;
             likesCount?: number | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
@@ -1952,7 +1886,6 @@ export declare const originalProfileStrategySchema: yup.ObjectSchema<{
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -1960,7 +1893,6 @@ export declare const originalProfileStrategySchema: yup.ObjectSchema<{
             updatedAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -1986,7 +1918,7 @@ export declare const originalProfileStrategySchema: yup.ObjectSchema<{
                 thumbnailUri?: yup.Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
-            } | null | undefined;
+            } | undefined;
             backgroundColor?: string | undefined;
             likesCount?: number | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;

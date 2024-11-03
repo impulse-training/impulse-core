@@ -26,10 +26,10 @@ export const documentReferenceSchema = yup
     name: 'has-id-property',
     message: '${path} must be an object with an "id" property',
     test: value =>
-      value != null &&
-      typeof value === 'object' &&
-      'id' in value &&
-      typeof value.id === 'string',
+      value == null ||
+      (typeof value === 'object' &&
+        'id' in value &&
+        typeof value.id === 'string'),
   });
 
 export const collectionReferenceSchema = yup.mixed();

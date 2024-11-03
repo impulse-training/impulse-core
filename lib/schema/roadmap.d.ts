@@ -4,7 +4,6 @@ export declare const roadmapSchema: yup.ObjectSchema<{
     createdAt: {
         isEqual?: any;
         toMillis?: any;
-        toJSON?: any;
         seconds: number;
         nanoseconds: number;
         toDate: Function;
@@ -12,7 +11,6 @@ export declare const roadmapSchema: yup.ObjectSchema<{
     updatedAt: {
         isEqual?: any;
         toMillis?: any;
-        toJSON?: any;
         seconds: number;
         nanoseconds: number;
         toDate: Function;

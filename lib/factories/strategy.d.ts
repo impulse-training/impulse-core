@@ -4,7 +4,6 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
     createdAt?: {
         isEqual?: any;
         toMillis?: any;
-        toJSON?: any;
         seconds: number;
         nanoseconds: number;
         toDate: Function;
@@ -12,7 +11,6 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
     updatedAt?: {
         isEqual?: any;
         toMillis?: any;
-        toJSON?: any;
         seconds: number;
         nanoseconds: number;
         toDate: Function;
@@ -25,7 +23,6 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -33,7 +30,6 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
             updatedAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -59,7 +55,7 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
                 thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
-            } | null | undefined;
+            } | undefined;
             backgroundColor?: string | undefined;
             likesCount?: number | null | undefined;
             timerSeconds?: import("yup").Maybe<number | undefined>;
@@ -79,7 +75,6 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -87,7 +82,6 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
             updatedAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -114,7 +108,7 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
                 thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
-            } | null | undefined;
+            } | undefined;
             backgroundColor?: string | undefined;
             likesCount?: number | null | undefined;
             timerSeconds?: import("yup").Maybe<number | undefined>;
@@ -128,7 +122,6 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -136,7 +129,6 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
             updatedAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -162,7 +154,7 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
                 thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
-            } | null | undefined;
+            } | undefined;
             backgroundColor?: string | undefined;
             likesCount?: number | null | undefined;
             timerSeconds?: import("yup").Maybe<number | undefined>;
@@ -174,7 +166,6 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -182,7 +173,6 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
             updatedAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -208,7 +198,7 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
                 thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
-            } | null | undefined;
+            } | undefined;
             backgroundColor?: string | undefined;
             likesCount?: number | null | undefined;
             timerSeconds?: import("yup").Maybe<number | undefined>;
@@ -220,7 +210,6 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -228,7 +217,6 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
             updatedAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -254,7 +242,7 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
                 thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
-            } | null | undefined;
+            } | undefined;
             backgroundColor?: string | undefined;
             likesCount?: number | null | undefined;
             timerSeconds?: import("yup").Maybe<number | undefined>;
@@ -266,7 +254,6 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -274,7 +261,6 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
             updatedAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -300,7 +286,7 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
                 thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
-            } | null | undefined;
+            } | undefined;
             backgroundColor?: string | undefined;
             likesCount?: number | null | undefined;
             timerSeconds?: import("yup").Maybe<number | undefined>;
@@ -311,7 +297,6 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -319,7 +304,6 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
                 updatedAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -398,7 +382,6 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -406,7 +389,6 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
                 updatedAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -484,7 +466,6 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -492,7 +473,6 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
                 updatedAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -571,7 +551,6 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -579,7 +558,6 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
                 updatedAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -660,7 +638,6 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -668,7 +645,6 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
                 updatedAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -746,7 +722,6 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -754,7 +729,6 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
                 updatedAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -834,7 +808,6 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -842,7 +815,6 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
             updatedAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -868,7 +840,7 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
                 thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
-            } | null | undefined;
+            } | undefined;
             backgroundColor?: string | undefined;
             likesCount?: number | null | undefined;
             timerSeconds?: import("yup").Maybe<number | undefined>;
@@ -880,7 +852,6 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -888,7 +859,6 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
             updatedAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -913,7 +883,7 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
                 thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
-            } | null | undefined;
+            } | undefined;
             backgroundColor?: string | undefined;
             likesCount?: number | null | undefined;
             timerSeconds?: import("yup").Maybe<number | undefined>;
@@ -925,7 +895,6 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -933,7 +902,6 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
             updatedAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -959,7 +927,7 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
                 thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
-            } | null | undefined;
+            } | undefined;
             backgroundColor?: string | undefined;
             likesCount?: number | null | undefined;
             timerSeconds?: import("yup").Maybe<number | undefined>;
@@ -982,7 +950,6 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
         createdAt?: {
             isEqual?: any;
             toMillis?: any;
-            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
@@ -990,7 +957,6 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
         updatedAt?: {
             isEqual?: any;
             toMillis?: any;
-            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
@@ -1016,7 +982,7 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
             thumbnailUri?: import("yup").Maybe<string | undefined>;
             storagePath: string;
             uri: string;
-        } | null | undefined;
+        } | undefined;
         backgroundColor?: string | undefined;
         likesCount?: number | null | undefined;
         timerSeconds?: import("yup").Maybe<number | undefined>;
@@ -1036,7 +1002,6 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
         createdAt?: {
             isEqual?: any;
             toMillis?: any;
-            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
@@ -1044,7 +1009,6 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
         updatedAt?: {
             isEqual?: any;
             toMillis?: any;
-            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
@@ -1071,7 +1035,7 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
             thumbnailUri?: import("yup").Maybe<string | undefined>;
             storagePath: string;
             uri: string;
-        } | null | undefined;
+        } | undefined;
         backgroundColor?: string | undefined;
         likesCount?: number | null | undefined;
         timerSeconds?: import("yup").Maybe<number | undefined>;
@@ -1085,7 +1049,6 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
         createdAt?: {
             isEqual?: any;
             toMillis?: any;
-            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
@@ -1093,7 +1056,6 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
         updatedAt?: {
             isEqual?: any;
             toMillis?: any;
-            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
@@ -1119,7 +1081,7 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
             thumbnailUri?: import("yup").Maybe<string | undefined>;
             storagePath: string;
             uri: string;
-        } | null | undefined;
+        } | undefined;
         backgroundColor?: string | undefined;
         likesCount?: number | null | undefined;
         timerSeconds?: import("yup").Maybe<number | undefined>;
@@ -1131,7 +1093,6 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
         createdAt?: {
             isEqual?: any;
             toMillis?: any;
-            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
@@ -1139,7 +1100,6 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
         updatedAt?: {
             isEqual?: any;
             toMillis?: any;
-            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
@@ -1165,7 +1125,7 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
             thumbnailUri?: import("yup").Maybe<string | undefined>;
             storagePath: string;
             uri: string;
-        } | null | undefined;
+        } | undefined;
         backgroundColor?: string | undefined;
         likesCount?: number | null | undefined;
         timerSeconds?: import("yup").Maybe<number | undefined>;
@@ -1177,7 +1137,6 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
         createdAt?: {
             isEqual?: any;
             toMillis?: any;
-            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
@@ -1185,7 +1144,6 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
         updatedAt?: {
             isEqual?: any;
             toMillis?: any;
-            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
@@ -1211,7 +1169,7 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
             thumbnailUri?: import("yup").Maybe<string | undefined>;
             storagePath: string;
             uri: string;
-        } | null | undefined;
+        } | undefined;
         backgroundColor?: string | undefined;
         likesCount?: number | null | undefined;
         timerSeconds?: import("yup").Maybe<number | undefined>;
@@ -1223,7 +1181,6 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
         createdAt?: {
             isEqual?: any;
             toMillis?: any;
-            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
@@ -1231,7 +1188,6 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
         updatedAt?: {
             isEqual?: any;
             toMillis?: any;
-            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
@@ -1257,7 +1213,7 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
             thumbnailUri?: import("yup").Maybe<string | undefined>;
             storagePath: string;
             uri: string;
-        } | null | undefined;
+        } | undefined;
         backgroundColor?: string | undefined;
         likesCount?: number | null | undefined;
         timerSeconds?: import("yup").Maybe<number | undefined>;
@@ -1268,7 +1224,6 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -1276,7 +1231,6 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
             updatedAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -1355,7 +1309,6 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -1363,7 +1316,6 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
             updatedAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -1441,7 +1393,6 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -1449,7 +1400,6 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
             updatedAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -1528,7 +1478,6 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -1536,7 +1485,6 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
             updatedAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -1617,7 +1565,6 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -1625,7 +1572,6 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
             updatedAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -1703,7 +1649,6 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -1711,7 +1656,6 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
             updatedAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -1791,7 +1735,6 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
         createdAt?: {
             isEqual?: any;
             toMillis?: any;
-            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
@@ -1799,7 +1742,6 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
         updatedAt?: {
             isEqual?: any;
             toMillis?: any;
-            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
@@ -1825,7 +1767,7 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
             thumbnailUri?: import("yup").Maybe<string | undefined>;
             storagePath: string;
             uri: string;
-        } | null | undefined;
+        } | undefined;
         backgroundColor?: string | undefined;
         likesCount?: number | null | undefined;
         timerSeconds?: import("yup").Maybe<number | undefined>;
@@ -1837,7 +1779,6 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
         createdAt?: {
             isEqual?: any;
             toMillis?: any;
-            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
@@ -1845,7 +1786,6 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
         updatedAt?: {
             isEqual?: any;
             toMillis?: any;
-            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
@@ -1870,7 +1810,7 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
             thumbnailUri?: import("yup").Maybe<string | undefined>;
             storagePath: string;
             uri: string;
-        } | null | undefined;
+        } | undefined;
         backgroundColor?: string | undefined;
         likesCount?: number | null | undefined;
         timerSeconds?: import("yup").Maybe<number | undefined>;
@@ -1882,7 +1822,6 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
         createdAt?: {
             isEqual?: any;
             toMillis?: any;
-            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
@@ -1890,7 +1829,6 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
         updatedAt?: {
             isEqual?: any;
             toMillis?: any;
-            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
@@ -1916,7 +1854,7 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
             thumbnailUri?: import("yup").Maybe<string | undefined>;
             storagePath: string;
             uri: string;
-        } | null | undefined;
+        } | undefined;
         backgroundColor?: string | undefined;
         likesCount?: number | null | undefined;
         timerSeconds?: import("yup").Maybe<number | undefined>;

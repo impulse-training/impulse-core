@@ -4,7 +4,6 @@ export declare const makeProfileFactory: (TimestampKlass: typeof TimestampLike) 
     createdAt?: {
         isEqual?: any;
         toMillis?: any;
-        toJSON?: any;
         seconds: number;
         nanoseconds: number;
         toDate: Function;
@@ -12,7 +11,6 @@ export declare const makeProfileFactory: (TimestampKlass: typeof TimestampLike) 
     updatedAt?: {
         isEqual?: any;
         toMillis?: any;
-        toJSON?: any;
         seconds: number;
         nanoseconds: number;
         toDate: Function;
@@ -26,7 +24,6 @@ export declare const makeProfileFactory: (TimestampKlass: typeof TimestampLike) 
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -34,7 +31,6 @@ export declare const makeProfileFactory: (TimestampKlass: typeof TimestampLike) 
             updatedAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -60,7 +56,6 @@ export declare const makeProfileFactory: (TimestampKlass: typeof TimestampLike) 
     lastActiveAt?: {
         isEqual?: any;
         toMillis?: any;
-        toJSON?: any;
         seconds: number;
         nanoseconds: number;
         toDate: Function;
@@ -68,7 +63,6 @@ export declare const makeProfileFactory: (TimestampKlass: typeof TimestampLike) 
     widgetInstalledAt?: {
         isEqual?: any;
         toMillis?: any;
-        toJSON?: any;
         seconds: number;
         nanoseconds: number;
         toDate: Function;
@@ -76,17 +70,14 @@ export declare const makeProfileFactory: (TimestampKlass: typeof TimestampLike) 
     widgetLastPressedAt?: {
         isEqual?: any;
         toMillis?: any;
-        toJSON?: any;
         seconds: number;
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
     activeImpulseDoc?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
-    activeThreadDoc?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
     tourCompletedAt?: {
         isEqual?: any;
         toMillis?: any;
-        toJSON?: any;
         seconds: number;
         nanoseconds: number;
         toDate: Function;
@@ -96,7 +87,6 @@ export declare const makeProfileFactory: (TimestampKlass: typeof TimestampLike) 
     onboardedWithZaraAt?: {
         isEqual?: any;
         toMillis?: any;
-        toJSON?: any;
         seconds: number;
         nanoseconds: number;
         toDate: Function;
@@ -131,4 +121,4 @@ export declare const makeProfileFactory: (TimestampKlass: typeof TimestampLike) 
     } | null;
     signUpIssueId: string | null;
     timezone: string;
-}, "uids" | "verificationCode" | "dayReviewTime" | "signUpIssueId" | "timezone" | ("createdAt" | "updatedAt" | "setbackThreshold" | "parentIds" | "blandPathwayId" | "issuesById" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseDoc" | "activeThreadDoc" | "tourCompletedAt" | "scheduledNotificationIds" | "whatsappStrategyDoc" | "onboardedWithZaraAt" | "currentAppState" | "addToStrategy" | "emojiID" | "expoPushToken" | "notificationPreferences" | "questionOfTheDayAnsweredQuestions" | "signUpIssueName" | "isReadyForTour" | "isOnboardingComplete" | "sendDebriefRemindersAfterMinutes" | "gameplanStrategies" | "androidPermissions" | "impulseContext" | "isTourDismissed" | "region" | "enableZara")>;
+}, "uids" | "verificationCode" | "dayReviewTime" | "signUpIssueId" | "timezone" | ("createdAt" | "updatedAt" | "setbackThreshold" | "parentIds" | "blandPathwayId" | "issuesById" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseDoc" | "tourCompletedAt" | "scheduledNotificationIds" | "whatsappStrategyDoc" | "onboardedWithZaraAt" | "currentAppState" | "addToStrategy" | "emojiID" | "expoPushToken" | "notificationPreferences" | "questionOfTheDayAnsweredQuestions" | "signUpIssueName" | "isReadyForTour" | "isOnboardingComplete" | "sendDebriefRemindersAfterMinutes" | "gameplanStrategies" | "androidPermissions" | "impulseContext" | "isTourDismissed" | "region" | "enableZara")>;

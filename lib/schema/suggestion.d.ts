@@ -3,7 +3,6 @@ export declare const suggestionSchema: yup.ObjectSchema<{
     createdAt: {
         isEqual?: any;
         toMillis?: any;
-        toJSON?: any;
         seconds: number;
         nanoseconds: number;
         toDate: Function;
@@ -11,7 +10,6 @@ export declare const suggestionSchema: yup.ObjectSchema<{
     updatedAt: {
         isEqual?: any;
         toMillis?: any;
-        toJSON?: any;
         seconds: number;
         nanoseconds: number;
         toDate: Function;

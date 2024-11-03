@@ -14,7 +14,6 @@ export const profileSchema = yup.object({
   widgetInstalledAt: optionalTimestampSchema,
   widgetLastPressedAt: optionalTimestampSchema,
   activeImpulseDoc: documentReferenceSchema,
-  activeThreadDoc: documentReferenceSchema,
   currentAppState: yup.mixed<AppStateStatus>().optional(), // Define validation for AppStateStatus if needed
   addToStrategy: yup.boolean(),
   emojiID: yup.array().of(yup.string().required()),

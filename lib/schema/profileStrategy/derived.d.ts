@@ -12,7 +12,6 @@ export declare const derivedProfileStrategySchema: yup.ObjectSchema<{
     createdAt: {
         isEqual?: any;
         toMillis?: any;
-        toJSON?: any;
         seconds: number;
         nanoseconds: number;
         toDate: Function;
@@ -20,7 +19,6 @@ export declare const derivedProfileStrategySchema: yup.ObjectSchema<{
     updatedAt: {
         isEqual?: any;
         toMillis?: any;
-        toJSON?: any;
         seconds: number;
         nanoseconds: number;
         toDate: Function;
@@ -29,7 +27,6 @@ export declare const derivedProfileStrategySchema: yup.ObjectSchema<{
         createdAt?: {
             isEqual?: any;
             toMillis?: any;
-            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
@@ -37,7 +34,6 @@ export declare const derivedProfileStrategySchema: yup.ObjectSchema<{
         updatedAt?: {
             isEqual?: any;
             toMillis?: any;
-            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
@@ -51,7 +47,6 @@ export declare const derivedProfileStrategySchema: yup.ObjectSchema<{
         createdAt?: {
             isEqual?: any;
             toMillis?: any;
-            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
@@ -59,7 +54,6 @@ export declare const derivedProfileStrategySchema: yup.ObjectSchema<{
         updatedAt?: {
             isEqual?: any;
             toMillis?: any;
-            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;

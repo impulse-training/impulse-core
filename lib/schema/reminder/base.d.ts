@@ -7,7 +7,6 @@ export declare function reminderBaseSchema<K extends string>(type: K): yup.Objec
     createdAt: {
         isEqual?: any;
         toMillis?: any;
-        toJSON?: any;
         seconds: number;
         nanoseconds: number;
         toDate: Function;
@@ -15,7 +14,6 @@ export declare function reminderBaseSchema<K extends string>(type: K): yup.Objec
     updatedAt: {
         isEqual?: any;
         toMillis?: any;
-        toJSON?: any;
         seconds: number;
         nanoseconds: number;
         toDate: Function;

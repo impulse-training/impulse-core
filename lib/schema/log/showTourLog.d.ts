@@ -15,7 +15,6 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
     createdAt: {
         isEqual?: any;
         toMillis?: any;
-        toJSON?: any;
         seconds: number;
         nanoseconds: number;
         toDate: Function;
@@ -23,7 +22,6 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
     updatedAt: {
         isEqual?: any;
         toMillis?: any;
-        toJSON?: any;
         seconds: number;
         nanoseconds: number;
         toDate: Function;
@@ -48,7 +46,6 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -56,7 +53,6 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             updatedAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -82,7 +78,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
                 thumbnailUri?: yup.Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
-            } | null | undefined;
+            } | undefined;
             backgroundColor?: string | undefined;
             likesCount?: number | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
@@ -102,7 +98,6 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -110,7 +105,6 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             updatedAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -137,7 +131,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
                 thumbnailUri?: yup.Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
-            } | null | undefined;
+            } | undefined;
             backgroundColor?: string | undefined;
             likesCount?: number | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
@@ -151,7 +145,6 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -159,7 +152,6 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             updatedAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -185,7 +177,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
                 thumbnailUri?: yup.Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
-            } | null | undefined;
+            } | undefined;
             backgroundColor?: string | undefined;
             likesCount?: number | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
@@ -197,7 +189,6 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -205,7 +196,6 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             updatedAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -231,7 +221,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
                 thumbnailUri?: yup.Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
-            } | null | undefined;
+            } | undefined;
             backgroundColor?: string | undefined;
             likesCount?: number | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
@@ -243,7 +233,6 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -251,7 +240,6 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             updatedAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -277,7 +265,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
                 thumbnailUri?: yup.Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
-            } | null | undefined;
+            } | undefined;
             backgroundColor?: string | undefined;
             likesCount?: number | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
@@ -289,7 +277,6 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -297,7 +284,6 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             updatedAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -323,7 +309,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
                 thumbnailUri?: yup.Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
-            } | null | undefined;
+            } | undefined;
             backgroundColor?: string | undefined;
             likesCount?: number | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
@@ -334,7 +320,6 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -342,7 +327,6 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
                 updatedAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -421,7 +405,6 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -429,7 +412,6 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
                 updatedAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -507,7 +489,6 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -515,7 +496,6 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
                 updatedAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -594,7 +574,6 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -602,7 +581,6 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
                 updatedAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -683,7 +661,6 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -691,7 +668,6 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
                 updatedAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -769,7 +745,6 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -777,7 +752,6 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
                 updatedAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -857,7 +831,6 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -865,7 +838,6 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             updatedAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -891,7 +863,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
                 thumbnailUri?: yup.Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
-            } | null | undefined;
+            } | undefined;
             backgroundColor?: string | undefined;
             likesCount?: number | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
@@ -903,7 +875,6 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -911,7 +882,6 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             updatedAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -936,7 +906,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
                 thumbnailUri?: yup.Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
-            } | null | undefined;
+            } | undefined;
             backgroundColor?: string | undefined;
             likesCount?: number | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
@@ -948,7 +918,6 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -956,7 +925,6 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             updatedAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -982,7 +950,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
                 thumbnailUri?: yup.Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
-            } | null | undefined;
+            } | undefined;
             backgroundColor?: string | undefined;
             likesCount?: number | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
@@ -1000,7 +968,6 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -1008,7 +975,6 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             updatedAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -1087,7 +1053,6 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -1095,7 +1060,6 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             updatedAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -1173,7 +1137,6 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -1181,7 +1144,6 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             updatedAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -1260,7 +1222,6 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -1268,7 +1229,6 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             updatedAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -1349,7 +1309,6 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -1357,7 +1316,6 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             updatedAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -1435,7 +1393,6 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -1443,7 +1400,6 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             updatedAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -1530,7 +1486,6 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             setAt: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -1542,7 +1497,6 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
     submittedAt: {
         isEqual?: any;
         toMillis?: any;
-        toJSON?: any;
         seconds: number;
         nanoseconds: number;
         toDate: Function;
@@ -1552,7 +1506,6 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
     date: {
         isEqual?: any;
         toMillis?: any;
-        toJSON?: any;
         seconds: number;
         nanoseconds: number;
         toDate: Function;
@@ -1564,7 +1517,6 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
         createdAt?: {
             isEqual?: any;
             toMillis?: any;
-            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
@@ -1572,7 +1524,6 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
         updatedAt?: {
             isEqual?: any;
             toMillis?: any;
-            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
@@ -1598,7 +1549,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             thumbnailUri?: yup.Maybe<string | undefined>;
             storagePath: string;
             uri: string;
-        } | null | undefined;
+        } | undefined;
         backgroundColor?: string | undefined;
         likesCount?: number | null | undefined;
         timerSeconds?: yup.Maybe<number | undefined>;
@@ -1618,7 +1569,6 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
         createdAt?: {
             isEqual?: any;
             toMillis?: any;
-            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
@@ -1626,7 +1576,6 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
         updatedAt?: {
             isEqual?: any;
             toMillis?: any;
-            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
@@ -1653,7 +1602,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             thumbnailUri?: yup.Maybe<string | undefined>;
             storagePath: string;
             uri: string;
-        } | null | undefined;
+        } | undefined;
         backgroundColor?: string | undefined;
         likesCount?: number | null | undefined;
         timerSeconds?: yup.Maybe<number | undefined>;
@@ -1667,7 +1616,6 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
         createdAt?: {
             isEqual?: any;
             toMillis?: any;
-            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
@@ -1675,7 +1623,6 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
         updatedAt?: {
             isEqual?: any;
             toMillis?: any;
-            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
@@ -1701,7 +1648,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             thumbnailUri?: yup.Maybe<string | undefined>;
             storagePath: string;
             uri: string;
-        } | null | undefined;
+        } | undefined;
         backgroundColor?: string | undefined;
         likesCount?: number | null | undefined;
         timerSeconds?: yup.Maybe<number | undefined>;
@@ -1713,7 +1660,6 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
         createdAt?: {
             isEqual?: any;
             toMillis?: any;
-            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
@@ -1721,7 +1667,6 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
         updatedAt?: {
             isEqual?: any;
             toMillis?: any;
-            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
@@ -1747,7 +1692,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             thumbnailUri?: yup.Maybe<string | undefined>;
             storagePath: string;
             uri: string;
-        } | null | undefined;
+        } | undefined;
         backgroundColor?: string | undefined;
         likesCount?: number | null | undefined;
         timerSeconds?: yup.Maybe<number | undefined>;
@@ -1759,7 +1704,6 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
         createdAt?: {
             isEqual?: any;
             toMillis?: any;
-            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
@@ -1767,7 +1711,6 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
         updatedAt?: {
             isEqual?: any;
             toMillis?: any;
-            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
@@ -1793,7 +1736,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             thumbnailUri?: yup.Maybe<string | undefined>;
             storagePath: string;
             uri: string;
-        } | null | undefined;
+        } | undefined;
         backgroundColor?: string | undefined;
         likesCount?: number | null | undefined;
         timerSeconds?: yup.Maybe<number | undefined>;
@@ -1805,7 +1748,6 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
         createdAt?: {
             isEqual?: any;
             toMillis?: any;
-            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
@@ -1813,7 +1755,6 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
         updatedAt?: {
             isEqual?: any;
             toMillis?: any;
-            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
@@ -1839,7 +1780,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             thumbnailUri?: yup.Maybe<string | undefined>;
             storagePath: string;
             uri: string;
-        } | null | undefined;
+        } | undefined;
         backgroundColor?: string | undefined;
         likesCount?: number | null | undefined;
         timerSeconds?: yup.Maybe<number | undefined>;
@@ -1850,7 +1791,6 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -1858,7 +1798,6 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             updatedAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -1937,7 +1876,6 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -1945,7 +1883,6 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             updatedAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -2023,7 +1960,6 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -2031,7 +1967,6 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             updatedAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -2110,7 +2045,6 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -2118,7 +2052,6 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             updatedAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -2199,7 +2132,6 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -2207,7 +2139,6 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             updatedAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -2285,7 +2216,6 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -2293,7 +2223,6 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             updatedAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -2373,7 +2302,6 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
         createdAt?: {
             isEqual?: any;
             toMillis?: any;
-            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
@@ -2381,7 +2309,6 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
         updatedAt?: {
             isEqual?: any;
             toMillis?: any;
-            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
@@ -2407,7 +2334,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             thumbnailUri?: yup.Maybe<string | undefined>;
             storagePath: string;
             uri: string;
-        } | null | undefined;
+        } | undefined;
         backgroundColor?: string | undefined;
         likesCount?: number | null | undefined;
         timerSeconds?: yup.Maybe<number | undefined>;
@@ -2419,7 +2346,6 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
         createdAt?: {
             isEqual?: any;
             toMillis?: any;
-            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
@@ -2427,7 +2353,6 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
         updatedAt?: {
             isEqual?: any;
             toMillis?: any;
-            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
@@ -2452,7 +2377,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             thumbnailUri?: yup.Maybe<string | undefined>;
             storagePath: string;
             uri: string;
-        } | null | undefined;
+        } | undefined;
         backgroundColor?: string | undefined;
         likesCount?: number | null | undefined;
         timerSeconds?: yup.Maybe<number | undefined>;
@@ -2464,7 +2389,6 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
         createdAt?: {
             isEqual?: any;
             toMillis?: any;
-            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
@@ -2472,7 +2396,6 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
         updatedAt?: {
             isEqual?: any;
             toMillis?: any;
-            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
@@ -2498,7 +2421,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             thumbnailUri?: yup.Maybe<string | undefined>;
             storagePath: string;
             uri: string;
-        } | null | undefined;
+        } | undefined;
         backgroundColor?: string | undefined;
         likesCount?: number | null | undefined;
         timerSeconds?: yup.Maybe<number | undefined>;
@@ -2527,15 +2450,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
     createdAt: undefined;
     updatedAt: undefined;
     uid: undefined;
-    audioFile: {
-        storagePath: undefined;
-        uri: undefined;
-        localFilePath: undefined;
-        isDeleted: undefined;
-        waveForm: undefined;
-        thumbnailStoragePath: undefined;
-        thumbnailUri: undefined;
-    };
+    audioFile: undefined;
     audioDurationSeconds: undefined;
     audioWaveform: undefined;
     issueId: undefined;
@@ -2552,7 +2467,6 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
         nanoseconds: undefined;
         isEqual: undefined;
         toMillis: undefined;
-        toJSON: undefined;
         toDate: undefined;
     };
     dateString: undefined;

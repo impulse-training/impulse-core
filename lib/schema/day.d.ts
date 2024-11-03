@@ -4,7 +4,6 @@ export declare const daySchema: yup.ObjectSchema<{
     date: {
         isEqual?: any;
         toMillis?: any;
-        toJSON?: any;
         seconds: number;
         nanoseconds: number;
         toDate: Function;
@@ -15,7 +14,6 @@ export declare const daySchema: yup.ObjectSchema<{
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -23,7 +21,6 @@ export declare const daySchema: yup.ObjectSchema<{
             updatedAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -32,7 +29,6 @@ export declare const daySchema: yup.ObjectSchema<{
             submittedAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -55,7 +51,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -63,7 +58,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -142,7 +136,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -150,7 +143,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -228,7 +220,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -236,7 +227,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -315,7 +305,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -323,7 +312,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -404,7 +392,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -412,7 +399,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -490,7 +476,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -498,7 +483,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -585,7 +569,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     setAt: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -601,7 +584,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -609,7 +591,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 updatedAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -635,7 +616,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     thumbnailUri?: yup.Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
-                } | null | undefined;
+                } | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
@@ -655,7 +636,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -663,7 +643,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 updatedAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -690,7 +669,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     thumbnailUri?: yup.Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
-                } | null | undefined;
+                } | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
@@ -704,7 +683,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -712,7 +690,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 updatedAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -738,7 +715,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     thumbnailUri?: yup.Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
-                } | null | undefined;
+                } | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
@@ -750,7 +727,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -758,7 +734,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 updatedAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -784,7 +759,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     thumbnailUri?: yup.Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
-                } | null | undefined;
+                } | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
@@ -796,7 +771,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -804,7 +778,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 updatedAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -830,7 +803,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     thumbnailUri?: yup.Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
-                } | null | undefined;
+                } | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
@@ -842,7 +815,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -850,7 +822,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 updatedAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -876,7 +847,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     thumbnailUri?: yup.Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
-                } | null | undefined;
+                } | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
@@ -887,7 +858,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -895,7 +865,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -974,7 +943,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -982,7 +950,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -1060,7 +1027,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -1068,7 +1034,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -1147,7 +1112,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -1155,7 +1119,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -1236,7 +1199,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -1244,7 +1206,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -1322,7 +1283,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -1330,7 +1290,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -1410,7 +1369,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -1418,7 +1376,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 updatedAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -1444,7 +1401,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     thumbnailUri?: yup.Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
-                } | null | undefined;
+                } | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
@@ -1456,7 +1413,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -1464,7 +1420,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 updatedAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -1489,7 +1444,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     thumbnailUri?: yup.Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
-                } | null | undefined;
+                } | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
@@ -1501,7 +1456,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -1509,7 +1463,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 updatedAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -1535,7 +1488,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     thumbnailUri?: yup.Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
-                } | null | undefined;
+                } | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
@@ -1559,7 +1512,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -1567,7 +1519,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -1593,7 +1544,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         thumbnailUri?: yup.Maybe<string | undefined>;
                         storagePath: string;
                         uri: string;
-                    } | null | undefined;
+                    } | undefined;
                     backgroundColor?: string | undefined;
                     likesCount?: number | null | undefined;
                     timerSeconds?: yup.Maybe<number | undefined>;
@@ -1613,7 +1564,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -1621,7 +1571,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -1648,7 +1597,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         thumbnailUri?: yup.Maybe<string | undefined>;
                         storagePath: string;
                         uri: string;
-                    } | null | undefined;
+                    } | undefined;
                     backgroundColor?: string | undefined;
                     likesCount?: number | null | undefined;
                     timerSeconds?: yup.Maybe<number | undefined>;
@@ -1662,7 +1611,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -1670,7 +1618,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -1696,7 +1643,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         thumbnailUri?: yup.Maybe<string | undefined>;
                         storagePath: string;
                         uri: string;
-                    } | null | undefined;
+                    } | undefined;
                     backgroundColor?: string | undefined;
                     likesCount?: number | null | undefined;
                     timerSeconds?: yup.Maybe<number | undefined>;
@@ -1708,7 +1655,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -1716,7 +1662,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -1742,7 +1687,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         thumbnailUri?: yup.Maybe<string | undefined>;
                         storagePath: string;
                         uri: string;
-                    } | null | undefined;
+                    } | undefined;
                     backgroundColor?: string | undefined;
                     likesCount?: number | null | undefined;
                     timerSeconds?: yup.Maybe<number | undefined>;
@@ -1754,7 +1699,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -1762,7 +1706,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -1788,7 +1731,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         thumbnailUri?: yup.Maybe<string | undefined>;
                         storagePath: string;
                         uri: string;
-                    } | null | undefined;
+                    } | undefined;
                     backgroundColor?: string | undefined;
                     likesCount?: number | null | undefined;
                     timerSeconds?: yup.Maybe<number | undefined>;
@@ -1800,7 +1743,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -1808,7 +1750,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -1834,7 +1775,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         thumbnailUri?: yup.Maybe<string | undefined>;
                         storagePath: string;
                         uri: string;
-                    } | null | undefined;
+                    } | undefined;
                     backgroundColor?: string | undefined;
                     likesCount?: number | null | undefined;
                     timerSeconds?: yup.Maybe<number | undefined>;
@@ -1845,7 +1786,6 @@ export declare const daySchema: yup.ObjectSchema<{
                         createdAt?: {
                             isEqual?: any;
                             toMillis?: any;
-                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -1853,7 +1793,6 @@ export declare const daySchema: yup.ObjectSchema<{
                         updatedAt?: {
                             isEqual?: any;
                             toMillis?: any;
-                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -1932,7 +1871,6 @@ export declare const daySchema: yup.ObjectSchema<{
                         createdAt?: {
                             isEqual?: any;
                             toMillis?: any;
-                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -1940,7 +1878,6 @@ export declare const daySchema: yup.ObjectSchema<{
                         updatedAt?: {
                             isEqual?: any;
                             toMillis?: any;
-                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -2018,7 +1955,6 @@ export declare const daySchema: yup.ObjectSchema<{
                         createdAt?: {
                             isEqual?: any;
                             toMillis?: any;
-                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -2026,7 +1962,6 @@ export declare const daySchema: yup.ObjectSchema<{
                         updatedAt?: {
                             isEqual?: any;
                             toMillis?: any;
-                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -2105,7 +2040,6 @@ export declare const daySchema: yup.ObjectSchema<{
                         createdAt?: {
                             isEqual?: any;
                             toMillis?: any;
-                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -2113,7 +2047,6 @@ export declare const daySchema: yup.ObjectSchema<{
                         updatedAt?: {
                             isEqual?: any;
                             toMillis?: any;
-                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -2194,7 +2127,6 @@ export declare const daySchema: yup.ObjectSchema<{
                         createdAt?: {
                             isEqual?: any;
                             toMillis?: any;
-                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -2202,7 +2134,6 @@ export declare const daySchema: yup.ObjectSchema<{
                         updatedAt?: {
                             isEqual?: any;
                             toMillis?: any;
-                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -2280,7 +2211,6 @@ export declare const daySchema: yup.ObjectSchema<{
                         createdAt?: {
                             isEqual?: any;
                             toMillis?: any;
-                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -2288,7 +2218,6 @@ export declare const daySchema: yup.ObjectSchema<{
                         updatedAt?: {
                             isEqual?: any;
                             toMillis?: any;
-                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -2368,7 +2297,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -2376,7 +2304,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -2402,7 +2329,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         thumbnailUri?: yup.Maybe<string | undefined>;
                         storagePath: string;
                         uri: string;
-                    } | null | undefined;
+                    } | undefined;
                     backgroundColor?: string | undefined;
                     likesCount?: number | null | undefined;
                     timerSeconds?: yup.Maybe<number | undefined>;
@@ -2414,7 +2341,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -2422,7 +2348,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -2447,7 +2372,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         thumbnailUri?: yup.Maybe<string | undefined>;
                         storagePath: string;
                         uri: string;
-                    } | null | undefined;
+                    } | undefined;
                     backgroundColor?: string | undefined;
                     likesCount?: number | null | undefined;
                     timerSeconds?: yup.Maybe<number | undefined>;
@@ -2459,7 +2384,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -2467,7 +2391,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -2493,7 +2416,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         thumbnailUri?: yup.Maybe<string | undefined>;
                         storagePath: string;
                         uri: string;
-                    } | null | undefined;
+                    } | undefined;
                     backgroundColor?: string | undefined;
                     likesCount?: number | null | undefined;
                     timerSeconds?: yup.Maybe<number | undefined>;
@@ -2510,7 +2433,6 @@ export declare const daySchema: yup.ObjectSchema<{
             date: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -2520,7 +2442,6 @@ export declare const daySchema: yup.ObjectSchema<{
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -2528,7 +2449,6 @@ export declare const daySchema: yup.ObjectSchema<{
             updatedAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -2537,7 +2457,6 @@ export declare const daySchema: yup.ObjectSchema<{
             submittedAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -2560,7 +2479,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -2568,7 +2486,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -2647,7 +2564,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -2655,7 +2571,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -2733,7 +2648,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -2741,7 +2655,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -2820,7 +2733,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -2828,7 +2740,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -2909,7 +2820,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -2917,7 +2827,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -2995,7 +2904,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -3003,7 +2911,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -3090,7 +2997,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     setAt: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -3106,7 +3012,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -3114,7 +3019,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 updatedAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -3140,7 +3044,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     thumbnailUri?: yup.Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
-                } | null | undefined;
+                } | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
@@ -3160,7 +3064,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -3168,7 +3071,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 updatedAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -3195,7 +3097,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     thumbnailUri?: yup.Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
-                } | null | undefined;
+                } | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
@@ -3209,7 +3111,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -3217,7 +3118,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 updatedAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -3243,7 +3143,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     thumbnailUri?: yup.Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
-                } | null | undefined;
+                } | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
@@ -3255,7 +3155,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -3263,7 +3162,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 updatedAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -3289,7 +3187,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     thumbnailUri?: yup.Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
-                } | null | undefined;
+                } | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
@@ -3301,7 +3199,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -3309,7 +3206,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 updatedAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -3335,7 +3231,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     thumbnailUri?: yup.Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
-                } | null | undefined;
+                } | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
@@ -3347,7 +3243,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -3355,7 +3250,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 updatedAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -3381,7 +3275,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     thumbnailUri?: yup.Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
-                } | null | undefined;
+                } | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
@@ -3392,7 +3286,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -3400,7 +3293,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -3479,7 +3371,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -3487,7 +3378,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -3565,7 +3455,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -3573,7 +3462,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -3652,7 +3540,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -3660,7 +3547,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -3741,7 +3627,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -3749,7 +3634,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -3827,7 +3711,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -3835,7 +3718,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -3915,7 +3797,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -3923,7 +3804,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 updatedAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -3949,7 +3829,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     thumbnailUri?: yup.Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
-                } | null | undefined;
+                } | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
@@ -3961,7 +3841,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -3969,7 +3848,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 updatedAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -3994,7 +3872,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     thumbnailUri?: yup.Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
-                } | null | undefined;
+                } | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
@@ -4006,7 +3884,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -4014,7 +3891,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 updatedAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -4040,7 +3916,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     thumbnailUri?: yup.Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
-                } | null | undefined;
+                } | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
@@ -4060,7 +3936,6 @@ export declare const daySchema: yup.ObjectSchema<{
             confirmedAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -4072,7 +3947,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -4080,7 +3954,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -4106,7 +3979,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         thumbnailUri?: yup.Maybe<string | undefined>;
                         storagePath: string;
                         uri: string;
-                    } | null | undefined;
+                    } | undefined;
                     backgroundColor?: string | undefined;
                     likesCount?: number | null | undefined;
                     timerSeconds?: yup.Maybe<number | undefined>;
@@ -4126,7 +3999,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -4134,7 +4006,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -4161,7 +4032,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         thumbnailUri?: yup.Maybe<string | undefined>;
                         storagePath: string;
                         uri: string;
-                    } | null | undefined;
+                    } | undefined;
                     backgroundColor?: string | undefined;
                     likesCount?: number | null | undefined;
                     timerSeconds?: yup.Maybe<number | undefined>;
@@ -4175,7 +4046,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -4183,7 +4053,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -4209,7 +4078,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         thumbnailUri?: yup.Maybe<string | undefined>;
                         storagePath: string;
                         uri: string;
-                    } | null | undefined;
+                    } | undefined;
                     backgroundColor?: string | undefined;
                     likesCount?: number | null | undefined;
                     timerSeconds?: yup.Maybe<number | undefined>;
@@ -4221,7 +4090,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -4229,7 +4097,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -4255,7 +4122,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         thumbnailUri?: yup.Maybe<string | undefined>;
                         storagePath: string;
                         uri: string;
-                    } | null | undefined;
+                    } | undefined;
                     backgroundColor?: string | undefined;
                     likesCount?: number | null | undefined;
                     timerSeconds?: yup.Maybe<number | undefined>;
@@ -4267,7 +4134,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -4275,7 +4141,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -4301,7 +4166,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         thumbnailUri?: yup.Maybe<string | undefined>;
                         storagePath: string;
                         uri: string;
-                    } | null | undefined;
+                    } | undefined;
                     backgroundColor?: string | undefined;
                     likesCount?: number | null | undefined;
                     timerSeconds?: yup.Maybe<number | undefined>;
@@ -4313,7 +4178,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -4321,7 +4185,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -4347,7 +4210,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         thumbnailUri?: yup.Maybe<string | undefined>;
                         storagePath: string;
                         uri: string;
-                    } | null | undefined;
+                    } | undefined;
                     backgroundColor?: string | undefined;
                     likesCount?: number | null | undefined;
                     timerSeconds?: yup.Maybe<number | undefined>;
@@ -4358,7 +4221,6 @@ export declare const daySchema: yup.ObjectSchema<{
                         createdAt?: {
                             isEqual?: any;
                             toMillis?: any;
-                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -4366,7 +4228,6 @@ export declare const daySchema: yup.ObjectSchema<{
                         updatedAt?: {
                             isEqual?: any;
                             toMillis?: any;
-                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -4445,7 +4306,6 @@ export declare const daySchema: yup.ObjectSchema<{
                         createdAt?: {
                             isEqual?: any;
                             toMillis?: any;
-                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -4453,7 +4313,6 @@ export declare const daySchema: yup.ObjectSchema<{
                         updatedAt?: {
                             isEqual?: any;
                             toMillis?: any;
-                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -4531,7 +4390,6 @@ export declare const daySchema: yup.ObjectSchema<{
                         createdAt?: {
                             isEqual?: any;
                             toMillis?: any;
-                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -4539,7 +4397,6 @@ export declare const daySchema: yup.ObjectSchema<{
                         updatedAt?: {
                             isEqual?: any;
                             toMillis?: any;
-                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -4618,7 +4475,6 @@ export declare const daySchema: yup.ObjectSchema<{
                         createdAt?: {
                             isEqual?: any;
                             toMillis?: any;
-                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -4626,7 +4482,6 @@ export declare const daySchema: yup.ObjectSchema<{
                         updatedAt?: {
                             isEqual?: any;
                             toMillis?: any;
-                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -4707,7 +4562,6 @@ export declare const daySchema: yup.ObjectSchema<{
                         createdAt?: {
                             isEqual?: any;
                             toMillis?: any;
-                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -4715,7 +4569,6 @@ export declare const daySchema: yup.ObjectSchema<{
                         updatedAt?: {
                             isEqual?: any;
                             toMillis?: any;
-                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -4793,7 +4646,6 @@ export declare const daySchema: yup.ObjectSchema<{
                         createdAt?: {
                             isEqual?: any;
                             toMillis?: any;
-                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -4801,7 +4653,6 @@ export declare const daySchema: yup.ObjectSchema<{
                         updatedAt?: {
                             isEqual?: any;
                             toMillis?: any;
-                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -4881,7 +4732,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -4889,7 +4739,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -4915,7 +4764,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         thumbnailUri?: yup.Maybe<string | undefined>;
                         storagePath: string;
                         uri: string;
-                    } | null | undefined;
+                    } | undefined;
                     backgroundColor?: string | undefined;
                     likesCount?: number | null | undefined;
                     timerSeconds?: yup.Maybe<number | undefined>;
@@ -4927,7 +4776,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -4935,7 +4783,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -4960,7 +4807,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         thumbnailUri?: yup.Maybe<string | undefined>;
                         storagePath: string;
                         uri: string;
-                    } | null | undefined;
+                    } | undefined;
                     backgroundColor?: string | undefined;
                     likesCount?: number | null | undefined;
                     timerSeconds?: yup.Maybe<number | undefined>;
@@ -4972,7 +4819,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -4980,7 +4826,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -5006,7 +4851,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         thumbnailUri?: yup.Maybe<string | undefined>;
                         storagePath: string;
                         uri: string;
-                    } | null | undefined;
+                    } | undefined;
                     backgroundColor?: string | undefined;
                     likesCount?: number | null | undefined;
                     timerSeconds?: yup.Maybe<number | undefined>;
@@ -5023,7 +4868,6 @@ export declare const daySchema: yup.ObjectSchema<{
             date: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -5034,7 +4878,6 @@ export declare const daySchema: yup.ObjectSchema<{
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -5042,7 +4885,6 @@ export declare const daySchema: yup.ObjectSchema<{
             updatedAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -5051,7 +4893,6 @@ export declare const daySchema: yup.ObjectSchema<{
             submittedAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -5074,7 +4915,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -5082,7 +4922,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -5161,7 +5000,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -5169,7 +5007,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -5247,7 +5084,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -5255,7 +5091,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -5334,7 +5169,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -5342,7 +5176,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -5423,7 +5256,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -5431,7 +5263,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -5509,7 +5340,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -5517,7 +5347,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -5604,7 +5433,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     setAt: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -5620,7 +5448,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -5628,7 +5455,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 updatedAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -5654,7 +5480,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     thumbnailUri?: yup.Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
-                } | null | undefined;
+                } | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
@@ -5674,7 +5500,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -5682,7 +5507,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 updatedAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -5709,7 +5533,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     thumbnailUri?: yup.Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
-                } | null | undefined;
+                } | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
@@ -5723,7 +5547,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -5731,7 +5554,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 updatedAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -5757,7 +5579,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     thumbnailUri?: yup.Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
-                } | null | undefined;
+                } | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
@@ -5769,7 +5591,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -5777,7 +5598,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 updatedAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -5803,7 +5623,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     thumbnailUri?: yup.Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
-                } | null | undefined;
+                } | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
@@ -5815,7 +5635,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -5823,7 +5642,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 updatedAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -5849,7 +5667,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     thumbnailUri?: yup.Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
-                } | null | undefined;
+                } | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
@@ -5861,7 +5679,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -5869,7 +5686,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 updatedAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -5895,7 +5711,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     thumbnailUri?: yup.Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
-                } | null | undefined;
+                } | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
@@ -5906,7 +5722,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -5914,7 +5729,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -5993,7 +5807,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -6001,7 +5814,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -6079,7 +5891,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -6087,7 +5898,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -6166,7 +5976,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -6174,7 +5983,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -6255,7 +6063,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -6263,7 +6070,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -6341,7 +6147,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -6349,7 +6154,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -6429,7 +6233,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -6437,7 +6240,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 updatedAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -6463,7 +6265,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     thumbnailUri?: yup.Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
-                } | null | undefined;
+                } | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
@@ -6475,7 +6277,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -6483,7 +6284,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 updatedAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -6508,7 +6308,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     thumbnailUri?: yup.Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
-                } | null | undefined;
+                } | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
@@ -6520,7 +6320,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -6528,7 +6327,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 updatedAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -6554,7 +6352,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     thumbnailUri?: yup.Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
-                } | null | undefined;
+                } | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
@@ -6579,7 +6377,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -6587,7 +6384,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -6613,7 +6409,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         thumbnailUri?: yup.Maybe<string | undefined>;
                         storagePath: string;
                         uri: string;
-                    } | null | undefined;
+                    } | undefined;
                     backgroundColor?: string | undefined;
                     likesCount?: number | null | undefined;
                     timerSeconds?: yup.Maybe<number | undefined>;
@@ -6633,7 +6429,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -6641,7 +6436,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -6668,7 +6462,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         thumbnailUri?: yup.Maybe<string | undefined>;
                         storagePath: string;
                         uri: string;
-                    } | null | undefined;
+                    } | undefined;
                     backgroundColor?: string | undefined;
                     likesCount?: number | null | undefined;
                     timerSeconds?: yup.Maybe<number | undefined>;
@@ -6682,7 +6476,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -6690,7 +6483,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -6716,7 +6508,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         thumbnailUri?: yup.Maybe<string | undefined>;
                         storagePath: string;
                         uri: string;
-                    } | null | undefined;
+                    } | undefined;
                     backgroundColor?: string | undefined;
                     likesCount?: number | null | undefined;
                     timerSeconds?: yup.Maybe<number | undefined>;
@@ -6728,7 +6520,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -6736,7 +6527,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -6762,7 +6552,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         thumbnailUri?: yup.Maybe<string | undefined>;
                         storagePath: string;
                         uri: string;
-                    } | null | undefined;
+                    } | undefined;
                     backgroundColor?: string | undefined;
                     likesCount?: number | null | undefined;
                     timerSeconds?: yup.Maybe<number | undefined>;
@@ -6774,7 +6564,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -6782,7 +6571,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -6808,7 +6596,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         thumbnailUri?: yup.Maybe<string | undefined>;
                         storagePath: string;
                         uri: string;
-                    } | null | undefined;
+                    } | undefined;
                     backgroundColor?: string | undefined;
                     likesCount?: number | null | undefined;
                     timerSeconds?: yup.Maybe<number | undefined>;
@@ -6820,7 +6608,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -6828,7 +6615,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -6854,7 +6640,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         thumbnailUri?: yup.Maybe<string | undefined>;
                         storagePath: string;
                         uri: string;
-                    } | null | undefined;
+                    } | undefined;
                     backgroundColor?: string | undefined;
                     likesCount?: number | null | undefined;
                     timerSeconds?: yup.Maybe<number | undefined>;
@@ -6865,7 +6651,6 @@ export declare const daySchema: yup.ObjectSchema<{
                         createdAt?: {
                             isEqual?: any;
                             toMillis?: any;
-                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -6873,7 +6658,6 @@ export declare const daySchema: yup.ObjectSchema<{
                         updatedAt?: {
                             isEqual?: any;
                             toMillis?: any;
-                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -6952,7 +6736,6 @@ export declare const daySchema: yup.ObjectSchema<{
                         createdAt?: {
                             isEqual?: any;
                             toMillis?: any;
-                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -6960,7 +6743,6 @@ export declare const daySchema: yup.ObjectSchema<{
                         updatedAt?: {
                             isEqual?: any;
                             toMillis?: any;
-                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -7038,7 +6820,6 @@ export declare const daySchema: yup.ObjectSchema<{
                         createdAt?: {
                             isEqual?: any;
                             toMillis?: any;
-                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -7046,7 +6827,6 @@ export declare const daySchema: yup.ObjectSchema<{
                         updatedAt?: {
                             isEqual?: any;
                             toMillis?: any;
-                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -7125,7 +6905,6 @@ export declare const daySchema: yup.ObjectSchema<{
                         createdAt?: {
                             isEqual?: any;
                             toMillis?: any;
-                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -7133,7 +6912,6 @@ export declare const daySchema: yup.ObjectSchema<{
                         updatedAt?: {
                             isEqual?: any;
                             toMillis?: any;
-                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -7214,7 +6992,6 @@ export declare const daySchema: yup.ObjectSchema<{
                         createdAt?: {
                             isEqual?: any;
                             toMillis?: any;
-                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -7222,7 +6999,6 @@ export declare const daySchema: yup.ObjectSchema<{
                         updatedAt?: {
                             isEqual?: any;
                             toMillis?: any;
-                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -7300,7 +7076,6 @@ export declare const daySchema: yup.ObjectSchema<{
                         createdAt?: {
                             isEqual?: any;
                             toMillis?: any;
-                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -7308,7 +7083,6 @@ export declare const daySchema: yup.ObjectSchema<{
                         updatedAt?: {
                             isEqual?: any;
                             toMillis?: any;
-                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -7388,7 +7162,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -7396,7 +7169,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -7422,7 +7194,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         thumbnailUri?: yup.Maybe<string | undefined>;
                         storagePath: string;
                         uri: string;
-                    } | null | undefined;
+                    } | undefined;
                     backgroundColor?: string | undefined;
                     likesCount?: number | null | undefined;
                     timerSeconds?: yup.Maybe<number | undefined>;
@@ -7434,7 +7206,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -7442,7 +7213,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -7467,7 +7237,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         thumbnailUri?: yup.Maybe<string | undefined>;
                         storagePath: string;
                         uri: string;
-                    } | null | undefined;
+                    } | undefined;
                     backgroundColor?: string | undefined;
                     likesCount?: number | null | undefined;
                     timerSeconds?: yup.Maybe<number | undefined>;
@@ -7479,7 +7249,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -7487,7 +7256,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -7513,7 +7281,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         thumbnailUri?: yup.Maybe<string | undefined>;
                         storagePath: string;
                         uri: string;
-                    } | null | undefined;
+                    } | undefined;
                     backgroundColor?: string | undefined;
                     likesCount?: number | null | undefined;
                     timerSeconds?: yup.Maybe<number | undefined>;
@@ -7530,7 +7298,6 @@ export declare const daySchema: yup.ObjectSchema<{
             date: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -7540,7 +7307,6 @@ export declare const daySchema: yup.ObjectSchema<{
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -7548,7 +7314,6 @@ export declare const daySchema: yup.ObjectSchema<{
             updatedAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -7557,7 +7322,6 @@ export declare const daySchema: yup.ObjectSchema<{
             submittedAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -7580,7 +7344,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -7588,7 +7351,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -7667,7 +7429,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -7675,7 +7436,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -7753,7 +7513,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -7761,7 +7520,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -7840,7 +7598,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -7848,7 +7605,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -7929,7 +7685,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -7937,7 +7692,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -8015,7 +7769,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -8023,7 +7776,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -8110,7 +7862,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     setAt: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -8126,7 +7877,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -8134,7 +7884,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 updatedAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -8160,7 +7909,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     thumbnailUri?: yup.Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
-                } | null | undefined;
+                } | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
@@ -8180,7 +7929,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -8188,7 +7936,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 updatedAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -8215,7 +7962,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     thumbnailUri?: yup.Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
-                } | null | undefined;
+                } | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
@@ -8229,7 +7976,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -8237,7 +7983,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 updatedAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -8263,7 +8008,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     thumbnailUri?: yup.Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
-                } | null | undefined;
+                } | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
@@ -8275,7 +8020,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -8283,7 +8027,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 updatedAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -8309,7 +8052,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     thumbnailUri?: yup.Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
-                } | null | undefined;
+                } | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
@@ -8321,7 +8064,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -8329,7 +8071,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 updatedAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -8355,7 +8096,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     thumbnailUri?: yup.Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
-                } | null | undefined;
+                } | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
@@ -8367,7 +8108,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -8375,7 +8115,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 updatedAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -8401,7 +8140,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     thumbnailUri?: yup.Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
-                } | null | undefined;
+                } | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
@@ -8412,7 +8151,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -8420,7 +8158,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -8499,7 +8236,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -8507,7 +8243,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -8585,7 +8320,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -8593,7 +8327,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -8672,7 +8405,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -8680,7 +8412,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -8761,7 +8492,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -8769,7 +8499,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -8847,7 +8576,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -8855,7 +8583,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -8935,7 +8662,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -8943,7 +8669,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 updatedAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -8969,7 +8694,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     thumbnailUri?: yup.Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
-                } | null | undefined;
+                } | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
@@ -8981,7 +8706,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -8989,7 +8713,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 updatedAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -9014,7 +8737,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     thumbnailUri?: yup.Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
-                } | null | undefined;
+                } | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
@@ -9026,7 +8749,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -9034,7 +8756,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 updatedAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -9060,7 +8781,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     thumbnailUri?: yup.Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
-                } | null | undefined;
+                } | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
@@ -9091,7 +8812,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -9099,7 +8819,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -9125,7 +8844,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         thumbnailUri?: yup.Maybe<string | undefined>;
                         storagePath: string;
                         uri: string;
-                    } | null | undefined;
+                    } | undefined;
                     backgroundColor?: string | undefined;
                     likesCount?: number | null | undefined;
                     timerSeconds?: yup.Maybe<number | undefined>;
@@ -9145,7 +8864,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -9153,7 +8871,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -9180,7 +8897,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         thumbnailUri?: yup.Maybe<string | undefined>;
                         storagePath: string;
                         uri: string;
-                    } | null | undefined;
+                    } | undefined;
                     backgroundColor?: string | undefined;
                     likesCount?: number | null | undefined;
                     timerSeconds?: yup.Maybe<number | undefined>;
@@ -9194,7 +8911,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -9202,7 +8918,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -9228,7 +8943,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         thumbnailUri?: yup.Maybe<string | undefined>;
                         storagePath: string;
                         uri: string;
-                    } | null | undefined;
+                    } | undefined;
                     backgroundColor?: string | undefined;
                     likesCount?: number | null | undefined;
                     timerSeconds?: yup.Maybe<number | undefined>;
@@ -9240,7 +8955,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -9248,7 +8962,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -9274,7 +8987,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         thumbnailUri?: yup.Maybe<string | undefined>;
                         storagePath: string;
                         uri: string;
-                    } | null | undefined;
+                    } | undefined;
                     backgroundColor?: string | undefined;
                     likesCount?: number | null | undefined;
                     timerSeconds?: yup.Maybe<number | undefined>;
@@ -9286,7 +8999,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -9294,7 +9006,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -9320,7 +9031,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         thumbnailUri?: yup.Maybe<string | undefined>;
                         storagePath: string;
                         uri: string;
-                    } | null | undefined;
+                    } | undefined;
                     backgroundColor?: string | undefined;
                     likesCount?: number | null | undefined;
                     timerSeconds?: yup.Maybe<number | undefined>;
@@ -9332,7 +9043,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -9340,7 +9050,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -9366,7 +9075,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         thumbnailUri?: yup.Maybe<string | undefined>;
                         storagePath: string;
                         uri: string;
-                    } | null | undefined;
+                    } | undefined;
                     backgroundColor?: string | undefined;
                     likesCount?: number | null | undefined;
                     timerSeconds?: yup.Maybe<number | undefined>;
@@ -9377,7 +9086,6 @@ export declare const daySchema: yup.ObjectSchema<{
                         createdAt?: {
                             isEqual?: any;
                             toMillis?: any;
-                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -9385,7 +9093,6 @@ export declare const daySchema: yup.ObjectSchema<{
                         updatedAt?: {
                             isEqual?: any;
                             toMillis?: any;
-                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -9464,7 +9171,6 @@ export declare const daySchema: yup.ObjectSchema<{
                         createdAt?: {
                             isEqual?: any;
                             toMillis?: any;
-                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -9472,7 +9178,6 @@ export declare const daySchema: yup.ObjectSchema<{
                         updatedAt?: {
                             isEqual?: any;
                             toMillis?: any;
-                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -9550,7 +9255,6 @@ export declare const daySchema: yup.ObjectSchema<{
                         createdAt?: {
                             isEqual?: any;
                             toMillis?: any;
-                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -9558,7 +9262,6 @@ export declare const daySchema: yup.ObjectSchema<{
                         updatedAt?: {
                             isEqual?: any;
                             toMillis?: any;
-                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -9637,7 +9340,6 @@ export declare const daySchema: yup.ObjectSchema<{
                         createdAt?: {
                             isEqual?: any;
                             toMillis?: any;
-                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -9645,7 +9347,6 @@ export declare const daySchema: yup.ObjectSchema<{
                         updatedAt?: {
                             isEqual?: any;
                             toMillis?: any;
-                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -9726,7 +9427,6 @@ export declare const daySchema: yup.ObjectSchema<{
                         createdAt?: {
                             isEqual?: any;
                             toMillis?: any;
-                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -9734,7 +9434,6 @@ export declare const daySchema: yup.ObjectSchema<{
                         updatedAt?: {
                             isEqual?: any;
                             toMillis?: any;
-                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -9812,7 +9511,6 @@ export declare const daySchema: yup.ObjectSchema<{
                         createdAt?: {
                             isEqual?: any;
                             toMillis?: any;
-                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -9820,7 +9518,6 @@ export declare const daySchema: yup.ObjectSchema<{
                         updatedAt?: {
                             isEqual?: any;
                             toMillis?: any;
-                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -9900,7 +9597,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -9908,7 +9604,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -9934,7 +9629,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         thumbnailUri?: yup.Maybe<string | undefined>;
                         storagePath: string;
                         uri: string;
-                    } | null | undefined;
+                    } | undefined;
                     backgroundColor?: string | undefined;
                     likesCount?: number | null | undefined;
                     timerSeconds?: yup.Maybe<number | undefined>;
@@ -9946,7 +9641,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -9954,7 +9648,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -9979,7 +9672,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         thumbnailUri?: yup.Maybe<string | undefined>;
                         storagePath: string;
                         uri: string;
-                    } | null | undefined;
+                    } | undefined;
                     backgroundColor?: string | undefined;
                     likesCount?: number | null | undefined;
                     timerSeconds?: yup.Maybe<number | undefined>;
@@ -9991,7 +9684,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -9999,7 +9691,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -10025,7 +9716,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         thumbnailUri?: yup.Maybe<string | undefined>;
                         storagePath: string;
                         uri: string;
-                    } | null | undefined;
+                    } | undefined;
                     backgroundColor?: string | undefined;
                     likesCount?: number | null | undefined;
                     timerSeconds?: yup.Maybe<number | undefined>;
@@ -10042,7 +9733,6 @@ export declare const daySchema: yup.ObjectSchema<{
             date: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -10052,7 +9742,6 @@ export declare const daySchema: yup.ObjectSchema<{
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -10060,7 +9749,6 @@ export declare const daySchema: yup.ObjectSchema<{
             updatedAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -10069,7 +9757,6 @@ export declare const daySchema: yup.ObjectSchema<{
             submittedAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -10092,7 +9779,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -10100,7 +9786,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -10179,7 +9864,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -10187,7 +9871,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -10265,7 +9948,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -10273,7 +9955,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -10352,7 +10033,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -10360,7 +10040,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -10441,7 +10120,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -10449,7 +10127,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -10527,7 +10204,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -10535,7 +10211,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -10622,7 +10297,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     setAt: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -10638,7 +10312,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -10646,7 +10319,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 updatedAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -10672,7 +10344,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     thumbnailUri?: yup.Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
-                } | null | undefined;
+                } | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
@@ -10692,7 +10364,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -10700,7 +10371,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 updatedAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -10727,7 +10397,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     thumbnailUri?: yup.Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
-                } | null | undefined;
+                } | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
@@ -10741,7 +10411,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -10749,7 +10418,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 updatedAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -10775,7 +10443,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     thumbnailUri?: yup.Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
-                } | null | undefined;
+                } | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
@@ -10787,7 +10455,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -10795,7 +10462,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 updatedAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -10821,7 +10487,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     thumbnailUri?: yup.Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
-                } | null | undefined;
+                } | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
@@ -10833,7 +10499,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -10841,7 +10506,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 updatedAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -10867,7 +10531,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     thumbnailUri?: yup.Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
-                } | null | undefined;
+                } | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
@@ -10879,7 +10543,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -10887,7 +10550,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 updatedAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -10913,7 +10575,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     thumbnailUri?: yup.Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
-                } | null | undefined;
+                } | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
@@ -10924,7 +10586,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -10932,7 +10593,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -11011,7 +10671,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -11019,7 +10678,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -11097,7 +10755,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -11105,7 +10762,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -11184,7 +10840,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -11192,7 +10847,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -11273,7 +10927,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -11281,7 +10934,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -11359,7 +11011,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -11367,7 +11018,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -11447,7 +11097,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -11455,7 +11104,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 updatedAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -11481,7 +11129,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     thumbnailUri?: yup.Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
-                } | null | undefined;
+                } | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
@@ -11493,7 +11141,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -11501,7 +11148,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 updatedAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -11526,7 +11172,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     thumbnailUri?: yup.Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
-                } | null | undefined;
+                } | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
@@ -11538,7 +11184,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -11546,7 +11191,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 updatedAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -11572,7 +11216,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     thumbnailUri?: yup.Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
-                } | null | undefined;
+                } | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
@@ -11598,7 +11242,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -11606,7 +11249,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -11632,7 +11274,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         thumbnailUri?: yup.Maybe<string | undefined>;
                         storagePath: string;
                         uri: string;
-                    } | null | undefined;
+                    } | undefined;
                     backgroundColor?: string | undefined;
                     likesCount?: number | null | undefined;
                     timerSeconds?: yup.Maybe<number | undefined>;
@@ -11652,7 +11294,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -11660,7 +11301,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -11687,7 +11327,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         thumbnailUri?: yup.Maybe<string | undefined>;
                         storagePath: string;
                         uri: string;
-                    } | null | undefined;
+                    } | undefined;
                     backgroundColor?: string | undefined;
                     likesCount?: number | null | undefined;
                     timerSeconds?: yup.Maybe<number | undefined>;
@@ -11701,7 +11341,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -11709,7 +11348,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -11735,7 +11373,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         thumbnailUri?: yup.Maybe<string | undefined>;
                         storagePath: string;
                         uri: string;
-                    } | null | undefined;
+                    } | undefined;
                     backgroundColor?: string | undefined;
                     likesCount?: number | null | undefined;
                     timerSeconds?: yup.Maybe<number | undefined>;
@@ -11747,7 +11385,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -11755,7 +11392,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -11781,7 +11417,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         thumbnailUri?: yup.Maybe<string | undefined>;
                         storagePath: string;
                         uri: string;
-                    } | null | undefined;
+                    } | undefined;
                     backgroundColor?: string | undefined;
                     likesCount?: number | null | undefined;
                     timerSeconds?: yup.Maybe<number | undefined>;
@@ -11793,7 +11429,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -11801,7 +11436,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -11827,7 +11461,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         thumbnailUri?: yup.Maybe<string | undefined>;
                         storagePath: string;
                         uri: string;
-                    } | null | undefined;
+                    } | undefined;
                     backgroundColor?: string | undefined;
                     likesCount?: number | null | undefined;
                     timerSeconds?: yup.Maybe<number | undefined>;
@@ -11839,7 +11473,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -11847,7 +11480,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -11873,7 +11505,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         thumbnailUri?: yup.Maybe<string | undefined>;
                         storagePath: string;
                         uri: string;
-                    } | null | undefined;
+                    } | undefined;
                     backgroundColor?: string | undefined;
                     likesCount?: number | null | undefined;
                     timerSeconds?: yup.Maybe<number | undefined>;
@@ -11884,7 +11516,6 @@ export declare const daySchema: yup.ObjectSchema<{
                         createdAt?: {
                             isEqual?: any;
                             toMillis?: any;
-                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -11892,7 +11523,6 @@ export declare const daySchema: yup.ObjectSchema<{
                         updatedAt?: {
                             isEqual?: any;
                             toMillis?: any;
-                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -11971,7 +11601,6 @@ export declare const daySchema: yup.ObjectSchema<{
                         createdAt?: {
                             isEqual?: any;
                             toMillis?: any;
-                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -11979,7 +11608,6 @@ export declare const daySchema: yup.ObjectSchema<{
                         updatedAt?: {
                             isEqual?: any;
                             toMillis?: any;
-                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -12057,7 +11685,6 @@ export declare const daySchema: yup.ObjectSchema<{
                         createdAt?: {
                             isEqual?: any;
                             toMillis?: any;
-                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -12065,7 +11692,6 @@ export declare const daySchema: yup.ObjectSchema<{
                         updatedAt?: {
                             isEqual?: any;
                             toMillis?: any;
-                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -12144,7 +11770,6 @@ export declare const daySchema: yup.ObjectSchema<{
                         createdAt?: {
                             isEqual?: any;
                             toMillis?: any;
-                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -12152,7 +11777,6 @@ export declare const daySchema: yup.ObjectSchema<{
                         updatedAt?: {
                             isEqual?: any;
                             toMillis?: any;
-                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -12233,7 +11857,6 @@ export declare const daySchema: yup.ObjectSchema<{
                         createdAt?: {
                             isEqual?: any;
                             toMillis?: any;
-                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -12241,7 +11864,6 @@ export declare const daySchema: yup.ObjectSchema<{
                         updatedAt?: {
                             isEqual?: any;
                             toMillis?: any;
-                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -12319,7 +11941,6 @@ export declare const daySchema: yup.ObjectSchema<{
                         createdAt?: {
                             isEqual?: any;
                             toMillis?: any;
-                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -12327,7 +11948,6 @@ export declare const daySchema: yup.ObjectSchema<{
                         updatedAt?: {
                             isEqual?: any;
                             toMillis?: any;
-                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -12407,7 +12027,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -12415,7 +12034,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -12441,7 +12059,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         thumbnailUri?: yup.Maybe<string | undefined>;
                         storagePath: string;
                         uri: string;
-                    } | null | undefined;
+                    } | undefined;
                     backgroundColor?: string | undefined;
                     likesCount?: number | null | undefined;
                     timerSeconds?: yup.Maybe<number | undefined>;
@@ -12453,7 +12071,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -12461,7 +12078,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -12486,7 +12102,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         thumbnailUri?: yup.Maybe<string | undefined>;
                         storagePath: string;
                         uri: string;
-                    } | null | undefined;
+                    } | undefined;
                     backgroundColor?: string | undefined;
                     likesCount?: number | null | undefined;
                     timerSeconds?: yup.Maybe<number | undefined>;
@@ -12498,7 +12114,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -12506,7 +12121,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -12532,7 +12146,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         thumbnailUri?: yup.Maybe<string | undefined>;
                         storagePath: string;
                         uri: string;
-                    } | null | undefined;
+                    } | undefined;
                     backgroundColor?: string | undefined;
                     likesCount?: number | null | undefined;
                     timerSeconds?: yup.Maybe<number | undefined>;
@@ -12549,7 +12163,6 @@ export declare const daySchema: yup.ObjectSchema<{
             date: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -12559,7 +12172,6 @@ export declare const daySchema: yup.ObjectSchema<{
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -12567,7 +12179,6 @@ export declare const daySchema: yup.ObjectSchema<{
             updatedAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -12576,7 +12187,6 @@ export declare const daySchema: yup.ObjectSchema<{
             submittedAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -12599,7 +12209,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -12607,7 +12216,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -12686,7 +12294,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -12694,7 +12301,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -12772,7 +12378,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -12780,7 +12385,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -12859,7 +12463,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -12867,7 +12470,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -12948,7 +12550,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -12956,7 +12557,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -13034,7 +12634,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -13042,7 +12641,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -13129,7 +12727,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     setAt: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -13145,7 +12742,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -13153,7 +12749,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 updatedAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -13179,7 +12774,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     thumbnailUri?: yup.Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
-                } | null | undefined;
+                } | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
@@ -13199,7 +12794,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -13207,7 +12801,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 updatedAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -13234,7 +12827,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     thumbnailUri?: yup.Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
-                } | null | undefined;
+                } | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
@@ -13248,7 +12841,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -13256,7 +12848,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 updatedAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -13282,7 +12873,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     thumbnailUri?: yup.Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
-                } | null | undefined;
+                } | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
@@ -13294,7 +12885,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -13302,7 +12892,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 updatedAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -13328,7 +12917,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     thumbnailUri?: yup.Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
-                } | null | undefined;
+                } | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
@@ -13340,7 +12929,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -13348,7 +12936,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 updatedAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -13374,7 +12961,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     thumbnailUri?: yup.Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
-                } | null | undefined;
+                } | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
@@ -13386,7 +12973,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -13394,7 +12980,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 updatedAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -13420,7 +13005,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     thumbnailUri?: yup.Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
-                } | null | undefined;
+                } | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
@@ -13431,7 +13016,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -13439,7 +13023,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -13518,7 +13101,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -13526,7 +13108,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -13604,7 +13185,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -13612,7 +13192,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -13691,7 +13270,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -13699,7 +13277,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -13780,7 +13357,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -13788,7 +13364,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -13866,7 +13441,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -13874,7 +13448,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -13954,7 +13527,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -13962,7 +13534,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 updatedAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -13988,7 +13559,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     thumbnailUri?: yup.Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
-                } | null | undefined;
+                } | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
@@ -14000,7 +13571,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -14008,7 +13578,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 updatedAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -14033,7 +13602,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     thumbnailUri?: yup.Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
-                } | null | undefined;
+                } | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
@@ -14045,7 +13614,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -14053,7 +13621,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 updatedAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -14079,7 +13646,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     thumbnailUri?: yup.Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
-                } | null | undefined;
+                } | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
@@ -14113,7 +13680,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -14121,7 +13687,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -14147,7 +13712,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         thumbnailUri?: yup.Maybe<string | undefined>;
                         storagePath: string;
                         uri: string;
-                    } | null | undefined;
+                    } | undefined;
                     backgroundColor?: string | undefined;
                     likesCount?: number | null | undefined;
                     timerSeconds?: yup.Maybe<number | undefined>;
@@ -14167,7 +13732,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -14175,7 +13739,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -14202,7 +13765,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         thumbnailUri?: yup.Maybe<string | undefined>;
                         storagePath: string;
                         uri: string;
-                    } | null | undefined;
+                    } | undefined;
                     backgroundColor?: string | undefined;
                     likesCount?: number | null | undefined;
                     timerSeconds?: yup.Maybe<number | undefined>;
@@ -14216,7 +13779,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -14224,7 +13786,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -14250,7 +13811,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         thumbnailUri?: yup.Maybe<string | undefined>;
                         storagePath: string;
                         uri: string;
-                    } | null | undefined;
+                    } | undefined;
                     backgroundColor?: string | undefined;
                     likesCount?: number | null | undefined;
                     timerSeconds?: yup.Maybe<number | undefined>;
@@ -14262,7 +13823,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -14270,7 +13830,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -14296,7 +13855,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         thumbnailUri?: yup.Maybe<string | undefined>;
                         storagePath: string;
                         uri: string;
-                    } | null | undefined;
+                    } | undefined;
                     backgroundColor?: string | undefined;
                     likesCount?: number | null | undefined;
                     timerSeconds?: yup.Maybe<number | undefined>;
@@ -14308,7 +13867,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -14316,7 +13874,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -14342,7 +13899,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         thumbnailUri?: yup.Maybe<string | undefined>;
                         storagePath: string;
                         uri: string;
-                    } | null | undefined;
+                    } | undefined;
                     backgroundColor?: string | undefined;
                     likesCount?: number | null | undefined;
                     timerSeconds?: yup.Maybe<number | undefined>;
@@ -14354,7 +13911,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -14362,7 +13918,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -14388,7 +13943,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         thumbnailUri?: yup.Maybe<string | undefined>;
                         storagePath: string;
                         uri: string;
-                    } | null | undefined;
+                    } | undefined;
                     backgroundColor?: string | undefined;
                     likesCount?: number | null | undefined;
                     timerSeconds?: yup.Maybe<number | undefined>;
@@ -14399,7 +13954,6 @@ export declare const daySchema: yup.ObjectSchema<{
                         createdAt?: {
                             isEqual?: any;
                             toMillis?: any;
-                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -14407,7 +13961,6 @@ export declare const daySchema: yup.ObjectSchema<{
                         updatedAt?: {
                             isEqual?: any;
                             toMillis?: any;
-                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -14486,7 +14039,6 @@ export declare const daySchema: yup.ObjectSchema<{
                         createdAt?: {
                             isEqual?: any;
                             toMillis?: any;
-                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -14494,7 +14046,6 @@ export declare const daySchema: yup.ObjectSchema<{
                         updatedAt?: {
                             isEqual?: any;
                             toMillis?: any;
-                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -14572,7 +14123,6 @@ export declare const daySchema: yup.ObjectSchema<{
                         createdAt?: {
                             isEqual?: any;
                             toMillis?: any;
-                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -14580,7 +14130,6 @@ export declare const daySchema: yup.ObjectSchema<{
                         updatedAt?: {
                             isEqual?: any;
                             toMillis?: any;
-                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -14659,7 +14208,6 @@ export declare const daySchema: yup.ObjectSchema<{
                         createdAt?: {
                             isEqual?: any;
                             toMillis?: any;
-                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -14667,7 +14215,6 @@ export declare const daySchema: yup.ObjectSchema<{
                         updatedAt?: {
                             isEqual?: any;
                             toMillis?: any;
-                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -14748,7 +14295,6 @@ export declare const daySchema: yup.ObjectSchema<{
                         createdAt?: {
                             isEqual?: any;
                             toMillis?: any;
-                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -14756,7 +14302,6 @@ export declare const daySchema: yup.ObjectSchema<{
                         updatedAt?: {
                             isEqual?: any;
                             toMillis?: any;
-                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -14834,7 +14379,6 @@ export declare const daySchema: yup.ObjectSchema<{
                         createdAt?: {
                             isEqual?: any;
                             toMillis?: any;
-                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -14842,7 +14386,6 @@ export declare const daySchema: yup.ObjectSchema<{
                         updatedAt?: {
                             isEqual?: any;
                             toMillis?: any;
-                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -14922,7 +14465,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -14930,7 +14472,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -14956,7 +14497,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         thumbnailUri?: yup.Maybe<string | undefined>;
                         storagePath: string;
                         uri: string;
-                    } | null | undefined;
+                    } | undefined;
                     backgroundColor?: string | undefined;
                     likesCount?: number | null | undefined;
                     timerSeconds?: yup.Maybe<number | undefined>;
@@ -14968,7 +14509,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -14976,7 +14516,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -15001,7 +14540,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         thumbnailUri?: yup.Maybe<string | undefined>;
                         storagePath: string;
                         uri: string;
-                    } | null | undefined;
+                    } | undefined;
                     backgroundColor?: string | undefined;
                     likesCount?: number | null | undefined;
                     timerSeconds?: yup.Maybe<number | undefined>;
@@ -15013,7 +14552,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -15021,7 +14559,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -15047,7 +14584,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         thumbnailUri?: yup.Maybe<string | undefined>;
                         storagePath: string;
                         uri: string;
-                    } | null | undefined;
+                    } | undefined;
                     backgroundColor?: string | undefined;
                     likesCount?: number | null | undefined;
                     timerSeconds?: yup.Maybe<number | undefined>;
@@ -15064,7 +14601,6 @@ export declare const daySchema: yup.ObjectSchema<{
             date: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -15077,7 +14613,6 @@ export declare const daySchema: yup.ObjectSchema<{
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -15085,7 +14620,6 @@ export declare const daySchema: yup.ObjectSchema<{
             updatedAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -15164,7 +14698,6 @@ export declare const daySchema: yup.ObjectSchema<{
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -15172,7 +14705,6 @@ export declare const daySchema: yup.ObjectSchema<{
             updatedAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -15250,7 +14782,6 @@ export declare const daySchema: yup.ObjectSchema<{
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -15258,7 +14789,6 @@ export declare const daySchema: yup.ObjectSchema<{
             updatedAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -15337,7 +14867,6 @@ export declare const daySchema: yup.ObjectSchema<{
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -15345,7 +14874,6 @@ export declare const daySchema: yup.ObjectSchema<{
             updatedAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -15426,7 +14954,6 @@ export declare const daySchema: yup.ObjectSchema<{
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -15434,7 +14961,6 @@ export declare const daySchema: yup.ObjectSchema<{
             updatedAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -15512,7 +15038,6 @@ export declare const daySchema: yup.ObjectSchema<{
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -15520,7 +15045,6 @@ export declare const daySchema: yup.ObjectSchema<{
             updatedAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -15603,7 +15127,6 @@ export declare const daySchema: yup.ObjectSchema<{
         nanoseconds: undefined;
         isEqual: undefined;
         toMillis: undefined;
-        toJSON: undefined;
         toDate: undefined;
     };
     issueName: undefined;

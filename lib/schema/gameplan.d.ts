@@ -3,7 +3,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
     createdAt: {
         isEqual?: any;
         toMillis?: any;
-        toJSON?: any;
         seconds: number;
         nanoseconds: number;
         toDate: Function;
@@ -11,7 +10,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
     updatedAt: {
         isEqual?: any;
         toMillis?: any;
-        toJSON?: any;
         seconds: number;
         nanoseconds: number;
         toDate: Function;
@@ -27,7 +25,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -35,7 +32,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
             updatedAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -63,7 +59,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -71,7 +66,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
             updatedAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -87,7 +81,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -95,7 +88,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                 updatedAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -109,7 +101,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -117,7 +108,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                 updatedAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -134,7 +124,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -142,7 +131,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
             updatedAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -159,7 +147,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -167,7 +154,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                 updatedAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -181,7 +167,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -189,7 +174,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                 updatedAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -205,7 +189,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -213,7 +196,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                 updatedAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -226,7 +208,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                         createdAt?: {
                             isEqual?: any;
                             toMillis?: any;
-                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -234,7 +215,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                         updatedAt?: {
                             isEqual?: any;
                             toMillis?: any;
-                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -260,7 +240,7 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                             thumbnailUri?: yup.Maybe<string | undefined>;
                             storagePath: string;
                             uri: string;
-                        } | null | undefined;
+                        } | undefined;
                         backgroundColor?: string | undefined;
                         likesCount?: number | null | undefined;
                         timerSeconds?: yup.Maybe<number | undefined>;
@@ -280,7 +260,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                         createdAt?: {
                             isEqual?: any;
                             toMillis?: any;
-                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -288,7 +267,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                         updatedAt?: {
                             isEqual?: any;
                             toMillis?: any;
-                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -315,7 +293,7 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                             thumbnailUri?: yup.Maybe<string | undefined>;
                             storagePath: string;
                             uri: string;
-                        } | null | undefined;
+                        } | undefined;
                         backgroundColor?: string | undefined;
                         likesCount?: number | null | undefined;
                         timerSeconds?: yup.Maybe<number | undefined>;
@@ -329,7 +307,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                         createdAt?: {
                             isEqual?: any;
                             toMillis?: any;
-                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -337,7 +314,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                         updatedAt?: {
                             isEqual?: any;
                             toMillis?: any;
-                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -363,7 +339,7 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                             thumbnailUri?: yup.Maybe<string | undefined>;
                             storagePath: string;
                             uri: string;
-                        } | null | undefined;
+                        } | undefined;
                         backgroundColor?: string | undefined;
                         likesCount?: number | null | undefined;
                         timerSeconds?: yup.Maybe<number | undefined>;
@@ -375,7 +351,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                         createdAt?: {
                             isEqual?: any;
                             toMillis?: any;
-                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -383,7 +358,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                         updatedAt?: {
                             isEqual?: any;
                             toMillis?: any;
-                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -409,7 +383,7 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                             thumbnailUri?: yup.Maybe<string | undefined>;
                             storagePath: string;
                             uri: string;
-                        } | null | undefined;
+                        } | undefined;
                         backgroundColor?: string | undefined;
                         likesCount?: number | null | undefined;
                         timerSeconds?: yup.Maybe<number | undefined>;
@@ -421,7 +395,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                         createdAt?: {
                             isEqual?: any;
                             toMillis?: any;
-                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -429,7 +402,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                         updatedAt?: {
                             isEqual?: any;
                             toMillis?: any;
-                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -455,7 +427,7 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                             thumbnailUri?: yup.Maybe<string | undefined>;
                             storagePath: string;
                             uri: string;
-                        } | null | undefined;
+                        } | undefined;
                         backgroundColor?: string | undefined;
                         likesCount?: number | null | undefined;
                         timerSeconds?: yup.Maybe<number | undefined>;
@@ -467,7 +439,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                         createdAt?: {
                             isEqual?: any;
                             toMillis?: any;
-                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -475,7 +446,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                         updatedAt?: {
                             isEqual?: any;
                             toMillis?: any;
-                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -501,7 +471,7 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                             thumbnailUri?: yup.Maybe<string | undefined>;
                             storagePath: string;
                             uri: string;
-                        } | null | undefined;
+                        } | undefined;
                         backgroundColor?: string | undefined;
                         likesCount?: number | null | undefined;
                         timerSeconds?: yup.Maybe<number | undefined>;
@@ -512,7 +482,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                             createdAt?: {
                                 isEqual?: any;
                                 toMillis?: any;
-                                toJSON?: any;
                                 seconds: number;
                                 nanoseconds: number;
                                 toDate: Function;
@@ -520,7 +489,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                             updatedAt?: {
                                 isEqual?: any;
                                 toMillis?: any;
-                                toJSON?: any;
                                 seconds: number;
                                 nanoseconds: number;
                                 toDate: Function;
@@ -599,7 +567,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                             createdAt?: {
                                 isEqual?: any;
                                 toMillis?: any;
-                                toJSON?: any;
                                 seconds: number;
                                 nanoseconds: number;
                                 toDate: Function;
@@ -607,7 +574,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                             updatedAt?: {
                                 isEqual?: any;
                                 toMillis?: any;
-                                toJSON?: any;
                                 seconds: number;
                                 nanoseconds: number;
                                 toDate: Function;
@@ -685,7 +651,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                             createdAt?: {
                                 isEqual?: any;
                                 toMillis?: any;
-                                toJSON?: any;
                                 seconds: number;
                                 nanoseconds: number;
                                 toDate: Function;
@@ -693,7 +658,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                             updatedAt?: {
                                 isEqual?: any;
                                 toMillis?: any;
-                                toJSON?: any;
                                 seconds: number;
                                 nanoseconds: number;
                                 toDate: Function;
@@ -772,7 +736,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                             createdAt?: {
                                 isEqual?: any;
                                 toMillis?: any;
-                                toJSON?: any;
                                 seconds: number;
                                 nanoseconds: number;
                                 toDate: Function;
@@ -780,7 +743,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                             updatedAt?: {
                                 isEqual?: any;
                                 toMillis?: any;
-                                toJSON?: any;
                                 seconds: number;
                                 nanoseconds: number;
                                 toDate: Function;
@@ -861,7 +823,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                             createdAt?: {
                                 isEqual?: any;
                                 toMillis?: any;
-                                toJSON?: any;
                                 seconds: number;
                                 nanoseconds: number;
                                 toDate: Function;
@@ -869,7 +830,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                             updatedAt?: {
                                 isEqual?: any;
                                 toMillis?: any;
-                                toJSON?: any;
                                 seconds: number;
                                 nanoseconds: number;
                                 toDate: Function;
@@ -947,7 +907,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                             createdAt?: {
                                 isEqual?: any;
                                 toMillis?: any;
-                                toJSON?: any;
                                 seconds: number;
                                 nanoseconds: number;
                                 toDate: Function;
@@ -955,7 +914,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                             updatedAt?: {
                                 isEqual?: any;
                                 toMillis?: any;
-                                toJSON?: any;
                                 seconds: number;
                                 nanoseconds: number;
                                 toDate: Function;
@@ -1035,7 +993,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                         createdAt?: {
                             isEqual?: any;
                             toMillis?: any;
-                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -1043,7 +1000,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                         updatedAt?: {
                             isEqual?: any;
                             toMillis?: any;
-                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -1069,7 +1025,7 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                             thumbnailUri?: yup.Maybe<string | undefined>;
                             storagePath: string;
                             uri: string;
-                        } | null | undefined;
+                        } | undefined;
                         backgroundColor?: string | undefined;
                         likesCount?: number | null | undefined;
                         timerSeconds?: yup.Maybe<number | undefined>;
@@ -1081,7 +1037,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                         createdAt?: {
                             isEqual?: any;
                             toMillis?: any;
-                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -1089,7 +1044,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                         updatedAt?: {
                             isEqual?: any;
                             toMillis?: any;
-                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -1114,7 +1068,7 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                             thumbnailUri?: yup.Maybe<string | undefined>;
                             storagePath: string;
                             uri: string;
-                        } | null | undefined;
+                        } | undefined;
                         backgroundColor?: string | undefined;
                         likesCount?: number | null | undefined;
                         timerSeconds?: yup.Maybe<number | undefined>;
@@ -1126,7 +1080,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                         createdAt?: {
                             isEqual?: any;
                             toMillis?: any;
-                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -1134,7 +1087,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                         updatedAt?: {
                             isEqual?: any;
                             toMillis?: any;
-                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -1160,7 +1112,7 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                             thumbnailUri?: yup.Maybe<string | undefined>;
                             storagePath: string;
                             uri: string;
-                        } | null | undefined;
+                        } | undefined;
                         backgroundColor?: string | undefined;
                         likesCount?: number | null | undefined;
                         timerSeconds?: yup.Maybe<number | undefined>;
@@ -1183,7 +1135,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -1191,7 +1142,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -1217,7 +1167,7 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                         thumbnailUri?: yup.Maybe<string | undefined>;
                         storagePath: string;
                         uri: string;
-                    } | null | undefined;
+                    } | undefined;
                     backgroundColor?: string | undefined;
                     likesCount?: number | null | undefined;
                     timerSeconds?: yup.Maybe<number | undefined>;
@@ -1237,7 +1187,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -1245,7 +1194,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -1272,7 +1220,7 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                         thumbnailUri?: yup.Maybe<string | undefined>;
                         storagePath: string;
                         uri: string;
-                    } | null | undefined;
+                    } | undefined;
                     backgroundColor?: string | undefined;
                     likesCount?: number | null | undefined;
                     timerSeconds?: yup.Maybe<number | undefined>;
@@ -1286,7 +1234,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -1294,7 +1241,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -1320,7 +1266,7 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                         thumbnailUri?: yup.Maybe<string | undefined>;
                         storagePath: string;
                         uri: string;
-                    } | null | undefined;
+                    } | undefined;
                     backgroundColor?: string | undefined;
                     likesCount?: number | null | undefined;
                     timerSeconds?: yup.Maybe<number | undefined>;
@@ -1332,7 +1278,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -1340,7 +1285,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -1366,7 +1310,7 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                         thumbnailUri?: yup.Maybe<string | undefined>;
                         storagePath: string;
                         uri: string;
-                    } | null | undefined;
+                    } | undefined;
                     backgroundColor?: string | undefined;
                     likesCount?: number | null | undefined;
                     timerSeconds?: yup.Maybe<number | undefined>;
@@ -1378,7 +1322,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -1386,7 +1329,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -1412,7 +1354,7 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                         thumbnailUri?: yup.Maybe<string | undefined>;
                         storagePath: string;
                         uri: string;
-                    } | null | undefined;
+                    } | undefined;
                     backgroundColor?: string | undefined;
                     likesCount?: number | null | undefined;
                     timerSeconds?: yup.Maybe<number | undefined>;
@@ -1424,7 +1366,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -1432,7 +1373,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -1458,7 +1398,7 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                         thumbnailUri?: yup.Maybe<string | undefined>;
                         storagePath: string;
                         uri: string;
-                    } | null | undefined;
+                    } | undefined;
                     backgroundColor?: string | undefined;
                     likesCount?: number | null | undefined;
                     timerSeconds?: yup.Maybe<number | undefined>;
@@ -1469,7 +1409,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                         createdAt?: {
                             isEqual?: any;
                             toMillis?: any;
-                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -1477,7 +1416,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                         updatedAt?: {
                             isEqual?: any;
                             toMillis?: any;
-                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -1556,7 +1494,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                         createdAt?: {
                             isEqual?: any;
                             toMillis?: any;
-                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -1564,7 +1501,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                         updatedAt?: {
                             isEqual?: any;
                             toMillis?: any;
-                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -1642,7 +1578,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                         createdAt?: {
                             isEqual?: any;
                             toMillis?: any;
-                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -1650,7 +1585,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                         updatedAt?: {
                             isEqual?: any;
                             toMillis?: any;
-                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -1729,7 +1663,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                         createdAt?: {
                             isEqual?: any;
                             toMillis?: any;
-                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -1737,7 +1670,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                         updatedAt?: {
                             isEqual?: any;
                             toMillis?: any;
-                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -1818,7 +1750,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                         createdAt?: {
                             isEqual?: any;
                             toMillis?: any;
-                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -1826,7 +1757,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                         updatedAt?: {
                             isEqual?: any;
                             toMillis?: any;
-                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -1904,7 +1834,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                         createdAt?: {
                             isEqual?: any;
                             toMillis?: any;
-                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -1912,7 +1841,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                         updatedAt?: {
                             isEqual?: any;
                             toMillis?: any;
-                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -1992,7 +1920,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -2000,7 +1927,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -2026,7 +1952,7 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                         thumbnailUri?: yup.Maybe<string | undefined>;
                         storagePath: string;
                         uri: string;
-                    } | null | undefined;
+                    } | undefined;
                     backgroundColor?: string | undefined;
                     likesCount?: number | null | undefined;
                     timerSeconds?: yup.Maybe<number | undefined>;
@@ -2038,7 +1964,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -2046,7 +1971,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -2071,7 +1995,7 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                         thumbnailUri?: yup.Maybe<string | undefined>;
                         storagePath: string;
                         uri: string;
-                    } | null | undefined;
+                    } | undefined;
                     backgroundColor?: string | undefined;
                     likesCount?: number | null | undefined;
                     timerSeconds?: yup.Maybe<number | undefined>;
@@ -2083,7 +2007,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -2091,7 +2014,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -2117,7 +2039,7 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                         thumbnailUri?: yup.Maybe<string | undefined>;
                         storagePath: string;
                         uri: string;
-                    } | null | undefined;
+                    } | undefined;
                     backgroundColor?: string | undefined;
                     likesCount?: number | null | undefined;
                     timerSeconds?: yup.Maybe<number | undefined>;

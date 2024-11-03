@@ -4,7 +4,6 @@ export declare const profileSchema: yup.ObjectSchema<{
     createdAt: {
         isEqual?: any;
         toMillis?: any;
-        toJSON?: any;
         seconds: number;
         nanoseconds: number;
         toDate: Function;
@@ -12,7 +11,6 @@ export declare const profileSchema: yup.ObjectSchema<{
     updatedAt: {
         isEqual?: any;
         toMillis?: any;
-        toJSON?: any;
         seconds: number;
         nanoseconds: number;
         toDate: Function;
@@ -20,7 +18,6 @@ export declare const profileSchema: yup.ObjectSchema<{
     lastActiveAt: {
         isEqual?: any;
         toMillis?: any;
-        toJSON?: any;
         seconds: number;
         nanoseconds: number;
         toDate: Function;
@@ -28,7 +25,6 @@ export declare const profileSchema: yup.ObjectSchema<{
     widgetInstalledAt: {
         isEqual?: any;
         toMillis?: any;
-        toJSON?: any;
         seconds: number;
         nanoseconds: number;
         toDate: Function;
@@ -36,13 +32,11 @@ export declare const profileSchema: yup.ObjectSchema<{
     widgetLastPressedAt: {
         isEqual?: any;
         toMillis?: any;
-        toJSON?: any;
         seconds: number;
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
     activeImpulseDoc: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-    activeThreadDoc: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
     currentAppState: AppStateStatus | undefined;
     addToStrategy: boolean | undefined;
     emojiID: string[] | undefined;
@@ -65,7 +59,6 @@ export declare const profileSchema: yup.ObjectSchema<{
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -73,7 +66,6 @@ export declare const profileSchema: yup.ObjectSchema<{
             updatedAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -112,7 +104,6 @@ export declare const profileSchema: yup.ObjectSchema<{
     tourCompletedAt: {
         isEqual?: any;
         toMillis?: any;
-        toJSON?: any;
         seconds: number;
         nanoseconds: number;
         toDate: Function;
@@ -125,7 +116,6 @@ export declare const profileSchema: yup.ObjectSchema<{
     onboardedWithZaraAt: {
         isEqual?: any;
         toMillis?: any;
-        toJSON?: any;
         seconds: number;
         nanoseconds: number;
         toDate: Function;
@@ -138,7 +128,6 @@ export declare const profileSchema: yup.ObjectSchema<{
     widgetInstalledAt: undefined;
     widgetLastPressedAt: undefined;
     activeImpulseDoc: undefined;
-    activeThreadDoc: undefined;
     currentAppState: undefined;
     addToStrategy: undefined;
     emojiID: "";

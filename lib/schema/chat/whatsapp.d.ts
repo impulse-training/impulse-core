@@ -5,7 +5,6 @@ export declare const whatsappChatSchema: yup.ObjectSchema<{
     createdAt: {
         isEqual?: any;
         toMillis?: any;
-        toJSON?: any;
         seconds: number;
         nanoseconds: number;
         toDate: Function;
@@ -13,7 +12,6 @@ export declare const whatsappChatSchema: yup.ObjectSchema<{
     updatedAt: {
         isEqual?: any;
         toMillis?: any;
-        toJSON?: any;
         seconds: number;
         nanoseconds: number;
         toDate: Function;
@@ -21,7 +19,6 @@ export declare const whatsappChatSchema: yup.ObjectSchema<{
     filesUpdatedAt: {
         isEqual?: any;
         toMillis?: any;
-        toJSON?: any;
         seconds: number;
         nanoseconds: number;
         toDate: Function;
@@ -29,7 +26,6 @@ export declare const whatsappChatSchema: yup.ObjectSchema<{
     sessionExpiresAt: {
         isEqual?: any;
         toMillis?: any;
-        toJSON?: any;
         seconds: number;
         nanoseconds: number;
         toDate: Function;
@@ -49,7 +45,6 @@ export declare const whatsappChatSchema: yup.ObjectSchema<{
         nanoseconds: undefined;
         isEqual: undefined;
         toMillis: undefined;
-        toJSON: undefined;
         toDate: undefined;
     };
     strategyDoc: undefined;

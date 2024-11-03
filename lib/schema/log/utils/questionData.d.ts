@@ -10,7 +10,6 @@ export declare const questionDataSchema: yup.ObjectSchema<{
     setAt: {
         isEqual?: any;
         toMillis?: any;
-        toJSON?: any;
         seconds: number;
         nanoseconds: number;
         toDate: Function;
@@ -28,7 +27,6 @@ export declare const questionDataSchema: yup.ObjectSchema<{
         nanoseconds: undefined;
         isEqual: undefined;
         toMillis: undefined;
-        toJSON: undefined;
         toDate: undefined;
     };
 }, "">;

@@ -5,7 +5,6 @@ export declare const makeQuestionFactories: (TimestampKlass: typeof TimestampLik
         createdAt?: {
             isEqual?: any;
             toMillis?: any;
-            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
@@ -13,7 +12,6 @@ export declare const makeQuestionFactories: (TimestampKlass: typeof TimestampLik
         updatedAt?: {
             isEqual?: any;
             toMillis?: any;
-            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
@@ -92,7 +90,6 @@ export declare const makeQuestionFactories: (TimestampKlass: typeof TimestampLik
         createdAt?: {
             isEqual?: any;
             toMillis?: any;
-            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
@@ -100,7 +97,6 @@ export declare const makeQuestionFactories: (TimestampKlass: typeof TimestampLik
         updatedAt?: {
             isEqual?: any;
             toMillis?: any;
-            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
@@ -180,7 +176,6 @@ export declare const makeQuestionFactories: (TimestampKlass: typeof TimestampLik
         createdAt?: {
             isEqual?: any;
             toMillis?: any;
-            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
@@ -188,7 +183,6 @@ export declare const makeQuestionFactories: (TimestampKlass: typeof TimestampLik
         updatedAt?: {
             isEqual?: any;
             toMillis?: any;
-            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;

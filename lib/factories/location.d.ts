@@ -4,7 +4,6 @@ export declare const makeLocationFactory: (TimestampKlass: typeof TimestampLike)
     createdAt?: {
         isEqual?: any;
         toMillis?: any;
-        toJSON?: any;
         seconds: number;
         nanoseconds: number;
         toDate: Function;
@@ -12,7 +11,6 @@ export declare const makeLocationFactory: (TimestampKlass: typeof TimestampLike)
     updatedAt?: {
         isEqual?: any;
         toMillis?: any;
-        toJSON?: any;
         seconds: number;
         nanoseconds: number;
         toDate: Function;

@@ -2,7 +2,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
     createdAt?: {
         isEqual?: any;
         toMillis?: any;
-        toJSON?: any;
         seconds: number;
         nanoseconds: number;
         toDate: Function;
@@ -10,7 +9,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
     updatedAt?: {
         isEqual?: any;
         toMillis?: any;
-        toJSON?: any;
         seconds: number;
         nanoseconds: number;
         toDate: Function;
@@ -19,7 +17,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
     submittedAt?: {
         isEqual?: any;
         toMillis?: any;
-        toJSON?: any;
         seconds: number;
         nanoseconds: number;
         toDate: Function;
@@ -42,7 +39,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -50,7 +46,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             updatedAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -129,7 +124,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -137,7 +131,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             updatedAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -215,7 +208,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -223,7 +215,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             updatedAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -302,7 +293,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -310,7 +300,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             updatedAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -391,7 +380,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -399,7 +387,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             updatedAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -477,7 +464,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -485,7 +471,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             updatedAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -572,7 +557,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             setAt: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -588,7 +572,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         createdAt?: {
             isEqual?: any;
             toMillis?: any;
-            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
@@ -596,7 +579,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         updatedAt?: {
             isEqual?: any;
             toMillis?: any;
-            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
@@ -622,7 +604,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             thumbnailUri?: import("yup").Maybe<string | undefined>;
             storagePath: string;
             uri: string;
-        } | null | undefined;
+        } | undefined;
         backgroundColor?: string | undefined;
         likesCount?: number | null | undefined;
         timerSeconds?: import("yup").Maybe<number | undefined>;
@@ -642,7 +624,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         createdAt?: {
             isEqual?: any;
             toMillis?: any;
-            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
@@ -650,7 +631,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         updatedAt?: {
             isEqual?: any;
             toMillis?: any;
-            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
@@ -677,7 +657,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             thumbnailUri?: import("yup").Maybe<string | undefined>;
             storagePath: string;
             uri: string;
-        } | null | undefined;
+        } | undefined;
         backgroundColor?: string | undefined;
         likesCount?: number | null | undefined;
         timerSeconds?: import("yup").Maybe<number | undefined>;
@@ -691,7 +671,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         createdAt?: {
             isEqual?: any;
             toMillis?: any;
-            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
@@ -699,7 +678,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         updatedAt?: {
             isEqual?: any;
             toMillis?: any;
-            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
@@ -725,7 +703,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             thumbnailUri?: import("yup").Maybe<string | undefined>;
             storagePath: string;
             uri: string;
-        } | null | undefined;
+        } | undefined;
         backgroundColor?: string | undefined;
         likesCount?: number | null | undefined;
         timerSeconds?: import("yup").Maybe<number | undefined>;
@@ -737,7 +715,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         createdAt?: {
             isEqual?: any;
             toMillis?: any;
-            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
@@ -745,7 +722,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         updatedAt?: {
             isEqual?: any;
             toMillis?: any;
-            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
@@ -771,7 +747,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             thumbnailUri?: import("yup").Maybe<string | undefined>;
             storagePath: string;
             uri: string;
-        } | null | undefined;
+        } | undefined;
         backgroundColor?: string | undefined;
         likesCount?: number | null | undefined;
         timerSeconds?: import("yup").Maybe<number | undefined>;
@@ -783,7 +759,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         createdAt?: {
             isEqual?: any;
             toMillis?: any;
-            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
@@ -791,7 +766,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         updatedAt?: {
             isEqual?: any;
             toMillis?: any;
-            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
@@ -817,7 +791,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             thumbnailUri?: import("yup").Maybe<string | undefined>;
             storagePath: string;
             uri: string;
-        } | null | undefined;
+        } | undefined;
         backgroundColor?: string | undefined;
         likesCount?: number | null | undefined;
         timerSeconds?: import("yup").Maybe<number | undefined>;
@@ -829,7 +803,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         createdAt?: {
             isEqual?: any;
             toMillis?: any;
-            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
@@ -837,7 +810,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         updatedAt?: {
             isEqual?: any;
             toMillis?: any;
-            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
@@ -863,7 +835,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             thumbnailUri?: import("yup").Maybe<string | undefined>;
             storagePath: string;
             uri: string;
-        } | null | undefined;
+        } | undefined;
         backgroundColor?: string | undefined;
         likesCount?: number | null | undefined;
         timerSeconds?: import("yup").Maybe<number | undefined>;
@@ -874,7 +846,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -882,7 +853,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             updatedAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -961,7 +931,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -969,7 +938,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             updatedAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -1047,7 +1015,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -1055,7 +1022,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             updatedAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -1134,7 +1100,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -1142,7 +1107,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             updatedAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -1223,7 +1187,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -1231,7 +1194,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             updatedAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -1309,7 +1271,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -1317,7 +1278,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             updatedAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -1397,7 +1357,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         createdAt?: {
             isEqual?: any;
             toMillis?: any;
-            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
@@ -1405,7 +1364,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         updatedAt?: {
             isEqual?: any;
             toMillis?: any;
-            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
@@ -1431,7 +1389,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             thumbnailUri?: import("yup").Maybe<string | undefined>;
             storagePath: string;
             uri: string;
-        } | null | undefined;
+        } | undefined;
         backgroundColor?: string | undefined;
         likesCount?: number | null | undefined;
         timerSeconds?: import("yup").Maybe<number | undefined>;
@@ -1443,7 +1401,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         createdAt?: {
             isEqual?: any;
             toMillis?: any;
-            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
@@ -1451,7 +1408,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         updatedAt?: {
             isEqual?: any;
             toMillis?: any;
-            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
@@ -1476,7 +1432,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             thumbnailUri?: import("yup").Maybe<string | undefined>;
             storagePath: string;
             uri: string;
-        } | null | undefined;
+        } | undefined;
         backgroundColor?: string | undefined;
         likesCount?: number | null | undefined;
         timerSeconds?: import("yup").Maybe<number | undefined>;
@@ -1488,7 +1444,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         createdAt?: {
             isEqual?: any;
             toMillis?: any;
-            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
@@ -1496,7 +1451,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         updatedAt?: {
             isEqual?: any;
             toMillis?: any;
-            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
@@ -1522,7 +1476,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             thumbnailUri?: import("yup").Maybe<string | undefined>;
             storagePath: string;
             uri: string;
-        } | null | undefined;
+        } | undefined;
         backgroundColor?: string | undefined;
         likesCount?: number | null | undefined;
         timerSeconds?: import("yup").Maybe<number | undefined>;
@@ -1547,7 +1501,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -1555,7 +1508,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             updatedAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -1581,7 +1533,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                 thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
-            } | null | undefined;
+            } | undefined;
             backgroundColor?: string | undefined;
             likesCount?: number | null | undefined;
             timerSeconds?: import("yup").Maybe<number | undefined>;
@@ -1601,7 +1553,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -1609,7 +1560,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             updatedAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -1636,7 +1586,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                 thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
-            } | null | undefined;
+            } | undefined;
             backgroundColor?: string | undefined;
             likesCount?: number | null | undefined;
             timerSeconds?: import("yup").Maybe<number | undefined>;
@@ -1650,7 +1600,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -1658,7 +1607,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             updatedAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -1684,7 +1632,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                 thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
-            } | null | undefined;
+            } | undefined;
             backgroundColor?: string | undefined;
             likesCount?: number | null | undefined;
             timerSeconds?: import("yup").Maybe<number | undefined>;
@@ -1696,7 +1644,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -1704,7 +1651,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             updatedAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -1730,7 +1676,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                 thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
-            } | null | undefined;
+            } | undefined;
             backgroundColor?: string | undefined;
             likesCount?: number | null | undefined;
             timerSeconds?: import("yup").Maybe<number | undefined>;
@@ -1742,7 +1688,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -1750,7 +1695,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             updatedAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -1776,7 +1720,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                 thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
-            } | null | undefined;
+            } | undefined;
             backgroundColor?: string | undefined;
             likesCount?: number | null | undefined;
             timerSeconds?: import("yup").Maybe<number | undefined>;
@@ -1788,7 +1732,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -1796,7 +1739,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             updatedAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -1822,7 +1764,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                 thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
-            } | null | undefined;
+            } | undefined;
             backgroundColor?: string | undefined;
             likesCount?: number | null | undefined;
             timerSeconds?: import("yup").Maybe<number | undefined>;
@@ -1833,7 +1775,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -1841,7 +1782,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                 updatedAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -1920,7 +1860,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -1928,7 +1867,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                 updatedAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -2006,7 +1944,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -2014,7 +1951,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                 updatedAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -2093,7 +2029,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -2101,7 +2036,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                 updatedAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -2182,7 +2116,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -2190,7 +2123,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                 updatedAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -2268,7 +2200,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -2276,7 +2207,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                 updatedAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -2356,7 +2286,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -2364,7 +2293,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             updatedAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -2390,7 +2318,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                 thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
-            } | null | undefined;
+            } | undefined;
             backgroundColor?: string | undefined;
             likesCount?: number | null | undefined;
             timerSeconds?: import("yup").Maybe<number | undefined>;
@@ -2402,7 +2330,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -2410,7 +2337,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             updatedAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -2435,7 +2361,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                 thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
-            } | null | undefined;
+            } | undefined;
             backgroundColor?: string | undefined;
             likesCount?: number | null | undefined;
             timerSeconds?: import("yup").Maybe<number | undefined>;
@@ -2447,7 +2373,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -2455,7 +2380,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             updatedAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -2481,7 +2405,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                 thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
-            } | null | undefined;
+            } | undefined;
             backgroundColor?: string | undefined;
             likesCount?: number | null | undefined;
             timerSeconds?: import("yup").Maybe<number | undefined>;
@@ -2498,7 +2422,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
     date: {
         isEqual?: any;
         toMillis?: any;
-        toJSON?: any;
         seconds: number;
         nanoseconds: number;
         toDate: Function;
@@ -2508,7 +2431,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
     createdAt?: {
         isEqual?: any;
         toMillis?: any;
-        toJSON?: any;
         seconds: number;
         nanoseconds: number;
         toDate: Function;
@@ -2516,7 +2438,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
     updatedAt?: {
         isEqual?: any;
         toMillis?: any;
-        toJSON?: any;
         seconds: number;
         nanoseconds: number;
         toDate: Function;
@@ -2530,7 +2451,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -2538,7 +2458,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             updatedAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -2564,7 +2483,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
     lastActiveAt?: {
         isEqual?: any;
         toMillis?: any;
-        toJSON?: any;
         seconds: number;
         nanoseconds: number;
         toDate: Function;
@@ -2572,7 +2490,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
     widgetInstalledAt?: {
         isEqual?: any;
         toMillis?: any;
-        toJSON?: any;
         seconds: number;
         nanoseconds: number;
         toDate: Function;
@@ -2580,17 +2497,14 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
     widgetLastPressedAt?: {
         isEqual?: any;
         toMillis?: any;
-        toJSON?: any;
         seconds: number;
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
     activeImpulseDoc?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
-    activeThreadDoc?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
     tourCompletedAt?: {
         isEqual?: any;
         toMillis?: any;
-        toJSON?: any;
         seconds: number;
         nanoseconds: number;
         toDate: Function;
@@ -2600,7 +2514,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
     onboardedWithZaraAt?: {
         isEqual?: any;
         toMillis?: any;
-        toJSON?: any;
         seconds: number;
         nanoseconds: number;
         toDate: Function;
@@ -2635,4 +2548,4 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
     } | null;
     signUpIssueId: string | null;
     timezone: string;
-}, "uids" | "verificationCode" | "dayReviewTime" | "signUpIssueId" | "timezone" | ("createdAt" | "updatedAt" | "setbackThreshold" | "parentIds" | "blandPathwayId" | "issuesById" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseDoc" | "activeThreadDoc" | "tourCompletedAt" | "scheduledNotificationIds" | "whatsappStrategyDoc" | "onboardedWithZaraAt" | "currentAppState" | "addToStrategy" | "emojiID" | "expoPushToken" | "notificationPreferences" | "questionOfTheDayAnsweredQuestions" | "signUpIssueName" | "isReadyForTour" | "isOnboardingComplete" | "sendDebriefRemindersAfterMinutes" | "gameplanStrategies" | "androidPermissions" | "impulseContext" | "isTourDismissed" | "region" | "enableZara")>, tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "type" | "uid" | "setbackThreshold" | "recommendedForIssueIds" | "prompt" | "ordinal" | "sourceFile" | "sharedWithIssueIds" | "recommendedForIssueOrdinals" | "isShared" | "description" | "pastTenseTitle" | "debriefAfterMinutes" | "image" | "backgroundColor" | "likesCount" | "timerSeconds" | "isSuggested">;
+}, "uids" | "verificationCode" | "dayReviewTime" | "signUpIssueId" | "timezone" | ("createdAt" | "updatedAt" | "setbackThreshold" | "parentIds" | "blandPathwayId" | "issuesById" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseDoc" | "tourCompletedAt" | "scheduledNotificationIds" | "whatsappStrategyDoc" | "onboardedWithZaraAt" | "currentAppState" | "addToStrategy" | "emojiID" | "expoPushToken" | "notificationPreferences" | "questionOfTheDayAnsweredQuestions" | "signUpIssueName" | "isReadyForTour" | "isOnboardingComplete" | "sendDebriefRemindersAfterMinutes" | "gameplanStrategies" | "androidPermissions" | "impulseContext" | "isTourDismissed" | "region" | "enableZara")>, tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "type" | "uid" | "setbackThreshold" | "recommendedForIssueIds" | "prompt" | "ordinal" | "sourceFile" | "sharedWithIssueIds" | "recommendedForIssueOrdinals" | "isShared" | "description" | "pastTenseTitle" | "debriefAfterMinutes" | "image" | "backgroundColor" | "likesCount" | "timerSeconds" | "isSuggested">;

@@ -25,7 +25,7 @@ export function tacticValueBaseSchema<K extends string>(type: K) {
     updatedAt: optionalTimestampSchema,
     pastTenseTitle: yup.string(),
     debriefAfterMinutes: yup.number().nullable(),
-    image: fileSchema.optional().nullable(),
+    image: fileSchema.optional().default(undefined),
     backgroundColor: yup.string(),
     setbackThreshold: yup.number().nullable(),
     likesCount: yup.number().nullable(),

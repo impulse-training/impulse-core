@@ -6,7 +6,6 @@ export declare const chatSchema: yup.Lazy<{
     createdAt?: {
         isEqual?: any;
         toMillis?: any;
-        toJSON?: any;
         seconds: number;
         nanoseconds: number;
         toDate: Function;
@@ -14,7 +13,6 @@ export declare const chatSchema: yup.Lazy<{
     updatedAt?: {
         isEqual?: any;
         toMillis?: any;
-        toJSON?: any;
         seconds: number;
         nanoseconds: number;
         toDate: Function;
@@ -22,7 +20,6 @@ export declare const chatSchema: yup.Lazy<{
     filesUpdatedAt?: {
         isEqual?: any;
         toMillis?: any;
-        toJSON?: any;
         seconds: number;
         nanoseconds: number;
         toDate: Function;
@@ -34,7 +31,6 @@ export declare const chatSchema: yup.Lazy<{
     sessionExpiresAt: {
         isEqual?: any;
         toMillis?: any;
-        toJSON?: any;
         seconds: number;
         nanoseconds: number;
         toDate: Function;

@@ -19,7 +19,6 @@ export declare const dayReviewTacticSchema: yup.ObjectSchema<{
     createdAt: {
         isEqual?: any;
         toMillis?: any;
-        toJSON?: any;
         seconds: number;
         nanoseconds: number;
         toDate: Function;
@@ -27,7 +26,6 @@ export declare const dayReviewTacticSchema: yup.ObjectSchema<{
     updatedAt: {
         isEqual?: any;
         toMillis?: any;
-        toJSON?: any;
         seconds: number;
         nanoseconds: number;
         toDate: Function;
@@ -42,7 +40,7 @@ export declare const dayReviewTacticSchema: yup.ObjectSchema<{
         thumbnailUri?: yup.Maybe<string | undefined>;
         storagePath: string;
         uri: string;
-    } | null | undefined;
+    } | undefined;
     backgroundColor: string | undefined;
     setbackThreshold: number | null | undefined;
     likesCount: number | null | undefined;
@@ -64,15 +62,7 @@ export declare const dayReviewTacticSchema: yup.ObjectSchema<{
     updatedAt: undefined;
     pastTenseTitle: undefined;
     debriefAfterMinutes: undefined;
-    image: {
-        storagePath: undefined;
-        uri: undefined;
-        localFilePath: undefined;
-        isDeleted: undefined;
-        waveForm: undefined;
-        thumbnailStoragePath: undefined;
-        thumbnailUri: undefined;
-    };
+    image: undefined;
     backgroundColor: undefined;
     setbackThreshold: undefined;
     likesCount: undefined;

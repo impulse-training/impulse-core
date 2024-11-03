@@ -112,7 +112,6 @@ export declare function questionBaseSchema<T extends string>(type: T): yup.Objec
     createdAt: {
         isEqual?: any;
         toMillis?: any;
-        toJSON?: any;
         seconds: number;
         nanoseconds: number;
         toDate: Function;
@@ -120,7 +119,6 @@ export declare function questionBaseSchema<T extends string>(type: T): yup.Objec
     updatedAt: {
         isEqual?: any;
         toMillis?: any;
-        toJSON?: any;
         seconds: number;
         nanoseconds: number;
         toDate: Function;

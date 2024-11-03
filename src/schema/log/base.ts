@@ -14,7 +14,7 @@ export function logBaseSchema<K extends string>(type: K) {
     updatedAt: optionalTimestampSchema,
     uid: yup.string().required(),
 
-    audioFile: fileSchema.optional(),
+    audioFile: fileSchema.optional().default(undefined),
     audioDurationSeconds: yup.number(),
     audioWaveform: yup.string(),
 

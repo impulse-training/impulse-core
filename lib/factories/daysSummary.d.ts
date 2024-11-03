@@ -11,7 +11,6 @@ export declare const makeDaysSummaryFactory: (TimestampKlass: typeof TimestampLi
             setAt: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;

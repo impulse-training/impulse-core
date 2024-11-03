@@ -10,7 +10,6 @@ export declare const daysSummarySchema: yup.Lazy<{
             setAt: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;

@@ -5,7 +5,6 @@ export declare const makeIssueFactory: (TimestampKlass: typeof TimestampLike) =>
     createdAt?: {
         isEqual?: any;
         toMillis?: any;
-        toJSON?: any;
         seconds: number;
         nanoseconds: number;
         toDate: Function;
@@ -13,7 +12,6 @@ export declare const makeIssueFactory: (TimestampKlass: typeof TimestampLike) =>
     updatedAt?: {
         isEqual?: any;
         toMillis?: any;
-        toJSON?: any;
         seconds: number;
         nanoseconds: number;
         toDate: Function;

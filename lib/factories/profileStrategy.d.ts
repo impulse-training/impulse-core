@@ -4,7 +4,6 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
     createdAt?: {
         isEqual?: any;
         toMillis?: any;
-        toJSON?: any;
         seconds: number;
         nanoseconds: number;
         toDate: Function;
@@ -12,7 +11,6 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
     updatedAt?: {
         isEqual?: any;
         toMillis?: any;
-        toJSON?: any;
         seconds: number;
         nanoseconds: number;
         toDate: Function;
@@ -29,7 +27,6 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
         createdAt?: {
             isEqual?: any;
             toMillis?: any;
-            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
@@ -37,7 +34,6 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
         updatedAt?: {
             isEqual?: any;
             toMillis?: any;
-            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
@@ -51,7 +47,6 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
         createdAt?: {
             isEqual?: any;
             toMillis?: any;
-            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
@@ -59,7 +54,6 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
         updatedAt?: {
             isEqual?: any;
             toMillis?: any;
-            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
@@ -75,7 +69,6 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
         createdAt?: {
             isEqual?: any;
             toMillis?: any;
-            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
@@ -83,7 +76,6 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
         updatedAt?: {
             isEqual?: any;
             toMillis?: any;
-            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
@@ -96,7 +88,6 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -104,7 +95,6 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                 updatedAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -130,7 +120,7 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                     thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
-                } | null | undefined;
+                } | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
                 timerSeconds?: import("yup").Maybe<number | undefined>;
@@ -150,7 +140,6 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -158,7 +147,6 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                 updatedAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -185,7 +173,7 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                     thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
-                } | null | undefined;
+                } | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
                 timerSeconds?: import("yup").Maybe<number | undefined>;
@@ -199,7 +187,6 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -207,7 +194,6 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                 updatedAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -233,7 +219,7 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                     thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
-                } | null | undefined;
+                } | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
                 timerSeconds?: import("yup").Maybe<number | undefined>;
@@ -245,7 +231,6 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -253,7 +238,6 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                 updatedAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -279,7 +263,7 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                     thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
-                } | null | undefined;
+                } | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
                 timerSeconds?: import("yup").Maybe<number | undefined>;
@@ -291,7 +275,6 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -299,7 +282,6 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                 updatedAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -325,7 +307,7 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                     thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
-                } | null | undefined;
+                } | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
                 timerSeconds?: import("yup").Maybe<number | undefined>;
@@ -337,7 +319,6 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -345,7 +326,6 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                 updatedAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -371,7 +351,7 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                     thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
-                } | null | undefined;
+                } | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
                 timerSeconds?: import("yup").Maybe<number | undefined>;
@@ -382,7 +362,6 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -390,7 +369,6 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -469,7 +447,6 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -477,7 +454,6 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -555,7 +531,6 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -563,7 +538,6 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -642,7 +616,6 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -650,7 +623,6 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -731,7 +703,6 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -739,7 +710,6 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -817,7 +787,6 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -825,7 +794,6 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                     updatedAt?: {
                         isEqual?: any;
                         toMillis?: any;
-                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -905,7 +873,6 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -913,7 +880,6 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                 updatedAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -939,7 +905,7 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                     thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
-                } | null | undefined;
+                } | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
                 timerSeconds?: import("yup").Maybe<number | undefined>;
@@ -951,7 +917,6 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -959,7 +924,6 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                 updatedAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -984,7 +948,7 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                     thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
-                } | null | undefined;
+                } | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
                 timerSeconds?: import("yup").Maybe<number | undefined>;
@@ -996,7 +960,6 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -1004,7 +967,6 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                 updatedAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -1030,7 +992,7 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                     thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
-                } | null | undefined;
+                } | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
                 timerSeconds?: import("yup").Maybe<number | undefined>;
@@ -1053,7 +1015,6 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -1061,7 +1022,6 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
             updatedAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -1087,7 +1047,7 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                 thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
-            } | null | undefined;
+            } | undefined;
             backgroundColor?: string | undefined;
             likesCount?: number | null | undefined;
             timerSeconds?: import("yup").Maybe<number | undefined>;
@@ -1107,7 +1067,6 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -1115,7 +1074,6 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
             updatedAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -1142,7 +1100,7 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                 thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
-            } | null | undefined;
+            } | undefined;
             backgroundColor?: string | undefined;
             likesCount?: number | null | undefined;
             timerSeconds?: import("yup").Maybe<number | undefined>;
@@ -1156,7 +1114,6 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -1164,7 +1121,6 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
             updatedAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -1190,7 +1146,7 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                 thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
-            } | null | undefined;
+            } | undefined;
             backgroundColor?: string | undefined;
             likesCount?: number | null | undefined;
             timerSeconds?: import("yup").Maybe<number | undefined>;
@@ -1202,7 +1158,6 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -1210,7 +1165,6 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
             updatedAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -1236,7 +1190,7 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                 thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
-            } | null | undefined;
+            } | undefined;
             backgroundColor?: string | undefined;
             likesCount?: number | null | undefined;
             timerSeconds?: import("yup").Maybe<number | undefined>;
@@ -1248,7 +1202,6 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -1256,7 +1209,6 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
             updatedAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -1282,7 +1234,7 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                 thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
-            } | null | undefined;
+            } | undefined;
             backgroundColor?: string | undefined;
             likesCount?: number | null | undefined;
             timerSeconds?: import("yup").Maybe<number | undefined>;
@@ -1294,7 +1246,6 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -1302,7 +1253,6 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
             updatedAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -1328,7 +1278,7 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                 thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
-            } | null | undefined;
+            } | undefined;
             backgroundColor?: string | undefined;
             likesCount?: number | null | undefined;
             timerSeconds?: import("yup").Maybe<number | undefined>;
@@ -1339,7 +1289,6 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -1347,7 +1296,6 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                 updatedAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -1426,7 +1374,6 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -1434,7 +1381,6 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                 updatedAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -1512,7 +1458,6 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -1520,7 +1465,6 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                 updatedAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -1599,7 +1543,6 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -1607,7 +1550,6 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                 updatedAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -1688,7 +1630,6 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -1696,7 +1637,6 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                 updatedAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -1774,7 +1714,6 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -1782,7 +1721,6 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                 updatedAt?: {
                     isEqual?: any;
                     toMillis?: any;
-                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -1862,7 +1800,6 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -1870,7 +1807,6 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
             updatedAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -1896,7 +1832,7 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                 thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
-            } | null | undefined;
+            } | undefined;
             backgroundColor?: string | undefined;
             likesCount?: number | null | undefined;
             timerSeconds?: import("yup").Maybe<number | undefined>;
@@ -1908,7 +1844,6 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -1916,7 +1851,6 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
             updatedAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -1941,7 +1875,7 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                 thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
-            } | null | undefined;
+            } | undefined;
             backgroundColor?: string | undefined;
             likesCount?: number | null | undefined;
             timerSeconds?: import("yup").Maybe<number | undefined>;
@@ -1953,7 +1887,6 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -1961,7 +1894,6 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
             updatedAt?: {
                 isEqual?: any;
                 toMillis?: any;
-                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -1987,7 +1919,7 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                 thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
-            } | null | undefined;
+            } | undefined;
             backgroundColor?: string | undefined;
             likesCount?: number | null | undefined;
             timerSeconds?: import("yup").Maybe<number | undefined>;

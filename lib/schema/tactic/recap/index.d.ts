@@ -8,7 +8,6 @@ export declare const recapTacticSchema: yup.Lazy<{
     createdAt?: {
         isEqual?: any;
         toMillis?: any;
-        toJSON?: any;
         seconds: number;
         nanoseconds: number;
         toDate: Function;
@@ -16,7 +15,6 @@ export declare const recapTacticSchema: yup.Lazy<{
     updatedAt?: {
         isEqual?: any;
         toMillis?: any;
-        toJSON?: any;
         seconds: number;
         nanoseconds: number;
         toDate: Function;
@@ -42,7 +40,7 @@ export declare const recapTacticSchema: yup.Lazy<{
         thumbnailUri?: yup.Maybe<string | undefined>;
         storagePath: string;
         uri: string;
-    } | null | undefined;
+    } | undefined;
     backgroundColor?: string | undefined;
     likesCount?: number | null | undefined;
     timerSeconds?: yup.Maybe<number | undefined>;

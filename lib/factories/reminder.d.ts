@@ -4,7 +4,6 @@ export declare const makeTimeReminderFactory: (TimestampKlass: typeof TimestampL
     createdAt?: {
         isEqual?: any;
         toMillis?: any;
-        toJSON?: any;
         seconds: number;
         nanoseconds: number;
         toDate: Function;
@@ -12,7 +11,6 @@ export declare const makeTimeReminderFactory: (TimestampKlass: typeof TimestampL
     updatedAt?: {
         isEqual?: any;
         toMillis?: any;
-        toJSON?: any;
         seconds: number;
         nanoseconds: number;
         toDate: Function;

@@ -5,7 +5,6 @@ export declare function chatBaseSchema<K extends string>(type: K): yup.ObjectSch
     createdAt: {
         isEqual?: any;
         toMillis?: any;
-        toJSON?: any;
         seconds: number;
         nanoseconds: number;
         toDate: Function;
@@ -13,7 +12,6 @@ export declare function chatBaseSchema<K extends string>(type: K): yup.ObjectSch
     updatedAt: {
         isEqual?: any;
         toMillis?: any;
-        toJSON?: any;
         seconds: number;
         nanoseconds: number;
         toDate: Function;
@@ -21,7 +19,6 @@ export declare function chatBaseSchema<K extends string>(type: K): yup.ObjectSch
     filesUpdatedAt: {
         isEqual?: any;
         toMillis?: any;
-        toJSON?: any;
         seconds: number;
         nanoseconds: number;
         toDate: Function;
