@@ -7,6 +7,7 @@ export interface DocumentReferenceLike<T> {
     collection: (collectionPath: string) => any;
     parent: any;
     update(...args: any): Promise<any>;
+    delete(): Promise<any>;
 }
 export declare const documentReferenceSchema: yup.MixedSchema<DocumentReferenceLike<unknown> | undefined, yup.AnyObject, undefined, "">;
 export declare const collectionReferenceSchema: yup.MixedSchema<{} | undefined, yup.AnyObject, undefined, "">;

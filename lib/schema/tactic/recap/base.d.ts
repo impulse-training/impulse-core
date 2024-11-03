@@ -32,6 +32,7 @@ export declare function recapTacticValueBaseSchema(type: RecapKeyType): import("
     debriefAfterMinutes: number | null | undefined;
     image: {
         localFilePath?: import("yup").Maybe<string | undefined>;
+        isDeleted?: boolean | undefined;
         waveForm?: import("yup").Maybe<string | undefined>;
         thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
         thumbnailUri?: import("yup").Maybe<string | undefined>;
@@ -62,6 +63,7 @@ export declare function recapTacticValueBaseSchema(type: RecapKeyType): import("
         storagePath: undefined;
         uri: undefined;
         localFilePath: undefined;
+        isDeleted: undefined;
         waveForm: undefined;
         thumbnailStoragePath: undefined;
         thumbnailUri: undefined;

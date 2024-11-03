@@ -19,6 +19,7 @@ export declare const messageSchema: yup.ObjectSchema<{
     content: string | null;
     senderProfileId: string | undefined;
     files: (import("./utils/firestore").DocumentReferenceLike<unknown> | undefined)[] | undefined;
+    filesDeleted: boolean | undefined;
     externalId: string | undefined;
     role: NonNullable<"user" | "assistant" | "system" | "tool" | undefined>;
 }, yup.AnyObject, {
@@ -27,6 +28,7 @@ export declare const messageSchema: yup.ObjectSchema<{
     content: undefined;
     senderProfileId: undefined;
     files: "";
+    filesDeleted: undefined;
     externalId: undefined;
     role: undefined;
 }, "">;

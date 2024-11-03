@@ -17,6 +17,7 @@ export interface DocumentReferenceLike<T> {
   collection: (collectionPath: string) => any; // any for now
   parent: any;
   update(...args: any): Promise<any>;
+  delete(): Promise<any>;
 }
 
 export const documentReferenceSchema = yup

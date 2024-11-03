@@ -8,6 +8,7 @@ export const messageSchema = yup.object({
   content: yup.string().nullable().defined(),
   senderProfileId: yup.string(),
   files: yup.array().of(documentReferenceSchema),
+  filesDeleted: yup.boolean(),
   externalId: yup.string(),
   role: yup
     .mixed<'user' | 'assistant' | 'system' | 'tool'>()

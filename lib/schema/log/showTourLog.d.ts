@@ -31,6 +31,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
     uid: string;
     audioFile: {
         localFilePath?: yup.Maybe<string | undefined>;
+        isDeleted?: boolean | undefined;
         waveForm?: yup.Maybe<string | undefined>;
         thumbnailStoragePath?: yup.Maybe<string | undefined>;
         thumbnailUri?: yup.Maybe<string | undefined>;
@@ -75,6 +76,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             debriefAfterMinutes?: number | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
+                isDeleted?: boolean | undefined;
                 waveForm?: yup.Maybe<string | undefined>;
                 thumbnailStoragePath?: yup.Maybe<string | undefined>;
                 thumbnailUri?: yup.Maybe<string | undefined>;
@@ -89,6 +91,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             ordinal: number;
             recording: {
                 localFilePath?: yup.Maybe<string | undefined>;
+                isDeleted?: boolean | undefined;
                 waveForm?: yup.Maybe<string | undefined>;
                 thumbnailStoragePath?: yup.Maybe<string | undefined>;
                 thumbnailUri?: yup.Maybe<string | undefined>;
@@ -128,6 +131,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             debriefAfterMinutes?: number | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
+                isDeleted?: boolean | undefined;
                 waveForm?: yup.Maybe<string | undefined>;
                 thumbnailStoragePath?: yup.Maybe<string | undefined>;
                 thumbnailUri?: yup.Maybe<string | undefined>;
@@ -175,6 +179,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             debriefAfterMinutes?: number | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
+                isDeleted?: boolean | undefined;
                 waveForm?: yup.Maybe<string | undefined>;
                 thumbnailStoragePath?: yup.Maybe<string | undefined>;
                 thumbnailUri?: yup.Maybe<string | undefined>;
@@ -220,6 +225,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             debriefAfterMinutes?: number | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
+                isDeleted?: boolean | undefined;
                 waveForm?: yup.Maybe<string | undefined>;
                 thumbnailStoragePath?: yup.Maybe<string | undefined>;
                 thumbnailUri?: yup.Maybe<string | undefined>;
@@ -265,6 +271,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             debriefAfterMinutes?: number | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
+                isDeleted?: boolean | undefined;
                 waveForm?: yup.Maybe<string | undefined>;
                 thumbnailStoragePath?: yup.Maybe<string | undefined>;
                 thumbnailUri?: yup.Maybe<string | undefined>;
@@ -310,6 +317,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             debriefAfterMinutes?: number | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
+                isDeleted?: boolean | undefined;
                 waveForm?: yup.Maybe<string | undefined>;
                 thumbnailStoragePath?: yup.Maybe<string | undefined>;
                 thumbnailUri?: yup.Maybe<string | undefined>;
@@ -877,6 +885,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             debriefAfterMinutes?: number | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
+                isDeleted?: boolean | undefined;
                 waveForm?: yup.Maybe<string | undefined>;
                 thumbnailStoragePath?: yup.Maybe<string | undefined>;
                 thumbnailUri?: yup.Maybe<string | undefined>;
@@ -921,6 +930,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             debriefAfterMinutes?: number | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
+                isDeleted?: boolean | undefined;
                 waveForm?: yup.Maybe<string | undefined>;
                 thumbnailStoragePath?: yup.Maybe<string | undefined>;
                 thumbnailUri?: yup.Maybe<string | undefined>;
@@ -966,6 +976,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             debriefAfterMinutes?: number | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
+                isDeleted?: boolean | undefined;
                 waveForm?: yup.Maybe<string | undefined>;
                 thumbnailStoragePath?: yup.Maybe<string | undefined>;
                 thumbnailUri?: yup.Maybe<string | undefined>;
@@ -1581,6 +1592,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
         debriefAfterMinutes?: number | null | undefined;
         image?: {
             localFilePath?: yup.Maybe<string | undefined>;
+            isDeleted?: boolean | undefined;
             waveForm?: yup.Maybe<string | undefined>;
             thumbnailStoragePath?: yup.Maybe<string | undefined>;
             thumbnailUri?: yup.Maybe<string | undefined>;
@@ -1595,6 +1607,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
         ordinal: number;
         recording: {
             localFilePath?: yup.Maybe<string | undefined>;
+            isDeleted?: boolean | undefined;
             waveForm?: yup.Maybe<string | undefined>;
             thumbnailStoragePath?: yup.Maybe<string | undefined>;
             thumbnailUri?: yup.Maybe<string | undefined>;
@@ -1634,6 +1647,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
         debriefAfterMinutes?: number | null | undefined;
         image?: {
             localFilePath?: yup.Maybe<string | undefined>;
+            isDeleted?: boolean | undefined;
             waveForm?: yup.Maybe<string | undefined>;
             thumbnailStoragePath?: yup.Maybe<string | undefined>;
             thumbnailUri?: yup.Maybe<string | undefined>;
@@ -1681,6 +1695,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
         debriefAfterMinutes?: number | null | undefined;
         image?: {
             localFilePath?: yup.Maybe<string | undefined>;
+            isDeleted?: boolean | undefined;
             waveForm?: yup.Maybe<string | undefined>;
             thumbnailStoragePath?: yup.Maybe<string | undefined>;
             thumbnailUri?: yup.Maybe<string | undefined>;
@@ -1726,6 +1741,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
         debriefAfterMinutes?: number | null | undefined;
         image?: {
             localFilePath?: yup.Maybe<string | undefined>;
+            isDeleted?: boolean | undefined;
             waveForm?: yup.Maybe<string | undefined>;
             thumbnailStoragePath?: yup.Maybe<string | undefined>;
             thumbnailUri?: yup.Maybe<string | undefined>;
@@ -1771,6 +1787,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
         debriefAfterMinutes?: number | null | undefined;
         image?: {
             localFilePath?: yup.Maybe<string | undefined>;
+            isDeleted?: boolean | undefined;
             waveForm?: yup.Maybe<string | undefined>;
             thumbnailStoragePath?: yup.Maybe<string | undefined>;
             thumbnailUri?: yup.Maybe<string | undefined>;
@@ -1816,6 +1833,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
         debriefAfterMinutes?: number | null | undefined;
         image?: {
             localFilePath?: yup.Maybe<string | undefined>;
+            isDeleted?: boolean | undefined;
             waveForm?: yup.Maybe<string | undefined>;
             thumbnailStoragePath?: yup.Maybe<string | undefined>;
             thumbnailUri?: yup.Maybe<string | undefined>;
@@ -2383,6 +2401,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
         debriefAfterMinutes?: number | null | undefined;
         image?: {
             localFilePath?: yup.Maybe<string | undefined>;
+            isDeleted?: boolean | undefined;
             waveForm?: yup.Maybe<string | undefined>;
             thumbnailStoragePath?: yup.Maybe<string | undefined>;
             thumbnailUri?: yup.Maybe<string | undefined>;
@@ -2427,6 +2446,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
         debriefAfterMinutes?: number | null | undefined;
         image?: {
             localFilePath?: yup.Maybe<string | undefined>;
+            isDeleted?: boolean | undefined;
             waveForm?: yup.Maybe<string | undefined>;
             thumbnailStoragePath?: yup.Maybe<string | undefined>;
             thumbnailUri?: yup.Maybe<string | undefined>;
@@ -2472,6 +2492,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
         debriefAfterMinutes?: number | null | undefined;
         image?: {
             localFilePath?: yup.Maybe<string | undefined>;
+            isDeleted?: boolean | undefined;
             waveForm?: yup.Maybe<string | undefined>;
             thumbnailStoragePath?: yup.Maybe<string | undefined>;
             thumbnailUri?: yup.Maybe<string | undefined>;
@@ -2510,6 +2531,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
         storagePath: undefined;
         uri: undefined;
         localFilePath: undefined;
+        isDeleted: undefined;
         waveForm: undefined;
         thumbnailStoragePath: undefined;
         thumbnailUri: undefined;

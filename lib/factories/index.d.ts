@@ -28,6 +28,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         } | null | undefined;
         audioFile?: {
             localFilePath?: import("yup").Maybe<string | undefined>;
+            isDeleted?: boolean | undefined;
             waveForm?: import("yup").Maybe<string | undefined>;
             thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
             thumbnailUri?: import("yup").Maybe<string | undefined>;
@@ -617,6 +618,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             debriefAfterMinutes?: number | null | undefined;
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
+                isDeleted?: boolean | undefined;
                 waveForm?: import("yup").Maybe<string | undefined>;
                 thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                 thumbnailUri?: import("yup").Maybe<string | undefined>;
@@ -631,6 +633,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             ordinal: number;
             recording: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
+                isDeleted?: boolean | undefined;
                 waveForm?: import("yup").Maybe<string | undefined>;
                 thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                 thumbnailUri?: import("yup").Maybe<string | undefined>;
@@ -670,6 +673,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             debriefAfterMinutes?: number | null | undefined;
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
+                isDeleted?: boolean | undefined;
                 waveForm?: import("yup").Maybe<string | undefined>;
                 thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                 thumbnailUri?: import("yup").Maybe<string | undefined>;
@@ -717,6 +721,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             debriefAfterMinutes?: number | null | undefined;
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
+                isDeleted?: boolean | undefined;
                 waveForm?: import("yup").Maybe<string | undefined>;
                 thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                 thumbnailUri?: import("yup").Maybe<string | undefined>;
@@ -762,6 +767,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             debriefAfterMinutes?: number | null | undefined;
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
+                isDeleted?: boolean | undefined;
                 waveForm?: import("yup").Maybe<string | undefined>;
                 thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                 thumbnailUri?: import("yup").Maybe<string | undefined>;
@@ -807,6 +813,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             debriefAfterMinutes?: number | null | undefined;
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
+                isDeleted?: boolean | undefined;
                 waveForm?: import("yup").Maybe<string | undefined>;
                 thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                 thumbnailUri?: import("yup").Maybe<string | undefined>;
@@ -852,6 +859,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             debriefAfterMinutes?: number | null | undefined;
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
+                isDeleted?: boolean | undefined;
                 waveForm?: import("yup").Maybe<string | undefined>;
                 thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                 thumbnailUri?: import("yup").Maybe<string | undefined>;
@@ -1419,6 +1427,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             debriefAfterMinutes?: number | null | undefined;
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
+                isDeleted?: boolean | undefined;
                 waveForm?: import("yup").Maybe<string | undefined>;
                 thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                 thumbnailUri?: import("yup").Maybe<string | undefined>;
@@ -1463,6 +1472,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             debriefAfterMinutes?: number | null | undefined;
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
+                isDeleted?: boolean | undefined;
                 waveForm?: import("yup").Maybe<string | undefined>;
                 thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                 thumbnailUri?: import("yup").Maybe<string | undefined>;
@@ -1508,6 +1518,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             debriefAfterMinutes?: number | null | undefined;
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
+                isDeleted?: boolean | undefined;
                 waveForm?: import("yup").Maybe<string | undefined>;
                 thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                 thumbnailUri?: import("yup").Maybe<string | undefined>;
@@ -1566,6 +1577,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
+                    isDeleted?: boolean | undefined;
                     waveForm?: import("yup").Maybe<string | undefined>;
                     thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                     thumbnailUri?: import("yup").Maybe<string | undefined>;
@@ -1580,6 +1592,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 ordinal: number;
                 recording: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
+                    isDeleted?: boolean | undefined;
                     waveForm?: import("yup").Maybe<string | undefined>;
                     thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                     thumbnailUri?: import("yup").Maybe<string | undefined>;
@@ -1619,6 +1632,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
+                    isDeleted?: boolean | undefined;
                     waveForm?: import("yup").Maybe<string | undefined>;
                     thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                     thumbnailUri?: import("yup").Maybe<string | undefined>;
@@ -1666,6 +1680,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
+                    isDeleted?: boolean | undefined;
                     waveForm?: import("yup").Maybe<string | undefined>;
                     thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                     thumbnailUri?: import("yup").Maybe<string | undefined>;
@@ -1711,6 +1726,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
+                    isDeleted?: boolean | undefined;
                     waveForm?: import("yup").Maybe<string | undefined>;
                     thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                     thumbnailUri?: import("yup").Maybe<string | undefined>;
@@ -1756,6 +1772,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
+                    isDeleted?: boolean | undefined;
                     waveForm?: import("yup").Maybe<string | undefined>;
                     thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                     thumbnailUri?: import("yup").Maybe<string | undefined>;
@@ -1801,6 +1818,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
+                    isDeleted?: boolean | undefined;
                     waveForm?: import("yup").Maybe<string | undefined>;
                     thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                     thumbnailUri?: import("yup").Maybe<string | undefined>;
@@ -2368,6 +2386,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
+                    isDeleted?: boolean | undefined;
                     waveForm?: import("yup").Maybe<string | undefined>;
                     thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                     thumbnailUri?: import("yup").Maybe<string | undefined>;
@@ -2412,6 +2431,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
+                    isDeleted?: boolean | undefined;
                     waveForm?: import("yup").Maybe<string | undefined>;
                     thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                     thumbnailUri?: import("yup").Maybe<string | undefined>;
@@ -2457,6 +2477,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
+                    isDeleted?: boolean | undefined;
                     waveForm?: import("yup").Maybe<string | undefined>;
                     thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                     thumbnailUri?: import("yup").Maybe<string | undefined>;
@@ -2514,6 +2535,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         } | null | undefined;
         audioFile?: {
             localFilePath?: import("yup").Maybe<string | undefined>;
+            isDeleted?: boolean | undefined;
             waveForm?: import("yup").Maybe<string | undefined>;
             thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
             thumbnailUri?: import("yup").Maybe<string | undefined>;
@@ -3103,6 +3125,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             debriefAfterMinutes?: number | null | undefined;
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
+                isDeleted?: boolean | undefined;
                 waveForm?: import("yup").Maybe<string | undefined>;
                 thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                 thumbnailUri?: import("yup").Maybe<string | undefined>;
@@ -3117,6 +3140,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             ordinal: number;
             recording: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
+                isDeleted?: boolean | undefined;
                 waveForm?: import("yup").Maybe<string | undefined>;
                 thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                 thumbnailUri?: import("yup").Maybe<string | undefined>;
@@ -3156,6 +3180,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             debriefAfterMinutes?: number | null | undefined;
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
+                isDeleted?: boolean | undefined;
                 waveForm?: import("yup").Maybe<string | undefined>;
                 thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                 thumbnailUri?: import("yup").Maybe<string | undefined>;
@@ -3203,6 +3228,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             debriefAfterMinutes?: number | null | undefined;
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
+                isDeleted?: boolean | undefined;
                 waveForm?: import("yup").Maybe<string | undefined>;
                 thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                 thumbnailUri?: import("yup").Maybe<string | undefined>;
@@ -3248,6 +3274,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             debriefAfterMinutes?: number | null | undefined;
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
+                isDeleted?: boolean | undefined;
                 waveForm?: import("yup").Maybe<string | undefined>;
                 thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                 thumbnailUri?: import("yup").Maybe<string | undefined>;
@@ -3293,6 +3320,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             debriefAfterMinutes?: number | null | undefined;
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
+                isDeleted?: boolean | undefined;
                 waveForm?: import("yup").Maybe<string | undefined>;
                 thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                 thumbnailUri?: import("yup").Maybe<string | undefined>;
@@ -3338,6 +3366,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             debriefAfterMinutes?: number | null | undefined;
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
+                isDeleted?: boolean | undefined;
                 waveForm?: import("yup").Maybe<string | undefined>;
                 thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                 thumbnailUri?: import("yup").Maybe<string | undefined>;
@@ -3905,6 +3934,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             debriefAfterMinutes?: number | null | undefined;
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
+                isDeleted?: boolean | undefined;
                 waveForm?: import("yup").Maybe<string | undefined>;
                 thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                 thumbnailUri?: import("yup").Maybe<string | undefined>;
@@ -3949,6 +3979,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             debriefAfterMinutes?: number | null | undefined;
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
+                isDeleted?: boolean | undefined;
                 waveForm?: import("yup").Maybe<string | undefined>;
                 thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                 thumbnailUri?: import("yup").Maybe<string | undefined>;
@@ -3994,6 +4025,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             debriefAfterMinutes?: number | null | undefined;
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
+                isDeleted?: boolean | undefined;
                 waveForm?: import("yup").Maybe<string | undefined>;
                 thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                 thumbnailUri?: import("yup").Maybe<string | undefined>;
@@ -4053,6 +4085,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
+                    isDeleted?: boolean | undefined;
                     waveForm?: import("yup").Maybe<string | undefined>;
                     thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                     thumbnailUri?: import("yup").Maybe<string | undefined>;
@@ -4067,6 +4100,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 ordinal: number;
                 recording: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
+                    isDeleted?: boolean | undefined;
                     waveForm?: import("yup").Maybe<string | undefined>;
                     thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                     thumbnailUri?: import("yup").Maybe<string | undefined>;
@@ -4106,6 +4140,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
+                    isDeleted?: boolean | undefined;
                     waveForm?: import("yup").Maybe<string | undefined>;
                     thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                     thumbnailUri?: import("yup").Maybe<string | undefined>;
@@ -4153,6 +4188,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
+                    isDeleted?: boolean | undefined;
                     waveForm?: import("yup").Maybe<string | undefined>;
                     thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                     thumbnailUri?: import("yup").Maybe<string | undefined>;
@@ -4198,6 +4234,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
+                    isDeleted?: boolean | undefined;
                     waveForm?: import("yup").Maybe<string | undefined>;
                     thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                     thumbnailUri?: import("yup").Maybe<string | undefined>;
@@ -4243,6 +4280,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
+                    isDeleted?: boolean | undefined;
                     waveForm?: import("yup").Maybe<string | undefined>;
                     thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                     thumbnailUri?: import("yup").Maybe<string | undefined>;
@@ -4288,6 +4326,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
+                    isDeleted?: boolean | undefined;
                     waveForm?: import("yup").Maybe<string | undefined>;
                     thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                     thumbnailUri?: import("yup").Maybe<string | undefined>;
@@ -4855,6 +4894,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
+                    isDeleted?: boolean | undefined;
                     waveForm?: import("yup").Maybe<string | undefined>;
                     thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                     thumbnailUri?: import("yup").Maybe<string | undefined>;
@@ -4899,6 +4939,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
+                    isDeleted?: boolean | undefined;
                     waveForm?: import("yup").Maybe<string | undefined>;
                     thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                     thumbnailUri?: import("yup").Maybe<string | undefined>;
@@ -4944,6 +4985,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
+                    isDeleted?: boolean | undefined;
                     waveForm?: import("yup").Maybe<string | undefined>;
                     thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                     thumbnailUri?: import("yup").Maybe<string | undefined>;
@@ -5578,6 +5620,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
+                    isDeleted?: boolean | undefined;
                     waveForm?: import("yup").Maybe<string | undefined>;
                     thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                     thumbnailUri?: import("yup").Maybe<string | undefined>;
@@ -5592,6 +5635,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 ordinal: number;
                 recording: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
+                    isDeleted?: boolean | undefined;
                     waveForm?: import("yup").Maybe<string | undefined>;
                     thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                     thumbnailUri?: import("yup").Maybe<string | undefined>;
@@ -5631,6 +5675,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
+                    isDeleted?: boolean | undefined;
                     waveForm?: import("yup").Maybe<string | undefined>;
                     thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                     thumbnailUri?: import("yup").Maybe<string | undefined>;
@@ -5678,6 +5723,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
+                    isDeleted?: boolean | undefined;
                     waveForm?: import("yup").Maybe<string | undefined>;
                     thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                     thumbnailUri?: import("yup").Maybe<string | undefined>;
@@ -5723,6 +5769,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
+                    isDeleted?: boolean | undefined;
                     waveForm?: import("yup").Maybe<string | undefined>;
                     thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                     thumbnailUri?: import("yup").Maybe<string | undefined>;
@@ -5768,6 +5815,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
+                    isDeleted?: boolean | undefined;
                     waveForm?: import("yup").Maybe<string | undefined>;
                     thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                     thumbnailUri?: import("yup").Maybe<string | undefined>;
@@ -5813,6 +5861,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
+                    isDeleted?: boolean | undefined;
                     waveForm?: import("yup").Maybe<string | undefined>;
                     thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                     thumbnailUri?: import("yup").Maybe<string | undefined>;
@@ -6380,6 +6429,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
+                    isDeleted?: boolean | undefined;
                     waveForm?: import("yup").Maybe<string | undefined>;
                     thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                     thumbnailUri?: import("yup").Maybe<string | undefined>;
@@ -6424,6 +6474,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
+                    isDeleted?: boolean | undefined;
                     waveForm?: import("yup").Maybe<string | undefined>;
                     thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                     thumbnailUri?: import("yup").Maybe<string | undefined>;
@@ -6469,6 +6520,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
+                    isDeleted?: boolean | undefined;
                     waveForm?: import("yup").Maybe<string | undefined>;
                     thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                     thumbnailUri?: import("yup").Maybe<string | undefined>;
@@ -6525,6 +6577,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             debriefAfterMinutes?: number | null | undefined;
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
+                isDeleted?: boolean | undefined;
                 waveForm?: import("yup").Maybe<string | undefined>;
                 thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                 thumbnailUri?: import("yup").Maybe<string | undefined>;
@@ -6539,6 +6592,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             ordinal: number;
             recording: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
+                isDeleted?: boolean | undefined;
                 waveForm?: import("yup").Maybe<string | undefined>;
                 thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                 thumbnailUri?: import("yup").Maybe<string | undefined>;
@@ -6578,6 +6632,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             debriefAfterMinutes?: number | null | undefined;
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
+                isDeleted?: boolean | undefined;
                 waveForm?: import("yup").Maybe<string | undefined>;
                 thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                 thumbnailUri?: import("yup").Maybe<string | undefined>;
@@ -6625,6 +6680,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             debriefAfterMinutes?: number | null | undefined;
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
+                isDeleted?: boolean | undefined;
                 waveForm?: import("yup").Maybe<string | undefined>;
                 thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                 thumbnailUri?: import("yup").Maybe<string | undefined>;
@@ -6670,6 +6726,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             debriefAfterMinutes?: number | null | undefined;
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
+                isDeleted?: boolean | undefined;
                 waveForm?: import("yup").Maybe<string | undefined>;
                 thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                 thumbnailUri?: import("yup").Maybe<string | undefined>;
@@ -6715,6 +6772,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             debriefAfterMinutes?: number | null | undefined;
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
+                isDeleted?: boolean | undefined;
                 waveForm?: import("yup").Maybe<string | undefined>;
                 thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                 thumbnailUri?: import("yup").Maybe<string | undefined>;
@@ -6760,6 +6818,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             debriefAfterMinutes?: number | null | undefined;
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
+                isDeleted?: boolean | undefined;
                 waveForm?: import("yup").Maybe<string | undefined>;
                 thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                 thumbnailUri?: import("yup").Maybe<string | undefined>;
@@ -7327,6 +7386,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             debriefAfterMinutes?: number | null | undefined;
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
+                isDeleted?: boolean | undefined;
                 waveForm?: import("yup").Maybe<string | undefined>;
                 thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                 thumbnailUri?: import("yup").Maybe<string | undefined>;
@@ -7371,6 +7431,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             debriefAfterMinutes?: number | null | undefined;
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
+                isDeleted?: boolean | undefined;
                 waveForm?: import("yup").Maybe<string | undefined>;
                 thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                 thumbnailUri?: import("yup").Maybe<string | undefined>;
@@ -7416,6 +7477,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             debriefAfterMinutes?: number | null | undefined;
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
+                isDeleted?: boolean | undefined;
                 waveForm?: import("yup").Maybe<string | undefined>;
                 thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                 thumbnailUri?: import("yup").Maybe<string | undefined>;
@@ -7563,6 +7625,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     debriefAfterMinutes?: number | null | undefined;
                     image?: {
                         localFilePath?: import("yup").Maybe<string | undefined>;
+                        isDeleted?: boolean | undefined;
                         waveForm?: import("yup").Maybe<string | undefined>;
                         thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                         thumbnailUri?: import("yup").Maybe<string | undefined>;
@@ -7577,6 +7640,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     ordinal: number;
                     recording: {
                         localFilePath?: import("yup").Maybe<string | undefined>;
+                        isDeleted?: boolean | undefined;
                         waveForm?: import("yup").Maybe<string | undefined>;
                         thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                         thumbnailUri?: import("yup").Maybe<string | undefined>;
@@ -7616,6 +7680,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     debriefAfterMinutes?: number | null | undefined;
                     image?: {
                         localFilePath?: import("yup").Maybe<string | undefined>;
+                        isDeleted?: boolean | undefined;
                         waveForm?: import("yup").Maybe<string | undefined>;
                         thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                         thumbnailUri?: import("yup").Maybe<string | undefined>;
@@ -7663,6 +7728,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     debriefAfterMinutes?: number | null | undefined;
                     image?: {
                         localFilePath?: import("yup").Maybe<string | undefined>;
+                        isDeleted?: boolean | undefined;
                         waveForm?: import("yup").Maybe<string | undefined>;
                         thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                         thumbnailUri?: import("yup").Maybe<string | undefined>;
@@ -7708,6 +7774,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     debriefAfterMinutes?: number | null | undefined;
                     image?: {
                         localFilePath?: import("yup").Maybe<string | undefined>;
+                        isDeleted?: boolean | undefined;
                         waveForm?: import("yup").Maybe<string | undefined>;
                         thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                         thumbnailUri?: import("yup").Maybe<string | undefined>;
@@ -7753,6 +7820,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     debriefAfterMinutes?: number | null | undefined;
                     image?: {
                         localFilePath?: import("yup").Maybe<string | undefined>;
+                        isDeleted?: boolean | undefined;
                         waveForm?: import("yup").Maybe<string | undefined>;
                         thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                         thumbnailUri?: import("yup").Maybe<string | undefined>;
@@ -7798,6 +7866,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     debriefAfterMinutes?: number | null | undefined;
                     image?: {
                         localFilePath?: import("yup").Maybe<string | undefined>;
+                        isDeleted?: boolean | undefined;
                         waveForm?: import("yup").Maybe<string | undefined>;
                         thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                         thumbnailUri?: import("yup").Maybe<string | undefined>;
@@ -8365,6 +8434,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     debriefAfterMinutes?: number | null | undefined;
                     image?: {
                         localFilePath?: import("yup").Maybe<string | undefined>;
+                        isDeleted?: boolean | undefined;
                         waveForm?: import("yup").Maybe<string | undefined>;
                         thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                         thumbnailUri?: import("yup").Maybe<string | undefined>;
@@ -8409,6 +8479,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     debriefAfterMinutes?: number | null | undefined;
                     image?: {
                         localFilePath?: import("yup").Maybe<string | undefined>;
+                        isDeleted?: boolean | undefined;
                         waveForm?: import("yup").Maybe<string | undefined>;
                         thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                         thumbnailUri?: import("yup").Maybe<string | undefined>;
@@ -8454,6 +8525,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     debriefAfterMinutes?: number | null | undefined;
                     image?: {
                         localFilePath?: import("yup").Maybe<string | undefined>;
+                        isDeleted?: boolean | undefined;
                         waveForm?: import("yup").Maybe<string | undefined>;
                         thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                         thumbnailUri?: import("yup").Maybe<string | undefined>;
@@ -8510,6 +8582,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
+                    isDeleted?: boolean | undefined;
                     waveForm?: import("yup").Maybe<string | undefined>;
                     thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                     thumbnailUri?: import("yup").Maybe<string | undefined>;
@@ -8524,6 +8597,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 ordinal: number;
                 recording: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
+                    isDeleted?: boolean | undefined;
                     waveForm?: import("yup").Maybe<string | undefined>;
                     thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                     thumbnailUri?: import("yup").Maybe<string | undefined>;
@@ -8563,6 +8637,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
+                    isDeleted?: boolean | undefined;
                     waveForm?: import("yup").Maybe<string | undefined>;
                     thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                     thumbnailUri?: import("yup").Maybe<string | undefined>;
@@ -8610,6 +8685,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
+                    isDeleted?: boolean | undefined;
                     waveForm?: import("yup").Maybe<string | undefined>;
                     thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                     thumbnailUri?: import("yup").Maybe<string | undefined>;
@@ -8655,6 +8731,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
+                    isDeleted?: boolean | undefined;
                     waveForm?: import("yup").Maybe<string | undefined>;
                     thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                     thumbnailUri?: import("yup").Maybe<string | undefined>;
@@ -8700,6 +8777,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
+                    isDeleted?: boolean | undefined;
                     waveForm?: import("yup").Maybe<string | undefined>;
                     thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                     thumbnailUri?: import("yup").Maybe<string | undefined>;
@@ -8745,6 +8823,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
+                    isDeleted?: boolean | undefined;
                     waveForm?: import("yup").Maybe<string | undefined>;
                     thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                     thumbnailUri?: import("yup").Maybe<string | undefined>;
@@ -9312,6 +9391,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
+                    isDeleted?: boolean | undefined;
                     waveForm?: import("yup").Maybe<string | undefined>;
                     thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                     thumbnailUri?: import("yup").Maybe<string | undefined>;
@@ -9356,6 +9436,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
+                    isDeleted?: boolean | undefined;
                     waveForm?: import("yup").Maybe<string | undefined>;
                     thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                     thumbnailUri?: import("yup").Maybe<string | undefined>;
@@ -9401,6 +9482,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
+                    isDeleted?: boolean | undefined;
                     waveForm?: import("yup").Maybe<string | undefined>;
                     thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                     thumbnailUri?: import("yup").Maybe<string | undefined>;
