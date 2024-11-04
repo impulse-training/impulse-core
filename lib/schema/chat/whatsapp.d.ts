@@ -2,6 +2,7 @@ import * as yup from 'yup';
 export declare const whatsappChatSchema: yup.ObjectSchema<{
     type: "whatsapp";
     uid: string;
+    senderName: string | undefined;
     createdAt: {
         isEqual?: any;
         toMillis?: any;
@@ -37,6 +38,7 @@ export declare const whatsappChatSchema: yup.ObjectSchema<{
 }, yup.AnyObject, {
     type: undefined;
     uid: undefined;
+    senderName: undefined;
     createdAt: undefined;
     updatedAt: undefined;
     filesUpdatedAt: undefined;
