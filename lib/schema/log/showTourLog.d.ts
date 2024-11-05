@@ -28,6 +28,20 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
     } | null | undefined;
     uid: string;
     audioFile: {
+        createdAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        updatedAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
         localFilePath?: yup.Maybe<string | undefined>;
         isDeleted?: boolean | undefined;
         waveForm?: yup.Maybe<string | undefined>;
@@ -71,6 +85,20 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             pastTenseTitle?: string | undefined;
             debriefAfterMinutes?: number | null | undefined;
             image?: {
+                createdAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                updatedAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
                 localFilePath?: yup.Maybe<string | undefined>;
                 isDeleted?: boolean | undefined;
                 waveForm?: yup.Maybe<string | undefined>;
@@ -86,6 +114,20 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             type: "audio";
             ordinal: number;
             recording: {
+                createdAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                updatedAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
                 localFilePath?: yup.Maybe<string | undefined>;
                 isDeleted?: boolean | undefined;
                 waveForm?: yup.Maybe<string | undefined>;
@@ -124,6 +166,20 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             pastTenseTitle?: string | undefined;
             debriefAfterMinutes?: number | null | undefined;
             image?: {
+                createdAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                updatedAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
                 localFilePath?: yup.Maybe<string | undefined>;
                 isDeleted?: boolean | undefined;
                 waveForm?: yup.Maybe<string | undefined>;
@@ -170,6 +226,20 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             pastTenseTitle?: string | undefined;
             debriefAfterMinutes?: number | null | undefined;
             image?: {
+                createdAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                updatedAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
                 localFilePath?: yup.Maybe<string | undefined>;
                 isDeleted?: boolean | undefined;
                 waveForm?: yup.Maybe<string | undefined>;
@@ -214,6 +284,20 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             pastTenseTitle?: string | undefined;
             debriefAfterMinutes?: number | null | undefined;
             image?: {
+                createdAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                updatedAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
                 localFilePath?: yup.Maybe<string | undefined>;
                 isDeleted?: boolean | undefined;
                 waveForm?: yup.Maybe<string | undefined>;
@@ -258,6 +342,20 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             pastTenseTitle?: string | undefined;
             debriefAfterMinutes?: number | null | undefined;
             image?: {
+                createdAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                updatedAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
                 localFilePath?: yup.Maybe<string | undefined>;
                 isDeleted?: boolean | undefined;
                 waveForm?: yup.Maybe<string | undefined>;
@@ -302,6 +400,20 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             pastTenseTitle?: string | undefined;
             debriefAfterMinutes?: number | null | undefined;
             image?: {
+                createdAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                updatedAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
                 localFilePath?: yup.Maybe<string | undefined>;
                 isDeleted?: boolean | undefined;
                 waveForm?: yup.Maybe<string | undefined>;
@@ -856,6 +968,20 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             pastTenseTitle?: string | undefined;
             debriefAfterMinutes?: number | null | undefined;
             image?: {
+                createdAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                updatedAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
                 localFilePath?: yup.Maybe<string | undefined>;
                 isDeleted?: boolean | undefined;
                 waveForm?: yup.Maybe<string | undefined>;
@@ -899,6 +1025,20 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             pastTenseTitle?: string | undefined;
             debriefAfterMinutes?: number | null | undefined;
             image?: {
+                createdAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                updatedAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
                 localFilePath?: yup.Maybe<string | undefined>;
                 isDeleted?: boolean | undefined;
                 waveForm?: yup.Maybe<string | undefined>;
@@ -943,6 +1083,20 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             pastTenseTitle?: string | undefined;
             debriefAfterMinutes?: number | null | undefined;
             image?: {
+                createdAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                updatedAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
                 localFilePath?: yup.Maybe<string | undefined>;
                 isDeleted?: boolean | undefined;
                 waveForm?: yup.Maybe<string | undefined>;
@@ -1542,6 +1696,20 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
         pastTenseTitle?: string | undefined;
         debriefAfterMinutes?: number | null | undefined;
         image?: {
+            createdAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
             localFilePath?: yup.Maybe<string | undefined>;
             isDeleted?: boolean | undefined;
             waveForm?: yup.Maybe<string | undefined>;
@@ -1557,6 +1725,20 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
         type: "audio";
         ordinal: number;
         recording: {
+            createdAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
             localFilePath?: yup.Maybe<string | undefined>;
             isDeleted?: boolean | undefined;
             waveForm?: yup.Maybe<string | undefined>;
@@ -1595,6 +1777,20 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
         pastTenseTitle?: string | undefined;
         debriefAfterMinutes?: number | null | undefined;
         image?: {
+            createdAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
             localFilePath?: yup.Maybe<string | undefined>;
             isDeleted?: boolean | undefined;
             waveForm?: yup.Maybe<string | undefined>;
@@ -1641,6 +1837,20 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
         pastTenseTitle?: string | undefined;
         debriefAfterMinutes?: number | null | undefined;
         image?: {
+            createdAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
             localFilePath?: yup.Maybe<string | undefined>;
             isDeleted?: boolean | undefined;
             waveForm?: yup.Maybe<string | undefined>;
@@ -1685,6 +1895,20 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
         pastTenseTitle?: string | undefined;
         debriefAfterMinutes?: number | null | undefined;
         image?: {
+            createdAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
             localFilePath?: yup.Maybe<string | undefined>;
             isDeleted?: boolean | undefined;
             waveForm?: yup.Maybe<string | undefined>;
@@ -1729,6 +1953,20 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
         pastTenseTitle?: string | undefined;
         debriefAfterMinutes?: number | null | undefined;
         image?: {
+            createdAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
             localFilePath?: yup.Maybe<string | undefined>;
             isDeleted?: boolean | undefined;
             waveForm?: yup.Maybe<string | undefined>;
@@ -1773,6 +2011,20 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
         pastTenseTitle?: string | undefined;
         debriefAfterMinutes?: number | null | undefined;
         image?: {
+            createdAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
             localFilePath?: yup.Maybe<string | undefined>;
             isDeleted?: boolean | undefined;
             waveForm?: yup.Maybe<string | undefined>;
@@ -2327,6 +2579,20 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
         pastTenseTitle?: string | undefined;
         debriefAfterMinutes?: number | null | undefined;
         image?: {
+            createdAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
             localFilePath?: yup.Maybe<string | undefined>;
             isDeleted?: boolean | undefined;
             waveForm?: yup.Maybe<string | undefined>;
@@ -2370,6 +2636,20 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
         pastTenseTitle?: string | undefined;
         debriefAfterMinutes?: number | null | undefined;
         image?: {
+            createdAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
             localFilePath?: yup.Maybe<string | undefined>;
             isDeleted?: boolean | undefined;
             waveForm?: yup.Maybe<string | undefined>;
@@ -2414,6 +2694,20 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
         pastTenseTitle?: string | undefined;
         debriefAfterMinutes?: number | null | undefined;
         image?: {
+            createdAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
             localFilePath?: yup.Maybe<string | undefined>;
             isDeleted?: boolean | undefined;
             waveForm?: yup.Maybe<string | undefined>;

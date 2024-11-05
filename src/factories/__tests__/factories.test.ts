@@ -59,7 +59,6 @@ const schemaMap: Record<keyof typeof factories, null | Schema | Lazy<unknown>> =
   {
     // TODO: this doesn't yet have a schema
     applicationFactory: null,
-
     locationFactory: locationSchema,
     daysSummaryFactory: daysSummarySchema,
     dayFactory: daySchema,

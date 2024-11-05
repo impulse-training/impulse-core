@@ -29,6 +29,20 @@ export declare function recapTacticValueBaseSchema(type: RecapKeyType): import("
     pastTenseTitle: string | undefined;
     debriefAfterMinutes: number | null | undefined;
     image: {
+        createdAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        updatedAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
         localFilePath?: import("yup").Maybe<string | undefined>;
         isDeleted?: boolean | undefined;
         waveForm?: import("yup").Maybe<string | undefined>;

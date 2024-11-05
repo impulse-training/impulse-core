@@ -29,6 +29,20 @@ export declare const audioTacticSchema: yup.ObjectSchema<{
     pastTenseTitle: string | undefined;
     debriefAfterMinutes: number | null | undefined;
     image: {
+        createdAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        updatedAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
         localFilePath?: yup.Maybe<string | undefined>;
         isDeleted?: boolean | undefined;
         waveForm?: yup.Maybe<string | undefined>;
@@ -43,6 +57,20 @@ export declare const audioTacticSchema: yup.ObjectSchema<{
     timerSeconds: yup.Maybe<number | undefined>;
     isSuggested: boolean | undefined;
     recording: {
+        createdAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        updatedAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
         localFilePath?: yup.Maybe<string | undefined>;
         isDeleted?: boolean | undefined;
         waveForm?: yup.Maybe<string | undefined>;
@@ -73,6 +101,8 @@ export declare const audioTacticSchema: yup.ObjectSchema<{
     timerSeconds: undefined;
     isSuggested: undefined;
     recording: {
+        createdAt: undefined;
+        updatedAt: undefined;
         storagePath: undefined;
         uri: undefined;
         localFilePath: undefined;
