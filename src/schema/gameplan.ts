@@ -15,6 +15,7 @@ export const gameplanSchema = yup.object().shape({
     edges: yup.array().of(yup.object().required()),
   }),
   blandPathwayId: yup.string(),
+  summary: yup.string(),
   issuesById: optionalObjectOf(issueSchema),
   profileStrategiesById: optionalObjectOf(profileStrategySchema),
 });

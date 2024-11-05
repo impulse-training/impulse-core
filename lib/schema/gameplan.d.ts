@@ -19,6 +19,7 @@ export declare const gameplanSchema: yup.ObjectSchema<{
         edges?: {}[] | undefined;
     };
     blandPathwayId: string | undefined;
+    summary: string | undefined;
     issuesById: {
         [x: string]: {
             path?: string | null | undefined;
@@ -2067,6 +2068,7 @@ export declare const gameplanSchema: yup.ObjectSchema<{
         edges: "";
     };
     blandPathwayId: undefined;
+    summary: undefined;
     issuesById: undefined;
     profileStrategiesById: undefined;
 }, "">;
