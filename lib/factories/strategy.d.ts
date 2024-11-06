@@ -62,6 +62,7 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                content?: string | undefined;
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 isDeleted?: boolean | undefined;
                 waveForm?: import("yup").Maybe<string | undefined>;
@@ -92,6 +93,7 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                content?: string | undefined;
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 isDeleted?: boolean | undefined;
                 waveForm?: import("yup").Maybe<string | undefined>;
@@ -145,6 +147,7 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                content?: string | undefined;
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 isDeleted?: boolean | undefined;
                 waveForm?: import("yup").Maybe<string | undefined>;
@@ -206,6 +209,7 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                content?: string | undefined;
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 isDeleted?: boolean | undefined;
                 waveForm?: import("yup").Maybe<string | undefined>;
@@ -265,6 +269,7 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                content?: string | undefined;
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 isDeleted?: boolean | undefined;
                 waveForm?: import("yup").Maybe<string | undefined>;
@@ -324,6 +329,7 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                content?: string | undefined;
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 isDeleted?: boolean | undefined;
                 waveForm?: import("yup").Maybe<string | undefined>;
@@ -383,6 +389,7 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                content?: string | undefined;
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 isDeleted?: boolean | undefined;
                 waveForm?: import("yup").Maybe<string | undefined>;
@@ -952,6 +959,7 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                content?: string | undefined;
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 isDeleted?: boolean | undefined;
                 waveForm?: import("yup").Maybe<string | undefined>;
@@ -1010,6 +1018,7 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                content?: string | undefined;
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 isDeleted?: boolean | undefined;
                 waveForm?: import("yup").Maybe<string | undefined>;
@@ -1069,6 +1078,7 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                content?: string | undefined;
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 isDeleted?: boolean | undefined;
                 waveForm?: import("yup").Maybe<string | undefined>;
@@ -1139,6 +1149,7 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
+            content?: string | undefined;
             localFilePath?: import("yup").Maybe<string | undefined>;
             isDeleted?: boolean | undefined;
             waveForm?: import("yup").Maybe<string | undefined>;
@@ -1169,6 +1180,7 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
+            content?: string | undefined;
             localFilePath?: import("yup").Maybe<string | undefined>;
             isDeleted?: boolean | undefined;
             waveForm?: import("yup").Maybe<string | undefined>;
@@ -1222,6 +1234,7 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
+            content?: string | undefined;
             localFilePath?: import("yup").Maybe<string | undefined>;
             isDeleted?: boolean | undefined;
             waveForm?: import("yup").Maybe<string | undefined>;
@@ -1283,6 +1296,7 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
+            content?: string | undefined;
             localFilePath?: import("yup").Maybe<string | undefined>;
             isDeleted?: boolean | undefined;
             waveForm?: import("yup").Maybe<string | undefined>;
@@ -1342,6 +1356,7 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
+            content?: string | undefined;
             localFilePath?: import("yup").Maybe<string | undefined>;
             isDeleted?: boolean | undefined;
             waveForm?: import("yup").Maybe<string | undefined>;
@@ -1401,6 +1416,7 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
+            content?: string | undefined;
             localFilePath?: import("yup").Maybe<string | undefined>;
             isDeleted?: boolean | undefined;
             waveForm?: import("yup").Maybe<string | undefined>;
@@ -1460,6 +1476,7 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
+            content?: string | undefined;
             localFilePath?: import("yup").Maybe<string | undefined>;
             isDeleted?: boolean | undefined;
             waveForm?: import("yup").Maybe<string | undefined>;
@@ -2029,6 +2046,7 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
+            content?: string | undefined;
             localFilePath?: import("yup").Maybe<string | undefined>;
             isDeleted?: boolean | undefined;
             waveForm?: import("yup").Maybe<string | undefined>;
@@ -2087,6 +2105,7 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
+            content?: string | undefined;
             localFilePath?: import("yup").Maybe<string | undefined>;
             isDeleted?: boolean | undefined;
             waveForm?: import("yup").Maybe<string | undefined>;
@@ -2146,6 +2165,7 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
+            content?: string | undefined;
             localFilePath?: import("yup").Maybe<string | undefined>;
             isDeleted?: boolean | undefined;
             waveForm?: import("yup").Maybe<string | undefined>;

@@ -17,6 +17,7 @@ export declare const fileSchema: yup.ObjectSchema<{
     contentType: string;
     storagePath: string;
     uri: string;
+    content: string | undefined;
     localFilePath: yup.Maybe<string | undefined>;
     isDeleted: boolean | undefined;
     waveForm: yup.Maybe<string | undefined>;
@@ -28,6 +29,7 @@ export declare const fileSchema: yup.ObjectSchema<{
     contentType: undefined;
     storagePath: undefined;
     uri: undefined;
+    content: undefined;
     localFilePath: undefined;
     isDeleted: undefined;
     waveForm: undefined;

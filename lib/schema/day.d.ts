@@ -48,6 +48,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                content?: string | undefined;
                 localFilePath?: yup.Maybe<string | undefined>;
                 isDeleted?: boolean | undefined;
                 waveForm?: yup.Maybe<string | undefined>;
@@ -638,6 +639,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    content?: string | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     waveForm?: yup.Maybe<string | undefined>;
@@ -668,6 +670,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    content?: string | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     waveForm?: yup.Maybe<string | undefined>;
@@ -721,6 +724,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    content?: string | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     waveForm?: yup.Maybe<string | undefined>;
@@ -782,6 +786,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    content?: string | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     waveForm?: yup.Maybe<string | undefined>;
@@ -841,6 +846,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    content?: string | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     waveForm?: yup.Maybe<string | undefined>;
@@ -900,6 +906,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    content?: string | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     waveForm?: yup.Maybe<string | undefined>;
@@ -959,6 +966,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    content?: string | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     waveForm?: yup.Maybe<string | undefined>;
@@ -1528,6 +1536,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    content?: string | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     waveForm?: yup.Maybe<string | undefined>;
@@ -1586,6 +1595,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    content?: string | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     waveForm?: yup.Maybe<string | undefined>;
@@ -1645,6 +1655,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    content?: string | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     waveForm?: yup.Maybe<string | undefined>;
@@ -1716,6 +1727,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
+                        content?: string | undefined;
                         localFilePath?: yup.Maybe<string | undefined>;
                         isDeleted?: boolean | undefined;
                         waveForm?: yup.Maybe<string | undefined>;
@@ -1746,6 +1758,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
+                        content?: string | undefined;
                         localFilePath?: yup.Maybe<string | undefined>;
                         isDeleted?: boolean | undefined;
                         waveForm?: yup.Maybe<string | undefined>;
@@ -1799,6 +1812,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
+                        content?: string | undefined;
                         localFilePath?: yup.Maybe<string | undefined>;
                         isDeleted?: boolean | undefined;
                         waveForm?: yup.Maybe<string | undefined>;
@@ -1860,6 +1874,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
+                        content?: string | undefined;
                         localFilePath?: yup.Maybe<string | undefined>;
                         isDeleted?: boolean | undefined;
                         waveForm?: yup.Maybe<string | undefined>;
@@ -1919,6 +1934,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
+                        content?: string | undefined;
                         localFilePath?: yup.Maybe<string | undefined>;
                         isDeleted?: boolean | undefined;
                         waveForm?: yup.Maybe<string | undefined>;
@@ -1978,6 +1994,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
+                        content?: string | undefined;
                         localFilePath?: yup.Maybe<string | undefined>;
                         isDeleted?: boolean | undefined;
                         waveForm?: yup.Maybe<string | undefined>;
@@ -2037,6 +2054,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
+                        content?: string | undefined;
                         localFilePath?: yup.Maybe<string | undefined>;
                         isDeleted?: boolean | undefined;
                         waveForm?: yup.Maybe<string | undefined>;
@@ -2606,6 +2624,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
+                        content?: string | undefined;
                         localFilePath?: yup.Maybe<string | undefined>;
                         isDeleted?: boolean | undefined;
                         waveForm?: yup.Maybe<string | undefined>;
@@ -2664,6 +2683,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
+                        content?: string | undefined;
                         localFilePath?: yup.Maybe<string | undefined>;
                         isDeleted?: boolean | undefined;
                         waveForm?: yup.Maybe<string | undefined>;
@@ -2723,6 +2743,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
+                        content?: string | undefined;
                         localFilePath?: yup.Maybe<string | undefined>;
                         isDeleted?: boolean | undefined;
                         waveForm?: yup.Maybe<string | undefined>;
@@ -2791,6 +2812,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                content?: string | undefined;
                 localFilePath?: yup.Maybe<string | undefined>;
                 isDeleted?: boolean | undefined;
                 waveForm?: yup.Maybe<string | undefined>;
@@ -3381,6 +3403,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    content?: string | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     waveForm?: yup.Maybe<string | undefined>;
@@ -3411,6 +3434,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    content?: string | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     waveForm?: yup.Maybe<string | undefined>;
@@ -3464,6 +3488,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    content?: string | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     waveForm?: yup.Maybe<string | undefined>;
@@ -3525,6 +3550,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    content?: string | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     waveForm?: yup.Maybe<string | undefined>;
@@ -3584,6 +3610,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    content?: string | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     waveForm?: yup.Maybe<string | undefined>;
@@ -3643,6 +3670,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    content?: string | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     waveForm?: yup.Maybe<string | undefined>;
@@ -3702,6 +3730,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    content?: string | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     waveForm?: yup.Maybe<string | undefined>;
@@ -4271,6 +4300,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    content?: string | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     waveForm?: yup.Maybe<string | undefined>;
@@ -4329,6 +4359,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    content?: string | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     waveForm?: yup.Maybe<string | undefined>;
@@ -4388,6 +4419,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    content?: string | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     waveForm?: yup.Maybe<string | undefined>;
@@ -4466,6 +4498,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
+                        content?: string | undefined;
                         localFilePath?: yup.Maybe<string | undefined>;
                         isDeleted?: boolean | undefined;
                         waveForm?: yup.Maybe<string | undefined>;
@@ -4496,6 +4529,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
+                        content?: string | undefined;
                         localFilePath?: yup.Maybe<string | undefined>;
                         isDeleted?: boolean | undefined;
                         waveForm?: yup.Maybe<string | undefined>;
@@ -4549,6 +4583,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
+                        content?: string | undefined;
                         localFilePath?: yup.Maybe<string | undefined>;
                         isDeleted?: boolean | undefined;
                         waveForm?: yup.Maybe<string | undefined>;
@@ -4610,6 +4645,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
+                        content?: string | undefined;
                         localFilePath?: yup.Maybe<string | undefined>;
                         isDeleted?: boolean | undefined;
                         waveForm?: yup.Maybe<string | undefined>;
@@ -4669,6 +4705,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
+                        content?: string | undefined;
                         localFilePath?: yup.Maybe<string | undefined>;
                         isDeleted?: boolean | undefined;
                         waveForm?: yup.Maybe<string | undefined>;
@@ -4728,6 +4765,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
+                        content?: string | undefined;
                         localFilePath?: yup.Maybe<string | undefined>;
                         isDeleted?: boolean | undefined;
                         waveForm?: yup.Maybe<string | undefined>;
@@ -4787,6 +4825,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
+                        content?: string | undefined;
                         localFilePath?: yup.Maybe<string | undefined>;
                         isDeleted?: boolean | undefined;
                         waveForm?: yup.Maybe<string | undefined>;
@@ -5356,6 +5395,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
+                        content?: string | undefined;
                         localFilePath?: yup.Maybe<string | undefined>;
                         isDeleted?: boolean | undefined;
                         waveForm?: yup.Maybe<string | undefined>;
@@ -5414,6 +5454,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
+                        content?: string | undefined;
                         localFilePath?: yup.Maybe<string | undefined>;
                         isDeleted?: boolean | undefined;
                         waveForm?: yup.Maybe<string | undefined>;
@@ -5473,6 +5514,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
+                        content?: string | undefined;
                         localFilePath?: yup.Maybe<string | undefined>;
                         isDeleted?: boolean | undefined;
                         waveForm?: yup.Maybe<string | undefined>;
@@ -5542,6 +5584,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                content?: string | undefined;
                 localFilePath?: yup.Maybe<string | undefined>;
                 isDeleted?: boolean | undefined;
                 waveForm?: yup.Maybe<string | undefined>;
@@ -6132,6 +6175,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    content?: string | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     waveForm?: yup.Maybe<string | undefined>;
@@ -6162,6 +6206,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    content?: string | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     waveForm?: yup.Maybe<string | undefined>;
@@ -6215,6 +6260,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    content?: string | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     waveForm?: yup.Maybe<string | undefined>;
@@ -6276,6 +6322,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    content?: string | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     waveForm?: yup.Maybe<string | undefined>;
@@ -6335,6 +6382,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    content?: string | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     waveForm?: yup.Maybe<string | undefined>;
@@ -6394,6 +6442,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    content?: string | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     waveForm?: yup.Maybe<string | undefined>;
@@ -6453,6 +6502,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    content?: string | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     waveForm?: yup.Maybe<string | undefined>;
@@ -7022,6 +7072,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    content?: string | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     waveForm?: yup.Maybe<string | undefined>;
@@ -7080,6 +7131,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    content?: string | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     waveForm?: yup.Maybe<string | undefined>;
@@ -7139,6 +7191,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    content?: string | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     waveForm?: yup.Maybe<string | undefined>;
@@ -7211,6 +7264,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
+                        content?: string | undefined;
                         localFilePath?: yup.Maybe<string | undefined>;
                         isDeleted?: boolean | undefined;
                         waveForm?: yup.Maybe<string | undefined>;
@@ -7241,6 +7295,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
+                        content?: string | undefined;
                         localFilePath?: yup.Maybe<string | undefined>;
                         isDeleted?: boolean | undefined;
                         waveForm?: yup.Maybe<string | undefined>;
@@ -7294,6 +7349,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
+                        content?: string | undefined;
                         localFilePath?: yup.Maybe<string | undefined>;
                         isDeleted?: boolean | undefined;
                         waveForm?: yup.Maybe<string | undefined>;
@@ -7355,6 +7411,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
+                        content?: string | undefined;
                         localFilePath?: yup.Maybe<string | undefined>;
                         isDeleted?: boolean | undefined;
                         waveForm?: yup.Maybe<string | undefined>;
@@ -7414,6 +7471,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
+                        content?: string | undefined;
                         localFilePath?: yup.Maybe<string | undefined>;
                         isDeleted?: boolean | undefined;
                         waveForm?: yup.Maybe<string | undefined>;
@@ -7473,6 +7531,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
+                        content?: string | undefined;
                         localFilePath?: yup.Maybe<string | undefined>;
                         isDeleted?: boolean | undefined;
                         waveForm?: yup.Maybe<string | undefined>;
@@ -7532,6 +7591,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
+                        content?: string | undefined;
                         localFilePath?: yup.Maybe<string | undefined>;
                         isDeleted?: boolean | undefined;
                         waveForm?: yup.Maybe<string | undefined>;
@@ -8101,6 +8161,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
+                        content?: string | undefined;
                         localFilePath?: yup.Maybe<string | undefined>;
                         isDeleted?: boolean | undefined;
                         waveForm?: yup.Maybe<string | undefined>;
@@ -8159,6 +8220,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
+                        content?: string | undefined;
                         localFilePath?: yup.Maybe<string | undefined>;
                         isDeleted?: boolean | undefined;
                         waveForm?: yup.Maybe<string | undefined>;
@@ -8218,6 +8280,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
+                        content?: string | undefined;
                         localFilePath?: yup.Maybe<string | undefined>;
                         isDeleted?: boolean | undefined;
                         waveForm?: yup.Maybe<string | undefined>;
@@ -8286,6 +8349,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                content?: string | undefined;
                 localFilePath?: yup.Maybe<string | undefined>;
                 isDeleted?: boolean | undefined;
                 waveForm?: yup.Maybe<string | undefined>;
@@ -8876,6 +8940,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    content?: string | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     waveForm?: yup.Maybe<string | undefined>;
@@ -8906,6 +8971,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    content?: string | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     waveForm?: yup.Maybe<string | undefined>;
@@ -8959,6 +9025,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    content?: string | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     waveForm?: yup.Maybe<string | undefined>;
@@ -9020,6 +9087,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    content?: string | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     waveForm?: yup.Maybe<string | undefined>;
@@ -9079,6 +9147,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    content?: string | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     waveForm?: yup.Maybe<string | undefined>;
@@ -9138,6 +9207,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    content?: string | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     waveForm?: yup.Maybe<string | undefined>;
@@ -9197,6 +9267,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    content?: string | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     waveForm?: yup.Maybe<string | undefined>;
@@ -9766,6 +9837,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    content?: string | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     waveForm?: yup.Maybe<string | undefined>;
@@ -9824,6 +9896,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    content?: string | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     waveForm?: yup.Maybe<string | undefined>;
@@ -9883,6 +9956,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    content?: string | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     waveForm?: yup.Maybe<string | undefined>;
@@ -9961,6 +10035,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
+                        content?: string | undefined;
                         localFilePath?: yup.Maybe<string | undefined>;
                         isDeleted?: boolean | undefined;
                         waveForm?: yup.Maybe<string | undefined>;
@@ -9991,6 +10066,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
+                        content?: string | undefined;
                         localFilePath?: yup.Maybe<string | undefined>;
                         isDeleted?: boolean | undefined;
                         waveForm?: yup.Maybe<string | undefined>;
@@ -10044,6 +10120,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
+                        content?: string | undefined;
                         localFilePath?: yup.Maybe<string | undefined>;
                         isDeleted?: boolean | undefined;
                         waveForm?: yup.Maybe<string | undefined>;
@@ -10105,6 +10182,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
+                        content?: string | undefined;
                         localFilePath?: yup.Maybe<string | undefined>;
                         isDeleted?: boolean | undefined;
                         waveForm?: yup.Maybe<string | undefined>;
@@ -10164,6 +10242,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
+                        content?: string | undefined;
                         localFilePath?: yup.Maybe<string | undefined>;
                         isDeleted?: boolean | undefined;
                         waveForm?: yup.Maybe<string | undefined>;
@@ -10223,6 +10302,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
+                        content?: string | undefined;
                         localFilePath?: yup.Maybe<string | undefined>;
                         isDeleted?: boolean | undefined;
                         waveForm?: yup.Maybe<string | undefined>;
@@ -10282,6 +10362,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
+                        content?: string | undefined;
                         localFilePath?: yup.Maybe<string | undefined>;
                         isDeleted?: boolean | undefined;
                         waveForm?: yup.Maybe<string | undefined>;
@@ -10851,6 +10932,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
+                        content?: string | undefined;
                         localFilePath?: yup.Maybe<string | undefined>;
                         isDeleted?: boolean | undefined;
                         waveForm?: yup.Maybe<string | undefined>;
@@ -10909,6 +10991,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
+                        content?: string | undefined;
                         localFilePath?: yup.Maybe<string | undefined>;
                         isDeleted?: boolean | undefined;
                         waveForm?: yup.Maybe<string | undefined>;
@@ -10968,6 +11051,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
+                        content?: string | undefined;
                         localFilePath?: yup.Maybe<string | undefined>;
                         isDeleted?: boolean | undefined;
                         waveForm?: yup.Maybe<string | undefined>;
@@ -11036,6 +11120,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                content?: string | undefined;
                 localFilePath?: yup.Maybe<string | undefined>;
                 isDeleted?: boolean | undefined;
                 waveForm?: yup.Maybe<string | undefined>;
@@ -11626,6 +11711,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    content?: string | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     waveForm?: yup.Maybe<string | undefined>;
@@ -11656,6 +11742,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    content?: string | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     waveForm?: yup.Maybe<string | undefined>;
@@ -11709,6 +11796,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    content?: string | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     waveForm?: yup.Maybe<string | undefined>;
@@ -11770,6 +11858,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    content?: string | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     waveForm?: yup.Maybe<string | undefined>;
@@ -11829,6 +11918,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    content?: string | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     waveForm?: yup.Maybe<string | undefined>;
@@ -11888,6 +11978,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    content?: string | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     waveForm?: yup.Maybe<string | undefined>;
@@ -11947,6 +12038,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    content?: string | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     waveForm?: yup.Maybe<string | undefined>;
@@ -12516,6 +12608,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    content?: string | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     waveForm?: yup.Maybe<string | undefined>;
@@ -12574,6 +12667,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    content?: string | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     waveForm?: yup.Maybe<string | undefined>;
@@ -12633,6 +12727,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    content?: string | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     waveForm?: yup.Maybe<string | undefined>;
@@ -12706,6 +12801,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
+                        content?: string | undefined;
                         localFilePath?: yup.Maybe<string | undefined>;
                         isDeleted?: boolean | undefined;
                         waveForm?: yup.Maybe<string | undefined>;
@@ -12736,6 +12832,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
+                        content?: string | undefined;
                         localFilePath?: yup.Maybe<string | undefined>;
                         isDeleted?: boolean | undefined;
                         waveForm?: yup.Maybe<string | undefined>;
@@ -12789,6 +12886,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
+                        content?: string | undefined;
                         localFilePath?: yup.Maybe<string | undefined>;
                         isDeleted?: boolean | undefined;
                         waveForm?: yup.Maybe<string | undefined>;
@@ -12850,6 +12948,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
+                        content?: string | undefined;
                         localFilePath?: yup.Maybe<string | undefined>;
                         isDeleted?: boolean | undefined;
                         waveForm?: yup.Maybe<string | undefined>;
@@ -12909,6 +13008,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
+                        content?: string | undefined;
                         localFilePath?: yup.Maybe<string | undefined>;
                         isDeleted?: boolean | undefined;
                         waveForm?: yup.Maybe<string | undefined>;
@@ -12968,6 +13068,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
+                        content?: string | undefined;
                         localFilePath?: yup.Maybe<string | undefined>;
                         isDeleted?: boolean | undefined;
                         waveForm?: yup.Maybe<string | undefined>;
@@ -13027,6 +13128,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
+                        content?: string | undefined;
                         localFilePath?: yup.Maybe<string | undefined>;
                         isDeleted?: boolean | undefined;
                         waveForm?: yup.Maybe<string | undefined>;
@@ -13596,6 +13698,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
+                        content?: string | undefined;
                         localFilePath?: yup.Maybe<string | undefined>;
                         isDeleted?: boolean | undefined;
                         waveForm?: yup.Maybe<string | undefined>;
@@ -13654,6 +13757,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
+                        content?: string | undefined;
                         localFilePath?: yup.Maybe<string | undefined>;
                         isDeleted?: boolean | undefined;
                         waveForm?: yup.Maybe<string | undefined>;
@@ -13713,6 +13817,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
+                        content?: string | undefined;
                         localFilePath?: yup.Maybe<string | undefined>;
                         isDeleted?: boolean | undefined;
                         waveForm?: yup.Maybe<string | undefined>;
@@ -13781,6 +13886,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                content?: string | undefined;
                 localFilePath?: yup.Maybe<string | undefined>;
                 isDeleted?: boolean | undefined;
                 waveForm?: yup.Maybe<string | undefined>;
@@ -14371,6 +14477,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    content?: string | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     waveForm?: yup.Maybe<string | undefined>;
@@ -14401,6 +14508,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    content?: string | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     waveForm?: yup.Maybe<string | undefined>;
@@ -14454,6 +14562,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    content?: string | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     waveForm?: yup.Maybe<string | undefined>;
@@ -14515,6 +14624,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    content?: string | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     waveForm?: yup.Maybe<string | undefined>;
@@ -14574,6 +14684,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    content?: string | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     waveForm?: yup.Maybe<string | undefined>;
@@ -14633,6 +14744,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    content?: string | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     waveForm?: yup.Maybe<string | undefined>;
@@ -14692,6 +14804,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    content?: string | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     waveForm?: yup.Maybe<string | undefined>;
@@ -15261,6 +15374,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    content?: string | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     waveForm?: yup.Maybe<string | undefined>;
@@ -15319,6 +15433,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    content?: string | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     waveForm?: yup.Maybe<string | undefined>;
@@ -15378,6 +15493,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    content?: string | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     waveForm?: yup.Maybe<string | undefined>;
@@ -15418,6 +15534,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                content?: string | undefined;
                 localFilePath?: yup.Maybe<string | undefined>;
                 isDeleted?: boolean | undefined;
                 waveForm?: yup.Maybe<string | undefined>;
@@ -15474,6 +15591,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
+                        content?: string | undefined;
                         localFilePath?: yup.Maybe<string | undefined>;
                         isDeleted?: boolean | undefined;
                         waveForm?: yup.Maybe<string | undefined>;
@@ -15504,6 +15622,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
+                        content?: string | undefined;
                         localFilePath?: yup.Maybe<string | undefined>;
                         isDeleted?: boolean | undefined;
                         waveForm?: yup.Maybe<string | undefined>;
@@ -15557,6 +15676,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
+                        content?: string | undefined;
                         localFilePath?: yup.Maybe<string | undefined>;
                         isDeleted?: boolean | undefined;
                         waveForm?: yup.Maybe<string | undefined>;
@@ -15618,6 +15738,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
+                        content?: string | undefined;
                         localFilePath?: yup.Maybe<string | undefined>;
                         isDeleted?: boolean | undefined;
                         waveForm?: yup.Maybe<string | undefined>;
@@ -15677,6 +15798,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
+                        content?: string | undefined;
                         localFilePath?: yup.Maybe<string | undefined>;
                         isDeleted?: boolean | undefined;
                         waveForm?: yup.Maybe<string | undefined>;
@@ -15736,6 +15858,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
+                        content?: string | undefined;
                         localFilePath?: yup.Maybe<string | undefined>;
                         isDeleted?: boolean | undefined;
                         waveForm?: yup.Maybe<string | undefined>;
@@ -15795,6 +15918,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
+                        content?: string | undefined;
                         localFilePath?: yup.Maybe<string | undefined>;
                         isDeleted?: boolean | undefined;
                         waveForm?: yup.Maybe<string | undefined>;
@@ -16364,6 +16488,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
+                        content?: string | undefined;
                         localFilePath?: yup.Maybe<string | undefined>;
                         isDeleted?: boolean | undefined;
                         waveForm?: yup.Maybe<string | undefined>;
@@ -16422,6 +16547,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
+                        content?: string | undefined;
                         localFilePath?: yup.Maybe<string | undefined>;
                         isDeleted?: boolean | undefined;
                         waveForm?: yup.Maybe<string | undefined>;
@@ -16481,6 +16607,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
+                        content?: string | undefined;
                         localFilePath?: yup.Maybe<string | undefined>;
                         isDeleted?: boolean | undefined;
                         waveForm?: yup.Maybe<string | undefined>;
