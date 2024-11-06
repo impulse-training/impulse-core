@@ -67,6 +67,7 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
                 waveForm?: import("yup").Maybe<string | undefined>;
                 thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                 thumbnailUri?: import("yup").Maybe<string | undefined>;
+                contentType: string;
                 storagePath: string;
                 uri: string;
             } | undefined;
@@ -96,6 +97,7 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
                 waveForm?: import("yup").Maybe<string | undefined>;
                 thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                 thumbnailUri?: import("yup").Maybe<string | undefined>;
+                contentType: string;
                 storagePath: string;
                 uri: string;
             };
@@ -148,6 +150,7 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
                 waveForm?: import("yup").Maybe<string | undefined>;
                 thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                 thumbnailUri?: import("yup").Maybe<string | undefined>;
+                contentType: string;
                 storagePath: string;
                 uri: string;
             } | undefined;
@@ -208,6 +211,7 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
                 waveForm?: import("yup").Maybe<string | undefined>;
                 thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                 thumbnailUri?: import("yup").Maybe<string | undefined>;
+                contentType: string;
                 storagePath: string;
                 uri: string;
             } | undefined;
@@ -266,6 +270,7 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
                 waveForm?: import("yup").Maybe<string | undefined>;
                 thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                 thumbnailUri?: import("yup").Maybe<string | undefined>;
+                contentType: string;
                 storagePath: string;
                 uri: string;
             } | undefined;
@@ -324,6 +329,7 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
                 waveForm?: import("yup").Maybe<string | undefined>;
                 thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                 thumbnailUri?: import("yup").Maybe<string | undefined>;
+                contentType: string;
                 storagePath: string;
                 uri: string;
             } | undefined;
@@ -382,6 +388,7 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
                 waveForm?: import("yup").Maybe<string | undefined>;
                 thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                 thumbnailUri?: import("yup").Maybe<string | undefined>;
+                contentType: string;
                 storagePath: string;
                 uri: string;
             } | undefined;
@@ -950,6 +957,7 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
                 waveForm?: import("yup").Maybe<string | undefined>;
                 thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                 thumbnailUri?: import("yup").Maybe<string | undefined>;
+                contentType: string;
                 storagePath: string;
                 uri: string;
             } | undefined;
@@ -1007,6 +1015,7 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
                 waveForm?: import("yup").Maybe<string | undefined>;
                 thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                 thumbnailUri?: import("yup").Maybe<string | undefined>;
+                contentType: string;
                 storagePath: string;
                 uri: string;
             } | undefined;
@@ -1065,6 +1074,7 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
                 waveForm?: import("yup").Maybe<string | undefined>;
                 thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                 thumbnailUri?: import("yup").Maybe<string | undefined>;
+                contentType: string;
                 storagePath: string;
                 uri: string;
             } | undefined;
@@ -1134,6 +1144,7 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
             waveForm?: import("yup").Maybe<string | undefined>;
             thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
             thumbnailUri?: import("yup").Maybe<string | undefined>;
+            contentType: string;
             storagePath: string;
             uri: string;
         } | undefined;
@@ -1163,6 +1174,7 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
             waveForm?: import("yup").Maybe<string | undefined>;
             thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
             thumbnailUri?: import("yup").Maybe<string | undefined>;
+            contentType: string;
             storagePath: string;
             uri: string;
         };
@@ -1215,6 +1227,7 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
             waveForm?: import("yup").Maybe<string | undefined>;
             thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
             thumbnailUri?: import("yup").Maybe<string | undefined>;
+            contentType: string;
             storagePath: string;
             uri: string;
         } | undefined;
@@ -1275,6 +1288,7 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
             waveForm?: import("yup").Maybe<string | undefined>;
             thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
             thumbnailUri?: import("yup").Maybe<string | undefined>;
+            contentType: string;
             storagePath: string;
             uri: string;
         } | undefined;
@@ -1333,6 +1347,7 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
             waveForm?: import("yup").Maybe<string | undefined>;
             thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
             thumbnailUri?: import("yup").Maybe<string | undefined>;
+            contentType: string;
             storagePath: string;
             uri: string;
         } | undefined;
@@ -1391,6 +1406,7 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
             waveForm?: import("yup").Maybe<string | undefined>;
             thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
             thumbnailUri?: import("yup").Maybe<string | undefined>;
+            contentType: string;
             storagePath: string;
             uri: string;
         } | undefined;
@@ -1449,6 +1465,7 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
             waveForm?: import("yup").Maybe<string | undefined>;
             thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
             thumbnailUri?: import("yup").Maybe<string | undefined>;
+            contentType: string;
             storagePath: string;
             uri: string;
         } | undefined;
@@ -2017,6 +2034,7 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
             waveForm?: import("yup").Maybe<string | undefined>;
             thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
             thumbnailUri?: import("yup").Maybe<string | undefined>;
+            contentType: string;
             storagePath: string;
             uri: string;
         } | undefined;
@@ -2074,6 +2092,7 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
             waveForm?: import("yup").Maybe<string | undefined>;
             thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
             thumbnailUri?: import("yup").Maybe<string | undefined>;
+            contentType: string;
             storagePath: string;
             uri: string;
         } | undefined;
@@ -2132,6 +2151,7 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
             waveForm?: import("yup").Maybe<string | undefined>;
             thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
             thumbnailUri?: import("yup").Maybe<string | undefined>;
+            contentType: string;
             storagePath: string;
             uri: string;
         } | undefined;

@@ -48,6 +48,7 @@ export declare function recapTacticValueBaseSchema(type: RecapKeyType): import("
         waveForm?: import("yup").Maybe<string | undefined>;
         thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
         thumbnailUri?: import("yup").Maybe<string | undefined>;
+        contentType: string;
         storagePath: string;
         uri: string;
     } | undefined;

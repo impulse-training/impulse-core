@@ -53,6 +53,7 @@ export declare const daySchema: yup.ObjectSchema<{
                 waveForm?: yup.Maybe<string | undefined>;
                 thumbnailStoragePath?: yup.Maybe<string | undefined>;
                 thumbnailUri?: yup.Maybe<string | undefined>;
+                contentType: string;
                 storagePath: string;
                 uri: string;
             } | undefined;
@@ -642,6 +643,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     waveForm?: yup.Maybe<string | undefined>;
                     thumbnailStoragePath?: yup.Maybe<string | undefined>;
                     thumbnailUri?: yup.Maybe<string | undefined>;
+                    contentType: string;
                     storagePath: string;
                     uri: string;
                 } | undefined;
@@ -671,6 +673,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     waveForm?: yup.Maybe<string | undefined>;
                     thumbnailStoragePath?: yup.Maybe<string | undefined>;
                     thumbnailUri?: yup.Maybe<string | undefined>;
+                    contentType: string;
                     storagePath: string;
                     uri: string;
                 };
@@ -723,6 +726,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     waveForm?: yup.Maybe<string | undefined>;
                     thumbnailStoragePath?: yup.Maybe<string | undefined>;
                     thumbnailUri?: yup.Maybe<string | undefined>;
+                    contentType: string;
                     storagePath: string;
                     uri: string;
                 } | undefined;
@@ -783,6 +787,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     waveForm?: yup.Maybe<string | undefined>;
                     thumbnailStoragePath?: yup.Maybe<string | undefined>;
                     thumbnailUri?: yup.Maybe<string | undefined>;
+                    contentType: string;
                     storagePath: string;
                     uri: string;
                 } | undefined;
@@ -841,6 +846,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     waveForm?: yup.Maybe<string | undefined>;
                     thumbnailStoragePath?: yup.Maybe<string | undefined>;
                     thumbnailUri?: yup.Maybe<string | undefined>;
+                    contentType: string;
                     storagePath: string;
                     uri: string;
                 } | undefined;
@@ -899,6 +905,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     waveForm?: yup.Maybe<string | undefined>;
                     thumbnailStoragePath?: yup.Maybe<string | undefined>;
                     thumbnailUri?: yup.Maybe<string | undefined>;
+                    contentType: string;
                     storagePath: string;
                     uri: string;
                 } | undefined;
@@ -957,6 +964,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     waveForm?: yup.Maybe<string | undefined>;
                     thumbnailStoragePath?: yup.Maybe<string | undefined>;
                     thumbnailUri?: yup.Maybe<string | undefined>;
+                    contentType: string;
                     storagePath: string;
                     uri: string;
                 } | undefined;
@@ -1525,6 +1533,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     waveForm?: yup.Maybe<string | undefined>;
                     thumbnailStoragePath?: yup.Maybe<string | undefined>;
                     thumbnailUri?: yup.Maybe<string | undefined>;
+                    contentType: string;
                     storagePath: string;
                     uri: string;
                 } | undefined;
@@ -1582,6 +1591,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     waveForm?: yup.Maybe<string | undefined>;
                     thumbnailStoragePath?: yup.Maybe<string | undefined>;
                     thumbnailUri?: yup.Maybe<string | undefined>;
+                    contentType: string;
                     storagePath: string;
                     uri: string;
                 } | undefined;
@@ -1640,6 +1650,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     waveForm?: yup.Maybe<string | undefined>;
                     thumbnailStoragePath?: yup.Maybe<string | undefined>;
                     thumbnailUri?: yup.Maybe<string | undefined>;
+                    contentType: string;
                     storagePath: string;
                     uri: string;
                 } | undefined;
@@ -1710,6 +1721,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         waveForm?: yup.Maybe<string | undefined>;
                         thumbnailStoragePath?: yup.Maybe<string | undefined>;
                         thumbnailUri?: yup.Maybe<string | undefined>;
+                        contentType: string;
                         storagePath: string;
                         uri: string;
                     } | undefined;
@@ -1739,6 +1751,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         waveForm?: yup.Maybe<string | undefined>;
                         thumbnailStoragePath?: yup.Maybe<string | undefined>;
                         thumbnailUri?: yup.Maybe<string | undefined>;
+                        contentType: string;
                         storagePath: string;
                         uri: string;
                     };
@@ -1791,6 +1804,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         waveForm?: yup.Maybe<string | undefined>;
                         thumbnailStoragePath?: yup.Maybe<string | undefined>;
                         thumbnailUri?: yup.Maybe<string | undefined>;
+                        contentType: string;
                         storagePath: string;
                         uri: string;
                     } | undefined;
@@ -1851,6 +1865,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         waveForm?: yup.Maybe<string | undefined>;
                         thumbnailStoragePath?: yup.Maybe<string | undefined>;
                         thumbnailUri?: yup.Maybe<string | undefined>;
+                        contentType: string;
                         storagePath: string;
                         uri: string;
                     } | undefined;
@@ -1909,6 +1924,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         waveForm?: yup.Maybe<string | undefined>;
                         thumbnailStoragePath?: yup.Maybe<string | undefined>;
                         thumbnailUri?: yup.Maybe<string | undefined>;
+                        contentType: string;
                         storagePath: string;
                         uri: string;
                     } | undefined;
@@ -1967,6 +1983,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         waveForm?: yup.Maybe<string | undefined>;
                         thumbnailStoragePath?: yup.Maybe<string | undefined>;
                         thumbnailUri?: yup.Maybe<string | undefined>;
+                        contentType: string;
                         storagePath: string;
                         uri: string;
                     } | undefined;
@@ -2025,6 +2042,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         waveForm?: yup.Maybe<string | undefined>;
                         thumbnailStoragePath?: yup.Maybe<string | undefined>;
                         thumbnailUri?: yup.Maybe<string | undefined>;
+                        contentType: string;
                         storagePath: string;
                         uri: string;
                     } | undefined;
@@ -2593,6 +2611,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         waveForm?: yup.Maybe<string | undefined>;
                         thumbnailStoragePath?: yup.Maybe<string | undefined>;
                         thumbnailUri?: yup.Maybe<string | undefined>;
+                        contentType: string;
                         storagePath: string;
                         uri: string;
                     } | undefined;
@@ -2650,6 +2669,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         waveForm?: yup.Maybe<string | undefined>;
                         thumbnailStoragePath?: yup.Maybe<string | undefined>;
                         thumbnailUri?: yup.Maybe<string | undefined>;
+                        contentType: string;
                         storagePath: string;
                         uri: string;
                     } | undefined;
@@ -2708,6 +2728,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         waveForm?: yup.Maybe<string | undefined>;
                         thumbnailStoragePath?: yup.Maybe<string | undefined>;
                         thumbnailUri?: yup.Maybe<string | undefined>;
+                        contentType: string;
                         storagePath: string;
                         uri: string;
                     } | undefined;
@@ -2775,6 +2796,7 @@ export declare const daySchema: yup.ObjectSchema<{
                 waveForm?: yup.Maybe<string | undefined>;
                 thumbnailStoragePath?: yup.Maybe<string | undefined>;
                 thumbnailUri?: yup.Maybe<string | undefined>;
+                contentType: string;
                 storagePath: string;
                 uri: string;
             } | undefined;
@@ -3364,6 +3386,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     waveForm?: yup.Maybe<string | undefined>;
                     thumbnailStoragePath?: yup.Maybe<string | undefined>;
                     thumbnailUri?: yup.Maybe<string | undefined>;
+                    contentType: string;
                     storagePath: string;
                     uri: string;
                 } | undefined;
@@ -3393,6 +3416,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     waveForm?: yup.Maybe<string | undefined>;
                     thumbnailStoragePath?: yup.Maybe<string | undefined>;
                     thumbnailUri?: yup.Maybe<string | undefined>;
+                    contentType: string;
                     storagePath: string;
                     uri: string;
                 };
@@ -3445,6 +3469,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     waveForm?: yup.Maybe<string | undefined>;
                     thumbnailStoragePath?: yup.Maybe<string | undefined>;
                     thumbnailUri?: yup.Maybe<string | undefined>;
+                    contentType: string;
                     storagePath: string;
                     uri: string;
                 } | undefined;
@@ -3505,6 +3530,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     waveForm?: yup.Maybe<string | undefined>;
                     thumbnailStoragePath?: yup.Maybe<string | undefined>;
                     thumbnailUri?: yup.Maybe<string | undefined>;
+                    contentType: string;
                     storagePath: string;
                     uri: string;
                 } | undefined;
@@ -3563,6 +3589,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     waveForm?: yup.Maybe<string | undefined>;
                     thumbnailStoragePath?: yup.Maybe<string | undefined>;
                     thumbnailUri?: yup.Maybe<string | undefined>;
+                    contentType: string;
                     storagePath: string;
                     uri: string;
                 } | undefined;
@@ -3621,6 +3648,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     waveForm?: yup.Maybe<string | undefined>;
                     thumbnailStoragePath?: yup.Maybe<string | undefined>;
                     thumbnailUri?: yup.Maybe<string | undefined>;
+                    contentType: string;
                     storagePath: string;
                     uri: string;
                 } | undefined;
@@ -3679,6 +3707,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     waveForm?: yup.Maybe<string | undefined>;
                     thumbnailStoragePath?: yup.Maybe<string | undefined>;
                     thumbnailUri?: yup.Maybe<string | undefined>;
+                    contentType: string;
                     storagePath: string;
                     uri: string;
                 } | undefined;
@@ -4247,6 +4276,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     waveForm?: yup.Maybe<string | undefined>;
                     thumbnailStoragePath?: yup.Maybe<string | undefined>;
                     thumbnailUri?: yup.Maybe<string | undefined>;
+                    contentType: string;
                     storagePath: string;
                     uri: string;
                 } | undefined;
@@ -4304,6 +4334,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     waveForm?: yup.Maybe<string | undefined>;
                     thumbnailStoragePath?: yup.Maybe<string | undefined>;
                     thumbnailUri?: yup.Maybe<string | undefined>;
+                    contentType: string;
                     storagePath: string;
                     uri: string;
                 } | undefined;
@@ -4362,6 +4393,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     waveForm?: yup.Maybe<string | undefined>;
                     thumbnailStoragePath?: yup.Maybe<string | undefined>;
                     thumbnailUri?: yup.Maybe<string | undefined>;
+                    contentType: string;
                     storagePath: string;
                     uri: string;
                 } | undefined;
@@ -4439,6 +4471,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         waveForm?: yup.Maybe<string | undefined>;
                         thumbnailStoragePath?: yup.Maybe<string | undefined>;
                         thumbnailUri?: yup.Maybe<string | undefined>;
+                        contentType: string;
                         storagePath: string;
                         uri: string;
                     } | undefined;
@@ -4468,6 +4501,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         waveForm?: yup.Maybe<string | undefined>;
                         thumbnailStoragePath?: yup.Maybe<string | undefined>;
                         thumbnailUri?: yup.Maybe<string | undefined>;
+                        contentType: string;
                         storagePath: string;
                         uri: string;
                     };
@@ -4520,6 +4554,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         waveForm?: yup.Maybe<string | undefined>;
                         thumbnailStoragePath?: yup.Maybe<string | undefined>;
                         thumbnailUri?: yup.Maybe<string | undefined>;
+                        contentType: string;
                         storagePath: string;
                         uri: string;
                     } | undefined;
@@ -4580,6 +4615,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         waveForm?: yup.Maybe<string | undefined>;
                         thumbnailStoragePath?: yup.Maybe<string | undefined>;
                         thumbnailUri?: yup.Maybe<string | undefined>;
+                        contentType: string;
                         storagePath: string;
                         uri: string;
                     } | undefined;
@@ -4638,6 +4674,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         waveForm?: yup.Maybe<string | undefined>;
                         thumbnailStoragePath?: yup.Maybe<string | undefined>;
                         thumbnailUri?: yup.Maybe<string | undefined>;
+                        contentType: string;
                         storagePath: string;
                         uri: string;
                     } | undefined;
@@ -4696,6 +4733,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         waveForm?: yup.Maybe<string | undefined>;
                         thumbnailStoragePath?: yup.Maybe<string | undefined>;
                         thumbnailUri?: yup.Maybe<string | undefined>;
+                        contentType: string;
                         storagePath: string;
                         uri: string;
                     } | undefined;
@@ -4754,6 +4792,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         waveForm?: yup.Maybe<string | undefined>;
                         thumbnailStoragePath?: yup.Maybe<string | undefined>;
                         thumbnailUri?: yup.Maybe<string | undefined>;
+                        contentType: string;
                         storagePath: string;
                         uri: string;
                     } | undefined;
@@ -5322,6 +5361,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         waveForm?: yup.Maybe<string | undefined>;
                         thumbnailStoragePath?: yup.Maybe<string | undefined>;
                         thumbnailUri?: yup.Maybe<string | undefined>;
+                        contentType: string;
                         storagePath: string;
                         uri: string;
                     } | undefined;
@@ -5379,6 +5419,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         waveForm?: yup.Maybe<string | undefined>;
                         thumbnailStoragePath?: yup.Maybe<string | undefined>;
                         thumbnailUri?: yup.Maybe<string | undefined>;
+                        contentType: string;
                         storagePath: string;
                         uri: string;
                     } | undefined;
@@ -5437,6 +5478,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         waveForm?: yup.Maybe<string | undefined>;
                         thumbnailStoragePath?: yup.Maybe<string | undefined>;
                         thumbnailUri?: yup.Maybe<string | undefined>;
+                        contentType: string;
                         storagePath: string;
                         uri: string;
                     } | undefined;
@@ -5505,6 +5547,7 @@ export declare const daySchema: yup.ObjectSchema<{
                 waveForm?: yup.Maybe<string | undefined>;
                 thumbnailStoragePath?: yup.Maybe<string | undefined>;
                 thumbnailUri?: yup.Maybe<string | undefined>;
+                contentType: string;
                 storagePath: string;
                 uri: string;
             } | undefined;
@@ -6094,6 +6137,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     waveForm?: yup.Maybe<string | undefined>;
                     thumbnailStoragePath?: yup.Maybe<string | undefined>;
                     thumbnailUri?: yup.Maybe<string | undefined>;
+                    contentType: string;
                     storagePath: string;
                     uri: string;
                 } | undefined;
@@ -6123,6 +6167,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     waveForm?: yup.Maybe<string | undefined>;
                     thumbnailStoragePath?: yup.Maybe<string | undefined>;
                     thumbnailUri?: yup.Maybe<string | undefined>;
+                    contentType: string;
                     storagePath: string;
                     uri: string;
                 };
@@ -6175,6 +6220,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     waveForm?: yup.Maybe<string | undefined>;
                     thumbnailStoragePath?: yup.Maybe<string | undefined>;
                     thumbnailUri?: yup.Maybe<string | undefined>;
+                    contentType: string;
                     storagePath: string;
                     uri: string;
                 } | undefined;
@@ -6235,6 +6281,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     waveForm?: yup.Maybe<string | undefined>;
                     thumbnailStoragePath?: yup.Maybe<string | undefined>;
                     thumbnailUri?: yup.Maybe<string | undefined>;
+                    contentType: string;
                     storagePath: string;
                     uri: string;
                 } | undefined;
@@ -6293,6 +6340,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     waveForm?: yup.Maybe<string | undefined>;
                     thumbnailStoragePath?: yup.Maybe<string | undefined>;
                     thumbnailUri?: yup.Maybe<string | undefined>;
+                    contentType: string;
                     storagePath: string;
                     uri: string;
                 } | undefined;
@@ -6351,6 +6399,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     waveForm?: yup.Maybe<string | undefined>;
                     thumbnailStoragePath?: yup.Maybe<string | undefined>;
                     thumbnailUri?: yup.Maybe<string | undefined>;
+                    contentType: string;
                     storagePath: string;
                     uri: string;
                 } | undefined;
@@ -6409,6 +6458,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     waveForm?: yup.Maybe<string | undefined>;
                     thumbnailStoragePath?: yup.Maybe<string | undefined>;
                     thumbnailUri?: yup.Maybe<string | undefined>;
+                    contentType: string;
                     storagePath: string;
                     uri: string;
                 } | undefined;
@@ -6977,6 +7027,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     waveForm?: yup.Maybe<string | undefined>;
                     thumbnailStoragePath?: yup.Maybe<string | undefined>;
                     thumbnailUri?: yup.Maybe<string | undefined>;
+                    contentType: string;
                     storagePath: string;
                     uri: string;
                 } | undefined;
@@ -7034,6 +7085,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     waveForm?: yup.Maybe<string | undefined>;
                     thumbnailStoragePath?: yup.Maybe<string | undefined>;
                     thumbnailUri?: yup.Maybe<string | undefined>;
+                    contentType: string;
                     storagePath: string;
                     uri: string;
                 } | undefined;
@@ -7092,6 +7144,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     waveForm?: yup.Maybe<string | undefined>;
                     thumbnailStoragePath?: yup.Maybe<string | undefined>;
                     thumbnailUri?: yup.Maybe<string | undefined>;
+                    contentType: string;
                     storagePath: string;
                     uri: string;
                 } | undefined;
@@ -7163,6 +7216,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         waveForm?: yup.Maybe<string | undefined>;
                         thumbnailStoragePath?: yup.Maybe<string | undefined>;
                         thumbnailUri?: yup.Maybe<string | undefined>;
+                        contentType: string;
                         storagePath: string;
                         uri: string;
                     } | undefined;
@@ -7192,6 +7246,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         waveForm?: yup.Maybe<string | undefined>;
                         thumbnailStoragePath?: yup.Maybe<string | undefined>;
                         thumbnailUri?: yup.Maybe<string | undefined>;
+                        contentType: string;
                         storagePath: string;
                         uri: string;
                     };
@@ -7244,6 +7299,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         waveForm?: yup.Maybe<string | undefined>;
                         thumbnailStoragePath?: yup.Maybe<string | undefined>;
                         thumbnailUri?: yup.Maybe<string | undefined>;
+                        contentType: string;
                         storagePath: string;
                         uri: string;
                     } | undefined;
@@ -7304,6 +7360,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         waveForm?: yup.Maybe<string | undefined>;
                         thumbnailStoragePath?: yup.Maybe<string | undefined>;
                         thumbnailUri?: yup.Maybe<string | undefined>;
+                        contentType: string;
                         storagePath: string;
                         uri: string;
                     } | undefined;
@@ -7362,6 +7419,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         waveForm?: yup.Maybe<string | undefined>;
                         thumbnailStoragePath?: yup.Maybe<string | undefined>;
                         thumbnailUri?: yup.Maybe<string | undefined>;
+                        contentType: string;
                         storagePath: string;
                         uri: string;
                     } | undefined;
@@ -7420,6 +7478,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         waveForm?: yup.Maybe<string | undefined>;
                         thumbnailStoragePath?: yup.Maybe<string | undefined>;
                         thumbnailUri?: yup.Maybe<string | undefined>;
+                        contentType: string;
                         storagePath: string;
                         uri: string;
                     } | undefined;
@@ -7478,6 +7537,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         waveForm?: yup.Maybe<string | undefined>;
                         thumbnailStoragePath?: yup.Maybe<string | undefined>;
                         thumbnailUri?: yup.Maybe<string | undefined>;
+                        contentType: string;
                         storagePath: string;
                         uri: string;
                     } | undefined;
@@ -8046,6 +8106,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         waveForm?: yup.Maybe<string | undefined>;
                         thumbnailStoragePath?: yup.Maybe<string | undefined>;
                         thumbnailUri?: yup.Maybe<string | undefined>;
+                        contentType: string;
                         storagePath: string;
                         uri: string;
                     } | undefined;
@@ -8103,6 +8164,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         waveForm?: yup.Maybe<string | undefined>;
                         thumbnailStoragePath?: yup.Maybe<string | undefined>;
                         thumbnailUri?: yup.Maybe<string | undefined>;
+                        contentType: string;
                         storagePath: string;
                         uri: string;
                     } | undefined;
@@ -8161,6 +8223,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         waveForm?: yup.Maybe<string | undefined>;
                         thumbnailStoragePath?: yup.Maybe<string | undefined>;
                         thumbnailUri?: yup.Maybe<string | undefined>;
+                        contentType: string;
                         storagePath: string;
                         uri: string;
                     } | undefined;
@@ -8228,6 +8291,7 @@ export declare const daySchema: yup.ObjectSchema<{
                 waveForm?: yup.Maybe<string | undefined>;
                 thumbnailStoragePath?: yup.Maybe<string | undefined>;
                 thumbnailUri?: yup.Maybe<string | undefined>;
+                contentType: string;
                 storagePath: string;
                 uri: string;
             } | undefined;
@@ -8817,6 +8881,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     waveForm?: yup.Maybe<string | undefined>;
                     thumbnailStoragePath?: yup.Maybe<string | undefined>;
                     thumbnailUri?: yup.Maybe<string | undefined>;
+                    contentType: string;
                     storagePath: string;
                     uri: string;
                 } | undefined;
@@ -8846,6 +8911,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     waveForm?: yup.Maybe<string | undefined>;
                     thumbnailStoragePath?: yup.Maybe<string | undefined>;
                     thumbnailUri?: yup.Maybe<string | undefined>;
+                    contentType: string;
                     storagePath: string;
                     uri: string;
                 };
@@ -8898,6 +8964,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     waveForm?: yup.Maybe<string | undefined>;
                     thumbnailStoragePath?: yup.Maybe<string | undefined>;
                     thumbnailUri?: yup.Maybe<string | undefined>;
+                    contentType: string;
                     storagePath: string;
                     uri: string;
                 } | undefined;
@@ -8958,6 +9025,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     waveForm?: yup.Maybe<string | undefined>;
                     thumbnailStoragePath?: yup.Maybe<string | undefined>;
                     thumbnailUri?: yup.Maybe<string | undefined>;
+                    contentType: string;
                     storagePath: string;
                     uri: string;
                 } | undefined;
@@ -9016,6 +9084,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     waveForm?: yup.Maybe<string | undefined>;
                     thumbnailStoragePath?: yup.Maybe<string | undefined>;
                     thumbnailUri?: yup.Maybe<string | undefined>;
+                    contentType: string;
                     storagePath: string;
                     uri: string;
                 } | undefined;
@@ -9074,6 +9143,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     waveForm?: yup.Maybe<string | undefined>;
                     thumbnailStoragePath?: yup.Maybe<string | undefined>;
                     thumbnailUri?: yup.Maybe<string | undefined>;
+                    contentType: string;
                     storagePath: string;
                     uri: string;
                 } | undefined;
@@ -9132,6 +9202,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     waveForm?: yup.Maybe<string | undefined>;
                     thumbnailStoragePath?: yup.Maybe<string | undefined>;
                     thumbnailUri?: yup.Maybe<string | undefined>;
+                    contentType: string;
                     storagePath: string;
                     uri: string;
                 } | undefined;
@@ -9700,6 +9771,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     waveForm?: yup.Maybe<string | undefined>;
                     thumbnailStoragePath?: yup.Maybe<string | undefined>;
                     thumbnailUri?: yup.Maybe<string | undefined>;
+                    contentType: string;
                     storagePath: string;
                     uri: string;
                 } | undefined;
@@ -9757,6 +9829,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     waveForm?: yup.Maybe<string | undefined>;
                     thumbnailStoragePath?: yup.Maybe<string | undefined>;
                     thumbnailUri?: yup.Maybe<string | undefined>;
+                    contentType: string;
                     storagePath: string;
                     uri: string;
                 } | undefined;
@@ -9815,6 +9888,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     waveForm?: yup.Maybe<string | undefined>;
                     thumbnailStoragePath?: yup.Maybe<string | undefined>;
                     thumbnailUri?: yup.Maybe<string | undefined>;
+                    contentType: string;
                     storagePath: string;
                     uri: string;
                 } | undefined;
@@ -9892,6 +9966,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         waveForm?: yup.Maybe<string | undefined>;
                         thumbnailStoragePath?: yup.Maybe<string | undefined>;
                         thumbnailUri?: yup.Maybe<string | undefined>;
+                        contentType: string;
                         storagePath: string;
                         uri: string;
                     } | undefined;
@@ -9921,6 +9996,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         waveForm?: yup.Maybe<string | undefined>;
                         thumbnailStoragePath?: yup.Maybe<string | undefined>;
                         thumbnailUri?: yup.Maybe<string | undefined>;
+                        contentType: string;
                         storagePath: string;
                         uri: string;
                     };
@@ -9973,6 +10049,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         waveForm?: yup.Maybe<string | undefined>;
                         thumbnailStoragePath?: yup.Maybe<string | undefined>;
                         thumbnailUri?: yup.Maybe<string | undefined>;
+                        contentType: string;
                         storagePath: string;
                         uri: string;
                     } | undefined;
@@ -10033,6 +10110,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         waveForm?: yup.Maybe<string | undefined>;
                         thumbnailStoragePath?: yup.Maybe<string | undefined>;
                         thumbnailUri?: yup.Maybe<string | undefined>;
+                        contentType: string;
                         storagePath: string;
                         uri: string;
                     } | undefined;
@@ -10091,6 +10169,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         waveForm?: yup.Maybe<string | undefined>;
                         thumbnailStoragePath?: yup.Maybe<string | undefined>;
                         thumbnailUri?: yup.Maybe<string | undefined>;
+                        contentType: string;
                         storagePath: string;
                         uri: string;
                     } | undefined;
@@ -10149,6 +10228,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         waveForm?: yup.Maybe<string | undefined>;
                         thumbnailStoragePath?: yup.Maybe<string | undefined>;
                         thumbnailUri?: yup.Maybe<string | undefined>;
+                        contentType: string;
                         storagePath: string;
                         uri: string;
                     } | undefined;
@@ -10207,6 +10287,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         waveForm?: yup.Maybe<string | undefined>;
                         thumbnailStoragePath?: yup.Maybe<string | undefined>;
                         thumbnailUri?: yup.Maybe<string | undefined>;
+                        contentType: string;
                         storagePath: string;
                         uri: string;
                     } | undefined;
@@ -10775,6 +10856,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         waveForm?: yup.Maybe<string | undefined>;
                         thumbnailStoragePath?: yup.Maybe<string | undefined>;
                         thumbnailUri?: yup.Maybe<string | undefined>;
+                        contentType: string;
                         storagePath: string;
                         uri: string;
                     } | undefined;
@@ -10832,6 +10914,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         waveForm?: yup.Maybe<string | undefined>;
                         thumbnailStoragePath?: yup.Maybe<string | undefined>;
                         thumbnailUri?: yup.Maybe<string | undefined>;
+                        contentType: string;
                         storagePath: string;
                         uri: string;
                     } | undefined;
@@ -10890,6 +10973,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         waveForm?: yup.Maybe<string | undefined>;
                         thumbnailStoragePath?: yup.Maybe<string | undefined>;
                         thumbnailUri?: yup.Maybe<string | undefined>;
+                        contentType: string;
                         storagePath: string;
                         uri: string;
                     } | undefined;
@@ -10957,6 +11041,7 @@ export declare const daySchema: yup.ObjectSchema<{
                 waveForm?: yup.Maybe<string | undefined>;
                 thumbnailStoragePath?: yup.Maybe<string | undefined>;
                 thumbnailUri?: yup.Maybe<string | undefined>;
+                contentType: string;
                 storagePath: string;
                 uri: string;
             } | undefined;
@@ -11546,6 +11631,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     waveForm?: yup.Maybe<string | undefined>;
                     thumbnailStoragePath?: yup.Maybe<string | undefined>;
                     thumbnailUri?: yup.Maybe<string | undefined>;
+                    contentType: string;
                     storagePath: string;
                     uri: string;
                 } | undefined;
@@ -11575,6 +11661,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     waveForm?: yup.Maybe<string | undefined>;
                     thumbnailStoragePath?: yup.Maybe<string | undefined>;
                     thumbnailUri?: yup.Maybe<string | undefined>;
+                    contentType: string;
                     storagePath: string;
                     uri: string;
                 };
@@ -11627,6 +11714,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     waveForm?: yup.Maybe<string | undefined>;
                     thumbnailStoragePath?: yup.Maybe<string | undefined>;
                     thumbnailUri?: yup.Maybe<string | undefined>;
+                    contentType: string;
                     storagePath: string;
                     uri: string;
                 } | undefined;
@@ -11687,6 +11775,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     waveForm?: yup.Maybe<string | undefined>;
                     thumbnailStoragePath?: yup.Maybe<string | undefined>;
                     thumbnailUri?: yup.Maybe<string | undefined>;
+                    contentType: string;
                     storagePath: string;
                     uri: string;
                 } | undefined;
@@ -11745,6 +11834,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     waveForm?: yup.Maybe<string | undefined>;
                     thumbnailStoragePath?: yup.Maybe<string | undefined>;
                     thumbnailUri?: yup.Maybe<string | undefined>;
+                    contentType: string;
                     storagePath: string;
                     uri: string;
                 } | undefined;
@@ -11803,6 +11893,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     waveForm?: yup.Maybe<string | undefined>;
                     thumbnailStoragePath?: yup.Maybe<string | undefined>;
                     thumbnailUri?: yup.Maybe<string | undefined>;
+                    contentType: string;
                     storagePath: string;
                     uri: string;
                 } | undefined;
@@ -11861,6 +11952,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     waveForm?: yup.Maybe<string | undefined>;
                     thumbnailStoragePath?: yup.Maybe<string | undefined>;
                     thumbnailUri?: yup.Maybe<string | undefined>;
+                    contentType: string;
                     storagePath: string;
                     uri: string;
                 } | undefined;
@@ -12429,6 +12521,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     waveForm?: yup.Maybe<string | undefined>;
                     thumbnailStoragePath?: yup.Maybe<string | undefined>;
                     thumbnailUri?: yup.Maybe<string | undefined>;
+                    contentType: string;
                     storagePath: string;
                     uri: string;
                 } | undefined;
@@ -12486,6 +12579,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     waveForm?: yup.Maybe<string | undefined>;
                     thumbnailStoragePath?: yup.Maybe<string | undefined>;
                     thumbnailUri?: yup.Maybe<string | undefined>;
+                    contentType: string;
                     storagePath: string;
                     uri: string;
                 } | undefined;
@@ -12544,6 +12638,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     waveForm?: yup.Maybe<string | undefined>;
                     thumbnailStoragePath?: yup.Maybe<string | undefined>;
                     thumbnailUri?: yup.Maybe<string | undefined>;
+                    contentType: string;
                     storagePath: string;
                     uri: string;
                 } | undefined;
@@ -12616,6 +12711,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         waveForm?: yup.Maybe<string | undefined>;
                         thumbnailStoragePath?: yup.Maybe<string | undefined>;
                         thumbnailUri?: yup.Maybe<string | undefined>;
+                        contentType: string;
                         storagePath: string;
                         uri: string;
                     } | undefined;
@@ -12645,6 +12741,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         waveForm?: yup.Maybe<string | undefined>;
                         thumbnailStoragePath?: yup.Maybe<string | undefined>;
                         thumbnailUri?: yup.Maybe<string | undefined>;
+                        contentType: string;
                         storagePath: string;
                         uri: string;
                     };
@@ -12697,6 +12794,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         waveForm?: yup.Maybe<string | undefined>;
                         thumbnailStoragePath?: yup.Maybe<string | undefined>;
                         thumbnailUri?: yup.Maybe<string | undefined>;
+                        contentType: string;
                         storagePath: string;
                         uri: string;
                     } | undefined;
@@ -12757,6 +12855,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         waveForm?: yup.Maybe<string | undefined>;
                         thumbnailStoragePath?: yup.Maybe<string | undefined>;
                         thumbnailUri?: yup.Maybe<string | undefined>;
+                        contentType: string;
                         storagePath: string;
                         uri: string;
                     } | undefined;
@@ -12815,6 +12914,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         waveForm?: yup.Maybe<string | undefined>;
                         thumbnailStoragePath?: yup.Maybe<string | undefined>;
                         thumbnailUri?: yup.Maybe<string | undefined>;
+                        contentType: string;
                         storagePath: string;
                         uri: string;
                     } | undefined;
@@ -12873,6 +12973,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         waveForm?: yup.Maybe<string | undefined>;
                         thumbnailStoragePath?: yup.Maybe<string | undefined>;
                         thumbnailUri?: yup.Maybe<string | undefined>;
+                        contentType: string;
                         storagePath: string;
                         uri: string;
                     } | undefined;
@@ -12931,6 +13032,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         waveForm?: yup.Maybe<string | undefined>;
                         thumbnailStoragePath?: yup.Maybe<string | undefined>;
                         thumbnailUri?: yup.Maybe<string | undefined>;
+                        contentType: string;
                         storagePath: string;
                         uri: string;
                     } | undefined;
@@ -13499,6 +13601,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         waveForm?: yup.Maybe<string | undefined>;
                         thumbnailStoragePath?: yup.Maybe<string | undefined>;
                         thumbnailUri?: yup.Maybe<string | undefined>;
+                        contentType: string;
                         storagePath: string;
                         uri: string;
                     } | undefined;
@@ -13556,6 +13659,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         waveForm?: yup.Maybe<string | undefined>;
                         thumbnailStoragePath?: yup.Maybe<string | undefined>;
                         thumbnailUri?: yup.Maybe<string | undefined>;
+                        contentType: string;
                         storagePath: string;
                         uri: string;
                     } | undefined;
@@ -13614,6 +13718,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         waveForm?: yup.Maybe<string | undefined>;
                         thumbnailStoragePath?: yup.Maybe<string | undefined>;
                         thumbnailUri?: yup.Maybe<string | undefined>;
+                        contentType: string;
                         storagePath: string;
                         uri: string;
                     } | undefined;
@@ -13681,6 +13786,7 @@ export declare const daySchema: yup.ObjectSchema<{
                 waveForm?: yup.Maybe<string | undefined>;
                 thumbnailStoragePath?: yup.Maybe<string | undefined>;
                 thumbnailUri?: yup.Maybe<string | undefined>;
+                contentType: string;
                 storagePath: string;
                 uri: string;
             } | undefined;
@@ -14270,6 +14376,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     waveForm?: yup.Maybe<string | undefined>;
                     thumbnailStoragePath?: yup.Maybe<string | undefined>;
                     thumbnailUri?: yup.Maybe<string | undefined>;
+                    contentType: string;
                     storagePath: string;
                     uri: string;
                 } | undefined;
@@ -14299,6 +14406,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     waveForm?: yup.Maybe<string | undefined>;
                     thumbnailStoragePath?: yup.Maybe<string | undefined>;
                     thumbnailUri?: yup.Maybe<string | undefined>;
+                    contentType: string;
                     storagePath: string;
                     uri: string;
                 };
@@ -14351,6 +14459,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     waveForm?: yup.Maybe<string | undefined>;
                     thumbnailStoragePath?: yup.Maybe<string | undefined>;
                     thumbnailUri?: yup.Maybe<string | undefined>;
+                    contentType: string;
                     storagePath: string;
                     uri: string;
                 } | undefined;
@@ -14411,6 +14520,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     waveForm?: yup.Maybe<string | undefined>;
                     thumbnailStoragePath?: yup.Maybe<string | undefined>;
                     thumbnailUri?: yup.Maybe<string | undefined>;
+                    contentType: string;
                     storagePath: string;
                     uri: string;
                 } | undefined;
@@ -14469,6 +14579,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     waveForm?: yup.Maybe<string | undefined>;
                     thumbnailStoragePath?: yup.Maybe<string | undefined>;
                     thumbnailUri?: yup.Maybe<string | undefined>;
+                    contentType: string;
                     storagePath: string;
                     uri: string;
                 } | undefined;
@@ -14527,6 +14638,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     waveForm?: yup.Maybe<string | undefined>;
                     thumbnailStoragePath?: yup.Maybe<string | undefined>;
                     thumbnailUri?: yup.Maybe<string | undefined>;
+                    contentType: string;
                     storagePath: string;
                     uri: string;
                 } | undefined;
@@ -14585,6 +14697,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     waveForm?: yup.Maybe<string | undefined>;
                     thumbnailStoragePath?: yup.Maybe<string | undefined>;
                     thumbnailUri?: yup.Maybe<string | undefined>;
+                    contentType: string;
                     storagePath: string;
                     uri: string;
                 } | undefined;
@@ -15153,6 +15266,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     waveForm?: yup.Maybe<string | undefined>;
                     thumbnailStoragePath?: yup.Maybe<string | undefined>;
                     thumbnailUri?: yup.Maybe<string | undefined>;
+                    contentType: string;
                     storagePath: string;
                     uri: string;
                 } | undefined;
@@ -15210,6 +15324,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     waveForm?: yup.Maybe<string | undefined>;
                     thumbnailStoragePath?: yup.Maybe<string | undefined>;
                     thumbnailUri?: yup.Maybe<string | undefined>;
+                    contentType: string;
                     storagePath: string;
                     uri: string;
                 } | undefined;
@@ -15268,6 +15383,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     waveForm?: yup.Maybe<string | undefined>;
                     thumbnailStoragePath?: yup.Maybe<string | undefined>;
                     thumbnailUri?: yup.Maybe<string | undefined>;
+                    contentType: string;
                     storagePath: string;
                     uri: string;
                 } | undefined;
@@ -15307,6 +15423,7 @@ export declare const daySchema: yup.ObjectSchema<{
                 waveForm?: yup.Maybe<string | undefined>;
                 thumbnailStoragePath?: yup.Maybe<string | undefined>;
                 thumbnailUri?: yup.Maybe<string | undefined>;
+                contentType: string;
                 storagePath: string;
                 uri: string;
             }[] | undefined>;
@@ -15362,6 +15479,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         waveForm?: yup.Maybe<string | undefined>;
                         thumbnailStoragePath?: yup.Maybe<string | undefined>;
                         thumbnailUri?: yup.Maybe<string | undefined>;
+                        contentType: string;
                         storagePath: string;
                         uri: string;
                     } | undefined;
@@ -15391,6 +15509,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         waveForm?: yup.Maybe<string | undefined>;
                         thumbnailStoragePath?: yup.Maybe<string | undefined>;
                         thumbnailUri?: yup.Maybe<string | undefined>;
+                        contentType: string;
                         storagePath: string;
                         uri: string;
                     };
@@ -15443,6 +15562,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         waveForm?: yup.Maybe<string | undefined>;
                         thumbnailStoragePath?: yup.Maybe<string | undefined>;
                         thumbnailUri?: yup.Maybe<string | undefined>;
+                        contentType: string;
                         storagePath: string;
                         uri: string;
                     } | undefined;
@@ -15503,6 +15623,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         waveForm?: yup.Maybe<string | undefined>;
                         thumbnailStoragePath?: yup.Maybe<string | undefined>;
                         thumbnailUri?: yup.Maybe<string | undefined>;
+                        contentType: string;
                         storagePath: string;
                         uri: string;
                     } | undefined;
@@ -15561,6 +15682,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         waveForm?: yup.Maybe<string | undefined>;
                         thumbnailStoragePath?: yup.Maybe<string | undefined>;
                         thumbnailUri?: yup.Maybe<string | undefined>;
+                        contentType: string;
                         storagePath: string;
                         uri: string;
                     } | undefined;
@@ -15619,6 +15741,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         waveForm?: yup.Maybe<string | undefined>;
                         thumbnailStoragePath?: yup.Maybe<string | undefined>;
                         thumbnailUri?: yup.Maybe<string | undefined>;
+                        contentType: string;
                         storagePath: string;
                         uri: string;
                     } | undefined;
@@ -15677,6 +15800,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         waveForm?: yup.Maybe<string | undefined>;
                         thumbnailStoragePath?: yup.Maybe<string | undefined>;
                         thumbnailUri?: yup.Maybe<string | undefined>;
+                        contentType: string;
                         storagePath: string;
                         uri: string;
                     } | undefined;
@@ -16245,6 +16369,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         waveForm?: yup.Maybe<string | undefined>;
                         thumbnailStoragePath?: yup.Maybe<string | undefined>;
                         thumbnailUri?: yup.Maybe<string | undefined>;
+                        contentType: string;
                         storagePath: string;
                         uri: string;
                     } | undefined;
@@ -16302,6 +16427,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         waveForm?: yup.Maybe<string | undefined>;
                         thumbnailStoragePath?: yup.Maybe<string | undefined>;
                         thumbnailUri?: yup.Maybe<string | undefined>;
+                        contentType: string;
                         storagePath: string;
                         uri: string;
                     } | undefined;
@@ -16360,6 +16486,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         waveForm?: yup.Maybe<string | undefined>;
                         thumbnailStoragePath?: yup.Maybe<string | undefined>;
                         thumbnailUri?: yup.Maybe<string | undefined>;
+                        contentType: string;
                         storagePath: string;
                         uri: string;
                     } | undefined;
