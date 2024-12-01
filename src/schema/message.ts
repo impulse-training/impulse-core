@@ -1,14 +1,16 @@
 import * as yup from 'yup';
 import { documentReferenceSchema } from './utils/firestore';
-import { objectOf } from './utils/objectOf';
-import { optionalTimestampSchema } from './utils/timestamp';
+import { optionalObjectOf } from './utils/objectOf';
+import { optionalTimestampSchema, timestampSchema } from './utils/timestamp';
 
 export const messageSchema = yup.object({
   createdAt: optionalTimestampSchema,
   updatedAt: optionalTimestampSchema,
+  date: timestampSchema,
+  dateString: yup.string().required(),
   content: yup.string().nullable().defined(),
   senderUid: yup.string(),
-  emotions: objectOf(yup.number()),
+  emotions: optionalObjectOf(yup.number()),
   files: yup.array().of(documentReferenceSchema),
   filesDeleted: yup.boolean(),
   externalId: yup.string(),
