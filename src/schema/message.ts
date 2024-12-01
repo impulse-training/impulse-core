@@ -1,4 +1,6 @@
 import * as yup from 'yup';
+import { questionDataSchema } from './log';
+import { questionSchema } from './question';
 import { documentReferenceSchema } from './utils/firestore';
 import { optionalObjectOf } from './utils/objectOf';
 import { optionalTimestampSchema, timestampSchema } from './utils/timestamp';
@@ -10,7 +12,9 @@ export const messageSchema = yup.object({
   dateString: yup.string().required(),
   content: yup.string().nullable().defined(),
   senderUid: yup.string(),
-  emotions: optionalObjectOf(yup.number()),
+  emotions: optionalObjectOf(yup.number().nullable().defined()),
+  questionsById: optionalObjectOf(questionSchema),
+  questionData: optionalObjectOf(questionDataSchema),
   files: yup.array().of(documentReferenceSchema),
   filesDeleted: yup.boolean(),
   externalId: yup.string(),
@@ -20,8 +24,3 @@ export const messageSchema = yup.object({
     .required(),
 });
 export type MessageValue = yup.InferType<typeof messageSchema>;
-
-const emotionSchema = yup.object({
-  emotion: yup.string().required(),
-  intensity: yup.number().required(),
-});
