@@ -3024,7 +3024,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         canAddNewOptions: NonNullable<boolean | undefined>;
     }, "type" | "prompt" | "options" | "ordinal" | "canAddNewOptions" | ("createdAt" | "updatedAt" | "followUps" | "recommendedForIssueIds" | "isPublic" | "categories" | "ordinals" | "templateFor" | "writeAnswerToProfileMemoryKey")>;
     applicationFactory: import("factory.ts").Factory<import("..").ApplicationValue, keyof import("..").ApplicationValue>;
-    dayFactory: import("factory.ts").Factory<import("..").DayValue, "date" | "issueName" | "questionsById" | "logsById">;
+    dayFactory: import("factory.ts").Factory<import("..").DayValue, "date" | "issueName" | "questionsById" | "logsById" | "summary">;
     issueFactory: import("factory.ts").Factory<{
         path?: string | null | undefined;
         createdAt?: {

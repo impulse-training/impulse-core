@@ -17153,6 +17153,7 @@ export declare const daySchema: yup.ObjectSchema<{
             ordinal: number;
         };
     };
+    summary: string | null;
 }, yup.AnyObject, {
     date: {
         seconds: undefined;
@@ -17164,6 +17165,7 @@ export declare const daySchema: yup.ObjectSchema<{
     issueName: undefined;
     logsById: undefined;
     questionsById: undefined;
+    summary: undefined;
 }, "">;
 export type DayValue = Omit<yup.InferType<typeof daySchema>, 'logsById'> & {
     logsById: Record<string, LogValue>;

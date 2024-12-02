@@ -10,6 +10,7 @@ export const daySchema = yup.object({
   issueName: yup.string().required(),
   logsById: objectOf(logSchema),
   questionsById: objectOf(questionSchema),
+  summary: yup.string().nullable().defined(),
 });
 
 export type DayValue = Omit<yup.InferType<typeof daySchema>, 'logsById'> & {
