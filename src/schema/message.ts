@@ -12,6 +12,7 @@ export const messageSchema = yup.object({
   dateString: yup.string().required(),
   content: yup.string().nullable().defined(),
   senderUid: yup.string(),
+  isDisplayable: yup.boolean().required(),
   emotions: optionalObjectOf(
     yup.object({
       label: yup.string().required(),

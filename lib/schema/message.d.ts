@@ -24,6 +24,7 @@ export declare const messageSchema: yup.ObjectSchema<{
     dateString: string;
     content: string | null;
     senderUid: string | undefined;
+    isDisplayable: NonNullable<boolean | undefined>;
     emotions: {
         [x: string]: {
             label: string;
@@ -579,6 +580,7 @@ export declare const messageSchema: yup.ObjectSchema<{
     dateString: undefined;
     content: undefined;
     senderUid: undefined;
+    isDisplayable: undefined;
     emotions: undefined;
     questions: undefined;
     files: "";
