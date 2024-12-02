@@ -12,9 +12,19 @@ export const messageSchema = yup.object({
   dateString: yup.string().required(),
   content: yup.string().nullable().defined(),
   senderUid: yup.string(),
-  emotions: optionalObjectOf(yup.number().nullable().defined()),
-  questionsById: optionalObjectOf(questionSchema),
-  questionData: optionalObjectOf(questionDataSchema),
+  emotions: optionalObjectOf(
+    yup.object({
+      label: yup.string().required(),
+      iconName: yup.string().required(),
+      intensity: yup.number().nullable().defined(),
+    })
+  ),
+  questions: optionalObjectOf(
+    yup.object({
+      question: questionSchema,
+      data: questionDataSchema,
+    })
+  ),
   files: yup.array().of(documentReferenceSchema),
   filesDeleted: yup.boolean(),
   externalId: yup.string(),
