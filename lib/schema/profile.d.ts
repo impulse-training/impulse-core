@@ -44,10 +44,6 @@ export declare const profileSchema: yup.ObjectSchema<{
     notificationPreferences: {
         [x: string]: NonNullable<"push" | "email" | undefined>[] | undefined;
     } | null | undefined;
-    blandPathwayId: string | undefined;
-    questionOfTheDayAnsweredQuestions: {
-        [x: string]: boolean | undefined;
-    } | null | undefined;
     verificationCode: string;
     dayReviewTime: {
         hour: number;
@@ -93,13 +89,15 @@ export declare const profileSchema: yup.ObjectSchema<{
     isReadyForTour: boolean | undefined;
     isOnboardingComplete: boolean | undefined;
     parentIds: string[] | undefined;
-    setbackThreshold: number | undefined;
     sendDebriefRemindersAfterMinutes: number | undefined;
     gameplanStrategies: import("./utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
     androidPermissions: {
         [x: string]: NonNullable<boolean | undefined>;
     } | null | undefined;
-    impulseContext: string | null | undefined;
+    historicalInsights: string[] | undefined;
+    recentSummaries: {
+        [x: string]: string;
+    };
     isTourDismissed: boolean | undefined;
     tourCompletedAt: {
         isEqual?: any;
@@ -133,8 +131,6 @@ export declare const profileSchema: yup.ObjectSchema<{
     emojiID: "";
     expoPushToken: undefined;
     notificationPreferences: undefined;
-    blandPathwayId: undefined;
-    questionOfTheDayAnsweredQuestions: undefined;
     verificationCode: undefined;
     dayReviewTime: null;
     issuesById: undefined;
@@ -143,11 +139,11 @@ export declare const profileSchema: yup.ObjectSchema<{
     isReadyForTour: undefined;
     isOnboardingComplete: undefined;
     parentIds: "";
-    setbackThreshold: undefined;
     sendDebriefRemindersAfterMinutes: undefined;
     gameplanStrategies: "";
     androidPermissions: undefined;
-    impulseContext: undefined;
+    historicalInsights: "";
+    recentSummaries: undefined;
     isTourDismissed: undefined;
     tourCompletedAt: undefined;
     region: undefined;

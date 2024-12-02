@@ -4,7 +4,7 @@ import { issueSchema } from './issue';
 import { notificationOptionSchema } from './notification';
 import { optionalStringArray, requiredStringArray } from './utils/array';
 import { documentReferenceSchema } from './utils/firestore';
-import { optionalObjectOf } from './utils/objectOf';
+import { objectOf, optionalObjectOf } from './utils/objectOf';
 import { optionalTimestampSchema } from './utils/timestamp';
 
 export const profileSchema = yup.object({
@@ -21,8 +21,6 @@ export const profileSchema = yup.object({
   notificationPreferences: optionalObjectOf(
     yup.array().of(notificationOptionSchema)
   ),
-  blandPathwayId: yup.string(),
-  questionOfTheDayAnsweredQuestions: optionalObjectOf(yup.boolean()),
   verificationCode: yup.string().required(),
   dayReviewTime: yup
     .object({
@@ -37,11 +35,14 @@ export const profileSchema = yup.object({
   isReadyForTour: yup.boolean(),
   isOnboardingComplete: yup.boolean(),
   parentIds: optionalStringArray,
-  setbackThreshold: yup.number(),
   sendDebriefRemindersAfterMinutes: yup.number(),
   gameplanStrategies: yup.array().of(documentReferenceSchema.required()),
   androidPermissions: optionalObjectOf(yup.boolean().required()),
-  impulseContext: yup.string().nullable(),
+
+  // System message context for interacting with OpenAI
+  historicalInsights: yup.array().of(yup.string().required()),
+  recentSummaries: objectOf(yup.string().required()),
+
   isTourDismissed: yup.boolean(),
   tourCompletedAt: optionalTimestampSchema,
   region: yup.string().nullable().optional(),
