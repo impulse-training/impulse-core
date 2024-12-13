@@ -12,7 +12,6 @@
     "clean": "rm -rf ./lib/",
     "build": "yarn clean && yarn tsc:build",
     "cm": "cz",
-    "prepare": "husky install",
     "semantic-release": "semantic-release",
     "test:watch": "jest --watch",
     "test": "jest",
