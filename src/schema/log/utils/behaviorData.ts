@@ -1,12 +1,6 @@
 import * as yup from 'yup';
 import { behaviorSchema } from '../../behavior';
-import { setbackThresholdMixin } from '../../behavior/utils/setbackThreshold';
 import { timestampSchema } from '../../utils/timestamp';
-
-// const logViewSchema = yup.object({
-//   openTime: timestampSchema,
-//   closeTime: timestampSchema,
-// });
 
 export const behaviorDataSchema = yup.object({
   idValue: yup.string(), // This is if the answer is an id
@@ -16,7 +10,6 @@ export const behaviorDataSchema = yup.object({
   color: yup.string(),
   unit: yup.string().required(),
   setAt: timestampSchema,
-  ...setbackThresholdMixin,
 });
 
 export const behaviorAndBehaviorDataSchema = yup.object({

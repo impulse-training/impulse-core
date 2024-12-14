@@ -48,7 +48,6 @@ export declare const factories: {
         behaviorData?: {
             [x: string]: {
                 behavior: {
-                    recommendedForIssueIds?: string[] | undefined;
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
@@ -63,35 +62,13 @@ export declare const factories: {
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
-                    templateFor?: "onboarding" | "afterSuccess" | "afterSetback" | undefined;
                     setbackThreshold?: number | undefined;
-                    prompt: string;
-                    type: "counter";
+                    name: string;
                     ordinal: number;
-                } | {
-                    recommendedForIssueIds?: string[] | undefined;
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    templateFor?: "onboarding" | "afterSuccess" | "afterSetback" | undefined;
-                    setbackThreshold?: number | undefined;
-                    prompt: string;
-                    type: "time";
-                    ordinal: number;
+                    trackingType: NonNullable<"time" | "counter" | undefined>;
+                    isHelpful: boolean | null;
                 };
                 data: {
-                    setbackThreshold?: number | undefined;
                     label?: string | undefined;
                     idValue?: string | undefined;
                     numericValue?: number | undefined;
@@ -123,7 +100,6 @@ export declare const factories: {
         role: NonNullable<"user" | "assistant" | "system" | "tool" | undefined>;
     }, "type" | "uid" | "date" | "dateString" | "role" | ("createdAt" | "updatedAt" | "audioFile" | "emotionData" | "behaviorData" | "text" | "senderUid")>;
     counterBehaviorFactory: import("factory.ts").Factory<{
-        recommendedForIssueIds?: string[] | undefined;
         createdAt?: {
             isEqual?: any;
             toMillis?: any;
@@ -138,14 +114,13 @@ export declare const factories: {
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        templateFor?: "onboarding" | "afterSuccess" | "afterSetback" | undefined;
         setbackThreshold?: number | undefined;
-        prompt: string;
-        type: "time";
+        name: string;
         ordinal: number;
-    }, "prompt" | "type" | "ordinal" | ("recommendedForIssueIds" | "createdAt" | "updatedAt" | "templateFor" | "setbackThreshold")>;
+        trackingType: NonNullable<"time" | "counter" | undefined>;
+        isHelpful: boolean | null;
+    }, "name" | "ordinal" | "trackingType" | "isHelpful" | ("createdAt" | "updatedAt" | "setbackThreshold")>;
     timeBehaviorFactory: import("factory.ts").Factory<{
-        recommendedForIssueIds?: string[] | undefined;
         createdAt?: {
             isEqual?: any;
             toMillis?: any;
@@ -160,12 +135,12 @@ export declare const factories: {
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        templateFor?: "onboarding" | "afterSuccess" | "afterSetback" | undefined;
         setbackThreshold?: number | undefined;
-        prompt: string;
-        type: "time";
+        name: string;
         ordinal: number;
-    }, "prompt" | "type" | "ordinal" | ("recommendedForIssueIds" | "createdAt" | "updatedAt" | "templateFor" | "setbackThreshold")>;
+        trackingType: NonNullable<"time" | "counter" | undefined>;
+        isHelpful: boolean | null;
+    }, "name" | "ordinal" | "trackingType" | "isHelpful" | ("createdAt" | "updatedAt" | "setbackThreshold")>;
     applicationFactory: import("factory.ts").Factory<import("..").ApplicationValue, keyof import("..").ApplicationValue>;
     dayFactory: import("factory.ts").Factory<import("..").DayValue, "date" | "issueName" | "logsById" | "behaviorsById" | "summary">;
     issueFactory: import("factory.ts").Factory<{
@@ -218,14 +193,13 @@ export declare const factories: {
         } | null | undefined;
         latitude?: number | undefined;
         longitude?: number | undefined;
-        uid: string;
         name: string;
+        uid: string;
         address: string;
-    }, "uid" | "name" | "address" | ("createdAt" | "updatedAt" | "latitude" | "longitude")>;
+    }, "name" | "uid" | "address" | ("createdAt" | "updatedAt" | "latitude" | "longitude")>;
     daysSummaryFactory: import("factory.ts").Factory<{
         [x: string]: {
             [x: string]: {
-                setbackThreshold?: number | undefined;
                 label?: string | undefined;
                 idValue?: string | undefined;
                 numericValue?: number | undefined;
@@ -301,6 +275,7 @@ export declare const factories: {
         notificationPreferences?: {
             [x: string]: NonNullable<"push" | "email" | undefined>[] | undefined;
         } | null | undefined;
+        goal?: string | null | undefined;
         isReadyForTour?: boolean | undefined;
         isOnboardingComplete?: boolean | undefined;
         sendDebriefRemindersAfterMinutes?: number | undefined;
@@ -322,7 +297,7 @@ export declare const factories: {
             [x: string]: string;
         };
         timezone: string;
-    }, "uids" | "verificationCode" | "dayReviewTime" | "recentSummaries" | "timezone" | ("createdAt" | "updatedAt" | "parentIds" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseDoc" | "tourCompletedAt" | "scheduledNotificationIds" | "whatsappStrategyDoc" | "onboardedWithZaraAt" | "currentAppState" | "expoPushToken" | "notificationPreferences" | "isReadyForTour" | "isOnboardingComplete" | "sendDebriefRemindersAfterMinutes" | "gameplanStrategies" | "androidPermissions" | "historicalInsights" | "isTourDismissed" | "region" | "enableZara")>;
+    }, "uids" | "verificationCode" | "dayReviewTime" | "recentSummaries" | "timezone" | ("createdAt" | "updatedAt" | "parentIds" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseDoc" | "tourCompletedAt" | "scheduledNotificationIds" | "whatsappStrategyDoc" | "onboardedWithZaraAt" | "currentAppState" | "expoPushToken" | "notificationPreferences" | "goal" | "isReadyForTour" | "isOnboardingComplete" | "sendDebriefRemindersAfterMinutes" | "gameplanStrategies" | "androidPermissions" | "historicalInsights" | "isTourDismissed" | "region" | "enableZara")>;
     timeReminderFactory: import("factory.ts").Factory<{
         createdAt?: {
             isEqual?: any;
@@ -338,15 +313,14 @@ export declare const factories: {
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        type: "time";
         name: string;
+        type: "time";
         weekdays: number[];
         hour: number;
         minute: number;
-    }, "type" | "name" | "weekdays" | "hour" | "minute" | ("createdAt" | "updatedAt")>;
-    tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "recommendedForIssueIds" | "createdAt" | "updatedAt" | "prompt" | "type" | "ordinal" | "setbackThreshold" | "uid" | "sourceFile" | "sharedWithIssueIds" | "recommendedForIssueOrdinals" | "isShared" | "description" | "pastTenseTitle" | "debriefAfterMinutes" | "image" | "backgroundColor" | "likesCount" | "timerSeconds" | "isSuggested">;
+    }, "name" | "type" | "weekdays" | "hour" | "minute" | ("createdAt" | "updatedAt")>;
+    tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "ordinal" | "setbackThreshold" | "type" | "uid" | "sourceFile" | "sharedWithIssueIds" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "prompt" | "isShared" | "description" | "pastTenseTitle" | "debriefAfterMinutes" | "image" | "backgroundColor" | "likesCount" | "timerSeconds" | "isSuggested">;
     roadmapFactory: import("factory.ts").Factory<{
-        recommendedForIssueIds?: string[] | undefined;
         createdAt?: {
             isEqual?: any;
             toMillis?: any;
@@ -361,6 +335,7 @@ export declare const factories: {
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
+        recommendedForIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
         } | null | undefined;
@@ -372,7 +347,7 @@ export declare const factories: {
                 requiredWinRateDays: number;
             };
         }[];
-    }, "name" | "stages" | ("recommendedForIssueIds" | "createdAt" | "updatedAt" | "recommendedForIssueOrdinals")>;
+    }, "name" | "stages" | ("createdAt" | "updatedAt" | "recommendedForIssueIds" | "recommendedForIssueOrdinals")>;
     suggestionFactory: import("factory.ts").Factory<{
         createdAt?: {
             isEqual?: any;
@@ -413,7 +388,6 @@ export declare const factories: {
         description?: string | undefined;
         tacticsById?: {
             [x: string]: {
-                recommendedForIssueIds?: string[] | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -428,14 +402,15 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                prompt?: string | undefined;
                 setbackThreshold?: number | null | undefined;
                 uid?: string | undefined;
                 sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 sharedWithIssueIds?: string[] | undefined;
+                recommendedForIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
+                prompt?: string | undefined;
                 isShared?: boolean | undefined;
                 description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
@@ -468,8 +443,8 @@ export declare const factories: {
                 likesCount?: number | null | undefined;
                 timerSeconds?: import("yup").Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
-                type: "audio";
                 ordinal: number;
+                type: "audio";
                 recording: {
                     createdAt?: {
                         isEqual?: any;
@@ -495,7 +470,6 @@ export declare const factories: {
                     uri: string;
                 };
             } | {
-                recommendedForIssueIds?: string[] | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -510,15 +484,16 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                prompt?: string | undefined;
                 setbackThreshold?: number | null | undefined;
-                repeat?: import("yup").Maybe<number | undefined>;
                 uid?: string | undefined;
+                repeat?: import("yup").Maybe<number | undefined>;
                 sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 sharedWithIssueIds?: string[] | undefined;
+                recommendedForIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
+                prompt?: string | undefined;
                 isShared?: boolean | undefined;
                 description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
@@ -551,13 +526,12 @@ export declare const factories: {
                 likesCount?: number | null | undefined;
                 timerSeconds?: import("yup").Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
-                type: "breathingExercise";
                 ordinal: number;
+                type: "breathingExercise";
                 inFor: number;
                 holdFor: number;
                 outFor: number;
             } | {
-                recommendedForIssueIds?: string[] | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -572,14 +546,15 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                prompt?: string | undefined;
                 setbackThreshold?: number | null | undefined;
                 uid?: string | undefined;
                 sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 sharedWithIssueIds?: string[] | undefined;
+                recommendedForIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
+                prompt?: string | undefined;
                 isShared?: boolean | undefined;
                 description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
@@ -612,11 +587,10 @@ export declare const factories: {
                 likesCount?: number | null | undefined;
                 timerSeconds?: import("yup").Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
-                type: "link";
                 ordinal: number;
+                type: "link";
                 url: string;
             } | {
-                recommendedForIssueIds?: string[] | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -631,14 +605,15 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                prompt?: string | undefined;
                 setbackThreshold?: number | null | undefined;
                 uid?: string | undefined;
                 sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 sharedWithIssueIds?: string[] | undefined;
+                recommendedForIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
+                prompt?: string | undefined;
                 isShared?: boolean | undefined;
                 description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
@@ -671,11 +646,10 @@ export declare const factories: {
                 likesCount?: number | null | undefined;
                 timerSeconds?: import("yup").Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
-                type: "notifyASupportPerson";
                 ordinal: number;
+                type: "notifyASupportPerson";
                 contactIds: string[];
             } | {
-                recommendedForIssueIds?: string[] | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -690,14 +664,15 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                prompt?: string | undefined;
                 setbackThreshold?: number | null | undefined;
                 uid?: string | undefined;
                 sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 sharedWithIssueIds?: string[] | undefined;
+                recommendedForIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
+                prompt?: string | undefined;
                 isShared?: boolean | undefined;
                 description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
@@ -730,11 +705,10 @@ export declare const factories: {
                 likesCount?: number | null | undefined;
                 timerSeconds?: import("yup").Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
-                type: "notifySupportGroup";
                 ordinal: number;
+                type: "notifySupportGroup";
                 supportGroup: import("../schema/utils/firestore").DocumentReferenceLike<unknown>;
             } | {
-                recommendedForIssueIds?: string[] | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -749,14 +723,15 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                prompt?: string | undefined;
                 setbackThreshold?: number | null | undefined;
                 uid?: string | undefined;
                 sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 sharedWithIssueIds?: string[] | undefined;
+                recommendedForIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
+                prompt?: string | undefined;
                 isShared?: boolean | undefined;
                 description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
@@ -789,11 +764,10 @@ export declare const factories: {
                 likesCount?: number | null | undefined;
                 timerSeconds?: import("yup").Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
-                type: "steps";
                 ordinal: number;
+                type: "steps";
                 targetSteps: number;
             } | {
-                recommendedForIssueIds?: string[] | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -812,6 +786,7 @@ export declare const factories: {
                 uid?: string | undefined;
                 sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 sharedWithIssueIds?: string[] | undefined;
+                recommendedForIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -847,11 +822,10 @@ export declare const factories: {
                 likesCount?: number | null | undefined;
                 timerSeconds?: import("yup").Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
-                prompt: string;
-                type: "task";
                 ordinal: number;
+                type: "task";
+                prompt: string;
             } | {
-                recommendedForIssueIds?: string[] | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -865,15 +839,16 @@ export declare const factories: {
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
+                } | null | undefined;
+                setbackThreshold?: number | null | undefined;
+                uid?: string | undefined;
+                sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
+                sharedWithIssueIds?: string[] | undefined;
+                recommendedForIssueIds?: string[] | undefined;
+                recommendedForIssueOrdinals?: {
+                    [x: string]: number;
                 } | null | undefined;
                 prompt?: string | undefined;
-                setbackThreshold?: number | null | undefined;
-                uid?: string | undefined;
-                sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                sharedWithIssueIds?: string[] | undefined;
-                recommendedForIssueOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
                 isShared?: boolean | undefined;
                 description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
@@ -906,8 +881,8 @@ export declare const factories: {
                 likesCount?: number | null | undefined;
                 timerSeconds?: import("yup").Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
-                type: "video";
                 ordinal: number;
+                type: "video";
                 video: {
                     storagePath?: string | null | undefined;
                     url?: string | null | undefined;
@@ -921,7 +896,6 @@ export declare const factories: {
         tourDescription?: string | undefined;
         tourConfirmButtonText?: string | undefined;
         next3Tactics?: ({
-            recommendedForIssueIds?: string[] | undefined;
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
@@ -936,14 +910,15 @@ export declare const factories: {
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            prompt?: string | undefined;
             setbackThreshold?: number | null | undefined;
             uid?: string | undefined;
             sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
             sharedWithIssueIds?: string[] | undefined;
+            recommendedForIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
+            prompt?: string | undefined;
             isShared?: boolean | undefined;
             description?: string | null | undefined;
             pastTenseTitle?: string | undefined;
@@ -976,8 +951,8 @@ export declare const factories: {
             likesCount?: number | null | undefined;
             timerSeconds?: import("yup").Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
-            type: "audio";
             ordinal: number;
+            type: "audio";
             recording: {
                 createdAt?: {
                     isEqual?: any;
@@ -1003,7 +978,6 @@ export declare const factories: {
                 uri: string;
             };
         } | {
-            recommendedForIssueIds?: string[] | undefined;
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
@@ -1018,15 +992,16 @@ export declare const factories: {
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            prompt?: string | undefined;
             setbackThreshold?: number | null | undefined;
-            repeat?: import("yup").Maybe<number | undefined>;
             uid?: string | undefined;
+            repeat?: import("yup").Maybe<number | undefined>;
             sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
             sharedWithIssueIds?: string[] | undefined;
+            recommendedForIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
+            prompt?: string | undefined;
             isShared?: boolean | undefined;
             description?: string | null | undefined;
             pastTenseTitle?: string | undefined;
@@ -1059,13 +1034,12 @@ export declare const factories: {
             likesCount?: number | null | undefined;
             timerSeconds?: import("yup").Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
-            type: "breathingExercise";
             ordinal: number;
+            type: "breathingExercise";
             inFor: number;
             holdFor: number;
             outFor: number;
         } | {
-            recommendedForIssueIds?: string[] | undefined;
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
@@ -1080,14 +1054,15 @@ export declare const factories: {
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            prompt?: string | undefined;
             setbackThreshold?: number | null | undefined;
             uid?: string | undefined;
             sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
             sharedWithIssueIds?: string[] | undefined;
+            recommendedForIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
+            prompt?: string | undefined;
             isShared?: boolean | undefined;
             description?: string | null | undefined;
             pastTenseTitle?: string | undefined;
@@ -1120,11 +1095,10 @@ export declare const factories: {
             likesCount?: number | null | undefined;
             timerSeconds?: import("yup").Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
-            type: "link";
             ordinal: number;
+            type: "link";
             url: string;
         } | {
-            recommendedForIssueIds?: string[] | undefined;
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
@@ -1139,14 +1113,15 @@ export declare const factories: {
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            prompt?: string | undefined;
             setbackThreshold?: number | null | undefined;
             uid?: string | undefined;
             sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
             sharedWithIssueIds?: string[] | undefined;
+            recommendedForIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
+            prompt?: string | undefined;
             isShared?: boolean | undefined;
             description?: string | null | undefined;
             pastTenseTitle?: string | undefined;
@@ -1179,11 +1154,10 @@ export declare const factories: {
             likesCount?: number | null | undefined;
             timerSeconds?: import("yup").Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
-            type: "notifyASupportPerson";
             ordinal: number;
+            type: "notifyASupportPerson";
             contactIds: string[];
         } | {
-            recommendedForIssueIds?: string[] | undefined;
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
@@ -1198,14 +1172,15 @@ export declare const factories: {
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            prompt?: string | undefined;
             setbackThreshold?: number | null | undefined;
             uid?: string | undefined;
             sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
             sharedWithIssueIds?: string[] | undefined;
+            recommendedForIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
+            prompt?: string | undefined;
             isShared?: boolean | undefined;
             description?: string | null | undefined;
             pastTenseTitle?: string | undefined;
@@ -1238,11 +1213,10 @@ export declare const factories: {
             likesCount?: number | null | undefined;
             timerSeconds?: import("yup").Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
-            type: "notifySupportGroup";
             ordinal: number;
+            type: "notifySupportGroup";
             supportGroup: import("../schema/utils/firestore").DocumentReferenceLike<unknown>;
         } | {
-            recommendedForIssueIds?: string[] | undefined;
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
@@ -1257,14 +1231,15 @@ export declare const factories: {
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            prompt?: string | undefined;
             setbackThreshold?: number | null | undefined;
             uid?: string | undefined;
             sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
             sharedWithIssueIds?: string[] | undefined;
+            recommendedForIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
+            prompt?: string | undefined;
             isShared?: boolean | undefined;
             description?: string | null | undefined;
             pastTenseTitle?: string | undefined;
@@ -1297,11 +1272,10 @@ export declare const factories: {
             likesCount?: number | null | undefined;
             timerSeconds?: import("yup").Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
-            type: "steps";
             ordinal: number;
+            type: "steps";
             targetSteps: number;
         } | {
-            recommendedForIssueIds?: string[] | undefined;
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
@@ -1320,6 +1294,7 @@ export declare const factories: {
             uid?: string | undefined;
             sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
             sharedWithIssueIds?: string[] | undefined;
+            recommendedForIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
@@ -1355,11 +1330,10 @@ export declare const factories: {
             likesCount?: number | null | undefined;
             timerSeconds?: import("yup").Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
-            prompt: string;
-            type: "task";
             ordinal: number;
+            type: "task";
+            prompt: string;
         } | {
-            recommendedForIssueIds?: string[] | undefined;
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
@@ -1373,15 +1347,16 @@ export declare const factories: {
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
+            } | null | undefined;
+            setbackThreshold?: number | null | undefined;
+            uid?: string | undefined;
+            sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
+            sharedWithIssueIds?: string[] | undefined;
+            recommendedForIssueIds?: string[] | undefined;
+            recommendedForIssueOrdinals?: {
+                [x: string]: number;
             } | null | undefined;
             prompt?: string | undefined;
-            setbackThreshold?: number | null | undefined;
-            uid?: string | undefined;
-            sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
-            sharedWithIssueIds?: string[] | undefined;
-            recommendedForIssueOrdinals?: {
-                [x: string]: number;
-            } | null | undefined;
             isShared?: boolean | undefined;
             description?: string | null | undefined;
             pastTenseTitle?: string | undefined;
@@ -1414,8 +1389,8 @@ export declare const factories: {
             likesCount?: number | null | undefined;
             timerSeconds?: import("yup").Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
-            type: "video";
             ordinal: number;
+            type: "video";
             video: {
                 storagePath?: string | null | undefined;
                 url?: string | null | undefined;
@@ -1465,8 +1440,8 @@ export declare const factories: {
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            type: "time";
             name: string;
+            type: "time";
             weekdays: number[];
             hour: number;
             minute: number;
@@ -1485,8 +1460,8 @@ export declare const factories: {
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            type: "location";
             name: string;
+            type: "location";
             locationId: string;
             mode: NonNullable<"enter" | "exit" | undefined>;
         })[] | undefined;
@@ -1512,7 +1487,6 @@ export declare const factories: {
             description?: string | undefined;
             tacticsById?: {
                 [x: string]: {
-                    recommendedForIssueIds?: string[] | undefined;
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
@@ -1527,14 +1501,15 @@ export declare const factories: {
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
-                    prompt?: string | undefined;
                     setbackThreshold?: number | null | undefined;
                     uid?: string | undefined;
                     sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                     sharedWithIssueIds?: string[] | undefined;
+                    recommendedForIssueIds?: string[] | undefined;
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
+                    prompt?: string | undefined;
                     isShared?: boolean | undefined;
                     description?: string | null | undefined;
                     pastTenseTitle?: string | undefined;
@@ -1567,8 +1542,8 @@ export declare const factories: {
                     likesCount?: number | null | undefined;
                     timerSeconds?: import("yup").Maybe<number | undefined>;
                     isSuggested?: boolean | undefined;
-                    type: "audio";
                     ordinal: number;
+                    type: "audio";
                     recording: {
                         createdAt?: {
                             isEqual?: any;
@@ -1594,7 +1569,6 @@ export declare const factories: {
                         uri: string;
                     };
                 } | {
-                    recommendedForIssueIds?: string[] | undefined;
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
@@ -1609,15 +1583,16 @@ export declare const factories: {
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
-                    prompt?: string | undefined;
                     setbackThreshold?: number | null | undefined;
-                    repeat?: import("yup").Maybe<number | undefined>;
                     uid?: string | undefined;
+                    repeat?: import("yup").Maybe<number | undefined>;
                     sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                     sharedWithIssueIds?: string[] | undefined;
+                    recommendedForIssueIds?: string[] | undefined;
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
+                    prompt?: string | undefined;
                     isShared?: boolean | undefined;
                     description?: string | null | undefined;
                     pastTenseTitle?: string | undefined;
@@ -1650,13 +1625,12 @@ export declare const factories: {
                     likesCount?: number | null | undefined;
                     timerSeconds?: import("yup").Maybe<number | undefined>;
                     isSuggested?: boolean | undefined;
-                    type: "breathingExercise";
                     ordinal: number;
+                    type: "breathingExercise";
                     inFor: number;
                     holdFor: number;
                     outFor: number;
                 } | {
-                    recommendedForIssueIds?: string[] | undefined;
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
@@ -1671,14 +1645,15 @@ export declare const factories: {
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
-                    prompt?: string | undefined;
                     setbackThreshold?: number | null | undefined;
                     uid?: string | undefined;
                     sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                     sharedWithIssueIds?: string[] | undefined;
+                    recommendedForIssueIds?: string[] | undefined;
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
+                    prompt?: string | undefined;
                     isShared?: boolean | undefined;
                     description?: string | null | undefined;
                     pastTenseTitle?: string | undefined;
@@ -1711,11 +1686,10 @@ export declare const factories: {
                     likesCount?: number | null | undefined;
                     timerSeconds?: import("yup").Maybe<number | undefined>;
                     isSuggested?: boolean | undefined;
-                    type: "link";
                     ordinal: number;
+                    type: "link";
                     url: string;
                 } | {
-                    recommendedForIssueIds?: string[] | undefined;
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
@@ -1730,14 +1704,15 @@ export declare const factories: {
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
-                    prompt?: string | undefined;
                     setbackThreshold?: number | null | undefined;
                     uid?: string | undefined;
                     sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                     sharedWithIssueIds?: string[] | undefined;
+                    recommendedForIssueIds?: string[] | undefined;
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
+                    prompt?: string | undefined;
                     isShared?: boolean | undefined;
                     description?: string | null | undefined;
                     pastTenseTitle?: string | undefined;
@@ -1770,11 +1745,10 @@ export declare const factories: {
                     likesCount?: number | null | undefined;
                     timerSeconds?: import("yup").Maybe<number | undefined>;
                     isSuggested?: boolean | undefined;
-                    type: "notifyASupportPerson";
                     ordinal: number;
+                    type: "notifyASupportPerson";
                     contactIds: string[];
                 } | {
-                    recommendedForIssueIds?: string[] | undefined;
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
@@ -1789,14 +1763,15 @@ export declare const factories: {
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
-                    prompt?: string | undefined;
                     setbackThreshold?: number | null | undefined;
                     uid?: string | undefined;
                     sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                     sharedWithIssueIds?: string[] | undefined;
+                    recommendedForIssueIds?: string[] | undefined;
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
+                    prompt?: string | undefined;
                     isShared?: boolean | undefined;
                     description?: string | null | undefined;
                     pastTenseTitle?: string | undefined;
@@ -1829,11 +1804,10 @@ export declare const factories: {
                     likesCount?: number | null | undefined;
                     timerSeconds?: import("yup").Maybe<number | undefined>;
                     isSuggested?: boolean | undefined;
-                    type: "notifySupportGroup";
                     ordinal: number;
+                    type: "notifySupportGroup";
                     supportGroup: import("../schema/utils/firestore").DocumentReferenceLike<unknown>;
                 } | {
-                    recommendedForIssueIds?: string[] | undefined;
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
@@ -1848,14 +1822,15 @@ export declare const factories: {
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
-                    prompt?: string | undefined;
                     setbackThreshold?: number | null | undefined;
                     uid?: string | undefined;
                     sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                     sharedWithIssueIds?: string[] | undefined;
+                    recommendedForIssueIds?: string[] | undefined;
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
+                    prompt?: string | undefined;
                     isShared?: boolean | undefined;
                     description?: string | null | undefined;
                     pastTenseTitle?: string | undefined;
@@ -1888,11 +1863,10 @@ export declare const factories: {
                     likesCount?: number | null | undefined;
                     timerSeconds?: import("yup").Maybe<number | undefined>;
                     isSuggested?: boolean | undefined;
-                    type: "steps";
                     ordinal: number;
+                    type: "steps";
                     targetSteps: number;
                 } | {
-                    recommendedForIssueIds?: string[] | undefined;
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
@@ -1911,6 +1885,7 @@ export declare const factories: {
                     uid?: string | undefined;
                     sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                     sharedWithIssueIds?: string[] | undefined;
+                    recommendedForIssueIds?: string[] | undefined;
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
@@ -1946,11 +1921,10 @@ export declare const factories: {
                     likesCount?: number | null | undefined;
                     timerSeconds?: import("yup").Maybe<number | undefined>;
                     isSuggested?: boolean | undefined;
-                    prompt: string;
-                    type: "task";
                     ordinal: number;
+                    type: "task";
+                    prompt: string;
                 } | {
-                    recommendedForIssueIds?: string[] | undefined;
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
@@ -1964,15 +1938,16 @@ export declare const factories: {
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
+                    } | null | undefined;
+                    setbackThreshold?: number | null | undefined;
+                    uid?: string | undefined;
+                    sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
+                    sharedWithIssueIds?: string[] | undefined;
+                    recommendedForIssueIds?: string[] | undefined;
+                    recommendedForIssueOrdinals?: {
+                        [x: string]: number;
                     } | null | undefined;
                     prompt?: string | undefined;
-                    setbackThreshold?: number | null | undefined;
-                    uid?: string | undefined;
-                    sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                    sharedWithIssueIds?: string[] | undefined;
-                    recommendedForIssueOrdinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
                     isShared?: boolean | undefined;
                     description?: string | null | undefined;
                     pastTenseTitle?: string | undefined;
@@ -2005,8 +1980,8 @@ export declare const factories: {
                     likesCount?: number | null | undefined;
                     timerSeconds?: import("yup").Maybe<number | undefined>;
                     isSuggested?: boolean | undefined;
-                    type: "video";
                     ordinal: number;
+                    type: "video";
                     video: {
                         storagePath?: string | null | undefined;
                         url?: string | null | undefined;
@@ -2020,7 +1995,6 @@ export declare const factories: {
             tourDescription?: string | undefined;
             tourConfirmButtonText?: string | undefined;
             next3Tactics?: ({
-                recommendedForIssueIds?: string[] | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -2035,14 +2009,15 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                prompt?: string | undefined;
                 setbackThreshold?: number | null | undefined;
                 uid?: string | undefined;
                 sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 sharedWithIssueIds?: string[] | undefined;
+                recommendedForIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
+                prompt?: string | undefined;
                 isShared?: boolean | undefined;
                 description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
@@ -2075,8 +2050,8 @@ export declare const factories: {
                 likesCount?: number | null | undefined;
                 timerSeconds?: import("yup").Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
-                type: "audio";
                 ordinal: number;
+                type: "audio";
                 recording: {
                     createdAt?: {
                         isEqual?: any;
@@ -2102,7 +2077,6 @@ export declare const factories: {
                     uri: string;
                 };
             } | {
-                recommendedForIssueIds?: string[] | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -2117,15 +2091,16 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                prompt?: string | undefined;
                 setbackThreshold?: number | null | undefined;
-                repeat?: import("yup").Maybe<number | undefined>;
                 uid?: string | undefined;
+                repeat?: import("yup").Maybe<number | undefined>;
                 sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 sharedWithIssueIds?: string[] | undefined;
+                recommendedForIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
+                prompt?: string | undefined;
                 isShared?: boolean | undefined;
                 description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
@@ -2158,13 +2133,12 @@ export declare const factories: {
                 likesCount?: number | null | undefined;
                 timerSeconds?: import("yup").Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
-                type: "breathingExercise";
                 ordinal: number;
+                type: "breathingExercise";
                 inFor: number;
                 holdFor: number;
                 outFor: number;
             } | {
-                recommendedForIssueIds?: string[] | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -2179,14 +2153,15 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                prompt?: string | undefined;
                 setbackThreshold?: number | null | undefined;
                 uid?: string | undefined;
                 sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 sharedWithIssueIds?: string[] | undefined;
+                recommendedForIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
+                prompt?: string | undefined;
                 isShared?: boolean | undefined;
                 description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
@@ -2219,11 +2194,10 @@ export declare const factories: {
                 likesCount?: number | null | undefined;
                 timerSeconds?: import("yup").Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
-                type: "link";
                 ordinal: number;
+                type: "link";
                 url: string;
             } | {
-                recommendedForIssueIds?: string[] | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -2238,14 +2212,15 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                prompt?: string | undefined;
                 setbackThreshold?: number | null | undefined;
                 uid?: string | undefined;
                 sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 sharedWithIssueIds?: string[] | undefined;
+                recommendedForIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
+                prompt?: string | undefined;
                 isShared?: boolean | undefined;
                 description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
@@ -2278,11 +2253,10 @@ export declare const factories: {
                 likesCount?: number | null | undefined;
                 timerSeconds?: import("yup").Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
-                type: "notifyASupportPerson";
                 ordinal: number;
+                type: "notifyASupportPerson";
                 contactIds: string[];
             } | {
-                recommendedForIssueIds?: string[] | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -2297,14 +2271,15 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                prompt?: string | undefined;
                 setbackThreshold?: number | null | undefined;
                 uid?: string | undefined;
                 sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 sharedWithIssueIds?: string[] | undefined;
+                recommendedForIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
+                prompt?: string | undefined;
                 isShared?: boolean | undefined;
                 description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
@@ -2337,11 +2312,10 @@ export declare const factories: {
                 likesCount?: number | null | undefined;
                 timerSeconds?: import("yup").Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
-                type: "notifySupportGroup";
                 ordinal: number;
+                type: "notifySupportGroup";
                 supportGroup: import("../schema/utils/firestore").DocumentReferenceLike<unknown>;
             } | {
-                recommendedForIssueIds?: string[] | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -2356,14 +2330,15 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                prompt?: string | undefined;
                 setbackThreshold?: number | null | undefined;
                 uid?: string | undefined;
                 sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 sharedWithIssueIds?: string[] | undefined;
+                recommendedForIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
+                prompt?: string | undefined;
                 isShared?: boolean | undefined;
                 description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
@@ -2396,11 +2371,10 @@ export declare const factories: {
                 likesCount?: number | null | undefined;
                 timerSeconds?: import("yup").Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
-                type: "steps";
                 ordinal: number;
+                type: "steps";
                 targetSteps: number;
             } | {
-                recommendedForIssueIds?: string[] | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -2419,6 +2393,7 @@ export declare const factories: {
                 uid?: string | undefined;
                 sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 sharedWithIssueIds?: string[] | undefined;
+                recommendedForIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -2454,11 +2429,10 @@ export declare const factories: {
                 likesCount?: number | null | undefined;
                 timerSeconds?: import("yup").Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
-                prompt: string;
-                type: "task";
                 ordinal: number;
+                type: "task";
+                prompt: string;
             } | {
-                recommendedForIssueIds?: string[] | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -2472,15 +2446,16 @@ export declare const factories: {
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
+                } | null | undefined;
+                setbackThreshold?: number | null | undefined;
+                uid?: string | undefined;
+                sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
+                sharedWithIssueIds?: string[] | undefined;
+                recommendedForIssueIds?: string[] | undefined;
+                recommendedForIssueOrdinals?: {
+                    [x: string]: number;
                 } | null | undefined;
                 prompt?: string | undefined;
-                setbackThreshold?: number | null | undefined;
-                uid?: string | undefined;
-                sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                sharedWithIssueIds?: string[] | undefined;
-                recommendedForIssueOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
                 isShared?: boolean | undefined;
                 description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
@@ -2513,8 +2488,8 @@ export declare const factories: {
                 likesCount?: number | null | undefined;
                 timerSeconds?: import("yup").Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
-                type: "video";
                 ordinal: number;
+                type: "video";
                 video: {
                     storagePath?: string | null | undefined;
                     url?: string | null | undefined;

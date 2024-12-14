@@ -2,7 +2,6 @@ import * as yup from 'yup';
 export declare const daysSummarySchema: yup.Lazy<{
     [x: string]: {
         [x: string]: {
-            setbackThreshold?: number | undefined;
             label?: string | undefined;
             idValue?: string | undefined;
             numericValue?: number | undefined;

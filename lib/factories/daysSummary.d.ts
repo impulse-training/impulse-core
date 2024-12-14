@@ -3,7 +3,6 @@ import { TimestampLike } from '../utils';
 export declare const makeDaysSummaryFactory: (TimestampKlass: typeof TimestampLike) => Factory.Sync.Factory<{
     [x: string]: {
         [x: string]: {
-            setbackThreshold?: number | undefined;
             label?: string | undefined;
             idValue?: string | undefined;
             numericValue?: number | undefined;

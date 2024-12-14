@@ -20,7 +20,6 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
     description?: string | undefined;
     tacticsById?: {
         [x: string]: {
-            recommendedForIssueIds?: string[] | undefined;
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
@@ -35,14 +34,15 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            prompt?: string | undefined;
             setbackThreshold?: number | null | undefined;
             uid?: string | undefined;
             sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
             sharedWithIssueIds?: string[] | undefined;
+            recommendedForIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
+            prompt?: string | undefined;
             isShared?: boolean | undefined;
             description?: string | null | undefined;
             pastTenseTitle?: string | undefined;
@@ -75,8 +75,8 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
             likesCount?: number | null | undefined;
             timerSeconds?: import("yup").Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
-            type: "audio";
             ordinal: number;
+            type: "audio";
             recording: {
                 createdAt?: {
                     isEqual?: any;
@@ -102,7 +102,6 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
                 uri: string;
             };
         } | {
-            recommendedForIssueIds?: string[] | undefined;
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
@@ -117,15 +116,16 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            prompt?: string | undefined;
             setbackThreshold?: number | null | undefined;
-            repeat?: import("yup").Maybe<number | undefined>;
             uid?: string | undefined;
+            repeat?: import("yup").Maybe<number | undefined>;
             sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
             sharedWithIssueIds?: string[] | undefined;
+            recommendedForIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
+            prompt?: string | undefined;
             isShared?: boolean | undefined;
             description?: string | null | undefined;
             pastTenseTitle?: string | undefined;
@@ -158,13 +158,12 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
             likesCount?: number | null | undefined;
             timerSeconds?: import("yup").Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
-            type: "breathingExercise";
             ordinal: number;
+            type: "breathingExercise";
             inFor: number;
             holdFor: number;
             outFor: number;
         } | {
-            recommendedForIssueIds?: string[] | undefined;
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
@@ -179,14 +178,15 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            prompt?: string | undefined;
             setbackThreshold?: number | null | undefined;
             uid?: string | undefined;
             sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
             sharedWithIssueIds?: string[] | undefined;
+            recommendedForIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
+            prompt?: string | undefined;
             isShared?: boolean | undefined;
             description?: string | null | undefined;
             pastTenseTitle?: string | undefined;
@@ -219,11 +219,10 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
             likesCount?: number | null | undefined;
             timerSeconds?: import("yup").Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
-            type: "link";
             ordinal: number;
+            type: "link";
             url: string;
         } | {
-            recommendedForIssueIds?: string[] | undefined;
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
@@ -238,14 +237,15 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            prompt?: string | undefined;
             setbackThreshold?: number | null | undefined;
             uid?: string | undefined;
             sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
             sharedWithIssueIds?: string[] | undefined;
+            recommendedForIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
+            prompt?: string | undefined;
             isShared?: boolean | undefined;
             description?: string | null | undefined;
             pastTenseTitle?: string | undefined;
@@ -278,11 +278,10 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
             likesCount?: number | null | undefined;
             timerSeconds?: import("yup").Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
-            type: "notifyASupportPerson";
             ordinal: number;
+            type: "notifyASupportPerson";
             contactIds: string[];
         } | {
-            recommendedForIssueIds?: string[] | undefined;
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
@@ -297,14 +296,15 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            prompt?: string | undefined;
             setbackThreshold?: number | null | undefined;
             uid?: string | undefined;
             sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
             sharedWithIssueIds?: string[] | undefined;
+            recommendedForIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
+            prompt?: string | undefined;
             isShared?: boolean | undefined;
             description?: string | null | undefined;
             pastTenseTitle?: string | undefined;
@@ -337,11 +337,10 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
             likesCount?: number | null | undefined;
             timerSeconds?: import("yup").Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
-            type: "notifySupportGroup";
             ordinal: number;
+            type: "notifySupportGroup";
             supportGroup: import("../schema/utils/firestore").DocumentReferenceLike<unknown>;
         } | {
-            recommendedForIssueIds?: string[] | undefined;
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
@@ -356,14 +355,15 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            prompt?: string | undefined;
             setbackThreshold?: number | null | undefined;
             uid?: string | undefined;
             sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
             sharedWithIssueIds?: string[] | undefined;
+            recommendedForIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
+            prompt?: string | undefined;
             isShared?: boolean | undefined;
             description?: string | null | undefined;
             pastTenseTitle?: string | undefined;
@@ -396,11 +396,10 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
             likesCount?: number | null | undefined;
             timerSeconds?: import("yup").Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
-            type: "steps";
             ordinal: number;
+            type: "steps";
             targetSteps: number;
         } | {
-            recommendedForIssueIds?: string[] | undefined;
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
@@ -419,6 +418,7 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
             uid?: string | undefined;
             sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
             sharedWithIssueIds?: string[] | undefined;
+            recommendedForIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
@@ -454,11 +454,10 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
             likesCount?: number | null | undefined;
             timerSeconds?: import("yup").Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
-            prompt: string;
-            type: "task";
             ordinal: number;
+            type: "task";
+            prompt: string;
         } | {
-            recommendedForIssueIds?: string[] | undefined;
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
@@ -472,15 +471,16 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
+            } | null | undefined;
+            setbackThreshold?: number | null | undefined;
+            uid?: string | undefined;
+            sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
+            sharedWithIssueIds?: string[] | undefined;
+            recommendedForIssueIds?: string[] | undefined;
+            recommendedForIssueOrdinals?: {
+                [x: string]: number;
             } | null | undefined;
             prompt?: string | undefined;
-            setbackThreshold?: number | null | undefined;
-            uid?: string | undefined;
-            sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
-            sharedWithIssueIds?: string[] | undefined;
-            recommendedForIssueOrdinals?: {
-                [x: string]: number;
-            } | null | undefined;
             isShared?: boolean | undefined;
             description?: string | null | undefined;
             pastTenseTitle?: string | undefined;
@@ -513,8 +513,8 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
             likesCount?: number | null | undefined;
             timerSeconds?: import("yup").Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
-            type: "video";
             ordinal: number;
+            type: "video";
             video: {
                 storagePath?: string | null | undefined;
                 url?: string | null | undefined;
@@ -528,7 +528,6 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
     tourDescription?: string | undefined;
     tourConfirmButtonText?: string | undefined;
     next3Tactics?: ({
-        recommendedForIssueIds?: string[] | undefined;
         createdAt?: {
             isEqual?: any;
             toMillis?: any;
@@ -543,14 +542,15 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        prompt?: string | undefined;
         setbackThreshold?: number | null | undefined;
         uid?: string | undefined;
         sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
         sharedWithIssueIds?: string[] | undefined;
+        recommendedForIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
         } | null | undefined;
+        prompt?: string | undefined;
         isShared?: boolean | undefined;
         description?: string | null | undefined;
         pastTenseTitle?: string | undefined;
@@ -583,8 +583,8 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
         likesCount?: number | null | undefined;
         timerSeconds?: import("yup").Maybe<number | undefined>;
         isSuggested?: boolean | undefined;
-        type: "audio";
         ordinal: number;
+        type: "audio";
         recording: {
             createdAt?: {
                 isEqual?: any;
@@ -610,7 +610,6 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
             uri: string;
         };
     } | {
-        recommendedForIssueIds?: string[] | undefined;
         createdAt?: {
             isEqual?: any;
             toMillis?: any;
@@ -625,15 +624,16 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        prompt?: string | undefined;
         setbackThreshold?: number | null | undefined;
-        repeat?: import("yup").Maybe<number | undefined>;
         uid?: string | undefined;
+        repeat?: import("yup").Maybe<number | undefined>;
         sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
         sharedWithIssueIds?: string[] | undefined;
+        recommendedForIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
         } | null | undefined;
+        prompt?: string | undefined;
         isShared?: boolean | undefined;
         description?: string | null | undefined;
         pastTenseTitle?: string | undefined;
@@ -666,13 +666,12 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
         likesCount?: number | null | undefined;
         timerSeconds?: import("yup").Maybe<number | undefined>;
         isSuggested?: boolean | undefined;
-        type: "breathingExercise";
         ordinal: number;
+        type: "breathingExercise";
         inFor: number;
         holdFor: number;
         outFor: number;
     } | {
-        recommendedForIssueIds?: string[] | undefined;
         createdAt?: {
             isEqual?: any;
             toMillis?: any;
@@ -687,14 +686,15 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        prompt?: string | undefined;
         setbackThreshold?: number | null | undefined;
         uid?: string | undefined;
         sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
         sharedWithIssueIds?: string[] | undefined;
+        recommendedForIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
         } | null | undefined;
+        prompt?: string | undefined;
         isShared?: boolean | undefined;
         description?: string | null | undefined;
         pastTenseTitle?: string | undefined;
@@ -727,11 +727,10 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
         likesCount?: number | null | undefined;
         timerSeconds?: import("yup").Maybe<number | undefined>;
         isSuggested?: boolean | undefined;
-        type: "link";
         ordinal: number;
+        type: "link";
         url: string;
     } | {
-        recommendedForIssueIds?: string[] | undefined;
         createdAt?: {
             isEqual?: any;
             toMillis?: any;
@@ -746,14 +745,15 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        prompt?: string | undefined;
         setbackThreshold?: number | null | undefined;
         uid?: string | undefined;
         sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
         sharedWithIssueIds?: string[] | undefined;
+        recommendedForIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
         } | null | undefined;
+        prompt?: string | undefined;
         isShared?: boolean | undefined;
         description?: string | null | undefined;
         pastTenseTitle?: string | undefined;
@@ -786,11 +786,10 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
         likesCount?: number | null | undefined;
         timerSeconds?: import("yup").Maybe<number | undefined>;
         isSuggested?: boolean | undefined;
-        type: "notifyASupportPerson";
         ordinal: number;
+        type: "notifyASupportPerson";
         contactIds: string[];
     } | {
-        recommendedForIssueIds?: string[] | undefined;
         createdAt?: {
             isEqual?: any;
             toMillis?: any;
@@ -805,14 +804,15 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        prompt?: string | undefined;
         setbackThreshold?: number | null | undefined;
         uid?: string | undefined;
         sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
         sharedWithIssueIds?: string[] | undefined;
+        recommendedForIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
         } | null | undefined;
+        prompt?: string | undefined;
         isShared?: boolean | undefined;
         description?: string | null | undefined;
         pastTenseTitle?: string | undefined;
@@ -845,11 +845,10 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
         likesCount?: number | null | undefined;
         timerSeconds?: import("yup").Maybe<number | undefined>;
         isSuggested?: boolean | undefined;
-        type: "notifySupportGroup";
         ordinal: number;
+        type: "notifySupportGroup";
         supportGroup: import("../schema/utils/firestore").DocumentReferenceLike<unknown>;
     } | {
-        recommendedForIssueIds?: string[] | undefined;
         createdAt?: {
             isEqual?: any;
             toMillis?: any;
@@ -864,14 +863,15 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        prompt?: string | undefined;
         setbackThreshold?: number | null | undefined;
         uid?: string | undefined;
         sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
         sharedWithIssueIds?: string[] | undefined;
+        recommendedForIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
         } | null | undefined;
+        prompt?: string | undefined;
         isShared?: boolean | undefined;
         description?: string | null | undefined;
         pastTenseTitle?: string | undefined;
@@ -904,11 +904,10 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
         likesCount?: number | null | undefined;
         timerSeconds?: import("yup").Maybe<number | undefined>;
         isSuggested?: boolean | undefined;
-        type: "steps";
         ordinal: number;
+        type: "steps";
         targetSteps: number;
     } | {
-        recommendedForIssueIds?: string[] | undefined;
         createdAt?: {
             isEqual?: any;
             toMillis?: any;
@@ -927,6 +926,7 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
         uid?: string | undefined;
         sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
         sharedWithIssueIds?: string[] | undefined;
+        recommendedForIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
         } | null | undefined;
@@ -962,11 +962,10 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
         likesCount?: number | null | undefined;
         timerSeconds?: import("yup").Maybe<number | undefined>;
         isSuggested?: boolean | undefined;
-        prompt: string;
-        type: "task";
         ordinal: number;
+        type: "task";
+        prompt: string;
     } | {
-        recommendedForIssueIds?: string[] | undefined;
         createdAt?: {
             isEqual?: any;
             toMillis?: any;
@@ -980,15 +979,16 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
             seconds: number;
             nanoseconds: number;
             toDate: Function;
+        } | null | undefined;
+        setbackThreshold?: number | null | undefined;
+        uid?: string | undefined;
+        sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
+        sharedWithIssueIds?: string[] | undefined;
+        recommendedForIssueIds?: string[] | undefined;
+        recommendedForIssueOrdinals?: {
+            [x: string]: number;
         } | null | undefined;
         prompt?: string | undefined;
-        setbackThreshold?: number | null | undefined;
-        uid?: string | undefined;
-        sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
-        sharedWithIssueIds?: string[] | undefined;
-        recommendedForIssueOrdinals?: {
-            [x: string]: number;
-        } | null | undefined;
         isShared?: boolean | undefined;
         description?: string | null | undefined;
         pastTenseTitle?: string | undefined;
@@ -1021,8 +1021,8 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
         likesCount?: number | null | undefined;
         timerSeconds?: import("yup").Maybe<number | undefined>;
         isSuggested?: boolean | undefined;
-        type: "video";
         ordinal: number;
+        type: "video";
         video: {
             storagePath?: string | null | undefined;
             url?: string | null | undefined;

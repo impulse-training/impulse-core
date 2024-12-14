@@ -42,6 +42,7 @@ export declare const profileSchema: yup.ObjectSchema<{
     notificationPreferences: {
         [x: string]: NonNullable<"push" | "email" | undefined>[] | undefined;
     } | null | undefined;
+    goal: string | null | undefined;
     verificationCode: string;
     dayReviewTime: {
         hour: number;
@@ -90,6 +91,7 @@ export declare const profileSchema: yup.ObjectSchema<{
     currentAppState: undefined;
     expoPushToken: undefined;
     notificationPreferences: undefined;
+    goal: undefined;
     verificationCode: undefined;
     dayReviewTime: null;
     isReadyForTour: undefined;

@@ -1,10 +1,10 @@
 import * as yup from 'yup';
-export declare function behaviorBaseSchema<T extends string>(type: T): yup.ObjectSchema<{
-    prompt: string;
-    type: yup.Defined<T>;
+export declare const behaviorSchema: yup.ObjectSchema<{
+    name: string;
     ordinal: number;
-    templateFor: "onboarding" | "afterSuccess" | "afterSetback" | undefined;
-    recommendedForIssueIds: string[] | undefined;
+    trackingType: NonNullable<"time" | "counter" | undefined>;
+    setbackThreshold: number | undefined;
+    isHelpful: boolean | null;
     createdAt: {
         isEqual?: any;
         toMillis?: any;
@@ -20,11 +20,12 @@ export declare function behaviorBaseSchema<T extends string>(type: T): yup.Objec
         toDate: Function;
     } | null | undefined;
 }, yup.AnyObject, {
-    prompt: undefined;
-    type: undefined;
+    name: undefined;
     ordinal: undefined;
-    templateFor: undefined;
-    recommendedForIssueIds: "";
+    trackingType: undefined;
+    setbackThreshold: undefined;
+    isHelpful: undefined;
     createdAt: undefined;
     updatedAt: undefined;
 }, "">;
+export type BehaviorValue = yup.InferType<typeof behaviorSchema>;

@@ -17,7 +17,7 @@ export declare const makeLocationFactory: (TimestampKlass: typeof TimestampLike)
     } | null | undefined;
     latitude?: number | undefined;
     longitude?: number | undefined;
-    uid: string;
     name: string;
+    uid: string;
     address: string;
-}, "uid" | "name" | "address" | ("createdAt" | "updatedAt" | "latitude" | "longitude")>;
+}, "name" | "uid" | "address" | ("createdAt" | "updatedAt" | "latitude" | "longitude")>;

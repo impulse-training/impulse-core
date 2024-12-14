@@ -38,8 +38,8 @@ export declare const derivedProfileStrategySchema: yup.ObjectSchema<{
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        type: "time";
         name: string;
+        type: "time";
         weekdays: number[];
         hour: number;
         minute: number;
@@ -58,8 +58,8 @@ export declare const derivedProfileStrategySchema: yup.ObjectSchema<{
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        type: "location";
         name: string;
+        type: "location";
         locationId: string;
         mode: NonNullable<"enter" | "exit" | undefined>;
     })[] | undefined;

@@ -35,7 +35,6 @@ export declare const messageSchema: yup.ObjectSchema<{
     behaviors: {
         [x: string]: {
             behavior: {
-                recommendedForIssueIds?: string[] | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -50,35 +49,13 @@ export declare const messageSchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                templateFor?: "onboarding" | "afterSuccess" | "afterSetback" | undefined;
                 setbackThreshold?: number | undefined;
-                prompt: string;
-                type: "counter";
+                name: string;
                 ordinal: number;
-            } | {
-                recommendedForIssueIds?: string[] | undefined;
-                createdAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                updatedAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                templateFor?: "onboarding" | "afterSuccess" | "afterSetback" | undefined;
-                setbackThreshold?: number | undefined;
-                prompt: string;
-                type: "time";
-                ordinal: number;
+                trackingType: NonNullable<"time" | "counter" | undefined>;
+                isHelpful: boolean | null;
             };
             data: {
-                setbackThreshold?: number | undefined;
                 label?: string | undefined;
                 idValue?: string | undefined;
                 numericValue?: number | undefined;

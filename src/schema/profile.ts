@@ -18,6 +18,7 @@ export const profileSchema = yup.object({
   notificationPreferences: optionalObjectOf(
     yup.array().of(notificationOptionSchema)
   ),
+  goal: yup.string().nullable().optional(),
   verificationCode: yup.string().required(),
   dayReviewTime: yup
     .object({

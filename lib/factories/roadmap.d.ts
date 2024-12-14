@@ -1,7 +1,6 @@
 import * as Factory from 'factory.ts';
 import { TimestampLike } from '../utils';
 export declare const makeRoadmapFactory: (TimestampKlass: typeof TimestampLike) => Factory.Sync.Factory<{
-    recommendedForIssueIds?: string[] | undefined;
     createdAt?: {
         isEqual?: any;
         toMillis?: any;
@@ -16,6 +15,7 @@ export declare const makeRoadmapFactory: (TimestampKlass: typeof TimestampLike) 
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
+    recommendedForIssueIds?: string[] | undefined;
     recommendedForIssueOrdinals?: {
         [x: string]: number;
     } | null | undefined;
@@ -27,4 +27,4 @@ export declare const makeRoadmapFactory: (TimestampKlass: typeof TimestampLike) 
             requiredWinRateDays: number;
         };
     }[];
-}, "name" | "stages" | ("recommendedForIssueIds" | "createdAt" | "updatedAt" | "recommendedForIssueOrdinals")>;
+}, "name" | "stages" | ("createdAt" | "updatedAt" | "recommendedForIssueIds" | "recommendedForIssueOrdinals")>;

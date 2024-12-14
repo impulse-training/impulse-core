@@ -1,6 +1,5 @@
 import * as yup from 'yup';
 export declare const behaviorDataSchema: yup.ObjectSchema<{
-    setbackThreshold: number | undefined;
     idValue: string | undefined;
     numericValue: number | undefined;
     stringValue: string;
@@ -15,7 +14,6 @@ export declare const behaviorDataSchema: yup.ObjectSchema<{
         toDate: Function;
     };
 }, yup.AnyObject, {
-    setbackThreshold: undefined;
     idValue: undefined;
     numericValue: undefined;
     stringValue: undefined;
@@ -32,7 +30,6 @@ export declare const behaviorDataSchema: yup.ObjectSchema<{
 }, "">;
 export declare const behaviorAndBehaviorDataSchema: yup.ObjectSchema<{
     behavior: {
-        recommendedForIssueIds?: string[] | undefined;
         createdAt?: {
             isEqual?: any;
             toMillis?: any;
@@ -47,35 +44,13 @@ export declare const behaviorAndBehaviorDataSchema: yup.ObjectSchema<{
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        templateFor?: "onboarding" | "afterSuccess" | "afterSetback" | undefined;
         setbackThreshold?: number | undefined;
-        prompt: string;
-        type: "counter";
+        name: string;
         ordinal: number;
-    } | {
-        recommendedForIssueIds?: string[] | undefined;
-        createdAt?: {
-            isEqual?: any;
-            toMillis?: any;
-            seconds: number;
-            nanoseconds: number;
-            toDate: Function;
-        } | null | undefined;
-        updatedAt?: {
-            isEqual?: any;
-            toMillis?: any;
-            seconds: number;
-            nanoseconds: number;
-            toDate: Function;
-        } | null | undefined;
-        templateFor?: "onboarding" | "afterSuccess" | "afterSetback" | undefined;
-        setbackThreshold?: number | undefined;
-        prompt: string;
-        type: "time";
-        ordinal: number;
+        trackingType: NonNullable<"time" | "counter" | undefined>;
+        isHelpful: boolean | null;
     };
     data: {
-        setbackThreshold?: number | undefined;
         label?: string | undefined;
         idValue?: string | undefined;
         numericValue?: number | undefined;
@@ -91,9 +66,16 @@ export declare const behaviorAndBehaviorDataSchema: yup.ObjectSchema<{
         unit: string;
     };
 }, yup.AnyObject, {
-    behavior: undefined;
-    data: {
+    behavior: {
+        name: undefined;
+        ordinal: undefined;
+        trackingType: undefined;
         setbackThreshold: undefined;
+        isHelpful: undefined;
+        createdAt: undefined;
+        updatedAt: undefined;
+    };
+    data: {
         idValue: undefined;
         numericValue: undefined;
         stringValue: undefined;

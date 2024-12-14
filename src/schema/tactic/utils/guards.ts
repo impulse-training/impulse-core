@@ -1,6 +1,4 @@
-import { keys } from 'lodash';
 import { TacticValue } from '..';
-import { recapTacticSchemas } from '../recap';
 
 export const isStepsTactic = ({ type }: TacticValue) => type === 'steps';
 export const isAudioTactic = ({ type }: TacticValue) => type === 'audio';
@@ -10,6 +8,3 @@ export const isBreatheTactic = ({ type }: TacticValue) =>
 export const isTaskTactic = ({ type }: TacticValue) => type === 'task';
 export const isContactsTactic = ({ type }: TacticValue) =>
   type === 'notifyASupportPerson';
-
-export const isRecapTactic = ({ type }: TacticValue) =>
-  keys(recapTacticSchemas).includes(type);

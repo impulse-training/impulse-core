@@ -1,21 +1,23 @@
 import * as Factory from 'factory.ts';
-import { TimeBehaviorValue } from '../schema/behavior';
+import { BehaviorValue } from '../schema';
 import { TimestampLike } from '../utils/firestore/TimestampLike';
 
 export const makeBehaviorFactories = (
   TimestampKlass: typeof TimestampLike
 ) => ({
-  counterBehaviorFactory: Factory.makeFactory<TimeBehaviorValue>({
+  counterBehaviorFactory: Factory.makeFactory<BehaviorValue>({
     ordinal: 0,
-    prompt: 'How long did you spend watching youtube?',
-    type: 'time',
+    name: 'How long did you spend watching youtube?',
+    trackingType: 'counter',
+    isHelpful: null,
     createdAt: TimestampKlass.now(),
     updatedAt: TimestampKlass.now(),
   }),
-  timeBehaviorFactory: Factory.makeFactory<TimeBehaviorValue>({
+  timeBehaviorFactory: Factory.makeFactory<BehaviorValue>({
     ordinal: 0,
-    prompt: 'How long did you spend watching youtube?',
-    type: 'time',
+    name: 'How long did you spend watching youtube?',
+    trackingType: 'time',
+    isHelpful: null,
     createdAt: TimestampKlass.now(),
     updatedAt: TimestampKlass.now(),
   }),
