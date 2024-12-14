@@ -19,24 +19,4 @@ export const makeBehaviorFactories = (
     createdAt: TimestampKlass.now(),
     updatedAt: TimestampKlass.now(),
   }),
-  // multipleChoiceBehaviorFactory:
-  //   Factory.makeFactory<MultipleChoiceBehaviorValue>({
-  //     ordinal: 0,
-  //     categories: ['debriefing'],
-  //     prompt: 'How are you feeling?',
-  //     type: 'multipleChoice',
-  //     canAddNewOptions: false,
-  //     options: [
-  //       {
-  //         type: 'string',
-  //         text: 'Sad',
-  //       },
-  //       {
-  //         type: 'string',
-  //         text: 'Happy',
-  //       },
-  //     ],
-  //     createdAt: TimestampKlass.now(),
-  //     updatedAt: TimestampKlass.now(),
-  //   }),
 });

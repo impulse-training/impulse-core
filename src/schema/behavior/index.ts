@@ -1,14 +1,9 @@
 import * as yup from 'yup';
 import { CounterBehaviorValue, counterBehaviorSchema } from './counter';
-import {
-  ScaleOf1To10BehaviorValue,
-  scaleOf1To10BehaviorSchema,
-} from './scaleOf1To10';
 import { TimeBehaviorValue, timeBehaviorSchema } from './time';
 
 export * from './base';
 export * from './counter';
-export * from './scaleOf1To10';
 export * from './time';
 export * from './utils/guards';
 
@@ -18,8 +13,6 @@ export const behaviorSchemas: Record<
 > = {
   time: timeBehaviorSchema,
   counter: counterBehaviorSchema,
-  scaleOf1To10: scaleOf1To10BehaviorSchema,
-  // multipleChoice: multipleChoiceBehaviorSchema,
 } as any;
 
 export const behaviorSchema = yup.lazy(value => {
@@ -42,9 +35,6 @@ type ValidatedBehavior = {
   [K in BehaviorValue['type']]: yup.InferType<(typeof behaviorSchemas)[K]>;
 }[BehaviorValue['type']];
 
-export type BehaviorValue =
-  | ScaleOf1To10BehaviorValue
-  | TimeBehaviorValue
-  | CounterBehaviorValue;
+export type BehaviorValue = TimeBehaviorValue | CounterBehaviorValue;
 
 export type BehaviorKeyType = BehaviorValue['type'];

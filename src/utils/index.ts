@@ -1,4 +1,3 @@
-// export * from './behaviors';
 export * from './colors';
 export * from './dates';
 export * from './days';

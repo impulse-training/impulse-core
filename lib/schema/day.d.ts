@@ -101,29 +101,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     } | null | undefined;
                     templateFor?: "onboarding" | "afterSuccess" | "afterSetback" | undefined;
                     setbackThreshold?: number | undefined;
-                    lowEmoji?: yup.Maybe<string | undefined>;
-                    highEmoji?: yup.Maybe<string | undefined>;
-                    prompt: string;
-                    type: "scaleOf1To10";
-                    ordinal: number;
-                } | {
-                    recommendedForIssueIds?: string[] | undefined;
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    templateFor?: "onboarding" | "afterSuccess" | "afterSetback" | undefined;
-                    setbackThreshold?: number | undefined;
                     prompt: string;
                     type: "time";
                     ordinal: number;
@@ -1261,29 +1238,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     setbackThreshold?: number | undefined;
                     prompt: string;
                     type: "counter";
-                    ordinal: number;
-                } | {
-                    recommendedForIssueIds?: string[] | undefined;
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    templateFor?: "onboarding" | "afterSuccess" | "afterSetback" | undefined;
-                    setbackThreshold?: number | undefined;
-                    lowEmoji?: yup.Maybe<string | undefined>;
-                    highEmoji?: yup.Maybe<string | undefined>;
-                    prompt: string;
-                    type: "scaleOf1To10";
                     ordinal: number;
                 } | {
                     recommendedForIssueIds?: string[] | undefined;
@@ -2467,29 +2421,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     } | null | undefined;
                     templateFor?: "onboarding" | "afterSuccess" | "afterSetback" | undefined;
                     setbackThreshold?: number | undefined;
-                    lowEmoji?: yup.Maybe<string | undefined>;
-                    highEmoji?: yup.Maybe<string | undefined>;
-                    prompt: string;
-                    type: "scaleOf1To10";
-                    ordinal: number;
-                } | {
-                    recommendedForIssueIds?: string[] | undefined;
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    templateFor?: "onboarding" | "afterSuccess" | "afterSetback" | undefined;
-                    setbackThreshold?: number | undefined;
                     prompt: string;
                     type: "time";
                     ordinal: number;
@@ -3628,29 +3559,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     setbackThreshold?: number | undefined;
                     prompt: string;
                     type: "counter";
-                    ordinal: number;
-                } | {
-                    recommendedForIssueIds?: string[] | undefined;
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    templateFor?: "onboarding" | "afterSuccess" | "afterSetback" | undefined;
-                    setbackThreshold?: number | undefined;
-                    lowEmoji?: yup.Maybe<string | undefined>;
-                    highEmoji?: yup.Maybe<string | undefined>;
-                    prompt: string;
-                    type: "scaleOf1To10";
                     ordinal: number;
                 } | {
                     recommendedForIssueIds?: string[] | undefined;
@@ -4833,29 +4741,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     } | null | undefined;
                     templateFor?: "onboarding" | "afterSuccess" | "afterSetback" | undefined;
                     setbackThreshold?: number | undefined;
-                    lowEmoji?: yup.Maybe<string | undefined>;
-                    highEmoji?: yup.Maybe<string | undefined>;
-                    prompt: string;
-                    type: "scaleOf1To10";
-                    ordinal: number;
-                } | {
-                    recommendedForIssueIds?: string[] | undefined;
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    templateFor?: "onboarding" | "afterSuccess" | "afterSetback" | undefined;
-                    setbackThreshold?: number | undefined;
                     prompt: string;
                     type: "time";
                     ordinal: number;
@@ -6014,29 +5899,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     } | null | undefined;
                     templateFor?: "onboarding" | "afterSuccess" | "afterSetback" | undefined;
                     setbackThreshold?: number | undefined;
-                    lowEmoji?: yup.Maybe<string | undefined>;
-                    highEmoji?: yup.Maybe<string | undefined>;
-                    prompt: string;
-                    type: "scaleOf1To10";
-                    ordinal: number;
-                } | {
-                    recommendedForIssueIds?: string[] | undefined;
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    templateFor?: "onboarding" | "afterSuccess" | "afterSetback" | undefined;
-                    setbackThreshold?: number | undefined;
                     prompt: string;
                     type: "time";
                     ordinal: number;
@@ -7151,29 +7013,6 @@ export declare const daySchema: yup.ObjectSchema<{
             setbackThreshold?: number | undefined;
             prompt: string;
             type: "counter";
-            ordinal: number;
-        } | {
-            recommendedForIssueIds?: string[] | undefined;
-            createdAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            updatedAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            templateFor?: "onboarding" | "afterSuccess" | "afterSetback" | undefined;
-            setbackThreshold?: number | undefined;
-            lowEmoji?: yup.Maybe<string | undefined>;
-            highEmoji?: yup.Maybe<string | undefined>;
-            prompt: string;
-            type: "scaleOf1To10";
             ordinal: number;
         } | {
             recommendedForIssueIds?: string[] | undefined;
