@@ -1,12 +1,12 @@
-import * as yup from 'yup';
-import { followUpBaseSchema } from './base';
+// import * as yup from 'yup';
+// import { followUpBaseSchema } from './base';
 
-export const askAnotherQuestionSchema = followUpBaseSchema(
-  'askAnotherQuestion'
-).shape({
-  questionId: yup.string().required(),
-});
+// export const askAnotherBehaviorSchema = followUpBaseSchema(
+//   'askAnotherBehavior'
+// ).shape({
+//   behaviorId: yup.string().required(),
+// });
 
-export type FollowUpQuestionValue = yup.InferType<
-  typeof askAnotherQuestionSchema
->;
+// export type FollowUpBehaviorValue = yup.InferType<
+//   typeof askAnotherBehaviorSchema
+// >;

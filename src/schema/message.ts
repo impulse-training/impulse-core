@@ -1,6 +1,6 @@
 import * as yup from 'yup';
-import { questionDataSchema } from './log';
-import { questionSchema } from './question';
+import { behaviorSchema } from './behavior';
+import { behaviorDataSchema } from './log';
 import { documentReferenceSchema } from './utils/firestore';
 import { optionalObjectOf } from './utils/objectOf';
 import { optionalTimestampSchema, timestampSchema } from './utils/timestamp';
@@ -20,10 +20,10 @@ export const messageSchema = yup.object({
       intensity: yup.number().nullable().defined(),
     })
   ),
-  questions: optionalObjectOf(
+  behaviors: optionalObjectOf(
     yup.object({
-      question: questionSchema,
-      data: questionDataSchema,
+      behavior: behaviorSchema,
+      data: behaviorDataSchema,
     })
   ),
   files: yup.array().of(documentReferenceSchema),

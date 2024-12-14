@@ -12,7 +12,6 @@ export const makeProfileFactory = (TimestampKlass: typeof TimestampLike) =>
     timezone: 'America/Bogota',
     verificationCode: '12345',
     notificationPreferences: {},
-    signUpIssueId: null,
     uids: ['uid1', 'uid2'],
     dayReviewTime: null,
   });

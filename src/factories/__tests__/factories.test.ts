@@ -15,7 +15,7 @@ import {
   tacticSchema,
   timeReminderSchema,
 } from '../../schema';
-import { questionSchema } from '../../schema/question';
+import { behaviorSchema } from '../../schema/behavior';
 import { TimestampLike } from '../../utils/firestore/TimestampLike';
 
 const factories = makeFactories(TimestampLike);
@@ -70,8 +70,7 @@ const schemaMap: Record<keyof typeof factories, null | Schema | Lazy<unknown>> =
     profileStrategyFactory: profileStrategySchema,
     roadmapFactory: roadmapSchema,
     tacticFactory: tacticSchema,
-    timeQuestionFactory: questionSchema,
-    textQuestionFactory: questionSchema,
-    multipleChoiceQuestionFactory: questionSchema,
+    counterBehaviorFactory: behaviorSchema,
+    timeBehaviorFactory: behaviorSchema,
     timeReminderFactory: timeReminderSchema,
   };

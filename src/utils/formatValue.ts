@@ -1,9 +1,9 @@
 import { compact } from 'lodash';
-import { QuestionDataValue, formatSecondsInWords } from '../schema';
+import { BehaviorDataValue, formatSecondsInWords } from '../schema';
 
 export function formatValue(
   value: number,
-  unit: QuestionDataValue['unit'],
+  unit: BehaviorDataValue['unit'],
   customUnit?: string
 ) {
   if (unit === 'time') return formatSecondsInWords(value || 0);

@@ -5,17 +5,17 @@ import { TimestampLike } from '../../firestore/TimestampLike';
 const { regularLogFactory } = makeFactories(TimestampLike);
 
 describe(logTextForGpt, () => {
-  describe('for a log that has answers to questions', () => {
+  describe('for a log that has answers to behaviors', () => {
     it('returns the correct payload', () => {
       const log = regularLogFactory.build({
         text: 'I messed up!',
-        questionsById: {
-          question1: {
+        behaviorsById: {
+          behavior1: {
             prompt: 'Time spent watching',
           },
         },
-        questionData: {
-          question1: {
+        behaviorData: {
+          behavior1: {
             stringValue: '3 hrs',
           },
         },

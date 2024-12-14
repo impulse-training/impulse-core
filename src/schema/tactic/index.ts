@@ -10,17 +10,16 @@ import {
   NotifySupportGroupValue,
   notifySupportGroupSchema,
 } from './notifySupportGroup';
-import { QuestionTacticValue, questionTacticSchema } from './question';
 import { StepsTacticValue, stepsTacticSchema } from './steps';
 import { TaskTacticValue, taskTacticSchema } from './task';
 import { VideoTacticValue, videoTacticSchema } from './video';
 
 export * from './audio';
+// export * from './behavior';
 export * from './breathingExercise';
 export * from './link';
 export * from './notifyContact';
 export * from './notifySupportGroup';
-export * from './question';
 export * from './steps';
 export * from './task';
 export * from './utils';
@@ -34,7 +33,6 @@ export type TacticValue =
   | TaskTacticValue
   | VideoTacticValue
   | NotifySupportGroupValue
-  | QuestionTacticValue
   | LinkTacticValue;
 // | UrgeSurfingTacticValue
 // | EmotionsTacticValue
@@ -53,7 +51,6 @@ export const tacticSchemas: Record<
   task: taskTacticSchema,
   link: linkTacticSchema,
   video: videoTacticSchema,
-  question: questionTacticSchema,
   steps: stepsTacticSchema,
   // emotions: emotionsTacticSchema,
   // 'day-review': dayReviewTacticSchema,

@@ -12,11 +12,11 @@ export function logTextForGpt(log: LogValue): string {
 
   // Handle tactics that have been completed
 
-  if (log.questionData) {
-    const questionsDescription = compact(
-      flatMap(log.questionsById, (question, questionId) => {
-        const prompt = question.prompt;
-        const userAnswer = log.questionData?.[questionId];
+  if (log.behaviorData) {
+    const behaviorsDescription = compact(
+      flatMap(log.behaviorsById, (behavior, behaviorId) => {
+        const prompt = behavior.prompt;
+        const userAnswer = log.behaviorData?.[behaviorId];
         const goalText = userAnswer?.setbackThreshold
           ? ` (goal is ${userAnswer.setbackThreshold} or less)`
           : '';
@@ -24,7 +24,7 @@ export function logTextForGpt(log: LogValue): string {
         return [prompt + goalText, userAnswer.stringValue].join(': ');
       })
     );
-    text += questionsDescription.join(SEPARATOR);
+    text += behaviorsDescription.join(SEPARATOR);
   }
 
   return text;

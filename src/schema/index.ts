@@ -1,6 +1,7 @@
 export const DATE_FORMAT = 'yyyy-MM-dd';
 
 export * from './application';
+export * from './behavior';
 export * from './callStatus';
 export * from './chat';
 export * from './chat/base';
@@ -16,10 +17,8 @@ export * from './log/base';
 export * from './mailTemplate';
 export * from './message';
 export * from './notification';
-export * from './option';
 export * from './profile';
 export * from './profileStrategy';
-export * from './question';
 export * from './recoveryCode';
 export * from './reminder';
 export * from './roadmap';

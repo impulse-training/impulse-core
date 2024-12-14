@@ -10,8 +10,8 @@ export * from './regular';
 export * from './showTourLog';
 export * from './tacticsLog';
 export * from './whatsappMessageLog';
+export * from './utils/behaviorData';
 export * from './utils/guards';
-export * from './utils/questionData';
 export declare const logSchemas: Record<LogValue['type'], yup.ObjectSchema<LogValue>>;
 export declare const logSchema: yup.Lazy<ValidatedLog, yup.AnyObject, any>;
 type ValidatedLog = {

@@ -1,5 +1,6 @@
 import { TimestampLike } from '../utils/firestore/TimestampLike';
 import { makeApplicationFactory } from './application';
+import { makeBehaviorFactories } from './behavior';
 import { makeDayFactory } from './day';
 import { makeDaysSummaryFactory } from './daysSummary';
 import { makeIssueFactory } from './issue';
@@ -7,7 +8,6 @@ import { makeLocationFactory } from './location';
 import { makeLogFactories } from './log';
 import { makeProfileFactory } from './profile';
 import { makeProfileStrategyFactory } from './profileStrategy';
-import { makeQuestionFactories } from './question';
 import { makeTimeReminderFactory } from './reminder';
 import { makeRoadmapFactory } from './roadmap';
 import { makeStrategyFactory } from './strategy';
@@ -31,7 +31,7 @@ export function makeFactories(TimestampKlass: typeof TimestampLike) {
     suggestionFactory: makeSuggestionFactory(TimestampKlass),
     strategyFactory: makeStrategyFactory(TimestampKlass),
     profileStrategyFactory: makeProfileStrategyFactory(TimestampKlass),
-    ...makeQuestionFactories(TimestampKlass),
+    ...makeBehaviorFactories(TimestampKlass),
     ...makeLogFactories(TimestampKlass),
   };
 }

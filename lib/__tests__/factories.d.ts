@@ -14,7 +14,6 @@ export declare const factories: {
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        text?: string | undefined;
         submittedAt?: {
             isEqual?: any;
             toMillis?: any;
@@ -51,8 +50,9 @@ export declare const factories: {
         audioWaveform?: string | undefined;
         issueId?: string | null | undefined;
         issueName?: string | undefined;
-        questionsById?: {
+        behaviorsById?: {
             [x: string]: {
+                recommendedForIssueIds?: string[] | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -67,161 +67,13 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                followUps?: ({
-                    message?: string | undefined;
-                    type: "askAnotherQuestion";
-                    questionId: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeAnswerToProfile";
-                    profileKey: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeValueToProfile";
-                    profileKey: string;
-                    value: {};
-                })[] | undefined;
+                templateFor?: "onboarding" | "afterSuccess" | "afterSetback" | undefined;
                 setbackThreshold?: number | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                isPublic?: boolean | undefined;
-                categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
-                options?: ({
-                    label?: string | undefined;
-                    followUps?: ({
-                        message?: string | undefined;
-                        type: "askAnotherQuestion";
-                        questionId: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeAnswerToProfile";
-                        profileKey: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeValueToProfile";
-                        profileKey: string;
-                        value: {};
-                    })[] | undefined;
-                    color?: string | undefined;
-                    textColor?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    greaterThan?: number | undefined;
-                    lessThanOrEqualTo?: number | undefined;
-                    type: "numeric";
-                    text: string;
-                } | {
-                    label?: string | undefined;
-                    followUps?: ({
-                        message?: string | undefined;
-                        type: "askAnotherQuestion";
-                        questionId: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeAnswerToProfile";
-                        profileKey: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeValueToProfile";
-                        profileKey: string;
-                        value: {};
-                    })[] | undefined;
-                    color?: string | undefined;
-                    textColor?: string | undefined;
-                    type: "string";
-                    text: string;
-                })[] | undefined;
-                ordinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                templateFor?: "afterSuccess" | "afterSetback" | "onboarding" | undefined;
-                writeAnswerToProfileMemoryKey?: string | undefined;
+                prompt: string;
                 type: "counter";
-                prompt: string;
                 ordinal: number;
             } | {
-                createdAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                updatedAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                followUps?: ({
-                    message?: string | undefined;
-                    type: "askAnotherQuestion";
-                    questionId: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeAnswerToProfile";
-                    profileKey: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeValueToProfile";
-                    profileKey: string;
-                    value: {};
-                })[] | undefined;
                 recommendedForIssueIds?: string[] | undefined;
-                isPublic?: boolean | undefined;
-                categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
-                options?: ({
-                    label?: string | undefined;
-                    followUps?: ({
-                        message?: string | undefined;
-                        type: "askAnotherQuestion";
-                        questionId: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeAnswerToProfile";
-                        profileKey: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeValueToProfile";
-                        profileKey: string;
-                        value: {};
-                    })[] | undefined;
-                    color?: string | undefined;
-                    textColor?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    greaterThan?: number | undefined;
-                    lessThanOrEqualTo?: number | undefined;
-                    type: "numeric";
-                    text: string;
-                } | {
-                    label?: string | undefined;
-                    followUps?: ({
-                        message?: string | undefined;
-                        type: "askAnotherQuestion";
-                        questionId: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeAnswerToProfile";
-                        profileKey: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeValueToProfile";
-                        profileKey: string;
-                        value: {};
-                    })[] | undefined;
-                    color?: string | undefined;
-                    textColor?: string | undefined;
-                    type: "string";
-                    text: string;
-                })[] | undefined;
-                ordinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                templateFor?: "afterSuccess" | "afterSetback" | "onboarding" | undefined;
-                writeAnswerToProfileMemoryKey?: string | undefined;
-                type: "issue";
-                prompt: string;
-                ordinal: number;
-            } | {
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -236,248 +88,15 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                followUps?: ({
-                    message?: string | undefined;
-                    type: "askAnotherQuestion";
-                    questionId: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeAnswerToProfile";
-                    profileKey: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeValueToProfile";
-                    profileKey: string;
-                    value: {};
-                })[] | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                isPublic?: boolean | undefined;
-                categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
-                ordinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                templateFor?: "afterSuccess" | "afterSetback" | "onboarding" | undefined;
-                writeAnswerToProfileMemoryKey?: string | undefined;
-                type: "multipleChoice";
-                prompt: string;
-                options: ({
-                    label?: string | undefined;
-                    followUps?: ({
-                        message?: string | undefined;
-                        type: "askAnotherQuestion";
-                        questionId: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeAnswerToProfile";
-                        profileKey: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeValueToProfile";
-                        profileKey: string;
-                        value: {};
-                    })[] | undefined;
-                    color?: string | undefined;
-                    textColor?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    greaterThan?: number | undefined;
-                    lessThanOrEqualTo?: number | undefined;
-                    type: "numeric";
-                    text: string;
-                } | {
-                    label?: string | undefined;
-                    followUps?: ({
-                        message?: string | undefined;
-                        type: "askAnotherQuestion";
-                        questionId: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeAnswerToProfile";
-                        profileKey: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeValueToProfile";
-                        profileKey: string;
-                        value: {};
-                    })[] | undefined;
-                    color?: string | undefined;
-                    textColor?: string | undefined;
-                    type: "string";
-                    text: string;
-                })[];
-                ordinal: number;
-                canAddNewOptions: NonNullable<boolean | undefined>;
-            } | {
-                createdAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                updatedAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                followUps?: ({
-                    message?: string | undefined;
-                    type: "askAnotherQuestion";
-                    questionId: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeAnswerToProfile";
-                    profileKey: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeValueToProfile";
-                    profileKey: string;
-                    value: {};
-                })[] | undefined;
+                templateFor?: "onboarding" | "afterSuccess" | "afterSetback" | undefined;
                 setbackThreshold?: number | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                isPublic?: boolean | undefined;
-                categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
-                options?: ({
-                    label?: string | undefined;
-                    followUps?: ({
-                        message?: string | undefined;
-                        type: "askAnotherQuestion";
-                        questionId: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeAnswerToProfile";
-                        profileKey: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeValueToProfile";
-                        profileKey: string;
-                        value: {};
-                    })[] | undefined;
-                    color?: string | undefined;
-                    textColor?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    greaterThan?: number | undefined;
-                    lessThanOrEqualTo?: number | undefined;
-                    type: "numeric";
-                    text: string;
-                } | {
-                    label?: string | undefined;
-                    followUps?: ({
-                        message?: string | undefined;
-                        type: "askAnotherQuestion";
-                        questionId: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeAnswerToProfile";
-                        profileKey: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeValueToProfile";
-                        profileKey: string;
-                        value: {};
-                    })[] | undefined;
-                    color?: string | undefined;
-                    textColor?: string | undefined;
-                    type: "string";
-                    text: string;
-                })[] | undefined;
-                ordinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                templateFor?: "afterSuccess" | "afterSetback" | "onboarding" | undefined;
-                writeAnswerToProfileMemoryKey?: string | undefined;
                 lowEmoji?: import("yup").Maybe<string | undefined>;
                 highEmoji?: import("yup").Maybe<string | undefined>;
+                prompt: string;
                 type: "scaleOf1To10";
-                prompt: string;
                 ordinal: number;
             } | {
-                createdAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                updatedAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                followUps?: ({
-                    message?: string | undefined;
-                    type: "askAnotherQuestion";
-                    questionId: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeAnswerToProfile";
-                    profileKey: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeValueToProfile";
-                    profileKey: string;
-                    value: {};
-                })[] | undefined;
                 recommendedForIssueIds?: string[] | undefined;
-                isPublic?: boolean | undefined;
-                categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
-                options?: ({
-                    label?: string | undefined;
-                    followUps?: ({
-                        message?: string | undefined;
-                        type: "askAnotherQuestion";
-                        questionId: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeAnswerToProfile";
-                        profileKey: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeValueToProfile";
-                        profileKey: string;
-                        value: {};
-                    })[] | undefined;
-                    color?: string | undefined;
-                    textColor?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    greaterThan?: number | undefined;
-                    lessThanOrEqualTo?: number | undefined;
-                    type: "numeric";
-                    text: string;
-                } | {
-                    label?: string | undefined;
-                    followUps?: ({
-                        message?: string | undefined;
-                        type: "askAnotherQuestion";
-                        questionId: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeAnswerToProfile";
-                        profileKey: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeValueToProfile";
-                        profileKey: string;
-                        value: {};
-                    })[] | undefined;
-                    color?: string | undefined;
-                    textColor?: string | undefined;
-                    type: "string";
-                    text: string;
-                })[] | undefined;
-                ordinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                templateFor?: "afterSuccess" | "afterSetback" | "onboarding" | undefined;
-                writeAnswerToProfileMemoryKey?: string | undefined;
-                type: "text";
-                prompt: string;
-                ordinal: number;
-            } | {
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -492,85 +111,20 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                followUps?: ({
-                    message?: string | undefined;
-                    type: "askAnotherQuestion";
-                    questionId: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeAnswerToProfile";
-                    profileKey: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeValueToProfile";
-                    profileKey: string;
-                    value: {};
-                })[] | undefined;
+                templateFor?: "onboarding" | "afterSuccess" | "afterSetback" | undefined;
                 setbackThreshold?: number | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                isPublic?: boolean | undefined;
-                categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
-                options?: ({
-                    label?: string | undefined;
-                    followUps?: ({
-                        message?: string | undefined;
-                        type: "askAnotherQuestion";
-                        questionId: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeAnswerToProfile";
-                        profileKey: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeValueToProfile";
-                        profileKey: string;
-                        value: {};
-                    })[] | undefined;
-                    color?: string | undefined;
-                    textColor?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    greaterThan?: number | undefined;
-                    lessThanOrEqualTo?: number | undefined;
-                    type: "numeric";
-                    text: string;
-                } | {
-                    label?: string | undefined;
-                    followUps?: ({
-                        message?: string | undefined;
-                        type: "askAnotherQuestion";
-                        questionId: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeAnswerToProfile";
-                        profileKey: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeValueToProfile";
-                        profileKey: string;
-                        value: {};
-                    })[] | undefined;
-                    color?: string | undefined;
-                    textColor?: string | undefined;
-                    type: "string";
-                    text: string;
-                })[] | undefined;
-                ordinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                templateFor?: "afterSuccess" | "afterSetback" | "onboarding" | undefined;
-                writeAnswerToProfileMemoryKey?: string | undefined;
-                type: "time";
                 prompt: string;
+                type: "time";
                 ordinal: number;
             };
         } | null | undefined;
-        questionData?: {
+        behaviorData?: {
             [x: string]: {
-                label?: string | undefined;
-                color?: string | undefined;
                 setbackThreshold?: number | undefined;
+                label?: string | undefined;
                 idValue?: string | undefined;
                 numericValue?: number | undefined;
+                color?: string | undefined;
                 setAt: {
                     isEqual?: any;
                     toMillis?: any;
@@ -583,9 +137,11 @@ export declare const factories: {
             };
         } | null | undefined;
         blandPathwayChatId?: string | undefined;
+        text?: string | undefined;
         profileEmojiIDString?: string | undefined;
         tacticId?: string | null | undefined;
         tactic?: ({
+            recommendedForIssueIds?: string[] | undefined;
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
@@ -600,10 +156,9 @@ export declare const factories: {
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            uid?: string | undefined;
-            setbackThreshold?: number | null | undefined;
-            recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
+            setbackThreshold?: number | null | undefined;
+            uid?: string | undefined;
             sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
             sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
@@ -670,6 +225,7 @@ export declare const factories: {
                 uri: string;
             };
         } | {
+            recommendedForIssueIds?: string[] | undefined;
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
@@ -684,11 +240,10 @@ export declare const factories: {
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            uid?: string | undefined;
-            repeat?: import("yup").Maybe<number | undefined>;
-            setbackThreshold?: number | null | undefined;
-            recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
+            setbackThreshold?: number | null | undefined;
+            repeat?: import("yup").Maybe<number | undefined>;
+            uid?: string | undefined;
             sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
             sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
@@ -733,6 +288,7 @@ export declare const factories: {
             holdFor: number;
             outFor: number;
         } | {
+            recommendedForIssueIds?: string[] | undefined;
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
@@ -747,10 +303,9 @@ export declare const factories: {
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            uid?: string | undefined;
-            setbackThreshold?: number | null | undefined;
-            recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
+            setbackThreshold?: number | null | undefined;
+            uid?: string | undefined;
             sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
             sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
@@ -793,6 +348,7 @@ export declare const factories: {
             ordinal: number;
             url: string;
         } | {
+            recommendedForIssueIds?: string[] | undefined;
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
@@ -807,10 +363,9 @@ export declare const factories: {
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            uid?: string | undefined;
-            setbackThreshold?: number | null | undefined;
-            recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
+            setbackThreshold?: number | null | undefined;
+            uid?: string | undefined;
             sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
             sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
@@ -853,6 +408,7 @@ export declare const factories: {
             ordinal: number;
             contactIds: string[];
         } | {
+            recommendedForIssueIds?: string[] | undefined;
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
@@ -867,10 +423,9 @@ export declare const factories: {
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            uid?: string | undefined;
-            setbackThreshold?: number | null | undefined;
-            recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
+            setbackThreshold?: number | null | undefined;
+            uid?: string | undefined;
             sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
             sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
@@ -913,6 +468,7 @@ export declare const factories: {
             ordinal: number;
             supportGroup: import("../schema/utils/firestore").DocumentReferenceLike<unknown>;
         } | {
+            recommendedForIssueIds?: string[] | undefined;
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
@@ -927,580 +483,9 @@ export declare const factories: {
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            uid?: string | undefined;
-            setbackThreshold?: number | null | undefined;
-            recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
-            sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
-            sharedWithIssueIds?: string[] | undefined;
-            recommendedForIssueOrdinals?: {
-                [x: string]: number;
-            } | null | undefined;
-            isShared?: boolean | undefined;
-            description?: string | null | undefined;
-            pastTenseTitle?: string | undefined;
-            debriefAfterMinutes?: number | null | undefined;
-            image?: {
-                createdAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                updatedAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                content?: string | undefined;
-                localFilePath?: import("yup").Maybe<string | undefined>;
-                isDeleted?: boolean | undefined;
-                waveForm?: import("yup").Maybe<string | undefined>;
-                thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
-                thumbnailUri?: import("yup").Maybe<string | undefined>;
-                contentType: string;
-                storagePath: string;
-                uri: string;
-            } | undefined;
-            backgroundColor?: string | undefined;
-            likesCount?: number | null | undefined;
-            timerSeconds?: import("yup").Maybe<number | undefined>;
-            isSuggested?: boolean | undefined;
-            type: "question";
-            ordinal: number;
-            question: {
-                createdAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                updatedAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                followUps?: ({
-                    message?: string | undefined;
-                    type: "askAnotherQuestion";
-                    questionId: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeAnswerToProfile";
-                    profileKey: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeValueToProfile";
-                    profileKey: string;
-                    value: {};
-                })[] | undefined;
-                setbackThreshold?: number | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                isPublic?: boolean | undefined;
-                categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
-                options?: ({
-                    label?: string | undefined;
-                    followUps?: ({
-                        message?: string | undefined;
-                        type: "askAnotherQuestion";
-                        questionId: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeAnswerToProfile";
-                        profileKey: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeValueToProfile";
-                        profileKey: string;
-                        value: {};
-                    })[] | undefined;
-                    color?: string | undefined;
-                    textColor?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    greaterThan?: number | undefined;
-                    lessThanOrEqualTo?: number | undefined;
-                    type: "numeric";
-                    text: string;
-                } | {
-                    label?: string | undefined;
-                    followUps?: ({
-                        message?: string | undefined;
-                        type: "askAnotherQuestion";
-                        questionId: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeAnswerToProfile";
-                        profileKey: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeValueToProfile";
-                        profileKey: string;
-                        value: {};
-                    })[] | undefined;
-                    color?: string | undefined;
-                    textColor?: string | undefined;
-                    type: "string";
-                    text: string;
-                })[] | undefined;
-                ordinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                templateFor?: "afterSuccess" | "afterSetback" | "onboarding" | undefined;
-                writeAnswerToProfileMemoryKey?: string | undefined;
-                type: "counter";
-                prompt: string;
-                ordinal: number;
-            } | {
-                createdAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                updatedAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                followUps?: ({
-                    message?: string | undefined;
-                    type: "askAnotherQuestion";
-                    questionId: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeAnswerToProfile";
-                    profileKey: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeValueToProfile";
-                    profileKey: string;
-                    value: {};
-                })[] | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                isPublic?: boolean | undefined;
-                categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
-                options?: ({
-                    label?: string | undefined;
-                    followUps?: ({
-                        message?: string | undefined;
-                        type: "askAnotherQuestion";
-                        questionId: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeAnswerToProfile";
-                        profileKey: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeValueToProfile";
-                        profileKey: string;
-                        value: {};
-                    })[] | undefined;
-                    color?: string | undefined;
-                    textColor?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    greaterThan?: number | undefined;
-                    lessThanOrEqualTo?: number | undefined;
-                    type: "numeric";
-                    text: string;
-                } | {
-                    label?: string | undefined;
-                    followUps?: ({
-                        message?: string | undefined;
-                        type: "askAnotherQuestion";
-                        questionId: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeAnswerToProfile";
-                        profileKey: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeValueToProfile";
-                        profileKey: string;
-                        value: {};
-                    })[] | undefined;
-                    color?: string | undefined;
-                    textColor?: string | undefined;
-                    type: "string";
-                    text: string;
-                })[] | undefined;
-                ordinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                templateFor?: "afterSuccess" | "afterSetback" | "onboarding" | undefined;
-                writeAnswerToProfileMemoryKey?: string | undefined;
-                type: "issue";
-                prompt: string;
-                ordinal: number;
-            } | {
-                createdAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                updatedAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                followUps?: ({
-                    message?: string | undefined;
-                    type: "askAnotherQuestion";
-                    questionId: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeAnswerToProfile";
-                    profileKey: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeValueToProfile";
-                    profileKey: string;
-                    value: {};
-                })[] | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                isPublic?: boolean | undefined;
-                categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
-                ordinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                templateFor?: "afterSuccess" | "afterSetback" | "onboarding" | undefined;
-                writeAnswerToProfileMemoryKey?: string | undefined;
-                type: "multipleChoice";
-                prompt: string;
-                options: ({
-                    label?: string | undefined;
-                    followUps?: ({
-                        message?: string | undefined;
-                        type: "askAnotherQuestion";
-                        questionId: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeAnswerToProfile";
-                        profileKey: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeValueToProfile";
-                        profileKey: string;
-                        value: {};
-                    })[] | undefined;
-                    color?: string | undefined;
-                    textColor?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    greaterThan?: number | undefined;
-                    lessThanOrEqualTo?: number | undefined;
-                    type: "numeric";
-                    text: string;
-                } | {
-                    label?: string | undefined;
-                    followUps?: ({
-                        message?: string | undefined;
-                        type: "askAnotherQuestion";
-                        questionId: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeAnswerToProfile";
-                        profileKey: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeValueToProfile";
-                        profileKey: string;
-                        value: {};
-                    })[] | undefined;
-                    color?: string | undefined;
-                    textColor?: string | undefined;
-                    type: "string";
-                    text: string;
-                })[];
-                ordinal: number;
-                canAddNewOptions: NonNullable<boolean | undefined>;
-            } | {
-                createdAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                updatedAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                followUps?: ({
-                    message?: string | undefined;
-                    type: "askAnotherQuestion";
-                    questionId: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeAnswerToProfile";
-                    profileKey: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeValueToProfile";
-                    profileKey: string;
-                    value: {};
-                })[] | undefined;
-                setbackThreshold?: number | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                isPublic?: boolean | undefined;
-                categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
-                options?: ({
-                    label?: string | undefined;
-                    followUps?: ({
-                        message?: string | undefined;
-                        type: "askAnotherQuestion";
-                        questionId: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeAnswerToProfile";
-                        profileKey: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeValueToProfile";
-                        profileKey: string;
-                        value: {};
-                    })[] | undefined;
-                    color?: string | undefined;
-                    textColor?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    greaterThan?: number | undefined;
-                    lessThanOrEqualTo?: number | undefined;
-                    type: "numeric";
-                    text: string;
-                } | {
-                    label?: string | undefined;
-                    followUps?: ({
-                        message?: string | undefined;
-                        type: "askAnotherQuestion";
-                        questionId: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeAnswerToProfile";
-                        profileKey: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeValueToProfile";
-                        profileKey: string;
-                        value: {};
-                    })[] | undefined;
-                    color?: string | undefined;
-                    textColor?: string | undefined;
-                    type: "string";
-                    text: string;
-                })[] | undefined;
-                ordinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                templateFor?: "afterSuccess" | "afterSetback" | "onboarding" | undefined;
-                writeAnswerToProfileMemoryKey?: string | undefined;
-                lowEmoji?: import("yup").Maybe<string | undefined>;
-                highEmoji?: import("yup").Maybe<string | undefined>;
-                type: "scaleOf1To10";
-                prompt: string;
-                ordinal: number;
-            } | {
-                createdAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                updatedAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                followUps?: ({
-                    message?: string | undefined;
-                    type: "askAnotherQuestion";
-                    questionId: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeAnswerToProfile";
-                    profileKey: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeValueToProfile";
-                    profileKey: string;
-                    value: {};
-                })[] | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                isPublic?: boolean | undefined;
-                categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
-                options?: ({
-                    label?: string | undefined;
-                    followUps?: ({
-                        message?: string | undefined;
-                        type: "askAnotherQuestion";
-                        questionId: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeAnswerToProfile";
-                        profileKey: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeValueToProfile";
-                        profileKey: string;
-                        value: {};
-                    })[] | undefined;
-                    color?: string | undefined;
-                    textColor?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    greaterThan?: number | undefined;
-                    lessThanOrEqualTo?: number | undefined;
-                    type: "numeric";
-                    text: string;
-                } | {
-                    label?: string | undefined;
-                    followUps?: ({
-                        message?: string | undefined;
-                        type: "askAnotherQuestion";
-                        questionId: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeAnswerToProfile";
-                        profileKey: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeValueToProfile";
-                        profileKey: string;
-                        value: {};
-                    })[] | undefined;
-                    color?: string | undefined;
-                    textColor?: string | undefined;
-                    type: "string";
-                    text: string;
-                })[] | undefined;
-                ordinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                templateFor?: "afterSuccess" | "afterSetback" | "onboarding" | undefined;
-                writeAnswerToProfileMemoryKey?: string | undefined;
-                type: "text";
-                prompt: string;
-                ordinal: number;
-            } | {
-                createdAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                updatedAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                followUps?: ({
-                    message?: string | undefined;
-                    type: "askAnotherQuestion";
-                    questionId: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeAnswerToProfile";
-                    profileKey: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeValueToProfile";
-                    profileKey: string;
-                    value: {};
-                })[] | undefined;
-                setbackThreshold?: number | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                isPublic?: boolean | undefined;
-                categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
-                options?: ({
-                    label?: string | undefined;
-                    followUps?: ({
-                        message?: string | undefined;
-                        type: "askAnotherQuestion";
-                        questionId: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeAnswerToProfile";
-                        profileKey: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeValueToProfile";
-                        profileKey: string;
-                        value: {};
-                    })[] | undefined;
-                    color?: string | undefined;
-                    textColor?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    greaterThan?: number | undefined;
-                    lessThanOrEqualTo?: number | undefined;
-                    type: "numeric";
-                    text: string;
-                } | {
-                    label?: string | undefined;
-                    followUps?: ({
-                        message?: string | undefined;
-                        type: "askAnotherQuestion";
-                        questionId: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeAnswerToProfile";
-                        profileKey: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeValueToProfile";
-                        profileKey: string;
-                        value: {};
-                    })[] | undefined;
-                    color?: string | undefined;
-                    textColor?: string | undefined;
-                    type: "string";
-                    text: string;
-                })[] | undefined;
-                ordinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                templateFor?: "afterSuccess" | "afterSetback" | "onboarding" | undefined;
-                writeAnswerToProfileMemoryKey?: string | undefined;
-                type: "time";
-                prompt: string;
-                ordinal: number;
-            };
-        } | {
-            createdAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            updatedAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            uid?: string | undefined;
             setbackThreshold?: number | null | undefined;
-            recommendedForIssueIds?: string[] | undefined;
-            prompt?: string | undefined;
+            uid?: string | undefined;
             sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
             sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
@@ -1543,6 +528,7 @@ export declare const factories: {
             ordinal: number;
             targetSteps: number;
         } | {
+            recommendedForIssueIds?: string[] | undefined;
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
@@ -1557,9 +543,8 @@ export declare const factories: {
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            uid?: string | undefined;
             setbackThreshold?: number | null | undefined;
-            recommendedForIssueIds?: string[] | undefined;
+            uid?: string | undefined;
             sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
             sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
@@ -1598,10 +583,11 @@ export declare const factories: {
             likesCount?: number | null | undefined;
             timerSeconds?: import("yup").Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
-            type: "task";
             prompt: string;
+            type: "task";
             ordinal: number;
         } | {
+            recommendedForIssueIds?: string[] | undefined;
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
@@ -1616,10 +602,9 @@ export declare const factories: {
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            uid?: string | undefined;
-            setbackThreshold?: number | null | undefined;
-            recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
+            setbackThreshold?: number | null | undefined;
+            uid?: string | undefined;
             sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
             sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
@@ -1675,6 +660,7 @@ export declare const factories: {
         uid: string;
         tacticsById: {
             [x: string]: {
+                recommendedForIssueIds?: string[] | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -1689,10 +675,9 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                uid?: string | undefined;
-                setbackThreshold?: number | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
+                setbackThreshold?: number | null | undefined;
+                uid?: string | undefined;
                 sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 sharedWithIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
@@ -1759,6 +744,7 @@ export declare const factories: {
                     uri: string;
                 };
             } | {
+                recommendedForIssueIds?: string[] | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -1773,11 +759,10 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                uid?: string | undefined;
-                repeat?: import("yup").Maybe<number | undefined>;
-                setbackThreshold?: number | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
+                setbackThreshold?: number | null | undefined;
+                repeat?: import("yup").Maybe<number | undefined>;
+                uid?: string | undefined;
                 sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 sharedWithIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
@@ -1822,6 +807,7 @@ export declare const factories: {
                 holdFor: number;
                 outFor: number;
             } | {
+                recommendedForIssueIds?: string[] | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -1836,10 +822,9 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                uid?: string | undefined;
-                setbackThreshold?: number | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
+                setbackThreshold?: number | null | undefined;
+                uid?: string | undefined;
                 sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 sharedWithIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
@@ -1882,6 +867,7 @@ export declare const factories: {
                 ordinal: number;
                 url: string;
             } | {
+                recommendedForIssueIds?: string[] | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -1896,10 +882,9 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                uid?: string | undefined;
-                setbackThreshold?: number | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
+                setbackThreshold?: number | null | undefined;
+                uid?: string | undefined;
                 sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 sharedWithIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
@@ -1942,6 +927,7 @@ export declare const factories: {
                 ordinal: number;
                 contactIds: string[];
             } | {
+                recommendedForIssueIds?: string[] | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -1956,10 +942,9 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                uid?: string | undefined;
-                setbackThreshold?: number | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
+                setbackThreshold?: number | null | undefined;
+                uid?: string | undefined;
                 sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 sharedWithIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
@@ -2002,6 +987,7 @@ export declare const factories: {
                 ordinal: number;
                 supportGroup: import("../schema/utils/firestore").DocumentReferenceLike<unknown>;
             } | {
+                recommendedForIssueIds?: string[] | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -2016,580 +1002,9 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                uid?: string | undefined;
-                setbackThreshold?: number | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
-                sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                sharedWithIssueIds?: string[] | undefined;
-                recommendedForIssueOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                isShared?: boolean | undefined;
-                description?: string | null | undefined;
-                pastTenseTitle?: string | undefined;
-                debriefAfterMinutes?: number | null | undefined;
-                image?: {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    content?: string | undefined;
-                    localFilePath?: import("yup").Maybe<string | undefined>;
-                    isDeleted?: boolean | undefined;
-                    waveForm?: import("yup").Maybe<string | undefined>;
-                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
-                    thumbnailUri?: import("yup").Maybe<string | undefined>;
-                    contentType: string;
-                    storagePath: string;
-                    uri: string;
-                } | undefined;
-                backgroundColor?: string | undefined;
-                likesCount?: number | null | undefined;
-                timerSeconds?: import("yup").Maybe<number | undefined>;
-                isSuggested?: boolean | undefined;
-                type: "question";
-                ordinal: number;
-                question: {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    followUps?: ({
-                        message?: string | undefined;
-                        type: "askAnotherQuestion";
-                        questionId: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeAnswerToProfile";
-                        profileKey: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeValueToProfile";
-                        profileKey: string;
-                        value: {};
-                    })[] | undefined;
-                    setbackThreshold?: number | undefined;
-                    recommendedForIssueIds?: string[] | undefined;
-                    isPublic?: boolean | undefined;
-                    categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
-                    options?: ({
-                        label?: string | undefined;
-                        followUps?: ({
-                            message?: string | undefined;
-                            type: "askAnotherQuestion";
-                            questionId: string;
-                        } | {
-                            message?: string | undefined;
-                            type: "writeAnswerToProfile";
-                            profileKey: string;
-                        } | {
-                            message?: string | undefined;
-                            type: "writeValueToProfile";
-                            profileKey: string;
-                            value: {};
-                        })[] | undefined;
-                        color?: string | undefined;
-                        textColor?: string | undefined;
-                        setbackThreshold?: number | undefined;
-                        greaterThan?: number | undefined;
-                        lessThanOrEqualTo?: number | undefined;
-                        type: "numeric";
-                        text: string;
-                    } | {
-                        label?: string | undefined;
-                        followUps?: ({
-                            message?: string | undefined;
-                            type: "askAnotherQuestion";
-                            questionId: string;
-                        } | {
-                            message?: string | undefined;
-                            type: "writeAnswerToProfile";
-                            profileKey: string;
-                        } | {
-                            message?: string | undefined;
-                            type: "writeValueToProfile";
-                            profileKey: string;
-                            value: {};
-                        })[] | undefined;
-                        color?: string | undefined;
-                        textColor?: string | undefined;
-                        type: "string";
-                        text: string;
-                    })[] | undefined;
-                    ordinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
-                    templateFor?: "afterSuccess" | "afterSetback" | "onboarding" | undefined;
-                    writeAnswerToProfileMemoryKey?: string | undefined;
-                    type: "counter";
-                    prompt: string;
-                    ordinal: number;
-                } | {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    followUps?: ({
-                        message?: string | undefined;
-                        type: "askAnotherQuestion";
-                        questionId: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeAnswerToProfile";
-                        profileKey: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeValueToProfile";
-                        profileKey: string;
-                        value: {};
-                    })[] | undefined;
-                    recommendedForIssueIds?: string[] | undefined;
-                    isPublic?: boolean | undefined;
-                    categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
-                    options?: ({
-                        label?: string | undefined;
-                        followUps?: ({
-                            message?: string | undefined;
-                            type: "askAnotherQuestion";
-                            questionId: string;
-                        } | {
-                            message?: string | undefined;
-                            type: "writeAnswerToProfile";
-                            profileKey: string;
-                        } | {
-                            message?: string | undefined;
-                            type: "writeValueToProfile";
-                            profileKey: string;
-                            value: {};
-                        })[] | undefined;
-                        color?: string | undefined;
-                        textColor?: string | undefined;
-                        setbackThreshold?: number | undefined;
-                        greaterThan?: number | undefined;
-                        lessThanOrEqualTo?: number | undefined;
-                        type: "numeric";
-                        text: string;
-                    } | {
-                        label?: string | undefined;
-                        followUps?: ({
-                            message?: string | undefined;
-                            type: "askAnotherQuestion";
-                            questionId: string;
-                        } | {
-                            message?: string | undefined;
-                            type: "writeAnswerToProfile";
-                            profileKey: string;
-                        } | {
-                            message?: string | undefined;
-                            type: "writeValueToProfile";
-                            profileKey: string;
-                            value: {};
-                        })[] | undefined;
-                        color?: string | undefined;
-                        textColor?: string | undefined;
-                        type: "string";
-                        text: string;
-                    })[] | undefined;
-                    ordinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
-                    templateFor?: "afterSuccess" | "afterSetback" | "onboarding" | undefined;
-                    writeAnswerToProfileMemoryKey?: string | undefined;
-                    type: "issue";
-                    prompt: string;
-                    ordinal: number;
-                } | {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    followUps?: ({
-                        message?: string | undefined;
-                        type: "askAnotherQuestion";
-                        questionId: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeAnswerToProfile";
-                        profileKey: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeValueToProfile";
-                        profileKey: string;
-                        value: {};
-                    })[] | undefined;
-                    recommendedForIssueIds?: string[] | undefined;
-                    isPublic?: boolean | undefined;
-                    categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
-                    ordinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
-                    templateFor?: "afterSuccess" | "afterSetback" | "onboarding" | undefined;
-                    writeAnswerToProfileMemoryKey?: string | undefined;
-                    type: "multipleChoice";
-                    prompt: string;
-                    options: ({
-                        label?: string | undefined;
-                        followUps?: ({
-                            message?: string | undefined;
-                            type: "askAnotherQuestion";
-                            questionId: string;
-                        } | {
-                            message?: string | undefined;
-                            type: "writeAnswerToProfile";
-                            profileKey: string;
-                        } | {
-                            message?: string | undefined;
-                            type: "writeValueToProfile";
-                            profileKey: string;
-                            value: {};
-                        })[] | undefined;
-                        color?: string | undefined;
-                        textColor?: string | undefined;
-                        setbackThreshold?: number | undefined;
-                        greaterThan?: number | undefined;
-                        lessThanOrEqualTo?: number | undefined;
-                        type: "numeric";
-                        text: string;
-                    } | {
-                        label?: string | undefined;
-                        followUps?: ({
-                            message?: string | undefined;
-                            type: "askAnotherQuestion";
-                            questionId: string;
-                        } | {
-                            message?: string | undefined;
-                            type: "writeAnswerToProfile";
-                            profileKey: string;
-                        } | {
-                            message?: string | undefined;
-                            type: "writeValueToProfile";
-                            profileKey: string;
-                            value: {};
-                        })[] | undefined;
-                        color?: string | undefined;
-                        textColor?: string | undefined;
-                        type: "string";
-                        text: string;
-                    })[];
-                    ordinal: number;
-                    canAddNewOptions: NonNullable<boolean | undefined>;
-                } | {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    followUps?: ({
-                        message?: string | undefined;
-                        type: "askAnotherQuestion";
-                        questionId: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeAnswerToProfile";
-                        profileKey: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeValueToProfile";
-                        profileKey: string;
-                        value: {};
-                    })[] | undefined;
-                    setbackThreshold?: number | undefined;
-                    recommendedForIssueIds?: string[] | undefined;
-                    isPublic?: boolean | undefined;
-                    categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
-                    options?: ({
-                        label?: string | undefined;
-                        followUps?: ({
-                            message?: string | undefined;
-                            type: "askAnotherQuestion";
-                            questionId: string;
-                        } | {
-                            message?: string | undefined;
-                            type: "writeAnswerToProfile";
-                            profileKey: string;
-                        } | {
-                            message?: string | undefined;
-                            type: "writeValueToProfile";
-                            profileKey: string;
-                            value: {};
-                        })[] | undefined;
-                        color?: string | undefined;
-                        textColor?: string | undefined;
-                        setbackThreshold?: number | undefined;
-                        greaterThan?: number | undefined;
-                        lessThanOrEqualTo?: number | undefined;
-                        type: "numeric";
-                        text: string;
-                    } | {
-                        label?: string | undefined;
-                        followUps?: ({
-                            message?: string | undefined;
-                            type: "askAnotherQuestion";
-                            questionId: string;
-                        } | {
-                            message?: string | undefined;
-                            type: "writeAnswerToProfile";
-                            profileKey: string;
-                        } | {
-                            message?: string | undefined;
-                            type: "writeValueToProfile";
-                            profileKey: string;
-                            value: {};
-                        })[] | undefined;
-                        color?: string | undefined;
-                        textColor?: string | undefined;
-                        type: "string";
-                        text: string;
-                    })[] | undefined;
-                    ordinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
-                    templateFor?: "afterSuccess" | "afterSetback" | "onboarding" | undefined;
-                    writeAnswerToProfileMemoryKey?: string | undefined;
-                    lowEmoji?: import("yup").Maybe<string | undefined>;
-                    highEmoji?: import("yup").Maybe<string | undefined>;
-                    type: "scaleOf1To10";
-                    prompt: string;
-                    ordinal: number;
-                } | {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    followUps?: ({
-                        message?: string | undefined;
-                        type: "askAnotherQuestion";
-                        questionId: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeAnswerToProfile";
-                        profileKey: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeValueToProfile";
-                        profileKey: string;
-                        value: {};
-                    })[] | undefined;
-                    recommendedForIssueIds?: string[] | undefined;
-                    isPublic?: boolean | undefined;
-                    categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
-                    options?: ({
-                        label?: string | undefined;
-                        followUps?: ({
-                            message?: string | undefined;
-                            type: "askAnotherQuestion";
-                            questionId: string;
-                        } | {
-                            message?: string | undefined;
-                            type: "writeAnswerToProfile";
-                            profileKey: string;
-                        } | {
-                            message?: string | undefined;
-                            type: "writeValueToProfile";
-                            profileKey: string;
-                            value: {};
-                        })[] | undefined;
-                        color?: string | undefined;
-                        textColor?: string | undefined;
-                        setbackThreshold?: number | undefined;
-                        greaterThan?: number | undefined;
-                        lessThanOrEqualTo?: number | undefined;
-                        type: "numeric";
-                        text: string;
-                    } | {
-                        label?: string | undefined;
-                        followUps?: ({
-                            message?: string | undefined;
-                            type: "askAnotherQuestion";
-                            questionId: string;
-                        } | {
-                            message?: string | undefined;
-                            type: "writeAnswerToProfile";
-                            profileKey: string;
-                        } | {
-                            message?: string | undefined;
-                            type: "writeValueToProfile";
-                            profileKey: string;
-                            value: {};
-                        })[] | undefined;
-                        color?: string | undefined;
-                        textColor?: string | undefined;
-                        type: "string";
-                        text: string;
-                    })[] | undefined;
-                    ordinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
-                    templateFor?: "afterSuccess" | "afterSetback" | "onboarding" | undefined;
-                    writeAnswerToProfileMemoryKey?: string | undefined;
-                    type: "text";
-                    prompt: string;
-                    ordinal: number;
-                } | {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    followUps?: ({
-                        message?: string | undefined;
-                        type: "askAnotherQuestion";
-                        questionId: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeAnswerToProfile";
-                        profileKey: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeValueToProfile";
-                        profileKey: string;
-                        value: {};
-                    })[] | undefined;
-                    setbackThreshold?: number | undefined;
-                    recommendedForIssueIds?: string[] | undefined;
-                    isPublic?: boolean | undefined;
-                    categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
-                    options?: ({
-                        label?: string | undefined;
-                        followUps?: ({
-                            message?: string | undefined;
-                            type: "askAnotherQuestion";
-                            questionId: string;
-                        } | {
-                            message?: string | undefined;
-                            type: "writeAnswerToProfile";
-                            profileKey: string;
-                        } | {
-                            message?: string | undefined;
-                            type: "writeValueToProfile";
-                            profileKey: string;
-                            value: {};
-                        })[] | undefined;
-                        color?: string | undefined;
-                        textColor?: string | undefined;
-                        setbackThreshold?: number | undefined;
-                        greaterThan?: number | undefined;
-                        lessThanOrEqualTo?: number | undefined;
-                        type: "numeric";
-                        text: string;
-                    } | {
-                        label?: string | undefined;
-                        followUps?: ({
-                            message?: string | undefined;
-                            type: "askAnotherQuestion";
-                            questionId: string;
-                        } | {
-                            message?: string | undefined;
-                            type: "writeAnswerToProfile";
-                            profileKey: string;
-                        } | {
-                            message?: string | undefined;
-                            type: "writeValueToProfile";
-                            profileKey: string;
-                            value: {};
-                        })[] | undefined;
-                        color?: string | undefined;
-                        textColor?: string | undefined;
-                        type: "string";
-                        text: string;
-                    })[] | undefined;
-                    ordinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
-                    templateFor?: "afterSuccess" | "afterSetback" | "onboarding" | undefined;
-                    writeAnswerToProfileMemoryKey?: string | undefined;
-                    type: "time";
-                    prompt: string;
-                    ordinal: number;
-                };
-            } | {
-                createdAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                updatedAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                uid?: string | undefined;
                 setbackThreshold?: number | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                prompt?: string | undefined;
+                uid?: string | undefined;
                 sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 sharedWithIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
@@ -2632,6 +1047,7 @@ export declare const factories: {
                 ordinal: number;
                 targetSteps: number;
             } | {
+                recommendedForIssueIds?: string[] | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -2646,9 +1062,8 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                uid?: string | undefined;
                 setbackThreshold?: number | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
+                uid?: string | undefined;
                 sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 sharedWithIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
@@ -2687,10 +1102,11 @@ export declare const factories: {
                 likesCount?: number | null | undefined;
                 timerSeconds?: import("yup").Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
-                type: "task";
                 prompt: string;
+                type: "task";
                 ordinal: number;
             } | {
+                recommendedForIssueIds?: string[] | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -2705,10 +1121,9 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                uid?: string | undefined;
-                setbackThreshold?: number | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
+                setbackThreshold?: number | null | undefined;
+                uid?: string | undefined;
                 sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 sharedWithIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
@@ -2764,93 +1179,9 @@ export declare const factories: {
             toDate: Function;
         };
         dateString: string;
-    }, "type" | "uid" | "tacticsById" | "completedTacticIds" | "date" | "dateString" | ("createdAt" | "updatedAt" | "text" | "submittedAt" | "audioFile" | "audioDurationSeconds" | "audioWaveform" | "issueId" | "issueName" | "questionsById" | "questionData" | "blandPathwayChatId" | "profileEmojiIDString" | "tacticId" | "tactic" | "tacticData" | "isGptSender" | "senderUid" | "pressedImpulseButton")>;
-    textQuestionFactory: import("factory.ts").Factory<{
-        createdAt?: {
-            isEqual?: any;
-            toMillis?: any;
-            seconds: number;
-            nanoseconds: number;
-            toDate: Function;
-        } | null | undefined;
-        updatedAt?: {
-            isEqual?: any;
-            toMillis?: any;
-            seconds: number;
-            nanoseconds: number;
-            toDate: Function;
-        } | null | undefined;
-        followUps?: ({
-            message?: string | undefined;
-            type: "askAnotherQuestion";
-            questionId: string;
-        } | {
-            message?: string | undefined;
-            type: "writeAnswerToProfile";
-            profileKey: string;
-        } | {
-            message?: string | undefined;
-            type: "writeValueToProfile";
-            profileKey: string;
-            value: {};
-        })[] | undefined;
+    }, "type" | "uid" | "tacticsById" | "completedTacticIds" | "date" | "dateString" | ("createdAt" | "updatedAt" | "submittedAt" | "audioFile" | "audioDurationSeconds" | "audioWaveform" | "issueId" | "issueName" | "behaviorsById" | "behaviorData" | "blandPathwayChatId" | "text" | "profileEmojiIDString" | "tacticId" | "tactic" | "tacticData" | "isGptSender" | "senderUid" | "pressedImpulseButton")>;
+    counterBehaviorFactory: import("factory.ts").Factory<{
         recommendedForIssueIds?: string[] | undefined;
-        isPublic?: boolean | undefined;
-        categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
-        options?: ({
-            label?: string | undefined;
-            followUps?: ({
-                message?: string | undefined;
-                type: "askAnotherQuestion";
-                questionId: string;
-            } | {
-                message?: string | undefined;
-                type: "writeAnswerToProfile";
-                profileKey: string;
-            } | {
-                message?: string | undefined;
-                type: "writeValueToProfile";
-                profileKey: string;
-                value: {};
-            })[] | undefined;
-            color?: string | undefined;
-            textColor?: string | undefined;
-            setbackThreshold?: number | undefined;
-            greaterThan?: number | undefined;
-            lessThanOrEqualTo?: number | undefined;
-            type: "numeric";
-            text: string;
-        } | {
-            label?: string | undefined;
-            followUps?: ({
-                message?: string | undefined;
-                type: "askAnotherQuestion";
-                questionId: string;
-            } | {
-                message?: string | undefined;
-                type: "writeAnswerToProfile";
-                profileKey: string;
-            } | {
-                message?: string | undefined;
-                type: "writeValueToProfile";
-                profileKey: string;
-                value: {};
-            })[] | undefined;
-            color?: string | undefined;
-            textColor?: string | undefined;
-            type: "string";
-            text: string;
-        })[] | undefined;
-        ordinals?: {
-            [x: string]: number;
-        } | null | undefined;
-        templateFor?: "afterSuccess" | "afterSetback" | "onboarding" | undefined;
-        writeAnswerToProfileMemoryKey?: string | undefined;
-        type: "text";
-        prompt: string;
-        ordinal: number;
-    }, "type" | "prompt" | "ordinal" | ("createdAt" | "updatedAt" | "followUps" | "recommendedForIssueIds" | "isPublic" | "categories" | "options" | "ordinals" | "templateFor" | "writeAnswerToProfileMemoryKey")>;
-    timeQuestionFactory: import("factory.ts").Factory<{
         createdAt?: {
             isEqual?: any;
             toMillis?: any;
@@ -2865,78 +1196,14 @@ export declare const factories: {
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        followUps?: ({
-            message?: string | undefined;
-            type: "askAnotherQuestion";
-            questionId: string;
-        } | {
-            message?: string | undefined;
-            type: "writeAnswerToProfile";
-            profileKey: string;
-        } | {
-            message?: string | undefined;
-            type: "writeValueToProfile";
-            profileKey: string;
-            value: {};
-        })[] | undefined;
+        templateFor?: "onboarding" | "afterSuccess" | "afterSetback" | undefined;
         setbackThreshold?: number | undefined;
-        recommendedForIssueIds?: string[] | undefined;
-        isPublic?: boolean | undefined;
-        categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
-        options?: ({
-            label?: string | undefined;
-            followUps?: ({
-                message?: string | undefined;
-                type: "askAnotherQuestion";
-                questionId: string;
-            } | {
-                message?: string | undefined;
-                type: "writeAnswerToProfile";
-                profileKey: string;
-            } | {
-                message?: string | undefined;
-                type: "writeValueToProfile";
-                profileKey: string;
-                value: {};
-            })[] | undefined;
-            color?: string | undefined;
-            textColor?: string | undefined;
-            setbackThreshold?: number | undefined;
-            greaterThan?: number | undefined;
-            lessThanOrEqualTo?: number | undefined;
-            type: "numeric";
-            text: string;
-        } | {
-            label?: string | undefined;
-            followUps?: ({
-                message?: string | undefined;
-                type: "askAnotherQuestion";
-                questionId: string;
-            } | {
-                message?: string | undefined;
-                type: "writeAnswerToProfile";
-                profileKey: string;
-            } | {
-                message?: string | undefined;
-                type: "writeValueToProfile";
-                profileKey: string;
-                value: {};
-            })[] | undefined;
-            color?: string | undefined;
-            textColor?: string | undefined;
-            type: "string";
-            text: string;
-        })[] | undefined;
-        ordinals?: {
-            [x: string]: number;
-        } | null | undefined;
-        templateFor?: "afterSuccess" | "afterSetback" | "onboarding" | undefined;
-        writeAnswerToProfileMemoryKey?: string | undefined;
-        type: "time";
         prompt: string;
+        type: "time";
         ordinal: number;
-    }, "type" | "prompt" | "ordinal" | ("createdAt" | "updatedAt" | "followUps" | "setbackThreshold" | "recommendedForIssueIds" | "isPublic" | "categories" | "options" | "ordinals" | "templateFor" | "writeAnswerToProfileMemoryKey")>;
-    multipleChoiceQuestionFactory: import("factory.ts").Factory<{
+    }, "prompt" | "type" | "ordinal" | ("recommendedForIssueIds" | "createdAt" | "updatedAt" | "templateFor" | "setbackThreshold")>;
+    timeBehaviorFactory: import("factory.ts").Factory<{
+        recommendedForIssueIds?: string[] | undefined;
         createdAt?: {
             isEqual?: any;
             toMillis?: any;
@@ -2951,79 +1218,14 @@ export declare const factories: {
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        followUps?: ({
-            message?: string | undefined;
-            type: "askAnotherQuestion";
-            questionId: string;
-        } | {
-            message?: string | undefined;
-            type: "writeAnswerToProfile";
-            profileKey: string;
-        } | {
-            message?: string | undefined;
-            type: "writeValueToProfile";
-            profileKey: string;
-            value: {};
-        })[] | undefined;
-        recommendedForIssueIds?: string[] | undefined;
-        isPublic?: boolean | undefined;
-        categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
-        ordinals?: {
-            [x: string]: number;
-        } | null | undefined;
-        templateFor?: "afterSuccess" | "afterSetback" | "onboarding" | undefined;
-        writeAnswerToProfileMemoryKey?: string | undefined;
-        type: "multipleChoice";
+        templateFor?: "onboarding" | "afterSuccess" | "afterSetback" | undefined;
+        setbackThreshold?: number | undefined;
         prompt: string;
-        options: ({
-            label?: string | undefined;
-            followUps?: ({
-                message?: string | undefined;
-                type: "askAnotherQuestion";
-                questionId: string;
-            } | {
-                message?: string | undefined;
-                type: "writeAnswerToProfile";
-                profileKey: string;
-            } | {
-                message?: string | undefined;
-                type: "writeValueToProfile";
-                profileKey: string;
-                value: {};
-            })[] | undefined;
-            color?: string | undefined;
-            textColor?: string | undefined;
-            setbackThreshold?: number | undefined;
-            greaterThan?: number | undefined;
-            lessThanOrEqualTo?: number | undefined;
-            type: "numeric";
-            text: string;
-        } | {
-            label?: string | undefined;
-            followUps?: ({
-                message?: string | undefined;
-                type: "askAnotherQuestion";
-                questionId: string;
-            } | {
-                message?: string | undefined;
-                type: "writeAnswerToProfile";
-                profileKey: string;
-            } | {
-                message?: string | undefined;
-                type: "writeValueToProfile";
-                profileKey: string;
-                value: {};
-            })[] | undefined;
-            color?: string | undefined;
-            textColor?: string | undefined;
-            type: "string";
-            text: string;
-        })[];
+        type: "time";
         ordinal: number;
-        canAddNewOptions: NonNullable<boolean | undefined>;
-    }, "type" | "prompt" | "options" | "ordinal" | "canAddNewOptions" | ("createdAt" | "updatedAt" | "followUps" | "recommendedForIssueIds" | "isPublic" | "categories" | "ordinals" | "templateFor" | "writeAnswerToProfileMemoryKey")>;
+    }, "prompt" | "type" | "ordinal" | ("recommendedForIssueIds" | "createdAt" | "updatedAt" | "templateFor" | "setbackThreshold")>;
     applicationFactory: import("factory.ts").Factory<import("..").ApplicationValue, keyof import("..").ApplicationValue>;
-    dayFactory: import("factory.ts").Factory<import("..").DayValue, "date" | "issueName" | "questionsById" | "logsById" | "summary">;
+    dayFactory: import("factory.ts").Factory<import("..").DayValue, "date" | "issueName" | "behaviorsById" | "logsById" | "summary">;
     issueFactory: import("factory.ts").Factory<{
         path?: string | null | undefined;
         createdAt?: {
@@ -3043,7 +1245,7 @@ export declare const factories: {
         ordinal?: number | undefined;
         parentId?: string | null | undefined;
         parentName?: string | null | undefined;
-        hasDebriefQuestion?: boolean | undefined;
+        hasDebriefBehavior?: boolean | undefined;
         synonyms?: string[] | undefined;
         parentIds?: string[] | undefined;
         parentNames?: string[] | undefined;
@@ -3056,7 +1258,7 @@ export declare const factories: {
         } | null | undefined;
         gameplanTactics?: import("../schema/utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
         name: string;
-    }, "name" | ("path" | "createdAt" | "updatedAt" | "ordinal" | "parentId" | "parentName" | "hasDebriefQuestion" | "synonyms" | "parentIds" | "parentNames" | "profileCount" | "isFeatured" | "blandContext" | "recommendedStrategies" | "strategyOrdinals" | "gameplanTactics")>;
+    }, "name" | ("path" | "createdAt" | "updatedAt" | "ordinal" | "parentId" | "parentName" | "hasDebriefBehavior" | "synonyms" | "parentIds" | "parentNames" | "profileCount" | "isFeatured" | "blandContext" | "recommendedStrategies" | "strategyOrdinals" | "gameplanTactics")>;
     locationFactory: import("factory.ts").Factory<{
         createdAt?: {
             isEqual?: any;
@@ -3081,11 +1283,11 @@ export declare const factories: {
     daysSummaryFactory: import("factory.ts").Factory<{
         [x: string]: {
             [x: string]: {
-                label?: string | undefined;
-                color?: string | undefined;
                 setbackThreshold?: number | undefined;
+                label?: string | undefined;
                 idValue?: string | undefined;
                 numericValue?: number | undefined;
+                color?: string | undefined;
                 setAt: {
                     isEqual?: any;
                     toMillis?: any;
@@ -3114,41 +1316,6 @@ export declare const factories: {
             toDate: Function;
         } | null | undefined;
         parentIds?: string[] | undefined;
-        issuesById?: {
-            [x: string]: {
-                path?: string | null | undefined;
-                createdAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                updatedAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                ordinal?: number | undefined;
-                parentId?: string | null | undefined;
-                parentName?: string | null | undefined;
-                hasDebriefQuestion?: boolean | undefined;
-                synonyms?: string[] | undefined;
-                parentIds?: string[] | undefined;
-                parentNames?: string[] | undefined;
-                profileCount?: number | null | undefined;
-                isFeatured?: boolean | null | undefined;
-                blandContext?: string | undefined;
-                recommendedStrategies?: import("../schema/utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
-                strategyOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                gameplanTactics?: import("../schema/utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
-                name: string;
-            };
-        } | null | undefined;
         lastActiveAt?: {
             isEqual?: any;
             toMillis?: any;
@@ -3188,13 +1355,10 @@ export declare const factories: {
             toDate: Function;
         } | null | undefined;
         currentAppState?: import("react-native/types").AppStateStatus | undefined;
-        addToStrategy?: boolean | undefined;
-        emojiID?: string[] | undefined;
         expoPushToken?: string | undefined;
         notificationPreferences?: {
             [x: string]: NonNullable<"push" | "email" | undefined>[] | undefined;
         } | null | undefined;
-        signUpIssueName?: string | null | undefined;
         isReadyForTour?: boolean | undefined;
         isOnboardingComplete?: boolean | undefined;
         sendDebriefRemindersAfterMinutes?: number | undefined;
@@ -3212,12 +1376,11 @@ export declare const factories: {
             hour: number;
             minute: number;
         } | null;
-        signUpIssueId: string | null;
         recentSummaries: {
             [x: string]: string;
         };
         timezone: string;
-    }, "uids" | "verificationCode" | "dayReviewTime" | "signUpIssueId" | "recentSummaries" | "timezone" | ("createdAt" | "updatedAt" | "parentIds" | "issuesById" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseDoc" | "tourCompletedAt" | "scheduledNotificationIds" | "whatsappStrategyDoc" | "onboardedWithZaraAt" | "currentAppState" | "addToStrategy" | "emojiID" | "expoPushToken" | "notificationPreferences" | "signUpIssueName" | "isReadyForTour" | "isOnboardingComplete" | "sendDebriefRemindersAfterMinutes" | "gameplanStrategies" | "androidPermissions" | "historicalInsights" | "isTourDismissed" | "region" | "enableZara")>;
+    }, "uids" | "verificationCode" | "dayReviewTime" | "recentSummaries" | "timezone" | ("createdAt" | "updatedAt" | "parentIds" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseDoc" | "tourCompletedAt" | "scheduledNotificationIds" | "whatsappStrategyDoc" | "onboardedWithZaraAt" | "currentAppState" | "expoPushToken" | "notificationPreferences" | "isReadyForTour" | "isOnboardingComplete" | "sendDebriefRemindersAfterMinutes" | "gameplanStrategies" | "androidPermissions" | "historicalInsights" | "isTourDismissed" | "region" | "enableZara")>;
     timeReminderFactory: import("factory.ts").Factory<{
         createdAt?: {
             isEqual?: any;
@@ -3239,8 +1402,9 @@ export declare const factories: {
         hour: number;
         minute: number;
     }, "type" | "name" | "weekdays" | "hour" | "minute" | ("createdAt" | "updatedAt")>;
-    tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "type" | "uid" | "setbackThreshold" | "recommendedForIssueIds" | "prompt" | "ordinal" | "sourceFile" | "sharedWithIssueIds" | "recommendedForIssueOrdinals" | "isShared" | "description" | "pastTenseTitle" | "debriefAfterMinutes" | "image" | "backgroundColor" | "likesCount" | "timerSeconds" | "isSuggested">;
+    tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "recommendedForIssueIds" | "createdAt" | "updatedAt" | "prompt" | "type" | "ordinal" | "setbackThreshold" | "uid" | "sourceFile" | "sharedWithIssueIds" | "recommendedForIssueOrdinals" | "isShared" | "description" | "pastTenseTitle" | "debriefAfterMinutes" | "image" | "backgroundColor" | "likesCount" | "timerSeconds" | "isSuggested">;
     roadmapFactory: import("factory.ts").Factory<{
+        recommendedForIssueIds?: string[] | undefined;
         createdAt?: {
             isEqual?: any;
             toMillis?: any;
@@ -3255,7 +1419,6 @@ export declare const factories: {
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        recommendedForIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
         } | null | undefined;
@@ -3267,7 +1430,7 @@ export declare const factories: {
                 requiredWinRateDays: number;
             };
         }[];
-    }, "name" | "stages" | ("createdAt" | "updatedAt" | "recommendedForIssueIds" | "recommendedForIssueOrdinals")>;
+    }, "name" | "stages" | ("recommendedForIssueIds" | "createdAt" | "updatedAt" | "recommendedForIssueOrdinals")>;
     suggestionFactory: import("factory.ts").Factory<{
         createdAt?: {
             isEqual?: any;
@@ -3308,6 +1471,7 @@ export declare const factories: {
         description?: string | undefined;
         tacticsById?: {
             [x: string]: {
+                recommendedForIssueIds?: string[] | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -3322,10 +1486,9 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                uid?: string | undefined;
-                setbackThreshold?: number | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
+                setbackThreshold?: number | null | undefined;
+                uid?: string | undefined;
                 sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 sharedWithIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
@@ -3392,6 +1555,7 @@ export declare const factories: {
                     uri: string;
                 };
             } | {
+                recommendedForIssueIds?: string[] | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -3406,11 +1570,10 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                uid?: string | undefined;
-                repeat?: import("yup").Maybe<number | undefined>;
-                setbackThreshold?: number | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
+                setbackThreshold?: number | null | undefined;
+                repeat?: import("yup").Maybe<number | undefined>;
+                uid?: string | undefined;
                 sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 sharedWithIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
@@ -3455,6 +1618,7 @@ export declare const factories: {
                 holdFor: number;
                 outFor: number;
             } | {
+                recommendedForIssueIds?: string[] | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -3469,10 +1633,9 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                uid?: string | undefined;
-                setbackThreshold?: number | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
+                setbackThreshold?: number | null | undefined;
+                uid?: string | undefined;
                 sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 sharedWithIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
@@ -3515,6 +1678,7 @@ export declare const factories: {
                 ordinal: number;
                 url: string;
             } | {
+                recommendedForIssueIds?: string[] | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -3529,10 +1693,9 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                uid?: string | undefined;
-                setbackThreshold?: number | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
+                setbackThreshold?: number | null | undefined;
+                uid?: string | undefined;
                 sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 sharedWithIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
@@ -3575,6 +1738,7 @@ export declare const factories: {
                 ordinal: number;
                 contactIds: string[];
             } | {
+                recommendedForIssueIds?: string[] | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -3589,10 +1753,9 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                uid?: string | undefined;
-                setbackThreshold?: number | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
+                setbackThreshold?: number | null | undefined;
+                uid?: string | undefined;
                 sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 sharedWithIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
@@ -3635,6 +1798,7 @@ export declare const factories: {
                 ordinal: number;
                 supportGroup: import("../schema/utils/firestore").DocumentReferenceLike<unknown>;
             } | {
+                recommendedForIssueIds?: string[] | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -3649,580 +1813,9 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                uid?: string | undefined;
-                setbackThreshold?: number | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
-                sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                sharedWithIssueIds?: string[] | undefined;
-                recommendedForIssueOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                isShared?: boolean | undefined;
-                description?: string | null | undefined;
-                pastTenseTitle?: string | undefined;
-                debriefAfterMinutes?: number | null | undefined;
-                image?: {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    content?: string | undefined;
-                    localFilePath?: import("yup").Maybe<string | undefined>;
-                    isDeleted?: boolean | undefined;
-                    waveForm?: import("yup").Maybe<string | undefined>;
-                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
-                    thumbnailUri?: import("yup").Maybe<string | undefined>;
-                    contentType: string;
-                    storagePath: string;
-                    uri: string;
-                } | undefined;
-                backgroundColor?: string | undefined;
-                likesCount?: number | null | undefined;
-                timerSeconds?: import("yup").Maybe<number | undefined>;
-                isSuggested?: boolean | undefined;
-                type: "question";
-                ordinal: number;
-                question: {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    followUps?: ({
-                        message?: string | undefined;
-                        type: "askAnotherQuestion";
-                        questionId: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeAnswerToProfile";
-                        profileKey: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeValueToProfile";
-                        profileKey: string;
-                        value: {};
-                    })[] | undefined;
-                    setbackThreshold?: number | undefined;
-                    recommendedForIssueIds?: string[] | undefined;
-                    isPublic?: boolean | undefined;
-                    categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
-                    options?: ({
-                        label?: string | undefined;
-                        followUps?: ({
-                            message?: string | undefined;
-                            type: "askAnotherQuestion";
-                            questionId: string;
-                        } | {
-                            message?: string | undefined;
-                            type: "writeAnswerToProfile";
-                            profileKey: string;
-                        } | {
-                            message?: string | undefined;
-                            type: "writeValueToProfile";
-                            profileKey: string;
-                            value: {};
-                        })[] | undefined;
-                        color?: string | undefined;
-                        textColor?: string | undefined;
-                        setbackThreshold?: number | undefined;
-                        greaterThan?: number | undefined;
-                        lessThanOrEqualTo?: number | undefined;
-                        type: "numeric";
-                        text: string;
-                    } | {
-                        label?: string | undefined;
-                        followUps?: ({
-                            message?: string | undefined;
-                            type: "askAnotherQuestion";
-                            questionId: string;
-                        } | {
-                            message?: string | undefined;
-                            type: "writeAnswerToProfile";
-                            profileKey: string;
-                        } | {
-                            message?: string | undefined;
-                            type: "writeValueToProfile";
-                            profileKey: string;
-                            value: {};
-                        })[] | undefined;
-                        color?: string | undefined;
-                        textColor?: string | undefined;
-                        type: "string";
-                        text: string;
-                    })[] | undefined;
-                    ordinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
-                    templateFor?: "afterSuccess" | "afterSetback" | "onboarding" | undefined;
-                    writeAnswerToProfileMemoryKey?: string | undefined;
-                    type: "counter";
-                    prompt: string;
-                    ordinal: number;
-                } | {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    followUps?: ({
-                        message?: string | undefined;
-                        type: "askAnotherQuestion";
-                        questionId: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeAnswerToProfile";
-                        profileKey: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeValueToProfile";
-                        profileKey: string;
-                        value: {};
-                    })[] | undefined;
-                    recommendedForIssueIds?: string[] | undefined;
-                    isPublic?: boolean | undefined;
-                    categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
-                    options?: ({
-                        label?: string | undefined;
-                        followUps?: ({
-                            message?: string | undefined;
-                            type: "askAnotherQuestion";
-                            questionId: string;
-                        } | {
-                            message?: string | undefined;
-                            type: "writeAnswerToProfile";
-                            profileKey: string;
-                        } | {
-                            message?: string | undefined;
-                            type: "writeValueToProfile";
-                            profileKey: string;
-                            value: {};
-                        })[] | undefined;
-                        color?: string | undefined;
-                        textColor?: string | undefined;
-                        setbackThreshold?: number | undefined;
-                        greaterThan?: number | undefined;
-                        lessThanOrEqualTo?: number | undefined;
-                        type: "numeric";
-                        text: string;
-                    } | {
-                        label?: string | undefined;
-                        followUps?: ({
-                            message?: string | undefined;
-                            type: "askAnotherQuestion";
-                            questionId: string;
-                        } | {
-                            message?: string | undefined;
-                            type: "writeAnswerToProfile";
-                            profileKey: string;
-                        } | {
-                            message?: string | undefined;
-                            type: "writeValueToProfile";
-                            profileKey: string;
-                            value: {};
-                        })[] | undefined;
-                        color?: string | undefined;
-                        textColor?: string | undefined;
-                        type: "string";
-                        text: string;
-                    })[] | undefined;
-                    ordinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
-                    templateFor?: "afterSuccess" | "afterSetback" | "onboarding" | undefined;
-                    writeAnswerToProfileMemoryKey?: string | undefined;
-                    type: "issue";
-                    prompt: string;
-                    ordinal: number;
-                } | {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    followUps?: ({
-                        message?: string | undefined;
-                        type: "askAnotherQuestion";
-                        questionId: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeAnswerToProfile";
-                        profileKey: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeValueToProfile";
-                        profileKey: string;
-                        value: {};
-                    })[] | undefined;
-                    recommendedForIssueIds?: string[] | undefined;
-                    isPublic?: boolean | undefined;
-                    categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
-                    ordinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
-                    templateFor?: "afterSuccess" | "afterSetback" | "onboarding" | undefined;
-                    writeAnswerToProfileMemoryKey?: string | undefined;
-                    type: "multipleChoice";
-                    prompt: string;
-                    options: ({
-                        label?: string | undefined;
-                        followUps?: ({
-                            message?: string | undefined;
-                            type: "askAnotherQuestion";
-                            questionId: string;
-                        } | {
-                            message?: string | undefined;
-                            type: "writeAnswerToProfile";
-                            profileKey: string;
-                        } | {
-                            message?: string | undefined;
-                            type: "writeValueToProfile";
-                            profileKey: string;
-                            value: {};
-                        })[] | undefined;
-                        color?: string | undefined;
-                        textColor?: string | undefined;
-                        setbackThreshold?: number | undefined;
-                        greaterThan?: number | undefined;
-                        lessThanOrEqualTo?: number | undefined;
-                        type: "numeric";
-                        text: string;
-                    } | {
-                        label?: string | undefined;
-                        followUps?: ({
-                            message?: string | undefined;
-                            type: "askAnotherQuestion";
-                            questionId: string;
-                        } | {
-                            message?: string | undefined;
-                            type: "writeAnswerToProfile";
-                            profileKey: string;
-                        } | {
-                            message?: string | undefined;
-                            type: "writeValueToProfile";
-                            profileKey: string;
-                            value: {};
-                        })[] | undefined;
-                        color?: string | undefined;
-                        textColor?: string | undefined;
-                        type: "string";
-                        text: string;
-                    })[];
-                    ordinal: number;
-                    canAddNewOptions: NonNullable<boolean | undefined>;
-                } | {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    followUps?: ({
-                        message?: string | undefined;
-                        type: "askAnotherQuestion";
-                        questionId: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeAnswerToProfile";
-                        profileKey: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeValueToProfile";
-                        profileKey: string;
-                        value: {};
-                    })[] | undefined;
-                    setbackThreshold?: number | undefined;
-                    recommendedForIssueIds?: string[] | undefined;
-                    isPublic?: boolean | undefined;
-                    categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
-                    options?: ({
-                        label?: string | undefined;
-                        followUps?: ({
-                            message?: string | undefined;
-                            type: "askAnotherQuestion";
-                            questionId: string;
-                        } | {
-                            message?: string | undefined;
-                            type: "writeAnswerToProfile";
-                            profileKey: string;
-                        } | {
-                            message?: string | undefined;
-                            type: "writeValueToProfile";
-                            profileKey: string;
-                            value: {};
-                        })[] | undefined;
-                        color?: string | undefined;
-                        textColor?: string | undefined;
-                        setbackThreshold?: number | undefined;
-                        greaterThan?: number | undefined;
-                        lessThanOrEqualTo?: number | undefined;
-                        type: "numeric";
-                        text: string;
-                    } | {
-                        label?: string | undefined;
-                        followUps?: ({
-                            message?: string | undefined;
-                            type: "askAnotherQuestion";
-                            questionId: string;
-                        } | {
-                            message?: string | undefined;
-                            type: "writeAnswerToProfile";
-                            profileKey: string;
-                        } | {
-                            message?: string | undefined;
-                            type: "writeValueToProfile";
-                            profileKey: string;
-                            value: {};
-                        })[] | undefined;
-                        color?: string | undefined;
-                        textColor?: string | undefined;
-                        type: "string";
-                        text: string;
-                    })[] | undefined;
-                    ordinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
-                    templateFor?: "afterSuccess" | "afterSetback" | "onboarding" | undefined;
-                    writeAnswerToProfileMemoryKey?: string | undefined;
-                    lowEmoji?: import("yup").Maybe<string | undefined>;
-                    highEmoji?: import("yup").Maybe<string | undefined>;
-                    type: "scaleOf1To10";
-                    prompt: string;
-                    ordinal: number;
-                } | {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    followUps?: ({
-                        message?: string | undefined;
-                        type: "askAnotherQuestion";
-                        questionId: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeAnswerToProfile";
-                        profileKey: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeValueToProfile";
-                        profileKey: string;
-                        value: {};
-                    })[] | undefined;
-                    recommendedForIssueIds?: string[] | undefined;
-                    isPublic?: boolean | undefined;
-                    categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
-                    options?: ({
-                        label?: string | undefined;
-                        followUps?: ({
-                            message?: string | undefined;
-                            type: "askAnotherQuestion";
-                            questionId: string;
-                        } | {
-                            message?: string | undefined;
-                            type: "writeAnswerToProfile";
-                            profileKey: string;
-                        } | {
-                            message?: string | undefined;
-                            type: "writeValueToProfile";
-                            profileKey: string;
-                            value: {};
-                        })[] | undefined;
-                        color?: string | undefined;
-                        textColor?: string | undefined;
-                        setbackThreshold?: number | undefined;
-                        greaterThan?: number | undefined;
-                        lessThanOrEqualTo?: number | undefined;
-                        type: "numeric";
-                        text: string;
-                    } | {
-                        label?: string | undefined;
-                        followUps?: ({
-                            message?: string | undefined;
-                            type: "askAnotherQuestion";
-                            questionId: string;
-                        } | {
-                            message?: string | undefined;
-                            type: "writeAnswerToProfile";
-                            profileKey: string;
-                        } | {
-                            message?: string | undefined;
-                            type: "writeValueToProfile";
-                            profileKey: string;
-                            value: {};
-                        })[] | undefined;
-                        color?: string | undefined;
-                        textColor?: string | undefined;
-                        type: "string";
-                        text: string;
-                    })[] | undefined;
-                    ordinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
-                    templateFor?: "afterSuccess" | "afterSetback" | "onboarding" | undefined;
-                    writeAnswerToProfileMemoryKey?: string | undefined;
-                    type: "text";
-                    prompt: string;
-                    ordinal: number;
-                } | {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    followUps?: ({
-                        message?: string | undefined;
-                        type: "askAnotherQuestion";
-                        questionId: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeAnswerToProfile";
-                        profileKey: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeValueToProfile";
-                        profileKey: string;
-                        value: {};
-                    })[] | undefined;
-                    setbackThreshold?: number | undefined;
-                    recommendedForIssueIds?: string[] | undefined;
-                    isPublic?: boolean | undefined;
-                    categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
-                    options?: ({
-                        label?: string | undefined;
-                        followUps?: ({
-                            message?: string | undefined;
-                            type: "askAnotherQuestion";
-                            questionId: string;
-                        } | {
-                            message?: string | undefined;
-                            type: "writeAnswerToProfile";
-                            profileKey: string;
-                        } | {
-                            message?: string | undefined;
-                            type: "writeValueToProfile";
-                            profileKey: string;
-                            value: {};
-                        })[] | undefined;
-                        color?: string | undefined;
-                        textColor?: string | undefined;
-                        setbackThreshold?: number | undefined;
-                        greaterThan?: number | undefined;
-                        lessThanOrEqualTo?: number | undefined;
-                        type: "numeric";
-                        text: string;
-                    } | {
-                        label?: string | undefined;
-                        followUps?: ({
-                            message?: string | undefined;
-                            type: "askAnotherQuestion";
-                            questionId: string;
-                        } | {
-                            message?: string | undefined;
-                            type: "writeAnswerToProfile";
-                            profileKey: string;
-                        } | {
-                            message?: string | undefined;
-                            type: "writeValueToProfile";
-                            profileKey: string;
-                            value: {};
-                        })[] | undefined;
-                        color?: string | undefined;
-                        textColor?: string | undefined;
-                        type: "string";
-                        text: string;
-                    })[] | undefined;
-                    ordinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
-                    templateFor?: "afterSuccess" | "afterSetback" | "onboarding" | undefined;
-                    writeAnswerToProfileMemoryKey?: string | undefined;
-                    type: "time";
-                    prompt: string;
-                    ordinal: number;
-                };
-            } | {
-                createdAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                updatedAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                uid?: string | undefined;
                 setbackThreshold?: number | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                prompt?: string | undefined;
+                uid?: string | undefined;
                 sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 sharedWithIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
@@ -4265,6 +1858,7 @@ export declare const factories: {
                 ordinal: number;
                 targetSteps: number;
             } | {
+                recommendedForIssueIds?: string[] | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -4279,9 +1873,8 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                uid?: string | undefined;
                 setbackThreshold?: number | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
+                uid?: string | undefined;
                 sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 sharedWithIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
@@ -4320,10 +1913,11 @@ export declare const factories: {
                 likesCount?: number | null | undefined;
                 timerSeconds?: import("yup").Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
-                type: "task";
                 prompt: string;
+                type: "task";
                 ordinal: number;
             } | {
+                recommendedForIssueIds?: string[] | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -4338,10 +1932,9 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                uid?: string | undefined;
-                setbackThreshold?: number | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
+                setbackThreshold?: number | null | undefined;
+                uid?: string | undefined;
                 sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 sharedWithIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
@@ -4395,6 +1988,7 @@ export declare const factories: {
         tourDescription?: string | undefined;
         tourConfirmButtonText?: string | undefined;
         next3Tactics?: ({
+            recommendedForIssueIds?: string[] | undefined;
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
@@ -4409,10 +2003,9 @@ export declare const factories: {
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            uid?: string | undefined;
-            setbackThreshold?: number | null | undefined;
-            recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
+            setbackThreshold?: number | null | undefined;
+            uid?: string | undefined;
             sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
             sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
@@ -4479,6 +2072,7 @@ export declare const factories: {
                 uri: string;
             };
         } | {
+            recommendedForIssueIds?: string[] | undefined;
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
@@ -4493,11 +2087,10 @@ export declare const factories: {
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            uid?: string | undefined;
-            repeat?: import("yup").Maybe<number | undefined>;
-            setbackThreshold?: number | null | undefined;
-            recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
+            setbackThreshold?: number | null | undefined;
+            repeat?: import("yup").Maybe<number | undefined>;
+            uid?: string | undefined;
             sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
             sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
@@ -4542,6 +2135,7 @@ export declare const factories: {
             holdFor: number;
             outFor: number;
         } | {
+            recommendedForIssueIds?: string[] | undefined;
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
@@ -4556,10 +2150,9 @@ export declare const factories: {
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            uid?: string | undefined;
-            setbackThreshold?: number | null | undefined;
-            recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
+            setbackThreshold?: number | null | undefined;
+            uid?: string | undefined;
             sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
             sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
@@ -4602,6 +2195,7 @@ export declare const factories: {
             ordinal: number;
             url: string;
         } | {
+            recommendedForIssueIds?: string[] | undefined;
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
@@ -4616,10 +2210,9 @@ export declare const factories: {
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            uid?: string | undefined;
-            setbackThreshold?: number | null | undefined;
-            recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
+            setbackThreshold?: number | null | undefined;
+            uid?: string | undefined;
             sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
             sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
@@ -4662,6 +2255,7 @@ export declare const factories: {
             ordinal: number;
             contactIds: string[];
         } | {
+            recommendedForIssueIds?: string[] | undefined;
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
@@ -4676,10 +2270,9 @@ export declare const factories: {
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            uid?: string | undefined;
-            setbackThreshold?: number | null | undefined;
-            recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
+            setbackThreshold?: number | null | undefined;
+            uid?: string | undefined;
             sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
             sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
@@ -4722,6 +2315,7 @@ export declare const factories: {
             ordinal: number;
             supportGroup: import("../schema/utils/firestore").DocumentReferenceLike<unknown>;
         } | {
+            recommendedForIssueIds?: string[] | undefined;
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
@@ -4736,580 +2330,9 @@ export declare const factories: {
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            uid?: string | undefined;
-            setbackThreshold?: number | null | undefined;
-            recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
-            sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
-            sharedWithIssueIds?: string[] | undefined;
-            recommendedForIssueOrdinals?: {
-                [x: string]: number;
-            } | null | undefined;
-            isShared?: boolean | undefined;
-            description?: string | null | undefined;
-            pastTenseTitle?: string | undefined;
-            debriefAfterMinutes?: number | null | undefined;
-            image?: {
-                createdAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                updatedAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                content?: string | undefined;
-                localFilePath?: import("yup").Maybe<string | undefined>;
-                isDeleted?: boolean | undefined;
-                waveForm?: import("yup").Maybe<string | undefined>;
-                thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
-                thumbnailUri?: import("yup").Maybe<string | undefined>;
-                contentType: string;
-                storagePath: string;
-                uri: string;
-            } | undefined;
-            backgroundColor?: string | undefined;
-            likesCount?: number | null | undefined;
-            timerSeconds?: import("yup").Maybe<number | undefined>;
-            isSuggested?: boolean | undefined;
-            type: "question";
-            ordinal: number;
-            question: {
-                createdAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                updatedAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                followUps?: ({
-                    message?: string | undefined;
-                    type: "askAnotherQuestion";
-                    questionId: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeAnswerToProfile";
-                    profileKey: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeValueToProfile";
-                    profileKey: string;
-                    value: {};
-                })[] | undefined;
-                setbackThreshold?: number | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                isPublic?: boolean | undefined;
-                categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
-                options?: ({
-                    label?: string | undefined;
-                    followUps?: ({
-                        message?: string | undefined;
-                        type: "askAnotherQuestion";
-                        questionId: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeAnswerToProfile";
-                        profileKey: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeValueToProfile";
-                        profileKey: string;
-                        value: {};
-                    })[] | undefined;
-                    color?: string | undefined;
-                    textColor?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    greaterThan?: number | undefined;
-                    lessThanOrEqualTo?: number | undefined;
-                    type: "numeric";
-                    text: string;
-                } | {
-                    label?: string | undefined;
-                    followUps?: ({
-                        message?: string | undefined;
-                        type: "askAnotherQuestion";
-                        questionId: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeAnswerToProfile";
-                        profileKey: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeValueToProfile";
-                        profileKey: string;
-                        value: {};
-                    })[] | undefined;
-                    color?: string | undefined;
-                    textColor?: string | undefined;
-                    type: "string";
-                    text: string;
-                })[] | undefined;
-                ordinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                templateFor?: "afterSuccess" | "afterSetback" | "onboarding" | undefined;
-                writeAnswerToProfileMemoryKey?: string | undefined;
-                type: "counter";
-                prompt: string;
-                ordinal: number;
-            } | {
-                createdAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                updatedAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                followUps?: ({
-                    message?: string | undefined;
-                    type: "askAnotherQuestion";
-                    questionId: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeAnswerToProfile";
-                    profileKey: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeValueToProfile";
-                    profileKey: string;
-                    value: {};
-                })[] | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                isPublic?: boolean | undefined;
-                categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
-                options?: ({
-                    label?: string | undefined;
-                    followUps?: ({
-                        message?: string | undefined;
-                        type: "askAnotherQuestion";
-                        questionId: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeAnswerToProfile";
-                        profileKey: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeValueToProfile";
-                        profileKey: string;
-                        value: {};
-                    })[] | undefined;
-                    color?: string | undefined;
-                    textColor?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    greaterThan?: number | undefined;
-                    lessThanOrEqualTo?: number | undefined;
-                    type: "numeric";
-                    text: string;
-                } | {
-                    label?: string | undefined;
-                    followUps?: ({
-                        message?: string | undefined;
-                        type: "askAnotherQuestion";
-                        questionId: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeAnswerToProfile";
-                        profileKey: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeValueToProfile";
-                        profileKey: string;
-                        value: {};
-                    })[] | undefined;
-                    color?: string | undefined;
-                    textColor?: string | undefined;
-                    type: "string";
-                    text: string;
-                })[] | undefined;
-                ordinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                templateFor?: "afterSuccess" | "afterSetback" | "onboarding" | undefined;
-                writeAnswerToProfileMemoryKey?: string | undefined;
-                type: "issue";
-                prompt: string;
-                ordinal: number;
-            } | {
-                createdAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                updatedAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                followUps?: ({
-                    message?: string | undefined;
-                    type: "askAnotherQuestion";
-                    questionId: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeAnswerToProfile";
-                    profileKey: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeValueToProfile";
-                    profileKey: string;
-                    value: {};
-                })[] | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                isPublic?: boolean | undefined;
-                categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
-                ordinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                templateFor?: "afterSuccess" | "afterSetback" | "onboarding" | undefined;
-                writeAnswerToProfileMemoryKey?: string | undefined;
-                type: "multipleChoice";
-                prompt: string;
-                options: ({
-                    label?: string | undefined;
-                    followUps?: ({
-                        message?: string | undefined;
-                        type: "askAnotherQuestion";
-                        questionId: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeAnswerToProfile";
-                        profileKey: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeValueToProfile";
-                        profileKey: string;
-                        value: {};
-                    })[] | undefined;
-                    color?: string | undefined;
-                    textColor?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    greaterThan?: number | undefined;
-                    lessThanOrEqualTo?: number | undefined;
-                    type: "numeric";
-                    text: string;
-                } | {
-                    label?: string | undefined;
-                    followUps?: ({
-                        message?: string | undefined;
-                        type: "askAnotherQuestion";
-                        questionId: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeAnswerToProfile";
-                        profileKey: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeValueToProfile";
-                        profileKey: string;
-                        value: {};
-                    })[] | undefined;
-                    color?: string | undefined;
-                    textColor?: string | undefined;
-                    type: "string";
-                    text: string;
-                })[];
-                ordinal: number;
-                canAddNewOptions: NonNullable<boolean | undefined>;
-            } | {
-                createdAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                updatedAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                followUps?: ({
-                    message?: string | undefined;
-                    type: "askAnotherQuestion";
-                    questionId: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeAnswerToProfile";
-                    profileKey: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeValueToProfile";
-                    profileKey: string;
-                    value: {};
-                })[] | undefined;
-                setbackThreshold?: number | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                isPublic?: boolean | undefined;
-                categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
-                options?: ({
-                    label?: string | undefined;
-                    followUps?: ({
-                        message?: string | undefined;
-                        type: "askAnotherQuestion";
-                        questionId: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeAnswerToProfile";
-                        profileKey: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeValueToProfile";
-                        profileKey: string;
-                        value: {};
-                    })[] | undefined;
-                    color?: string | undefined;
-                    textColor?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    greaterThan?: number | undefined;
-                    lessThanOrEqualTo?: number | undefined;
-                    type: "numeric";
-                    text: string;
-                } | {
-                    label?: string | undefined;
-                    followUps?: ({
-                        message?: string | undefined;
-                        type: "askAnotherQuestion";
-                        questionId: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeAnswerToProfile";
-                        profileKey: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeValueToProfile";
-                        profileKey: string;
-                        value: {};
-                    })[] | undefined;
-                    color?: string | undefined;
-                    textColor?: string | undefined;
-                    type: "string";
-                    text: string;
-                })[] | undefined;
-                ordinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                templateFor?: "afterSuccess" | "afterSetback" | "onboarding" | undefined;
-                writeAnswerToProfileMemoryKey?: string | undefined;
-                lowEmoji?: import("yup").Maybe<string | undefined>;
-                highEmoji?: import("yup").Maybe<string | undefined>;
-                type: "scaleOf1To10";
-                prompt: string;
-                ordinal: number;
-            } | {
-                createdAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                updatedAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                followUps?: ({
-                    message?: string | undefined;
-                    type: "askAnotherQuestion";
-                    questionId: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeAnswerToProfile";
-                    profileKey: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeValueToProfile";
-                    profileKey: string;
-                    value: {};
-                })[] | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                isPublic?: boolean | undefined;
-                categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
-                options?: ({
-                    label?: string | undefined;
-                    followUps?: ({
-                        message?: string | undefined;
-                        type: "askAnotherQuestion";
-                        questionId: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeAnswerToProfile";
-                        profileKey: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeValueToProfile";
-                        profileKey: string;
-                        value: {};
-                    })[] | undefined;
-                    color?: string | undefined;
-                    textColor?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    greaterThan?: number | undefined;
-                    lessThanOrEqualTo?: number | undefined;
-                    type: "numeric";
-                    text: string;
-                } | {
-                    label?: string | undefined;
-                    followUps?: ({
-                        message?: string | undefined;
-                        type: "askAnotherQuestion";
-                        questionId: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeAnswerToProfile";
-                        profileKey: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeValueToProfile";
-                        profileKey: string;
-                        value: {};
-                    })[] | undefined;
-                    color?: string | undefined;
-                    textColor?: string | undefined;
-                    type: "string";
-                    text: string;
-                })[] | undefined;
-                ordinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                templateFor?: "afterSuccess" | "afterSetback" | "onboarding" | undefined;
-                writeAnswerToProfileMemoryKey?: string | undefined;
-                type: "text";
-                prompt: string;
-                ordinal: number;
-            } | {
-                createdAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                updatedAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                followUps?: ({
-                    message?: string | undefined;
-                    type: "askAnotherQuestion";
-                    questionId: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeAnswerToProfile";
-                    profileKey: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeValueToProfile";
-                    profileKey: string;
-                    value: {};
-                })[] | undefined;
-                setbackThreshold?: number | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                isPublic?: boolean | undefined;
-                categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
-                options?: ({
-                    label?: string | undefined;
-                    followUps?: ({
-                        message?: string | undefined;
-                        type: "askAnotherQuestion";
-                        questionId: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeAnswerToProfile";
-                        profileKey: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeValueToProfile";
-                        profileKey: string;
-                        value: {};
-                    })[] | undefined;
-                    color?: string | undefined;
-                    textColor?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    greaterThan?: number | undefined;
-                    lessThanOrEqualTo?: number | undefined;
-                    type: "numeric";
-                    text: string;
-                } | {
-                    label?: string | undefined;
-                    followUps?: ({
-                        message?: string | undefined;
-                        type: "askAnotherQuestion";
-                        questionId: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeAnswerToProfile";
-                        profileKey: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeValueToProfile";
-                        profileKey: string;
-                        value: {};
-                    })[] | undefined;
-                    color?: string | undefined;
-                    textColor?: string | undefined;
-                    type: "string";
-                    text: string;
-                })[] | undefined;
-                ordinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                templateFor?: "afterSuccess" | "afterSetback" | "onboarding" | undefined;
-                writeAnswerToProfileMemoryKey?: string | undefined;
-                type: "time";
-                prompt: string;
-                ordinal: number;
-            };
-        } | {
-            createdAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            updatedAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            uid?: string | undefined;
             setbackThreshold?: number | null | undefined;
-            recommendedForIssueIds?: string[] | undefined;
-            prompt?: string | undefined;
+            uid?: string | undefined;
             sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
             sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
@@ -5352,6 +2375,7 @@ export declare const factories: {
             ordinal: number;
             targetSteps: number;
         } | {
+            recommendedForIssueIds?: string[] | undefined;
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
@@ -5366,9 +2390,8 @@ export declare const factories: {
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            uid?: string | undefined;
             setbackThreshold?: number | null | undefined;
-            recommendedForIssueIds?: string[] | undefined;
+            uid?: string | undefined;
             sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
             sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
@@ -5407,10 +2430,11 @@ export declare const factories: {
             likesCount?: number | null | undefined;
             timerSeconds?: import("yup").Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
-            type: "task";
             prompt: string;
+            type: "task";
             ordinal: number;
         } | {
+            recommendedForIssueIds?: string[] | undefined;
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
@@ -5425,10 +2449,9 @@ export declare const factories: {
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            uid?: string | undefined;
-            setbackThreshold?: number | null | undefined;
-            recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
+            setbackThreshold?: number | null | undefined;
+            uid?: string | undefined;
             sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
             sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
@@ -5495,8 +2518,8 @@ export declare const factories: {
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        strategyDoc?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
         ordinal?: number | undefined;
+        strategyDoc?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
         forIssueIds?: string[] | undefined;
         ordinalsForIssues?: {
             [x: string]: number;
@@ -5565,6 +2588,7 @@ export declare const factories: {
             description?: string | undefined;
             tacticsById?: {
                 [x: string]: {
+                    recommendedForIssueIds?: string[] | undefined;
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
@@ -5579,10 +2603,9 @@ export declare const factories: {
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
-                    uid?: string | undefined;
-                    setbackThreshold?: number | null | undefined;
-                    recommendedForIssueIds?: string[] | undefined;
                     prompt?: string | undefined;
+                    setbackThreshold?: number | null | undefined;
+                    uid?: string | undefined;
                     sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                     sharedWithIssueIds?: string[] | undefined;
                     recommendedForIssueOrdinals?: {
@@ -5649,6 +2672,7 @@ export declare const factories: {
                         uri: string;
                     };
                 } | {
+                    recommendedForIssueIds?: string[] | undefined;
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
@@ -5663,11 +2687,10 @@ export declare const factories: {
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
-                    uid?: string | undefined;
-                    repeat?: import("yup").Maybe<number | undefined>;
-                    setbackThreshold?: number | null | undefined;
-                    recommendedForIssueIds?: string[] | undefined;
                     prompt?: string | undefined;
+                    setbackThreshold?: number | null | undefined;
+                    repeat?: import("yup").Maybe<number | undefined>;
+                    uid?: string | undefined;
                     sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                     sharedWithIssueIds?: string[] | undefined;
                     recommendedForIssueOrdinals?: {
@@ -5712,6 +2735,7 @@ export declare const factories: {
                     holdFor: number;
                     outFor: number;
                 } | {
+                    recommendedForIssueIds?: string[] | undefined;
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
@@ -5726,10 +2750,9 @@ export declare const factories: {
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
-                    uid?: string | undefined;
-                    setbackThreshold?: number | null | undefined;
-                    recommendedForIssueIds?: string[] | undefined;
                     prompt?: string | undefined;
+                    setbackThreshold?: number | null | undefined;
+                    uid?: string | undefined;
                     sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                     sharedWithIssueIds?: string[] | undefined;
                     recommendedForIssueOrdinals?: {
@@ -5772,6 +2795,7 @@ export declare const factories: {
                     ordinal: number;
                     url: string;
                 } | {
+                    recommendedForIssueIds?: string[] | undefined;
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
@@ -5786,10 +2810,9 @@ export declare const factories: {
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
-                    uid?: string | undefined;
-                    setbackThreshold?: number | null | undefined;
-                    recommendedForIssueIds?: string[] | undefined;
                     prompt?: string | undefined;
+                    setbackThreshold?: number | null | undefined;
+                    uid?: string | undefined;
                     sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                     sharedWithIssueIds?: string[] | undefined;
                     recommendedForIssueOrdinals?: {
@@ -5832,6 +2855,7 @@ export declare const factories: {
                     ordinal: number;
                     contactIds: string[];
                 } | {
+                    recommendedForIssueIds?: string[] | undefined;
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
@@ -5846,10 +2870,9 @@ export declare const factories: {
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
-                    uid?: string | undefined;
-                    setbackThreshold?: number | null | undefined;
-                    recommendedForIssueIds?: string[] | undefined;
                     prompt?: string | undefined;
+                    setbackThreshold?: number | null | undefined;
+                    uid?: string | undefined;
                     sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                     sharedWithIssueIds?: string[] | undefined;
                     recommendedForIssueOrdinals?: {
@@ -5892,6 +2915,7 @@ export declare const factories: {
                     ordinal: number;
                     supportGroup: import("../schema/utils/firestore").DocumentReferenceLike<unknown>;
                 } | {
+                    recommendedForIssueIds?: string[] | undefined;
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
@@ -5906,580 +2930,9 @@ export declare const factories: {
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
-                    uid?: string | undefined;
-                    setbackThreshold?: number | null | undefined;
-                    recommendedForIssueIds?: string[] | undefined;
                     prompt?: string | undefined;
-                    sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                    sharedWithIssueIds?: string[] | undefined;
-                    recommendedForIssueOrdinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
-                    isShared?: boolean | undefined;
-                    description?: string | null | undefined;
-                    pastTenseTitle?: string | undefined;
-                    debriefAfterMinutes?: number | null | undefined;
-                    image?: {
-                        createdAt?: {
-                            isEqual?: any;
-                            toMillis?: any;
-                            seconds: number;
-                            nanoseconds: number;
-                            toDate: Function;
-                        } | null | undefined;
-                        updatedAt?: {
-                            isEqual?: any;
-                            toMillis?: any;
-                            seconds: number;
-                            nanoseconds: number;
-                            toDate: Function;
-                        } | null | undefined;
-                        content?: string | undefined;
-                        localFilePath?: import("yup").Maybe<string | undefined>;
-                        isDeleted?: boolean | undefined;
-                        waveForm?: import("yup").Maybe<string | undefined>;
-                        thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
-                        thumbnailUri?: import("yup").Maybe<string | undefined>;
-                        contentType: string;
-                        storagePath: string;
-                        uri: string;
-                    } | undefined;
-                    backgroundColor?: string | undefined;
-                    likesCount?: number | null | undefined;
-                    timerSeconds?: import("yup").Maybe<number | undefined>;
-                    isSuggested?: boolean | undefined;
-                    type: "question";
-                    ordinal: number;
-                    question: {
-                        createdAt?: {
-                            isEqual?: any;
-                            toMillis?: any;
-                            seconds: number;
-                            nanoseconds: number;
-                            toDate: Function;
-                        } | null | undefined;
-                        updatedAt?: {
-                            isEqual?: any;
-                            toMillis?: any;
-                            seconds: number;
-                            nanoseconds: number;
-                            toDate: Function;
-                        } | null | undefined;
-                        followUps?: ({
-                            message?: string | undefined;
-                            type: "askAnotherQuestion";
-                            questionId: string;
-                        } | {
-                            message?: string | undefined;
-                            type: "writeAnswerToProfile";
-                            profileKey: string;
-                        } | {
-                            message?: string | undefined;
-                            type: "writeValueToProfile";
-                            profileKey: string;
-                            value: {};
-                        })[] | undefined;
-                        setbackThreshold?: number | undefined;
-                        recommendedForIssueIds?: string[] | undefined;
-                        isPublic?: boolean | undefined;
-                        categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
-                        options?: ({
-                            label?: string | undefined;
-                            followUps?: ({
-                                message?: string | undefined;
-                                type: "askAnotherQuestion";
-                                questionId: string;
-                            } | {
-                                message?: string | undefined;
-                                type: "writeAnswerToProfile";
-                                profileKey: string;
-                            } | {
-                                message?: string | undefined;
-                                type: "writeValueToProfile";
-                                profileKey: string;
-                                value: {};
-                            })[] | undefined;
-                            color?: string | undefined;
-                            textColor?: string | undefined;
-                            setbackThreshold?: number | undefined;
-                            greaterThan?: number | undefined;
-                            lessThanOrEqualTo?: number | undefined;
-                            type: "numeric";
-                            text: string;
-                        } | {
-                            label?: string | undefined;
-                            followUps?: ({
-                                message?: string | undefined;
-                                type: "askAnotherQuestion";
-                                questionId: string;
-                            } | {
-                                message?: string | undefined;
-                                type: "writeAnswerToProfile";
-                                profileKey: string;
-                            } | {
-                                message?: string | undefined;
-                                type: "writeValueToProfile";
-                                profileKey: string;
-                                value: {};
-                            })[] | undefined;
-                            color?: string | undefined;
-                            textColor?: string | undefined;
-                            type: "string";
-                            text: string;
-                        })[] | undefined;
-                        ordinals?: {
-                            [x: string]: number;
-                        } | null | undefined;
-                        templateFor?: "afterSuccess" | "afterSetback" | "onboarding" | undefined;
-                        writeAnswerToProfileMemoryKey?: string | undefined;
-                        type: "counter";
-                        prompt: string;
-                        ordinal: number;
-                    } | {
-                        createdAt?: {
-                            isEqual?: any;
-                            toMillis?: any;
-                            seconds: number;
-                            nanoseconds: number;
-                            toDate: Function;
-                        } | null | undefined;
-                        updatedAt?: {
-                            isEqual?: any;
-                            toMillis?: any;
-                            seconds: number;
-                            nanoseconds: number;
-                            toDate: Function;
-                        } | null | undefined;
-                        followUps?: ({
-                            message?: string | undefined;
-                            type: "askAnotherQuestion";
-                            questionId: string;
-                        } | {
-                            message?: string | undefined;
-                            type: "writeAnswerToProfile";
-                            profileKey: string;
-                        } | {
-                            message?: string | undefined;
-                            type: "writeValueToProfile";
-                            profileKey: string;
-                            value: {};
-                        })[] | undefined;
-                        recommendedForIssueIds?: string[] | undefined;
-                        isPublic?: boolean | undefined;
-                        categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
-                        options?: ({
-                            label?: string | undefined;
-                            followUps?: ({
-                                message?: string | undefined;
-                                type: "askAnotherQuestion";
-                                questionId: string;
-                            } | {
-                                message?: string | undefined;
-                                type: "writeAnswerToProfile";
-                                profileKey: string;
-                            } | {
-                                message?: string | undefined;
-                                type: "writeValueToProfile";
-                                profileKey: string;
-                                value: {};
-                            })[] | undefined;
-                            color?: string | undefined;
-                            textColor?: string | undefined;
-                            setbackThreshold?: number | undefined;
-                            greaterThan?: number | undefined;
-                            lessThanOrEqualTo?: number | undefined;
-                            type: "numeric";
-                            text: string;
-                        } | {
-                            label?: string | undefined;
-                            followUps?: ({
-                                message?: string | undefined;
-                                type: "askAnotherQuestion";
-                                questionId: string;
-                            } | {
-                                message?: string | undefined;
-                                type: "writeAnswerToProfile";
-                                profileKey: string;
-                            } | {
-                                message?: string | undefined;
-                                type: "writeValueToProfile";
-                                profileKey: string;
-                                value: {};
-                            })[] | undefined;
-                            color?: string | undefined;
-                            textColor?: string | undefined;
-                            type: "string";
-                            text: string;
-                        })[] | undefined;
-                        ordinals?: {
-                            [x: string]: number;
-                        } | null | undefined;
-                        templateFor?: "afterSuccess" | "afterSetback" | "onboarding" | undefined;
-                        writeAnswerToProfileMemoryKey?: string | undefined;
-                        type: "issue";
-                        prompt: string;
-                        ordinal: number;
-                    } | {
-                        createdAt?: {
-                            isEqual?: any;
-                            toMillis?: any;
-                            seconds: number;
-                            nanoseconds: number;
-                            toDate: Function;
-                        } | null | undefined;
-                        updatedAt?: {
-                            isEqual?: any;
-                            toMillis?: any;
-                            seconds: number;
-                            nanoseconds: number;
-                            toDate: Function;
-                        } | null | undefined;
-                        followUps?: ({
-                            message?: string | undefined;
-                            type: "askAnotherQuestion";
-                            questionId: string;
-                        } | {
-                            message?: string | undefined;
-                            type: "writeAnswerToProfile";
-                            profileKey: string;
-                        } | {
-                            message?: string | undefined;
-                            type: "writeValueToProfile";
-                            profileKey: string;
-                            value: {};
-                        })[] | undefined;
-                        recommendedForIssueIds?: string[] | undefined;
-                        isPublic?: boolean | undefined;
-                        categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
-                        ordinals?: {
-                            [x: string]: number;
-                        } | null | undefined;
-                        templateFor?: "afterSuccess" | "afterSetback" | "onboarding" | undefined;
-                        writeAnswerToProfileMemoryKey?: string | undefined;
-                        type: "multipleChoice";
-                        prompt: string;
-                        options: ({
-                            label?: string | undefined;
-                            followUps?: ({
-                                message?: string | undefined;
-                                type: "askAnotherQuestion";
-                                questionId: string;
-                            } | {
-                                message?: string | undefined;
-                                type: "writeAnswerToProfile";
-                                profileKey: string;
-                            } | {
-                                message?: string | undefined;
-                                type: "writeValueToProfile";
-                                profileKey: string;
-                                value: {};
-                            })[] | undefined;
-                            color?: string | undefined;
-                            textColor?: string | undefined;
-                            setbackThreshold?: number | undefined;
-                            greaterThan?: number | undefined;
-                            lessThanOrEqualTo?: number | undefined;
-                            type: "numeric";
-                            text: string;
-                        } | {
-                            label?: string | undefined;
-                            followUps?: ({
-                                message?: string | undefined;
-                                type: "askAnotherQuestion";
-                                questionId: string;
-                            } | {
-                                message?: string | undefined;
-                                type: "writeAnswerToProfile";
-                                profileKey: string;
-                            } | {
-                                message?: string | undefined;
-                                type: "writeValueToProfile";
-                                profileKey: string;
-                                value: {};
-                            })[] | undefined;
-                            color?: string | undefined;
-                            textColor?: string | undefined;
-                            type: "string";
-                            text: string;
-                        })[];
-                        ordinal: number;
-                        canAddNewOptions: NonNullable<boolean | undefined>;
-                    } | {
-                        createdAt?: {
-                            isEqual?: any;
-                            toMillis?: any;
-                            seconds: number;
-                            nanoseconds: number;
-                            toDate: Function;
-                        } | null | undefined;
-                        updatedAt?: {
-                            isEqual?: any;
-                            toMillis?: any;
-                            seconds: number;
-                            nanoseconds: number;
-                            toDate: Function;
-                        } | null | undefined;
-                        followUps?: ({
-                            message?: string | undefined;
-                            type: "askAnotherQuestion";
-                            questionId: string;
-                        } | {
-                            message?: string | undefined;
-                            type: "writeAnswerToProfile";
-                            profileKey: string;
-                        } | {
-                            message?: string | undefined;
-                            type: "writeValueToProfile";
-                            profileKey: string;
-                            value: {};
-                        })[] | undefined;
-                        setbackThreshold?: number | undefined;
-                        recommendedForIssueIds?: string[] | undefined;
-                        isPublic?: boolean | undefined;
-                        categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
-                        options?: ({
-                            label?: string | undefined;
-                            followUps?: ({
-                                message?: string | undefined;
-                                type: "askAnotherQuestion";
-                                questionId: string;
-                            } | {
-                                message?: string | undefined;
-                                type: "writeAnswerToProfile";
-                                profileKey: string;
-                            } | {
-                                message?: string | undefined;
-                                type: "writeValueToProfile";
-                                profileKey: string;
-                                value: {};
-                            })[] | undefined;
-                            color?: string | undefined;
-                            textColor?: string | undefined;
-                            setbackThreshold?: number | undefined;
-                            greaterThan?: number | undefined;
-                            lessThanOrEqualTo?: number | undefined;
-                            type: "numeric";
-                            text: string;
-                        } | {
-                            label?: string | undefined;
-                            followUps?: ({
-                                message?: string | undefined;
-                                type: "askAnotherQuestion";
-                                questionId: string;
-                            } | {
-                                message?: string | undefined;
-                                type: "writeAnswerToProfile";
-                                profileKey: string;
-                            } | {
-                                message?: string | undefined;
-                                type: "writeValueToProfile";
-                                profileKey: string;
-                                value: {};
-                            })[] | undefined;
-                            color?: string | undefined;
-                            textColor?: string | undefined;
-                            type: "string";
-                            text: string;
-                        })[] | undefined;
-                        ordinals?: {
-                            [x: string]: number;
-                        } | null | undefined;
-                        templateFor?: "afterSuccess" | "afterSetback" | "onboarding" | undefined;
-                        writeAnswerToProfileMemoryKey?: string | undefined;
-                        lowEmoji?: import("yup").Maybe<string | undefined>;
-                        highEmoji?: import("yup").Maybe<string | undefined>;
-                        type: "scaleOf1To10";
-                        prompt: string;
-                        ordinal: number;
-                    } | {
-                        createdAt?: {
-                            isEqual?: any;
-                            toMillis?: any;
-                            seconds: number;
-                            nanoseconds: number;
-                            toDate: Function;
-                        } | null | undefined;
-                        updatedAt?: {
-                            isEqual?: any;
-                            toMillis?: any;
-                            seconds: number;
-                            nanoseconds: number;
-                            toDate: Function;
-                        } | null | undefined;
-                        followUps?: ({
-                            message?: string | undefined;
-                            type: "askAnotherQuestion";
-                            questionId: string;
-                        } | {
-                            message?: string | undefined;
-                            type: "writeAnswerToProfile";
-                            profileKey: string;
-                        } | {
-                            message?: string | undefined;
-                            type: "writeValueToProfile";
-                            profileKey: string;
-                            value: {};
-                        })[] | undefined;
-                        recommendedForIssueIds?: string[] | undefined;
-                        isPublic?: boolean | undefined;
-                        categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
-                        options?: ({
-                            label?: string | undefined;
-                            followUps?: ({
-                                message?: string | undefined;
-                                type: "askAnotherQuestion";
-                                questionId: string;
-                            } | {
-                                message?: string | undefined;
-                                type: "writeAnswerToProfile";
-                                profileKey: string;
-                            } | {
-                                message?: string | undefined;
-                                type: "writeValueToProfile";
-                                profileKey: string;
-                                value: {};
-                            })[] | undefined;
-                            color?: string | undefined;
-                            textColor?: string | undefined;
-                            setbackThreshold?: number | undefined;
-                            greaterThan?: number | undefined;
-                            lessThanOrEqualTo?: number | undefined;
-                            type: "numeric";
-                            text: string;
-                        } | {
-                            label?: string | undefined;
-                            followUps?: ({
-                                message?: string | undefined;
-                                type: "askAnotherQuestion";
-                                questionId: string;
-                            } | {
-                                message?: string | undefined;
-                                type: "writeAnswerToProfile";
-                                profileKey: string;
-                            } | {
-                                message?: string | undefined;
-                                type: "writeValueToProfile";
-                                profileKey: string;
-                                value: {};
-                            })[] | undefined;
-                            color?: string | undefined;
-                            textColor?: string | undefined;
-                            type: "string";
-                            text: string;
-                        })[] | undefined;
-                        ordinals?: {
-                            [x: string]: number;
-                        } | null | undefined;
-                        templateFor?: "afterSuccess" | "afterSetback" | "onboarding" | undefined;
-                        writeAnswerToProfileMemoryKey?: string | undefined;
-                        type: "text";
-                        prompt: string;
-                        ordinal: number;
-                    } | {
-                        createdAt?: {
-                            isEqual?: any;
-                            toMillis?: any;
-                            seconds: number;
-                            nanoseconds: number;
-                            toDate: Function;
-                        } | null | undefined;
-                        updatedAt?: {
-                            isEqual?: any;
-                            toMillis?: any;
-                            seconds: number;
-                            nanoseconds: number;
-                            toDate: Function;
-                        } | null | undefined;
-                        followUps?: ({
-                            message?: string | undefined;
-                            type: "askAnotherQuestion";
-                            questionId: string;
-                        } | {
-                            message?: string | undefined;
-                            type: "writeAnswerToProfile";
-                            profileKey: string;
-                        } | {
-                            message?: string | undefined;
-                            type: "writeValueToProfile";
-                            profileKey: string;
-                            value: {};
-                        })[] | undefined;
-                        setbackThreshold?: number | undefined;
-                        recommendedForIssueIds?: string[] | undefined;
-                        isPublic?: boolean | undefined;
-                        categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
-                        options?: ({
-                            label?: string | undefined;
-                            followUps?: ({
-                                message?: string | undefined;
-                                type: "askAnotherQuestion";
-                                questionId: string;
-                            } | {
-                                message?: string | undefined;
-                                type: "writeAnswerToProfile";
-                                profileKey: string;
-                            } | {
-                                message?: string | undefined;
-                                type: "writeValueToProfile";
-                                profileKey: string;
-                                value: {};
-                            })[] | undefined;
-                            color?: string | undefined;
-                            textColor?: string | undefined;
-                            setbackThreshold?: number | undefined;
-                            greaterThan?: number | undefined;
-                            lessThanOrEqualTo?: number | undefined;
-                            type: "numeric";
-                            text: string;
-                        } | {
-                            label?: string | undefined;
-                            followUps?: ({
-                                message?: string | undefined;
-                                type: "askAnotherQuestion";
-                                questionId: string;
-                            } | {
-                                message?: string | undefined;
-                                type: "writeAnswerToProfile";
-                                profileKey: string;
-                            } | {
-                                message?: string | undefined;
-                                type: "writeValueToProfile";
-                                profileKey: string;
-                                value: {};
-                            })[] | undefined;
-                            color?: string | undefined;
-                            textColor?: string | undefined;
-                            type: "string";
-                            text: string;
-                        })[] | undefined;
-                        ordinals?: {
-                            [x: string]: number;
-                        } | null | undefined;
-                        templateFor?: "afterSuccess" | "afterSetback" | "onboarding" | undefined;
-                        writeAnswerToProfileMemoryKey?: string | undefined;
-                        type: "time";
-                        prompt: string;
-                        ordinal: number;
-                    };
-                } | {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    uid?: string | undefined;
                     setbackThreshold?: number | null | undefined;
-                    recommendedForIssueIds?: string[] | undefined;
-                    prompt?: string | undefined;
+                    uid?: string | undefined;
                     sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                     sharedWithIssueIds?: string[] | undefined;
                     recommendedForIssueOrdinals?: {
@@ -6522,6 +2975,7 @@ export declare const factories: {
                     ordinal: number;
                     targetSteps: number;
                 } | {
+                    recommendedForIssueIds?: string[] | undefined;
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
@@ -6536,9 +2990,8 @@ export declare const factories: {
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
-                    uid?: string | undefined;
                     setbackThreshold?: number | null | undefined;
-                    recommendedForIssueIds?: string[] | undefined;
+                    uid?: string | undefined;
                     sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                     sharedWithIssueIds?: string[] | undefined;
                     recommendedForIssueOrdinals?: {
@@ -6577,10 +3030,11 @@ export declare const factories: {
                     likesCount?: number | null | undefined;
                     timerSeconds?: import("yup").Maybe<number | undefined>;
                     isSuggested?: boolean | undefined;
-                    type: "task";
                     prompt: string;
+                    type: "task";
                     ordinal: number;
                 } | {
+                    recommendedForIssueIds?: string[] | undefined;
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
@@ -6595,10 +3049,9 @@ export declare const factories: {
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
-                    uid?: string | undefined;
-                    setbackThreshold?: number | null | undefined;
-                    recommendedForIssueIds?: string[] | undefined;
                     prompt?: string | undefined;
+                    setbackThreshold?: number | null | undefined;
+                    uid?: string | undefined;
                     sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                     sharedWithIssueIds?: string[] | undefined;
                     recommendedForIssueOrdinals?: {
@@ -6652,6 +3105,7 @@ export declare const factories: {
             tourDescription?: string | undefined;
             tourConfirmButtonText?: string | undefined;
             next3Tactics?: ({
+                recommendedForIssueIds?: string[] | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -6666,10 +3120,9 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                uid?: string | undefined;
-                setbackThreshold?: number | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
+                setbackThreshold?: number | null | undefined;
+                uid?: string | undefined;
                 sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 sharedWithIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
@@ -6736,6 +3189,7 @@ export declare const factories: {
                     uri: string;
                 };
             } | {
+                recommendedForIssueIds?: string[] | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -6750,11 +3204,10 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                uid?: string | undefined;
-                repeat?: import("yup").Maybe<number | undefined>;
-                setbackThreshold?: number | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
+                setbackThreshold?: number | null | undefined;
+                repeat?: import("yup").Maybe<number | undefined>;
+                uid?: string | undefined;
                 sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 sharedWithIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
@@ -6799,6 +3252,7 @@ export declare const factories: {
                 holdFor: number;
                 outFor: number;
             } | {
+                recommendedForIssueIds?: string[] | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -6813,10 +3267,9 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                uid?: string | undefined;
-                setbackThreshold?: number | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
+                setbackThreshold?: number | null | undefined;
+                uid?: string | undefined;
                 sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 sharedWithIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
@@ -6859,6 +3312,7 @@ export declare const factories: {
                 ordinal: number;
                 url: string;
             } | {
+                recommendedForIssueIds?: string[] | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -6873,10 +3327,9 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                uid?: string | undefined;
-                setbackThreshold?: number | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
+                setbackThreshold?: number | null | undefined;
+                uid?: string | undefined;
                 sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 sharedWithIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
@@ -6919,6 +3372,7 @@ export declare const factories: {
                 ordinal: number;
                 contactIds: string[];
             } | {
+                recommendedForIssueIds?: string[] | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -6933,10 +3387,9 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                uid?: string | undefined;
-                setbackThreshold?: number | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
+                setbackThreshold?: number | null | undefined;
+                uid?: string | undefined;
                 sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 sharedWithIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
@@ -6979,6 +3432,7 @@ export declare const factories: {
                 ordinal: number;
                 supportGroup: import("../schema/utils/firestore").DocumentReferenceLike<unknown>;
             } | {
+                recommendedForIssueIds?: string[] | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -6993,580 +3447,9 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                uid?: string | undefined;
-                setbackThreshold?: number | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
-                sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                sharedWithIssueIds?: string[] | undefined;
-                recommendedForIssueOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                isShared?: boolean | undefined;
-                description?: string | null | undefined;
-                pastTenseTitle?: string | undefined;
-                debriefAfterMinutes?: number | null | undefined;
-                image?: {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    content?: string | undefined;
-                    localFilePath?: import("yup").Maybe<string | undefined>;
-                    isDeleted?: boolean | undefined;
-                    waveForm?: import("yup").Maybe<string | undefined>;
-                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
-                    thumbnailUri?: import("yup").Maybe<string | undefined>;
-                    contentType: string;
-                    storagePath: string;
-                    uri: string;
-                } | undefined;
-                backgroundColor?: string | undefined;
-                likesCount?: number | null | undefined;
-                timerSeconds?: import("yup").Maybe<number | undefined>;
-                isSuggested?: boolean | undefined;
-                type: "question";
-                ordinal: number;
-                question: {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    followUps?: ({
-                        message?: string | undefined;
-                        type: "askAnotherQuestion";
-                        questionId: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeAnswerToProfile";
-                        profileKey: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeValueToProfile";
-                        profileKey: string;
-                        value: {};
-                    })[] | undefined;
-                    setbackThreshold?: number | undefined;
-                    recommendedForIssueIds?: string[] | undefined;
-                    isPublic?: boolean | undefined;
-                    categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
-                    options?: ({
-                        label?: string | undefined;
-                        followUps?: ({
-                            message?: string | undefined;
-                            type: "askAnotherQuestion";
-                            questionId: string;
-                        } | {
-                            message?: string | undefined;
-                            type: "writeAnswerToProfile";
-                            profileKey: string;
-                        } | {
-                            message?: string | undefined;
-                            type: "writeValueToProfile";
-                            profileKey: string;
-                            value: {};
-                        })[] | undefined;
-                        color?: string | undefined;
-                        textColor?: string | undefined;
-                        setbackThreshold?: number | undefined;
-                        greaterThan?: number | undefined;
-                        lessThanOrEqualTo?: number | undefined;
-                        type: "numeric";
-                        text: string;
-                    } | {
-                        label?: string | undefined;
-                        followUps?: ({
-                            message?: string | undefined;
-                            type: "askAnotherQuestion";
-                            questionId: string;
-                        } | {
-                            message?: string | undefined;
-                            type: "writeAnswerToProfile";
-                            profileKey: string;
-                        } | {
-                            message?: string | undefined;
-                            type: "writeValueToProfile";
-                            profileKey: string;
-                            value: {};
-                        })[] | undefined;
-                        color?: string | undefined;
-                        textColor?: string | undefined;
-                        type: "string";
-                        text: string;
-                    })[] | undefined;
-                    ordinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
-                    templateFor?: "afterSuccess" | "afterSetback" | "onboarding" | undefined;
-                    writeAnswerToProfileMemoryKey?: string | undefined;
-                    type: "counter";
-                    prompt: string;
-                    ordinal: number;
-                } | {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    followUps?: ({
-                        message?: string | undefined;
-                        type: "askAnotherQuestion";
-                        questionId: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeAnswerToProfile";
-                        profileKey: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeValueToProfile";
-                        profileKey: string;
-                        value: {};
-                    })[] | undefined;
-                    recommendedForIssueIds?: string[] | undefined;
-                    isPublic?: boolean | undefined;
-                    categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
-                    options?: ({
-                        label?: string | undefined;
-                        followUps?: ({
-                            message?: string | undefined;
-                            type: "askAnotherQuestion";
-                            questionId: string;
-                        } | {
-                            message?: string | undefined;
-                            type: "writeAnswerToProfile";
-                            profileKey: string;
-                        } | {
-                            message?: string | undefined;
-                            type: "writeValueToProfile";
-                            profileKey: string;
-                            value: {};
-                        })[] | undefined;
-                        color?: string | undefined;
-                        textColor?: string | undefined;
-                        setbackThreshold?: number | undefined;
-                        greaterThan?: number | undefined;
-                        lessThanOrEqualTo?: number | undefined;
-                        type: "numeric";
-                        text: string;
-                    } | {
-                        label?: string | undefined;
-                        followUps?: ({
-                            message?: string | undefined;
-                            type: "askAnotherQuestion";
-                            questionId: string;
-                        } | {
-                            message?: string | undefined;
-                            type: "writeAnswerToProfile";
-                            profileKey: string;
-                        } | {
-                            message?: string | undefined;
-                            type: "writeValueToProfile";
-                            profileKey: string;
-                            value: {};
-                        })[] | undefined;
-                        color?: string | undefined;
-                        textColor?: string | undefined;
-                        type: "string";
-                        text: string;
-                    })[] | undefined;
-                    ordinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
-                    templateFor?: "afterSuccess" | "afterSetback" | "onboarding" | undefined;
-                    writeAnswerToProfileMemoryKey?: string | undefined;
-                    type: "issue";
-                    prompt: string;
-                    ordinal: number;
-                } | {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    followUps?: ({
-                        message?: string | undefined;
-                        type: "askAnotherQuestion";
-                        questionId: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeAnswerToProfile";
-                        profileKey: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeValueToProfile";
-                        profileKey: string;
-                        value: {};
-                    })[] | undefined;
-                    recommendedForIssueIds?: string[] | undefined;
-                    isPublic?: boolean | undefined;
-                    categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
-                    ordinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
-                    templateFor?: "afterSuccess" | "afterSetback" | "onboarding" | undefined;
-                    writeAnswerToProfileMemoryKey?: string | undefined;
-                    type: "multipleChoice";
-                    prompt: string;
-                    options: ({
-                        label?: string | undefined;
-                        followUps?: ({
-                            message?: string | undefined;
-                            type: "askAnotherQuestion";
-                            questionId: string;
-                        } | {
-                            message?: string | undefined;
-                            type: "writeAnswerToProfile";
-                            profileKey: string;
-                        } | {
-                            message?: string | undefined;
-                            type: "writeValueToProfile";
-                            profileKey: string;
-                            value: {};
-                        })[] | undefined;
-                        color?: string | undefined;
-                        textColor?: string | undefined;
-                        setbackThreshold?: number | undefined;
-                        greaterThan?: number | undefined;
-                        lessThanOrEqualTo?: number | undefined;
-                        type: "numeric";
-                        text: string;
-                    } | {
-                        label?: string | undefined;
-                        followUps?: ({
-                            message?: string | undefined;
-                            type: "askAnotherQuestion";
-                            questionId: string;
-                        } | {
-                            message?: string | undefined;
-                            type: "writeAnswerToProfile";
-                            profileKey: string;
-                        } | {
-                            message?: string | undefined;
-                            type: "writeValueToProfile";
-                            profileKey: string;
-                            value: {};
-                        })[] | undefined;
-                        color?: string | undefined;
-                        textColor?: string | undefined;
-                        type: "string";
-                        text: string;
-                    })[];
-                    ordinal: number;
-                    canAddNewOptions: NonNullable<boolean | undefined>;
-                } | {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    followUps?: ({
-                        message?: string | undefined;
-                        type: "askAnotherQuestion";
-                        questionId: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeAnswerToProfile";
-                        profileKey: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeValueToProfile";
-                        profileKey: string;
-                        value: {};
-                    })[] | undefined;
-                    setbackThreshold?: number | undefined;
-                    recommendedForIssueIds?: string[] | undefined;
-                    isPublic?: boolean | undefined;
-                    categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
-                    options?: ({
-                        label?: string | undefined;
-                        followUps?: ({
-                            message?: string | undefined;
-                            type: "askAnotherQuestion";
-                            questionId: string;
-                        } | {
-                            message?: string | undefined;
-                            type: "writeAnswerToProfile";
-                            profileKey: string;
-                        } | {
-                            message?: string | undefined;
-                            type: "writeValueToProfile";
-                            profileKey: string;
-                            value: {};
-                        })[] | undefined;
-                        color?: string | undefined;
-                        textColor?: string | undefined;
-                        setbackThreshold?: number | undefined;
-                        greaterThan?: number | undefined;
-                        lessThanOrEqualTo?: number | undefined;
-                        type: "numeric";
-                        text: string;
-                    } | {
-                        label?: string | undefined;
-                        followUps?: ({
-                            message?: string | undefined;
-                            type: "askAnotherQuestion";
-                            questionId: string;
-                        } | {
-                            message?: string | undefined;
-                            type: "writeAnswerToProfile";
-                            profileKey: string;
-                        } | {
-                            message?: string | undefined;
-                            type: "writeValueToProfile";
-                            profileKey: string;
-                            value: {};
-                        })[] | undefined;
-                        color?: string | undefined;
-                        textColor?: string | undefined;
-                        type: "string";
-                        text: string;
-                    })[] | undefined;
-                    ordinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
-                    templateFor?: "afterSuccess" | "afterSetback" | "onboarding" | undefined;
-                    writeAnswerToProfileMemoryKey?: string | undefined;
-                    lowEmoji?: import("yup").Maybe<string | undefined>;
-                    highEmoji?: import("yup").Maybe<string | undefined>;
-                    type: "scaleOf1To10";
-                    prompt: string;
-                    ordinal: number;
-                } | {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    followUps?: ({
-                        message?: string | undefined;
-                        type: "askAnotherQuestion";
-                        questionId: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeAnswerToProfile";
-                        profileKey: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeValueToProfile";
-                        profileKey: string;
-                        value: {};
-                    })[] | undefined;
-                    recommendedForIssueIds?: string[] | undefined;
-                    isPublic?: boolean | undefined;
-                    categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
-                    options?: ({
-                        label?: string | undefined;
-                        followUps?: ({
-                            message?: string | undefined;
-                            type: "askAnotherQuestion";
-                            questionId: string;
-                        } | {
-                            message?: string | undefined;
-                            type: "writeAnswerToProfile";
-                            profileKey: string;
-                        } | {
-                            message?: string | undefined;
-                            type: "writeValueToProfile";
-                            profileKey: string;
-                            value: {};
-                        })[] | undefined;
-                        color?: string | undefined;
-                        textColor?: string | undefined;
-                        setbackThreshold?: number | undefined;
-                        greaterThan?: number | undefined;
-                        lessThanOrEqualTo?: number | undefined;
-                        type: "numeric";
-                        text: string;
-                    } | {
-                        label?: string | undefined;
-                        followUps?: ({
-                            message?: string | undefined;
-                            type: "askAnotherQuestion";
-                            questionId: string;
-                        } | {
-                            message?: string | undefined;
-                            type: "writeAnswerToProfile";
-                            profileKey: string;
-                        } | {
-                            message?: string | undefined;
-                            type: "writeValueToProfile";
-                            profileKey: string;
-                            value: {};
-                        })[] | undefined;
-                        color?: string | undefined;
-                        textColor?: string | undefined;
-                        type: "string";
-                        text: string;
-                    })[] | undefined;
-                    ordinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
-                    templateFor?: "afterSuccess" | "afterSetback" | "onboarding" | undefined;
-                    writeAnswerToProfileMemoryKey?: string | undefined;
-                    type: "text";
-                    prompt: string;
-                    ordinal: number;
-                } | {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    followUps?: ({
-                        message?: string | undefined;
-                        type: "askAnotherQuestion";
-                        questionId: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeAnswerToProfile";
-                        profileKey: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeValueToProfile";
-                        profileKey: string;
-                        value: {};
-                    })[] | undefined;
-                    setbackThreshold?: number | undefined;
-                    recommendedForIssueIds?: string[] | undefined;
-                    isPublic?: boolean | undefined;
-                    categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
-                    options?: ({
-                        label?: string | undefined;
-                        followUps?: ({
-                            message?: string | undefined;
-                            type: "askAnotherQuestion";
-                            questionId: string;
-                        } | {
-                            message?: string | undefined;
-                            type: "writeAnswerToProfile";
-                            profileKey: string;
-                        } | {
-                            message?: string | undefined;
-                            type: "writeValueToProfile";
-                            profileKey: string;
-                            value: {};
-                        })[] | undefined;
-                        color?: string | undefined;
-                        textColor?: string | undefined;
-                        setbackThreshold?: number | undefined;
-                        greaterThan?: number | undefined;
-                        lessThanOrEqualTo?: number | undefined;
-                        type: "numeric";
-                        text: string;
-                    } | {
-                        label?: string | undefined;
-                        followUps?: ({
-                            message?: string | undefined;
-                            type: "askAnotherQuestion";
-                            questionId: string;
-                        } | {
-                            message?: string | undefined;
-                            type: "writeAnswerToProfile";
-                            profileKey: string;
-                        } | {
-                            message?: string | undefined;
-                            type: "writeValueToProfile";
-                            profileKey: string;
-                            value: {};
-                        })[] | undefined;
-                        color?: string | undefined;
-                        textColor?: string | undefined;
-                        type: "string";
-                        text: string;
-                    })[] | undefined;
-                    ordinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
-                    templateFor?: "afterSuccess" | "afterSetback" | "onboarding" | undefined;
-                    writeAnswerToProfileMemoryKey?: string | undefined;
-                    type: "time";
-                    prompt: string;
-                    ordinal: number;
-                };
-            } | {
-                createdAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                updatedAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                uid?: string | undefined;
                 setbackThreshold?: number | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                prompt?: string | undefined;
+                uid?: string | undefined;
                 sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 sharedWithIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
@@ -7609,6 +3492,7 @@ export declare const factories: {
                 ordinal: number;
                 targetSteps: number;
             } | {
+                recommendedForIssueIds?: string[] | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -7623,9 +3507,8 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                uid?: string | undefined;
                 setbackThreshold?: number | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
+                uid?: string | undefined;
                 sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 sharedWithIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
@@ -7664,10 +3547,11 @@ export declare const factories: {
                 likesCount?: number | null | undefined;
                 timerSeconds?: import("yup").Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
-                type: "task";
                 prompt: string;
+                type: "task";
                 ordinal: number;
             } | {
+                recommendedForIssueIds?: string[] | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -7682,10 +3566,9 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                uid?: string | undefined;
-                setbackThreshold?: number | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
+                setbackThreshold?: number | null | undefined;
+                uid?: string | undefined;
                 sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 sharedWithIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
@@ -7737,5 +3620,5 @@ export declare const factories: {
             invitationCode: string;
             invitationUrl: string;
         };
-    }, "type" | "sortBy" | "strategy" | ("createdAt" | "updatedAt" | "strategyDoc" | "ordinal" | "forIssueIds" | "ordinalsForIssues" | "forAllIssues" | "tourDismissed" | "reminders")>;
+    }, "type" | "sortBy" | "strategy" | ("createdAt" | "updatedAt" | "ordinal" | "strategyDoc" | "forIssueIds" | "ordinalsForIssues" | "forAllIssues" | "tourDismissed" | "reminders")>;
 };

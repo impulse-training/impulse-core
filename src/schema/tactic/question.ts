@@ -1,9 +1,6 @@
-import * as yup from 'yup';
-import { questionSchema } from '../question';
-import { tacticValueBaseSchema } from './base';
+// import * as yup from 'yup';
+// import { tacticValueBaseSchema } from './base';
 
-export const questionTacticSchema = tacticValueBaseSchema('question').shape({
-  question: questionSchema,
-});
+// export const behaviorTacticSchema = tacticValueBaseSchema('behavior');
 
-export type QuestionTacticValue = yup.InferType<typeof questionTacticSchema>;
+// export type BehaviorTacticValue = yup.InferType<typeof behaviorTacticSchema>;

@@ -1,11 +1,11 @@
 import * as yup from 'yup';
-import { questionSchema } from '../question';
+import { behaviorSchema } from '../behavior';
 import { tacticSchema } from '../tactic';
 import { requiredStringArray } from '../utils/array';
 import { fileSchema } from '../utils/file';
 import { objectOf, optionalObjectOf } from '../utils/objectOf';
 import { optionalTimestampSchema, timestampSchema } from '../utils/timestamp';
-import { questionDataSchema } from './utils/questionData';
+import { behaviorDataSchema } from './utils/behaviorData';
 
 export function logBaseSchema<K extends string>(type: K) {
   return yup.object({
@@ -26,8 +26,8 @@ export function logBaseSchema<K extends string>(type: K) {
     // From old tactics log schema
     tacticsById: objectOf(tacticSchema),
 
-    questionsById: optionalObjectOf(questionSchema),
-    questionData: optionalObjectOf(questionDataSchema),
+    behaviorsById: optionalObjectOf(behaviorSchema),
+    behaviorData: optionalObjectOf(behaviorDataSchema),
     submittedAt: optionalTimestampSchema,
 
     blandPathwayChatId: yup.string(),

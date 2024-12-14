@@ -35,10 +35,10 @@ export const profileStrategySchema = yup.lazy(value => {
       )
       .required(),
   });
-}) as yup.Lazy<ValidatedQuestion>;
+}) as yup.Lazy<ValidatedBehavior>;
 
 // / This type represents the union of all possible validated tactic objects
-type ValidatedQuestion = {
+type ValidatedBehavior = {
   [K in ProfileStrategyValue['type']]: yup.InferType<
     (typeof profileStrategySchemas)[K]
   >;

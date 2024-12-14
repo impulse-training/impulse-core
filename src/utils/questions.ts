@@ -1,17 +1,17 @@
-import { map, sortBy } from 'lodash';
-import { QuestionCategory, QuestionValue } from '../schema';
+// import { map, sortBy } from 'lodash';
+// import { BehaviorCategory, BehaviorValue } from '../schema';
 
-export function getQuestions(
-  questionsById: Record<string, QuestionValue>,
-  category: QuestionCategory
-) {
-  // First, filter the questions that have the category
-  const questionsWithIds = map(questionsById, (question, id) => ({
-    id,
-    question,
-  }));
-  const questions = questionsWithIds.filter(({ question }) =>
-    question.categories?.includes(category)
-  );
-  return sortBy(questions, ({ question }) => question.ordinals?.[category]);
-}
+// export function getBehaviors(
+//   behaviorsById: Record<string, BehaviorValue>,
+//   category: BehaviorCategory
+// ) {
+//   // First, filter the behaviors that have the category
+//   const behaviorsWithIds = map(behaviorsById, (behavior, id) => ({
+//     id,
+//     behavior,
+//   }));
+//   const behaviors = behaviorsWithIds.filter(({ behavior }) =>
+//     behavior.categories?.includes(category)
+//   );
+//   return sortBy(behaviors, ({ behavior }) => behavior.ordinals?.[category]);
+// }

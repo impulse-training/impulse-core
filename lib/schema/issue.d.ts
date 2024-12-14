@@ -17,7 +17,7 @@ export declare const issueSchema: yup.ObjectSchema<{
     name: string;
     parentId: string | null | undefined;
     parentName: string | null | undefined;
-    hasDebriefQuestion: boolean | undefined;
+    hasDebriefBehavior: boolean | undefined;
     ordinal: number | undefined;
     synonyms: string[] | undefined;
     path: string | null | undefined;
@@ -37,7 +37,7 @@ export declare const issueSchema: yup.ObjectSchema<{
     name: undefined;
     parentId: undefined;
     parentName: undefined;
-    hasDebriefQuestion: undefined;
+    hasDebriefBehavior: undefined;
     ordinal: undefined;
     synonyms: "";
     path: undefined;

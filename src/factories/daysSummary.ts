@@ -5,7 +5,7 @@ import { TimestampLike } from '../utils';
 export const makeDaysSummaryFactory = (TimestampKlass: typeof TimestampLike) =>
   Factory.makeFactory<DaysSummaryValue>({
     '2024-01-01': {
-      question1: {
+      behavior1: {
         unit: 'time',
         numericValue: 1,
         setAt: TimestampKlass.now(),

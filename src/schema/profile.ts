@@ -1,6 +1,5 @@
 import { AppStateStatus } from 'react-native';
 import * as yup from 'yup';
-import { issueSchema } from './issue';
 import { notificationOptionSchema } from './notification';
 import { optionalStringArray, requiredStringArray } from './utils/array';
 import { documentReferenceSchema } from './utils/firestore';
@@ -15,8 +14,6 @@ export const profileSchema = yup.object({
   widgetLastPressedAt: optionalTimestampSchema,
   activeImpulseDoc: documentReferenceSchema,
   currentAppState: yup.mixed<AppStateStatus>().optional(), // Define validation for AppStateStatus if needed
-  addToStrategy: yup.boolean(),
-  emojiID: yup.array().of(yup.string().required()),
   expoPushToken: yup.string().optional(),
   notificationPreferences: optionalObjectOf(
     yup.array().of(notificationOptionSchema)
@@ -29,9 +26,6 @@ export const profileSchema = yup.object({
     })
     .nullable()
     .default(null),
-  issuesById: optionalObjectOf(issueSchema),
-  signUpIssueId: yup.string().required().nullable(),
-  signUpIssueName: yup.string().nullable(),
   isReadyForTour: yup.boolean(),
   isOnboardingComplete: yup.boolean(),
   parentIds: optionalStringArray,

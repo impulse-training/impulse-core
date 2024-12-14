@@ -38,8 +38,6 @@ export declare const profileSchema: yup.ObjectSchema<{
     } | null | undefined;
     activeImpulseDoc: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
     currentAppState: AppStateStatus | undefined;
-    addToStrategy: boolean | undefined;
-    emojiID: string[] | undefined;
     expoPushToken: string | undefined;
     notificationPreferences: {
         [x: string]: NonNullable<"push" | "email" | undefined>[] | undefined;
@@ -49,43 +47,6 @@ export declare const profileSchema: yup.ObjectSchema<{
         hour: number;
         minute: number;
     } | null;
-    issuesById: {
-        [x: string]: {
-            path?: string | null | undefined;
-            createdAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            updatedAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            ordinal?: number | undefined;
-            parentId?: string | null | undefined;
-            parentName?: string | null | undefined;
-            hasDebriefQuestion?: boolean | undefined;
-            synonyms?: string[] | undefined;
-            parentIds?: string[] | undefined;
-            parentNames?: string[] | undefined;
-            profileCount?: number | null | undefined;
-            isFeatured?: boolean | null | undefined;
-            blandContext?: string | undefined;
-            recommendedStrategies?: import("./utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
-            strategyOrdinals?: {
-                [x: string]: number;
-            } | null | undefined;
-            gameplanTactics?: import("./utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
-            name: string;
-        };
-    } | null | undefined;
-    signUpIssueId: string | null;
-    signUpIssueName: string | null | undefined;
     isReadyForTour: boolean | undefined;
     isOnboardingComplete: boolean | undefined;
     parentIds: string[] | undefined;
@@ -127,15 +88,10 @@ export declare const profileSchema: yup.ObjectSchema<{
     widgetLastPressedAt: undefined;
     activeImpulseDoc: undefined;
     currentAppState: undefined;
-    addToStrategy: undefined;
-    emojiID: "";
     expoPushToken: undefined;
     notificationPreferences: undefined;
     verificationCode: undefined;
     dayReviewTime: null;
-    issuesById: undefined;
-    signUpIssueId: undefined;
-    signUpIssueName: undefined;
     isReadyForTour: undefined;
     isOnboardingComplete: undefined;
     parentIds: "";

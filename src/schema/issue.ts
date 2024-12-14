@@ -10,7 +10,7 @@ export const issueSchema = yup.object().shape({
   name: yup.string().required(),
   parentId: yup.string().nullable(),
   parentName: yup.string().nullable(),
-  hasDebriefQuestion: yup.boolean(),
+  hasDebriefBehavior: yup.boolean(),
   ordinal: yup.number(),
   synonyms: yup.array().of(yup.string().required()),
   path: yup.string().nullable(),

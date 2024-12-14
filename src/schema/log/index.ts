@@ -16,8 +16,8 @@ export * from './tacticsLog';
 export * from './whatsappMessageLog';
 
 // Utils
+export * from './utils/behaviorData';
 export * from './utils/guards';
-export * from './utils/questionData';
 
 export const logSchemas: Record<
   LogValue['type'],

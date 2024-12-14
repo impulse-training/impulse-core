@@ -5,6 +5,7 @@ export * from './recapAction';
 export * from './recapTracking';
 export declare const recapTacticSchemas: Record<RecapTacticValue['type'], yup.ObjectSchema<RecapTacticValue>>;
 export declare const recapTacticSchema: yup.Lazy<{
+    recommendedForIssueIds?: string[] | undefined;
     createdAt?: {
         isEqual?: any;
         toMillis?: any;
@@ -19,10 +20,9 @@ export declare const recapTacticSchema: yup.Lazy<{
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
-    uid?: string | undefined;
-    setbackThreshold?: number | null | undefined;
-    recommendedForIssueIds?: string[] | undefined;
     prompt?: string | undefined;
+    setbackThreshold?: number | null | undefined;
+    uid?: string | undefined;
     sourceFile?: import("../../utils/firestore").DocumentReferenceLike<unknown> | undefined;
     sharedWithIssueIds?: string[] | undefined;
     recommendedForIssueOrdinals?: {
