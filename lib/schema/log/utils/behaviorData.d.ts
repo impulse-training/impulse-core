@@ -30,4 +30,84 @@ export declare const behaviorDataSchema: yup.ObjectSchema<{
         toDate: undefined;
     };
 }, "">;
+export declare const behaviorAndBehaviorDataSchema: yup.ObjectSchema<{
+    behavior: {
+        recommendedForIssueIds?: string[] | undefined;
+        createdAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        updatedAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        templateFor?: "onboarding" | "afterSuccess" | "afterSetback" | undefined;
+        setbackThreshold?: number | undefined;
+        prompt: string;
+        type: "counter";
+        ordinal: number;
+    } | {
+        recommendedForIssueIds?: string[] | undefined;
+        createdAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        updatedAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        templateFor?: "onboarding" | "afterSuccess" | "afterSetback" | undefined;
+        setbackThreshold?: number | undefined;
+        prompt: string;
+        type: "time";
+        ordinal: number;
+    };
+    behaviorData: {
+        setbackThreshold?: number | undefined;
+        label?: string | undefined;
+        idValue?: string | undefined;
+        numericValue?: number | undefined;
+        color?: string | undefined;
+        setAt: {
+            isEqual?: any;
+            toMillis?: any;
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        };
+        stringValue: string;
+        unit: string;
+    };
+}, yup.AnyObject, {
+    behavior: undefined;
+    behaviorData: {
+        setbackThreshold: undefined;
+        idValue: undefined;
+        numericValue: undefined;
+        stringValue: undefined;
+        label: undefined;
+        color: undefined;
+        unit: undefined;
+        setAt: {
+            seconds: undefined;
+            nanoseconds: undefined;
+            isEqual: undefined;
+            toMillis: undefined;
+            toDate: undefined;
+        };
+    };
+}, "">;
 export type BehaviorDataValue = yup.InferType<typeof behaviorDataSchema>;
+export type BehaviorAndBehaviorDataValue = yup.InferType<typeof behaviorDataSchema>;

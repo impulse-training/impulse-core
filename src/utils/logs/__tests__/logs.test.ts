@@ -9,14 +9,14 @@ describe(logTextForGpt, () => {
     it('returns the correct payload', () => {
       const log = regularLogFactory.build({
         text: 'I messed up!',
-        behaviorsById: {
-          behavior1: {
-            prompt: 'Time spent watching',
-          },
-        },
         behaviorData: {
           behavior1: {
-            stringValue: '3 hrs',
+            behavior: {
+              prompt: 'Time spent watching',
+            },
+            behaviorData: {
+              stringValue: '3 hrs',
+            },
           },
         },
       });

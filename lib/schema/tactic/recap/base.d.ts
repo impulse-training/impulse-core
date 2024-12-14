@@ -43,10 +43,9 @@ export declare function recapTacticValueBaseSchema(type: RecapKeyType): import("
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        content?: string | undefined;
         localFilePath?: import("yup").Maybe<string | undefined>;
         isDeleted?: boolean | undefined;
-        waveForm?: import("yup").Maybe<string | undefined>;
+        metadata?: {} | null | undefined;
         thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
         thumbnailUri?: import("yup").Maybe<string | undefined>;
         contentType: string;

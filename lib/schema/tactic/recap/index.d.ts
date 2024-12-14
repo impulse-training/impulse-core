@@ -47,10 +47,9 @@ export declare const recapTacticSchema: yup.Lazy<{
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        content?: string | undefined;
         localFilePath?: yup.Maybe<string | undefined>;
         isDeleted?: boolean | undefined;
-        waveForm?: yup.Maybe<string | undefined>;
+        metadata?: {} | null | undefined;
         thumbnailStoragePath?: yup.Maybe<string | undefined>;
         thumbnailUri?: yup.Maybe<string | undefined>;
         contentType: string;

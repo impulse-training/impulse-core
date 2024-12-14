@@ -43,10 +43,9 @@ export declare const audioTacticSchema: yup.ObjectSchema<{
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        content?: string | undefined;
         localFilePath?: yup.Maybe<string | undefined>;
         isDeleted?: boolean | undefined;
-        waveForm?: yup.Maybe<string | undefined>;
+        metadata?: {} | null | undefined;
         thumbnailStoragePath?: yup.Maybe<string | undefined>;
         thumbnailUri?: yup.Maybe<string | undefined>;
         contentType: string;
@@ -73,10 +72,9 @@ export declare const audioTacticSchema: yup.ObjectSchema<{
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        content?: string | undefined;
         localFilePath?: yup.Maybe<string | undefined>;
         isDeleted?: boolean | undefined;
-        waveForm?: yup.Maybe<string | undefined>;
+        metadata?: {} | null | undefined;
         thumbnailStoragePath?: yup.Maybe<string | undefined>;
         thumbnailUri?: yup.Maybe<string | undefined>;
         contentType: string;
@@ -110,10 +108,9 @@ export declare const audioTacticSchema: yup.ObjectSchema<{
         contentType: undefined;
         storagePath: undefined;
         uri: undefined;
-        content: undefined;
         localFilePath: undefined;
         isDeleted: undefined;
-        waveForm: undefined;
+        metadata: {};
         thumbnailStoragePath: undefined;
         thumbnailUri: undefined;
     };

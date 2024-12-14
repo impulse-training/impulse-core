@@ -14,12 +14,68 @@ export declare const factories: {
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        submittedAt?: {
-            isEqual?: any;
-            toMillis?: any;
-            seconds: number;
-            nanoseconds: number;
-            toDate: Function;
+        behaviorData?: {
+            [x: string]: {
+                behavior: {
+                    recommendedForIssueIds?: string[] | undefined;
+                    createdAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    templateFor?: "onboarding" | "afterSuccess" | "afterSetback" | undefined;
+                    setbackThreshold?: number | undefined;
+                    prompt: string;
+                    type: "counter";
+                    ordinal: number;
+                } | {
+                    recommendedForIssueIds?: string[] | undefined;
+                    createdAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    templateFor?: "onboarding" | "afterSuccess" | "afterSetback" | undefined;
+                    setbackThreshold?: number | undefined;
+                    prompt: string;
+                    type: "time";
+                    ordinal: number;
+                };
+                behaviorData: {
+                    setbackThreshold?: number | undefined;
+                    label?: string | undefined;
+                    idValue?: string | undefined;
+                    numericValue?: number | undefined;
+                    color?: string | undefined;
+                    setAt: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    };
+                    stringValue: string;
+                    unit: string;
+                };
+            };
         } | null | undefined;
         audioFile?: {
             createdAt?: {
@@ -36,1117 +92,26 @@ export declare const factories: {
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            content?: string | undefined;
             localFilePath?: import("yup").Maybe<string | undefined>;
             isDeleted?: boolean | undefined;
-            waveForm?: import("yup").Maybe<string | undefined>;
+            metadata?: {} | null | undefined;
             thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
             thumbnailUri?: import("yup").Maybe<string | undefined>;
             contentType: string;
             storagePath: string;
             uri: string;
         } | undefined;
-        audioDurationSeconds?: number | undefined;
-        audioWaveform?: string | undefined;
-        issueId?: string | null | undefined;
-        issueName?: string | undefined;
-        behaviorsById?: {
+        emotionData?: {
             [x: string]: {
-                recommendedForIssueIds?: string[] | undefined;
-                createdAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                updatedAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                templateFor?: "onboarding" | "afterSuccess" | "afterSetback" | undefined;
-                setbackThreshold?: number | undefined;
-                prompt: string;
-                type: "counter";
-                ordinal: number;
-            } | {
-                recommendedForIssueIds?: string[] | undefined;
-                createdAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                updatedAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                templateFor?: "onboarding" | "afterSuccess" | "afterSetback" | undefined;
-                setbackThreshold?: number | undefined;
-                prompt: string;
-                type: "time";
-                ordinal: number;
+                label: string;
+                iconName: string;
+                intensity: number | null;
             };
         } | null | undefined;
-        behaviorData?: {
-            [x: string]: {
-                setbackThreshold?: number | undefined;
-                label?: string | undefined;
-                idValue?: string | undefined;
-                numericValue?: number | undefined;
-                color?: string | undefined;
-                setAt: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                };
-                stringValue: string;
-                unit: string;
-            };
-        } | null | undefined;
-        blandPathwayChatId?: string | undefined;
         text?: string | undefined;
-        profileEmojiIDString?: string | undefined;
-        tacticId?: string | null | undefined;
-        tactic?: ({
-            recommendedForIssueIds?: string[] | undefined;
-            createdAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            updatedAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            prompt?: string | undefined;
-            setbackThreshold?: number | null | undefined;
-            uid?: string | undefined;
-            sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
-            sharedWithIssueIds?: string[] | undefined;
-            recommendedForIssueOrdinals?: {
-                [x: string]: number;
-            } | null | undefined;
-            isShared?: boolean | undefined;
-            description?: string | null | undefined;
-            pastTenseTitle?: string | undefined;
-            debriefAfterMinutes?: number | null | undefined;
-            image?: {
-                createdAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                updatedAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                content?: string | undefined;
-                localFilePath?: import("yup").Maybe<string | undefined>;
-                isDeleted?: boolean | undefined;
-                waveForm?: import("yup").Maybe<string | undefined>;
-                thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
-                thumbnailUri?: import("yup").Maybe<string | undefined>;
-                contentType: string;
-                storagePath: string;
-                uri: string;
-            } | undefined;
-            backgroundColor?: string | undefined;
-            likesCount?: number | null | undefined;
-            timerSeconds?: import("yup").Maybe<number | undefined>;
-            isSuggested?: boolean | undefined;
-            type: "audio";
-            ordinal: number;
-            recording: {
-                createdAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                updatedAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                content?: string | undefined;
-                localFilePath?: import("yup").Maybe<string | undefined>;
-                isDeleted?: boolean | undefined;
-                waveForm?: import("yup").Maybe<string | undefined>;
-                thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
-                thumbnailUri?: import("yup").Maybe<string | undefined>;
-                contentType: string;
-                storagePath: string;
-                uri: string;
-            };
-        } | {
-            recommendedForIssueIds?: string[] | undefined;
-            createdAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            updatedAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            prompt?: string | undefined;
-            setbackThreshold?: number | null | undefined;
-            repeat?: import("yup").Maybe<number | undefined>;
-            uid?: string | undefined;
-            sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
-            sharedWithIssueIds?: string[] | undefined;
-            recommendedForIssueOrdinals?: {
-                [x: string]: number;
-            } | null | undefined;
-            isShared?: boolean | undefined;
-            description?: string | null | undefined;
-            pastTenseTitle?: string | undefined;
-            debriefAfterMinutes?: number | null | undefined;
-            image?: {
-                createdAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                updatedAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                content?: string | undefined;
-                localFilePath?: import("yup").Maybe<string | undefined>;
-                isDeleted?: boolean | undefined;
-                waveForm?: import("yup").Maybe<string | undefined>;
-                thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
-                thumbnailUri?: import("yup").Maybe<string | undefined>;
-                contentType: string;
-                storagePath: string;
-                uri: string;
-            } | undefined;
-            backgroundColor?: string | undefined;
-            likesCount?: number | null | undefined;
-            timerSeconds?: import("yup").Maybe<number | undefined>;
-            isSuggested?: boolean | undefined;
-            type: "breathingExercise";
-            ordinal: number;
-            inFor: number;
-            holdFor: number;
-            outFor: number;
-        } | {
-            recommendedForIssueIds?: string[] | undefined;
-            createdAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            updatedAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            prompt?: string | undefined;
-            setbackThreshold?: number | null | undefined;
-            uid?: string | undefined;
-            sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
-            sharedWithIssueIds?: string[] | undefined;
-            recommendedForIssueOrdinals?: {
-                [x: string]: number;
-            } | null | undefined;
-            isShared?: boolean | undefined;
-            description?: string | null | undefined;
-            pastTenseTitle?: string | undefined;
-            debriefAfterMinutes?: number | null | undefined;
-            image?: {
-                createdAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                updatedAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                content?: string | undefined;
-                localFilePath?: import("yup").Maybe<string | undefined>;
-                isDeleted?: boolean | undefined;
-                waveForm?: import("yup").Maybe<string | undefined>;
-                thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
-                thumbnailUri?: import("yup").Maybe<string | undefined>;
-                contentType: string;
-                storagePath: string;
-                uri: string;
-            } | undefined;
-            backgroundColor?: string | undefined;
-            likesCount?: number | null | undefined;
-            timerSeconds?: import("yup").Maybe<number | undefined>;
-            isSuggested?: boolean | undefined;
-            type: "link";
-            ordinal: number;
-            url: string;
-        } | {
-            recommendedForIssueIds?: string[] | undefined;
-            createdAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            updatedAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            prompt?: string | undefined;
-            setbackThreshold?: number | null | undefined;
-            uid?: string | undefined;
-            sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
-            sharedWithIssueIds?: string[] | undefined;
-            recommendedForIssueOrdinals?: {
-                [x: string]: number;
-            } | null | undefined;
-            isShared?: boolean | undefined;
-            description?: string | null | undefined;
-            pastTenseTitle?: string | undefined;
-            debriefAfterMinutes?: number | null | undefined;
-            image?: {
-                createdAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                updatedAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                content?: string | undefined;
-                localFilePath?: import("yup").Maybe<string | undefined>;
-                isDeleted?: boolean | undefined;
-                waveForm?: import("yup").Maybe<string | undefined>;
-                thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
-                thumbnailUri?: import("yup").Maybe<string | undefined>;
-                contentType: string;
-                storagePath: string;
-                uri: string;
-            } | undefined;
-            backgroundColor?: string | undefined;
-            likesCount?: number | null | undefined;
-            timerSeconds?: import("yup").Maybe<number | undefined>;
-            isSuggested?: boolean | undefined;
-            type: "notifyASupportPerson";
-            ordinal: number;
-            contactIds: string[];
-        } | {
-            recommendedForIssueIds?: string[] | undefined;
-            createdAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            updatedAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            prompt?: string | undefined;
-            setbackThreshold?: number | null | undefined;
-            uid?: string | undefined;
-            sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
-            sharedWithIssueIds?: string[] | undefined;
-            recommendedForIssueOrdinals?: {
-                [x: string]: number;
-            } | null | undefined;
-            isShared?: boolean | undefined;
-            description?: string | null | undefined;
-            pastTenseTitle?: string | undefined;
-            debriefAfterMinutes?: number | null | undefined;
-            image?: {
-                createdAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                updatedAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                content?: string | undefined;
-                localFilePath?: import("yup").Maybe<string | undefined>;
-                isDeleted?: boolean | undefined;
-                waveForm?: import("yup").Maybe<string | undefined>;
-                thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
-                thumbnailUri?: import("yup").Maybe<string | undefined>;
-                contentType: string;
-                storagePath: string;
-                uri: string;
-            } | undefined;
-            backgroundColor?: string | undefined;
-            likesCount?: number | null | undefined;
-            timerSeconds?: import("yup").Maybe<number | undefined>;
-            isSuggested?: boolean | undefined;
-            type: "notifySupportGroup";
-            ordinal: number;
-            supportGroup: import("../schema/utils/firestore").DocumentReferenceLike<unknown>;
-        } | {
-            recommendedForIssueIds?: string[] | undefined;
-            createdAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            updatedAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            prompt?: string | undefined;
-            setbackThreshold?: number | null | undefined;
-            uid?: string | undefined;
-            sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
-            sharedWithIssueIds?: string[] | undefined;
-            recommendedForIssueOrdinals?: {
-                [x: string]: number;
-            } | null | undefined;
-            isShared?: boolean | undefined;
-            description?: string | null | undefined;
-            pastTenseTitle?: string | undefined;
-            debriefAfterMinutes?: number | null | undefined;
-            image?: {
-                createdAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                updatedAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                content?: string | undefined;
-                localFilePath?: import("yup").Maybe<string | undefined>;
-                isDeleted?: boolean | undefined;
-                waveForm?: import("yup").Maybe<string | undefined>;
-                thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
-                thumbnailUri?: import("yup").Maybe<string | undefined>;
-                contentType: string;
-                storagePath: string;
-                uri: string;
-            } | undefined;
-            backgroundColor?: string | undefined;
-            likesCount?: number | null | undefined;
-            timerSeconds?: import("yup").Maybe<number | undefined>;
-            isSuggested?: boolean | undefined;
-            type: "steps";
-            ordinal: number;
-            targetSteps: number;
-        } | {
-            recommendedForIssueIds?: string[] | undefined;
-            createdAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            updatedAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            setbackThreshold?: number | null | undefined;
-            uid?: string | undefined;
-            sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
-            sharedWithIssueIds?: string[] | undefined;
-            recommendedForIssueOrdinals?: {
-                [x: string]: number;
-            } | null | undefined;
-            isShared?: boolean | undefined;
-            description?: string | null | undefined;
-            pastTenseTitle?: string | undefined;
-            debriefAfterMinutes?: number | null | undefined;
-            image?: {
-                createdAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                updatedAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                content?: string | undefined;
-                localFilePath?: import("yup").Maybe<string | undefined>;
-                isDeleted?: boolean | undefined;
-                waveForm?: import("yup").Maybe<string | undefined>;
-                thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
-                thumbnailUri?: import("yup").Maybe<string | undefined>;
-                contentType: string;
-                storagePath: string;
-                uri: string;
-            } | undefined;
-            backgroundColor?: string | undefined;
-            likesCount?: number | null | undefined;
-            timerSeconds?: import("yup").Maybe<number | undefined>;
-            isSuggested?: boolean | undefined;
-            prompt: string;
-            type: "task";
-            ordinal: number;
-        } | {
-            recommendedForIssueIds?: string[] | undefined;
-            createdAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            updatedAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            prompt?: string | undefined;
-            setbackThreshold?: number | null | undefined;
-            uid?: string | undefined;
-            sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
-            sharedWithIssueIds?: string[] | undefined;
-            recommendedForIssueOrdinals?: {
-                [x: string]: number;
-            } | null | undefined;
-            isShared?: boolean | undefined;
-            description?: string | null | undefined;
-            pastTenseTitle?: string | undefined;
-            debriefAfterMinutes?: number | null | undefined;
-            image?: {
-                createdAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                updatedAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                content?: string | undefined;
-                localFilePath?: import("yup").Maybe<string | undefined>;
-                isDeleted?: boolean | undefined;
-                waveForm?: import("yup").Maybe<string | undefined>;
-                thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
-                thumbnailUri?: import("yup").Maybe<string | undefined>;
-                contentType: string;
-                storagePath: string;
-                uri: string;
-            } | undefined;
-            backgroundColor?: string | undefined;
-            likesCount?: number | null | undefined;
-            timerSeconds?: import("yup").Maybe<number | undefined>;
-            isSuggested?: boolean | undefined;
-            type: "video";
-            ordinal: number;
-            video: {
-                storagePath?: string | null | undefined;
-                url?: string | null | undefined;
-            };
-        }) | import("yup").Maybe<{} | undefined>;
-        tacticData?: {
-            [x: string]: {} | undefined;
-        } | null | undefined;
-        isGptSender?: boolean | undefined;
         senderUid?: string | null | undefined;
-        pressedImpulseButton?: boolean | undefined;
         type: "regular";
         uid: string;
-        tacticsById: {
-            [x: string]: {
-                recommendedForIssueIds?: string[] | undefined;
-                createdAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                updatedAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                prompt?: string | undefined;
-                setbackThreshold?: number | null | undefined;
-                uid?: string | undefined;
-                sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                sharedWithIssueIds?: string[] | undefined;
-                recommendedForIssueOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                isShared?: boolean | undefined;
-                description?: string | null | undefined;
-                pastTenseTitle?: string | undefined;
-                debriefAfterMinutes?: number | null | undefined;
-                image?: {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    content?: string | undefined;
-                    localFilePath?: import("yup").Maybe<string | undefined>;
-                    isDeleted?: boolean | undefined;
-                    waveForm?: import("yup").Maybe<string | undefined>;
-                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
-                    thumbnailUri?: import("yup").Maybe<string | undefined>;
-                    contentType: string;
-                    storagePath: string;
-                    uri: string;
-                } | undefined;
-                backgroundColor?: string | undefined;
-                likesCount?: number | null | undefined;
-                timerSeconds?: import("yup").Maybe<number | undefined>;
-                isSuggested?: boolean | undefined;
-                type: "audio";
-                ordinal: number;
-                recording: {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    content?: string | undefined;
-                    localFilePath?: import("yup").Maybe<string | undefined>;
-                    isDeleted?: boolean | undefined;
-                    waveForm?: import("yup").Maybe<string | undefined>;
-                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
-                    thumbnailUri?: import("yup").Maybe<string | undefined>;
-                    contentType: string;
-                    storagePath: string;
-                    uri: string;
-                };
-            } | {
-                recommendedForIssueIds?: string[] | undefined;
-                createdAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                updatedAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                prompt?: string | undefined;
-                setbackThreshold?: number | null | undefined;
-                repeat?: import("yup").Maybe<number | undefined>;
-                uid?: string | undefined;
-                sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                sharedWithIssueIds?: string[] | undefined;
-                recommendedForIssueOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                isShared?: boolean | undefined;
-                description?: string | null | undefined;
-                pastTenseTitle?: string | undefined;
-                debriefAfterMinutes?: number | null | undefined;
-                image?: {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    content?: string | undefined;
-                    localFilePath?: import("yup").Maybe<string | undefined>;
-                    isDeleted?: boolean | undefined;
-                    waveForm?: import("yup").Maybe<string | undefined>;
-                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
-                    thumbnailUri?: import("yup").Maybe<string | undefined>;
-                    contentType: string;
-                    storagePath: string;
-                    uri: string;
-                } | undefined;
-                backgroundColor?: string | undefined;
-                likesCount?: number | null | undefined;
-                timerSeconds?: import("yup").Maybe<number | undefined>;
-                isSuggested?: boolean | undefined;
-                type: "breathingExercise";
-                ordinal: number;
-                inFor: number;
-                holdFor: number;
-                outFor: number;
-            } | {
-                recommendedForIssueIds?: string[] | undefined;
-                createdAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                updatedAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                prompt?: string | undefined;
-                setbackThreshold?: number | null | undefined;
-                uid?: string | undefined;
-                sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                sharedWithIssueIds?: string[] | undefined;
-                recommendedForIssueOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                isShared?: boolean | undefined;
-                description?: string | null | undefined;
-                pastTenseTitle?: string | undefined;
-                debriefAfterMinutes?: number | null | undefined;
-                image?: {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    content?: string | undefined;
-                    localFilePath?: import("yup").Maybe<string | undefined>;
-                    isDeleted?: boolean | undefined;
-                    waveForm?: import("yup").Maybe<string | undefined>;
-                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
-                    thumbnailUri?: import("yup").Maybe<string | undefined>;
-                    contentType: string;
-                    storagePath: string;
-                    uri: string;
-                } | undefined;
-                backgroundColor?: string | undefined;
-                likesCount?: number | null | undefined;
-                timerSeconds?: import("yup").Maybe<number | undefined>;
-                isSuggested?: boolean | undefined;
-                type: "link";
-                ordinal: number;
-                url: string;
-            } | {
-                recommendedForIssueIds?: string[] | undefined;
-                createdAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                updatedAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                prompt?: string | undefined;
-                setbackThreshold?: number | null | undefined;
-                uid?: string | undefined;
-                sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                sharedWithIssueIds?: string[] | undefined;
-                recommendedForIssueOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                isShared?: boolean | undefined;
-                description?: string | null | undefined;
-                pastTenseTitle?: string | undefined;
-                debriefAfterMinutes?: number | null | undefined;
-                image?: {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    content?: string | undefined;
-                    localFilePath?: import("yup").Maybe<string | undefined>;
-                    isDeleted?: boolean | undefined;
-                    waveForm?: import("yup").Maybe<string | undefined>;
-                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
-                    thumbnailUri?: import("yup").Maybe<string | undefined>;
-                    contentType: string;
-                    storagePath: string;
-                    uri: string;
-                } | undefined;
-                backgroundColor?: string | undefined;
-                likesCount?: number | null | undefined;
-                timerSeconds?: import("yup").Maybe<number | undefined>;
-                isSuggested?: boolean | undefined;
-                type: "notifyASupportPerson";
-                ordinal: number;
-                contactIds: string[];
-            } | {
-                recommendedForIssueIds?: string[] | undefined;
-                createdAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                updatedAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                prompt?: string | undefined;
-                setbackThreshold?: number | null | undefined;
-                uid?: string | undefined;
-                sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                sharedWithIssueIds?: string[] | undefined;
-                recommendedForIssueOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                isShared?: boolean | undefined;
-                description?: string | null | undefined;
-                pastTenseTitle?: string | undefined;
-                debriefAfterMinutes?: number | null | undefined;
-                image?: {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    content?: string | undefined;
-                    localFilePath?: import("yup").Maybe<string | undefined>;
-                    isDeleted?: boolean | undefined;
-                    waveForm?: import("yup").Maybe<string | undefined>;
-                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
-                    thumbnailUri?: import("yup").Maybe<string | undefined>;
-                    contentType: string;
-                    storagePath: string;
-                    uri: string;
-                } | undefined;
-                backgroundColor?: string | undefined;
-                likesCount?: number | null | undefined;
-                timerSeconds?: import("yup").Maybe<number | undefined>;
-                isSuggested?: boolean | undefined;
-                type: "notifySupportGroup";
-                ordinal: number;
-                supportGroup: import("../schema/utils/firestore").DocumentReferenceLike<unknown>;
-            } | {
-                recommendedForIssueIds?: string[] | undefined;
-                createdAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                updatedAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                prompt?: string | undefined;
-                setbackThreshold?: number | null | undefined;
-                uid?: string | undefined;
-                sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                sharedWithIssueIds?: string[] | undefined;
-                recommendedForIssueOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                isShared?: boolean | undefined;
-                description?: string | null | undefined;
-                pastTenseTitle?: string | undefined;
-                debriefAfterMinutes?: number | null | undefined;
-                image?: {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    content?: string | undefined;
-                    localFilePath?: import("yup").Maybe<string | undefined>;
-                    isDeleted?: boolean | undefined;
-                    waveForm?: import("yup").Maybe<string | undefined>;
-                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
-                    thumbnailUri?: import("yup").Maybe<string | undefined>;
-                    contentType: string;
-                    storagePath: string;
-                    uri: string;
-                } | undefined;
-                backgroundColor?: string | undefined;
-                likesCount?: number | null | undefined;
-                timerSeconds?: import("yup").Maybe<number | undefined>;
-                isSuggested?: boolean | undefined;
-                type: "steps";
-                ordinal: number;
-                targetSteps: number;
-            } | {
-                recommendedForIssueIds?: string[] | undefined;
-                createdAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                updatedAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                setbackThreshold?: number | null | undefined;
-                uid?: string | undefined;
-                sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                sharedWithIssueIds?: string[] | undefined;
-                recommendedForIssueOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                isShared?: boolean | undefined;
-                description?: string | null | undefined;
-                pastTenseTitle?: string | undefined;
-                debriefAfterMinutes?: number | null | undefined;
-                image?: {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    content?: string | undefined;
-                    localFilePath?: import("yup").Maybe<string | undefined>;
-                    isDeleted?: boolean | undefined;
-                    waveForm?: import("yup").Maybe<string | undefined>;
-                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
-                    thumbnailUri?: import("yup").Maybe<string | undefined>;
-                    contentType: string;
-                    storagePath: string;
-                    uri: string;
-                } | undefined;
-                backgroundColor?: string | undefined;
-                likesCount?: number | null | undefined;
-                timerSeconds?: import("yup").Maybe<number | undefined>;
-                isSuggested?: boolean | undefined;
-                prompt: string;
-                type: "task";
-                ordinal: number;
-            } | {
-                recommendedForIssueIds?: string[] | undefined;
-                createdAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                updatedAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                prompt?: string | undefined;
-                setbackThreshold?: number | null | undefined;
-                uid?: string | undefined;
-                sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                sharedWithIssueIds?: string[] | undefined;
-                recommendedForIssueOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                isShared?: boolean | undefined;
-                description?: string | null | undefined;
-                pastTenseTitle?: string | undefined;
-                debriefAfterMinutes?: number | null | undefined;
-                image?: {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    content?: string | undefined;
-                    localFilePath?: import("yup").Maybe<string | undefined>;
-                    isDeleted?: boolean | undefined;
-                    waveForm?: import("yup").Maybe<string | undefined>;
-                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
-                    thumbnailUri?: import("yup").Maybe<string | undefined>;
-                    contentType: string;
-                    storagePath: string;
-                    uri: string;
-                } | undefined;
-                backgroundColor?: string | undefined;
-                likesCount?: number | null | undefined;
-                timerSeconds?: import("yup").Maybe<number | undefined>;
-                isSuggested?: boolean | undefined;
-                type: "video";
-                ordinal: number;
-                video: {
-                    storagePath?: string | null | undefined;
-                    url?: string | null | undefined;
-                };
-            };
-        };
         completedTacticIds: string[];
         date: {
             isEqual?: any;
@@ -1156,7 +121,7 @@ export declare const factories: {
             toDate: Function;
         };
         dateString: string;
-    }, "type" | "uid" | "tacticsById" | "completedTacticIds" | "date" | "dateString" | ("createdAt" | "updatedAt" | "submittedAt" | "audioFile" | "audioDurationSeconds" | "audioWaveform" | "issueId" | "issueName" | "behaviorsById" | "behaviorData" | "blandPathwayChatId" | "text" | "profileEmojiIDString" | "tacticId" | "tactic" | "tacticData" | "isGptSender" | "senderUid" | "pressedImpulseButton")>;
+    }, "type" | "uid" | "completedTacticIds" | "date" | "dateString" | ("createdAt" | "updatedAt" | "behaviorData" | "audioFile" | "emotionData" | "text" | "senderUid")>;
     counterBehaviorFactory: import("factory.ts").Factory<{
         recommendedForIssueIds?: string[] | undefined;
         createdAt?: {
@@ -1202,7 +167,7 @@ export declare const factories: {
         ordinal: number;
     }, "prompt" | "type" | "ordinal" | ("recommendedForIssueIds" | "createdAt" | "updatedAt" | "templateFor" | "setbackThreshold")>;
     applicationFactory: import("factory.ts").Factory<import("..").ApplicationValue, keyof import("..").ApplicationValue>;
-    dayFactory: import("factory.ts").Factory<import("..").DayValue, "date" | "issueName" | "behaviorsById" | "logsById" | "summary">;
+    dayFactory: import("factory.ts").Factory<import("..").DayValue, "date" | "issueName" | "logsById" | "behaviorsById" | "summary">;
     issueFactory: import("factory.ts").Factory<{
         path?: string | null | undefined;
         createdAt?: {
@@ -1490,10 +455,9 @@ export declare const factories: {
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
-                    content?: string | undefined;
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
-                    waveForm?: import("yup").Maybe<string | undefined>;
+                    metadata?: {} | null | undefined;
                     thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                     thumbnailUri?: import("yup").Maybe<string | undefined>;
                     contentType: string;
@@ -1521,10 +485,9 @@ export declare const factories: {
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
-                    content?: string | undefined;
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
-                    waveForm?: import("yup").Maybe<string | undefined>;
+                    metadata?: {} | null | undefined;
                     thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                     thumbnailUri?: import("yup").Maybe<string | undefined>;
                     contentType: string;
@@ -1575,10 +538,9 @@ export declare const factories: {
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
-                    content?: string | undefined;
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
-                    waveForm?: import("yup").Maybe<string | undefined>;
+                    metadata?: {} | null | undefined;
                     thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                     thumbnailUri?: import("yup").Maybe<string | undefined>;
                     contentType: string;
@@ -1637,10 +599,9 @@ export declare const factories: {
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
-                    content?: string | undefined;
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
-                    waveForm?: import("yup").Maybe<string | undefined>;
+                    metadata?: {} | null | undefined;
                     thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                     thumbnailUri?: import("yup").Maybe<string | undefined>;
                     contentType: string;
@@ -1697,10 +658,9 @@ export declare const factories: {
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
-                    content?: string | undefined;
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
-                    waveForm?: import("yup").Maybe<string | undefined>;
+                    metadata?: {} | null | undefined;
                     thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                     thumbnailUri?: import("yup").Maybe<string | undefined>;
                     contentType: string;
@@ -1757,10 +717,9 @@ export declare const factories: {
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
-                    content?: string | undefined;
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
-                    waveForm?: import("yup").Maybe<string | undefined>;
+                    metadata?: {} | null | undefined;
                     thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                     thumbnailUri?: import("yup").Maybe<string | undefined>;
                     contentType: string;
@@ -1817,10 +776,9 @@ export declare const factories: {
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
-                    content?: string | undefined;
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
-                    waveForm?: import("yup").Maybe<string | undefined>;
+                    metadata?: {} | null | undefined;
                     thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                     thumbnailUri?: import("yup").Maybe<string | undefined>;
                     contentType: string;
@@ -1876,10 +834,9 @@ export declare const factories: {
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
-                    content?: string | undefined;
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
-                    waveForm?: import("yup").Maybe<string | undefined>;
+                    metadata?: {} | null | undefined;
                     thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                     thumbnailUri?: import("yup").Maybe<string | undefined>;
                     contentType: string;
@@ -1936,10 +893,9 @@ export declare const factories: {
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
-                    content?: string | undefined;
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
-                    waveForm?: import("yup").Maybe<string | undefined>;
+                    metadata?: {} | null | undefined;
                     thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                     thumbnailUri?: import("yup").Maybe<string | undefined>;
                     contentType: string;
@@ -2007,10 +963,9 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                content?: string | undefined;
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 isDeleted?: boolean | undefined;
-                waveForm?: import("yup").Maybe<string | undefined>;
+                metadata?: {} | null | undefined;
                 thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                 thumbnailUri?: import("yup").Maybe<string | undefined>;
                 contentType: string;
@@ -2038,10 +993,9 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                content?: string | undefined;
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 isDeleted?: boolean | undefined;
-                waveForm?: import("yup").Maybe<string | undefined>;
+                metadata?: {} | null | undefined;
                 thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                 thumbnailUri?: import("yup").Maybe<string | undefined>;
                 contentType: string;
@@ -2092,10 +1046,9 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                content?: string | undefined;
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 isDeleted?: boolean | undefined;
-                waveForm?: import("yup").Maybe<string | undefined>;
+                metadata?: {} | null | undefined;
                 thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                 thumbnailUri?: import("yup").Maybe<string | undefined>;
                 contentType: string;
@@ -2154,10 +1107,9 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                content?: string | undefined;
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 isDeleted?: boolean | undefined;
-                waveForm?: import("yup").Maybe<string | undefined>;
+                metadata?: {} | null | undefined;
                 thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                 thumbnailUri?: import("yup").Maybe<string | undefined>;
                 contentType: string;
@@ -2214,10 +1166,9 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                content?: string | undefined;
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 isDeleted?: boolean | undefined;
-                waveForm?: import("yup").Maybe<string | undefined>;
+                metadata?: {} | null | undefined;
                 thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                 thumbnailUri?: import("yup").Maybe<string | undefined>;
                 contentType: string;
@@ -2274,10 +1225,9 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                content?: string | undefined;
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 isDeleted?: boolean | undefined;
-                waveForm?: import("yup").Maybe<string | undefined>;
+                metadata?: {} | null | undefined;
                 thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                 thumbnailUri?: import("yup").Maybe<string | undefined>;
                 contentType: string;
@@ -2334,10 +1284,9 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                content?: string | undefined;
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 isDeleted?: boolean | undefined;
-                waveForm?: import("yup").Maybe<string | undefined>;
+                metadata?: {} | null | undefined;
                 thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                 thumbnailUri?: import("yup").Maybe<string | undefined>;
                 contentType: string;
@@ -2393,10 +1342,9 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                content?: string | undefined;
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 isDeleted?: boolean | undefined;
-                waveForm?: import("yup").Maybe<string | undefined>;
+                metadata?: {} | null | undefined;
                 thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                 thumbnailUri?: import("yup").Maybe<string | undefined>;
                 contentType: string;
@@ -2453,10 +1401,9 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                content?: string | undefined;
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 isDeleted?: boolean | undefined;
-                waveForm?: import("yup").Maybe<string | undefined>;
+                metadata?: {} | null | undefined;
                 thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                 thumbnailUri?: import("yup").Maybe<string | undefined>;
                 contentType: string;
@@ -2607,10 +1554,9 @@ export declare const factories: {
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
-                        content?: string | undefined;
                         localFilePath?: import("yup").Maybe<string | undefined>;
                         isDeleted?: boolean | undefined;
-                        waveForm?: import("yup").Maybe<string | undefined>;
+                        metadata?: {} | null | undefined;
                         thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                         thumbnailUri?: import("yup").Maybe<string | undefined>;
                         contentType: string;
@@ -2638,10 +1584,9 @@ export declare const factories: {
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
-                        content?: string | undefined;
                         localFilePath?: import("yup").Maybe<string | undefined>;
                         isDeleted?: boolean | undefined;
-                        waveForm?: import("yup").Maybe<string | undefined>;
+                        metadata?: {} | null | undefined;
                         thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                         thumbnailUri?: import("yup").Maybe<string | undefined>;
                         contentType: string;
@@ -2692,10 +1637,9 @@ export declare const factories: {
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
-                        content?: string | undefined;
                         localFilePath?: import("yup").Maybe<string | undefined>;
                         isDeleted?: boolean | undefined;
-                        waveForm?: import("yup").Maybe<string | undefined>;
+                        metadata?: {} | null | undefined;
                         thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                         thumbnailUri?: import("yup").Maybe<string | undefined>;
                         contentType: string;
@@ -2754,10 +1698,9 @@ export declare const factories: {
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
-                        content?: string | undefined;
                         localFilePath?: import("yup").Maybe<string | undefined>;
                         isDeleted?: boolean | undefined;
-                        waveForm?: import("yup").Maybe<string | undefined>;
+                        metadata?: {} | null | undefined;
                         thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                         thumbnailUri?: import("yup").Maybe<string | undefined>;
                         contentType: string;
@@ -2814,10 +1757,9 @@ export declare const factories: {
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
-                        content?: string | undefined;
                         localFilePath?: import("yup").Maybe<string | undefined>;
                         isDeleted?: boolean | undefined;
-                        waveForm?: import("yup").Maybe<string | undefined>;
+                        metadata?: {} | null | undefined;
                         thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                         thumbnailUri?: import("yup").Maybe<string | undefined>;
                         contentType: string;
@@ -2874,10 +1816,9 @@ export declare const factories: {
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
-                        content?: string | undefined;
                         localFilePath?: import("yup").Maybe<string | undefined>;
                         isDeleted?: boolean | undefined;
-                        waveForm?: import("yup").Maybe<string | undefined>;
+                        metadata?: {} | null | undefined;
                         thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                         thumbnailUri?: import("yup").Maybe<string | undefined>;
                         contentType: string;
@@ -2934,10 +1875,9 @@ export declare const factories: {
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
-                        content?: string | undefined;
                         localFilePath?: import("yup").Maybe<string | undefined>;
                         isDeleted?: boolean | undefined;
-                        waveForm?: import("yup").Maybe<string | undefined>;
+                        metadata?: {} | null | undefined;
                         thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                         thumbnailUri?: import("yup").Maybe<string | undefined>;
                         contentType: string;
@@ -2993,10 +1933,9 @@ export declare const factories: {
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
-                        content?: string | undefined;
                         localFilePath?: import("yup").Maybe<string | undefined>;
                         isDeleted?: boolean | undefined;
-                        waveForm?: import("yup").Maybe<string | undefined>;
+                        metadata?: {} | null | undefined;
                         thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                         thumbnailUri?: import("yup").Maybe<string | undefined>;
                         contentType: string;
@@ -3053,10 +1992,9 @@ export declare const factories: {
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
-                        content?: string | undefined;
                         localFilePath?: import("yup").Maybe<string | undefined>;
                         isDeleted?: boolean | undefined;
-                        waveForm?: import("yup").Maybe<string | undefined>;
+                        metadata?: {} | null | undefined;
                         thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                         thumbnailUri?: import("yup").Maybe<string | undefined>;
                         contentType: string;
@@ -3124,10 +2062,9 @@ export declare const factories: {
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
-                    content?: string | undefined;
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
-                    waveForm?: import("yup").Maybe<string | undefined>;
+                    metadata?: {} | null | undefined;
                     thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                     thumbnailUri?: import("yup").Maybe<string | undefined>;
                     contentType: string;
@@ -3155,10 +2092,9 @@ export declare const factories: {
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
-                    content?: string | undefined;
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
-                    waveForm?: import("yup").Maybe<string | undefined>;
+                    metadata?: {} | null | undefined;
                     thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                     thumbnailUri?: import("yup").Maybe<string | undefined>;
                     contentType: string;
@@ -3209,10 +2145,9 @@ export declare const factories: {
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
-                    content?: string | undefined;
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
-                    waveForm?: import("yup").Maybe<string | undefined>;
+                    metadata?: {} | null | undefined;
                     thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                     thumbnailUri?: import("yup").Maybe<string | undefined>;
                     contentType: string;
@@ -3271,10 +2206,9 @@ export declare const factories: {
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
-                    content?: string | undefined;
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
-                    waveForm?: import("yup").Maybe<string | undefined>;
+                    metadata?: {} | null | undefined;
                     thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                     thumbnailUri?: import("yup").Maybe<string | undefined>;
                     contentType: string;
@@ -3331,10 +2265,9 @@ export declare const factories: {
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
-                    content?: string | undefined;
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
-                    waveForm?: import("yup").Maybe<string | undefined>;
+                    metadata?: {} | null | undefined;
                     thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                     thumbnailUri?: import("yup").Maybe<string | undefined>;
                     contentType: string;
@@ -3391,10 +2324,9 @@ export declare const factories: {
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
-                    content?: string | undefined;
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
-                    waveForm?: import("yup").Maybe<string | undefined>;
+                    metadata?: {} | null | undefined;
                     thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                     thumbnailUri?: import("yup").Maybe<string | undefined>;
                     contentType: string;
@@ -3451,10 +2383,9 @@ export declare const factories: {
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
-                    content?: string | undefined;
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
-                    waveForm?: import("yup").Maybe<string | undefined>;
+                    metadata?: {} | null | undefined;
                     thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                     thumbnailUri?: import("yup").Maybe<string | undefined>;
                     contentType: string;
@@ -3510,10 +2441,9 @@ export declare const factories: {
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
-                    content?: string | undefined;
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
-                    waveForm?: import("yup").Maybe<string | undefined>;
+                    metadata?: {} | null | undefined;
                     thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                     thumbnailUri?: import("yup").Maybe<string | undefined>;
                     contentType: string;
@@ -3570,10 +2500,9 @@ export declare const factories: {
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
-                    content?: string | undefined;
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
-                    waveForm?: import("yup").Maybe<string | undefined>;
+                    metadata?: {} | null | undefined;
                     thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                     thumbnailUri?: import("yup").Maybe<string | undefined>;
                     contentType: string;

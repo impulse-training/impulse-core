@@ -1,4 +1,5 @@
 import * as yup from 'yup';
+import { behaviorSchema } from '../../behavior';
 import { setbackThresholdMixin } from '../../behavior/utils/setbackThreshold';
 import { timestampSchema } from '../../utils/timestamp';
 
@@ -17,4 +18,13 @@ export const behaviorDataSchema = yup.object({
   setAt: timestampSchema,
   ...setbackThresholdMixin,
 });
+
+export const behaviorAndBehaviorDataSchema = yup.object({
+  behavior: behaviorSchema,
+  behaviorData: behaviorDataSchema,
+});
+
 export type BehaviorDataValue = yup.InferType<typeof behaviorDataSchema>;
+export type BehaviorAndBehaviorDataValue = yup.InferType<
+  typeof behaviorDataSchema
+>;

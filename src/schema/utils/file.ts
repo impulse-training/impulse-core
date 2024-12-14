@@ -7,12 +7,10 @@ export const fileSchema = yup.object({
   contentType: yup.string().required(),
   storagePath: yup.string().required(),
   uri: yup.string().required(),
-  content: yup.string(),
   localFilePath: yup.string().notRequired(),
   isDeleted: yup.boolean(),
-  // Add an optional field to store audio waveform
-  waveForm: yup.string().notRequired(),
-
+  // Can be anything, in future we could type this better
+  metadata: yup.object().notRequired(),
   thumbnailStoragePath: yup.string().notRequired(),
   thumbnailUri: yup.string().notRequired(),
 });
