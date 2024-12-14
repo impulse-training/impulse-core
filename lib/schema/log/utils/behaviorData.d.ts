@@ -74,7 +74,7 @@ export declare const behaviorAndBehaviorDataSchema: yup.ObjectSchema<{
         type: "time";
         ordinal: number;
     };
-    behaviorData: {
+    data: {
         setbackThreshold?: number | undefined;
         label?: string | undefined;
         idValue?: string | undefined;
@@ -92,7 +92,7 @@ export declare const behaviorAndBehaviorDataSchema: yup.ObjectSchema<{
     };
 }, yup.AnyObject, {
     behavior: undefined;
-    behaviorData: {
+    data: {
         setbackThreshold: undefined;
         idValue: undefined;
         numericValue: undefined;
@@ -110,4 +110,4 @@ export declare const behaviorAndBehaviorDataSchema: yup.ObjectSchema<{
     };
 }, "">;
 export type BehaviorDataValue = yup.InferType<typeof behaviorDataSchema>;
-export type BehaviorAndBehaviorDataValue = yup.InferType<typeof behaviorDataSchema>;
+export type BehaviorAndBehaviorDataValue = yup.InferType<typeof behaviorAndBehaviorDataSchema>;

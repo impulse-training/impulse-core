@@ -40,7 +40,6 @@ export declare const regularLogSchema: yup.ObjectSchema<{
         storagePath: string;
         uri: string;
     } | undefined;
-    completedTacticIds: string[];
     emotionData: {
         [x: string]: {
             label: string;
@@ -93,7 +92,7 @@ export declare const regularLogSchema: yup.ObjectSchema<{
                 type: "time";
                 ordinal: number;
             };
-            behaviorData: {
+            data: {
                 setbackThreshold?: number | undefined;
                 label?: string | undefined;
                 idValue?: string | undefined;
@@ -111,7 +110,7 @@ export declare const regularLogSchema: yup.ObjectSchema<{
             };
         };
     } | null | undefined;
-    text: string | undefined;
+    text: string | null | undefined;
     date: {
         isEqual?: any;
         toMillis?: any;
@@ -120,6 +119,7 @@ export declare const regularLogSchema: yup.ObjectSchema<{
         toDate: Function;
     };
     dateString: string;
+    role: NonNullable<"user" | "assistant" | "system" | "tool" | undefined>;
     senderUid: string | null | undefined;
 }, yup.AnyObject, {
     createdAt: undefined;
@@ -127,7 +127,6 @@ export declare const regularLogSchema: yup.ObjectSchema<{
     type: undefined;
     uid: undefined;
     audioFile: undefined;
-    completedTacticIds: "";
     emotionData: undefined;
     behaviorData: undefined;
     text: undefined;
@@ -139,6 +138,7 @@ export declare const regularLogSchema: yup.ObjectSchema<{
         toDate: undefined;
     };
     dateString: undefined;
+    role: undefined;
     senderUid: undefined;
 }, "">;
 export type RegularLogValue = yup.InferType<typeof regularLogSchema>;

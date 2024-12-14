@@ -21,10 +21,10 @@ export const behaviorDataSchema = yup.object({
 
 export const behaviorAndBehaviorDataSchema = yup.object({
   behavior: behaviorSchema,
-  behaviorData: behaviorDataSchema,
+  data: behaviorDataSchema,
 });
 
 export type BehaviorDataValue = yup.InferType<typeof behaviorDataSchema>;
 export type BehaviorAndBehaviorDataValue = yup.InferType<
-  typeof behaviorDataSchema
+  typeof behaviorAndBehaviorDataSchema
 >;

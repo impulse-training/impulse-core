@@ -14,6 +14,37 @@ export declare const factories: {
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
+        audioFile?: {
+            createdAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            localFilePath?: import("yup").Maybe<string | undefined>;
+            isDeleted?: boolean | undefined;
+            metadata?: {} | null | undefined;
+            thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+            thumbnailUri?: import("yup").Maybe<string | undefined>;
+            contentType: string;
+            storagePath: string;
+            uri: string;
+        } | undefined;
+        emotionData?: {
+            [x: string]: {
+                label: string;
+                iconName: string;
+                intensity: number | null;
+            };
+        } | null | undefined;
         behaviorData?: {
             [x: string]: {
                 behavior: {
@@ -59,7 +90,7 @@ export declare const factories: {
                     type: "time";
                     ordinal: number;
                 };
-                behaviorData: {
+                data: {
                     setbackThreshold?: number | undefined;
                     label?: string | undefined;
                     idValue?: string | undefined;
@@ -77,42 +108,10 @@ export declare const factories: {
                 };
             };
         } | null | undefined;
-        audioFile?: {
-            createdAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            updatedAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            localFilePath?: import("yup").Maybe<string | undefined>;
-            isDeleted?: boolean | undefined;
-            metadata?: {} | null | undefined;
-            thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
-            thumbnailUri?: import("yup").Maybe<string | undefined>;
-            contentType: string;
-            storagePath: string;
-            uri: string;
-        } | undefined;
-        emotionData?: {
-            [x: string]: {
-                label: string;
-                iconName: string;
-                intensity: number | null;
-            };
-        } | null | undefined;
-        text?: string | undefined;
+        text?: string | null | undefined;
         senderUid?: string | null | undefined;
         type: "regular";
         uid: string;
-        completedTacticIds: string[];
         date: {
             isEqual?: any;
             toMillis?: any;
@@ -121,7 +120,8 @@ export declare const factories: {
             toDate: Function;
         };
         dateString: string;
-    }, "type" | "uid" | "completedTacticIds" | "date" | "dateString" | ("createdAt" | "updatedAt" | "behaviorData" | "audioFile" | "emotionData" | "text" | "senderUid")>;
+        role: NonNullable<"user" | "assistant" | "system" | "tool" | undefined>;
+    }, "type" | "uid" | "date" | "dateString" | "role" | ("createdAt" | "updatedAt" | "audioFile" | "emotionData" | "behaviorData" | "text" | "senderUid")>;
     counterBehaviorFactory: import("factory.ts").Factory<{
         recommendedForIssueIds?: string[] | undefined;
         createdAt?: {

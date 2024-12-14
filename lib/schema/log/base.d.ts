@@ -40,7 +40,6 @@ export declare function logBaseSchema<K extends string>(type: K): yup.ObjectSche
         storagePath: string;
         uri: string;
     } | undefined;
-    completedTacticIds: string[];
     emotionData: {
         [x: string]: {
             label: string;
@@ -93,7 +92,7 @@ export declare function logBaseSchema<K extends string>(type: K): yup.ObjectSche
                 type: "time";
                 ordinal: number;
             };
-            behaviorData: {
+            data: {
                 setbackThreshold?: number | undefined;
                 label?: string | undefined;
                 idValue?: string | undefined;
@@ -111,7 +110,7 @@ export declare function logBaseSchema<K extends string>(type: K): yup.ObjectSche
             };
         };
     } | null | undefined;
-    text: string | undefined;
+    text: string | null | undefined;
     date: {
         isEqual?: any;
         toMillis?: any;
@@ -120,6 +119,7 @@ export declare function logBaseSchema<K extends string>(type: K): yup.ObjectSche
         toDate: Function;
     };
     dateString: string;
+    role: NonNullable<"user" | "assistant" | "system" | "tool" | undefined>;
     senderUid: string | null | undefined;
 }, yup.AnyObject, {
     createdAt: undefined;
@@ -127,7 +127,6 @@ export declare function logBaseSchema<K extends string>(type: K): yup.ObjectSche
     type: undefined;
     uid: undefined;
     audioFile: undefined;
-    completedTacticIds: "";
     emotionData: undefined;
     behaviorData: undefined;
     text: undefined;
@@ -139,5 +138,6 @@ export declare function logBaseSchema<K extends string>(type: K): yup.ObjectSche
         toDate: undefined;
     };
     dateString: undefined;
+    role: undefined;
     senderUid: undefined;
 }, "">;

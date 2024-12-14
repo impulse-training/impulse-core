@@ -14,13 +14,13 @@ export function logTextForGpt(log: LogValue): string {
 
   if (log.behaviorData) {
     const behaviorsDescription = compact(
-      flatMap(log.behaviorData, ({ behavior, behaviorData }) => {
+      flatMap(log.behaviorData, ({ behavior, data }) => {
         const prompt = behavior.prompt;
-        const goalText = behaviorData?.setbackThreshold
-          ? ` (goal is ${behaviorData.setbackThreshold} or less)`
+        const goalText = data?.setbackThreshold
+          ? ` (goal is ${data.setbackThreshold} or less)`
           : '';
-        if (!behaviorData) return null;
-        return [prompt + goalText, behaviorData.stringValue].join(': ');
+        if (!data) return null;
+        return [prompt + goalText, data.stringValue].join(': ');
       })
     );
     text += behaviorsDescription.join(SEPARATOR);

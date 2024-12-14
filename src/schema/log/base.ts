@@ -1,5 +1,4 @@
 import * as yup from 'yup';
-import { requiredStringArray } from '../utils/array';
 import { fileSchema } from '../utils/file';
 import { optionalObjectOf } from '../utils/objectOf';
 import { optionalTimestampSchema, timestampSchema } from '../utils/timestamp';
@@ -13,14 +12,18 @@ export function logBaseSchema<K extends string>(type: K) {
     type: yup.mixed<K>().oneOf([type]).defined(),
     uid: yup.string().required(),
     audioFile: fileSchema.optional().default(undefined),
-    completedTacticIds: requiredStringArray,
 
     // We deal with emotions and behaviors separately
     emotionData: optionalObjectOf(emotionDataSchema),
     behaviorData: optionalObjectOf(behaviorAndBehaviorDataSchema),
-    text: yup.string(),
+    text: yup.string().nullable(),
     date: timestampSchema,
     dateString: yup.string().required(),
+
+    role: yup
+      .mixed<'user' | 'assistant' | 'system' | 'tool'>()
+      .oneOf(['assistant', 'user', 'system', 'tool'])
+      .required(),
 
     // tacticId: yup.string().nullable(),
     // tactic: yup.lazy((_value, options) => {

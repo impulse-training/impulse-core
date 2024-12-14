@@ -7,10 +7,10 @@ export const makeLogFactories = (TimestampKlass: typeof TimestampLike) => ({
     uid: '1',
     senderUid: Factory.each(i => i.toString()),
     type: 'regular',
+    role: 'user',
     createdAt: TimestampKlass.now(),
     updatedAt: TimestampKlass.now(),
     date: TimestampKlass.now(),
     dateString: '2024-01-01',
-    completedTacticIds: [],
   }),
 });

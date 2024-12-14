@@ -25,6 +25,37 @@ export declare const daySchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
+            audioFile?: {
+                createdAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                updatedAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                localFilePath?: yup.Maybe<string | undefined>;
+                isDeleted?: boolean | undefined;
+                metadata?: {} | null | undefined;
+                thumbnailStoragePath?: yup.Maybe<string | undefined>;
+                thumbnailUri?: yup.Maybe<string | undefined>;
+                contentType: string;
+                storagePath: string;
+                uri: string;
+            } | undefined;
+            emotionData?: {
+                [x: string]: {
+                    label: string;
+                    iconName: string;
+                    intensity: number | null;
+                };
+            } | null | undefined;
             behaviorData?: {
                 [x: string]: {
                     behavior: {
@@ -70,7 +101,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         type: "time";
                         ordinal: number;
                     };
-                    behaviorData: {
+                    data: {
                         setbackThreshold?: number | undefined;
                         label?: string | undefined;
                         idValue?: string | undefined;
@@ -88,42 +119,10 @@ export declare const daySchema: yup.ObjectSchema<{
                     };
                 };
             } | null | undefined;
-            audioFile?: {
-                createdAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                updatedAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                localFilePath?: yup.Maybe<string | undefined>;
-                isDeleted?: boolean | undefined;
-                metadata?: {} | null | undefined;
-                thumbnailStoragePath?: yup.Maybe<string | undefined>;
-                thumbnailUri?: yup.Maybe<string | undefined>;
-                contentType: string;
-                storagePath: string;
-                uri: string;
-            } | undefined;
-            emotionData?: {
-                [x: string]: {
-                    label: string;
-                    iconName: string;
-                    intensity: number | null;
-                };
-            } | null | undefined;
-            text?: string | undefined;
+            text?: string | null | undefined;
             senderUid?: string | null | undefined;
             type: "call";
             uid: string;
-            completedTacticIds: string[];
             date: {
                 isEqual?: any;
                 toMillis?: any;
@@ -132,6 +131,7 @@ export declare const daySchema: yup.ObjectSchema<{
                 toDate: Function;
             };
             dateString: string;
+            role: NonNullable<"user" | "assistant" | "system" | "tool" | undefined>;
         } | {
             createdAt?: {
                 isEqual?: any;
@@ -147,6 +147,37 @@ export declare const daySchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
+            audioFile?: {
+                createdAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                updatedAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                localFilePath?: yup.Maybe<string | undefined>;
+                isDeleted?: boolean | undefined;
+                metadata?: {} | null | undefined;
+                thumbnailStoragePath?: yup.Maybe<string | undefined>;
+                thumbnailUri?: yup.Maybe<string | undefined>;
+                contentType: string;
+                storagePath: string;
+                uri: string;
+            } | undefined;
+            emotionData?: {
+                [x: string]: {
+                    label: string;
+                    iconName: string;
+                    intensity: number | null;
+                };
+            } | null | undefined;
             behaviorData?: {
                 [x: string]: {
                     behavior: {
@@ -192,7 +223,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         type: "time";
                         ordinal: number;
                     };
-                    behaviorData: {
+                    data: {
                         setbackThreshold?: number | undefined;
                         label?: string | undefined;
                         idValue?: string | undefined;
@@ -210,38 +241,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     };
                 };
             } | null | undefined;
-            audioFile?: {
-                createdAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                updatedAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                localFilePath?: yup.Maybe<string | undefined>;
-                isDeleted?: boolean | undefined;
-                metadata?: {} | null | undefined;
-                thumbnailStoragePath?: yup.Maybe<string | undefined>;
-                thumbnailUri?: yup.Maybe<string | undefined>;
-                contentType: string;
-                storagePath: string;
-                uri: string;
-            } | undefined;
-            emotionData?: {
-                [x: string]: {
-                    label: string;
-                    iconName: string;
-                    intensity: number | null;
-                };
-            } | null | undefined;
-            text?: string | undefined;
+            text?: string | null | undefined;
             senderUid?: string | null | undefined;
             confirmedAt?: {
                 isEqual?: any;
@@ -252,7 +252,6 @@ export declare const daySchema: yup.ObjectSchema<{
             } | null | undefined;
             type: "dayReview";
             uid: string;
-            completedTacticIds: string[];
             date: {
                 isEqual?: any;
                 toMillis?: any;
@@ -261,6 +260,7 @@ export declare const daySchema: yup.ObjectSchema<{
                 toDate: Function;
             };
             dateString: string;
+            role: NonNullable<"user" | "assistant" | "system" | "tool" | undefined>;
             dayDoc: import("./utils/firestore").DocumentReferenceLike<unknown>;
         } | {
             createdAt?: {
@@ -277,6 +277,37 @@ export declare const daySchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
+            audioFile?: {
+                createdAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                updatedAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                localFilePath?: yup.Maybe<string | undefined>;
+                isDeleted?: boolean | undefined;
+                metadata?: {} | null | undefined;
+                thumbnailStoragePath?: yup.Maybe<string | undefined>;
+                thumbnailUri?: yup.Maybe<string | undefined>;
+                contentType: string;
+                storagePath: string;
+                uri: string;
+            } | undefined;
+            emotionData?: {
+                [x: string]: {
+                    label: string;
+                    iconName: string;
+                    intensity: number | null;
+                };
+            } | null | undefined;
             behaviorData?: {
                 [x: string]: {
                     behavior: {
@@ -322,7 +353,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         type: "time";
                         ordinal: number;
                     };
-                    behaviorData: {
+                    data: {
                         setbackThreshold?: number | undefined;
                         label?: string | undefined;
                         idValue?: string | undefined;
@@ -340,42 +371,10 @@ export declare const daySchema: yup.ObjectSchema<{
                     };
                 };
             } | null | undefined;
-            audioFile?: {
-                createdAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                updatedAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                localFilePath?: yup.Maybe<string | undefined>;
-                isDeleted?: boolean | undefined;
-                metadata?: {} | null | undefined;
-                thumbnailStoragePath?: yup.Maybe<string | undefined>;
-                thumbnailUri?: yup.Maybe<string | undefined>;
-                contentType: string;
-                storagePath: string;
-                uri: string;
-            } | undefined;
-            emotionData?: {
-                [x: string]: {
-                    label: string;
-                    iconName: string;
-                    intensity: number | null;
-                };
-            } | null | undefined;
-            text?: string | undefined;
+            text?: string | null | undefined;
             senderUid?: string | null | undefined;
             type: "regular";
             uid: string;
-            completedTacticIds: string[];
             date: {
                 isEqual?: any;
                 toMillis?: any;
@@ -384,6 +383,7 @@ export declare const daySchema: yup.ObjectSchema<{
                 toDate: Function;
             };
             dateString: string;
+            role: NonNullable<"user" | "assistant" | "system" | "tool" | undefined>;
         } | {
             createdAt?: {
                 isEqual?: any;
@@ -399,6 +399,37 @@ export declare const daySchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
+            audioFile?: {
+                createdAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                updatedAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                localFilePath?: yup.Maybe<string | undefined>;
+                isDeleted?: boolean | undefined;
+                metadata?: {} | null | undefined;
+                thumbnailStoragePath?: yup.Maybe<string | undefined>;
+                thumbnailUri?: yup.Maybe<string | undefined>;
+                contentType: string;
+                storagePath: string;
+                uri: string;
+            } | undefined;
+            emotionData?: {
+                [x: string]: {
+                    label: string;
+                    iconName: string;
+                    intensity: number | null;
+                };
+            } | null | undefined;
             behaviorData?: {
                 [x: string]: {
                     behavior: {
@@ -444,7 +475,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         type: "time";
                         ordinal: number;
                     };
-                    behaviorData: {
+                    data: {
                         setbackThreshold?: number | undefined;
                         label?: string | undefined;
                         idValue?: string | undefined;
@@ -462,43 +493,11 @@ export declare const daySchema: yup.ObjectSchema<{
                     };
                 };
             } | null | undefined;
-            audioFile?: {
-                createdAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                updatedAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                localFilePath?: yup.Maybe<string | undefined>;
-                isDeleted?: boolean | undefined;
-                metadata?: {} | null | undefined;
-                thumbnailStoragePath?: yup.Maybe<string | undefined>;
-                thumbnailUri?: yup.Maybe<string | undefined>;
-                contentType: string;
-                storagePath: string;
-                uri: string;
-            } | undefined;
-            emotionData?: {
-                [x: string]: {
-                    label: string;
-                    iconName: string;
-                    intensity: number | null;
-                };
-            } | null | undefined;
-            text?: string | undefined;
+            text?: string | null | undefined;
             senderUid?: string | null | undefined;
             animationFileName?: string | undefined;
             type: "showTour";
             uid: string;
-            completedTacticIds: string[];
             date: {
                 isEqual?: any;
                 toMillis?: any;
@@ -507,6 +506,7 @@ export declare const daySchema: yup.ObjectSchema<{
                 toDate: Function;
             };
             dateString: string;
+            role: NonNullable<"user" | "assistant" | "system" | "tool" | undefined>;
             steps: {
                 elementRefName: string;
                 title: string;
@@ -528,6 +528,37 @@ export declare const daySchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
+            audioFile?: {
+                createdAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                updatedAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                localFilePath?: yup.Maybe<string | undefined>;
+                isDeleted?: boolean | undefined;
+                metadata?: {} | null | undefined;
+                thumbnailStoragePath?: yup.Maybe<string | undefined>;
+                thumbnailUri?: yup.Maybe<string | undefined>;
+                contentType: string;
+                storagePath: string;
+                uri: string;
+            } | undefined;
+            emotionData?: {
+                [x: string]: {
+                    label: string;
+                    iconName: string;
+                    intensity: number | null;
+                };
+            } | null | undefined;
             behaviorData?: {
                 [x: string]: {
                     behavior: {
@@ -573,7 +604,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         type: "time";
                         ordinal: number;
                     };
-                    behaviorData: {
+                    data: {
                         setbackThreshold?: number | undefined;
                         label?: string | undefined;
                         idValue?: string | undefined;
@@ -591,44 +622,12 @@ export declare const daySchema: yup.ObjectSchema<{
                     };
                 };
             } | null | undefined;
-            audioFile?: {
-                createdAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                updatedAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                localFilePath?: yup.Maybe<string | undefined>;
-                isDeleted?: boolean | undefined;
-                metadata?: {} | null | undefined;
-                thumbnailStoragePath?: yup.Maybe<string | undefined>;
-                thumbnailUri?: yup.Maybe<string | undefined>;
-                contentType: string;
-                storagePath: string;
-                uri: string;
-            } | undefined;
-            emotionData?: {
-                [x: string]: {
-                    label: string;
-                    iconName: string;
-                    intensity: number | null;
-                };
-            } | null | undefined;
-            text?: string | undefined;
+            text?: string | null | undefined;
             senderUid?: string | null | undefined;
             isAddToGameplanMode?: boolean | undefined;
             suggestedTacticDocPaths?: string[] | undefined;
             type: "tactics";
             uid: string;
-            completedTacticIds: string[];
             date: {
                 isEqual?: any;
                 toMillis?: any;
@@ -637,6 +636,7 @@ export declare const daySchema: yup.ObjectSchema<{
                 toDate: Function;
             };
             dateString: string;
+            role: NonNullable<"user" | "assistant" | "system" | "tool" | undefined>;
             tacticsById: {
                 [x: string]: {
                     recommendedForIssueIds?: string[] | undefined;
@@ -1140,6 +1140,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     };
                 };
             };
+            completedTacticIds: string[];
         } | {
             createdAt?: {
                 isEqual?: any;
@@ -1154,6 +1155,37 @@ export declare const daySchema: yup.ObjectSchema<{
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
+            } | null | undefined;
+            audioFile?: {
+                createdAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                updatedAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                localFilePath?: yup.Maybe<string | undefined>;
+                isDeleted?: boolean | undefined;
+                metadata?: {} | null | undefined;
+                thumbnailStoragePath?: yup.Maybe<string | undefined>;
+                thumbnailUri?: yup.Maybe<string | undefined>;
+                contentType: string;
+                storagePath: string;
+                uri: string;
+            } | undefined;
+            emotionData?: {
+                [x: string]: {
+                    label: string;
+                    iconName: string;
+                    intensity: number | null;
+                };
             } | null | undefined;
             behaviorData?: {
                 [x: string]: {
@@ -1200,7 +1232,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         type: "time";
                         ordinal: number;
                     };
-                    behaviorData: {
+                    data: {
                         setbackThreshold?: number | undefined;
                         label?: string | undefined;
                         idValue?: string | undefined;
@@ -1218,38 +1250,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     };
                 };
             } | null | undefined;
-            audioFile?: {
-                createdAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                updatedAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                localFilePath?: yup.Maybe<string | undefined>;
-                isDeleted?: boolean | undefined;
-                metadata?: {} | null | undefined;
-                thumbnailStoragePath?: yup.Maybe<string | undefined>;
-                thumbnailUri?: yup.Maybe<string | undefined>;
-                contentType: string;
-                storagePath: string;
-                uri: string;
-            } | undefined;
-            emotionData?: {
-                [x: string]: {
-                    label: string;
-                    iconName: string;
-                    intensity: number | null;
-                };
-            } | null | undefined;
-            text?: string | undefined;
+            text?: string | null | undefined;
             senderUid?: string | null | undefined;
             files?: yup.Maybe<{
                 createdAt?: {
@@ -1278,7 +1279,6 @@ export declare const daySchema: yup.ObjectSchema<{
             type: "whatsappMessage";
             uid: string;
             strategyDoc: import("./utils/firestore").DocumentReferenceLike<unknown>;
-            completedTacticIds: string[];
             date: {
                 isEqual?: any;
                 toMillis?: any;
@@ -1287,6 +1287,7 @@ export declare const daySchema: yup.ObjectSchema<{
                 toDate: Function;
             };
             dateString: string;
+            role: NonNullable<"user" | "assistant" | "system" | "tool" | undefined>;
         };
     };
     behaviorsById: {

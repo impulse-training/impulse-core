@@ -13,6 +13,37 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
+    audioFile?: {
+        createdAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        updatedAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        localFilePath?: import("yup").Maybe<string | undefined>;
+        isDeleted?: boolean | undefined;
+        metadata?: {} | null | undefined;
+        thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+        thumbnailUri?: import("yup").Maybe<string | undefined>;
+        contentType: string;
+        storagePath: string;
+        uri: string;
+    } | undefined;
+    emotionData?: {
+        [x: string]: {
+            label: string;
+            iconName: string;
+            intensity: number | null;
+        };
+    } | null | undefined;
     behaviorData?: {
         [x: string]: {
             behavior: {
@@ -58,7 +89,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                 type: "time";
                 ordinal: number;
             };
-            behaviorData: {
+            data: {
                 setbackThreshold?: number | undefined;
                 label?: string | undefined;
                 idValue?: string | undefined;
@@ -76,42 +107,10 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             };
         };
     } | null | undefined;
-    audioFile?: {
-        createdAt?: {
-            isEqual?: any;
-            toMillis?: any;
-            seconds: number;
-            nanoseconds: number;
-            toDate: Function;
-        } | null | undefined;
-        updatedAt?: {
-            isEqual?: any;
-            toMillis?: any;
-            seconds: number;
-            nanoseconds: number;
-            toDate: Function;
-        } | null | undefined;
-        localFilePath?: import("yup").Maybe<string | undefined>;
-        isDeleted?: boolean | undefined;
-        metadata?: {} | null | undefined;
-        thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
-        thumbnailUri?: import("yup").Maybe<string | undefined>;
-        contentType: string;
-        storagePath: string;
-        uri: string;
-    } | undefined;
-    emotionData?: {
-        [x: string]: {
-            label: string;
-            iconName: string;
-            intensity: number | null;
-        };
-    } | null | undefined;
-    text?: string | undefined;
+    text?: string | null | undefined;
     senderUid?: string | null | undefined;
     type: "regular";
     uid: string;
-    completedTacticIds: string[];
     date: {
         isEqual?: any;
         toMillis?: any;
@@ -120,7 +119,8 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         toDate: Function;
     };
     dateString: string;
-}, "type" | "uid" | "completedTacticIds" | "date" | "dateString" | ("createdAt" | "updatedAt" | "behaviorData" | "audioFile" | "emotionData" | "text" | "senderUid")>, profileFactory: import("factory.ts").Factory<{
+    role: NonNullable<"user" | "assistant" | "system" | "tool" | undefined>;
+}, "type" | "uid" | "date" | "dateString" | "role" | ("createdAt" | "updatedAt" | "audioFile" | "emotionData" | "behaviorData" | "text" | "senderUid")>, profileFactory: import("factory.ts").Factory<{
     createdAt?: {
         isEqual?: any;
         toMillis?: any;

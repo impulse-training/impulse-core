@@ -14,7 +14,7 @@ describe(logTextForGpt, () => {
             behavior: {
               prompt: 'Time spent watching',
             },
-            behaviorData: {
+            data: {
               stringValue: '3 hrs',
             },
           },
