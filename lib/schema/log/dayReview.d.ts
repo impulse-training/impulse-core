@@ -44,6 +44,7 @@ export declare const dayReviewLogSchema: yup.ObjectSchema<{
         [x: string]: {
             name: string;
             label: string;
+            color: string;
             key: string;
             intensity: number | null;
         };

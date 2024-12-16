@@ -44,6 +44,7 @@ export declare function logBaseSchema<K extends string>(type: K): yup.ObjectSche
         [x: string]: {
             name: string;
             label: string;
+            color: string;
             key: string;
             intensity: number | null;
         };

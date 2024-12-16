@@ -53,6 +53,7 @@ export declare const daySchema: yup.ObjectSchema<{
                 [x: string]: {
                     name: string;
                     label: string;
+                    color: string;
                     key: string;
                     intensity: number | null;
                 };
@@ -153,6 +154,7 @@ export declare const daySchema: yup.ObjectSchema<{
                 [x: string]: {
                     name: string;
                     label: string;
+                    color: string;
                     key: string;
                     intensity: number | null;
                 };
@@ -261,6 +263,7 @@ export declare const daySchema: yup.ObjectSchema<{
                 [x: string]: {
                     name: string;
                     label: string;
+                    color: string;
                     key: string;
                     intensity: number | null;
                 };
@@ -361,6 +364,7 @@ export declare const daySchema: yup.ObjectSchema<{
                 [x: string]: {
                     name: string;
                     label: string;
+                    color: string;
                     key: string;
                     intensity: number | null;
                 };
@@ -468,6 +472,7 @@ export declare const daySchema: yup.ObjectSchema<{
                 [x: string]: {
                     name: string;
                     label: string;
+                    color: string;
                     key: string;
                     intensity: number | null;
                 };
@@ -1074,6 +1079,7 @@ export declare const daySchema: yup.ObjectSchema<{
                 [x: string]: {
                     name: string;
                     label: string;
+                    color: string;
                     key: string;
                     intensity: number | null;
                 };

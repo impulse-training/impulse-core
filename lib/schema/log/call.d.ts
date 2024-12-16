@@ -44,6 +44,7 @@ export declare const callLogSchema: yup.ObjectSchema<{
         [x: string]: {
             name: string;
             label: string;
+            color: string;
             key: string;
             intensity: number | null;
         };

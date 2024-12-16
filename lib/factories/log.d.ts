@@ -44,6 +44,7 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
             [x: string]: {
                 name: string;
                 label: string;
+                color: string;
                 key: string;
                 intensity: number | null;
             };

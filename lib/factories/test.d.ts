@@ -41,6 +41,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         [x: string]: {
             name: string;
             label: string;
+            color: string;
             key: string;
             intensity: number | null;
         };
