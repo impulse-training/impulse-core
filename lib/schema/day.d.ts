@@ -51,8 +51,9 @@ export declare const daySchema: yup.ObjectSchema<{
             } | undefined;
             emotionData?: {
                 [x: string]: {
+                    name: string;
                     label: string;
-                    iconName: string;
+                    key: string;
                     intensity: number | null;
                 };
             } | null | undefined;
@@ -150,8 +151,9 @@ export declare const daySchema: yup.ObjectSchema<{
             } | undefined;
             emotionData?: {
                 [x: string]: {
+                    name: string;
                     label: string;
-                    iconName: string;
+                    key: string;
                     intensity: number | null;
                 };
             } | null | undefined;
@@ -257,8 +259,9 @@ export declare const daySchema: yup.ObjectSchema<{
             } | undefined;
             emotionData?: {
                 [x: string]: {
+                    name: string;
                     label: string;
-                    iconName: string;
+                    key: string;
                     intensity: number | null;
                 };
             } | null | undefined;
@@ -356,8 +359,9 @@ export declare const daySchema: yup.ObjectSchema<{
             } | undefined;
             emotionData?: {
                 [x: string]: {
+                    name: string;
                     label: string;
-                    iconName: string;
+                    key: string;
                     intensity: number | null;
                 };
             } | null | undefined;
@@ -462,8 +466,9 @@ export declare const daySchema: yup.ObjectSchema<{
             } | undefined;
             emotionData?: {
                 [x: string]: {
+                    name: string;
                     label: string;
-                    iconName: string;
+                    key: string;
                     intensity: number | null;
                 };
             } | null | undefined;
@@ -1067,8 +1072,9 @@ export declare const daySchema: yup.ObjectSchema<{
             } | undefined;
             emotionData?: {
                 [x: string]: {
+                    name: string;
                     label: string;
-                    iconName: string;
+                    key: string;
                     intensity: number | null;
                 };
             } | null | undefined;

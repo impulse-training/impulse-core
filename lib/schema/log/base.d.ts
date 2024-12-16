@@ -42,8 +42,9 @@ export declare function logBaseSchema<K extends string>(type: K): yup.ObjectSche
     } | undefined;
     emotionData: {
         [x: string]: {
+            name: string;
             label: string;
-            iconName: string;
+            key: string;
             intensity: number | null;
         };
     } | null | undefined;

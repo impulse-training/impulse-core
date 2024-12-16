@@ -39,8 +39,9 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
     } | undefined;
     emotionData?: {
         [x: string]: {
+            name: string;
             label: string;
-            iconName: string;
+            key: string;
             intensity: number | null;
         };
     } | null | undefined;

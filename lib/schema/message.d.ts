@@ -28,8 +28,8 @@ export declare const messageSchema: yup.ObjectSchema<{
     emotions: {
         [x: string]: {
             label: string;
-            iconName: string;
             intensity: number | null;
+            iconName: string;
         };
     } | null | undefined;
     behaviors: {
