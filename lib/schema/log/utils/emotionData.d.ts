@@ -2,7 +2,7 @@ import * as yup from 'yup';
 export declare const emotionDataSchema: yup.ObjectSchema<{
     label: string;
     name: string;
-    color: string;
+    color: string | undefined;
     key: string;
     intensity: number | null;
 }, yup.AnyObject, {
@@ -12,3 +12,4 @@ export declare const emotionDataSchema: yup.ObjectSchema<{
     key: undefined;
     intensity: undefined;
 }, "">;
+export type EmotionDataValue = yup.InferType<typeof emotionDataSchema>;

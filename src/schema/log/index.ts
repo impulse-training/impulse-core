@@ -3,7 +3,6 @@ import { CallLogValue, callLogSchema } from './call';
 import { DayReviewLogValue, dayReviewLogSchema } from './dayReview';
 import { RegularLogValue, regularLogSchema } from './regular';
 import { ShowTourLogValue, showTourLogSchema } from './showTourLog';
-import { TacticsLogValue } from './tacticsLog';
 import {
   WhatsappMessageLogValue,
   whatsappMessageLogSchema,
@@ -12,12 +11,12 @@ import {
 export * from './dayReview';
 export * from './regular';
 export * from './showTourLog';
-export * from './tacticsLog';
 export * from './whatsappMessageLog';
 
 // Utils
 export * from './utils/behaviorData';
-export * from './utils/guards';
+export * from './utils/emotionData';
+export * from './utils/tacticData';
 
 export const logSchemas: Record<
   LogValue['type'],
@@ -53,7 +52,6 @@ type ValidatedLog = {
 export type LogValue =
   | RegularLogValue
   | CallLogValue
-  | TacticsLogValue
   | ShowTourLogValue
   | DayReviewLogValue
   | WhatsappMessageLogValue;
