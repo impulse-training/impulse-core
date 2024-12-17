@@ -15,8 +15,8 @@ export function logTextForGpt(log: LogValue): string {
   if (log.behaviorData) {
     const behaviorsDescription = compact(
       flatMap(log.behaviorData, ({ behavior, data }) => {
-        const goalText = behavior?.setbackThreshold
-          ? ` (goal is ${behavior.setbackThreshold} or less)`
+        const goalText = behavior?.dailyLimit
+          ? ` (goal is ${behavior.dailyLimit} or less)`
           : '';
         if (!data) return null;
         return [behavior.name + goalText, data.stringValue].join(': ');

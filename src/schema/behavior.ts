@@ -8,7 +8,7 @@ export const behaviorSchema = yup.object({
     .mixed<'time' | 'counter'>()
     .oneOf(['time', 'counter'])
     .required(),
-  setbackThreshold: yup.number(),
+  dailyLimit: yup.number(),
   isHelpful: yup.boolean().nullable().defined(),
   createdAt: optionalTimestampSchema,
   updatedAt: optionalTimestampSchema,

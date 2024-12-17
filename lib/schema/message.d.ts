@@ -49,7 +49,7 @@ export declare const messageSchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                setbackThreshold?: number | undefined;
+                dailyLimit?: number | undefined;
                 name: string;
                 ordinal: number;
                 trackingType: NonNullable<"time" | "counter" | undefined>;

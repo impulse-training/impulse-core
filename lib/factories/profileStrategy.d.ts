@@ -99,7 +99,6 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                setbackThreshold?: number | null | undefined;
                 uid?: string | undefined;
                 sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 sharedWithIssueIds?: string[] | undefined;
@@ -181,7 +180,6 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                setbackThreshold?: number | null | undefined;
                 uid?: string | undefined;
                 repeat?: import("yup").Maybe<number | undefined>;
                 sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
@@ -243,7 +241,6 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                setbackThreshold?: number | null | undefined;
                 uid?: string | undefined;
                 sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 sharedWithIssueIds?: string[] | undefined;
@@ -302,7 +299,6 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                setbackThreshold?: number | null | undefined;
                 uid?: string | undefined;
                 sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 sharedWithIssueIds?: string[] | undefined;
@@ -361,7 +357,6 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                setbackThreshold?: number | null | undefined;
                 uid?: string | undefined;
                 sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 sharedWithIssueIds?: string[] | undefined;
@@ -420,7 +415,6 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                setbackThreshold?: number | null | undefined;
                 uid?: string | undefined;
                 sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 sharedWithIssueIds?: string[] | undefined;
@@ -479,7 +473,6 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                setbackThreshold?: number | null | undefined;
                 uid?: string | undefined;
                 sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 sharedWithIssueIds?: string[] | undefined;
@@ -537,7 +530,6 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                setbackThreshold?: number | null | undefined;
                 uid?: string | undefined;
                 sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 sharedWithIssueIds?: string[] | undefined;
@@ -607,7 +599,6 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            setbackThreshold?: number | null | undefined;
             uid?: string | undefined;
             sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
             sharedWithIssueIds?: string[] | undefined;
@@ -689,7 +680,6 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            setbackThreshold?: number | null | undefined;
             uid?: string | undefined;
             repeat?: import("yup").Maybe<number | undefined>;
             sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
@@ -751,7 +741,6 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            setbackThreshold?: number | null | undefined;
             uid?: string | undefined;
             sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
             sharedWithIssueIds?: string[] | undefined;
@@ -810,7 +799,6 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            setbackThreshold?: number | null | undefined;
             uid?: string | undefined;
             sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
             sharedWithIssueIds?: string[] | undefined;
@@ -869,7 +857,6 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            setbackThreshold?: number | null | undefined;
             uid?: string | undefined;
             sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
             sharedWithIssueIds?: string[] | undefined;
@@ -928,7 +915,6 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            setbackThreshold?: number | null | undefined;
             uid?: string | undefined;
             sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
             sharedWithIssueIds?: string[] | undefined;
@@ -987,7 +973,6 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            setbackThreshold?: number | null | undefined;
             uid?: string | undefined;
             sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
             sharedWithIssueIds?: string[] | undefined;
@@ -1045,7 +1030,6 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            setbackThreshold?: number | null | undefined;
             uid?: string | undefined;
             sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
             sharedWithIssueIds?: string[] | undefined;

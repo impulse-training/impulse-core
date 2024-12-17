@@ -63,7 +63,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                setbackThreshold?: number | undefined;
+                dailyLimit?: number | undefined;
                 name: string;
                 ordinal: number;
                 trackingType: NonNullable<"time" | "counter" | undefined>;
@@ -113,7 +113,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                setbackThreshold?: number | null | undefined;
                 uid?: string | undefined;
                 sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 sharedWithIssueIds?: string[] | undefined;
@@ -195,7 +194,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                setbackThreshold?: number | null | undefined;
                 uid?: string | undefined;
                 repeat?: import("yup").Maybe<number | undefined>;
                 sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
@@ -257,7 +255,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                setbackThreshold?: number | null | undefined;
                 uid?: string | undefined;
                 sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 sharedWithIssueIds?: string[] | undefined;
@@ -316,7 +313,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                setbackThreshold?: number | null | undefined;
                 uid?: string | undefined;
                 sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 sharedWithIssueIds?: string[] | undefined;
@@ -375,7 +371,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                setbackThreshold?: number | null | undefined;
                 uid?: string | undefined;
                 sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 sharedWithIssueIds?: string[] | undefined;
@@ -434,7 +429,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                setbackThreshold?: number | null | undefined;
                 uid?: string | undefined;
                 sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 sharedWithIssueIds?: string[] | undefined;
@@ -493,7 +487,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                setbackThreshold?: number | null | undefined;
                 uid?: string | undefined;
                 sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 sharedWithIssueIds?: string[] | undefined;
@@ -551,7 +544,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                setbackThreshold?: number | null | undefined;
                 uid?: string | undefined;
                 sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 sharedWithIssueIds?: string[] | undefined;
@@ -695,4 +687,4 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         [x: string]: string;
     };
     timezone: string;
-}, "uids" | "verificationCode" | "dayReviewTime" | "recentSummaries" | "timezone" | ("createdAt" | "updatedAt" | "parentIds" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseDoc" | "tourCompletedAt" | "scheduledNotificationIds" | "whatsappStrategyDoc" | "onboardedWithZaraAt" | "currentAppState" | "expoPushToken" | "notificationPreferences" | "goal" | "isReadyForTour" | "isOnboardingComplete" | "sendDebriefRemindersAfterMinutes" | "gameplanStrategies" | "androidPermissions" | "historicalInsights" | "isTourDismissed" | "region" | "enableZara")>, tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "ordinal" | "setbackThreshold" | "type" | "uid" | "sourceFile" | "sharedWithIssueIds" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "prompt" | "isShared" | "description" | "pastTenseTitle" | "debriefAfterMinutes" | "image" | "backgroundColor" | "likesCount" | "timerSeconds" | "isSuggested">;
+}, "uids" | "verificationCode" | "dayReviewTime" | "recentSummaries" | "timezone" | ("createdAt" | "updatedAt" | "parentIds" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseDoc" | "tourCompletedAt" | "scheduledNotificationIds" | "whatsappStrategyDoc" | "onboardedWithZaraAt" | "currentAppState" | "expoPushToken" | "notificationPreferences" | "goal" | "isReadyForTour" | "isOnboardingComplete" | "sendDebriefRemindersAfterMinutes" | "gameplanStrategies" | "androidPermissions" | "historicalInsights" | "isTourDismissed" | "region" | "enableZara")>, tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "ordinal" | "type" | "uid" | "sourceFile" | "sharedWithIssueIds" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "prompt" | "isShared" | "description" | "pastTenseTitle" | "debriefAfterMinutes" | "image" | "backgroundColor" | "likesCount" | "timerSeconds" | "isSuggested">;

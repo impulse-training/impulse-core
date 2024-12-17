@@ -7,7 +7,7 @@
 // // and lessThanOrEqualTo conditions
 // export const numericOptionSchema = optionValueBaseSchema('numeric')
 //   .shape({
-//     setbackThreshold: yup.number(),
+//     dailyLimit: yup.number(),
 //     greaterThan: yup.number(),
 //     lessThanOrEqualTo: yup.number(),
 //   })

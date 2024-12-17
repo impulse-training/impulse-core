@@ -44,7 +44,7 @@ export declare const behaviorAndBehaviorDataSchema: yup.ObjectSchema<{
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        setbackThreshold?: number | undefined;
+        dailyLimit?: number | undefined;
         name: string;
         ordinal: number;
         trackingType: NonNullable<"time" | "counter" | undefined>;
@@ -70,7 +70,7 @@ export declare const behaviorAndBehaviorDataSchema: yup.ObjectSchema<{
         name: undefined;
         ordinal: undefined;
         trackingType: undefined;
-        setbackThreshold: undefined;
+        dailyLimit: undefined;
         isHelpful: undefined;
         createdAt: undefined;
         updatedAt: undefined;

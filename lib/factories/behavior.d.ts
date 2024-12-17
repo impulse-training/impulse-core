@@ -16,12 +16,12 @@ export declare const makeBehaviorFactories: (TimestampKlass: typeof TimestampLik
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        setbackThreshold?: number | undefined;
+        dailyLimit?: number | undefined;
         name: string;
         ordinal: number;
         trackingType: NonNullable<"time" | "counter" | undefined>;
         isHelpful: boolean | null;
-    }, "name" | "ordinal" | "trackingType" | "isHelpful" | ("createdAt" | "updatedAt" | "setbackThreshold")>;
+    }, "name" | "ordinal" | "trackingType" | "isHelpful" | ("createdAt" | "updatedAt" | "dailyLimit")>;
     timeBehaviorFactory: Factory.Sync.Factory<{
         createdAt?: {
             isEqual?: any;
@@ -37,10 +37,10 @@ export declare const makeBehaviorFactories: (TimestampKlass: typeof TimestampLik
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        setbackThreshold?: number | undefined;
+        dailyLimit?: number | undefined;
         name: string;
         ordinal: number;
         trackingType: NonNullable<"time" | "counter" | undefined>;
         isHelpful: boolean | null;
-    }, "name" | "ordinal" | "trackingType" | "isHelpful" | ("createdAt" | "updatedAt" | "setbackThreshold")>;
+    }, "name" | "ordinal" | "trackingType" | "isHelpful" | ("createdAt" | "updatedAt" | "dailyLimit")>;
 };

@@ -53,7 +53,6 @@ export declare function tacticValueBaseSchema<K extends string>(type: K): yup.Ob
         uri: string;
     } | undefined;
     backgroundColor: string | undefined;
-    setbackThreshold: number | null | undefined;
     likesCount: number | null | undefined;
     timerSeconds: yup.Maybe<number | undefined>;
     isSuggested: boolean | undefined;
@@ -74,7 +73,6 @@ export declare function tacticValueBaseSchema<K extends string>(type: K): yup.Ob
     debriefAfterMinutes: undefined;
     image: undefined;
     backgroundColor: undefined;
-    setbackThreshold: undefined;
     likesCount: undefined;
     timerSeconds: undefined;
     isSuggested: undefined;

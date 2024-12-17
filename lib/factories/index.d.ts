@@ -65,7 +65,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
-                    setbackThreshold?: number | undefined;
+                    dailyLimit?: number | undefined;
                     name: string;
                     ordinal: number;
                     trackingType: NonNullable<"time" | "counter" | undefined>;
@@ -115,7 +115,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
-                    setbackThreshold?: number | null | undefined;
                     uid?: string | undefined;
                     sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                     sharedWithIssueIds?: string[] | undefined;
@@ -197,7 +196,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
-                    setbackThreshold?: number | null | undefined;
                     uid?: string | undefined;
                     repeat?: import("yup").Maybe<number | undefined>;
                     sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
@@ -259,7 +257,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
-                    setbackThreshold?: number | null | undefined;
                     uid?: string | undefined;
                     sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                     sharedWithIssueIds?: string[] | undefined;
@@ -318,7 +315,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
-                    setbackThreshold?: number | null | undefined;
                     uid?: string | undefined;
                     sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                     sharedWithIssueIds?: string[] | undefined;
@@ -377,7 +373,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
-                    setbackThreshold?: number | null | undefined;
                     uid?: string | undefined;
                     sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                     sharedWithIssueIds?: string[] | undefined;
@@ -436,7 +431,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
-                    setbackThreshold?: number | null | undefined;
                     uid?: string | undefined;
                     sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                     sharedWithIssueIds?: string[] | undefined;
@@ -495,7 +489,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
-                    setbackThreshold?: number | null | undefined;
                     uid?: string | undefined;
                     sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                     sharedWithIssueIds?: string[] | undefined;
@@ -553,7 +546,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
-                    setbackThreshold?: number | null | undefined;
                     uid?: string | undefined;
                     sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                     sharedWithIssueIds?: string[] | undefined;
@@ -632,12 +624,12 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        setbackThreshold?: number | undefined;
+        dailyLimit?: number | undefined;
         name: string;
         ordinal: number;
         trackingType: NonNullable<"time" | "counter" | undefined>;
         isHelpful: boolean | null;
-    }, "name" | "ordinal" | "trackingType" | "isHelpful" | ("createdAt" | "updatedAt" | "setbackThreshold")>;
+    }, "name" | "ordinal" | "trackingType" | "isHelpful" | ("createdAt" | "updatedAt" | "dailyLimit")>;
     timeBehaviorFactory: import("factory.ts").Factory<{
         createdAt?: {
             isEqual?: any;
@@ -653,12 +645,12 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        setbackThreshold?: number | undefined;
+        dailyLimit?: number | undefined;
         name: string;
         ordinal: number;
         trackingType: NonNullable<"time" | "counter" | undefined>;
         isHelpful: boolean | null;
-    }, "name" | "ordinal" | "trackingType" | "isHelpful" | ("createdAt" | "updatedAt" | "setbackThreshold")>;
+    }, "name" | "ordinal" | "trackingType" | "isHelpful" | ("createdAt" | "updatedAt" | "dailyLimit")>;
     applicationFactory: import("factory.ts").Factory<import("..").ApplicationValue, keyof import("..").ApplicationValue>;
     dayFactory: import("factory.ts").Factory<import("..").DayValue, "date" | "issueName" | "logsById" | "behaviorsById" | "summary">;
     issueFactory: import("factory.ts").Factory<{
@@ -837,7 +829,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         hour: number;
         minute: number;
     }, "name" | "type" | "weekdays" | "hour" | "minute" | ("createdAt" | "updatedAt")>;
-    tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "ordinal" | "setbackThreshold" | "type" | "uid" | "sourceFile" | "sharedWithIssueIds" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "prompt" | "isShared" | "description" | "pastTenseTitle" | "debriefAfterMinutes" | "image" | "backgroundColor" | "likesCount" | "timerSeconds" | "isSuggested">;
+    tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "ordinal" | "type" | "uid" | "sourceFile" | "sharedWithIssueIds" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "prompt" | "isShared" | "description" | "pastTenseTitle" | "debriefAfterMinutes" | "image" | "backgroundColor" | "likesCount" | "timerSeconds" | "isSuggested">;
     roadmapFactory: import("factory.ts").Factory<{
         createdAt?: {
             isEqual?: any;
@@ -920,7 +912,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                setbackThreshold?: number | null | undefined;
                 uid?: string | undefined;
                 sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 sharedWithIssueIds?: string[] | undefined;
@@ -1002,7 +993,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                setbackThreshold?: number | null | undefined;
                 uid?: string | undefined;
                 repeat?: import("yup").Maybe<number | undefined>;
                 sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
@@ -1064,7 +1054,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                setbackThreshold?: number | null | undefined;
                 uid?: string | undefined;
                 sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 sharedWithIssueIds?: string[] | undefined;
@@ -1123,7 +1112,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                setbackThreshold?: number | null | undefined;
                 uid?: string | undefined;
                 sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 sharedWithIssueIds?: string[] | undefined;
@@ -1182,7 +1170,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                setbackThreshold?: number | null | undefined;
                 uid?: string | undefined;
                 sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 sharedWithIssueIds?: string[] | undefined;
@@ -1241,7 +1228,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                setbackThreshold?: number | null | undefined;
                 uid?: string | undefined;
                 sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 sharedWithIssueIds?: string[] | undefined;
@@ -1300,7 +1286,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                setbackThreshold?: number | null | undefined;
                 uid?: string | undefined;
                 sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 sharedWithIssueIds?: string[] | undefined;
@@ -1358,7 +1343,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                setbackThreshold?: number | null | undefined;
                 uid?: string | undefined;
                 sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 sharedWithIssueIds?: string[] | undefined;
@@ -1428,7 +1412,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            setbackThreshold?: number | null | undefined;
             uid?: string | undefined;
             sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
             sharedWithIssueIds?: string[] | undefined;
@@ -1510,7 +1493,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            setbackThreshold?: number | null | undefined;
             uid?: string | undefined;
             repeat?: import("yup").Maybe<number | undefined>;
             sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
@@ -1572,7 +1554,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            setbackThreshold?: number | null | undefined;
             uid?: string | undefined;
             sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
             sharedWithIssueIds?: string[] | undefined;
@@ -1631,7 +1612,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            setbackThreshold?: number | null | undefined;
             uid?: string | undefined;
             sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
             sharedWithIssueIds?: string[] | undefined;
@@ -1690,7 +1670,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            setbackThreshold?: number | null | undefined;
             uid?: string | undefined;
             sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
             sharedWithIssueIds?: string[] | undefined;
@@ -1749,7 +1728,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            setbackThreshold?: number | null | undefined;
             uid?: string | undefined;
             sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
             sharedWithIssueIds?: string[] | undefined;
@@ -1808,7 +1786,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            setbackThreshold?: number | null | undefined;
             uid?: string | undefined;
             sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
             sharedWithIssueIds?: string[] | undefined;
@@ -1866,7 +1843,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            setbackThreshold?: number | null | undefined;
             uid?: string | undefined;
             sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
             sharedWithIssueIds?: string[] | undefined;
@@ -2019,7 +1995,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
-                    setbackThreshold?: number | null | undefined;
                     uid?: string | undefined;
                     sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                     sharedWithIssueIds?: string[] | undefined;
@@ -2101,7 +2076,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
-                    setbackThreshold?: number | null | undefined;
                     uid?: string | undefined;
                     repeat?: import("yup").Maybe<number | undefined>;
                     sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
@@ -2163,7 +2137,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
-                    setbackThreshold?: number | null | undefined;
                     uid?: string | undefined;
                     sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                     sharedWithIssueIds?: string[] | undefined;
@@ -2222,7 +2195,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
-                    setbackThreshold?: number | null | undefined;
                     uid?: string | undefined;
                     sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                     sharedWithIssueIds?: string[] | undefined;
@@ -2281,7 +2253,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
-                    setbackThreshold?: number | null | undefined;
                     uid?: string | undefined;
                     sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                     sharedWithIssueIds?: string[] | undefined;
@@ -2340,7 +2311,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
-                    setbackThreshold?: number | null | undefined;
                     uid?: string | undefined;
                     sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                     sharedWithIssueIds?: string[] | undefined;
@@ -2399,7 +2369,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
-                    setbackThreshold?: number | null | undefined;
                     uid?: string | undefined;
                     sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                     sharedWithIssueIds?: string[] | undefined;
@@ -2457,7 +2426,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
-                    setbackThreshold?: number | null | undefined;
                     uid?: string | undefined;
                     sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                     sharedWithIssueIds?: string[] | undefined;
@@ -2527,7 +2495,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                setbackThreshold?: number | null | undefined;
                 uid?: string | undefined;
                 sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 sharedWithIssueIds?: string[] | undefined;
@@ -2609,7 +2576,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                setbackThreshold?: number | null | undefined;
                 uid?: string | undefined;
                 repeat?: import("yup").Maybe<number | undefined>;
                 sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
@@ -2671,7 +2637,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                setbackThreshold?: number | null | undefined;
                 uid?: string | undefined;
                 sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 sharedWithIssueIds?: string[] | undefined;
@@ -2730,7 +2695,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                setbackThreshold?: number | null | undefined;
                 uid?: string | undefined;
                 sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 sharedWithIssueIds?: string[] | undefined;
@@ -2789,7 +2753,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                setbackThreshold?: number | null | undefined;
                 uid?: string | undefined;
                 sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 sharedWithIssueIds?: string[] | undefined;
@@ -2848,7 +2811,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                setbackThreshold?: number | null | undefined;
                 uid?: string | undefined;
                 sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 sharedWithIssueIds?: string[] | undefined;
@@ -2907,7 +2869,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                setbackThreshold?: number | null | undefined;
                 uid?: string | undefined;
                 sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 sharedWithIssueIds?: string[] | undefined;
@@ -2965,7 +2926,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                setbackThreshold?: number | null | undefined;
                 uid?: string | undefined;
                 sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 sharedWithIssueIds?: string[] | undefined;

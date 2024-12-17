@@ -57,7 +57,6 @@ export declare const dayReviewTacticSchema: yup.ObjectSchema<{
         uri: string;
     } | undefined;
     backgroundColor: string | undefined;
-    setbackThreshold: number | null | undefined;
     likesCount: number | null | undefined;
     timerSeconds: yup.Maybe<number | undefined>;
     isSuggested: boolean | undefined;
@@ -79,7 +78,6 @@ export declare const dayReviewTacticSchema: yup.ObjectSchema<{
     debriefAfterMinutes: undefined;
     image: undefined;
     backgroundColor: undefined;
-    setbackThreshold: undefined;
     likesCount: undefined;
     timerSeconds: undefined;
     isSuggested: undefined;

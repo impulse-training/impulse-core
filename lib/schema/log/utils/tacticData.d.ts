@@ -35,7 +35,6 @@ export declare const tacticAndTacticDataSchema: yup.ObjectSchema<{
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        setbackThreshold?: number | null | undefined;
         uid?: string | undefined;
         sourceFile?: import("../../utils/firestore").DocumentReferenceLike<unknown> | undefined;
         sharedWithIssueIds?: string[] | undefined;
@@ -117,7 +116,6 @@ export declare const tacticAndTacticDataSchema: yup.ObjectSchema<{
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        setbackThreshold?: number | null | undefined;
         uid?: string | undefined;
         repeat?: yup.Maybe<number | undefined>;
         sourceFile?: import("../../utils/firestore").DocumentReferenceLike<unknown> | undefined;
@@ -179,7 +177,6 @@ export declare const tacticAndTacticDataSchema: yup.ObjectSchema<{
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        setbackThreshold?: number | null | undefined;
         uid?: string | undefined;
         sourceFile?: import("../../utils/firestore").DocumentReferenceLike<unknown> | undefined;
         sharedWithIssueIds?: string[] | undefined;
@@ -238,7 +235,6 @@ export declare const tacticAndTacticDataSchema: yup.ObjectSchema<{
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        setbackThreshold?: number | null | undefined;
         uid?: string | undefined;
         sourceFile?: import("../../utils/firestore").DocumentReferenceLike<unknown> | undefined;
         sharedWithIssueIds?: string[] | undefined;
@@ -297,7 +293,6 @@ export declare const tacticAndTacticDataSchema: yup.ObjectSchema<{
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        setbackThreshold?: number | null | undefined;
         uid?: string | undefined;
         sourceFile?: import("../../utils/firestore").DocumentReferenceLike<unknown> | undefined;
         sharedWithIssueIds?: string[] | undefined;
@@ -356,7 +351,6 @@ export declare const tacticAndTacticDataSchema: yup.ObjectSchema<{
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        setbackThreshold?: number | null | undefined;
         uid?: string | undefined;
         sourceFile?: import("../../utils/firestore").DocumentReferenceLike<unknown> | undefined;
         sharedWithIssueIds?: string[] | undefined;
@@ -415,7 +409,6 @@ export declare const tacticAndTacticDataSchema: yup.ObjectSchema<{
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        setbackThreshold?: number | null | undefined;
         uid?: string | undefined;
         sourceFile?: import("../../utils/firestore").DocumentReferenceLike<unknown> | undefined;
         sharedWithIssueIds?: string[] | undefined;
@@ -473,7 +466,6 @@ export declare const tacticAndTacticDataSchema: yup.ObjectSchema<{
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        setbackThreshold?: number | null | undefined;
         uid?: string | undefined;
         sourceFile?: import("../../utils/firestore").DocumentReferenceLike<unknown> | undefined;
         sharedWithIssueIds?: string[] | undefined;

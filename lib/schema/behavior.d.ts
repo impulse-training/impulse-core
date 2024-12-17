@@ -3,7 +3,7 @@ export declare const behaviorSchema: yup.ObjectSchema<{
     name: string;
     ordinal: number;
     trackingType: NonNullable<"time" | "counter" | undefined>;
-    setbackThreshold: number | undefined;
+    dailyLimit: number | undefined;
     isHelpful: boolean | null;
     createdAt: {
         isEqual?: any;
@@ -23,7 +23,7 @@ export declare const behaviorSchema: yup.ObjectSchema<{
     name: undefined;
     ordinal: undefined;
     trackingType: undefined;
-    setbackThreshold: undefined;
+    dailyLimit: undefined;
     isHelpful: undefined;
     createdAt: undefined;
     updatedAt: undefined;
