@@ -608,48 +608,6 @@ export declare const factories: {
         dateString: string;
         role: NonNullable<"user" | "assistant" | "system" | "tool" | undefined>;
     }, "type" | "uid" | "date" | "dateString" | "role" | ("createdAt" | "updatedAt" | "audioFile" | "emotionData" | "behaviorData" | "tacticsData" | "text" | "senderUid")>;
-    counterBehaviorFactory: import("factory.ts").Factory<{
-        createdAt?: {
-            isEqual?: any;
-            toMillis?: any;
-            seconds: number;
-            nanoseconds: number;
-            toDate: Function;
-        } | null | undefined;
-        updatedAt?: {
-            isEqual?: any;
-            toMillis?: any;
-            seconds: number;
-            nanoseconds: number;
-            toDate: Function;
-        } | null | undefined;
-        dailyLimit?: number | undefined;
-        name: string;
-        ordinal: number;
-        trackingType: NonNullable<"time" | "counter" | undefined>;
-        isHelpful: boolean | null;
-    }, "name" | "ordinal" | "trackingType" | "isHelpful" | ("createdAt" | "updatedAt" | "dailyLimit")>;
-    timeBehaviorFactory: import("factory.ts").Factory<{
-        createdAt?: {
-            isEqual?: any;
-            toMillis?: any;
-            seconds: number;
-            nanoseconds: number;
-            toDate: Function;
-        } | null | undefined;
-        updatedAt?: {
-            isEqual?: any;
-            toMillis?: any;
-            seconds: number;
-            nanoseconds: number;
-            toDate: Function;
-        } | null | undefined;
-        dailyLimit?: number | undefined;
-        name: string;
-        ordinal: number;
-        trackingType: NonNullable<"time" | "counter" | undefined>;
-        isHelpful: boolean | null;
-    }, "name" | "ordinal" | "trackingType" | "isHelpful" | ("createdAt" | "updatedAt" | "dailyLimit")>;
     applicationFactory: import("factory.ts").Factory<import("..").ApplicationValue, keyof import("..").ApplicationValue>;
     dayFactory: import("factory.ts").Factory<import("..").DayValue, "date" | "issueName" | "logsById" | "behaviorsById" | "summary">;
     issueFactory: import("factory.ts").Factory<{
@@ -709,19 +667,42 @@ export declare const factories: {
     daysSummaryFactory: import("factory.ts").Factory<{
         [x: string]: {
             [x: string]: {
-                label?: string | undefined;
-                idValue?: string | undefined;
-                numericValue?: number | undefined;
-                color?: string | undefined;
-                setAt: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
+                behavior: {
+                    createdAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    dailyLimit?: number | undefined;
+                    name: string;
+                    ordinal: number;
+                    trackingType: NonNullable<"time" | "counter" | undefined>;
+                    isHelpful: boolean | null;
                 };
-                stringValue: string;
-                unit: string;
+                data: {
+                    label?: string | undefined;
+                    idValue?: string | undefined;
+                    numericValue?: number | undefined;
+                    color?: string | undefined;
+                    setAt: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    };
+                    stringValue: string;
+                    unit: string;
+                };
             };
         };
     }, string | number>;
@@ -2979,4 +2960,25 @@ export declare const factories: {
             invitationUrl: string;
         };
     }, "type" | "sortBy" | "strategy" | ("createdAt" | "updatedAt" | "ordinal" | "strategyDoc" | "forIssueIds" | "ordinalsForIssues" | "forAllIssues" | "tourDismissed" | "reminders")>;
+    behaviorFactory: import("factory.ts").Factory<{
+        createdAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        updatedAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        dailyLimit?: number | undefined;
+        name: string;
+        ordinal: number;
+        trackingType: NonNullable<"time" | "counter" | undefined>;
+        isHelpful: boolean | null;
+    }, "name" | "ordinal" | "trackingType" | "isHelpful" | ("createdAt" | "updatedAt" | "dailyLimit")>;
 };

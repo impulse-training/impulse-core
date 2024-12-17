@@ -6,10 +6,18 @@ export const makeDaysSummaryFactory = (TimestampKlass: typeof TimestampLike) =>
   Factory.makeFactory<DaysSummaryValue>({
     '2024-01-01': {
       behavior1: {
-        unit: 'time',
-        numericValue: 1,
-        setAt: TimestampKlass.now(),
-        stringValue: '1 minute',
+        behavior: {
+          ordinal: 0,
+          name: 'Watching youtube',
+          trackingType: 'time',
+          isHelpful: null,
+        },
+        data: {
+          unit: 'time',
+          numericValue: 1,
+          setAt: TimestampKlass.now(),
+          stringValue: '1 minute',
+        },
         // optionId: 'tactic1',
         // optionColor: 'blue',
         // optionLabel: 'Tactic 1',

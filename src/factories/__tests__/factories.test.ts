@@ -70,7 +70,6 @@ const schemaMap: Record<keyof typeof factories, null | Schema | Lazy<unknown>> =
     profileStrategyFactory: profileStrategySchema,
     roadmapFactory: roadmapSchema,
     tacticFactory: tacticSchema,
-    counterBehaviorFactory: behaviorSchema,
-    timeBehaviorFactory: behaviorSchema,
+    behaviorFactory: behaviorSchema,
     timeReminderFactory: timeReminderSchema,
   };
