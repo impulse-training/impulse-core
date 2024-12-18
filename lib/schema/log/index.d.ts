@@ -7,6 +7,7 @@ import { WhatsappMessageLogValue } from './whatsappMessageLog';
 export * from './dayReview';
 export * from './regular';
 export * from './showTourLog';
+export * from './toolCall';
 export * from './whatsappMessageLog';
 export * from './utils/behaviorData';
 export * from './utils/emotionData';

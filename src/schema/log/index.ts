@@ -3,6 +3,7 @@ import { CallLogValue, callLogSchema } from './call';
 import { DayReviewLogValue, dayReviewLogSchema } from './dayReview';
 import { RegularLogValue, regularLogSchema } from './regular';
 import { ShowTourLogValue, showTourLogSchema } from './showTourLog';
+import { toolCallLogSchema } from './toolCall';
 import {
   WhatsappMessageLogValue,
   whatsappMessageLogSchema,
@@ -11,6 +12,7 @@ import {
 export * from './dayReview';
 export * from './regular';
 export * from './showTourLog';
+export * from './toolCall';
 export * from './whatsappMessageLog';
 
 // Utils
@@ -23,6 +25,7 @@ export const logSchemas: Record<
   yup.ObjectSchema<LogValue>
 > = {
   call: callLogSchema,
+  toolCall: toolCallLogSchema,
   regular: regularLogSchema,
   showTour: showTourLogSchema,
   dayReview: dayReviewLogSchema,
