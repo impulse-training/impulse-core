@@ -616,7 +616,6 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
         toDate: Function;
     };
     dateString: string;
-    role: NonNullable<"user" | "assistant" | "system" | "tool" | undefined>;
     senderUid: string | null | undefined;
     steps: {
         message: string;
@@ -643,7 +642,6 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
         toDate: undefined;
     };
     dateString: undefined;
-    role: undefined;
     senderUid: undefined;
     steps: "";
     animationFileName: undefined;

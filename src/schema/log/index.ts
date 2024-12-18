@@ -1,18 +1,20 @@
 import * as yup from 'yup';
-import { CallLogValue, callLogSchema } from './call';
-import { DayReviewLogValue, dayReviewLogSchema } from './dayReview';
-import { RegularLogValue, regularLogSchema } from './regular';
+import { CallLogValue, callLogSchema } from './callLog';
+import { GptLogValue, gptLogSchema } from './gptLog';
+import { ImpulseLogValue, impulseLogSchema } from './impulseLog';
 import { ShowTourLogValue, showTourLogSchema } from './showTourLog';
-import { toolCallLogSchema } from './toolCall';
+import { ToolCallLogValue, toolCallLogSchema } from './toolCallLog';
+import { UserLogValue, userLogSchema } from './userLog';
 import {
   WhatsappMessageLogValue,
   whatsappMessageLogSchema,
 } from './whatsappMessageLog';
 
-export * from './dayReview';
-export * from './regular';
+export * from './gptLog';
+export * from './impulseLog';
 export * from './showTourLog';
-export * from './toolCall';
+export * from './toolCallLog';
+export * from './userLog';
 export * from './whatsappMessageLog';
 
 // Utils
@@ -24,12 +26,13 @@ export const logSchemas: Record<
   LogValue['type'],
   yup.ObjectSchema<LogValue>
 > = {
-  call: callLogSchema,
-  toolCall: toolCallLogSchema,
-  regular: regularLogSchema,
-  showTour: showTourLogSchema,
-  dayReview: dayReviewLogSchema,
-  whatsappMessage: whatsappMessageLogSchema,
+  impulseLog: impulseLogSchema,
+  callLog: callLogSchema,
+  toolCallLog: toolCallLogSchema,
+  showTourLog: showTourLogSchema,
+  userLog: userLogSchema,
+  gptLog: gptLogSchema,
+  whatsappMessageLog: whatsappMessageLogSchema,
 } as any;
 
 export const logSchema = yup.lazy((value: any) => {
@@ -53,8 +56,10 @@ type ValidatedLog = {
 }[LogValue['type']];
 
 export type LogValue =
-  | RegularLogValue
+  | UserLogValue
   | CallLogValue
   | ShowTourLogValue
-  | DayReviewLogValue
-  | WhatsappMessageLogValue;
+  | ToolCallLogValue
+  | WhatsappMessageLogValue
+  | ImpulseLogValue
+  | GptLogValue;

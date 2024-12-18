@@ -595,7 +595,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
     } | null | undefined;
     text?: string | null | undefined;
     senderUid?: string | null | undefined;
-    type: "regular";
+    type: "user";
     uid: string;
     date: {
         isEqual?: any;
@@ -605,7 +605,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         toDate: Function;
     };
     dateString: string;
-    role: NonNullable<"user" | "assistant" | "system" | "tool" | undefined>;
+    role: "user";
 }, "type" | "uid" | "date" | "dateString" | "role" | ("createdAt" | "updatedAt" | "audioFile" | "emotionData" | "behaviorData" | "tacticsData" | "text" | "senderUid")>, profileFactory: import("factory.ts").Factory<{
     createdAt?: {
         isEqual?: any;

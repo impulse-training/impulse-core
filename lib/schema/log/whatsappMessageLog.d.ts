@@ -605,7 +605,6 @@ export declare const whatsappMessageLogSchema: yup.ObjectSchema<{
         toDate: Function;
     };
     dateString: string;
-    role: NonNullable<"user" | "assistant" | "system" | "tool" | undefined>;
     senderUid: string | null | undefined;
     files: yup.Maybe<{
         createdAt?: {
@@ -650,7 +649,6 @@ export declare const whatsappMessageLogSchema: yup.ObjectSchema<{
         toDate: undefined;
     };
     dateString: undefined;
-    role: undefined;
     senderUid: undefined;
     files: "";
     strategyDoc: undefined;

@@ -1,5 +1,5 @@
 import * as yup from 'yup';
-export declare const dayReviewLogSchema: yup.ObjectSchema<{
+export declare const impulseLogSchema: yup.ObjectSchema<{
     createdAt: {
         isEqual?: any;
         toMillis?: any;
@@ -14,7 +14,7 @@ export declare const dayReviewLogSchema: yup.ObjectSchema<{
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
-    type: "dayReview";
+    type: "impulse";
     uid: string;
     audioFile: {
         createdAt?: {
@@ -605,16 +605,8 @@ export declare const dayReviewLogSchema: yup.ObjectSchema<{
         toDate: Function;
     };
     dateString: string;
-    role: NonNullable<"user" | "assistant" | "system" | "tool" | undefined>;
     senderUid: string | null | undefined;
-    dayDoc: import("../utils/firestore").DocumentReferenceLike<unknown>;
-    confirmedAt: {
-        isEqual?: any;
-        toMillis?: any;
-        seconds: number;
-        nanoseconds: number;
-        toDate: Function;
-    } | null | undefined;
+    role: "user";
 }, yup.AnyObject, {
     createdAt: undefined;
     updatedAt: undefined;
@@ -633,9 +625,7 @@ export declare const dayReviewLogSchema: yup.ObjectSchema<{
         toDate: undefined;
     };
     dateString: undefined;
-    role: undefined;
     senderUid: undefined;
-    dayDoc: undefined;
-    confirmedAt: undefined;
+    role: undefined;
 }, "">;
-export type DayReviewLogValue = yup.InferType<typeof dayReviewLogSchema>;
+export type ImpulseLogValue = yup.InferType<typeof impulseLogSchema>;

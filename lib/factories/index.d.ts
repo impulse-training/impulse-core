@@ -597,7 +597,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         } | null | undefined;
         text?: string | null | undefined;
         senderUid?: string | null | undefined;
-        type: "regular";
+        type: "user";
         uid: string;
         date: {
             isEqual?: any;
@@ -607,7 +607,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             toDate: Function;
         };
         dateString: string;
-        role: NonNullable<"user" | "assistant" | "system" | "tool" | undefined>;
+        role: "user";
     }, "type" | "uid" | "date" | "dateString" | "role" | ("createdAt" | "updatedAt" | "audioFile" | "emotionData" | "behaviorData" | "tacticsData" | "text" | "senderUid")>;
     applicationFactory: import("factory.ts").Factory<import("..").ApplicationValue, keyof import("..").ApplicationValue>;
     dayFactory: import("factory.ts").Factory<import("..").DayValue, "date" | "issueName" | "logsById" | "behaviorsById" | "summary">;

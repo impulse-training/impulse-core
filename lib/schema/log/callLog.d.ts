@@ -605,7 +605,6 @@ export declare const callLogSchema: yup.ObjectSchema<{
         toDate: Function;
     };
     dateString: string;
-    role: NonNullable<"user" | "assistant" | "system" | "tool" | undefined>;
     senderUid: string | null | undefined;
 }, yup.AnyObject, {
     createdAt: undefined;
@@ -625,7 +624,6 @@ export declare const callLogSchema: yup.ObjectSchema<{
         toDate: undefined;
     };
     dateString: undefined;
-    role: undefined;
     senderUid: undefined;
 }, "">;
 export type CallLogValue = yup.InferType<typeof callLogSchema>;

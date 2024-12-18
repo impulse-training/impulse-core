@@ -598,7 +598,7 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
         } | null | undefined;
         text?: string | null | undefined;
         senderUid?: string | null | undefined;
-        type: "regular";
+        type: "user";
         uid: string;
         date: {
             isEqual?: any;
@@ -608,6 +608,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
             toDate: Function;
         };
         dateString: string;
-        role: NonNullable<"user" | "assistant" | "system" | "tool" | undefined>;
+        role: "user";
     }, "type" | "uid" | "date" | "dateString" | "role" | ("createdAt" | "updatedAt" | "audioFile" | "emotionData" | "behaviorData" | "tacticsData" | "text" | "senderUid")>;
 };

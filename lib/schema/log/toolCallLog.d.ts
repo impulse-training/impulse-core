@@ -1,5 +1,5 @@
 import * as yup from 'yup';
-export declare function logBaseSchema<K extends string>(type: K): yup.ObjectSchema<{
+export declare const toolCallLogSchema: yup.ObjectSchema<{
     createdAt: {
         isEqual?: any;
         toMillis?: any;
@@ -14,7 +14,7 @@ export declare function logBaseSchema<K extends string>(type: K): yup.ObjectSche
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
-    type: yup.Defined<K>;
+    type: "toolCall";
     uid: string;
     audioFile: {
         createdAt?: {
@@ -606,6 +606,8 @@ export declare function logBaseSchema<K extends string>(type: K): yup.ObjectSche
     };
     dateString: string;
     senderUid: string | null | undefined;
+    role: "tool";
+    toolCallId: string;
 }, yup.AnyObject, {
     createdAt: undefined;
     updatedAt: undefined;
@@ -625,4 +627,7 @@ export declare function logBaseSchema<K extends string>(type: K): yup.ObjectSche
     };
     dateString: undefined;
     senderUid: undefined;
+    role: undefined;
+    toolCallId: undefined;
 }, "">;
+export type ToolCallLogValue = yup.InferType<typeof toolCallLogSchema>;

@@ -23,11 +23,6 @@ export function logBaseSchema<K extends string>(type: K) {
     date: timestampSchema,
     dateString: yup.string().required(),
 
-    role: yup
-      .mixed<'user' | 'assistant' | 'system' | 'tool'>()
-      .oneOf(['assistant', 'user', 'system', 'tool'])
-      .required(),
-
     // tacticId: yup.string().nullable(),
     // tactic: yup.lazy((_value, options) => {
     //   // Access the context to get the entire object being validated

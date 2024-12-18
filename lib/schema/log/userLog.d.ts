@@ -1,5 +1,5 @@
 import * as yup from 'yup';
-export declare const regularLogSchema: yup.ObjectSchema<{
+export declare const userLogSchema: yup.ObjectSchema<{
     createdAt: {
         isEqual?: any;
         toMillis?: any;
@@ -14,7 +14,7 @@ export declare const regularLogSchema: yup.ObjectSchema<{
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
-    type: "regular";
+    type: "user";
     uid: string;
     audioFile: {
         createdAt?: {
@@ -605,8 +605,8 @@ export declare const regularLogSchema: yup.ObjectSchema<{
         toDate: Function;
     };
     dateString: string;
-    role: NonNullable<"user" | "assistant" | "system" | "tool" | undefined>;
     senderUid: string | null | undefined;
+    role: "user";
 }, yup.AnyObject, {
     createdAt: undefined;
     updatedAt: undefined;
@@ -625,7 +625,7 @@ export declare const regularLogSchema: yup.ObjectSchema<{
         toDate: undefined;
     };
     dateString: undefined;
-    role: undefined;
     senderUid: undefined;
+    role: undefined;
 }, "">;
-export type RegularLogValue = yup.InferType<typeof regularLogSchema>;
+export type UserLogValue = yup.InferType<typeof userLogSchema>;

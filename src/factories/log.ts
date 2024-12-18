@@ -1,12 +1,12 @@
 import * as Factory from 'factory.ts';
-import { RegularLogValue } from '../schema/log/regular';
+import { UserLogValue } from '../schema/log/userLog';
 import { TimestampLike } from '../utils/firestore/TimestampLike';
 
 export const makeLogFactories = (TimestampKlass: typeof TimestampLike) => ({
-  regularLogFactory: Factory.makeFactory<RegularLogValue>({
+  regularLogFactory: Factory.makeFactory<UserLogValue>({
     uid: '1',
     senderUid: Factory.each(i => i.toString()),
-    type: 'regular',
+    type: 'user',
     role: 'user',
     createdAt: TimestampKlass.now(),
     updatedAt: TimestampKlass.now(),

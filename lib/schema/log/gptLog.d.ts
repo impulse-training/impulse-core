@@ -1,5 +1,5 @@
 import * as yup from 'yup';
-export declare const toolCallLogSchema: yup.ObjectSchema<{
+export declare const gptLogSchema: yup.ObjectSchema<{
     createdAt: {
         isEqual?: any;
         toMillis?: any;
@@ -14,7 +14,7 @@ export declare const toolCallLogSchema: yup.ObjectSchema<{
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
-    type: "toolCall";
+    type: "gpt";
     uid: string;
     audioFile: {
         createdAt?: {
@@ -605,9 +605,8 @@ export declare const toolCallLogSchema: yup.ObjectSchema<{
         toDate: Function;
     };
     dateString: string;
-    role: "tool";
     senderUid: string | null | undefined;
-    toolCallId: string;
+    role: "assistant";
 }, yup.AnyObject, {
     createdAt: undefined;
     updatedAt: undefined;
@@ -626,8 +625,7 @@ export declare const toolCallLogSchema: yup.ObjectSchema<{
         toDate: undefined;
     };
     dateString: undefined;
-    role: undefined;
     senderUid: undefined;
-    toolCallId: undefined;
+    role: undefined;
 }, "">;
-export type ToolCallLogValue = yup.InferType<typeof toolCallLogSchema>;
+export type GptLogValue = yup.InferType<typeof gptLogSchema>;
