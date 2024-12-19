@@ -522,7 +522,7 @@ export declare const tacticAndTacticDataSchema: yup.ObjectSchema<{
             toDate: Function;
         };
         isCompleted: NonNullable<boolean | undefined>;
-    };
+    } | null;
 }, yup.AnyObject, {
     tactic: undefined;
     data: {

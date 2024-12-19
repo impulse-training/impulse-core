@@ -100,7 +100,7 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                         toDate: Function;
                     };
                     isCompleted: NonNullable<boolean | undefined>;
-                };
+                } | null;
                 tactic: {
                     createdAt?: {
                         isEqual?: any;

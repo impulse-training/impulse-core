@@ -100,7 +100,7 @@ export declare const toolCallLogSchema: yup.ObjectSchema<{
                     toDate: Function;
                 };
                 isCompleted: NonNullable<boolean | undefined>;
-            };
+            } | null;
             tactic: {
                 createdAt?: {
                     isEqual?: any;

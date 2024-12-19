@@ -12,8 +12,9 @@ export type TacticDataValue = yup.InferType<typeof tacticDataSchema>;
 
 export const tacticAndTacticDataSchema = yup.object({
   tactic: tacticSchema,
-  data: tacticDataSchema.required(),
+  data: tacticDataSchema.nullable(),
 });
+
 export type TacticAndTacticDataValue = yup.InferType<
   typeof tacticAndTacticDataSchema
 >;

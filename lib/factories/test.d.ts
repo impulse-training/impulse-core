@@ -97,7 +97,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                     toDate: Function;
                 };
                 isCompleted: NonNullable<boolean | undefined>;
-            };
+            } | null;
             tactic: {
                 createdAt?: {
                     isEqual?: any;

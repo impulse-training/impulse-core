@@ -100,7 +100,7 @@ export declare const impulseLogSchema: yup.ObjectSchema<{
                     toDate: Function;
                 };
                 isCompleted: NonNullable<boolean | undefined>;
-            };
+            } | null;
             tactic: {
                 createdAt?: {
                     isEqual?: any;

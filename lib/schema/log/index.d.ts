@@ -115,7 +115,7 @@ export declare const logSchema: yup.Lazy<{
                     toDate: Function;
                 };
                 isCompleted: NonNullable<boolean | undefined>;
-            };
+            } | null;
             tactic: {
                 createdAt?: {
                     isEqual?: any;
@@ -722,7 +722,7 @@ export declare const logSchema: yup.Lazy<{
                     toDate: Function;
                 };
                 isCompleted: NonNullable<boolean | undefined>;
-            };
+            } | null;
             tactic: {
                 createdAt?: {
                     isEqual?: any;
@@ -1330,7 +1330,7 @@ export declare const logSchema: yup.Lazy<{
                     toDate: Function;
                 };
                 isCompleted: NonNullable<boolean | undefined>;
-            };
+            } | null;
             tactic: {
                 createdAt?: {
                     isEqual?: any;
@@ -1938,7 +1938,7 @@ export declare const logSchema: yup.Lazy<{
                     toDate: Function;
                 };
                 isCompleted: NonNullable<boolean | undefined>;
-            };
+            } | null;
             tactic: {
                 createdAt?: {
                     isEqual?: any;
@@ -2552,7 +2552,7 @@ export declare const logSchema: yup.Lazy<{
                     toDate: Function;
                 };
                 isCompleted: NonNullable<boolean | undefined>;
-            };
+            } | null;
             tactic: {
                 createdAt?: {
                     isEqual?: any;
@@ -3161,7 +3161,7 @@ export declare const logSchema: yup.Lazy<{
                     toDate: Function;
                 };
                 isCompleted: NonNullable<boolean | undefined>;
-            };
+            } | null;
             tactic: {
                 createdAt?: {
                     isEqual?: any;
@@ -3769,7 +3769,7 @@ export declare const logSchema: yup.Lazy<{
                     toDate: Function;
                 };
                 isCompleted: NonNullable<boolean | undefined>;
-            };
+            } | null;
             tactic: {
                 createdAt?: {
                     isEqual?: any;

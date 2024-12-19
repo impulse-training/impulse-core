@@ -100,7 +100,7 @@ export declare function logBaseSchema<K extends string>(type: K): yup.ObjectSche
                     toDate: Function;
                 };
                 isCompleted: NonNullable<boolean | undefined>;
-            };
+            } | null;
             tactic: {
                 createdAt?: {
                     isEqual?: any;

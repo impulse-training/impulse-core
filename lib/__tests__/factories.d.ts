@@ -98,7 +98,7 @@ export declare const factories: {
                         toDate: Function;
                     };
                     isCompleted: NonNullable<boolean | undefined>;
-                };
+                } | null;
                 tactic: {
                     createdAt?: {
                         isEqual?: any;

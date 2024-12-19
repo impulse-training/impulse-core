@@ -109,7 +109,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             toDate: Function;
                         };
                         isCompleted: NonNullable<boolean | undefined>;
-                    };
+                    } | null;
                     tactic: {
                         createdAt?: {
                             isEqual?: any;
@@ -716,7 +716,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             toDate: Function;
                         };
                         isCompleted: NonNullable<boolean | undefined>;
-                    };
+                    } | null;
                     tactic: {
                         createdAt?: {
                             isEqual?: any;
@@ -1324,7 +1324,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             toDate: Function;
                         };
                         isCompleted: NonNullable<boolean | undefined>;
-                    };
+                    } | null;
                     tactic: {
                         createdAt?: {
                             isEqual?: any;
@@ -1932,7 +1932,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             toDate: Function;
                         };
                         isCompleted: NonNullable<boolean | undefined>;
-                    };
+                    } | null;
                     tactic: {
                         createdAt?: {
                             isEqual?: any;
@@ -2546,7 +2546,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             toDate: Function;
                         };
                         isCompleted: NonNullable<boolean | undefined>;
-                    };
+                    } | null;
                     tactic: {
                         createdAt?: {
                             isEqual?: any;
@@ -3155,7 +3155,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             toDate: Function;
                         };
                         isCompleted: NonNullable<boolean | undefined>;
-                    };
+                    } | null;
                     tactic: {
                         createdAt?: {
                             isEqual?: any;
@@ -3763,7 +3763,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             toDate: Function;
                         };
                         isCompleted: NonNullable<boolean | undefined>;
-                    };
+                    } | null;
                     tactic: {
                         createdAt?: {
                             isEqual?: any;

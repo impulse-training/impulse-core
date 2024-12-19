@@ -99,7 +99,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         toDate: Function;
                     };
                     isCompleted: NonNullable<boolean | undefined>;
-                };
+                } | null;
                 tactic: {
                     createdAt?: {
                         isEqual?: any;
