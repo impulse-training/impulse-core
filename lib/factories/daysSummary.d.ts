@@ -3,6 +3,7 @@ import { TimestampLike } from '../utils';
 export declare const makeDaysSummaryFactory: (TimestampKlass: typeof TimestampLike) => Factory.Sync.Factory<{
     [x: string]: {
         [x: string]: {
+            color?: string | undefined;
             behavior: {
                 createdAt?: {
                     isEqual?: any;
@@ -28,7 +29,6 @@ export declare const makeDaysSummaryFactory: (TimestampKlass: typeof TimestampLi
                 label?: string | undefined;
                 idValue?: string | undefined;
                 numericValue?: number | undefined;
-                color?: string | undefined;
                 setAt: {
                     isEqual?: any;
                     toMillis?: any;

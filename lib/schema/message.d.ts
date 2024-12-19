@@ -59,7 +59,6 @@ export declare const messageSchema: yup.ObjectSchema<{
                 label?: string | undefined;
                 idValue?: string | undefined;
                 numericValue?: number | undefined;
-                color?: string | undefined;
                 setAt: {
                     isEqual?: any;
                     toMillis?: any;

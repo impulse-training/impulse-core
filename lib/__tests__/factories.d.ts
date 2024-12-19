@@ -49,6 +49,7 @@ export declare const factories: {
         } | null | undefined;
         behaviorData?: {
             [x: string]: {
+                color?: string | undefined;
                 behavior: {
                     createdAt?: {
                         isEqual?: any;
@@ -74,7 +75,6 @@ export declare const factories: {
                     label?: string | undefined;
                     idValue?: string | undefined;
                     numericValue?: number | undefined;
-                    color?: string | undefined;
                     setAt: {
                         isEqual?: any;
                         toMillis?: any;
@@ -667,6 +667,7 @@ export declare const factories: {
     daysSummaryFactory: import("factory.ts").Factory<{
         [x: string]: {
             [x: string]: {
+                color?: string | undefined;
                 behavior: {
                     createdAt?: {
                         isEqual?: any;
@@ -692,7 +693,6 @@ export declare const factories: {
                     label?: string | undefined;
                     idValue?: string | undefined;
                     numericValue?: number | undefined;
-                    color?: string | undefined;
                     setAt: {
                         isEqual?: any;
                         toMillis?: any;

@@ -51,6 +51,7 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
         } | null | undefined;
         behaviorData?: {
             [x: string]: {
+                color?: string | undefined;
                 behavior: {
                     createdAt?: {
                         isEqual?: any;
@@ -76,7 +77,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     label?: string | undefined;
                     idValue?: string | undefined;
                     numericValue?: number | undefined;
-                    color?: string | undefined;
                     setAt: {
                         isEqual?: any;
                         toMillis?: any;

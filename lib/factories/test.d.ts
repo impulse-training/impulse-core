@@ -48,6 +48,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
     } | null | undefined;
     behaviorData?: {
         [x: string]: {
+            color?: string | undefined;
             behavior: {
                 createdAt?: {
                     isEqual?: any;
@@ -73,7 +74,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                 label?: string | undefined;
                 idValue?: string | undefined;
                 numericValue?: number | undefined;
-                color?: string | undefined;
                 setAt: {
                     isEqual?: any;
                     toMillis?: any;

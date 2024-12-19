@@ -50,6 +50,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         } | null | undefined;
         behaviorData?: {
             [x: string]: {
+                color?: string | undefined;
                 behavior: {
                     createdAt?: {
                         isEqual?: any;
@@ -75,7 +76,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     label?: string | undefined;
                     idValue?: string | undefined;
                     numericValue?: number | undefined;
-                    color?: string | undefined;
                     setAt: {
                         isEqual?: any;
                         toMillis?: any;
@@ -668,6 +668,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
     daysSummaryFactory: import("factory.ts").Factory<{
         [x: string]: {
             [x: string]: {
+                color?: string | undefined;
                 behavior: {
                     createdAt?: {
                         isEqual?: any;
@@ -693,7 +694,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     label?: string | undefined;
                     idValue?: string | undefined;
                     numericValue?: number | undefined;
-                    color?: string | undefined;
                     setAt: {
                         isEqual?: any;
                         toMillis?: any;

@@ -51,6 +51,7 @@ export declare const toolCallLogSchema: yup.ObjectSchema<{
     } | null | undefined;
     behaviorData: {
         [x: string]: {
+            color?: string | undefined;
             behavior: {
                 createdAt?: {
                     isEqual?: any;
@@ -76,7 +77,6 @@ export declare const toolCallLogSchema: yup.ObjectSchema<{
                 label?: string | undefined;
                 idValue?: string | undefined;
                 numericValue?: number | undefined;
-                color?: string | undefined;
                 setAt: {
                     isEqual?: any;
                     toMillis?: any;

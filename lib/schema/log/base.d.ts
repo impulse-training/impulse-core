@@ -51,6 +51,7 @@ export declare function logBaseSchema<K extends string>(type: K): yup.ObjectSche
     } | null | undefined;
     behaviorData: {
         [x: string]: {
+            color?: string | undefined;
             behavior: {
                 createdAt?: {
                     isEqual?: any;
@@ -76,7 +77,6 @@ export declare function logBaseSchema<K extends string>(type: K): yup.ObjectSche
                 label?: string | undefined;
                 idValue?: string | undefined;
                 numericValue?: number | undefined;
-                color?: string | undefined;
                 setAt: {
                     isEqual?: any;
                     toMillis?: any;

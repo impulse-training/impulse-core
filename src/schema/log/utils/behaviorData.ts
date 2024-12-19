@@ -7,7 +7,6 @@ export const behaviorDataSchema = yup.object({
   numericValue: yup.number(), // ... or a number
   stringValue: yup.string().required(), // This is a string representation of the value
   label: yup.string(),
-  color: yup.string(),
   unit: yup.string().required(),
   setAt: timestampSchema,
 });
@@ -15,6 +14,7 @@ export const behaviorDataSchema = yup.object({
 export const behaviorAndBehaviorDataSchema = yup.object({
   behavior: behaviorSchema,
   data: behaviorDataSchema,
+  color: yup.string(),
 });
 
 export type BehaviorDataValue = yup.InferType<typeof behaviorDataSchema>;

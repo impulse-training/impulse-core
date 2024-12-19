@@ -60,6 +60,7 @@ export declare const daySchema: yup.ObjectSchema<{
             } | null | undefined;
             behaviorData?: {
                 [x: string]: {
+                    color?: string | undefined;
                     behavior: {
                         createdAt?: {
                             isEqual?: any;
@@ -85,7 +86,6 @@ export declare const daySchema: yup.ObjectSchema<{
                         label?: string | undefined;
                         idValue?: string | undefined;
                         numericValue?: number | undefined;
-                        color?: string | undefined;
                         setAt: {
                             isEqual?: any;
                             toMillis?: any;
@@ -667,6 +667,7 @@ export declare const daySchema: yup.ObjectSchema<{
             } | null | undefined;
             behaviorData?: {
                 [x: string]: {
+                    color?: string | undefined;
                     behavior: {
                         createdAt?: {
                             isEqual?: any;
@@ -692,7 +693,6 @@ export declare const daySchema: yup.ObjectSchema<{
                         label?: string | undefined;
                         idValue?: string | undefined;
                         numericValue?: number | undefined;
-                        color?: string | undefined;
                         setAt: {
                             isEqual?: any;
                             toMillis?: any;
@@ -1275,6 +1275,7 @@ export declare const daySchema: yup.ObjectSchema<{
             } | null | undefined;
             behaviorData?: {
                 [x: string]: {
+                    color?: string | undefined;
                     behavior: {
                         createdAt?: {
                             isEqual?: any;
@@ -1300,7 +1301,6 @@ export declare const daySchema: yup.ObjectSchema<{
                         label?: string | undefined;
                         idValue?: string | undefined;
                         numericValue?: number | undefined;
-                        color?: string | undefined;
                         setAt: {
                             isEqual?: any;
                             toMillis?: any;
@@ -1883,6 +1883,7 @@ export declare const daySchema: yup.ObjectSchema<{
             } | null | undefined;
             behaviorData?: {
                 [x: string]: {
+                    color?: string | undefined;
                     behavior: {
                         createdAt?: {
                             isEqual?: any;
@@ -1908,7 +1909,6 @@ export declare const daySchema: yup.ObjectSchema<{
                         label?: string | undefined;
                         idValue?: string | undefined;
                         numericValue?: number | undefined;
-                        color?: string | undefined;
                         setAt: {
                             isEqual?: any;
                             toMillis?: any;
@@ -2497,6 +2497,7 @@ export declare const daySchema: yup.ObjectSchema<{
             } | null | undefined;
             behaviorData?: {
                 [x: string]: {
+                    color?: string | undefined;
                     behavior: {
                         createdAt?: {
                             isEqual?: any;
@@ -2522,7 +2523,6 @@ export declare const daySchema: yup.ObjectSchema<{
                         label?: string | undefined;
                         idValue?: string | undefined;
                         numericValue?: number | undefined;
-                        color?: string | undefined;
                         setAt: {
                             isEqual?: any;
                             toMillis?: any;
@@ -3106,6 +3106,7 @@ export declare const daySchema: yup.ObjectSchema<{
             } | null | undefined;
             behaviorData?: {
                 [x: string]: {
+                    color?: string | undefined;
                     behavior: {
                         createdAt?: {
                             isEqual?: any;
@@ -3131,7 +3132,6 @@ export declare const daySchema: yup.ObjectSchema<{
                         label?: string | undefined;
                         idValue?: string | undefined;
                         numericValue?: number | undefined;
-                        color?: string | undefined;
                         setAt: {
                             isEqual?: any;
                             toMillis?: any;
@@ -3714,6 +3714,7 @@ export declare const daySchema: yup.ObjectSchema<{
             } | null | undefined;
             behaviorData?: {
                 [x: string]: {
+                    color?: string | undefined;
                     behavior: {
                         createdAt?: {
                             isEqual?: any;
@@ -3739,7 +3740,6 @@ export declare const daySchema: yup.ObjectSchema<{
                         label?: string | undefined;
                         idValue?: string | undefined;
                         numericValue?: number | undefined;
-                        color?: string | undefined;
                         setAt: {
                             isEqual?: any;
                             toMillis?: any;
