@@ -77,12 +77,12 @@ export const tacticSchema = yup.lazy(value => {
       .oneOf(Object.keys(tacticSchemas) as TacticValue['type'][])
       .required(),
   });
-}) as yup.Lazy<ValidatedTactic>;
+}) as yup.Lazy<TacticTypes[TacticValue['type']]>;
 
 // / This type represents the union of all possible validated tactic objects
-type ValidatedTactic = {
+export type TacticTypes = {
   [K in TacticValue['type']]: yup.InferType<(typeof tacticSchemas)[K]>;
-}[TacticValue['type']];
+};
 
 export type TacticsById = Record<string, TacticValue>;
 

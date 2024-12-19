@@ -48,12 +48,12 @@ export const logSchema = yup.lazy((value: any) => {
       .oneOf(Object.keys(logSchemas) as LogValue['type'][])
       .required(),
   });
-}) as yup.Lazy<ValidatedLog>;
+}) as yup.Lazy<LogValues[LogValue['type']]>;
 
 // / This type represents the union of all possible validated tactic objects
-type ValidatedLog = {
+export type LogValues = {
   [K in LogValue['type']]: yup.InferType<(typeof logSchemas)[K]>;
-}[LogValue['type']];
+};
 
 export type LogValue =
   | UserLogValue
