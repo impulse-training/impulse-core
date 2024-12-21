@@ -1,12 +1,23 @@
 import * as yup from 'yup';
-import { behaviorAndBehaviorDataSchema } from './log';
+import { behaviorAndBehaviorDataSchema, emotionDataSchema } from './log';
 import { objectOf } from './utils/objectOf';
 
-// A tactic day summary is an object of tactic data, keyed by tactic id. Think of it as:
+// A day summary is an object of behavior and emotion
 // {
-//   smokingBehaviorId: { behavior, data: { numericValue: 2, formattedValue: "2 cigarettes" } }
+//   behaviors: {
+//     smokingBehaviorId: { behavior, data: { numericValue: 2, formattedValue: "2 cigarettes" } }
+//   },
+//   emotions: {
+//     label: "Really sad",
+//     name: "Sad",
+//     key: "happy-sad",
+//     intensity: 4,
+//   }
 // }
-const behaviorTotalDataByIdSchema = objectOf(behaviorAndBehaviorDataSchema);
+const behaviorTotalDataByIdSchema = yup.object({
+  behaviors: objectOf(behaviorAndBehaviorDataSchema),
+  emotions: objectOf(emotionDataSchema),
+});
 
 // A days summary document is an object of tactic day summaries, keyed by date. Think of it
 // as:

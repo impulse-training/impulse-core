@@ -1,18 +1,17 @@
 import * as yup from 'yup';
-import { behaviorSchema } from './behavior';
 import { LogValue, logSchema } from './log';
 import { objectOf } from './utils/objectOf';
 import { timestampSchema } from './utils/timestamp';
 
-// And this is a summary of all the tactics for a given log entry
 export const daySchema = yup.object({
+  uid: yup.string().required(),
   date: timestampSchema,
-  issueName: yup.string().required(),
   logsById: objectOf(logSchema),
-  behaviorsById: objectOf(behaviorSchema),
-  summary: yup.string().nullable().defined(),
 });
 
+// We short-cut to the LogValue schema, instead of using yup to derive the LogSchema again. This
+// helps to cut down the length and complexity of generated type files without changing any type
+// definitions
 export type DayValue = Omit<yup.InferType<typeof daySchema>, 'logsById'> & {
   logsById: Record<string, LogValue>;
 };

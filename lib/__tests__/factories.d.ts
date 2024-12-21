@@ -609,7 +609,7 @@ export declare const factories: {
         role: "user";
     }, "type" | "uid" | "date" | "dateString" | "role" | ("createdAt" | "updatedAt" | "audioFile" | "emotionData" | "behaviorData" | "tacticsData" | "text" | "senderUid")>;
     applicationFactory: import("factory.ts").Factory<import("..").ApplicationValue, keyof import("..").ApplicationValue>;
-    dayFactory: import("factory.ts").Factory<import("..").DayValue, "date" | "issueName" | "logsById" | "behaviorsById" | "summary">;
+    dayFactory: import("factory.ts").Factory<import("..").DayValue, "uid" | "date" | "logsById">;
     issueFactory: import("factory.ts").Factory<{
         path?: string | null | undefined;
         createdAt?: {
@@ -666,42 +666,53 @@ export declare const factories: {
     }, "name" | "uid" | "address" | ("createdAt" | "updatedAt" | "latitude" | "longitude")>;
     daysSummaryFactory: import("factory.ts").Factory<{
         [x: string]: {
-            [x: string]: {
-                color?: string | undefined;
-                behavior: {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    dailyLimit?: number | undefined;
-                    name: string;
-                    ordinal: number;
-                    trackingType: NonNullable<"time" | "counter" | undefined>;
-                    isHelpful: boolean | null;
-                };
-                data: {
-                    label?: string | undefined;
-                    idValue?: string | undefined;
-                    numericValue?: number | undefined;
-                    setAt: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
+            behaviors: {
+                [x: string]: {
+                    color?: string | undefined;
+                    behavior: {
+                        createdAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            seconds: number;
+                            nanoseconds: number;
+                            toDate: Function;
+                        } | null | undefined;
+                        updatedAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            seconds: number;
+                            nanoseconds: number;
+                            toDate: Function;
+                        } | null | undefined;
+                        dailyLimit?: number | undefined;
+                        name: string;
+                        ordinal: number;
+                        trackingType: NonNullable<"time" | "counter" | undefined>;
+                        isHelpful: boolean | null;
                     };
-                    stringValue: string;
-                    unit: string;
+                    data: {
+                        label?: string | undefined;
+                        idValue?: string | undefined;
+                        numericValue?: number | undefined;
+                        setAt: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            seconds: number;
+                            nanoseconds: number;
+                            toDate: Function;
+                        };
+                        stringValue: string;
+                        unit: string;
+                    };
+                };
+            };
+            emotions: {
+                [x: string]: {
+                    color?: string | undefined;
+                    name: string;
+                    label: string;
+                    key: string;
+                    intensity: number | null;
                 };
             };
         };

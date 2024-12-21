@@ -1,6 +1,7 @@
 import * as yup from 'yup';
 import { LogValue } from './log';
 export declare const daySchema: yup.ObjectSchema<{
+    uid: string;
     date: {
         isEqual?: any;
         toMillis?: any;
@@ -8,7 +9,6 @@ export declare const daySchema: yup.ObjectSchema<{
         nanoseconds: number;
         toDate: Function;
     };
-    issueName: string;
     logsById: {
         [x: string]: {
             createdAt?: {
@@ -4298,31 +4298,8 @@ export declare const daySchema: yup.ObjectSchema<{
             dateString: string;
         };
     };
-    behaviorsById: {
-        [x: string]: {
-            createdAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            updatedAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            dailyLimit?: number | undefined;
-            name: string;
-            ordinal: number;
-            trackingType: NonNullable<"time" | "counter" | undefined>;
-            isHelpful: boolean | null;
-        };
-    };
-    summary: string | null;
 }, yup.AnyObject, {
+    uid: undefined;
     date: {
         seconds: undefined;
         nanoseconds: undefined;
@@ -4330,10 +4307,7 @@ export declare const daySchema: yup.ObjectSchema<{
         toMillis: undefined;
         toDate: undefined;
     };
-    issueName: undefined;
     logsById: undefined;
-    behaviorsById: undefined;
-    summary: undefined;
 }, "">;
 export type DayValue = Omit<yup.InferType<typeof daySchema>, 'logsById'> & {
     logsById: Record<string, LogValue>;

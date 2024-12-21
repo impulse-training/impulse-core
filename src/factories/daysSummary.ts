@@ -5,23 +5,33 @@ import { TimestampLike } from '../utils';
 export const makeDaysSummaryFactory = (TimestampKlass: typeof TimestampLike) =>
   Factory.makeFactory<DaysSummaryValue>({
     '2024-01-01': {
-      behavior1: {
-        behavior: {
-          ordinal: 0,
-          name: 'Watching youtube',
-          trackingType: 'time',
-          isHelpful: null,
+      emotions: {
+        'happy-sad': {
+          name: 'Sad',
+          label: 'Really sad',
+          intensity: 4,
+          key: 'happy-sad',
         },
-        data: {
-          unit: 'time',
-          numericValue: 1,
-          setAt: TimestampKlass.now(),
-          stringValue: '1 minute',
+      },
+      behaviors: {
+        behavior1: {
+          behavior: {
+            ordinal: 0,
+            name: 'Watching youtube',
+            trackingType: 'time',
+            isHelpful: null,
+          },
+          data: {
+            unit: 'time',
+            numericValue: 1,
+            setAt: TimestampKlass.now(),
+            stringValue: '1 minute',
+          },
+          // optionId: 'tactic1',
+          // optionColor: 'blue',
+          // optionLabel: 'Tactic 1',
+          // optionTextColor: 'white',
         },
-        // optionId: 'tactic1',
-        // optionColor: 'blue',
-        // optionLabel: 'Tactic 1',
-        // optionTextColor: 'white',
       },
     },
   });
