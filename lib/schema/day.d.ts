@@ -76,8 +76,8 @@ export declare const daySchema: yup.ObjectSchema<{
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
-                        category?: string | undefined;
                         dailyLimit?: number | undefined;
+                        gameplanId?: string | undefined;
                         name: string;
                         ordinal: number;
                         trackingType: NonNullable<"time" | "counter" | undefined>;
@@ -684,8 +684,8 @@ export declare const daySchema: yup.ObjectSchema<{
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
-                        category?: string | undefined;
                         dailyLimit?: number | undefined;
+                        gameplanId?: string | undefined;
                         name: string;
                         ordinal: number;
                         trackingType: NonNullable<"time" | "counter" | undefined>;
@@ -1293,8 +1293,8 @@ export declare const daySchema: yup.ObjectSchema<{
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
-                        category?: string | undefined;
                         dailyLimit?: number | undefined;
+                        gameplanId?: string | undefined;
                         name: string;
                         ordinal: number;
                         trackingType: NonNullable<"time" | "counter" | undefined>;
@@ -1902,8 +1902,8 @@ export declare const daySchema: yup.ObjectSchema<{
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
-                        category?: string | undefined;
                         dailyLimit?: number | undefined;
+                        gameplanId?: string | undefined;
                         name: string;
                         ordinal: number;
                         trackingType: NonNullable<"time" | "counter" | undefined>;
@@ -2517,8 +2517,8 @@ export declare const daySchema: yup.ObjectSchema<{
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
-                        category?: string | undefined;
                         dailyLimit?: number | undefined;
+                        gameplanId?: string | undefined;
                         name: string;
                         ordinal: number;
                         trackingType: NonNullable<"time" | "counter" | undefined>;
@@ -3127,8 +3127,8 @@ export declare const daySchema: yup.ObjectSchema<{
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
-                        category?: string | undefined;
                         dailyLimit?: number | undefined;
+                        gameplanId?: string | undefined;
                         name: string;
                         ordinal: number;
                         trackingType: NonNullable<"time" | "counter" | undefined>;
@@ -3736,8 +3736,8 @@ export declare const daySchema: yup.ObjectSchema<{
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
-                        category?: string | undefined;
                         dailyLimit?: number | undefined;
+                        gameplanId?: string | undefined;
                         name: string;
                         ordinal: number;
                         trackingType: NonNullable<"time" | "counter" | undefined>;

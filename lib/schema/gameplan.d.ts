@@ -1,5 +1,6 @@
 import * as yup from 'yup';
 export declare const gameplanSchema: yup.ObjectSchema<{
+    name: string;
     createdAt: {
         isEqual?: any;
         toMillis?: any;
@@ -13,47 +14,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
         seconds: number;
         nanoseconds: number;
         toDate: Function;
-    } | null | undefined;
-    blandPathwayData: {
-        nodes?: {}[] | undefined;
-        edges?: {}[] | undefined;
-    };
-    blandPathwayId: string | undefined;
-    summary: string | undefined;
-    issuesById: {
-        [x: string]: {
-            path?: string | null | undefined;
-            createdAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            updatedAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            ordinal?: number | undefined;
-            parentId?: string | null | undefined;
-            parentName?: string | null | undefined;
-            hasDebriefBehavior?: boolean | undefined;
-            synonyms?: string[] | undefined;
-            parentIds?: string[] | undefined;
-            parentNames?: string[] | undefined;
-            profileCount?: number | null | undefined;
-            isFeatured?: boolean | null | undefined;
-            blandContext?: string | undefined;
-            recommendedStrategies?: import("./utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
-            strategyOrdinals?: {
-                [x: string]: number;
-            } | null | undefined;
-            gameplanTactics?: import("./utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
-            name: string;
-        };
     } | null | undefined;
     profileStrategiesById: {
         [x: string]: {
@@ -1207,15 +1167,9 @@ export declare const gameplanSchema: yup.ObjectSchema<{
         };
     } | null | undefined;
 }, yup.AnyObject, {
+    name: undefined;
     createdAt: undefined;
     updatedAt: undefined;
-    blandPathwayData: {
-        nodes: "";
-        edges: "";
-    };
-    blandPathwayId: undefined;
-    summary: undefined;
-    issuesById: undefined;
     profileStrategiesById: undefined;
 }, "">;
 export type GameplanValue = yup.InferType<typeof gameplanSchema>;

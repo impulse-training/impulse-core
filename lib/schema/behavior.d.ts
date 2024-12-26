@@ -2,9 +2,9 @@ import * as yup from 'yup';
 export declare const behaviorSchema: yup.ObjectSchema<{
     name: string;
     ordinal: number;
-    category: string | undefined;
     trackingType: NonNullable<"time" | "counter" | undefined>;
     dailyLimit: number | undefined;
+    gameplanId: string | undefined;
     isHelpful: boolean | null;
     createdAt: {
         isEqual?: any;
@@ -23,9 +23,9 @@ export declare const behaviorSchema: yup.ObjectSchema<{
 }, yup.AnyObject, {
     name: undefined;
     ordinal: undefined;
-    category: undefined;
     trackingType: undefined;
     dailyLimit: undefined;
+    gameplanId: undefined;
     isHelpful: undefined;
     createdAt: undefined;
     updatedAt: undefined;

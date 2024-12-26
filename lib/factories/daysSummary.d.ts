@@ -20,8 +20,8 @@ export declare const makeDaysSummaryFactory: (TimestampKlass: typeof TimestampLi
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
-                    category?: string | undefined;
                     dailyLimit?: number | undefined;
+                    gameplanId?: string | undefined;
                     name: string;
                     ordinal: number;
                     trackingType: NonNullable<"time" | "counter" | undefined>;
