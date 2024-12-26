@@ -65,6 +65,7 @@ export declare const factories: {
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    category?: string | undefined;
                     dailyLimit?: number | undefined;
                     name: string;
                     ordinal: number;
@@ -684,6 +685,7 @@ export declare const factories: {
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
+                        category?: string | undefined;
                         dailyLimit?: number | undefined;
                         name: string;
                         ordinal: number;
@@ -2986,10 +2988,11 @@ export declare const factories: {
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
+        category?: string | undefined;
         dailyLimit?: number | undefined;
         name: string;
         ordinal: number;
         trackingType: NonNullable<"time" | "counter" | undefined>;
         isHelpful: boolean | null;
-    }, "name" | "ordinal" | "trackingType" | "isHelpful" | ("createdAt" | "updatedAt" | "dailyLimit")>;
+    }, "name" | "ordinal" | "trackingType" | "isHelpful" | ("createdAt" | "updatedAt" | "category" | "dailyLimit")>;
 };

@@ -67,6 +67,7 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    category?: string | undefined;
                     dailyLimit?: number | undefined;
                     name: string;
                     ordinal: number;

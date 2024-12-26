@@ -4,6 +4,7 @@ import { optionalTimestampSchema } from './utils/timestamp';
 export const behaviorSchema = yup.object({
   name: yup.string().required(),
   ordinal: yup.number().required(),
+  category: yup.string(),
   trackingType: yup
     .mixed<'time' | 'counter'>()
     .oneOf(['time', 'counter'])

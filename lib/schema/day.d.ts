@@ -76,6 +76,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
+                        category?: string | undefined;
                         dailyLimit?: number | undefined;
                         name: string;
                         ordinal: number;
@@ -683,6 +684,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
+                        category?: string | undefined;
                         dailyLimit?: number | undefined;
                         name: string;
                         ordinal: number;
@@ -1291,6 +1293,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
+                        category?: string | undefined;
                         dailyLimit?: number | undefined;
                         name: string;
                         ordinal: number;
@@ -1899,6 +1902,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
+                        category?: string | undefined;
                         dailyLimit?: number | undefined;
                         name: string;
                         ordinal: number;
@@ -2513,6 +2517,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
+                        category?: string | undefined;
                         dailyLimit?: number | undefined;
                         name: string;
                         ordinal: number;
@@ -3122,6 +3127,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
+                        category?: string | undefined;
                         dailyLimit?: number | undefined;
                         name: string;
                         ordinal: number;
@@ -3730,6 +3736,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
+                        category?: string | undefined;
                         dailyLimit?: number | undefined;
                         name: string;
                         ordinal: number;

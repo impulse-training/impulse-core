@@ -82,6 +82,7 @@ export declare const logSchema: yup.Lazy<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                category?: string | undefined;
                 dailyLimit?: number | undefined;
                 name: string;
                 ordinal: number;
@@ -689,6 +690,7 @@ export declare const logSchema: yup.Lazy<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                category?: string | undefined;
                 dailyLimit?: number | undefined;
                 name: string;
                 ordinal: number;
@@ -1297,6 +1299,7 @@ export declare const logSchema: yup.Lazy<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                category?: string | undefined;
                 dailyLimit?: number | undefined;
                 name: string;
                 ordinal: number;
@@ -1905,6 +1908,7 @@ export declare const logSchema: yup.Lazy<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                category?: string | undefined;
                 dailyLimit?: number | undefined;
                 name: string;
                 ordinal: number;
@@ -2519,6 +2523,7 @@ export declare const logSchema: yup.Lazy<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                category?: string | undefined;
                 dailyLimit?: number | undefined;
                 name: string;
                 ordinal: number;
@@ -3128,6 +3133,7 @@ export declare const logSchema: yup.Lazy<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                category?: string | undefined;
                 dailyLimit?: number | undefined;
                 name: string;
                 ordinal: number;
@@ -3736,6 +3742,7 @@ export declare const logSchema: yup.Lazy<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                category?: string | undefined;
                 dailyLimit?: number | undefined;
                 name: string;
                 ordinal: number;
