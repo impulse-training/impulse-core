@@ -801,27 +801,7 @@ export declare const factories: {
         };
         timezone: string;
     }, "uids" | "verificationCode" | "dayReviewTime" | "recentSummaries" | "timezone" | ("createdAt" | "updatedAt" | "parentIds" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseDoc" | "tourCompletedAt" | "scheduledNotificationIds" | "whatsappStrategyDoc" | "onboardedWithZaraAt" | "currentAppState" | "expoPushToken" | "notificationPreferences" | "goal" | "isReadyForTour" | "isOnboardingComplete" | "sendDebriefRemindersAfterMinutes" | "gameplanStrategies" | "androidPermissions" | "historicalInsights" | "isTourDismissed" | "region" | "enableZara")>;
-    timeReminderFactory: import("factory.ts").Factory<{
-        createdAt?: {
-            isEqual?: any;
-            toMillis?: any;
-            seconds: number;
-            nanoseconds: number;
-            toDate: Function;
-        } | null | undefined;
-        updatedAt?: {
-            isEqual?: any;
-            toMillis?: any;
-            seconds: number;
-            nanoseconds: number;
-            toDate: Function;
-        } | null | undefined;
-        name: string;
-        type: "time";
-        weekdays: number[];
-        hour: number;
-        minute: number;
-    }, "name" | "type" | "weekdays" | "hour" | "minute" | ("createdAt" | "updatedAt")>;
+    gameplanFactory: import("factory.ts").Factory<import("..").GameplanValue, "name" | "type" | "tacticsById" | "config" | ("createdAt" | "updatedAt")>;
     tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "ordinal" | "type" | "uid" | "sourceFile" | "sharedWithIssueIds" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "prompt" | "isShared" | "description" | "pastTenseTitle" | "debriefAfterMinutes" | "image" | "backgroundColor" | "likesCount" | "timerSeconds" | "isSuggested">;
     roadmapFactory: import("factory.ts").Factory<{
         createdAt?: {
@@ -1912,46 +1892,6 @@ export declare const factories: {
         } | null | undefined;
         forAllIssues?: boolean | undefined;
         tourDismissed?: boolean | undefined;
-        reminders?: ({
-            createdAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            updatedAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            name: string;
-            type: "time";
-            weekdays: number[];
-            hour: number;
-            minute: number;
-        } | {
-            createdAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            updatedAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            name: string;
-            type: "location";
-            locationId: string;
-            mode: NonNullable<"enter" | "exit" | undefined>;
-        })[] | undefined;
         type: "original";
         sortBy: NonNullable<"random" | "newest" | undefined>;
         strategy: {
@@ -2972,7 +2912,7 @@ export declare const factories: {
             invitationCode: string;
             invitationUrl: string;
         };
-    }, "type" | "sortBy" | "strategy" | ("createdAt" | "updatedAt" | "ordinal" | "strategyDoc" | "forIssueIds" | "ordinalsForIssues" | "forAllIssues" | "tourDismissed" | "reminders")>;
+    }, "type" | "sortBy" | "strategy" | ("createdAt" | "updatedAt" | "ordinal" | "strategyDoc" | "forIssueIds" | "ordinalsForIssues" | "forAllIssues" | "tourDismissed")>;
     behaviorFactory: import("factory.ts").Factory<{
         createdAt?: {
             isEqual?: any;

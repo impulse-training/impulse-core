@@ -23,46 +23,6 @@ export declare const originalProfileStrategySchema: yup.ObjectSchema<{
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
-    reminders: ({
-        createdAt?: {
-            isEqual?: any;
-            toMillis?: any;
-            seconds: number;
-            nanoseconds: number;
-            toDate: Function;
-        } | null | undefined;
-        updatedAt?: {
-            isEqual?: any;
-            toMillis?: any;
-            seconds: number;
-            nanoseconds: number;
-            toDate: Function;
-        } | null | undefined;
-        name: string;
-        type: "time";
-        weekdays: number[];
-        hour: number;
-        minute: number;
-    } | {
-        createdAt?: {
-            isEqual?: any;
-            toMillis?: any;
-            seconds: number;
-            nanoseconds: number;
-            toDate: Function;
-        } | null | undefined;
-        updatedAt?: {
-            isEqual?: any;
-            toMillis?: any;
-            seconds: number;
-            nanoseconds: number;
-            toDate: Function;
-        } | null | undefined;
-        name: string;
-        type: "location";
-        locationId: string;
-        mode: NonNullable<"enter" | "exit" | undefined>;
-    })[] | undefined;
     strategyDoc: import("../utils/firestore").DocumentReferenceLike<unknown> | undefined;
     strategy: {
         createdAt?: {
@@ -1092,7 +1052,6 @@ export declare const originalProfileStrategySchema: yup.ObjectSchema<{
     tourDismissed: undefined;
     createdAt: undefined;
     updatedAt: undefined;
-    reminders: "";
     strategyDoc: undefined;
     strategy: {
         createdAt: undefined;

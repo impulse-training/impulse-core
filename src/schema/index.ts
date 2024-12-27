@@ -21,7 +21,6 @@ export * from './notification';
 export * from './profile';
 export * from './profileStrategy';
 export * from './recoveryCode';
-export * from './reminder';
 export * from './roadmap';
 export * from './spotifyCredentials';
 export * from './strategy';

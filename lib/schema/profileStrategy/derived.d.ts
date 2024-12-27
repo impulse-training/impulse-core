@@ -23,46 +23,6 @@ export declare const derivedProfileStrategySchema: yup.ObjectSchema<{
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
-    reminders: ({
-        createdAt?: {
-            isEqual?: any;
-            toMillis?: any;
-            seconds: number;
-            nanoseconds: number;
-            toDate: Function;
-        } | null | undefined;
-        updatedAt?: {
-            isEqual?: any;
-            toMillis?: any;
-            seconds: number;
-            nanoseconds: number;
-            toDate: Function;
-        } | null | undefined;
-        name: string;
-        type: "time";
-        weekdays: number[];
-        hour: number;
-        minute: number;
-    } | {
-        createdAt?: {
-            isEqual?: any;
-            toMillis?: any;
-            seconds: number;
-            nanoseconds: number;
-            toDate: Function;
-        } | null | undefined;
-        updatedAt?: {
-            isEqual?: any;
-            toMillis?: any;
-            seconds: number;
-            nanoseconds: number;
-            toDate: Function;
-        } | null | undefined;
-        name: string;
-        type: "location";
-        locationId: string;
-        mode: NonNullable<"enter" | "exit" | undefined>;
-    })[] | undefined;
     parentIssueIds: (string | undefined)[];
 }, yup.AnyObject, {
     type: undefined;
@@ -74,7 +34,6 @@ export declare const derivedProfileStrategySchema: yup.ObjectSchema<{
     tourDismissed: undefined;
     createdAt: undefined;
     updatedAt: undefined;
-    reminders: "";
     parentIssueIds: "";
 }, "">;
 export type DerivedProfileStrategyValue = yup.InferType<typeof derivedProfileStrategySchema>;

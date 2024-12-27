@@ -3,7 +3,6 @@ import { optionalTimestampSchema } from './utils/timestamp';
 
 export const locationSchema = yup.object({
   uid: yup.string().required(),
-
   createdAt: optionalTimestampSchema,
   updatedAt: optionalTimestampSchema,
   name: yup.string().required(),

@@ -4,6 +4,7 @@ import { makeFactories } from '../../factories';
 import {
   daySchema,
   daysSummarySchema,
+  gameplanSchema,
   issueSchema,
   locationSchema,
   logSchema,
@@ -13,7 +14,6 @@ import {
   strategySchema,
   suggestionSchema,
   tacticSchema,
-  timeReminderSchema,
 } from '../../schema';
 import { behaviorSchema } from '../../schema/behavior';
 import { TimestampLike } from '../../utils/firestore/TimestampLike';
@@ -71,5 +71,5 @@ const schemaMap: Record<keyof typeof factories, null | Schema | Lazy<unknown>> =
     roadmapFactory: roadmapSchema,
     tacticFactory: tacticSchema,
     behaviorFactory: behaviorSchema,
-    timeReminderFactory: timeReminderSchema,
+    gameplanFactory: gameplanSchema,
   };
