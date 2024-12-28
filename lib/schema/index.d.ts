@@ -26,5 +26,6 @@ export * from './strategy';
 export * from './suggestion';
 export * from './tactic';
 export * from './tacticImpression';
+export * from './therapists';
 export * from './utils/file';
 export * from './utils/time';
