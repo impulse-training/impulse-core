@@ -14,7 +14,6 @@ export declare const fileSchema: yup.ObjectSchema<{
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
-    contentType: string;
     storagePath: string;
     uri: string;
     localFilePath: yup.Maybe<string | undefined>;
@@ -25,7 +24,6 @@ export declare const fileSchema: yup.ObjectSchema<{
 }, yup.AnyObject, {
     createdAt: undefined;
     updatedAt: undefined;
-    contentType: undefined;
     storagePath: undefined;
     uri: undefined;
     localFilePath: undefined;

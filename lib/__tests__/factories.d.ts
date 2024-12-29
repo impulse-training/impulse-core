@@ -34,7 +34,6 @@ export declare const factories: {
             metadata?: {} | null | undefined;
             thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
             thumbnailUri?: import("yup").Maybe<string | undefined>;
-            contentType: string;
             storagePath: string;
             uri: string;
         } | undefined;
@@ -146,7 +145,6 @@ export declare const factories: {
                         metadata?: {} | null | undefined;
                         thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                         thumbnailUri?: import("yup").Maybe<string | undefined>;
-                        contentType: string;
                         storagePath: string;
                         uri: string;
                     } | undefined;
@@ -174,7 +172,6 @@ export declare const factories: {
                         metadata?: {} | null | undefined;
                         thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                         thumbnailUri?: import("yup").Maybe<string | undefined>;
-                        contentType: string;
                         storagePath: string;
                         uri: string;
                     } | undefined;
@@ -228,7 +225,6 @@ export declare const factories: {
                         metadata?: {} | null | undefined;
                         thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                         thumbnailUri?: import("yup").Maybe<string | undefined>;
-                        contentType: string;
                         storagePath: string;
                         uri: string;
                     } | undefined;
@@ -287,7 +283,6 @@ export declare const factories: {
                         metadata?: {} | null | undefined;
                         thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                         thumbnailUri?: import("yup").Maybe<string | undefined>;
-                        contentType: string;
                         storagePath: string;
                         uri: string;
                     } | undefined;
@@ -344,7 +339,6 @@ export declare const factories: {
                         metadata?: {} | null | undefined;
                         thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                         thumbnailUri?: import("yup").Maybe<string | undefined>;
-                        contentType: string;
                         storagePath: string;
                         uri: string;
                     } | undefined;
@@ -401,7 +395,6 @@ export declare const factories: {
                         metadata?: {} | null | undefined;
                         thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                         thumbnailUri?: import("yup").Maybe<string | undefined>;
-                        contentType: string;
                         storagePath: string;
                         uri: string;
                     } | undefined;
@@ -458,7 +451,6 @@ export declare const factories: {
                         metadata?: {} | null | undefined;
                         thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                         thumbnailUri?: import("yup").Maybe<string | undefined>;
-                        contentType: string;
                         storagePath: string;
                         uri: string;
                     } | undefined;
@@ -515,7 +507,6 @@ export declare const factories: {
                         metadata?: {} | null | undefined;
                         thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                         thumbnailUri?: import("yup").Maybe<string | undefined>;
-                        contentType: string;
                         storagePath: string;
                         uri: string;
                     } | undefined;
@@ -852,7 +843,6 @@ export declare const factories: {
                     metadata?: {} | null | undefined;
                     thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                     thumbnailUri?: import("yup").Maybe<string | undefined>;
-                    contentType: string;
                     storagePath: string;
                     uri: string;
                 } | undefined;
@@ -880,7 +870,6 @@ export declare const factories: {
                     metadata?: {} | null | undefined;
                     thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                     thumbnailUri?: import("yup").Maybe<string | undefined>;
-                    contentType: string;
                     storagePath: string;
                     uri: string;
                 } | undefined;
@@ -934,7 +923,6 @@ export declare const factories: {
                     metadata?: {} | null | undefined;
                     thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                     thumbnailUri?: import("yup").Maybe<string | undefined>;
-                    contentType: string;
                     storagePath: string;
                     uri: string;
                 } | undefined;
@@ -993,7 +981,6 @@ export declare const factories: {
                     metadata?: {} | null | undefined;
                     thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                     thumbnailUri?: import("yup").Maybe<string | undefined>;
-                    contentType: string;
                     storagePath: string;
                     uri: string;
                 } | undefined;
@@ -1050,7 +1037,6 @@ export declare const factories: {
                     metadata?: {} | null | undefined;
                     thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                     thumbnailUri?: import("yup").Maybe<string | undefined>;
-                    contentType: string;
                     storagePath: string;
                     uri: string;
                 } | undefined;
@@ -1107,7 +1093,6 @@ export declare const factories: {
                     metadata?: {} | null | undefined;
                     thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                     thumbnailUri?: import("yup").Maybe<string | undefined>;
-                    contentType: string;
                     storagePath: string;
                     uri: string;
                 } | undefined;
@@ -1164,7 +1149,6 @@ export declare const factories: {
                     metadata?: {} | null | undefined;
                     thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                     thumbnailUri?: import("yup").Maybe<string | undefined>;
-                    contentType: string;
                     storagePath: string;
                     uri: string;
                 } | undefined;
@@ -1221,7 +1205,6 @@ export declare const factories: {
                     metadata?: {} | null | undefined;
                     thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                     thumbnailUri?: import("yup").Maybe<string | undefined>;
-                    contentType: string;
                     storagePath: string;
                     uri: string;
                 } | undefined;
@@ -1288,7 +1271,6 @@ export declare const factories: {
                 metadata?: {} | null | undefined;
                 thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                 thumbnailUri?: import("yup").Maybe<string | undefined>;
-                contentType: string;
                 storagePath: string;
                 uri: string;
             } | undefined;
@@ -1316,7 +1298,6 @@ export declare const factories: {
                 metadata?: {} | null | undefined;
                 thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                 thumbnailUri?: import("yup").Maybe<string | undefined>;
-                contentType: string;
                 storagePath: string;
                 uri: string;
             } | undefined;
@@ -1370,7 +1351,6 @@ export declare const factories: {
                 metadata?: {} | null | undefined;
                 thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                 thumbnailUri?: import("yup").Maybe<string | undefined>;
-                contentType: string;
                 storagePath: string;
                 uri: string;
             } | undefined;
@@ -1429,7 +1409,6 @@ export declare const factories: {
                 metadata?: {} | null | undefined;
                 thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                 thumbnailUri?: import("yup").Maybe<string | undefined>;
-                contentType: string;
                 storagePath: string;
                 uri: string;
             } | undefined;
@@ -1486,7 +1465,6 @@ export declare const factories: {
                 metadata?: {} | null | undefined;
                 thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                 thumbnailUri?: import("yup").Maybe<string | undefined>;
-                contentType: string;
                 storagePath: string;
                 uri: string;
             } | undefined;
@@ -1543,7 +1521,6 @@ export declare const factories: {
                 metadata?: {} | null | undefined;
                 thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                 thumbnailUri?: import("yup").Maybe<string | undefined>;
-                contentType: string;
                 storagePath: string;
                 uri: string;
             } | undefined;
@@ -1600,7 +1577,6 @@ export declare const factories: {
                 metadata?: {} | null | undefined;
                 thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                 thumbnailUri?: import("yup").Maybe<string | undefined>;
-                contentType: string;
                 storagePath: string;
                 uri: string;
             } | undefined;
@@ -1657,7 +1633,6 @@ export declare const factories: {
                 metadata?: {} | null | undefined;
                 thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                 thumbnailUri?: import("yup").Maybe<string | undefined>;
-                contentType: string;
                 storagePath: string;
                 uri: string;
             } | undefined;
@@ -1767,7 +1742,6 @@ export declare const factories: {
                         metadata?: {} | null | undefined;
                         thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                         thumbnailUri?: import("yup").Maybe<string | undefined>;
-                        contentType: string;
                         storagePath: string;
                         uri: string;
                     } | undefined;
@@ -1795,7 +1769,6 @@ export declare const factories: {
                         metadata?: {} | null | undefined;
                         thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                         thumbnailUri?: import("yup").Maybe<string | undefined>;
-                        contentType: string;
                         storagePath: string;
                         uri: string;
                     } | undefined;
@@ -1849,7 +1822,6 @@ export declare const factories: {
                         metadata?: {} | null | undefined;
                         thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                         thumbnailUri?: import("yup").Maybe<string | undefined>;
-                        contentType: string;
                         storagePath: string;
                         uri: string;
                     } | undefined;
@@ -1908,7 +1880,6 @@ export declare const factories: {
                         metadata?: {} | null | undefined;
                         thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                         thumbnailUri?: import("yup").Maybe<string | undefined>;
-                        contentType: string;
                         storagePath: string;
                         uri: string;
                     } | undefined;
@@ -1965,7 +1936,6 @@ export declare const factories: {
                         metadata?: {} | null | undefined;
                         thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                         thumbnailUri?: import("yup").Maybe<string | undefined>;
-                        contentType: string;
                         storagePath: string;
                         uri: string;
                     } | undefined;
@@ -2022,7 +1992,6 @@ export declare const factories: {
                         metadata?: {} | null | undefined;
                         thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                         thumbnailUri?: import("yup").Maybe<string | undefined>;
-                        contentType: string;
                         storagePath: string;
                         uri: string;
                     } | undefined;
@@ -2079,7 +2048,6 @@ export declare const factories: {
                         metadata?: {} | null | undefined;
                         thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                         thumbnailUri?: import("yup").Maybe<string | undefined>;
-                        contentType: string;
                         storagePath: string;
                         uri: string;
                     } | undefined;
@@ -2136,7 +2104,6 @@ export declare const factories: {
                         metadata?: {} | null | undefined;
                         thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                         thumbnailUri?: import("yup").Maybe<string | undefined>;
-                        contentType: string;
                         storagePath: string;
                         uri: string;
                     } | undefined;
@@ -2203,7 +2170,6 @@ export declare const factories: {
                     metadata?: {} | null | undefined;
                     thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                     thumbnailUri?: import("yup").Maybe<string | undefined>;
-                    contentType: string;
                     storagePath: string;
                     uri: string;
                 } | undefined;
@@ -2231,7 +2197,6 @@ export declare const factories: {
                     metadata?: {} | null | undefined;
                     thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                     thumbnailUri?: import("yup").Maybe<string | undefined>;
-                    contentType: string;
                     storagePath: string;
                     uri: string;
                 } | undefined;
@@ -2285,7 +2250,6 @@ export declare const factories: {
                     metadata?: {} | null | undefined;
                     thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                     thumbnailUri?: import("yup").Maybe<string | undefined>;
-                    contentType: string;
                     storagePath: string;
                     uri: string;
                 } | undefined;
@@ -2344,7 +2308,6 @@ export declare const factories: {
                     metadata?: {} | null | undefined;
                     thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                     thumbnailUri?: import("yup").Maybe<string | undefined>;
-                    contentType: string;
                     storagePath: string;
                     uri: string;
                 } | undefined;
@@ -2401,7 +2364,6 @@ export declare const factories: {
                     metadata?: {} | null | undefined;
                     thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                     thumbnailUri?: import("yup").Maybe<string | undefined>;
-                    contentType: string;
                     storagePath: string;
                     uri: string;
                 } | undefined;
@@ -2458,7 +2420,6 @@ export declare const factories: {
                     metadata?: {} | null | undefined;
                     thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                     thumbnailUri?: import("yup").Maybe<string | undefined>;
-                    contentType: string;
                     storagePath: string;
                     uri: string;
                 } | undefined;
@@ -2515,7 +2476,6 @@ export declare const factories: {
                     metadata?: {} | null | undefined;
                     thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                     thumbnailUri?: import("yup").Maybe<string | undefined>;
-                    contentType: string;
                     storagePath: string;
                     uri: string;
                 } | undefined;
@@ -2572,7 +2532,6 @@ export declare const factories: {
                     metadata?: {} | null | undefined;
                     thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                     thumbnailUri?: import("yup").Maybe<string | undefined>;
-                    contentType: string;
                     storagePath: string;
                     uri: string;
                 } | undefined;

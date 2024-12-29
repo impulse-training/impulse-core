@@ -47,7 +47,6 @@ export declare const basicTacticSchema: yup.ObjectSchema<{
         metadata?: {} | null | undefined;
         thumbnailStoragePath?: yup.Maybe<string | undefined>;
         thumbnailUri?: yup.Maybe<string | undefined>;
-        contentType: string;
         storagePath: string;
         uri: string;
     } | undefined;
@@ -75,7 +74,6 @@ export declare const basicTacticSchema: yup.ObjectSchema<{
         metadata?: {} | null | undefined;
         thumbnailStoragePath?: yup.Maybe<string | undefined>;
         thumbnailUri?: yup.Maybe<string | undefined>;
-        contentType: string;
         storagePath: string;
         uri: string;
     } | undefined;

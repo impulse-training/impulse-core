@@ -33,7 +33,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         metadata?: {} | null | undefined;
         thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
         thumbnailUri?: import("yup").Maybe<string | undefined>;
-        contentType: string;
         storagePath: string;
         uri: string;
     } | undefined;
@@ -145,7 +144,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                     metadata?: {} | null | undefined;
                     thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                     thumbnailUri?: import("yup").Maybe<string | undefined>;
-                    contentType: string;
                     storagePath: string;
                     uri: string;
                 } | undefined;
@@ -173,7 +171,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                     metadata?: {} | null | undefined;
                     thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                     thumbnailUri?: import("yup").Maybe<string | undefined>;
-                    contentType: string;
                     storagePath: string;
                     uri: string;
                 } | undefined;
@@ -227,7 +224,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                     metadata?: {} | null | undefined;
                     thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                     thumbnailUri?: import("yup").Maybe<string | undefined>;
-                    contentType: string;
                     storagePath: string;
                     uri: string;
                 } | undefined;
@@ -286,7 +282,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                     metadata?: {} | null | undefined;
                     thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                     thumbnailUri?: import("yup").Maybe<string | undefined>;
-                    contentType: string;
                     storagePath: string;
                     uri: string;
                 } | undefined;
@@ -343,7 +338,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                     metadata?: {} | null | undefined;
                     thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                     thumbnailUri?: import("yup").Maybe<string | undefined>;
-                    contentType: string;
                     storagePath: string;
                     uri: string;
                 } | undefined;
@@ -400,7 +394,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                     metadata?: {} | null | undefined;
                     thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                     thumbnailUri?: import("yup").Maybe<string | undefined>;
-                    contentType: string;
                     storagePath: string;
                     uri: string;
                 } | undefined;
@@ -457,7 +450,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                     metadata?: {} | null | undefined;
                     thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                     thumbnailUri?: import("yup").Maybe<string | undefined>;
-                    contentType: string;
                     storagePath: string;
                     uri: string;
                 } | undefined;
@@ -514,7 +506,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                     metadata?: {} | null | undefined;
                     thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                     thumbnailUri?: import("yup").Maybe<string | undefined>;
-                    contentType: string;
                     storagePath: string;
                     uri: string;
                 } | undefined;

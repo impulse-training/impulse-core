@@ -47,7 +47,6 @@ export declare function tacticBaseSchema<K extends string>(type: K): yup.ObjectS
         metadata?: {} | null | undefined;
         thumbnailStoragePath?: yup.Maybe<string | undefined>;
         thumbnailUri?: yup.Maybe<string | undefined>;
-        contentType: string;
         storagePath: string;
         uri: string;
     } | undefined;
