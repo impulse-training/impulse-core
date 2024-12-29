@@ -97,7 +97,6 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
                 storagePath: string;
                 uri: string;
             } | undefined;
-            ordinal: number;
             type: "basic";
             prompt: string;
         } | {
@@ -156,7 +155,6 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
             likesCount?: number | null | undefined;
             timerSeconds?: import("yup").Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
-            ordinal: number;
             type: "breathingExercise";
             inFor: number;
             holdFor: number;
@@ -216,7 +214,6 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
             likesCount?: number | null | undefined;
             timerSeconds?: import("yup").Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
-            ordinal: number;
             type: "link";
             url: string;
         } | {
@@ -274,7 +271,6 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
             likesCount?: number | null | undefined;
             timerSeconds?: import("yup").Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
-            ordinal: number;
             type: "notifyASupportPerson";
             contactIds: string[];
         } | {
@@ -332,7 +328,6 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
             likesCount?: number | null | undefined;
             timerSeconds?: import("yup").Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
-            ordinal: number;
             type: "notifySupportGroup";
             supportGroup: import("../schema/utils/firestore").DocumentReferenceLike<unknown>;
         } | {
@@ -390,7 +385,6 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
             likesCount?: number | null | undefined;
             timerSeconds?: import("yup").Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
-            ordinal: number;
             type: "steps";
             targetSteps: number;
         } | {
@@ -448,7 +442,6 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
             likesCount?: number | null | undefined;
             timerSeconds?: import("yup").Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
-            ordinal: number;
             type: "video";
             video: {
                 storagePath?: string | null | undefined;
@@ -540,7 +533,6 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
             storagePath: string;
             uri: string;
         } | undefined;
-        ordinal: number;
         type: "basic";
         prompt: string;
     } | {
@@ -599,7 +591,6 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
         likesCount?: number | null | undefined;
         timerSeconds?: import("yup").Maybe<number | undefined>;
         isSuggested?: boolean | undefined;
-        ordinal: number;
         type: "breathingExercise";
         inFor: number;
         holdFor: number;
@@ -659,7 +650,6 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
         likesCount?: number | null | undefined;
         timerSeconds?: import("yup").Maybe<number | undefined>;
         isSuggested?: boolean | undefined;
-        ordinal: number;
         type: "link";
         url: string;
     } | {
@@ -717,7 +707,6 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
         likesCount?: number | null | undefined;
         timerSeconds?: import("yup").Maybe<number | undefined>;
         isSuggested?: boolean | undefined;
-        ordinal: number;
         type: "notifyASupportPerson";
         contactIds: string[];
     } | {
@@ -775,7 +764,6 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
         likesCount?: number | null | undefined;
         timerSeconds?: import("yup").Maybe<number | undefined>;
         isSuggested?: boolean | undefined;
-        ordinal: number;
         type: "notifySupportGroup";
         supportGroup: import("../schema/utils/firestore").DocumentReferenceLike<unknown>;
     } | {
@@ -833,7 +821,6 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
         likesCount?: number | null | undefined;
         timerSeconds?: import("yup").Maybe<number | undefined>;
         isSuggested?: boolean | undefined;
-        ordinal: number;
         type: "steps";
         targetSteps: number;
     } | {
@@ -891,7 +878,6 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
         likesCount?: number | null | undefined;
         timerSeconds?: import("yup").Maybe<number | undefined>;
         isSuggested?: boolean | undefined;
-        ordinal: number;
         type: "video";
         video: {
             storagePath?: string | null | undefined;

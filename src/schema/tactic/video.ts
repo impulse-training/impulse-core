@@ -1,7 +1,7 @@
 import * as yup from 'yup';
-import { tacticValueBaseSchema } from './base';
+import { tacticBaseSchema } from './base';
 
-export const videoTacticSchema = tacticValueBaseSchema('video').shape({
+export const videoTacticSchema = tacticBaseSchema('video').shape({
   video: yup
     .object({
       url: yup.string().url().nullable(),

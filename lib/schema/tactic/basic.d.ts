@@ -7,7 +7,6 @@ export declare const basicTacticSchema: yup.ObjectSchema<{
     recommendedForIssueOrdinals: {
         [x: string]: number;
     } | null | undefined;
-    ordinal: number;
     prompt: string;
     isShared: boolean | undefined;
     description: string | null | undefined;
@@ -86,7 +85,6 @@ export declare const basicTacticSchema: yup.ObjectSchema<{
     sourceFile: undefined;
     sharedWithIssueIds: "";
     recommendedForIssueOrdinals: undefined;
-    ordinal: undefined;
     prompt: undefined;
     isShared: undefined;
     description: undefined;
@@ -100,17 +98,6 @@ export declare const basicTacticSchema: yup.ObjectSchema<{
     likesCount: undefined;
     timerSeconds: undefined;
     isSuggested: undefined;
-    recording: {
-        createdAt: undefined;
-        updatedAt: undefined;
-        contentType: undefined;
-        storagePath: undefined;
-        uri: undefined;
-        localFilePath: undefined;
-        isDeleted: undefined;
-        metadata: {};
-        thumbnailStoragePath: undefined;
-        thumbnailUri: undefined;
-    };
+    recording: undefined;
 }, "">;
 export type BasicTacticValue = yup.InferType<typeof basicTacticSchema>;

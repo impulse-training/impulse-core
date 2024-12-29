@@ -1,7 +1,7 @@
 import * as yup from 'yup';
-import { tacticValueBaseSchema } from './base';
+import { tacticBaseSchema } from './base';
 
-export const breathingExerciseTacticSchema = tacticValueBaseSchema(
+export const breathingExerciseTacticSchema = tacticBaseSchema(
   'breathingExercise'
 ).shape({
   inFor: yup.number().positive().required(),

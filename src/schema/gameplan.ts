@@ -1,5 +1,6 @@
 import * as yup from 'yup';
 import { tacticSchema, WithTacticsById } from './tactic';
+import { documentReferenceSchema } from './utils/firestore';
 import { objectOf } from './utils/objectOf';
 import { optionalTimestampSchema } from './utils/timestamp';
 
@@ -70,7 +71,12 @@ export const gameplanSchema = yup.object({
       then: () => emotionConfigSchema,
     })
     .required(),
-  tacticsById: objectOf(tacticSchema),
+  tacticsById: objectOf(
+    yup.object({
+      doc: documentReferenceSchema.required(),
+      data: tacticSchema,
+    })
+  ),
   createdAt: optionalTimestampSchema,
   updatedAt: optionalTimestampSchema,
 });

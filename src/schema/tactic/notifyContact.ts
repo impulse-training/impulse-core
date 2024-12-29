@@ -1,7 +1,7 @@
 import * as yup from 'yup';
-import { tacticValueBaseSchema } from './base';
+import { tacticBaseSchema } from './base';
 
-export const notifyAContactSchema = tacticValueBaseSchema(
+export const notifyAContactSchema = tacticBaseSchema(
   'notifyASupportPerson'
 ).shape({
   contactIds: yup.array().of(yup.string().required()).required(),

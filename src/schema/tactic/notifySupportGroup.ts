@@ -1,8 +1,8 @@
 import * as yup from 'yup';
 import { documentReferenceSchema } from '../utils/firestore';
-import { tacticValueBaseSchema } from './base';
+import { tacticBaseSchema } from './base';
 
-export const notifySupportGroupSchema = tacticValueBaseSchema(
+export const notifySupportGroupSchema = tacticBaseSchema(
   'notifySupportGroup'
 ).shape({
   supportGroup: documentReferenceSchema.required(),

@@ -195,7 +195,6 @@ export declare const logSchema: yup.Lazy<{
                     storagePath: string;
                     uri: string;
                 } | undefined;
-                ordinal: number;
                 type: "basic";
                 prompt: string;
             } | {
@@ -254,7 +253,6 @@ export declare const logSchema: yup.Lazy<{
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
-                ordinal: number;
                 type: "breathingExercise";
                 inFor: number;
                 holdFor: number;
@@ -314,7 +312,6 @@ export declare const logSchema: yup.Lazy<{
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
-                ordinal: number;
                 type: "link";
                 url: string;
             } | {
@@ -372,7 +369,6 @@ export declare const logSchema: yup.Lazy<{
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
-                ordinal: number;
                 type: "notifyASupportPerson";
                 contactIds: string[];
             } | {
@@ -430,7 +426,6 @@ export declare const logSchema: yup.Lazy<{
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
-                ordinal: number;
                 type: "notifySupportGroup";
                 supportGroup: import("../utils/firestore").DocumentReferenceLike<unknown>;
             } | {
@@ -488,7 +483,6 @@ export declare const logSchema: yup.Lazy<{
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
-                ordinal: number;
                 type: "steps";
                 targetSteps: number;
             } | {
@@ -546,7 +540,6 @@ export declare const logSchema: yup.Lazy<{
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
-                ordinal: number;
                 type: "video";
                 video: {
                     storagePath?: string | null | undefined;
@@ -746,7 +739,6 @@ export declare const logSchema: yup.Lazy<{
                     storagePath: string;
                     uri: string;
                 } | undefined;
-                ordinal: number;
                 type: "basic";
                 prompt: string;
             } | {
@@ -805,7 +797,6 @@ export declare const logSchema: yup.Lazy<{
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
-                ordinal: number;
                 type: "breathingExercise";
                 inFor: number;
                 holdFor: number;
@@ -865,7 +856,6 @@ export declare const logSchema: yup.Lazy<{
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
-                ordinal: number;
                 type: "link";
                 url: string;
             } | {
@@ -923,7 +913,6 @@ export declare const logSchema: yup.Lazy<{
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
-                ordinal: number;
                 type: "notifyASupportPerson";
                 contactIds: string[];
             } | {
@@ -981,7 +970,6 @@ export declare const logSchema: yup.Lazy<{
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
-                ordinal: number;
                 type: "notifySupportGroup";
                 supportGroup: import("../utils/firestore").DocumentReferenceLike<unknown>;
             } | {
@@ -1039,7 +1027,6 @@ export declare const logSchema: yup.Lazy<{
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
-                ordinal: number;
                 type: "steps";
                 targetSteps: number;
             } | {
@@ -1097,7 +1084,6 @@ export declare const logSchema: yup.Lazy<{
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
-                ordinal: number;
                 type: "video";
                 video: {
                     storagePath?: string | null | undefined;
@@ -1298,7 +1284,6 @@ export declare const logSchema: yup.Lazy<{
                     storagePath: string;
                     uri: string;
                 } | undefined;
-                ordinal: number;
                 type: "basic";
                 prompt: string;
             } | {
@@ -1357,7 +1342,6 @@ export declare const logSchema: yup.Lazy<{
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
-                ordinal: number;
                 type: "breathingExercise";
                 inFor: number;
                 holdFor: number;
@@ -1417,7 +1401,6 @@ export declare const logSchema: yup.Lazy<{
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
-                ordinal: number;
                 type: "link";
                 url: string;
             } | {
@@ -1475,7 +1458,6 @@ export declare const logSchema: yup.Lazy<{
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
-                ordinal: number;
                 type: "notifyASupportPerson";
                 contactIds: string[];
             } | {
@@ -1533,7 +1515,6 @@ export declare const logSchema: yup.Lazy<{
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
-                ordinal: number;
                 type: "notifySupportGroup";
                 supportGroup: import("../utils/firestore").DocumentReferenceLike<unknown>;
             } | {
@@ -1591,7 +1572,6 @@ export declare const logSchema: yup.Lazy<{
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
-                ordinal: number;
                 type: "steps";
                 targetSteps: number;
             } | {
@@ -1649,7 +1629,6 @@ export declare const logSchema: yup.Lazy<{
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
-                ordinal: number;
                 type: "video";
                 video: {
                     storagePath?: string | null | undefined;
@@ -1850,7 +1829,6 @@ export declare const logSchema: yup.Lazy<{
                     storagePath: string;
                     uri: string;
                 } | undefined;
-                ordinal: number;
                 type: "basic";
                 prompt: string;
             } | {
@@ -1909,7 +1887,6 @@ export declare const logSchema: yup.Lazy<{
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
-                ordinal: number;
                 type: "breathingExercise";
                 inFor: number;
                 holdFor: number;
@@ -1969,7 +1946,6 @@ export declare const logSchema: yup.Lazy<{
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
-                ordinal: number;
                 type: "link";
                 url: string;
             } | {
@@ -2027,7 +2003,6 @@ export declare const logSchema: yup.Lazy<{
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
-                ordinal: number;
                 type: "notifyASupportPerson";
                 contactIds: string[];
             } | {
@@ -2085,7 +2060,6 @@ export declare const logSchema: yup.Lazy<{
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
-                ordinal: number;
                 type: "notifySupportGroup";
                 supportGroup: import("../utils/firestore").DocumentReferenceLike<unknown>;
             } | {
@@ -2143,7 +2117,6 @@ export declare const logSchema: yup.Lazy<{
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
-                ordinal: number;
                 type: "steps";
                 targetSteps: number;
             } | {
@@ -2201,7 +2174,6 @@ export declare const logSchema: yup.Lazy<{
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
-                ordinal: number;
                 type: "video";
                 video: {
                     storagePath?: string | null | undefined;
@@ -2408,7 +2380,6 @@ export declare const logSchema: yup.Lazy<{
                     storagePath: string;
                     uri: string;
                 } | undefined;
-                ordinal: number;
                 type: "basic";
                 prompt: string;
             } | {
@@ -2467,7 +2438,6 @@ export declare const logSchema: yup.Lazy<{
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
-                ordinal: number;
                 type: "breathingExercise";
                 inFor: number;
                 holdFor: number;
@@ -2527,7 +2497,6 @@ export declare const logSchema: yup.Lazy<{
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
-                ordinal: number;
                 type: "link";
                 url: string;
             } | {
@@ -2585,7 +2554,6 @@ export declare const logSchema: yup.Lazy<{
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
-                ordinal: number;
                 type: "notifyASupportPerson";
                 contactIds: string[];
             } | {
@@ -2643,7 +2611,6 @@ export declare const logSchema: yup.Lazy<{
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
-                ordinal: number;
                 type: "notifySupportGroup";
                 supportGroup: import("../utils/firestore").DocumentReferenceLike<unknown>;
             } | {
@@ -2701,7 +2668,6 @@ export declare const logSchema: yup.Lazy<{
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
-                ordinal: number;
                 type: "steps";
                 targetSteps: number;
             } | {
@@ -2759,7 +2725,6 @@ export declare const logSchema: yup.Lazy<{
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
-                ordinal: number;
                 type: "video";
                 video: {
                     storagePath?: string | null | undefined;
@@ -2961,7 +2926,6 @@ export declare const logSchema: yup.Lazy<{
                     storagePath: string;
                     uri: string;
                 } | undefined;
-                ordinal: number;
                 type: "basic";
                 prompt: string;
             } | {
@@ -3020,7 +2984,6 @@ export declare const logSchema: yup.Lazy<{
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
-                ordinal: number;
                 type: "breathingExercise";
                 inFor: number;
                 holdFor: number;
@@ -3080,7 +3043,6 @@ export declare const logSchema: yup.Lazy<{
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
-                ordinal: number;
                 type: "link";
                 url: string;
             } | {
@@ -3138,7 +3100,6 @@ export declare const logSchema: yup.Lazy<{
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
-                ordinal: number;
                 type: "notifyASupportPerson";
                 contactIds: string[];
             } | {
@@ -3196,7 +3157,6 @@ export declare const logSchema: yup.Lazy<{
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
-                ordinal: number;
                 type: "notifySupportGroup";
                 supportGroup: import("../utils/firestore").DocumentReferenceLike<unknown>;
             } | {
@@ -3254,7 +3214,6 @@ export declare const logSchema: yup.Lazy<{
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
-                ordinal: number;
                 type: "steps";
                 targetSteps: number;
             } | {
@@ -3312,7 +3271,6 @@ export declare const logSchema: yup.Lazy<{
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
-                ordinal: number;
                 type: "video";
                 video: {
                     storagePath?: string | null | undefined;
@@ -3513,7 +3471,6 @@ export declare const logSchema: yup.Lazy<{
                     storagePath: string;
                     uri: string;
                 } | undefined;
-                ordinal: number;
                 type: "basic";
                 prompt: string;
             } | {
@@ -3572,7 +3529,6 @@ export declare const logSchema: yup.Lazy<{
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
-                ordinal: number;
                 type: "breathingExercise";
                 inFor: number;
                 holdFor: number;
@@ -3632,7 +3588,6 @@ export declare const logSchema: yup.Lazy<{
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
-                ordinal: number;
                 type: "link";
                 url: string;
             } | {
@@ -3690,7 +3645,6 @@ export declare const logSchema: yup.Lazy<{
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
-                ordinal: number;
                 type: "notifyASupportPerson";
                 contactIds: string[];
             } | {
@@ -3748,7 +3702,6 @@ export declare const logSchema: yup.Lazy<{
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
-                ordinal: number;
                 type: "notifySupportGroup";
                 supportGroup: import("../utils/firestore").DocumentReferenceLike<unknown>;
             } | {
@@ -3806,7 +3759,6 @@ export declare const logSchema: yup.Lazy<{
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
-                ordinal: number;
                 type: "steps";
                 targetSteps: number;
             } | {
@@ -3864,7 +3816,6 @@ export declare const logSchema: yup.Lazy<{
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
-                ordinal: number;
                 type: "video";
                 video: {
                     storagePath?: string | null | undefined;

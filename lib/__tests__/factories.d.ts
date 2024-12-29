@@ -178,7 +178,6 @@ export declare const factories: {
                         storagePath: string;
                         uri: string;
                     } | undefined;
-                    ordinal: number;
                     type: "basic";
                     prompt: string;
                 } | {
@@ -237,7 +236,6 @@ export declare const factories: {
                     likesCount?: number | null | undefined;
                     timerSeconds?: import("yup").Maybe<number | undefined>;
                     isSuggested?: boolean | undefined;
-                    ordinal: number;
                     type: "breathingExercise";
                     inFor: number;
                     holdFor: number;
@@ -297,7 +295,6 @@ export declare const factories: {
                     likesCount?: number | null | undefined;
                     timerSeconds?: import("yup").Maybe<number | undefined>;
                     isSuggested?: boolean | undefined;
-                    ordinal: number;
                     type: "link";
                     url: string;
                 } | {
@@ -355,7 +352,6 @@ export declare const factories: {
                     likesCount?: number | null | undefined;
                     timerSeconds?: import("yup").Maybe<number | undefined>;
                     isSuggested?: boolean | undefined;
-                    ordinal: number;
                     type: "notifyASupportPerson";
                     contactIds: string[];
                 } | {
@@ -413,7 +409,6 @@ export declare const factories: {
                     likesCount?: number | null | undefined;
                     timerSeconds?: import("yup").Maybe<number | undefined>;
                     isSuggested?: boolean | undefined;
-                    ordinal: number;
                     type: "notifySupportGroup";
                     supportGroup: import("../schema/utils/firestore").DocumentReferenceLike<unknown>;
                 } | {
@@ -471,7 +466,6 @@ export declare const factories: {
                     likesCount?: number | null | undefined;
                     timerSeconds?: import("yup").Maybe<number | undefined>;
                     isSuggested?: boolean | undefined;
-                    ordinal: number;
                     type: "steps";
                     targetSteps: number;
                 } | {
@@ -529,7 +523,6 @@ export declare const factories: {
                     likesCount?: number | null | undefined;
                     timerSeconds?: import("yup").Maybe<number | undefined>;
                     isSuggested?: boolean | undefined;
-                    ordinal: number;
                     type: "video";
                     video: {
                         storagePath?: string | null | undefined;
@@ -745,7 +738,7 @@ export declare const factories: {
         timezone: string;
     }, "uids" | "verificationCode" | "dayReviewTime" | "recentSummaries" | "timezone" | ("createdAt" | "updatedAt" | "parentIds" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseDoc" | "tourCompletedAt" | "scheduledNotificationIds" | "whatsappStrategyDoc" | "onboardedWithZaraAt" | "currentAppState" | "expoPushToken" | "notificationPreferences" | "goal" | "isReadyForTour" | "isOnboardingComplete" | "sendDebriefRemindersAfterMinutes" | "gameplanStrategies" | "androidPermissions" | "historicalInsights" | "isTourDismissed" | "region" | "enableZara")>;
     gameplanFactory: import("factory.ts").Factory<import("..").GameplanValue, "name" | "type" | "tacticsById" | "config" | ("createdAt" | "updatedAt")>;
-    tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "ordinal" | "type" | "uid" | "sourceFile" | "sharedWithIssueIds" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "prompt" | "isShared" | "description" | "pastTenseTitle" | "debriefAfterMinutes" | "image" | "backgroundColor" | "likesCount" | "timerSeconds" | "isSuggested">;
+    tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "type" | "uid" | "sourceFile" | "sharedWithIssueIds" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "prompt" | "isShared" | "description" | "pastTenseTitle" | "debriefAfterMinutes" | "image" | "backgroundColor" | "likesCount" | "timerSeconds" | "isSuggested">;
     roadmapFactory: import("factory.ts").Factory<{
         createdAt?: {
             isEqual?: any;
@@ -891,7 +884,6 @@ export declare const factories: {
                     storagePath: string;
                     uri: string;
                 } | undefined;
-                ordinal: number;
                 type: "basic";
                 prompt: string;
             } | {
@@ -950,7 +942,6 @@ export declare const factories: {
                 likesCount?: number | null | undefined;
                 timerSeconds?: import("yup").Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
-                ordinal: number;
                 type: "breathingExercise";
                 inFor: number;
                 holdFor: number;
@@ -1010,7 +1001,6 @@ export declare const factories: {
                 likesCount?: number | null | undefined;
                 timerSeconds?: import("yup").Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
-                ordinal: number;
                 type: "link";
                 url: string;
             } | {
@@ -1068,7 +1058,6 @@ export declare const factories: {
                 likesCount?: number | null | undefined;
                 timerSeconds?: import("yup").Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
-                ordinal: number;
                 type: "notifyASupportPerson";
                 contactIds: string[];
             } | {
@@ -1126,7 +1115,6 @@ export declare const factories: {
                 likesCount?: number | null | undefined;
                 timerSeconds?: import("yup").Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
-                ordinal: number;
                 type: "notifySupportGroup";
                 supportGroup: import("../schema/utils/firestore").DocumentReferenceLike<unknown>;
             } | {
@@ -1184,7 +1172,6 @@ export declare const factories: {
                 likesCount?: number | null | undefined;
                 timerSeconds?: import("yup").Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
-                ordinal: number;
                 type: "steps";
                 targetSteps: number;
             } | {
@@ -1242,7 +1229,6 @@ export declare const factories: {
                 likesCount?: number | null | undefined;
                 timerSeconds?: import("yup").Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
-                ordinal: number;
                 type: "video";
                 video: {
                     storagePath?: string | null | undefined;
@@ -1334,7 +1320,6 @@ export declare const factories: {
                 storagePath: string;
                 uri: string;
             } | undefined;
-            ordinal: number;
             type: "basic";
             prompt: string;
         } | {
@@ -1393,7 +1378,6 @@ export declare const factories: {
             likesCount?: number | null | undefined;
             timerSeconds?: import("yup").Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
-            ordinal: number;
             type: "breathingExercise";
             inFor: number;
             holdFor: number;
@@ -1453,7 +1437,6 @@ export declare const factories: {
             likesCount?: number | null | undefined;
             timerSeconds?: import("yup").Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
-            ordinal: number;
             type: "link";
             url: string;
         } | {
@@ -1511,7 +1494,6 @@ export declare const factories: {
             likesCount?: number | null | undefined;
             timerSeconds?: import("yup").Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
-            ordinal: number;
             type: "notifyASupportPerson";
             contactIds: string[];
         } | {
@@ -1569,7 +1551,6 @@ export declare const factories: {
             likesCount?: number | null | undefined;
             timerSeconds?: import("yup").Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
-            ordinal: number;
             type: "notifySupportGroup";
             supportGroup: import("../schema/utils/firestore").DocumentReferenceLike<unknown>;
         } | {
@@ -1627,7 +1608,6 @@ export declare const factories: {
             likesCount?: number | null | undefined;
             timerSeconds?: import("yup").Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
-            ordinal: number;
             type: "steps";
             targetSteps: number;
         } | {
@@ -1685,7 +1665,6 @@ export declare const factories: {
             likesCount?: number | null | undefined;
             timerSeconds?: import("yup").Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
-            ordinal: number;
             type: "video";
             video: {
                 storagePath?: string | null | undefined;
@@ -1820,7 +1799,6 @@ export declare const factories: {
                         storagePath: string;
                         uri: string;
                     } | undefined;
-                    ordinal: number;
                     type: "basic";
                     prompt: string;
                 } | {
@@ -1879,7 +1857,6 @@ export declare const factories: {
                     likesCount?: number | null | undefined;
                     timerSeconds?: import("yup").Maybe<number | undefined>;
                     isSuggested?: boolean | undefined;
-                    ordinal: number;
                     type: "breathingExercise";
                     inFor: number;
                     holdFor: number;
@@ -1939,7 +1916,6 @@ export declare const factories: {
                     likesCount?: number | null | undefined;
                     timerSeconds?: import("yup").Maybe<number | undefined>;
                     isSuggested?: boolean | undefined;
-                    ordinal: number;
                     type: "link";
                     url: string;
                 } | {
@@ -1997,7 +1973,6 @@ export declare const factories: {
                     likesCount?: number | null | undefined;
                     timerSeconds?: import("yup").Maybe<number | undefined>;
                     isSuggested?: boolean | undefined;
-                    ordinal: number;
                     type: "notifyASupportPerson";
                     contactIds: string[];
                 } | {
@@ -2055,7 +2030,6 @@ export declare const factories: {
                     likesCount?: number | null | undefined;
                     timerSeconds?: import("yup").Maybe<number | undefined>;
                     isSuggested?: boolean | undefined;
-                    ordinal: number;
                     type: "notifySupportGroup";
                     supportGroup: import("../schema/utils/firestore").DocumentReferenceLike<unknown>;
                 } | {
@@ -2113,7 +2087,6 @@ export declare const factories: {
                     likesCount?: number | null | undefined;
                     timerSeconds?: import("yup").Maybe<number | undefined>;
                     isSuggested?: boolean | undefined;
-                    ordinal: number;
                     type: "steps";
                     targetSteps: number;
                 } | {
@@ -2171,7 +2144,6 @@ export declare const factories: {
                     likesCount?: number | null | undefined;
                     timerSeconds?: import("yup").Maybe<number | undefined>;
                     isSuggested?: boolean | undefined;
-                    ordinal: number;
                     type: "video";
                     video: {
                         storagePath?: string | null | undefined;
@@ -2263,7 +2235,6 @@ export declare const factories: {
                     storagePath: string;
                     uri: string;
                 } | undefined;
-                ordinal: number;
                 type: "basic";
                 prompt: string;
             } | {
@@ -2322,7 +2293,6 @@ export declare const factories: {
                 likesCount?: number | null | undefined;
                 timerSeconds?: import("yup").Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
-                ordinal: number;
                 type: "breathingExercise";
                 inFor: number;
                 holdFor: number;
@@ -2382,7 +2352,6 @@ export declare const factories: {
                 likesCount?: number | null | undefined;
                 timerSeconds?: import("yup").Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
-                ordinal: number;
                 type: "link";
                 url: string;
             } | {
@@ -2440,7 +2409,6 @@ export declare const factories: {
                 likesCount?: number | null | undefined;
                 timerSeconds?: import("yup").Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
-                ordinal: number;
                 type: "notifyASupportPerson";
                 contactIds: string[];
             } | {
@@ -2498,7 +2466,6 @@ export declare const factories: {
                 likesCount?: number | null | undefined;
                 timerSeconds?: import("yup").Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
-                ordinal: number;
                 type: "notifySupportGroup";
                 supportGroup: import("../schema/utils/firestore").DocumentReferenceLike<unknown>;
             } | {
@@ -2556,7 +2523,6 @@ export declare const factories: {
                 likesCount?: number | null | undefined;
                 timerSeconds?: import("yup").Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
-                ordinal: number;
                 type: "steps";
                 targetSteps: number;
             } | {
@@ -2614,7 +2580,6 @@ export declare const factories: {
                 likesCount?: number | null | undefined;
                 timerSeconds?: import("yup").Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
-                ordinal: number;
                 type: "video";
                 video: {
                     storagePath?: string | null | undefined;

@@ -1,7 +1,7 @@
 import * as yup from 'yup';
-import { tacticValueBaseSchema } from './base';
+import { tacticBaseSchema } from './base';
 
-export const stepsTacticSchema = tacticValueBaseSchema('steps').shape({
+export const stepsTacticSchema = tacticBaseSchema('steps').shape({
   targetSteps: yup.number().required(),
 });
 export type StepsTacticValue = yup.InferType<typeof stepsTacticSchema>;

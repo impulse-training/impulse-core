@@ -1,5 +1,5 @@
 import * as yup from 'yup';
-export declare function tacticValueBaseSchema<K extends string>(type: K): yup.ObjectSchema<{
+export declare function tacticBaseSchema<K extends string>(type: K): yup.ObjectSchema<{
     uid: string | undefined;
     recommendedForIssueIds: string[] | undefined;
     sourceFile: import("../utils/firestore").DocumentReferenceLike<unknown> | undefined;
@@ -7,7 +7,6 @@ export declare function tacticValueBaseSchema<K extends string>(type: K): yup.Ob
     recommendedForIssueOrdinals: {
         [x: string]: number;
     } | null | undefined;
-    ordinal: number;
     prompt: string | undefined;
     isShared: boolean | undefined;
     description: string | null | undefined;
@@ -62,7 +61,6 @@ export declare function tacticValueBaseSchema<K extends string>(type: K): yup.Ob
     sourceFile: undefined;
     sharedWithIssueIds: "";
     recommendedForIssueOrdinals: undefined;
-    ordinal: undefined;
     prompt: undefined;
     isShared: undefined;
     description: undefined;

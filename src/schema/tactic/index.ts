@@ -1,4 +1,5 @@
 import * as yup from 'yup';
+import { DocumentReferenceLike } from '../utils/firestore';
 import { BasicTacticValue, basicTacticSchema } from './basic';
 import {
   BreathingExerciseTacticValue,
@@ -80,7 +81,10 @@ export type TacticTypes = {
   [K in TacticValue['type']]: yup.InferType<(typeof tacticSchemas)[K]>;
 };
 
-export type TacticsById = Record<string, TacticValue>;
+export type TacticsById = Record<
+  string,
+  { doc: DocumentReferenceLike<TacticValue>; data: TacticValue }
+>;
 
 // Export type guard functions for each tactic type (TT)
 export type WithTacticsById<T> = Omit<T, 'tacticsById'> & {

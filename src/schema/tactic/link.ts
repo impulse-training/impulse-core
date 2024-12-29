@@ -1,6 +1,6 @@
 import * as yup from 'yup';
-import { tacticValueBaseSchema } from './base';
-export const linkTacticSchema = tacticValueBaseSchema('link').shape({
+import { tacticBaseSchema } from './base';
+export const linkTacticSchema = tacticBaseSchema('link').shape({
   url: yup
     .string()
     .matches(/^[a-zA-Z][a-zA-Z\d+\-.]*:\/\/[^\s$.?#].[^\s]*$/i, 'Invalid URL')

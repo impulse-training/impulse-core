@@ -177,7 +177,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                     storagePath: string;
                     uri: string;
                 } | undefined;
-                ordinal: number;
                 type: "basic";
                 prompt: string;
             } | {
@@ -236,7 +235,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                 likesCount?: number | null | undefined;
                 timerSeconds?: import("yup").Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
-                ordinal: number;
                 type: "breathingExercise";
                 inFor: number;
                 holdFor: number;
@@ -296,7 +294,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                 likesCount?: number | null | undefined;
                 timerSeconds?: import("yup").Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
-                ordinal: number;
                 type: "link";
                 url: string;
             } | {
@@ -354,7 +351,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                 likesCount?: number | null | undefined;
                 timerSeconds?: import("yup").Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
-                ordinal: number;
                 type: "notifyASupportPerson";
                 contactIds: string[];
             } | {
@@ -412,7 +408,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                 likesCount?: number | null | undefined;
                 timerSeconds?: import("yup").Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
-                ordinal: number;
                 type: "notifySupportGroup";
                 supportGroup: import("../schema/utils/firestore").DocumentReferenceLike<unknown>;
             } | {
@@ -470,7 +465,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                 likesCount?: number | null | undefined;
                 timerSeconds?: import("yup").Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
-                ordinal: number;
                 type: "steps";
                 targetSteps: number;
             } | {
@@ -528,7 +522,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                 likesCount?: number | null | undefined;
                 timerSeconds?: import("yup").Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
-                ordinal: number;
                 type: "video";
                 video: {
                     storagePath?: string | null | undefined;
@@ -631,4 +624,4 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         [x: string]: string;
     };
     timezone: string;
-}, "uids" | "verificationCode" | "dayReviewTime" | "recentSummaries" | "timezone" | ("createdAt" | "updatedAt" | "parentIds" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseDoc" | "tourCompletedAt" | "scheduledNotificationIds" | "whatsappStrategyDoc" | "onboardedWithZaraAt" | "currentAppState" | "expoPushToken" | "notificationPreferences" | "goal" | "isReadyForTour" | "isOnboardingComplete" | "sendDebriefRemindersAfterMinutes" | "gameplanStrategies" | "androidPermissions" | "historicalInsights" | "isTourDismissed" | "region" | "enableZara")>, tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "ordinal" | "type" | "uid" | "sourceFile" | "sharedWithIssueIds" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "prompt" | "isShared" | "description" | "pastTenseTitle" | "debriefAfterMinutes" | "image" | "backgroundColor" | "likesCount" | "timerSeconds" | "isSuggested">;
+}, "uids" | "verificationCode" | "dayReviewTime" | "recentSummaries" | "timezone" | ("createdAt" | "updatedAt" | "parentIds" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseDoc" | "tourCompletedAt" | "scheduledNotificationIds" | "whatsappStrategyDoc" | "onboardedWithZaraAt" | "currentAppState" | "expoPushToken" | "notificationPreferences" | "goal" | "isReadyForTour" | "isOnboardingComplete" | "sendDebriefRemindersAfterMinutes" | "gameplanStrategies" | "androidPermissions" | "historicalInsights" | "isTourDismissed" | "region" | "enableZara")>, tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "type" | "uid" | "sourceFile" | "sharedWithIssueIds" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "prompt" | "isShared" | "description" | "pastTenseTitle" | "debriefAfterMinutes" | "image" | "backgroundColor" | "likesCount" | "timerSeconds" | "isSuggested">;

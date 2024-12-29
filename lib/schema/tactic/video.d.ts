@@ -7,7 +7,6 @@ export declare const videoTacticSchema: yup.ObjectSchema<{
     recommendedForIssueOrdinals: {
         [x: string]: number;
     } | null | undefined;
-    ordinal: number;
     prompt: string | undefined;
     isShared: boolean | undefined;
     description: string | null | undefined;
@@ -66,7 +65,6 @@ export declare const videoTacticSchema: yup.ObjectSchema<{
     sourceFile: undefined;
     sharedWithIssueIds: "";
     recommendedForIssueOrdinals: undefined;
-    ordinal: undefined;
     prompt: undefined;
     isShared: undefined;
     description: undefined;

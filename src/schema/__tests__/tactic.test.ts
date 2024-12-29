@@ -6,7 +6,6 @@ describe('tacticSchema', () => {
       type: 'basic',
       prompt: 'Tactic 1',
       description: 'This is a tactic',
-      ordinal: 0,
     };
     const result = tacticSchema.validate(tactic);
     expect(result).toBeDefined();

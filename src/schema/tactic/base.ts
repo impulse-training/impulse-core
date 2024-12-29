@@ -6,7 +6,7 @@ import { optionalObjectOf } from '../utils/objectOf';
 import { optionalTimestampSchema } from '../utils/timestamp';
 
 // Define a base schema for TacticValueBase with generic type K to accommodate the type field.
-export function tacticValueBaseSchema<K extends string>(type: K) {
+export function tacticBaseSchema<K extends string>(type: K) {
   return yup.object({
     uid: yup.string(),
     recommendedForIssueIds: optionalStringArray.max(
@@ -16,7 +16,6 @@ export function tacticValueBaseSchema<K extends string>(type: K) {
     sourceFile: documentReferenceSchema,
     sharedWithIssueIds: optionalStringArray,
     recommendedForIssueOrdinals: optionalObjectOf(yup.number().required()),
-    ordinal: yup.number().required(),
     prompt: yup.string(),
     isShared: yup.boolean(),
     description: yup.string().nullable(),

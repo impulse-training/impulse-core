@@ -1,4 +1,5 @@
 import * as yup from 'yup';
+import { DocumentReferenceLike } from '../utils/firestore';
 import { BasicTacticValue } from './basic';
 import { BreathingExerciseTacticValue } from './breathingExercise';
 import { LinkTacticValue } from './link';
@@ -32,7 +33,7 @@ export declare const tacticSchema: yup.Lazy<{
         toDate: Function;
     } | null | undefined;
     uid?: string | undefined;
-    sourceFile?: import("../utils/firestore").DocumentReferenceLike<unknown> | undefined;
+    sourceFile?: DocumentReferenceLike<unknown> | undefined;
     sharedWithIssueIds?: string[] | undefined;
     recommendedForIssueIds?: string[] | undefined;
     recommendedForIssueOrdinals?: {
@@ -94,7 +95,6 @@ export declare const tacticSchema: yup.Lazy<{
         storagePath: string;
         uri: string;
     } | undefined;
-    ordinal: number;
     type: "basic";
     prompt: string;
 } | {
@@ -114,7 +114,7 @@ export declare const tacticSchema: yup.Lazy<{
     } | null | undefined;
     uid?: string | undefined;
     repeat?: yup.Maybe<number | undefined>;
-    sourceFile?: import("../utils/firestore").DocumentReferenceLike<unknown> | undefined;
+    sourceFile?: DocumentReferenceLike<unknown> | undefined;
     sharedWithIssueIds?: string[] | undefined;
     recommendedForIssueIds?: string[] | undefined;
     recommendedForIssueOrdinals?: {
@@ -153,7 +153,6 @@ export declare const tacticSchema: yup.Lazy<{
     likesCount?: number | null | undefined;
     timerSeconds?: yup.Maybe<number | undefined>;
     isSuggested?: boolean | undefined;
-    ordinal: number;
     type: "breathingExercise";
     inFor: number;
     holdFor: number;
@@ -174,7 +173,7 @@ export declare const tacticSchema: yup.Lazy<{
         toDate: Function;
     } | null | undefined;
     uid?: string | undefined;
-    sourceFile?: import("../utils/firestore").DocumentReferenceLike<unknown> | undefined;
+    sourceFile?: DocumentReferenceLike<unknown> | undefined;
     sharedWithIssueIds?: string[] | undefined;
     recommendedForIssueIds?: string[] | undefined;
     recommendedForIssueOrdinals?: {
@@ -213,7 +212,6 @@ export declare const tacticSchema: yup.Lazy<{
     likesCount?: number | null | undefined;
     timerSeconds?: yup.Maybe<number | undefined>;
     isSuggested?: boolean | undefined;
-    ordinal: number;
     type: "link";
     url: string;
 } | {
@@ -232,7 +230,7 @@ export declare const tacticSchema: yup.Lazy<{
         toDate: Function;
     } | null | undefined;
     uid?: string | undefined;
-    sourceFile?: import("../utils/firestore").DocumentReferenceLike<unknown> | undefined;
+    sourceFile?: DocumentReferenceLike<unknown> | undefined;
     sharedWithIssueIds?: string[] | undefined;
     recommendedForIssueIds?: string[] | undefined;
     recommendedForIssueOrdinals?: {
@@ -271,7 +269,6 @@ export declare const tacticSchema: yup.Lazy<{
     likesCount?: number | null | undefined;
     timerSeconds?: yup.Maybe<number | undefined>;
     isSuggested?: boolean | undefined;
-    ordinal: number;
     type: "notifyASupportPerson";
     contactIds: string[];
 } | {
@@ -290,7 +287,7 @@ export declare const tacticSchema: yup.Lazy<{
         toDate: Function;
     } | null | undefined;
     uid?: string | undefined;
-    sourceFile?: import("../utils/firestore").DocumentReferenceLike<unknown> | undefined;
+    sourceFile?: DocumentReferenceLike<unknown> | undefined;
     sharedWithIssueIds?: string[] | undefined;
     recommendedForIssueIds?: string[] | undefined;
     recommendedForIssueOrdinals?: {
@@ -329,9 +326,8 @@ export declare const tacticSchema: yup.Lazy<{
     likesCount?: number | null | undefined;
     timerSeconds?: yup.Maybe<number | undefined>;
     isSuggested?: boolean | undefined;
-    ordinal: number;
     type: "notifySupportGroup";
-    supportGroup: import("../utils/firestore").DocumentReferenceLike<unknown>;
+    supportGroup: DocumentReferenceLike<unknown>;
 } | {
     createdAt?: {
         isEqual?: any;
@@ -348,7 +344,7 @@ export declare const tacticSchema: yup.Lazy<{
         toDate: Function;
     } | null | undefined;
     uid?: string | undefined;
-    sourceFile?: import("../utils/firestore").DocumentReferenceLike<unknown> | undefined;
+    sourceFile?: DocumentReferenceLike<unknown> | undefined;
     sharedWithIssueIds?: string[] | undefined;
     recommendedForIssueIds?: string[] | undefined;
     recommendedForIssueOrdinals?: {
@@ -387,7 +383,6 @@ export declare const tacticSchema: yup.Lazy<{
     likesCount?: number | null | undefined;
     timerSeconds?: yup.Maybe<number | undefined>;
     isSuggested?: boolean | undefined;
-    ordinal: number;
     type: "steps";
     targetSteps: number;
 } | {
@@ -406,7 +401,7 @@ export declare const tacticSchema: yup.Lazy<{
         toDate: Function;
     } | null | undefined;
     uid?: string | undefined;
-    sourceFile?: import("../utils/firestore").DocumentReferenceLike<unknown> | undefined;
+    sourceFile?: DocumentReferenceLike<unknown> | undefined;
     sharedWithIssueIds?: string[] | undefined;
     recommendedForIssueIds?: string[] | undefined;
     recommendedForIssueOrdinals?: {
@@ -445,7 +440,6 @@ export declare const tacticSchema: yup.Lazy<{
     likesCount?: number | null | undefined;
     timerSeconds?: yup.Maybe<number | undefined>;
     isSuggested?: boolean | undefined;
-    ordinal: number;
     type: "video";
     video: {
         storagePath?: string | null | undefined;
@@ -455,7 +449,10 @@ export declare const tacticSchema: yup.Lazy<{
 export type TacticTypes = {
     [K in TacticValue['type']]: yup.InferType<(typeof tacticSchemas)[K]>;
 };
-export type TacticsById = Record<string, TacticValue>;
+export type TacticsById = Record<string, {
+    doc: DocumentReferenceLike<TacticValue>;
+    data: TacticValue;
+}>;
 export type WithTacticsById<T> = Omit<T, 'tacticsById'> & {
     tacticsById: TacticsById;
 };
