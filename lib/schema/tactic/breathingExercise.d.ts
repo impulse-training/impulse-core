@@ -85,4 +85,4 @@ export declare const breathingExerciseTacticSchema: yup.ObjectSchema<{
     outFor: undefined;
     repeat: undefined;
 }, "">;
-export type BreatheTacticValue = yup.InferType<typeof breathingExerciseTacticSchema>;
+export type BreathingExerciseTacticValue = yup.InferType<typeof breathingExerciseTacticSchema>;

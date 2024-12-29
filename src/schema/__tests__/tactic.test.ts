@@ -3,7 +3,7 @@ import { tacticSchema, TacticValue } from '../tactic';
 describe('tacticSchema', () => {
   it('is valid without a source file', () => {
     const tactic: TacticValue = {
-      type: 'task',
+      type: 'basic',
       prompt: 'Tactic 1',
       description: 'This is a tactic',
       ordinal: 0,

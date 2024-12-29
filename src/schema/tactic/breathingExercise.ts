@@ -10,6 +10,6 @@ export const breathingExerciseTacticSchema = tacticValueBaseSchema(
   repeat: yup.number().positive().notRequired(),
 });
 
-export type BreatheTacticValue = yup.InferType<
+export type BreathingExerciseTacticValue = yup.InferType<
   typeof breathingExerciseTacticSchema
 >;

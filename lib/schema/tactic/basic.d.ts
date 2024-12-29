@@ -1,5 +1,5 @@
 import * as yup from 'yup';
-export declare const audioTacticSchema: yup.ObjectSchema<{
+export declare const basicTacticSchema: yup.ObjectSchema<{
     uid: string | undefined;
     recommendedForIssueIds: string[] | undefined;
     sourceFile: import("../utils/firestore").DocumentReferenceLike<unknown> | undefined;
@@ -8,10 +8,10 @@ export declare const audioTacticSchema: yup.ObjectSchema<{
         [x: string]: number;
     } | null | undefined;
     ordinal: number;
-    prompt: string | undefined;
+    prompt: string;
     isShared: boolean | undefined;
     description: string | null | undefined;
-    type: "audio";
+    type: "basic";
     createdAt: {
         isEqual?: any;
         toMillis?: any;
@@ -79,7 +79,7 @@ export declare const audioTacticSchema: yup.ObjectSchema<{
         contentType: string;
         storagePath: string;
         uri: string;
-    };
+    } | undefined;
 }, yup.AnyObject, {
     uid: undefined;
     recommendedForIssueIds: "";
@@ -113,4 +113,4 @@ export declare const audioTacticSchema: yup.ObjectSchema<{
         thumbnailUri: undefined;
     };
 }, "">;
-export type AudioTacticValue = yup.InferType<typeof audioTacticSchema>;
+export type BasicTacticValue = yup.InferType<typeof basicTacticSchema>;
