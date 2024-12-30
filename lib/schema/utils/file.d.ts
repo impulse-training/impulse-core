@@ -15,7 +15,7 @@ export declare const fileSchema: yup.ObjectSchema<{
         toDate: Function;
     } | null | undefined;
     storagePath: string;
-    uri: string;
+    url: string;
     localFilePath: yup.Maybe<string | undefined>;
     isDeleted: boolean | undefined;
     metadata: {} | null | undefined;
@@ -25,7 +25,7 @@ export declare const fileSchema: yup.ObjectSchema<{
     createdAt: undefined;
     updatedAt: undefined;
     storagePath: undefined;
-    uri: undefined;
+    url: undefined;
     localFilePath: undefined;
     isDeleted: undefined;
     metadata: {};

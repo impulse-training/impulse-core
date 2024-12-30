@@ -1,9 +1,7 @@
 import * as yup from 'yup';
-import { WithTacticsById } from './tactic';
-export declare const gameplanSchema: yup.ObjectSchema<{
+export declare const emotionsGameplanSchema: yup.ObjectSchema<{
     name: string;
-    type: NonNullable<"time" | "craving" | "location" | "routine" | "emotion" | undefined>;
-    config: {};
+    type: "emotions";
     tacticsById: {
         [x: string]: {
             data: {
@@ -22,7 +20,7 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                     toDate: Function;
                 } | null | undefined;
                 uid?: string | undefined;
-                sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
+                sourceFile?: import("../utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 sharedWithIssueIds?: string[] | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
@@ -53,7 +51,7 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                     thumbnailStoragePath?: yup.Maybe<string | undefined>;
                     thumbnailUri?: yup.Maybe<string | undefined>;
                     storagePath: string;
-                    uri: string;
+                    url: string;
                 } | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
@@ -80,7 +78,7 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                     thumbnailStoragePath?: yup.Maybe<string | undefined>;
                     thumbnailUri?: yup.Maybe<string | undefined>;
                     storagePath: string;
-                    uri: string;
+                    url: string;
                 } | undefined;
                 type: "basic";
                 prompt: string;
@@ -101,7 +99,7 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                 } | null | undefined;
                 uid?: string | undefined;
                 repeat?: yup.Maybe<number | undefined>;
-                sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
+                sourceFile?: import("../utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 sharedWithIssueIds?: string[] | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
@@ -133,7 +131,7 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                     thumbnailStoragePath?: yup.Maybe<string | undefined>;
                     thumbnailUri?: yup.Maybe<string | undefined>;
                     storagePath: string;
-                    uri: string;
+                    url: string;
                 } | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
@@ -159,7 +157,7 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                     toDate: Function;
                 } | null | undefined;
                 uid?: string | undefined;
-                sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
+                sourceFile?: import("../utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 sharedWithIssueIds?: string[] | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
@@ -191,7 +189,7 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                     thumbnailStoragePath?: yup.Maybe<string | undefined>;
                     thumbnailUri?: yup.Maybe<string | undefined>;
                     storagePath: string;
-                    uri: string;
+                    url: string;
                 } | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
@@ -215,7 +213,7 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                     toDate: Function;
                 } | null | undefined;
                 uid?: string | undefined;
-                sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
+                sourceFile?: import("../utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 sharedWithIssueIds?: string[] | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
@@ -247,7 +245,7 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                     thumbnailStoragePath?: yup.Maybe<string | undefined>;
                     thumbnailUri?: yup.Maybe<string | undefined>;
                     storagePath: string;
-                    uri: string;
+                    url: string;
                 } | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
@@ -271,7 +269,7 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                     toDate: Function;
                 } | null | undefined;
                 uid?: string | undefined;
-                sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
+                sourceFile?: import("../utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 sharedWithIssueIds?: string[] | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
@@ -303,14 +301,14 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                     thumbnailStoragePath?: yup.Maybe<string | undefined>;
                     thumbnailUri?: yup.Maybe<string | undefined>;
                     storagePath: string;
-                    uri: string;
+                    url: string;
                 } | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
                 type: "notifySupportGroup";
-                supportGroup: import("./utils/firestore").DocumentReferenceLike<unknown>;
+                supportGroup: import("../utils/firestore").DocumentReferenceLike<unknown>;
             } | {
                 createdAt?: {
                     isEqual?: any;
@@ -327,7 +325,7 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                     toDate: Function;
                 } | null | undefined;
                 uid?: string | undefined;
-                sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
+                sourceFile?: import("../utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 sharedWithIssueIds?: string[] | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
@@ -359,7 +357,7 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                     thumbnailStoragePath?: yup.Maybe<string | undefined>;
                     thumbnailUri?: yup.Maybe<string | undefined>;
                     storagePath: string;
-                    uri: string;
+                    url: string;
                 } | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
@@ -383,7 +381,7 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                     toDate: Function;
                 } | null | undefined;
                 uid?: string | undefined;
-                sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
+                sourceFile?: import("../utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 sharedWithIssueIds?: string[] | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
@@ -415,7 +413,7 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                     thumbnailStoragePath?: yup.Maybe<string | undefined>;
                     thumbnailUri?: yup.Maybe<string | undefined>;
                     storagePath: string;
-                    uri: string;
+                    url: string;
                 } | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
@@ -427,7 +425,7 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                     url?: string | null | undefined;
                 };
             };
-            doc: import("./utils/firestore").DocumentReferenceLike<unknown>;
+            doc: import("../utils/firestore").DocumentReferenceLike<unknown>;
         };
     };
     createdAt: {
@@ -444,12 +442,13 @@ export declare const gameplanSchema: yup.ObjectSchema<{
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
+    emotions: (string | undefined)[];
 }, yup.AnyObject, {
     name: undefined;
     type: undefined;
-    config: undefined;
     tacticsById: undefined;
     createdAt: undefined;
     updatedAt: undefined;
+    emotions: "";
 }, "">;
-export type GameplanValue = WithTacticsById<yup.InferType<typeof gameplanSchema>>;
+export type EmotionsGameplanValue = yup.InferType<typeof emotionsGameplanSchema>;

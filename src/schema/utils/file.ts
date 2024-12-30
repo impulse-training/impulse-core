@@ -5,7 +5,7 @@ export const fileSchema = yup.object({
   createdAt: optionalTimestampSchema,
   updatedAt: optionalTimestampSchema,
   storagePath: yup.string().required(),
-  uri: yup.string().required(),
+  url: yup.string().required(),
   localFilePath: yup.string().notRequired(),
   isDeleted: yup.boolean(),
   // Can be anything, in future we could type this better

@@ -1,107 +1,10 @@
 import * as yup from 'yup';
-export declare const impulseLogSchema: yup.ObjectSchema<{
-    createdAt: {
-        isEqual?: any;
-        toMillis?: any;
-        seconds: number;
-        nanoseconds: number;
-        toDate: Function;
-    } | null | undefined;
-    updatedAt: {
-        isEqual?: any;
-        toMillis?: any;
-        seconds: number;
-        nanoseconds: number;
-        toDate: Function;
-    } | null | undefined;
-    type: "impulse";
-    uid: string;
-    audioFile: {
-        createdAt?: {
-            isEqual?: any;
-            toMillis?: any;
-            seconds: number;
-            nanoseconds: number;
-            toDate: Function;
-        } | null | undefined;
-        updatedAt?: {
-            isEqual?: any;
-            toMillis?: any;
-            seconds: number;
-            nanoseconds: number;
-            toDate: Function;
-        } | null | undefined;
-        localFilePath?: yup.Maybe<string | undefined>;
-        isDeleted?: boolean | undefined;
-        metadata?: {} | null | undefined;
-        thumbnailStoragePath?: yup.Maybe<string | undefined>;
-        thumbnailUri?: yup.Maybe<string | undefined>;
-        storagePath: string;
-        url: string;
-    } | undefined;
-    emotionData: {
-        [x: string]: {
-            color?: string | undefined;
-            name: string;
-            label: string;
-            key: string;
-            intensity: number | null;
-        };
-    } | null | undefined;
-    behaviorData: {
-        [x: string]: {
-            color?: string | undefined;
-            behavior: {
-                createdAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                updatedAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                dailyLimit?: number | undefined;
-                gameplanId?: string | undefined;
-                name: string;
-                ordinal: number;
-                trackingType: NonNullable<"time" | "counter" | undefined>;
-                isHelpful: boolean | null;
-            };
-            data: {
-                label?: string | undefined;
-                idValue?: string | undefined;
-                numericValue?: number | undefined;
-                setAt: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                };
-                stringValue: string;
-                unit: string;
-            };
-        };
-    } | null | undefined;
-    tacticsData: {
+export declare const scheduledGameplanSchema: yup.ObjectSchema<{
+    name: string;
+    type: "scheduled";
+    tacticsById: {
         [x: string]: {
             data: {
-                setAt: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                };
-                isCompleted: NonNullable<boolean | undefined>;
-            } | null;
-            tactic: {
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -522,38 +425,34 @@ export declare const impulseLogSchema: yup.ObjectSchema<{
                     url?: string | null | undefined;
                 };
             };
+            doc: import("../utils/firestore").DocumentReferenceLike<unknown>;
         };
-    } | null | undefined;
-    text: string | null | undefined;
-    date: {
+    };
+    createdAt: {
         isEqual?: any;
         toMillis?: any;
         seconds: number;
         nanoseconds: number;
         toDate: Function;
-    };
-    dateString: string;
-    senderUid: string | null | undefined;
-    role: "user";
+    } | null | undefined;
+    updatedAt: {
+        isEqual?: any;
+        toMillis?: any;
+        seconds: number;
+        nanoseconds: number;
+        toDate: Function;
+    } | null | undefined;
+    schedule: {
+        hour: number;
+        minute: number;
+        weekdays: (number | undefined)[];
+    }[];
 }, yup.AnyObject, {
+    name: undefined;
+    type: undefined;
+    tacticsById: undefined;
     createdAt: undefined;
     updatedAt: undefined;
-    type: undefined;
-    uid: undefined;
-    audioFile: undefined;
-    emotionData: undefined;
-    behaviorData: undefined;
-    tacticsData: undefined;
-    text: undefined;
-    date: {
-        seconds: undefined;
-        nanoseconds: undefined;
-        isEqual: undefined;
-        toMillis: undefined;
-        toDate: undefined;
-    };
-    dateString: undefined;
-    senderUid: undefined;
-    role: undefined;
+    schedule: "";
 }, "">;
-export type ImpulseLogValue = yup.InferType<typeof impulseLogSchema>;
+export type ScheduledGameplanValue = yup.InferType<typeof scheduledGameplanSchema>;

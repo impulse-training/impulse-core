@@ -35,7 +35,7 @@ export declare const factories: {
             thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
             thumbnailUri?: import("yup").Maybe<string | undefined>;
             storagePath: string;
-            uri: string;
+            url: string;
         } | undefined;
         emotionData?: {
             [x: string]: {
@@ -146,7 +146,7 @@ export declare const factories: {
                         thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                         thumbnailUri?: import("yup").Maybe<string | undefined>;
                         storagePath: string;
-                        uri: string;
+                        url: string;
                     } | undefined;
                     backgroundColor?: string | undefined;
                     likesCount?: number | null | undefined;
@@ -173,7 +173,7 @@ export declare const factories: {
                         thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                         thumbnailUri?: import("yup").Maybe<string | undefined>;
                         storagePath: string;
-                        uri: string;
+                        url: string;
                     } | undefined;
                     type: "basic";
                     prompt: string;
@@ -226,7 +226,7 @@ export declare const factories: {
                         thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                         thumbnailUri?: import("yup").Maybe<string | undefined>;
                         storagePath: string;
-                        uri: string;
+                        url: string;
                     } | undefined;
                     backgroundColor?: string | undefined;
                     likesCount?: number | null | undefined;
@@ -284,7 +284,7 @@ export declare const factories: {
                         thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                         thumbnailUri?: import("yup").Maybe<string | undefined>;
                         storagePath: string;
-                        uri: string;
+                        url: string;
                     } | undefined;
                     backgroundColor?: string | undefined;
                     likesCount?: number | null | undefined;
@@ -340,7 +340,7 @@ export declare const factories: {
                         thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                         thumbnailUri?: import("yup").Maybe<string | undefined>;
                         storagePath: string;
-                        uri: string;
+                        url: string;
                     } | undefined;
                     backgroundColor?: string | undefined;
                     likesCount?: number | null | undefined;
@@ -396,7 +396,7 @@ export declare const factories: {
                         thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                         thumbnailUri?: import("yup").Maybe<string | undefined>;
                         storagePath: string;
-                        uri: string;
+                        url: string;
                     } | undefined;
                     backgroundColor?: string | undefined;
                     likesCount?: number | null | undefined;
@@ -452,7 +452,7 @@ export declare const factories: {
                         thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                         thumbnailUri?: import("yup").Maybe<string | undefined>;
                         storagePath: string;
-                        uri: string;
+                        url: string;
                     } | undefined;
                     backgroundColor?: string | undefined;
                     likesCount?: number | null | undefined;
@@ -508,7 +508,7 @@ export declare const factories: {
                         thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                         thumbnailUri?: import("yup").Maybe<string | undefined>;
                         storagePath: string;
-                        uri: string;
+                        url: string;
                     } | undefined;
                     backgroundColor?: string | undefined;
                     likesCount?: number | null | undefined;
@@ -728,7 +728,455 @@ export declare const factories: {
         };
         timezone: string;
     }, "uids" | "verificationCode" | "dayReviewTime" | "recentSummaries" | "timezone" | ("createdAt" | "updatedAt" | "parentIds" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseDoc" | "tourCompletedAt" | "scheduledNotificationIds" | "whatsappStrategyDoc" | "onboardedWithZaraAt" | "currentAppState" | "expoPushToken" | "notificationPreferences" | "goal" | "isReadyForTour" | "isOnboardingComplete" | "sendDebriefRemindersAfterMinutes" | "gameplanStrategies" | "androidPermissions" | "historicalInsights" | "isTourDismissed" | "region" | "enableZara")>;
-    gameplanFactory: import("factory.ts").Factory<import("..").GameplanValue, "name" | "type" | "tacticsById" | "config" | ("createdAt" | "updatedAt")>;
+    gameplanFactory: import("factory.ts").Factory<{
+        createdAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        updatedAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        name: string;
+        type: "scheduled";
+        tacticsById: {
+            [x: string]: {
+                data: {
+                    createdAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    uid?: string | undefined;
+                    sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
+                    sharedWithIssueIds?: string[] | undefined;
+                    recommendedForIssueIds?: string[] | undefined;
+                    recommendedForIssueOrdinals?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                    isShared?: boolean | undefined;
+                    description?: string | null | undefined;
+                    pastTenseTitle?: string | undefined;
+                    debriefAfterMinutes?: number | null | undefined;
+                    image?: {
+                        createdAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            seconds: number;
+                            nanoseconds: number;
+                            toDate: Function;
+                        } | null | undefined;
+                        updatedAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            seconds: number;
+                            nanoseconds: number;
+                            toDate: Function;
+                        } | null | undefined;
+                        localFilePath?: import("yup").Maybe<string | undefined>;
+                        isDeleted?: boolean | undefined;
+                        metadata?: {} | null | undefined;
+                        thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                        thumbnailUri?: import("yup").Maybe<string | undefined>;
+                        storagePath: string;
+                        url: string;
+                    } | undefined;
+                    backgroundColor?: string | undefined;
+                    likesCount?: number | null | undefined;
+                    timerSeconds?: import("yup").Maybe<number | undefined>;
+                    isSuggested?: boolean | undefined;
+                    recording?: {
+                        createdAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            seconds: number;
+                            nanoseconds: number;
+                            toDate: Function;
+                        } | null | undefined;
+                        updatedAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            seconds: number;
+                            nanoseconds: number;
+                            toDate: Function;
+                        } | null | undefined;
+                        localFilePath?: import("yup").Maybe<string | undefined>;
+                        isDeleted?: boolean | undefined;
+                        metadata?: {} | null | undefined;
+                        thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                        thumbnailUri?: import("yup").Maybe<string | undefined>;
+                        storagePath: string;
+                        url: string;
+                    } | undefined;
+                    type: "basic";
+                    prompt: string;
+                } | {
+                    createdAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    uid?: string | undefined;
+                    repeat?: import("yup").Maybe<number | undefined>;
+                    sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
+                    sharedWithIssueIds?: string[] | undefined;
+                    recommendedForIssueIds?: string[] | undefined;
+                    recommendedForIssueOrdinals?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                    prompt?: string | undefined;
+                    isShared?: boolean | undefined;
+                    description?: string | null | undefined;
+                    pastTenseTitle?: string | undefined;
+                    debriefAfterMinutes?: number | null | undefined;
+                    image?: {
+                        createdAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            seconds: number;
+                            nanoseconds: number;
+                            toDate: Function;
+                        } | null | undefined;
+                        updatedAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            seconds: number;
+                            nanoseconds: number;
+                            toDate: Function;
+                        } | null | undefined;
+                        localFilePath?: import("yup").Maybe<string | undefined>;
+                        isDeleted?: boolean | undefined;
+                        metadata?: {} | null | undefined;
+                        thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                        thumbnailUri?: import("yup").Maybe<string | undefined>;
+                        storagePath: string;
+                        url: string;
+                    } | undefined;
+                    backgroundColor?: string | undefined;
+                    likesCount?: number | null | undefined;
+                    timerSeconds?: import("yup").Maybe<number | undefined>;
+                    isSuggested?: boolean | undefined;
+                    type: "breathingExercise";
+                    inFor: number;
+                    holdFor: number;
+                    outFor: number;
+                } | {
+                    createdAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    uid?: string | undefined;
+                    sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
+                    sharedWithIssueIds?: string[] | undefined;
+                    recommendedForIssueIds?: string[] | undefined;
+                    recommendedForIssueOrdinals?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                    prompt?: string | undefined;
+                    isShared?: boolean | undefined;
+                    description?: string | null | undefined;
+                    pastTenseTitle?: string | undefined;
+                    debriefAfterMinutes?: number | null | undefined;
+                    image?: {
+                        createdAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            seconds: number;
+                            nanoseconds: number;
+                            toDate: Function;
+                        } | null | undefined;
+                        updatedAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            seconds: number;
+                            nanoseconds: number;
+                            toDate: Function;
+                        } | null | undefined;
+                        localFilePath?: import("yup").Maybe<string | undefined>;
+                        isDeleted?: boolean | undefined;
+                        metadata?: {} | null | undefined;
+                        thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                        thumbnailUri?: import("yup").Maybe<string | undefined>;
+                        storagePath: string;
+                        url: string;
+                    } | undefined;
+                    backgroundColor?: string | undefined;
+                    likesCount?: number | null | undefined;
+                    timerSeconds?: import("yup").Maybe<number | undefined>;
+                    isSuggested?: boolean | undefined;
+                    type: "link";
+                    url: string;
+                } | {
+                    createdAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    uid?: string | undefined;
+                    sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
+                    sharedWithIssueIds?: string[] | undefined;
+                    recommendedForIssueIds?: string[] | undefined;
+                    recommendedForIssueOrdinals?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                    prompt?: string | undefined;
+                    isShared?: boolean | undefined;
+                    description?: string | null | undefined;
+                    pastTenseTitle?: string | undefined;
+                    debriefAfterMinutes?: number | null | undefined;
+                    image?: {
+                        createdAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            seconds: number;
+                            nanoseconds: number;
+                            toDate: Function;
+                        } | null | undefined;
+                        updatedAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            seconds: number;
+                            nanoseconds: number;
+                            toDate: Function;
+                        } | null | undefined;
+                        localFilePath?: import("yup").Maybe<string | undefined>;
+                        isDeleted?: boolean | undefined;
+                        metadata?: {} | null | undefined;
+                        thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                        thumbnailUri?: import("yup").Maybe<string | undefined>;
+                        storagePath: string;
+                        url: string;
+                    } | undefined;
+                    backgroundColor?: string | undefined;
+                    likesCount?: number | null | undefined;
+                    timerSeconds?: import("yup").Maybe<number | undefined>;
+                    isSuggested?: boolean | undefined;
+                    type: "notifyASupportPerson";
+                    contactIds: string[];
+                } | {
+                    createdAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    uid?: string | undefined;
+                    sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
+                    sharedWithIssueIds?: string[] | undefined;
+                    recommendedForIssueIds?: string[] | undefined;
+                    recommendedForIssueOrdinals?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                    prompt?: string | undefined;
+                    isShared?: boolean | undefined;
+                    description?: string | null | undefined;
+                    pastTenseTitle?: string | undefined;
+                    debriefAfterMinutes?: number | null | undefined;
+                    image?: {
+                        createdAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            seconds: number;
+                            nanoseconds: number;
+                            toDate: Function;
+                        } | null | undefined;
+                        updatedAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            seconds: number;
+                            nanoseconds: number;
+                            toDate: Function;
+                        } | null | undefined;
+                        localFilePath?: import("yup").Maybe<string | undefined>;
+                        isDeleted?: boolean | undefined;
+                        metadata?: {} | null | undefined;
+                        thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                        thumbnailUri?: import("yup").Maybe<string | undefined>;
+                        storagePath: string;
+                        url: string;
+                    } | undefined;
+                    backgroundColor?: string | undefined;
+                    likesCount?: number | null | undefined;
+                    timerSeconds?: import("yup").Maybe<number | undefined>;
+                    isSuggested?: boolean | undefined;
+                    type: "notifySupportGroup";
+                    supportGroup: import("../schema/utils/firestore").DocumentReferenceLike<unknown>;
+                } | {
+                    createdAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    uid?: string | undefined;
+                    sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
+                    sharedWithIssueIds?: string[] | undefined;
+                    recommendedForIssueIds?: string[] | undefined;
+                    recommendedForIssueOrdinals?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                    prompt?: string | undefined;
+                    isShared?: boolean | undefined;
+                    description?: string | null | undefined;
+                    pastTenseTitle?: string | undefined;
+                    debriefAfterMinutes?: number | null | undefined;
+                    image?: {
+                        createdAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            seconds: number;
+                            nanoseconds: number;
+                            toDate: Function;
+                        } | null | undefined;
+                        updatedAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            seconds: number;
+                            nanoseconds: number;
+                            toDate: Function;
+                        } | null | undefined;
+                        localFilePath?: import("yup").Maybe<string | undefined>;
+                        isDeleted?: boolean | undefined;
+                        metadata?: {} | null | undefined;
+                        thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                        thumbnailUri?: import("yup").Maybe<string | undefined>;
+                        storagePath: string;
+                        url: string;
+                    } | undefined;
+                    backgroundColor?: string | undefined;
+                    likesCount?: number | null | undefined;
+                    timerSeconds?: import("yup").Maybe<number | undefined>;
+                    isSuggested?: boolean | undefined;
+                    type: "steps";
+                    targetSteps: number;
+                } | {
+                    createdAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    uid?: string | undefined;
+                    sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
+                    sharedWithIssueIds?: string[] | undefined;
+                    recommendedForIssueIds?: string[] | undefined;
+                    recommendedForIssueOrdinals?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                    prompt?: string | undefined;
+                    isShared?: boolean | undefined;
+                    description?: string | null | undefined;
+                    pastTenseTitle?: string | undefined;
+                    debriefAfterMinutes?: number | null | undefined;
+                    image?: {
+                        createdAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            seconds: number;
+                            nanoseconds: number;
+                            toDate: Function;
+                        } | null | undefined;
+                        updatedAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            seconds: number;
+                            nanoseconds: number;
+                            toDate: Function;
+                        } | null | undefined;
+                        localFilePath?: import("yup").Maybe<string | undefined>;
+                        isDeleted?: boolean | undefined;
+                        metadata?: {} | null | undefined;
+                        thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                        thumbnailUri?: import("yup").Maybe<string | undefined>;
+                        storagePath: string;
+                        url: string;
+                    } | undefined;
+                    backgroundColor?: string | undefined;
+                    likesCount?: number | null | undefined;
+                    timerSeconds?: import("yup").Maybe<number | undefined>;
+                    isSuggested?: boolean | undefined;
+                    type: "video";
+                    video: {
+                        storagePath?: string | null | undefined;
+                        url?: string | null | undefined;
+                    };
+                };
+                doc: import("../schema/utils/firestore").DocumentReferenceLike<unknown>;
+            };
+        };
+        schedule: {
+            hour: number;
+            minute: number;
+            weekdays: (number | undefined)[];
+        }[];
+    }, "name" | "type" | "tacticsById" | "schedule" | ("createdAt" | "updatedAt")>;
     tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "type" | "uid" | "sourceFile" | "sharedWithIssueIds" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "prompt" | "isShared" | "description" | "pastTenseTitle" | "debriefAfterMinutes" | "image" | "backgroundColor" | "likesCount" | "timerSeconds" | "isSuggested">;
     roadmapFactory: import("factory.ts").Factory<{
         createdAt?: {
@@ -844,7 +1292,7 @@ export declare const factories: {
                     thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                     thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
-                    uri: string;
+                    url: string;
                 } | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
@@ -871,7 +1319,7 @@ export declare const factories: {
                     thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                     thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
-                    uri: string;
+                    url: string;
                 } | undefined;
                 type: "basic";
                 prompt: string;
@@ -924,7 +1372,7 @@ export declare const factories: {
                     thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                     thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
-                    uri: string;
+                    url: string;
                 } | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
@@ -982,7 +1430,7 @@ export declare const factories: {
                     thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                     thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
-                    uri: string;
+                    url: string;
                 } | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
@@ -1038,7 +1486,7 @@ export declare const factories: {
                     thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                     thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
-                    uri: string;
+                    url: string;
                 } | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
@@ -1094,7 +1542,7 @@ export declare const factories: {
                     thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                     thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
-                    uri: string;
+                    url: string;
                 } | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
@@ -1150,7 +1598,7 @@ export declare const factories: {
                     thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                     thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
-                    uri: string;
+                    url: string;
                 } | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
@@ -1206,7 +1654,7 @@ export declare const factories: {
                     thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                     thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
-                    uri: string;
+                    url: string;
                 } | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
@@ -1272,7 +1720,7 @@ export declare const factories: {
                 thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                 thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
-                uri: string;
+                url: string;
             } | undefined;
             backgroundColor?: string | undefined;
             likesCount?: number | null | undefined;
@@ -1299,7 +1747,7 @@ export declare const factories: {
                 thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                 thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
-                uri: string;
+                url: string;
             } | undefined;
             type: "basic";
             prompt: string;
@@ -1352,7 +1800,7 @@ export declare const factories: {
                 thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                 thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
-                uri: string;
+                url: string;
             } | undefined;
             backgroundColor?: string | undefined;
             likesCount?: number | null | undefined;
@@ -1410,7 +1858,7 @@ export declare const factories: {
                 thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                 thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
-                uri: string;
+                url: string;
             } | undefined;
             backgroundColor?: string | undefined;
             likesCount?: number | null | undefined;
@@ -1466,7 +1914,7 @@ export declare const factories: {
                 thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                 thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
-                uri: string;
+                url: string;
             } | undefined;
             backgroundColor?: string | undefined;
             likesCount?: number | null | undefined;
@@ -1522,7 +1970,7 @@ export declare const factories: {
                 thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                 thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
-                uri: string;
+                url: string;
             } | undefined;
             backgroundColor?: string | undefined;
             likesCount?: number | null | undefined;
@@ -1578,7 +2026,7 @@ export declare const factories: {
                 thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                 thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
-                uri: string;
+                url: string;
             } | undefined;
             backgroundColor?: string | undefined;
             likesCount?: number | null | undefined;
@@ -1634,7 +2082,7 @@ export declare const factories: {
                 thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                 thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
-                uri: string;
+                url: string;
             } | undefined;
             backgroundColor?: string | undefined;
             likesCount?: number | null | undefined;
@@ -1743,7 +2191,7 @@ export declare const factories: {
                         thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                         thumbnailUri?: import("yup").Maybe<string | undefined>;
                         storagePath: string;
-                        uri: string;
+                        url: string;
                     } | undefined;
                     backgroundColor?: string | undefined;
                     likesCount?: number | null | undefined;
@@ -1770,7 +2218,7 @@ export declare const factories: {
                         thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                         thumbnailUri?: import("yup").Maybe<string | undefined>;
                         storagePath: string;
-                        uri: string;
+                        url: string;
                     } | undefined;
                     type: "basic";
                     prompt: string;
@@ -1823,7 +2271,7 @@ export declare const factories: {
                         thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                         thumbnailUri?: import("yup").Maybe<string | undefined>;
                         storagePath: string;
-                        uri: string;
+                        url: string;
                     } | undefined;
                     backgroundColor?: string | undefined;
                     likesCount?: number | null | undefined;
@@ -1881,7 +2329,7 @@ export declare const factories: {
                         thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                         thumbnailUri?: import("yup").Maybe<string | undefined>;
                         storagePath: string;
-                        uri: string;
+                        url: string;
                     } | undefined;
                     backgroundColor?: string | undefined;
                     likesCount?: number | null | undefined;
@@ -1937,7 +2385,7 @@ export declare const factories: {
                         thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                         thumbnailUri?: import("yup").Maybe<string | undefined>;
                         storagePath: string;
-                        uri: string;
+                        url: string;
                     } | undefined;
                     backgroundColor?: string | undefined;
                     likesCount?: number | null | undefined;
@@ -1993,7 +2441,7 @@ export declare const factories: {
                         thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                         thumbnailUri?: import("yup").Maybe<string | undefined>;
                         storagePath: string;
-                        uri: string;
+                        url: string;
                     } | undefined;
                     backgroundColor?: string | undefined;
                     likesCount?: number | null | undefined;
@@ -2049,7 +2497,7 @@ export declare const factories: {
                         thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                         thumbnailUri?: import("yup").Maybe<string | undefined>;
                         storagePath: string;
-                        uri: string;
+                        url: string;
                     } | undefined;
                     backgroundColor?: string | undefined;
                     likesCount?: number | null | undefined;
@@ -2105,7 +2553,7 @@ export declare const factories: {
                         thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                         thumbnailUri?: import("yup").Maybe<string | undefined>;
                         storagePath: string;
-                        uri: string;
+                        url: string;
                     } | undefined;
                     backgroundColor?: string | undefined;
                     likesCount?: number | null | undefined;
@@ -2171,7 +2619,7 @@ export declare const factories: {
                     thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                     thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
-                    uri: string;
+                    url: string;
                 } | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
@@ -2198,7 +2646,7 @@ export declare const factories: {
                     thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                     thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
-                    uri: string;
+                    url: string;
                 } | undefined;
                 type: "basic";
                 prompt: string;
@@ -2251,7 +2699,7 @@ export declare const factories: {
                     thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                     thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
-                    uri: string;
+                    url: string;
                 } | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
@@ -2309,7 +2757,7 @@ export declare const factories: {
                     thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                     thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
-                    uri: string;
+                    url: string;
                 } | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
@@ -2365,7 +2813,7 @@ export declare const factories: {
                     thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                     thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
-                    uri: string;
+                    url: string;
                 } | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
@@ -2421,7 +2869,7 @@ export declare const factories: {
                     thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                     thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
-                    uri: string;
+                    url: string;
                 } | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
@@ -2477,7 +2925,7 @@ export declare const factories: {
                     thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                     thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
-                    uri: string;
+                    url: string;
                 } | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
@@ -2533,7 +2981,7 @@ export declare const factories: {
                     thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                     thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
-                    uri: string;
+                    url: string;
                 } | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;

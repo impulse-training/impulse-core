@@ -34,7 +34,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
         thumbnailUri?: import("yup").Maybe<string | undefined>;
         storagePath: string;
-        uri: string;
+        url: string;
     } | undefined;
     emotionData?: {
         [x: string]: {
@@ -145,7 +145,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                     thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                     thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
-                    uri: string;
+                    url: string;
                 } | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
@@ -172,7 +172,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                     thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                     thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
-                    uri: string;
+                    url: string;
                 } | undefined;
                 type: "basic";
                 prompt: string;
@@ -225,7 +225,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                     thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                     thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
-                    uri: string;
+                    url: string;
                 } | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
@@ -283,7 +283,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                     thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                     thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
-                    uri: string;
+                    url: string;
                 } | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
@@ -339,7 +339,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                     thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                     thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
-                    uri: string;
+                    url: string;
                 } | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
@@ -395,7 +395,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                     thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                     thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
-                    uri: string;
+                    url: string;
                 } | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
@@ -451,7 +451,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                     thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                     thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
-                    uri: string;
+                    url: string;
                 } | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
@@ -507,7 +507,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                     thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                     thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
-                    uri: string;
+                    url: string;
                 } | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;

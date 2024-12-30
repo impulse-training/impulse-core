@@ -66,7 +66,7 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
                 thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                 thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
-                uri: string;
+                url: string;
             } | undefined;
             backgroundColor?: string | undefined;
             likesCount?: number | null | undefined;
@@ -93,7 +93,7 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
                 thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                 thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
-                uri: string;
+                url: string;
             } | undefined;
             type: "basic";
             prompt: string;
@@ -146,7 +146,7 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
                 thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                 thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
-                uri: string;
+                url: string;
             } | undefined;
             backgroundColor?: string | undefined;
             likesCount?: number | null | undefined;
@@ -204,7 +204,7 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
                 thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                 thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
-                uri: string;
+                url: string;
             } | undefined;
             backgroundColor?: string | undefined;
             likesCount?: number | null | undefined;
@@ -260,7 +260,7 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
                 thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                 thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
-                uri: string;
+                url: string;
             } | undefined;
             backgroundColor?: string | undefined;
             likesCount?: number | null | undefined;
@@ -316,7 +316,7 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
                 thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                 thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
-                uri: string;
+                url: string;
             } | undefined;
             backgroundColor?: string | undefined;
             likesCount?: number | null | undefined;
@@ -372,7 +372,7 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
                 thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                 thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
-                uri: string;
+                url: string;
             } | undefined;
             backgroundColor?: string | undefined;
             likesCount?: number | null | undefined;
@@ -428,7 +428,7 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
                 thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
                 thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
-                uri: string;
+                url: string;
             } | undefined;
             backgroundColor?: string | undefined;
             likesCount?: number | null | undefined;
@@ -494,7 +494,7 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
             thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
             thumbnailUri?: import("yup").Maybe<string | undefined>;
             storagePath: string;
-            uri: string;
+            url: string;
         } | undefined;
         backgroundColor?: string | undefined;
         likesCount?: number | null | undefined;
@@ -521,7 +521,7 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
             thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
             thumbnailUri?: import("yup").Maybe<string | undefined>;
             storagePath: string;
-            uri: string;
+            url: string;
         } | undefined;
         type: "basic";
         prompt: string;
@@ -574,7 +574,7 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
             thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
             thumbnailUri?: import("yup").Maybe<string | undefined>;
             storagePath: string;
-            uri: string;
+            url: string;
         } | undefined;
         backgroundColor?: string | undefined;
         likesCount?: number | null | undefined;
@@ -632,7 +632,7 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
             thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
             thumbnailUri?: import("yup").Maybe<string | undefined>;
             storagePath: string;
-            uri: string;
+            url: string;
         } | undefined;
         backgroundColor?: string | undefined;
         likesCount?: number | null | undefined;
@@ -688,7 +688,7 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
             thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
             thumbnailUri?: import("yup").Maybe<string | undefined>;
             storagePath: string;
-            uri: string;
+            url: string;
         } | undefined;
         backgroundColor?: string | undefined;
         likesCount?: number | null | undefined;
@@ -744,7 +744,7 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
             thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
             thumbnailUri?: import("yup").Maybe<string | undefined>;
             storagePath: string;
-            uri: string;
+            url: string;
         } | undefined;
         backgroundColor?: string | undefined;
         likesCount?: number | null | undefined;
@@ -800,7 +800,7 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
             thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
             thumbnailUri?: import("yup").Maybe<string | undefined>;
             storagePath: string;
-            uri: string;
+            url: string;
         } | undefined;
         backgroundColor?: string | undefined;
         likesCount?: number | null | undefined;
@@ -856,7 +856,7 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
             thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
             thumbnailUri?: import("yup").Maybe<string | undefined>;
             storagePath: string;
-            uri: string;
+            url: string;
         } | undefined;
         backgroundColor?: string | undefined;
         likesCount?: number | null | undefined;

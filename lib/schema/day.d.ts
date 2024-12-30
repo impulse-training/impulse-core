@@ -46,7 +46,7 @@ export declare const daySchema: yup.ObjectSchema<{
                 thumbnailStoragePath?: yup.Maybe<string | undefined>;
                 thumbnailUri?: yup.Maybe<string | undefined>;
                 storagePath: string;
-                uri: string;
+                url: string;
             } | undefined;
             emotionData?: {
                 [x: string]: {
@@ -157,7 +157,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             thumbnailStoragePath?: yup.Maybe<string | undefined>;
                             thumbnailUri?: yup.Maybe<string | undefined>;
                             storagePath: string;
-                            uri: string;
+                            url: string;
                         } | undefined;
                         backgroundColor?: string | undefined;
                         likesCount?: number | null | undefined;
@@ -184,7 +184,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             thumbnailStoragePath?: yup.Maybe<string | undefined>;
                             thumbnailUri?: yup.Maybe<string | undefined>;
                             storagePath: string;
-                            uri: string;
+                            url: string;
                         } | undefined;
                         type: "basic";
                         prompt: string;
@@ -237,7 +237,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             thumbnailStoragePath?: yup.Maybe<string | undefined>;
                             thumbnailUri?: yup.Maybe<string | undefined>;
                             storagePath: string;
-                            uri: string;
+                            url: string;
                         } | undefined;
                         backgroundColor?: string | undefined;
                         likesCount?: number | null | undefined;
@@ -295,7 +295,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             thumbnailStoragePath?: yup.Maybe<string | undefined>;
                             thumbnailUri?: yup.Maybe<string | undefined>;
                             storagePath: string;
-                            uri: string;
+                            url: string;
                         } | undefined;
                         backgroundColor?: string | undefined;
                         likesCount?: number | null | undefined;
@@ -351,7 +351,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             thumbnailStoragePath?: yup.Maybe<string | undefined>;
                             thumbnailUri?: yup.Maybe<string | undefined>;
                             storagePath: string;
-                            uri: string;
+                            url: string;
                         } | undefined;
                         backgroundColor?: string | undefined;
                         likesCount?: number | null | undefined;
@@ -407,7 +407,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             thumbnailStoragePath?: yup.Maybe<string | undefined>;
                             thumbnailUri?: yup.Maybe<string | undefined>;
                             storagePath: string;
-                            uri: string;
+                            url: string;
                         } | undefined;
                         backgroundColor?: string | undefined;
                         likesCount?: number | null | undefined;
@@ -463,7 +463,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             thumbnailStoragePath?: yup.Maybe<string | undefined>;
                             thumbnailUri?: yup.Maybe<string | undefined>;
                             storagePath: string;
-                            uri: string;
+                            url: string;
                         } | undefined;
                         backgroundColor?: string | undefined;
                         likesCount?: number | null | undefined;
@@ -519,7 +519,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             thumbnailStoragePath?: yup.Maybe<string | undefined>;
                             thumbnailUri?: yup.Maybe<string | undefined>;
                             storagePath: string;
-                            uri: string;
+                            url: string;
                         } | undefined;
                         backgroundColor?: string | undefined;
                         likesCount?: number | null | undefined;
@@ -581,7 +581,7 @@ export declare const daySchema: yup.ObjectSchema<{
                 thumbnailStoragePath?: yup.Maybe<string | undefined>;
                 thumbnailUri?: yup.Maybe<string | undefined>;
                 storagePath: string;
-                uri: string;
+                url: string;
             } | undefined;
             emotionData?: {
                 [x: string]: {
@@ -692,7 +692,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             thumbnailStoragePath?: yup.Maybe<string | undefined>;
                             thumbnailUri?: yup.Maybe<string | undefined>;
                             storagePath: string;
-                            uri: string;
+                            url: string;
                         } | undefined;
                         backgroundColor?: string | undefined;
                         likesCount?: number | null | undefined;
@@ -719,7 +719,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             thumbnailStoragePath?: yup.Maybe<string | undefined>;
                             thumbnailUri?: yup.Maybe<string | undefined>;
                             storagePath: string;
-                            uri: string;
+                            url: string;
                         } | undefined;
                         type: "basic";
                         prompt: string;
@@ -772,7 +772,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             thumbnailStoragePath?: yup.Maybe<string | undefined>;
                             thumbnailUri?: yup.Maybe<string | undefined>;
                             storagePath: string;
-                            uri: string;
+                            url: string;
                         } | undefined;
                         backgroundColor?: string | undefined;
                         likesCount?: number | null | undefined;
@@ -830,7 +830,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             thumbnailStoragePath?: yup.Maybe<string | undefined>;
                             thumbnailUri?: yup.Maybe<string | undefined>;
                             storagePath: string;
-                            uri: string;
+                            url: string;
                         } | undefined;
                         backgroundColor?: string | undefined;
                         likesCount?: number | null | undefined;
@@ -886,7 +886,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             thumbnailStoragePath?: yup.Maybe<string | undefined>;
                             thumbnailUri?: yup.Maybe<string | undefined>;
                             storagePath: string;
-                            uri: string;
+                            url: string;
                         } | undefined;
                         backgroundColor?: string | undefined;
                         likesCount?: number | null | undefined;
@@ -942,7 +942,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             thumbnailStoragePath?: yup.Maybe<string | undefined>;
                             thumbnailUri?: yup.Maybe<string | undefined>;
                             storagePath: string;
-                            uri: string;
+                            url: string;
                         } | undefined;
                         backgroundColor?: string | undefined;
                         likesCount?: number | null | undefined;
@@ -998,7 +998,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             thumbnailStoragePath?: yup.Maybe<string | undefined>;
                             thumbnailUri?: yup.Maybe<string | undefined>;
                             storagePath: string;
-                            uri: string;
+                            url: string;
                         } | undefined;
                         backgroundColor?: string | undefined;
                         likesCount?: number | null | undefined;
@@ -1054,7 +1054,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             thumbnailStoragePath?: yup.Maybe<string | undefined>;
                             thumbnailUri?: yup.Maybe<string | undefined>;
                             storagePath: string;
-                            uri: string;
+                            url: string;
                         } | undefined;
                         backgroundColor?: string | undefined;
                         likesCount?: number | null | undefined;
@@ -1117,7 +1117,7 @@ export declare const daySchema: yup.ObjectSchema<{
                 thumbnailStoragePath?: yup.Maybe<string | undefined>;
                 thumbnailUri?: yup.Maybe<string | undefined>;
                 storagePath: string;
-                uri: string;
+                url: string;
             } | undefined;
             emotionData?: {
                 [x: string]: {
@@ -1228,7 +1228,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             thumbnailStoragePath?: yup.Maybe<string | undefined>;
                             thumbnailUri?: yup.Maybe<string | undefined>;
                             storagePath: string;
-                            uri: string;
+                            url: string;
                         } | undefined;
                         backgroundColor?: string | undefined;
                         likesCount?: number | null | undefined;
@@ -1255,7 +1255,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             thumbnailStoragePath?: yup.Maybe<string | undefined>;
                             thumbnailUri?: yup.Maybe<string | undefined>;
                             storagePath: string;
-                            uri: string;
+                            url: string;
                         } | undefined;
                         type: "basic";
                         prompt: string;
@@ -1308,7 +1308,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             thumbnailStoragePath?: yup.Maybe<string | undefined>;
                             thumbnailUri?: yup.Maybe<string | undefined>;
                             storagePath: string;
-                            uri: string;
+                            url: string;
                         } | undefined;
                         backgroundColor?: string | undefined;
                         likesCount?: number | null | undefined;
@@ -1366,7 +1366,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             thumbnailStoragePath?: yup.Maybe<string | undefined>;
                             thumbnailUri?: yup.Maybe<string | undefined>;
                             storagePath: string;
-                            uri: string;
+                            url: string;
                         } | undefined;
                         backgroundColor?: string | undefined;
                         likesCount?: number | null | undefined;
@@ -1422,7 +1422,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             thumbnailStoragePath?: yup.Maybe<string | undefined>;
                             thumbnailUri?: yup.Maybe<string | undefined>;
                             storagePath: string;
-                            uri: string;
+                            url: string;
                         } | undefined;
                         backgroundColor?: string | undefined;
                         likesCount?: number | null | undefined;
@@ -1478,7 +1478,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             thumbnailStoragePath?: yup.Maybe<string | undefined>;
                             thumbnailUri?: yup.Maybe<string | undefined>;
                             storagePath: string;
-                            uri: string;
+                            url: string;
                         } | undefined;
                         backgroundColor?: string | undefined;
                         likesCount?: number | null | undefined;
@@ -1534,7 +1534,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             thumbnailStoragePath?: yup.Maybe<string | undefined>;
                             thumbnailUri?: yup.Maybe<string | undefined>;
                             storagePath: string;
-                            uri: string;
+                            url: string;
                         } | undefined;
                         backgroundColor?: string | undefined;
                         likesCount?: number | null | undefined;
@@ -1590,7 +1590,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             thumbnailStoragePath?: yup.Maybe<string | undefined>;
                             thumbnailUri?: yup.Maybe<string | undefined>;
                             storagePath: string;
-                            uri: string;
+                            url: string;
                         } | undefined;
                         backgroundColor?: string | undefined;
                         likesCount?: number | null | undefined;
@@ -1653,7 +1653,7 @@ export declare const daySchema: yup.ObjectSchema<{
                 thumbnailStoragePath?: yup.Maybe<string | undefined>;
                 thumbnailUri?: yup.Maybe<string | undefined>;
                 storagePath: string;
-                uri: string;
+                url: string;
             } | undefined;
             emotionData?: {
                 [x: string]: {
@@ -1764,7 +1764,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             thumbnailStoragePath?: yup.Maybe<string | undefined>;
                             thumbnailUri?: yup.Maybe<string | undefined>;
                             storagePath: string;
-                            uri: string;
+                            url: string;
                         } | undefined;
                         backgroundColor?: string | undefined;
                         likesCount?: number | null | undefined;
@@ -1791,7 +1791,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             thumbnailStoragePath?: yup.Maybe<string | undefined>;
                             thumbnailUri?: yup.Maybe<string | undefined>;
                             storagePath: string;
-                            uri: string;
+                            url: string;
                         } | undefined;
                         type: "basic";
                         prompt: string;
@@ -1844,7 +1844,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             thumbnailStoragePath?: yup.Maybe<string | undefined>;
                             thumbnailUri?: yup.Maybe<string | undefined>;
                             storagePath: string;
-                            uri: string;
+                            url: string;
                         } | undefined;
                         backgroundColor?: string | undefined;
                         likesCount?: number | null | undefined;
@@ -1902,7 +1902,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             thumbnailStoragePath?: yup.Maybe<string | undefined>;
                             thumbnailUri?: yup.Maybe<string | undefined>;
                             storagePath: string;
-                            uri: string;
+                            url: string;
                         } | undefined;
                         backgroundColor?: string | undefined;
                         likesCount?: number | null | undefined;
@@ -1958,7 +1958,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             thumbnailStoragePath?: yup.Maybe<string | undefined>;
                             thumbnailUri?: yup.Maybe<string | undefined>;
                             storagePath: string;
-                            uri: string;
+                            url: string;
                         } | undefined;
                         backgroundColor?: string | undefined;
                         likesCount?: number | null | undefined;
@@ -2014,7 +2014,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             thumbnailStoragePath?: yup.Maybe<string | undefined>;
                             thumbnailUri?: yup.Maybe<string | undefined>;
                             storagePath: string;
-                            uri: string;
+                            url: string;
                         } | undefined;
                         backgroundColor?: string | undefined;
                         likesCount?: number | null | undefined;
@@ -2070,7 +2070,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             thumbnailStoragePath?: yup.Maybe<string | undefined>;
                             thumbnailUri?: yup.Maybe<string | undefined>;
                             storagePath: string;
-                            uri: string;
+                            url: string;
                         } | undefined;
                         backgroundColor?: string | undefined;
                         likesCount?: number | null | undefined;
@@ -2126,7 +2126,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             thumbnailStoragePath?: yup.Maybe<string | undefined>;
                             thumbnailUri?: yup.Maybe<string | undefined>;
                             storagePath: string;
-                            uri: string;
+                            url: string;
                         } | undefined;
                         backgroundColor?: string | undefined;
                         likesCount?: number | null | undefined;
@@ -2195,7 +2195,7 @@ export declare const daySchema: yup.ObjectSchema<{
                 thumbnailStoragePath?: yup.Maybe<string | undefined>;
                 thumbnailUri?: yup.Maybe<string | undefined>;
                 storagePath: string;
-                uri: string;
+                url: string;
             } | undefined;
             emotionData?: {
                 [x: string]: {
@@ -2306,7 +2306,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             thumbnailStoragePath?: yup.Maybe<string | undefined>;
                             thumbnailUri?: yup.Maybe<string | undefined>;
                             storagePath: string;
-                            uri: string;
+                            url: string;
                         } | undefined;
                         backgroundColor?: string | undefined;
                         likesCount?: number | null | undefined;
@@ -2333,7 +2333,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             thumbnailStoragePath?: yup.Maybe<string | undefined>;
                             thumbnailUri?: yup.Maybe<string | undefined>;
                             storagePath: string;
-                            uri: string;
+                            url: string;
                         } | undefined;
                         type: "basic";
                         prompt: string;
@@ -2386,7 +2386,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             thumbnailStoragePath?: yup.Maybe<string | undefined>;
                             thumbnailUri?: yup.Maybe<string | undefined>;
                             storagePath: string;
-                            uri: string;
+                            url: string;
                         } | undefined;
                         backgroundColor?: string | undefined;
                         likesCount?: number | null | undefined;
@@ -2444,7 +2444,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             thumbnailStoragePath?: yup.Maybe<string | undefined>;
                             thumbnailUri?: yup.Maybe<string | undefined>;
                             storagePath: string;
-                            uri: string;
+                            url: string;
                         } | undefined;
                         backgroundColor?: string | undefined;
                         likesCount?: number | null | undefined;
@@ -2500,7 +2500,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             thumbnailStoragePath?: yup.Maybe<string | undefined>;
                             thumbnailUri?: yup.Maybe<string | undefined>;
                             storagePath: string;
-                            uri: string;
+                            url: string;
                         } | undefined;
                         backgroundColor?: string | undefined;
                         likesCount?: number | null | undefined;
@@ -2556,7 +2556,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             thumbnailStoragePath?: yup.Maybe<string | undefined>;
                             thumbnailUri?: yup.Maybe<string | undefined>;
                             storagePath: string;
-                            uri: string;
+                            url: string;
                         } | undefined;
                         backgroundColor?: string | undefined;
                         likesCount?: number | null | undefined;
@@ -2612,7 +2612,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             thumbnailStoragePath?: yup.Maybe<string | undefined>;
                             thumbnailUri?: yup.Maybe<string | undefined>;
                             storagePath: string;
-                            uri: string;
+                            url: string;
                         } | undefined;
                         backgroundColor?: string | undefined;
                         likesCount?: number | null | undefined;
@@ -2668,7 +2668,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             thumbnailStoragePath?: yup.Maybe<string | undefined>;
                             thumbnailUri?: yup.Maybe<string | undefined>;
                             storagePath: string;
-                            uri: string;
+                            url: string;
                         } | undefined;
                         backgroundColor?: string | undefined;
                         likesCount?: number | null | undefined;
@@ -2732,7 +2732,7 @@ export declare const daySchema: yup.ObjectSchema<{
                 thumbnailStoragePath?: yup.Maybe<string | undefined>;
                 thumbnailUri?: yup.Maybe<string | undefined>;
                 storagePath: string;
-                uri: string;
+                url: string;
             } | undefined;
             emotionData?: {
                 [x: string]: {
@@ -2843,7 +2843,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             thumbnailStoragePath?: yup.Maybe<string | undefined>;
                             thumbnailUri?: yup.Maybe<string | undefined>;
                             storagePath: string;
-                            uri: string;
+                            url: string;
                         } | undefined;
                         backgroundColor?: string | undefined;
                         likesCount?: number | null | undefined;
@@ -2870,7 +2870,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             thumbnailStoragePath?: yup.Maybe<string | undefined>;
                             thumbnailUri?: yup.Maybe<string | undefined>;
                             storagePath: string;
-                            uri: string;
+                            url: string;
                         } | undefined;
                         type: "basic";
                         prompt: string;
@@ -2923,7 +2923,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             thumbnailStoragePath?: yup.Maybe<string | undefined>;
                             thumbnailUri?: yup.Maybe<string | undefined>;
                             storagePath: string;
-                            uri: string;
+                            url: string;
                         } | undefined;
                         backgroundColor?: string | undefined;
                         likesCount?: number | null | undefined;
@@ -2981,7 +2981,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             thumbnailStoragePath?: yup.Maybe<string | undefined>;
                             thumbnailUri?: yup.Maybe<string | undefined>;
                             storagePath: string;
-                            uri: string;
+                            url: string;
                         } | undefined;
                         backgroundColor?: string | undefined;
                         likesCount?: number | null | undefined;
@@ -3037,7 +3037,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             thumbnailStoragePath?: yup.Maybe<string | undefined>;
                             thumbnailUri?: yup.Maybe<string | undefined>;
                             storagePath: string;
-                            uri: string;
+                            url: string;
                         } | undefined;
                         backgroundColor?: string | undefined;
                         likesCount?: number | null | undefined;
@@ -3093,7 +3093,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             thumbnailStoragePath?: yup.Maybe<string | undefined>;
                             thumbnailUri?: yup.Maybe<string | undefined>;
                             storagePath: string;
-                            uri: string;
+                            url: string;
                         } | undefined;
                         backgroundColor?: string | undefined;
                         likesCount?: number | null | undefined;
@@ -3149,7 +3149,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             thumbnailStoragePath?: yup.Maybe<string | undefined>;
                             thumbnailUri?: yup.Maybe<string | undefined>;
                             storagePath: string;
-                            uri: string;
+                            url: string;
                         } | undefined;
                         backgroundColor?: string | undefined;
                         likesCount?: number | null | undefined;
@@ -3205,7 +3205,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             thumbnailStoragePath?: yup.Maybe<string | undefined>;
                             thumbnailUri?: yup.Maybe<string | undefined>;
                             storagePath: string;
-                            uri: string;
+                            url: string;
                         } | undefined;
                         backgroundColor?: string | undefined;
                         likesCount?: number | null | undefined;
@@ -3268,7 +3268,7 @@ export declare const daySchema: yup.ObjectSchema<{
                 thumbnailStoragePath?: yup.Maybe<string | undefined>;
                 thumbnailUri?: yup.Maybe<string | undefined>;
                 storagePath: string;
-                uri: string;
+                url: string;
             } | undefined;
             emotionData?: {
                 [x: string]: {
@@ -3379,7 +3379,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             thumbnailStoragePath?: yup.Maybe<string | undefined>;
                             thumbnailUri?: yup.Maybe<string | undefined>;
                             storagePath: string;
-                            uri: string;
+                            url: string;
                         } | undefined;
                         backgroundColor?: string | undefined;
                         likesCount?: number | null | undefined;
@@ -3406,7 +3406,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             thumbnailStoragePath?: yup.Maybe<string | undefined>;
                             thumbnailUri?: yup.Maybe<string | undefined>;
                             storagePath: string;
-                            uri: string;
+                            url: string;
                         } | undefined;
                         type: "basic";
                         prompt: string;
@@ -3459,7 +3459,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             thumbnailStoragePath?: yup.Maybe<string | undefined>;
                             thumbnailUri?: yup.Maybe<string | undefined>;
                             storagePath: string;
-                            uri: string;
+                            url: string;
                         } | undefined;
                         backgroundColor?: string | undefined;
                         likesCount?: number | null | undefined;
@@ -3517,7 +3517,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             thumbnailStoragePath?: yup.Maybe<string | undefined>;
                             thumbnailUri?: yup.Maybe<string | undefined>;
                             storagePath: string;
-                            uri: string;
+                            url: string;
                         } | undefined;
                         backgroundColor?: string | undefined;
                         likesCount?: number | null | undefined;
@@ -3573,7 +3573,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             thumbnailStoragePath?: yup.Maybe<string | undefined>;
                             thumbnailUri?: yup.Maybe<string | undefined>;
                             storagePath: string;
-                            uri: string;
+                            url: string;
                         } | undefined;
                         backgroundColor?: string | undefined;
                         likesCount?: number | null | undefined;
@@ -3629,7 +3629,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             thumbnailStoragePath?: yup.Maybe<string | undefined>;
                             thumbnailUri?: yup.Maybe<string | undefined>;
                             storagePath: string;
-                            uri: string;
+                            url: string;
                         } | undefined;
                         backgroundColor?: string | undefined;
                         likesCount?: number | null | undefined;
@@ -3685,7 +3685,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             thumbnailStoragePath?: yup.Maybe<string | undefined>;
                             thumbnailUri?: yup.Maybe<string | undefined>;
                             storagePath: string;
-                            uri: string;
+                            url: string;
                         } | undefined;
                         backgroundColor?: string | undefined;
                         likesCount?: number | null | undefined;
@@ -3741,7 +3741,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             thumbnailStoragePath?: yup.Maybe<string | undefined>;
                             thumbnailUri?: yup.Maybe<string | undefined>;
                             storagePath: string;
-                            uri: string;
+                            url: string;
                         } | undefined;
                         backgroundColor?: string | undefined;
                         likesCount?: number | null | undefined;
@@ -3778,7 +3778,7 @@ export declare const daySchema: yup.ObjectSchema<{
                 thumbnailStoragePath?: yup.Maybe<string | undefined>;
                 thumbnailUri?: yup.Maybe<string | undefined>;
                 storagePath: string;
-                uri: string;
+                url: string;
             }[] | undefined>;
             type: "whatsappMessage";
             uid: string;
