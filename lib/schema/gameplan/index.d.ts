@@ -29,7 +29,7 @@ export declare const gameplanSchema: yup.Lazy<WithTacticsById<{
     type: "craving";
     tacticsById: {
         [x: string]: {
-            data: {
+            tactic: {
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -82,7 +82,7 @@ export declare const gameplanSchema: yup.Lazy<WithTacticsById<{
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
-                recording?: {
+                audio?: {
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
@@ -475,7 +475,7 @@ export declare const gameplanSchema: yup.Lazy<WithTacticsById<{
     type: NonNullable<"arrival" | "departure" | "both" | undefined>;
     tacticsById: {
         [x: string]: {
-            data: {
+            tactic: {
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -528,7 +528,7 @@ export declare const gameplanSchema: yup.Lazy<WithTacticsById<{
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
-                recording?: {
+                audio?: {
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
@@ -920,7 +920,7 @@ export declare const gameplanSchema: yup.Lazy<WithTacticsById<{
     type: "scheduled";
     tacticsById: {
         [x: string]: {
-            data: {
+            tactic: {
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -973,7 +973,7 @@ export declare const gameplanSchema: yup.Lazy<WithTacticsById<{
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
-                recording?: {
+                audio?: {
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;

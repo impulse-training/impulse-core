@@ -54,7 +54,7 @@ export declare const basicTacticSchema: yup.ObjectSchema<{
     likesCount: number | null | undefined;
     timerSeconds: yup.Maybe<number | undefined>;
     isSuggested: boolean | undefined;
-    recording: {
+    audio: {
         createdAt?: {
             isEqual?: any;
             toMillis?: any;
@@ -96,6 +96,6 @@ export declare const basicTacticSchema: yup.ObjectSchema<{
     likesCount: undefined;
     timerSeconds: undefined;
     isSuggested: undefined;
-    recording: undefined;
+    audio: undefined;
 }, "">;
 export type BasicTacticValue = yup.InferType<typeof basicTacticSchema>;

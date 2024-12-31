@@ -155,7 +155,7 @@ export declare function logBaseSchema<K extends string>(type: K): yup.ObjectSche
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
-                recording?: {
+                audio?: {
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;

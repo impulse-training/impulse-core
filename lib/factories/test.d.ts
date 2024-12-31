@@ -152,7 +152,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                 likesCount?: number | null | undefined;
                 timerSeconds?: import("yup").Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
-                recording?: {
+                audio?: {
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;

@@ -70,7 +70,7 @@ export declare const tacticSchema: yup.Lazy<{
     likesCount?: number | null | undefined;
     timerSeconds?: yup.Maybe<number | undefined>;
     isSuggested?: boolean | undefined;
-    recording?: {
+    audio?: {
         createdAt?: {
             isEqual?: any;
             toMillis?: any;

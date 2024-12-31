@@ -20,7 +20,7 @@ export declare const makeGameplanFactory: (TimestampKlass: typeof TimestampLike)
     type: "scheduled";
     tacticsById: {
         [x: string]: {
-            data: {
+            tactic: {
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -73,7 +73,7 @@ export declare const makeGameplanFactory: (TimestampKlass: typeof TimestampLike)
                 likesCount?: number | null | undefined;
                 timerSeconds?: import("yup").Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
-                recording?: {
+                audio?: {
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;

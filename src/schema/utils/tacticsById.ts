@@ -6,6 +6,6 @@ import { objectOf } from './objectOf';
 export const tacticsById = objectOf(
   yup.object({
     doc: documentReferenceSchema.required(),
-    data: tacticSchema,
+    tactic: tacticSchema,
   })
 );

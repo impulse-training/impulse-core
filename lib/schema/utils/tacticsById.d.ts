@@ -1,7 +1,7 @@
 import * as yup from 'yup';
 export declare const tacticsById: yup.Lazy<{
     [x: string]: {
-        data: {
+        tactic: {
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
@@ -54,7 +54,7 @@ export declare const tacticsById: yup.Lazy<{
             likesCount?: number | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
-            recording?: {
+            audio?: {
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;

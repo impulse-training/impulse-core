@@ -155,7 +155,7 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     likesCount?: number | null | undefined;
                     timerSeconds?: import("yup").Maybe<number | undefined>;
                     isSuggested?: boolean | undefined;
-                    recording?: {
+                    audio?: {
                         createdAt?: {
                             isEqual?: any;
                             toMillis?: any;

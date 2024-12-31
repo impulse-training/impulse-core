@@ -6,7 +6,7 @@ export declare function gameplanBaseSchema<T extends string>(type: T): yup.Objec
     ordinal: number | undefined;
     tacticsById: {
         [x: string]: {
-            data: {
+            tactic: {
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -59,7 +59,7 @@ export declare function gameplanBaseSchema<T extends string>(type: T): yup.Objec
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
-                recording?: {
+                audio?: {
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;

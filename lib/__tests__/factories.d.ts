@@ -153,7 +153,7 @@ export declare const factories: {
                     likesCount?: number | null | undefined;
                     timerSeconds?: import("yup").Maybe<number | undefined>;
                     isSuggested?: boolean | undefined;
-                    recording?: {
+                    audio?: {
                         createdAt?: {
                             isEqual?: any;
                             toMillis?: any;
@@ -746,7 +746,7 @@ export declare const factories: {
         type: "scheduled";
         tacticsById: {
             [x: string]: {
-                data: {
+                tactic: {
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
@@ -799,7 +799,7 @@ export declare const factories: {
                     likesCount?: number | null | undefined;
                     timerSeconds?: import("yup").Maybe<number | undefined>;
                     isSuggested?: boolean | undefined;
-                    recording?: {
+                    audio?: {
                         createdAt?: {
                             isEqual?: any;
                             toMillis?: any;
