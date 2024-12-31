@@ -595,15 +595,6 @@ export declare const factories: {
     }, "name" | "uid" | "address" | ("createdAt" | "updatedAt" | "latitude" | "longitude")>;
     daysSummaryFactory: import("factory.ts").Factory<{
         [x: string]: {
-            emotions: {
-                [x: string]: {
-                    color?: string | undefined;
-                    name: string;
-                    label: string;
-                    key: string;
-                    intensity: number | null;
-                };
-            };
             behaviors: {
                 [x: string]: {
                     color?: string | undefined;
@@ -643,6 +634,15 @@ export declare const factories: {
                         stringValue: string;
                         unit: string;
                     };
+                };
+            };
+            emotions: {
+                [x: string]: {
+                    color?: string | undefined;
+                    name: string;
+                    label: string;
+                    key: string;
+                    intensity: number | null;
                 };
             };
         };

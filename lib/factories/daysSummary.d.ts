@@ -2,15 +2,6 @@ import * as Factory from 'factory.ts';
 import { TimestampLike } from '../utils';
 export declare const makeDaysSummaryFactory: (TimestampKlass: typeof TimestampLike) => Factory.Sync.Factory<{
     [x: string]: {
-        emotions: {
-            [x: string]: {
-                color?: string | undefined;
-                name: string;
-                label: string;
-                key: string;
-                intensity: number | null;
-            };
-        };
         behaviors: {
             [x: string]: {
                 color?: string | undefined;
@@ -50,6 +41,15 @@ export declare const makeDaysSummaryFactory: (TimestampKlass: typeof TimestampLi
                     stringValue: string;
                     unit: string;
                 };
+            };
+        };
+        emotions: {
+            [x: string]: {
+                color?: string | undefined;
+                name: string;
+                label: string;
+                key: string;
+                intensity: number | null;
             };
         };
     };

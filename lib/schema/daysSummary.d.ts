@@ -1,15 +1,6 @@
 import * as yup from 'yup';
 export declare const daysSummarySchema: yup.Lazy<{
     [x: string]: {
-        emotions: {
-            [x: string]: {
-                color?: string | undefined;
-                name: string;
-                label: string;
-                key: string;
-                intensity: number | null;
-            };
-        };
         behaviors: {
             [x: string]: {
                 color?: string | undefined;
@@ -49,6 +40,15 @@ export declare const daysSummarySchema: yup.Lazy<{
                     stringValue: string;
                     unit: string;
                 };
+            };
+        };
+        emotions: {
+            [x: string]: {
+                color?: string | undefined;
+                name: string;
+                label: string;
+                key: string;
+                intensity: number | null;
             };
         };
     };
