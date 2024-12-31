@@ -91,8 +91,7 @@ export declare function logBaseSchema<K extends string>(type: K): yup.ObjectSche
     } | null | undefined;
     tacticsData: {
         [x: string]: {
-            doc?: import("../utils/firestore").DocumentReferenceLike<unknown> | undefined;
-            data: {
+            data?: {
                 setAt: {
                     isEqual?: any;
                     toMillis?: any;
@@ -101,7 +100,7 @@ export declare function logBaseSchema<K extends string>(type: K): yup.ObjectSche
                     toDate: Function;
                 };
                 isCompleted: NonNullable<boolean | undefined>;
-            } | null;
+            } | undefined;
             tactic: {
                 createdAt?: {
                     isEqual?: any;
@@ -523,8 +522,9 @@ export declare function logBaseSchema<K extends string>(type: K): yup.ObjectSche
                     url?: string | null | undefined;
                 };
             };
+            doc: import("../utils/firestore").DocumentReferenceLike<unknown>;
         };
-    } | null | undefined;
+    };
     text: string | null | undefined;
     date: {
         isEqual?: any;

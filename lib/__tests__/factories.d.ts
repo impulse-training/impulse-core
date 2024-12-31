@@ -87,10 +87,13 @@ export declare const factories: {
                 };
             };
         } | null | undefined;
-        tacticsData?: {
+        text?: string | null | undefined;
+        senderUid?: string | null | undefined;
+        type: "user";
+        uid: string;
+        tacticsData: {
             [x: string]: {
-                doc?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                data: {
+                data?: {
                     setAt: {
                         isEqual?: any;
                         toMillis?: any;
@@ -99,7 +102,7 @@ export declare const factories: {
                         toDate: Function;
                     };
                     isCompleted: NonNullable<boolean | undefined>;
-                } | null;
+                } | undefined;
                 tactic: {
                     createdAt?: {
                         isEqual?: any;
@@ -521,12 +524,9 @@ export declare const factories: {
                         url?: string | null | undefined;
                     };
                 };
+                doc: import("../schema/utils/firestore").DocumentReferenceLike<unknown>;
             };
-        } | null | undefined;
-        text?: string | null | undefined;
-        senderUid?: string | null | undefined;
-        type: "user";
-        uid: string;
+        };
         date: {
             isEqual?: any;
             toMillis?: any;
@@ -536,7 +536,7 @@ export declare const factories: {
         };
         dateString: string;
         role: "user";
-    }, "type" | "uid" | "date" | "dateString" | "role" | ("createdAt" | "updatedAt" | "audioFile" | "emotionData" | "behaviorData" | "tacticsData" | "text" | "senderUid")>;
+    }, "type" | "uid" | "tacticsData" | "date" | "dateString" | "role" | ("createdAt" | "updatedAt" | "audioFile" | "emotionData" | "behaviorData" | "text" | "senderUid")>;
     applicationFactory: import("factory.ts").Factory<import("..").ApplicationValue, keyof import("..").ApplicationValue>;
     dayFactory: import("factory.ts").Factory<import("..").DayValue, "uid" | "date" | "logsById">;
     issueFactory: import("factory.ts").Factory<{
@@ -746,6 +746,16 @@ export declare const factories: {
         type: "scheduled";
         tacticsById: {
             [x: string]: {
+                data?: {
+                    setAt: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    };
+                    isCompleted: NonNullable<boolean | undefined>;
+                } | undefined;
                 tactic: {
                     createdAt?: {
                         isEqual?: any;

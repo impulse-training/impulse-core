@@ -1,5 +1,4 @@
 import * as yup from 'yup';
-import { DocumentReferenceLike } from '../utils/firestore';
 import { BasicTacticValue } from './basic';
 import { BreathingExerciseTacticValue } from './breathingExercise';
 import { LinkTacticValue } from './link';
@@ -33,7 +32,7 @@ export declare const tacticSchema: yup.Lazy<{
         toDate: Function;
     } | null | undefined;
     uid?: string | undefined;
-    sourceFile?: DocumentReferenceLike<unknown> | undefined;
+    sourceFile?: import("../utils/firestore").DocumentReferenceLike<unknown> | undefined;
     sharedWithIssueIds?: string[] | undefined;
     recommendedForIssueIds?: string[] | undefined;
     recommendedForIssueOrdinals?: {
@@ -112,7 +111,7 @@ export declare const tacticSchema: yup.Lazy<{
     } | null | undefined;
     uid?: string | undefined;
     repeat?: yup.Maybe<number | undefined>;
-    sourceFile?: DocumentReferenceLike<unknown> | undefined;
+    sourceFile?: import("../utils/firestore").DocumentReferenceLike<unknown> | undefined;
     sharedWithIssueIds?: string[] | undefined;
     recommendedForIssueIds?: string[] | undefined;
     recommendedForIssueOrdinals?: {
@@ -170,7 +169,7 @@ export declare const tacticSchema: yup.Lazy<{
         toDate: Function;
     } | null | undefined;
     uid?: string | undefined;
-    sourceFile?: DocumentReferenceLike<unknown> | undefined;
+    sourceFile?: import("../utils/firestore").DocumentReferenceLike<unknown> | undefined;
     sharedWithIssueIds?: string[] | undefined;
     recommendedForIssueIds?: string[] | undefined;
     recommendedForIssueOrdinals?: {
@@ -226,7 +225,7 @@ export declare const tacticSchema: yup.Lazy<{
         toDate: Function;
     } | null | undefined;
     uid?: string | undefined;
-    sourceFile?: DocumentReferenceLike<unknown> | undefined;
+    sourceFile?: import("../utils/firestore").DocumentReferenceLike<unknown> | undefined;
     sharedWithIssueIds?: string[] | undefined;
     recommendedForIssueIds?: string[] | undefined;
     recommendedForIssueOrdinals?: {
@@ -282,7 +281,7 @@ export declare const tacticSchema: yup.Lazy<{
         toDate: Function;
     } | null | undefined;
     uid?: string | undefined;
-    sourceFile?: DocumentReferenceLike<unknown> | undefined;
+    sourceFile?: import("../utils/firestore").DocumentReferenceLike<unknown> | undefined;
     sharedWithIssueIds?: string[] | undefined;
     recommendedForIssueIds?: string[] | undefined;
     recommendedForIssueOrdinals?: {
@@ -321,7 +320,7 @@ export declare const tacticSchema: yup.Lazy<{
     timerSeconds?: yup.Maybe<number | undefined>;
     isSuggested?: boolean | undefined;
     type: "notifySupportGroup";
-    supportGroup: DocumentReferenceLike<unknown>;
+    supportGroup: import("../utils/firestore").DocumentReferenceLike<unknown>;
 } | {
     createdAt?: {
         isEqual?: any;
@@ -338,7 +337,7 @@ export declare const tacticSchema: yup.Lazy<{
         toDate: Function;
     } | null | undefined;
     uid?: string | undefined;
-    sourceFile?: DocumentReferenceLike<unknown> | undefined;
+    sourceFile?: import("../utils/firestore").DocumentReferenceLike<unknown> | undefined;
     sharedWithIssueIds?: string[] | undefined;
     recommendedForIssueIds?: string[] | undefined;
     recommendedForIssueOrdinals?: {
@@ -394,7 +393,7 @@ export declare const tacticSchema: yup.Lazy<{
         toDate: Function;
     } | null | undefined;
     uid?: string | undefined;
-    sourceFile?: DocumentReferenceLike<unknown> | undefined;
+    sourceFile?: import("../utils/firestore").DocumentReferenceLike<unknown> | undefined;
     sharedWithIssueIds?: string[] | undefined;
     recommendedForIssueIds?: string[] | undefined;
     recommendedForIssueOrdinals?: {
@@ -440,11 +439,4 @@ export declare const tacticSchema: yup.Lazy<{
 }, yup.AnyObject, any>;
 export type TacticTypes = {
     [K in TacticValue['type']]: yup.InferType<(typeof tacticSchemas)[K]>;
-};
-export type TacticsById = Record<string, {
-    doc: DocumentReferenceLike<TacticValue>;
-    data: TacticValue;
-}>;
-export type WithTacticsById<T> = Omit<T, 'tacticsById'> & {
-    tacticsById: TacticsById;
 };

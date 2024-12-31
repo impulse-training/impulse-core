@@ -102,8 +102,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
     } | null | undefined;
     tacticsData: {
         [x: string]: {
-            doc?: import("../utils/firestore").DocumentReferenceLike<unknown> | undefined;
-            data: {
+            data?: {
                 setAt: {
                     isEqual?: any;
                     toMillis?: any;
@@ -112,7 +111,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
                     toDate: Function;
                 };
                 isCompleted: NonNullable<boolean | undefined>;
-            } | null;
+            } | undefined;
             tactic: {
                 createdAt?: {
                     isEqual?: any;
@@ -534,8 +533,9 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
                     url?: string | null | undefined;
                 };
             };
+            doc: import("../utils/firestore").DocumentReferenceLike<unknown>;
         };
-    } | null | undefined;
+    };
     text: string | null | undefined;
     date: {
         isEqual?: any;

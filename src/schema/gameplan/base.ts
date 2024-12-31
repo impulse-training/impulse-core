@@ -1,5 +1,5 @@
 import * as yup from 'yup';
-import { tacticsById } from '../utils/tacticsById';
+import { tacticsById } from '../log/utils/tacticData';
 import { optionalTimestampSchema } from '../utils/timestamp';
 
 export function gameplanBaseSchema<T extends string>(type: T) {

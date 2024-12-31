@@ -4,7 +4,7 @@ import { optionalObjectOf } from '../utils/objectOf';
 import { optionalTimestampSchema, timestampSchema } from '../utils/timestamp';
 import { behaviorAndBehaviorDataSchema } from './utils/behaviorData';
 import { emotionDataSchema } from './utils/emotionData';
-import { tacticAndTacticDataSchema } from './utils/tacticData';
+import { tacticsById } from './utils/tacticData';
 
 export function logBaseSchema<K extends string>(type: K) {
   return yup.object({
@@ -17,7 +17,7 @@ export function logBaseSchema<K extends string>(type: K) {
     // We deal with emotions and behaviors separately
     emotionData: optionalObjectOf(emotionDataSchema),
     behaviorData: optionalObjectOf(behaviorAndBehaviorDataSchema),
-    tacticsData: optionalObjectOf(tacticAndTacticDataSchema),
+    tacticsData: tacticsById,
 
     text: yup.string().nullable(),
     date: timestampSchema,

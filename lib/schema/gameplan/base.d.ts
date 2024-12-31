@@ -6,6 +6,16 @@ export declare function gameplanBaseSchema<T extends string>(type: T): yup.Objec
     ordinal: number | undefined;
     tacticsById: {
         [x: string]: {
+            data?: {
+                setAt: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                };
+                isCompleted: NonNullable<boolean | undefined>;
+            } | undefined;
             tactic: {
                 createdAt?: {
                     isEqual?: any;

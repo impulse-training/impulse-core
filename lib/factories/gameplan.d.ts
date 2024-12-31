@@ -20,6 +20,16 @@ export declare const makeGameplanFactory: (TimestampKlass: typeof TimestampLike)
     type: "scheduled";
     tacticsById: {
         [x: string]: {
+            data?: {
+                setAt: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                };
+                isCompleted: NonNullable<boolean | undefined>;
+            } | undefined;
             tactic: {
                 createdAt?: {
                     isEqual?: any;

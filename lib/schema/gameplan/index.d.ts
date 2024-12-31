@@ -1,5 +1,5 @@
 import * as yup from 'yup';
-import { WithTacticsById } from '../tactic';
+import { WithTacticsById } from '../log';
 import { CravingGameplanValue } from './craving';
 import { LocationGameplanValue } from './location';
 import { ScheduledGameplanValue } from './scheduled';
@@ -29,6 +29,16 @@ export declare const gameplanSchema: yup.Lazy<WithTacticsById<{
     type: "craving";
     tacticsById: {
         [x: string]: {
+            data?: {
+                setAt: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                };
+                isCompleted: NonNullable<boolean | undefined>;
+            } | undefined;
             tactic: {
                 createdAt?: {
                     isEqual?: any;
@@ -475,6 +485,16 @@ export declare const gameplanSchema: yup.Lazy<WithTacticsById<{
     type: NonNullable<"arrival" | "departure" | "both" | undefined>;
     tacticsById: {
         [x: string]: {
+            data?: {
+                setAt: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                };
+                isCompleted: NonNullable<boolean | undefined>;
+            } | undefined;
             tactic: {
                 createdAt?: {
                     isEqual?: any;
@@ -920,6 +940,16 @@ export declare const gameplanSchema: yup.Lazy<WithTacticsById<{
     type: "scheduled";
     tacticsById: {
         [x: string]: {
+            data?: {
+                setAt: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                };
+                isCompleted: NonNullable<boolean | undefined>;
+            } | undefined;
             tactic: {
                 createdAt?: {
                     isEqual?: any;

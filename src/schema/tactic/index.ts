@@ -1,5 +1,4 @@
 import * as yup from 'yup';
-import { DocumentReferenceLike } from '../utils/firestore';
 import { BasicTacticValue, basicTacticSchema } from './basic';
 import {
   BreathingExerciseTacticValue,
@@ -79,14 +78,4 @@ export const tacticSchema = yup.lazy(value => {
 // / This type represents the union of all possible validated tactic objects
 export type TacticTypes = {
   [K in TacticValue['type']]: yup.InferType<(typeof tacticSchemas)[K]>;
-};
-
-export type TacticsById = Record<
-  string,
-  { doc: DocumentReferenceLike<TacticValue>; data: TacticValue }
->;
-
-// Export type guard functions for each tactic type (TT)
-export type WithTacticsById<T> = Omit<T, 'tacticsById'> & {
-  tacticsById: TacticsById;
 };

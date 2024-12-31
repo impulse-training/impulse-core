@@ -86,10 +86,13 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             };
         };
     } | null | undefined;
-    tacticsData?: {
+    text?: string | null | undefined;
+    senderUid?: string | null | undefined;
+    type: "user";
+    uid: string;
+    tacticsData: {
         [x: string]: {
-            doc?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
-            data: {
+            data?: {
                 setAt: {
                     isEqual?: any;
                     toMillis?: any;
@@ -98,7 +101,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                     toDate: Function;
                 };
                 isCompleted: NonNullable<boolean | undefined>;
-            } | null;
+            } | undefined;
             tactic: {
                 createdAt?: {
                     isEqual?: any;
@@ -520,12 +523,9 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                     url?: string | null | undefined;
                 };
             };
+            doc: import("../schema/utils/firestore").DocumentReferenceLike<unknown>;
         };
-    } | null | undefined;
-    text?: string | null | undefined;
-    senderUid?: string | null | undefined;
-    type: "user";
-    uid: string;
+    };
     date: {
         isEqual?: any;
         toMillis?: any;
@@ -535,7 +535,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
     };
     dateString: string;
     role: "user";
-}, "type" | "uid" | "date" | "dateString" | "role" | ("createdAt" | "updatedAt" | "audioFile" | "emotionData" | "behaviorData" | "tacticsData" | "text" | "senderUid")>, profileFactory: import("factory.ts").Factory<{
+}, "type" | "uid" | "tacticsData" | "date" | "dateString" | "role" | ("createdAt" | "updatedAt" | "audioFile" | "emotionData" | "behaviorData" | "text" | "senderUid")>, profileFactory: import("factory.ts").Factory<{
     createdAt?: {
         isEqual?: any;
         toMillis?: any;

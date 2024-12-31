@@ -1,5 +1,5 @@
 import * as yup from 'yup';
-import { WithTacticsById } from '../tactic';
+import { WithTacticsById } from '../log';
 import { cravingGameplanSchema, CravingGameplanValue } from './craving';
 import { locationGameplanSchema, LocationGameplanValue } from './location';
 import { scheduledGameplanSchema, ScheduledGameplanValue } from './scheduled';
