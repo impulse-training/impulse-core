@@ -52,10 +52,10 @@ export declare const profileSchema: yup.ObjectSchema<{
     isOnboardingComplete: boolean | undefined;
     parentIds: string[] | undefined;
     sendDebriefRemindersAfterMinutes: number | undefined;
-    gameplanStrategies: import("./utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
     androidPermissions: {
         [x: string]: NonNullable<boolean | undefined>;
     } | null | undefined;
+    defaultGameplanDoc: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
     historicalInsights: string[] | undefined;
     recentSummaries: {
         [x: string]: string;
@@ -98,8 +98,8 @@ export declare const profileSchema: yup.ObjectSchema<{
     isOnboardingComplete: undefined;
     parentIds: "";
     sendDebriefRemindersAfterMinutes: undefined;
-    gameplanStrategies: "";
     androidPermissions: undefined;
+    defaultGameplanDoc: undefined;
     historicalInsights: "";
     recentSummaries: undefined;
     isTourDismissed: undefined;

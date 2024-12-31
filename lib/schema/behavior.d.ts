@@ -4,8 +4,8 @@ export declare const behaviorSchema: yup.ObjectSchema<{
     ordinal: number;
     trackingType: NonNullable<"time" | "counter" | undefined>;
     dailyLimit: number | undefined;
-    gameplanId: string | undefined;
     isHelpful: boolean | null;
+    skipGameplanAutoCreation: boolean | undefined;
     createdAt: {
         isEqual?: any;
         toMillis?: any;
@@ -25,8 +25,8 @@ export declare const behaviorSchema: yup.ObjectSchema<{
     ordinal: undefined;
     trackingType: undefined;
     dailyLimit: undefined;
-    gameplanId: undefined;
     isHelpful: undefined;
+    skipGameplanAutoCreation: undefined;
     createdAt: undefined;
     updatedAt: undefined;
 }, "">;

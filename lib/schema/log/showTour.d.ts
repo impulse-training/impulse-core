@@ -1,5 +1,16 @@
 import * as yup from 'yup';
-export declare const whatsappMessageLogSchema: yup.ObjectSchema<{
+export declare const tourStepSchema: yup.ObjectSchema<{
+    elementRefName: string;
+    title: string;
+    message: string;
+    confirmButtonLabel: string;
+}, yup.AnyObject, {
+    elementRefName: undefined;
+    title: undefined;
+    message: undefined;
+    confirmButtonLabel: "Ok";
+}, "">;
+export declare const showTourLogSchema: yup.ObjectSchema<{
     createdAt: {
         isEqual?: any;
         toMillis?: any;
@@ -14,7 +25,7 @@ export declare const whatsappMessageLogSchema: yup.ObjectSchema<{
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
-    type: "whatsappMessage";
+    type: "showTour";
     uid: string;
     audioFile: {
         createdAt?: {
@@ -67,7 +78,7 @@ export declare const whatsappMessageLogSchema: yup.ObjectSchema<{
                     toDate: Function;
                 } | null | undefined;
                 dailyLimit?: number | undefined;
-                gameplanId?: string | undefined;
+                skipGameplanAutoCreation?: boolean | undefined;
                 name: string;
                 ordinal: number;
                 trackingType: NonNullable<"time" | "counter" | undefined>;
@@ -91,6 +102,7 @@ export declare const whatsappMessageLogSchema: yup.ObjectSchema<{
     } | null | undefined;
     tacticsData: {
         [x: string]: {
+            doc?: import("../utils/firestore").DocumentReferenceLike<unknown> | undefined;
             data: {
                 setAt: {
                     isEqual?: any;
@@ -534,30 +546,13 @@ export declare const whatsappMessageLogSchema: yup.ObjectSchema<{
     };
     dateString: string;
     senderUid: string | null | undefined;
-    files: yup.Maybe<{
-        createdAt?: {
-            isEqual?: any;
-            toMillis?: any;
-            seconds: number;
-            nanoseconds: number;
-            toDate: Function;
-        } | null | undefined;
-        updatedAt?: {
-            isEqual?: any;
-            toMillis?: any;
-            seconds: number;
-            nanoseconds: number;
-            toDate: Function;
-        } | null | undefined;
-        localFilePath?: yup.Maybe<string | undefined>;
-        isDeleted?: boolean | undefined;
-        metadata?: {} | null | undefined;
-        thumbnailStoragePath?: yup.Maybe<string | undefined>;
-        thumbnailUri?: yup.Maybe<string | undefined>;
-        storagePath: string;
-        url: string;
-    }[] | undefined>;
-    strategyDoc: import("../utils/firestore").DocumentReferenceLike<unknown>;
+    steps: {
+        message: string;
+        elementRefName: string;
+        title: string;
+        confirmButtonLabel: string;
+    }[];
+    animationFileName: string | undefined;
 }, yup.AnyObject, {
     createdAt: undefined;
     updatedAt: undefined;
@@ -577,7 +572,7 @@ export declare const whatsappMessageLogSchema: yup.ObjectSchema<{
     };
     dateString: undefined;
     senderUid: undefined;
-    files: "";
-    strategyDoc: undefined;
+    steps: "";
+    animationFileName: undefined;
 }, "">;
-export type WhatsappMessageLogValue = yup.InferType<typeof whatsappMessageLogSchema>;
+export type ShowTourLogValue = yup.InferType<typeof showTourLogSchema>;

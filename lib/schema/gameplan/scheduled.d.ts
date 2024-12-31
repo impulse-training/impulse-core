@@ -1,6 +1,7 @@
 import * as yup from 'yup';
 export declare const scheduledGameplanSchema: yup.ObjectSchema<{
     name: string;
+    checkboxLabel: string;
     type: "scheduled";
     tacticsById: {
         [x: string]: {
@@ -449,6 +450,7 @@ export declare const scheduledGameplanSchema: yup.ObjectSchema<{
     }[];
 }, yup.AnyObject, {
     name: undefined;
+    checkboxLabel: undefined;
     type: undefined;
     tacticsById: undefined;
     createdAt: undefined;

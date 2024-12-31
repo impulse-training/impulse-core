@@ -50,7 +50,7 @@ export declare const messageSchema: yup.ObjectSchema<{
                     toDate: Function;
                 } | null | undefined;
                 dailyLimit?: number | undefined;
-                gameplanId?: string | undefined;
+                skipGameplanAutoCreation?: boolean | undefined;
                 name: string;
                 ordinal: number;
                 trackingType: NonNullable<"time" | "counter" | undefined>;
@@ -75,7 +75,7 @@ export declare const messageSchema: yup.ObjectSchema<{
     files: (import("./utils/firestore").DocumentReferenceLike<unknown> | undefined)[] | undefined;
     filesDeleted: boolean | undefined;
     externalId: string | undefined;
-    role: NonNullable<"assistant" | "user" | "tool" | "system" | undefined>;
+    role: NonNullable<"user" | "assistant" | "tool" | "system" | undefined>;
 }, yup.AnyObject, {
     createdAt: undefined;
     updatedAt: undefined;

@@ -1,5 +1,5 @@
 import * as yup from 'yup';
-export declare const toolCallLogSchema: yup.ObjectSchema<{
+export declare const gptLogSchema: yup.ObjectSchema<{
     createdAt: {
         isEqual?: any;
         toMillis?: any;
@@ -14,7 +14,7 @@ export declare const toolCallLogSchema: yup.ObjectSchema<{
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
-    type: "toolCall";
+    type: "gpt";
     uid: string;
     audioFile: {
         createdAt?: {
@@ -67,7 +67,7 @@ export declare const toolCallLogSchema: yup.ObjectSchema<{
                     toDate: Function;
                 } | null | undefined;
                 dailyLimit?: number | undefined;
-                gameplanId?: string | undefined;
+                skipGameplanAutoCreation?: boolean | undefined;
                 name: string;
                 ordinal: number;
                 trackingType: NonNullable<"time" | "counter" | undefined>;
@@ -91,6 +91,7 @@ export declare const toolCallLogSchema: yup.ObjectSchema<{
     } | null | undefined;
     tacticsData: {
         [x: string]: {
+            doc?: import("../utils/firestore").DocumentReferenceLike<unknown> | undefined;
             data: {
                 setAt: {
                     isEqual?: any;
@@ -534,8 +535,7 @@ export declare const toolCallLogSchema: yup.ObjectSchema<{
     };
     dateString: string;
     senderUid: string | null | undefined;
-    role: "tool";
-    toolCallId: string;
+    role: "assistant";
 }, yup.AnyObject, {
     createdAt: undefined;
     updatedAt: undefined;
@@ -556,6 +556,5 @@ export declare const toolCallLogSchema: yup.ObjectSchema<{
     dateString: undefined;
     senderUid: undefined;
     role: undefined;
-    toolCallId: undefined;
 }, "">;
-export type ToolCallLogValue = yup.InferType<typeof toolCallLogSchema>;
+export type GptLogValue = yup.InferType<typeof gptLogSchema>;

@@ -1,21 +1,21 @@
 import * as yup from 'yup';
-import { CallLogValue, callLogSchema } from './callLog';
-import { GptLogValue, gptLogSchema } from './gptLog';
-import { ImpulseLogValue, impulseLogSchema } from './impulseLog';
-import { ShowTourLogValue, showTourLogSchema } from './showTourLog';
-import { ToolCallLogValue, toolCallLogSchema } from './toolCallLog';
-import { UserLogValue, userLogSchema } from './userLog';
+import { CallLogValue, callLogSchema } from './call';
+import { GameplanLogValue, gameplanLogSchema } from './gameplan';
+import { GptLogValue, gptLogSchema } from './gpt';
+import { ShowTourLogValue, showTourLogSchema } from './showTour';
+import { ToolCallLogValue, toolCallLogSchema } from './toolCall';
+import { UserLogValue, userLogSchema } from './user';
 import {
   WhatsappMessageLogValue,
   whatsappMessageLogSchema,
-} from './whatsappMessageLog';
+} from './whatsappMessage';
 
-export * from './gptLog';
-export * from './impulseLog';
-export * from './showTourLog';
-export * from './toolCallLog';
-export * from './userLog';
-export * from './whatsappMessageLog';
+export * from './gameplan';
+export * from './gpt';
+export * from './showTour';
+export * from './toolCall';
+export * from './user';
+export * from './whatsappMessage';
 
 // Utils
 export * from './utils/behaviorData';
@@ -26,13 +26,13 @@ export const logSchemas: Record<
   LogValue['type'],
   yup.ObjectSchema<LogValue>
 > = {
-  impulseLog: impulseLogSchema,
-  callLog: callLogSchema,
-  toolCallLog: toolCallLogSchema,
-  showTourLog: showTourLogSchema,
-  userLog: userLogSchema,
-  gptLog: gptLogSchema,
-  whatsappMessageLog: whatsappMessageLogSchema,
+  gameplan: gameplanLogSchema,
+  call: callLogSchema,
+  toolCall: toolCallLogSchema,
+  showTour: showTourLogSchema,
+  user: userLogSchema,
+  gpt: gptLogSchema,
+  whatsappMessage: whatsappMessageLogSchema,
 } as any;
 
 export const logSchema = yup.lazy((value: any) => {
@@ -61,5 +61,5 @@ export type LogValue =
   | ShowTourLogValue
   | ToolCallLogValue
   | WhatsappMessageLogValue
-  | ImpulseLogValue
+  | GameplanLogValue
   | GptLogValue;

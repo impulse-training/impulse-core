@@ -1,5 +1,6 @@
 import * as yup from 'yup';
 import { tacticSchema } from '../../tactic';
+import { documentReferenceSchema } from '../../utils/firestore';
 import { timestampSchema } from '../../utils/timestamp';
 
 // In future, we may extend this schema to include stuff like time spent
@@ -12,6 +13,7 @@ export type TacticDataValue = yup.InferType<typeof tacticDataSchema>;
 
 export const tacticAndTacticDataSchema = yup.object({
   tactic: tacticSchema,
+  doc: documentReferenceSchema,
   data: tacticDataSchema.nullable(),
 });
 

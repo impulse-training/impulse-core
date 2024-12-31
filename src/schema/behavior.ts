@@ -9,8 +9,8 @@ export const behaviorSchema = yup.object({
     .oneOf(['time', 'counter'])
     .required(),
   dailyLimit: yup.number(),
-  gameplanId: yup.string(),
   isHelpful: yup.boolean().nullable().defined(),
+  skipGameplanAutoCreation: yup.boolean(),
   createdAt: optionalTimestampSchema,
   updatedAt: optionalTimestampSchema,
 });

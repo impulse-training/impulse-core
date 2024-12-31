@@ -1,4 +1,5 @@
 import * as yup from 'yup';
+import { WithTacticsById } from '../tactic';
 import { CravingGameplanValue } from './craving';
 import { LocationGameplanValue } from './location';
 import { ScheduledGameplanValue } from './scheduled';
@@ -8,7 +9,7 @@ export * from './location';
 export * from './scheduled';
 export type GameplanValue = CravingGameplanValue | ScheduledGameplanValue | LocationGameplanValue;
 export declare const GameplanSchemas: Record<GameplanValue['type'], yup.ObjectSchema<GameplanValue>>;
-export declare const gameplanSchema: yup.Lazy<{
+export declare const gameplanSchema: yup.Lazy<WithTacticsById<{
     createdAt?: {
         isEqual?: any;
         toMillis?: any;
@@ -451,6 +452,7 @@ export declare const gameplanSchema: yup.Lazy<{
             doc: import("../utils/firestore").DocumentReferenceLike<unknown>;
         };
     };
+    checkboxLabel: string;
     behaviorId: string;
 } | {
     name: string;
@@ -898,12 +900,13 @@ export declare const gameplanSchema: yup.Lazy<{
             doc: import("../utils/firestore").DocumentReferenceLike<unknown>;
         };
     };
+    checkboxLabel: string;
     schedule: {
         hour: number;
         minute: number;
         weekdays: (number | undefined)[];
     }[];
-}, yup.AnyObject, any>;
+}>, yup.AnyObject, any>;
 export type GameplanTypes = {
-    [K in GameplanValue['type']]: yup.InferType<(typeof GameplanSchemas)[K]>;
+    [K in GameplanValue['type']]: WithTacticsById<yup.InferType<(typeof GameplanSchemas)[K]>>;
 };

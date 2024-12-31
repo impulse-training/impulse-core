@@ -1,6 +1,7 @@
 import * as yup from 'yup';
 export declare const cravingGameplanSchema: yup.ObjectSchema<{
     name: string;
+    checkboxLabel: string;
     type: "craving";
     tacticsById: {
         [x: string]: {
@@ -445,6 +446,7 @@ export declare const cravingGameplanSchema: yup.ObjectSchema<{
     behaviorId: string;
 }, yup.AnyObject, {
     name: undefined;
+    checkboxLabel: undefined;
     type: undefined;
     tacticsById: undefined;
     createdAt: undefined;

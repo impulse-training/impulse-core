@@ -1,6 +1,7 @@
 import * as yup from 'yup';
 export declare const emotionsGameplanSchema: yup.ObjectSchema<{
     name: string;
+    checkboxLabel: string;
     type: "emotions";
     tacticsById: {
         [x: string]: {
@@ -445,6 +446,7 @@ export declare const emotionsGameplanSchema: yup.ObjectSchema<{
     emotions: (string | undefined)[];
 }, yup.AnyObject, {
     name: undefined;
+    checkboxLabel: undefined;
     type: undefined;
     tacticsById: undefined;
     createdAt: undefined;

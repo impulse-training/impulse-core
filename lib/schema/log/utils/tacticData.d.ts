@@ -441,6 +441,7 @@ export declare const tacticAndTacticDataSchema: yup.ObjectSchema<{
             url?: string | null | undefined;
         };
     };
+    doc: import("../../utils/firestore").DocumentReferenceLike<unknown> | undefined;
     data: {
         setAt: {
             isEqual?: any;
@@ -453,6 +454,7 @@ export declare const tacticAndTacticDataSchema: yup.ObjectSchema<{
     } | null;
 }, yup.AnyObject, {
     tactic: undefined;
+    doc: undefined;
     data: {
         isCompleted: undefined;
         setAt: {

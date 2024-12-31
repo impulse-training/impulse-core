@@ -66,7 +66,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         toDate: Function;
                     } | null | undefined;
                     dailyLimit?: number | undefined;
-                    gameplanId?: string | undefined;
+                    skipGameplanAutoCreation?: boolean | undefined;
                     name: string;
                     ordinal: number;
                     trackingType: NonNullable<"time" | "counter" | undefined>;
@@ -90,6 +90,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         } | null | undefined;
         tacticsData?: {
             [x: string]: {
+                doc?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 data: {
                     setAt: {
                         isEqual?: any;
@@ -595,6 +596,15 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
     }, "name" | "uid" | "address" | ("createdAt" | "updatedAt" | "latitude" | "longitude")>;
     daysSummaryFactory: import("factory.ts").Factory<{
         [x: string]: {
+            emotions: {
+                [x: string]: {
+                    color?: string | undefined;
+                    name: string;
+                    label: string;
+                    key: string;
+                    intensity: number | null;
+                };
+            };
             behaviors: {
                 [x: string]: {
                     color?: string | undefined;
@@ -614,7 +624,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                             toDate: Function;
                         } | null | undefined;
                         dailyLimit?: number | undefined;
-                        gameplanId?: string | undefined;
+                        skipGameplanAutoCreation?: boolean | undefined;
                         name: string;
                         ordinal: number;
                         trackingType: NonNullable<"time" | "counter" | undefined>;
@@ -634,15 +644,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         stringValue: string;
                         unit: string;
                     };
-                };
-            };
-            emotions: {
-                [x: string]: {
-                    color?: string | undefined;
-                    name: string;
-                    label: string;
-                    key: string;
-                    intensity: number | null;
                 };
             };
         };
@@ -685,6 +686,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             toDate: Function;
         } | null | undefined;
         activeImpulseDoc?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
+        defaultGameplanDoc?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
         tourCompletedAt?: {
             isEqual?: any;
             toMillis?: any;
@@ -710,7 +712,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         isReadyForTour?: boolean | undefined;
         isOnboardingComplete?: boolean | undefined;
         sendDebriefRemindersAfterMinutes?: number | undefined;
-        gameplanStrategies?: import("../schema/utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
         androidPermissions?: {
             [x: string]: NonNullable<boolean | undefined>;
         } | null | undefined;
@@ -728,7 +729,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             [x: string]: string;
         };
         timezone: string;
-    }, "uids" | "verificationCode" | "dayReviewTime" | "recentSummaries" | "timezone" | ("createdAt" | "updatedAt" | "parentIds" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseDoc" | "tourCompletedAt" | "scheduledNotificationIds" | "whatsappStrategyDoc" | "onboardedWithZaraAt" | "currentAppState" | "expoPushToken" | "notificationPreferences" | "goal" | "isReadyForTour" | "isOnboardingComplete" | "sendDebriefRemindersAfterMinutes" | "gameplanStrategies" | "androidPermissions" | "historicalInsights" | "isTourDismissed" | "region" | "enableZara")>;
+    }, "uids" | "verificationCode" | "dayReviewTime" | "recentSummaries" | "timezone" | ("createdAt" | "updatedAt" | "parentIds" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseDoc" | "defaultGameplanDoc" | "tourCompletedAt" | "scheduledNotificationIds" | "whatsappStrategyDoc" | "onboardedWithZaraAt" | "currentAppState" | "expoPushToken" | "notificationPreferences" | "goal" | "isReadyForTour" | "isOnboardingComplete" | "sendDebriefRemindersAfterMinutes" | "androidPermissions" | "historicalInsights" | "isTourDismissed" | "region" | "enableZara")>;
     gameplanFactory: import("factory.ts").Factory<{
         createdAt?: {
             isEqual?: any;
@@ -1172,12 +1173,13 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 doc: import("../schema/utils/firestore").DocumentReferenceLike<unknown>;
             };
         };
+        checkboxLabel: string;
         schedule: {
             hour: number;
             minute: number;
             weekdays: (number | undefined)[];
         }[];
-    }, "name" | "type" | "tacticsById" | "schedule" | ("createdAt" | "updatedAt")>;
+    }, "name" | "type" | "tacticsById" | "checkboxLabel" | "schedule" | ("createdAt" | "updatedAt")>;
     tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "type" | "uid" | "sourceFile" | "sharedWithIssueIds" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "prompt" | "isShared" | "description" | "pastTenseTitle" | "debriefAfterMinutes" | "image" | "backgroundColor" | "likesCount" | "timerSeconds" | "isSuggested">;
     roadmapFactory: import("factory.ts").Factory<{
         createdAt?: {
@@ -3017,10 +3019,10 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             toDate: Function;
         } | null | undefined;
         dailyLimit?: number | undefined;
-        gameplanId?: string | undefined;
+        skipGameplanAutoCreation?: boolean | undefined;
         name: string;
         ordinal: number;
         trackingType: NonNullable<"time" | "counter" | undefined>;
         isHelpful: boolean | null;
-    }, "name" | "ordinal" | "trackingType" | "isHelpful" | ("createdAt" | "updatedAt" | "dailyLimit" | "gameplanId")>;
+    }, "name" | "ordinal" | "trackingType" | "isHelpful" | ("createdAt" | "updatedAt" | "dailyLimit" | "skipGameplanAutoCreation")>;
 };

@@ -443,9 +443,10 @@ export declare const makeGameplanFactory: (TimestampKlass: typeof TimestampLike)
             doc: import("../schema/utils/firestore").DocumentReferenceLike<unknown>;
         };
     };
+    checkboxLabel: string;
     schedule: {
         hour: number;
         minute: number;
         weekdays: (number | undefined)[];
     }[];
-}, "name" | "type" | "tacticsById" | "schedule" | ("createdAt" | "updatedAt")>;
+}, "name" | "type" | "tacticsById" | "checkboxLabel" | "schedule" | ("createdAt" | "updatedAt")>;

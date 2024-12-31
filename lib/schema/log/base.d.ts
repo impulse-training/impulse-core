@@ -67,7 +67,7 @@ export declare function logBaseSchema<K extends string>(type: K): yup.ObjectSche
                     toDate: Function;
                 } | null | undefined;
                 dailyLimit?: number | undefined;
-                gameplanId?: string | undefined;
+                skipGameplanAutoCreation?: boolean | undefined;
                 name: string;
                 ordinal: number;
                 trackingType: NonNullable<"time" | "counter" | undefined>;
@@ -91,6 +91,7 @@ export declare function logBaseSchema<K extends string>(type: K): yup.ObjectSche
     } | null | undefined;
     tacticsData: {
         [x: string]: {
+            doc?: import("../utils/firestore").DocumentReferenceLike<unknown> | undefined;
             data: {
                 setAt: {
                     isEqual?: any;

@@ -1,4 +1,5 @@
 import * as yup from 'yup';
+import { WithTacticsById } from '../tactic';
 import { cravingGameplanSchema, CravingGameplanValue } from './craving';
 import { locationGameplanSchema, LocationGameplanValue } from './location';
 import { scheduledGameplanSchema, ScheduledGameplanValue } from './scheduled';
@@ -38,5 +39,7 @@ export const gameplanSchema = yup.lazy(value => {
 
 // / This type represents the union of all possible validated Gameplan objects
 export type GameplanTypes = {
-  [K in GameplanValue['type']]: yup.InferType<(typeof GameplanSchemas)[K]>;
+  [K in GameplanValue['type']]: WithTacticsById<
+    yup.InferType<(typeof GameplanSchemas)[K]>
+  >;
 };

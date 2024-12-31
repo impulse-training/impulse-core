@@ -43,7 +43,7 @@ export declare const behaviorAndBehaviorDataSchema: yup.ObjectSchema<{
             toDate: Function;
         } | null | undefined;
         dailyLimit?: number | undefined;
-        gameplanId?: string | undefined;
+        skipGameplanAutoCreation?: boolean | undefined;
         name: string;
         ordinal: number;
         trackingType: NonNullable<"time" | "counter" | undefined>;
@@ -70,8 +70,8 @@ export declare const behaviorAndBehaviorDataSchema: yup.ObjectSchema<{
         ordinal: undefined;
         trackingType: undefined;
         dailyLimit: undefined;
-        gameplanId: undefined;
         isHelpful: undefined;
+        skipGameplanAutoCreation: undefined;
         createdAt: undefined;
         updatedAt: undefined;
     };

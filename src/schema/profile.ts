@@ -31,8 +31,10 @@ export const profileSchema = yup.object({
   isOnboardingComplete: yup.boolean(),
   parentIds: optionalStringArray,
   sendDebriefRemindersAfterMinutes: yup.number(),
-  gameplanStrategies: yup.array().of(documentReferenceSchema.required()),
+
   androidPermissions: optionalObjectOf(yup.boolean().required()),
+
+  defaultGameplanDoc: documentReferenceSchema,
 
   // System message context for interacting with OpenAI
   historicalInsights: yup.array().of(yup.string().required()),

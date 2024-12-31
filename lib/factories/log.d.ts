@@ -67,7 +67,7 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                         toDate: Function;
                     } | null | undefined;
                     dailyLimit?: number | undefined;
-                    gameplanId?: string | undefined;
+                    skipGameplanAutoCreation?: boolean | undefined;
                     name: string;
                     ordinal: number;
                     trackingType: NonNullable<"time" | "counter" | undefined>;
@@ -91,6 +91,7 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
         } | null | undefined;
         tacticsData?: {
             [x: string]: {
+                doc?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 data: {
                     setAt: {
                         isEqual?: any;

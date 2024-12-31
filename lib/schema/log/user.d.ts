@@ -1,5 +1,5 @@
 import * as yup from 'yup';
-export declare const callLogSchema: yup.ObjectSchema<{
+export declare const userLogSchema: yup.ObjectSchema<{
     createdAt: {
         isEqual?: any;
         toMillis?: any;
@@ -14,7 +14,7 @@ export declare const callLogSchema: yup.ObjectSchema<{
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
-    type: "call";
+    type: "user";
     uid: string;
     audioFile: {
         createdAt?: {
@@ -67,7 +67,7 @@ export declare const callLogSchema: yup.ObjectSchema<{
                     toDate: Function;
                 } | null | undefined;
                 dailyLimit?: number | undefined;
-                gameplanId?: string | undefined;
+                skipGameplanAutoCreation?: boolean | undefined;
                 name: string;
                 ordinal: number;
                 trackingType: NonNullable<"time" | "counter" | undefined>;
@@ -91,6 +91,7 @@ export declare const callLogSchema: yup.ObjectSchema<{
     } | null | undefined;
     tacticsData: {
         [x: string]: {
+            doc?: import("../utils/firestore").DocumentReferenceLike<unknown> | undefined;
             data: {
                 setAt: {
                     isEqual?: any;
@@ -534,6 +535,7 @@ export declare const callLogSchema: yup.ObjectSchema<{
     };
     dateString: string;
     senderUid: string | null | undefined;
+    role: "user";
 }, yup.AnyObject, {
     createdAt: undefined;
     updatedAt: undefined;
@@ -553,5 +555,6 @@ export declare const callLogSchema: yup.ObjectSchema<{
     };
     dateString: undefined;
     senderUid: undefined;
+    role: undefined;
 }, "">;
-export type CallLogValue = yup.InferType<typeof callLogSchema>;
+export type UserLogValue = yup.InferType<typeof userLogSchema>;

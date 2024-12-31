@@ -1,5 +1,5 @@
 import * as Factory from 'factory.ts';
-import { UserLogValue } from '../schema/log/userLog';
+import { UserLogValue } from '../schema/log/user';
 import { TimestampLike } from '../utils/firestore/TimestampLike';
 
 export const makeLogFactories = (TimestampKlass: typeof TimestampLike) => ({

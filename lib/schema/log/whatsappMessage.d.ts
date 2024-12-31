@@ -1,5 +1,5 @@
 import * as yup from 'yup';
-export declare const gptLogSchema: yup.ObjectSchema<{
+export declare const whatsappMessageLogSchema: yup.ObjectSchema<{
     createdAt: {
         isEqual?: any;
         toMillis?: any;
@@ -14,7 +14,7 @@ export declare const gptLogSchema: yup.ObjectSchema<{
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
-    type: "gpt";
+    type: "whatsappMessage";
     uid: string;
     audioFile: {
         createdAt?: {
@@ -67,7 +67,7 @@ export declare const gptLogSchema: yup.ObjectSchema<{
                     toDate: Function;
                 } | null | undefined;
                 dailyLimit?: number | undefined;
-                gameplanId?: string | undefined;
+                skipGameplanAutoCreation?: boolean | undefined;
                 name: string;
                 ordinal: number;
                 trackingType: NonNullable<"time" | "counter" | undefined>;
@@ -91,6 +91,7 @@ export declare const gptLogSchema: yup.ObjectSchema<{
     } | null | undefined;
     tacticsData: {
         [x: string]: {
+            doc?: import("../utils/firestore").DocumentReferenceLike<unknown> | undefined;
             data: {
                 setAt: {
                     isEqual?: any;
@@ -534,7 +535,30 @@ export declare const gptLogSchema: yup.ObjectSchema<{
     };
     dateString: string;
     senderUid: string | null | undefined;
-    role: "assistant";
+    files: yup.Maybe<{
+        createdAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        updatedAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        localFilePath?: yup.Maybe<string | undefined>;
+        isDeleted?: boolean | undefined;
+        metadata?: {} | null | undefined;
+        thumbnailStoragePath?: yup.Maybe<string | undefined>;
+        thumbnailUri?: yup.Maybe<string | undefined>;
+        storagePath: string;
+        url: string;
+    }[] | undefined>;
+    strategyDoc: import("../utils/firestore").DocumentReferenceLike<unknown>;
 }, yup.AnyObject, {
     createdAt: undefined;
     updatedAt: undefined;
@@ -554,6 +578,7 @@ export declare const gptLogSchema: yup.ObjectSchema<{
     };
     dateString: undefined;
     senderUid: undefined;
-    role: undefined;
+    files: "";
+    strategyDoc: undefined;
 }, "">;
-export type GptLogValue = yup.InferType<typeof gptLogSchema>;
+export type WhatsappMessageLogValue = yup.InferType<typeof whatsappMessageLogSchema>;
