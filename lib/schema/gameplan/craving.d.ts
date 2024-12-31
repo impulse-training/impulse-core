@@ -3,6 +3,7 @@ export declare const cravingGameplanSchema: yup.ObjectSchema<{
     name: string;
     checkboxLabel: string;
     type: "craving";
+    ordinal: number | undefined;
     tacticsById: {
         [x: string]: {
             data: {
@@ -448,6 +449,7 @@ export declare const cravingGameplanSchema: yup.ObjectSchema<{
     name: undefined;
     checkboxLabel: undefined;
     type: undefined;
+    ordinal: undefined;
     tacticsById: undefined;
     createdAt: undefined;
     updatedAt: undefined;

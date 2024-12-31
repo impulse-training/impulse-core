@@ -745,6 +745,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
+        ordinal?: number | undefined;
         name: string;
         type: "scheduled";
         tacticsById: {
@@ -1179,7 +1180,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             minute: number;
             weekdays: (number | undefined)[];
         }[];
-    }, "name" | "type" | "tacticsById" | "checkboxLabel" | "schedule" | ("createdAt" | "updatedAt")>;
+    }, "name" | "type" | "tacticsById" | "checkboxLabel" | "schedule" | ("createdAt" | "updatedAt" | "ordinal")>;
     tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "type" | "uid" | "sourceFile" | "sharedWithIssueIds" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "prompt" | "isShared" | "description" | "pastTenseTitle" | "debriefAfterMinutes" | "image" | "backgroundColor" | "likesCount" | "timerSeconds" | "isSuggested">;
     roadmapFactory: import("factory.ts").Factory<{
         createdAt?: {

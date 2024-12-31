@@ -15,6 +15,7 @@ export declare const makeGameplanFactory: (TimestampKlass: typeof TimestampLike)
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
+    ordinal?: number | undefined;
     name: string;
     type: "scheduled";
     tacticsById: {
@@ -449,4 +450,4 @@ export declare const makeGameplanFactory: (TimestampKlass: typeof TimestampLike)
         minute: number;
         weekdays: (number | undefined)[];
     }[];
-}, "name" | "type" | "tacticsById" | "checkboxLabel" | "schedule" | ("createdAt" | "updatedAt")>;
+}, "name" | "type" | "tacticsById" | "checkboxLabel" | "schedule" | ("createdAt" | "updatedAt" | "ordinal")>;

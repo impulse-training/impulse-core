@@ -9,6 +9,7 @@ export function gameplanBaseSchema<T extends string>(type: T) {
     name: yup.string().required(),
     checkboxLabel: yup.string().required(),
     type: yup.mixed<T>().oneOf([type]).required(),
+    ordinal: yup.number(),
     tacticsById: objectOf(
       yup.object({
         doc: documentReferenceSchema.required(),
