@@ -1,7 +1,6 @@
 import * as yup from 'yup';
 import { optionalStringArray } from './utils/array';
 import { documentReferenceSchema } from './utils/firestore';
-import { optionalObjectOf } from './utils/objectOf';
 import { optionalTimestampSchema } from './utils/timestamp';
 
 export const issueSchema = yup.object().shape({
@@ -25,9 +24,6 @@ export const issueSchema = yup.object().shape({
   recommendedStrategies: yup.array().of(documentReferenceSchema.required()),
   // For profile issues, we store references to the tactics that are the user's "gameplan" for the
   // issue
-
-  // For profile issues, we store a map of ordinals
-  strategyOrdinals: optionalObjectOf(yup.number().required()),
 
   gameplanTactics: yup.array().of(documentReferenceSchema.required()),
 });

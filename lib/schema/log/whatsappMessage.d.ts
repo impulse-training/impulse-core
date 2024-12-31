@@ -558,7 +558,6 @@ export declare const whatsappMessageLogSchema: yup.ObjectSchema<{
         storagePath: string;
         url: string;
     }[] | undefined>;
-    strategyDoc: import("../utils/firestore").DocumentReferenceLike<unknown>;
 }, yup.AnyObject, {
     createdAt: undefined;
     updatedAt: undefined;
@@ -579,6 +578,5 @@ export declare const whatsappMessageLogSchema: yup.ObjectSchema<{
     dateString: undefined;
     senderUid: undefined;
     files: "";
-    strategyDoc: undefined;
 }, "">;
 export type WhatsappMessageLogValue = yup.InferType<typeof whatsappMessageLogSchema>;

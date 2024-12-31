@@ -4216,7 +4216,6 @@ export declare const daySchema: yup.ObjectSchema<{
             }[] | undefined>;
             type: "whatsappMessage";
             uid: string;
-            strategyDoc: import("./utils/firestore").DocumentReferenceLike<unknown>;
             date: {
                 isEqual?: any;
                 toMillis?: any;

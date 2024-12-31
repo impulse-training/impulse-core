@@ -9,9 +9,7 @@ import {
   locationSchema,
   logSchema,
   profileSchema,
-  profileStrategySchema,
   roadmapSchema,
-  strategySchema,
   suggestionSchema,
   tacticSchema,
 } from '../../schema';
@@ -66,8 +64,6 @@ const schemaMap: Record<keyof typeof factories, null | Schema | Lazy<unknown>> =
     profileFactory: profileSchema,
     issueFactory: issueSchema,
     suggestionFactory: suggestionSchema,
-    strategyFactory: strategySchema,
-    profileStrategyFactory: profileStrategySchema,
     roadmapFactory: roadmapSchema,
     tacticFactory: tacticSchema,
     behaviorFactory: behaviorSchema,

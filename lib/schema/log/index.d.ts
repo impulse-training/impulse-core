@@ -4222,7 +4222,6 @@ export declare const logSchema: yup.Lazy<{
     }[] | undefined>;
     type: "whatsappMessage";
     uid: string;
-    strategyDoc: import("../utils/firestore").DocumentReferenceLike<unknown>;
     date: {
         isEqual?: any;
         toMillis?: any;
