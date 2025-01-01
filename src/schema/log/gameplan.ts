@@ -5,6 +5,7 @@ import { logBaseSchema } from './base';
 export const gameplanLogSchema = logBaseSchema('gameplan').shape({
   role: yup.mixed<'user'>().oneOf(['user']).required(),
   gameplanDoc: documentReferenceSchema,
+  outcome: yup.mixed<'success' | 'setback'>().oneOf(['success', 'setback']),
 });
 
 export type GameplanLogValue = yup.InferType<typeof gameplanLogSchema>;

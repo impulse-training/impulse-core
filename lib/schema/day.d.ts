@@ -637,6 +637,7 @@ export declare const daySchema: yup.ObjectSchema<{
             text?: string | null | undefined;
             senderUid?: string | null | undefined;
             gameplanDoc?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
+            outcome?: "success" | "setback" | undefined;
             type: "gameplan";
             uid: string;
             tacticsData: {

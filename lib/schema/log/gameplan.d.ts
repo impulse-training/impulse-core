@@ -537,6 +537,7 @@ export declare const gameplanLogSchema: yup.ObjectSchema<{
     senderUid: string | null | undefined;
     role: "user";
     gameplanDoc: import("../utils/firestore").DocumentReferenceLike<unknown> | undefined;
+    outcome: "success" | "setback" | undefined;
 }, yup.AnyObject, {
     createdAt: undefined;
     updatedAt: undefined;
@@ -558,5 +559,6 @@ export declare const gameplanLogSchema: yup.ObjectSchema<{
     senderUid: undefined;
     role: undefined;
     gameplanDoc: undefined;
+    outcome: undefined;
 }, "">;
 export type GameplanLogValue = yup.InferType<typeof gameplanLogSchema>;
