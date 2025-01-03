@@ -189,7 +189,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             thumbnailUri?: yup.Maybe<string | undefined>;
                             storagePath: string;
                             url: string;
-                        } | undefined;
+                        } | null | undefined;
                         type: "basic";
                         prompt: string;
                     } | {
@@ -727,7 +727,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             thumbnailUri?: yup.Maybe<string | undefined>;
                             storagePath: string;
                             url: string;
-                        } | undefined;
+                        } | null | undefined;
                         type: "basic";
                         prompt: string;
                     } | {
@@ -1264,7 +1264,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             thumbnailUri?: yup.Maybe<string | undefined>;
                             storagePath: string;
                             url: string;
-                        } | undefined;
+                        } | null | undefined;
                         type: "basic";
                         prompt: string;
                     } | {
@@ -1808,7 +1808,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             thumbnailUri?: yup.Maybe<string | undefined>;
                             storagePath: string;
                             url: string;
-                        } | undefined;
+                        } | null | undefined;
                         type: "basic";
                         prompt: string;
                     } | {
@@ -2344,7 +2344,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             thumbnailUri?: yup.Maybe<string | undefined>;
                             storagePath: string;
                             url: string;
-                        } | undefined;
+                        } | null | undefined;
                         type: "basic";
                         prompt: string;
                     } | {
@@ -2882,7 +2882,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             thumbnailUri?: yup.Maybe<string | undefined>;
                             storagePath: string;
                             url: string;
-                        } | undefined;
+                        } | null | undefined;
                         type: "basic";
                         prompt: string;
                     } | {
@@ -3442,7 +3442,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             thumbnailUri?: yup.Maybe<string | undefined>;
                             storagePath: string;
                             url: string;
-                        } | undefined;
+                        } | null | undefined;
                         type: "basic";
                         prompt: string;
                     } | {

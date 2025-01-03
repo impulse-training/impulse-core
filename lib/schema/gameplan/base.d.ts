@@ -91,7 +91,7 @@ export declare function gameplanBaseSchema<T extends string>(type: T): yup.Objec
                     thumbnailUri?: yup.Maybe<string | undefined>;
                     storagePath: string;
                     url: string;
-                } | undefined;
+                } | null | undefined;
                 type: "basic";
                 prompt: string;
             } | {

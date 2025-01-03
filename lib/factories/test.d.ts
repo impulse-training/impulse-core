@@ -177,7 +177,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                     thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
                     url: string;
-                } | undefined;
+                } | null | undefined;
                 type: "basic";
                 prompt: string;
             } | {

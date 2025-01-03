@@ -105,7 +105,7 @@ export declare const makeGameplanFactory: (TimestampKlass: typeof TimestampLike)
                     thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
                     url: string;
-                } | undefined;
+                } | null | undefined;
                 type: "basic";
                 prompt: string;
             } | {

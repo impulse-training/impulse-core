@@ -178,7 +178,7 @@ export declare const factories: {
                         thumbnailUri?: import("yup").Maybe<string | undefined>;
                         storagePath: string;
                         url: string;
-                    } | undefined;
+                    } | null | undefined;
                     type: "basic";
                     prompt: string;
                 } | {
@@ -831,7 +831,7 @@ export declare const factories: {
                         thumbnailUri?: import("yup").Maybe<string | undefined>;
                         storagePath: string;
                         url: string;
-                    } | undefined;
+                    } | null | undefined;
                     type: "basic";
                     prompt: string;
                 } | {

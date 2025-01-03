@@ -187,7 +187,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
                     thumbnailUri?: yup.Maybe<string | undefined>;
                     storagePath: string;
                     url: string;
-                } | undefined;
+                } | null | undefined;
                 type: "basic";
                 prompt: string;
             } | {

@@ -76,7 +76,7 @@ export declare const basicTacticSchema: yup.ObjectSchema<{
         thumbnailUri?: yup.Maybe<string | undefined>;
         storagePath: string;
         url: string;
-    } | undefined;
+    } | null | undefined;
 }, yup.AnyObject, {
     uid: undefined;
     recommendedForIssueIds: "";

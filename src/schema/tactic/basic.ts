@@ -4,7 +4,7 @@ import { tacticBaseSchema } from './base';
 
 export const basicTacticSchema = tacticBaseSchema('basic').shape({
   prompt: yup.string().required('is required'),
-  audio: fileSchema.optional().default(undefined),
+  audio: fileSchema.optional().nullable().default(undefined),
 });
 
 export type BasicTacticValue = yup.InferType<typeof basicTacticSchema>;

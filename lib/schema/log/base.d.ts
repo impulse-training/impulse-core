@@ -176,7 +176,7 @@ export declare function logBaseSchema<K extends string>(type: K): yup.ObjectSche
                     thumbnailUri?: yup.Maybe<string | undefined>;
                     storagePath: string;
                     url: string;
-                } | undefined;
+                } | null | undefined;
                 type: "basic";
                 prompt: string;
             } | {

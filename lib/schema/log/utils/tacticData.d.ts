@@ -108,7 +108,7 @@ export declare const tacticsById: yup.Lazy<{
                 thumbnailUri?: yup.Maybe<string | undefined>;
                 storagePath: string;
                 url: string;
-            } | undefined;
+            } | null | undefined;
             type: "basic";
             prompt: string;
         } | {

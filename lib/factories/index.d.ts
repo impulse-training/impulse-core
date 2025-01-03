@@ -179,7 +179,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         thumbnailUri?: import("yup").Maybe<string | undefined>;
                         storagePath: string;
                         url: string;
-                    } | undefined;
+                    } | null | undefined;
                     type: "basic";
                     prompt: string;
                 } | {
@@ -832,7 +832,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         thumbnailUri?: import("yup").Maybe<string | undefined>;
                         storagePath: string;
                         url: string;
-                    } | undefined;
+                    } | null | undefined;
                     type: "basic";
                     prompt: string;
                 } | {
