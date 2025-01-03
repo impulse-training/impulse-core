@@ -1,8 +1,9 @@
 import * as yup from 'yup';
 export declare const experimentSchema: yup.ObjectSchema<{
     behaviorDocs: import("./utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
-    metricDoc: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
+    metricDoc: import("./utils/firestore").DocumentReferenceLike<unknown>;
     minimumDays: number;
+    hypothesis: string | undefined;
     createdAt: {
         isEqual?: any;
         toMillis?: any;
@@ -21,6 +22,7 @@ export declare const experimentSchema: yup.ObjectSchema<{
     behaviorDocs: "";
     metricDoc: undefined;
     minimumDays: undefined;
+    hypothesis: undefined;
     createdAt: undefined;
     updatedAt: undefined;
 }, "">;

@@ -4,8 +4,9 @@ import { optionalTimestampSchema } from './utils/timestamp';
 
 export const experimentSchema = yup.object({
   behaviorDocs: yup.array().of(documentReferenceSchema.required()),
-  metricDoc: documentReferenceSchema,
+  metricDoc: documentReferenceSchema.required(),
   minimumDays: yup.number().required(),
+  hypothesis: yup.string(),
   createdAt: optionalTimestampSchema,
   updatedAt: optionalTimestampSchema,
 });
