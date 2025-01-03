@@ -42,13 +42,19 @@ export declare const daysSummarySchema: yup.Lazy<{
                 };
             };
         };
-        emotions: {
+        metrics: {
             [x: string]: {
-                color?: string | undefined;
-                name: string;
-                label: string;
-                key: string;
-                intensity: number | null;
+                doc?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
+                data: {
+                    label: string;
+                    metricInputValue: number;
+                    absoluteAttributeValue: number;
+                };
+                attribute: {
+                    name: string;
+                    key: string;
+                    icon: NonNullable<import("./metric").MetricIcons | undefined>;
+                };
             };
         };
     };

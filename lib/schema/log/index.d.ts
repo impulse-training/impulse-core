@@ -5,6 +5,7 @@ import { GptLogValue } from './gpt';
 import { ShowTourLogValue } from './showTour';
 import { ToolCallLogValue } from './toolCall';
 import { UserLogValue } from './user';
+import { WithTacticsById } from './utils/tacticData';
 import { WhatsappMessageLogValue } from './whatsappMessage';
 export * from './gameplan';
 export * from './gpt';
@@ -13,10 +14,10 @@ export * from './toolCall';
 export * from './user';
 export * from './whatsappMessage';
 export * from './utils/behaviorData';
-export * from './utils/emotionData';
+export * from './utils/metricData';
 export * from './utils/tacticData';
 export declare const logSchemas: Record<LogValue['type'], yup.ObjectSchema<LogValue>>;
-export declare const logSchema: yup.Lazy<{
+export declare const logSchema: yup.Lazy<WithTacticsById<{
     createdAt?: {
         isEqual?: any;
         toMillis?: any;
@@ -54,13 +55,19 @@ export declare const logSchema: yup.Lazy<{
         storagePath: string;
         url: string;
     } | undefined;
-    emotionData?: {
+    metricData?: {
         [x: string]: {
-            color?: string | undefined;
-            name: string;
-            label: string;
-            key: string;
-            intensity: number | null;
+            doc?: import("../utils/firestore").DocumentReferenceLike<unknown> | undefined;
+            data: {
+                label: string;
+                metricInputValue: number;
+                absoluteAttributeValue: number;
+            };
+            attribute: {
+                name: string;
+                key: string;
+                icon: NonNullable<import("..").MetricIcons | undefined>;
+            };
         };
     } | null | undefined;
     behaviorData?: {
@@ -120,6 +127,7 @@ export declare const logSchema: yup.Lazy<{
                 };
                 isCompleted: NonNullable<boolean | undefined>;
             } | undefined;
+            doc: import("../utils/firestore").DocumentReferenceLike<unknown>;
             tactic: {
                 createdAt?: {
                     isEqual?: any;
@@ -541,7 +549,6 @@ export declare const logSchema: yup.Lazy<{
                     url?: string | null | undefined;
                 };
             };
-            doc: import("../utils/firestore").DocumentReferenceLike<unknown>;
         };
     };
     date: {
@@ -590,13 +597,19 @@ export declare const logSchema: yup.Lazy<{
         storagePath: string;
         url: string;
     } | undefined;
-    emotionData?: {
+    metricData?: {
         [x: string]: {
-            color?: string | undefined;
-            name: string;
-            label: string;
-            key: string;
-            intensity: number | null;
+            doc?: import("../utils/firestore").DocumentReferenceLike<unknown> | undefined;
+            data: {
+                label: string;
+                metricInputValue: number;
+                absoluteAttributeValue: number;
+            };
+            attribute: {
+                name: string;
+                key: string;
+                icon: NonNullable<import("..").MetricIcons | undefined>;
+            };
         };
     } | null | undefined;
     behaviorData?: {
@@ -658,6 +671,7 @@ export declare const logSchema: yup.Lazy<{
                 };
                 isCompleted: NonNullable<boolean | undefined>;
             } | undefined;
+            doc: import("../utils/firestore").DocumentReferenceLike<unknown>;
             tactic: {
                 createdAt?: {
                     isEqual?: any;
@@ -1079,7 +1093,6 @@ export declare const logSchema: yup.Lazy<{
                     url?: string | null | undefined;
                 };
             };
-            doc: import("../utils/firestore").DocumentReferenceLike<unknown>;
         };
     };
     date: {
@@ -1129,13 +1142,19 @@ export declare const logSchema: yup.Lazy<{
         storagePath: string;
         url: string;
     } | undefined;
-    emotionData?: {
+    metricData?: {
         [x: string]: {
-            color?: string | undefined;
-            name: string;
-            label: string;
-            key: string;
-            intensity: number | null;
+            doc?: import("../utils/firestore").DocumentReferenceLike<unknown> | undefined;
+            data: {
+                label: string;
+                metricInputValue: number;
+                absoluteAttributeValue: number;
+            };
+            attribute: {
+                name: string;
+                key: string;
+                icon: NonNullable<import("..").MetricIcons | undefined>;
+            };
         };
     } | null | undefined;
     behaviorData?: {
@@ -1195,6 +1214,7 @@ export declare const logSchema: yup.Lazy<{
                 };
                 isCompleted: NonNullable<boolean | undefined>;
             } | undefined;
+            doc: import("../utils/firestore").DocumentReferenceLike<unknown>;
             tactic: {
                 createdAt?: {
                     isEqual?: any;
@@ -1616,7 +1636,6 @@ export declare const logSchema: yup.Lazy<{
                     url?: string | null | undefined;
                 };
             };
-            doc: import("../utils/firestore").DocumentReferenceLike<unknown>;
         };
     };
     date: {
@@ -1666,13 +1685,19 @@ export declare const logSchema: yup.Lazy<{
         storagePath: string;
         url: string;
     } | undefined;
-    emotionData?: {
+    metricData?: {
         [x: string]: {
-            color?: string | undefined;
-            name: string;
-            label: string;
-            key: string;
-            intensity: number | null;
+            doc?: import("../utils/firestore").DocumentReferenceLike<unknown> | undefined;
+            data: {
+                label: string;
+                metricInputValue: number;
+                absoluteAttributeValue: number;
+            };
+            attribute: {
+                name: string;
+                key: string;
+                icon: NonNullable<import("..").MetricIcons | undefined>;
+            };
         };
     } | null | undefined;
     behaviorData?: {
@@ -1739,6 +1764,7 @@ export declare const logSchema: yup.Lazy<{
                 };
                 isCompleted: NonNullable<boolean | undefined>;
             } | undefined;
+            doc: import("../utils/firestore").DocumentReferenceLike<unknown>;
             tactic: {
                 createdAt?: {
                     isEqual?: any;
@@ -2160,7 +2186,6 @@ export declare const logSchema: yup.Lazy<{
                     url?: string | null | undefined;
                 };
             };
-            doc: import("../utils/firestore").DocumentReferenceLike<unknown>;
         };
     };
     date: {
@@ -2209,13 +2234,19 @@ export declare const logSchema: yup.Lazy<{
         storagePath: string;
         url: string;
     } | undefined;
-    emotionData?: {
+    metricData?: {
         [x: string]: {
-            color?: string | undefined;
-            name: string;
-            label: string;
-            key: string;
-            intensity: number | null;
+            doc?: import("../utils/firestore").DocumentReferenceLike<unknown> | undefined;
+            data: {
+                label: string;
+                metricInputValue: number;
+                absoluteAttributeValue: number;
+            };
+            attribute: {
+                name: string;
+                key: string;
+                icon: NonNullable<import("..").MetricIcons | undefined>;
+            };
         };
     } | null | undefined;
     behaviorData?: {
@@ -2275,6 +2306,7 @@ export declare const logSchema: yup.Lazy<{
                 };
                 isCompleted: NonNullable<boolean | undefined>;
             } | undefined;
+            doc: import("../utils/firestore").DocumentReferenceLike<unknown>;
             tactic: {
                 createdAt?: {
                     isEqual?: any;
@@ -2696,7 +2728,6 @@ export declare const logSchema: yup.Lazy<{
                     url?: string | null | undefined;
                 };
             };
-            doc: import("../utils/firestore").DocumentReferenceLike<unknown>;
         };
     };
     date: {
@@ -2747,13 +2778,19 @@ export declare const logSchema: yup.Lazy<{
         storagePath: string;
         url: string;
     } | undefined;
-    emotionData?: {
+    metricData?: {
         [x: string]: {
-            color?: string | undefined;
-            name: string;
-            label: string;
-            key: string;
-            intensity: number | null;
+            doc?: import("../utils/firestore").DocumentReferenceLike<unknown> | undefined;
+            data: {
+                label: string;
+                metricInputValue: number;
+                absoluteAttributeValue: number;
+            };
+            attribute: {
+                name: string;
+                key: string;
+                icon: NonNullable<import("..").MetricIcons | undefined>;
+            };
         };
     } | null | undefined;
     behaviorData?: {
@@ -2813,6 +2850,7 @@ export declare const logSchema: yup.Lazy<{
                 };
                 isCompleted: NonNullable<boolean | undefined>;
             } | undefined;
+            doc: import("../utils/firestore").DocumentReferenceLike<unknown>;
             tactic: {
                 createdAt?: {
                     isEqual?: any;
@@ -3234,7 +3272,6 @@ export declare const logSchema: yup.Lazy<{
                     url?: string | null | undefined;
                 };
             };
-            doc: import("../utils/firestore").DocumentReferenceLike<unknown>;
         };
     };
     date: {
@@ -3284,13 +3321,19 @@ export declare const logSchema: yup.Lazy<{
         storagePath: string;
         url: string;
     } | undefined;
-    emotionData?: {
+    metricData?: {
         [x: string]: {
-            color?: string | undefined;
-            name: string;
-            label: string;
-            key: string;
-            intensity: number | null;
+            doc?: import("../utils/firestore").DocumentReferenceLike<unknown> | undefined;
+            data: {
+                label: string;
+                metricInputValue: number;
+                absoluteAttributeValue: number;
+            };
+            attribute: {
+                name: string;
+                key: string;
+                icon: NonNullable<import("..").MetricIcons | undefined>;
+            };
         };
     } | null | undefined;
     behaviorData?: {
@@ -3373,6 +3416,7 @@ export declare const logSchema: yup.Lazy<{
                 };
                 isCompleted: NonNullable<boolean | undefined>;
             } | undefined;
+            doc: import("../utils/firestore").DocumentReferenceLike<unknown>;
             tactic: {
                 createdAt?: {
                     isEqual?: any;
@@ -3794,7 +3838,6 @@ export declare const logSchema: yup.Lazy<{
                     url?: string | null | undefined;
                 };
             };
-            doc: import("../utils/firestore").DocumentReferenceLike<unknown>;
         };
     };
     date: {
@@ -3805,8 +3848,8 @@ export declare const logSchema: yup.Lazy<{
         toDate: Function;
     };
     dateString: string;
-}, yup.AnyObject, any>;
+}>, yup.AnyObject, any>;
 export type LogValues = {
-    [K in LogValue['type']]: yup.InferType<(typeof logSchemas)[K]>;
+    [K in LogValue['type']]: WithTacticsById<yup.InferType<(typeof logSchemas)[K]>>;
 };
 export type LogValue = UserLogValue | CallLogValue | ShowTourLogValue | ToolCallLogValue | WhatsappMessageLogValue | GameplanLogValue | GptLogValue;

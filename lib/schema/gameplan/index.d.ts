@@ -4,7 +4,6 @@ import { CravingGameplanValue } from './craving';
 import { LocationGameplanValue } from './location';
 import { ScheduledGameplanValue } from './scheduled';
 export * from './craving';
-export * from './emotions';
 export * from './location';
 export * from './scheduled';
 export type GameplanValue = CravingGameplanValue | ScheduledGameplanValue | LocationGameplanValue;
@@ -39,6 +38,7 @@ export declare const gameplanSchema: yup.Lazy<WithTacticsById<{
                 };
                 isCompleted: NonNullable<boolean | undefined>;
             } | undefined;
+            doc: import("../utils/firestore").DocumentReferenceLike<unknown>;
             tactic: {
                 createdAt?: {
                     isEqual?: any;
@@ -460,7 +460,6 @@ export declare const gameplanSchema: yup.Lazy<WithTacticsById<{
                     url?: string | null | undefined;
                 };
             };
-            doc: import("../utils/firestore").DocumentReferenceLike<unknown>;
         };
     };
     checkboxLabel: string;
@@ -495,6 +494,7 @@ export declare const gameplanSchema: yup.Lazy<WithTacticsById<{
                 };
                 isCompleted: NonNullable<boolean | undefined>;
             } | undefined;
+            doc: import("../utils/firestore").DocumentReferenceLike<unknown>;
             tactic: {
                 createdAt?: {
                     isEqual?: any;
@@ -916,7 +916,6 @@ export declare const gameplanSchema: yup.Lazy<WithTacticsById<{
                     url?: string | null | undefined;
                 };
             };
-            doc: import("../utils/firestore").DocumentReferenceLike<unknown>;
         };
     };
     checkboxLabel: string;
@@ -950,6 +949,7 @@ export declare const gameplanSchema: yup.Lazy<WithTacticsById<{
                 };
                 isCompleted: NonNullable<boolean | undefined>;
             } | undefined;
+            doc: import("../utils/firestore").DocumentReferenceLike<unknown>;
             tactic: {
                 createdAt?: {
                     isEqual?: any;
@@ -1371,7 +1371,6 @@ export declare const gameplanSchema: yup.Lazy<WithTacticsById<{
                     url?: string | null | undefined;
                 };
             };
-            doc: import("../utils/firestore").DocumentReferenceLike<unknown>;
         };
     };
     checkboxLabel: string;

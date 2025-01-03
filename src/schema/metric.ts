@@ -1,23 +1,39 @@
 import * as yup from 'yup';
 
 export enum MetricIcons {
-  EMOTICON_OUTLINE = 'emoticon-outline',
-  HEART = 'heart',
-  STAR = 'star',
+  Happy = 'happy',
+  Sad = 'sad',
+  Calm = 'calm',
+  Anxious = 'anxious',
+  Excited = 'excited',
+  Bored = 'bored',
+  Grateful = 'grateful',
+  Resentful = 'resentful',
+  Confident = 'confident',
+  Unsure = 'unsure',
+  Energetic = 'energetic',
+  Tired = 'tired',
+  Hopeful = 'hopeful',
+  Hopeless = 'hopeless',
+  Relaxed = 'relaxed',
+  Stressed = 'stressed',
+  Connected = 'connected',
+  Lonely = 'lonely',
+  Focused = 'focused',
+  Distracted = 'distracted',
 }
 
-const metricAttributesSchema = yup.object({
-  key: yup.string(),
-  name: yup.string(),
+export const metricAttributeSchema = yup.object({
+  key: yup.string().required(),
+  name: yup.string().required(),
   icon: yup
     .mixed<MetricIcons>()
     .oneOf(Object.values(MetricIcons), 'Invalid icon')
     .required(),
-  color: yup.string(),
 });
 
 export const metricSchema = yup.object({
-  key: yup.string(),
-  positiveMetric: metricAttributesSchema.required(),
-  negativeMetric: metricAttributesSchema.optional().default(undefined),
+  positiveAttribute: metricAttributeSchema.required(),
+  negativeAttribute: metricAttributeSchema.optional().default(undefined),
 });
+export type MetricValue = yup.InferType<typeof metricSchema>;

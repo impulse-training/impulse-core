@@ -25,11 +25,11 @@ export declare const messageSchema: yup.ObjectSchema<{
     content: string | null;
     senderUid: string | undefined;
     isDisplayable: NonNullable<boolean | undefined>;
-    emotions: {
+    metrics: {
         [x: string]: {
             label: string;
-            intensity: number | null;
             iconName: string;
+            value: number | null;
         };
     } | null | undefined;
     behaviors: {
@@ -90,7 +90,7 @@ export declare const messageSchema: yup.ObjectSchema<{
     content: undefined;
     senderUid: undefined;
     isDisplayable: undefined;
-    emotions: undefined;
+    metrics: undefined;
     behaviors: undefined;
     files: "";
     filesDeleted: undefined;

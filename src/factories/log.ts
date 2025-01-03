@@ -11,7 +11,7 @@ export const makeLogFactories = (TimestampKlass: typeof TimestampLike) => ({
     createdAt: TimestampKlass.now(),
     updatedAt: TimestampKlass.now(),
     behaviorData: {},
-    emotionData: {},
+    metricData: {},
     tacticsData: {},
     date: TimestampKlass.now(),
     dateString: '2024-01-01',

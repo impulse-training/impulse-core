@@ -5,8 +5,8 @@ import { locationGameplanSchema, LocationGameplanValue } from './location';
 import { scheduledGameplanSchema, ScheduledGameplanValue } from './scheduled';
 
 export * from './craving';
-export * from './emotions';
 export * from './location';
+// export * from './metrics';
 export * from './scheduled';
 
 export type GameplanValue =

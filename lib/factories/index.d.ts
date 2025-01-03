@@ -38,13 +38,19 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             storagePath: string;
             url: string;
         } | undefined;
-        emotionData?: {
+        metricData?: {
             [x: string]: {
-                color?: string | undefined;
-                name: string;
-                label: string;
-                key: string;
-                intensity: number | null;
+                doc?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
+                data: {
+                    label: string;
+                    metricInputValue: number;
+                    absoluteAttributeValue: number;
+                };
+                attribute: {
+                    name: string;
+                    key: string;
+                    icon: NonNullable<import("..").MetricIcons | undefined>;
+                };
             };
         } | null | undefined;
         behaviorData?: {
@@ -104,6 +110,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     };
                     isCompleted: NonNullable<boolean | undefined>;
                 } | undefined;
+                doc: import("../schema/utils/firestore").DocumentReferenceLike<unknown>;
                 tactic: {
                     createdAt?: {
                         isEqual?: any;
@@ -525,7 +532,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         url?: string | null | undefined;
                     };
                 };
-                doc: import("../schema/utils/firestore").DocumentReferenceLike<unknown>;
             };
         };
         date: {
@@ -537,7 +543,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         };
         dateString: string;
         role: "user";
-    }, "type" | "uid" | "tacticsData" | "date" | "dateString" | "role" | ("createdAt" | "updatedAt" | "audioFile" | "emotionData" | "behaviorData" | "text" | "senderUid")>;
+    }, "type" | "uid" | "tacticsData" | "date" | "dateString" | "role" | ("createdAt" | "updatedAt" | "audioFile" | "metricData" | "behaviorData" | "text" | "senderUid")>;
     applicationFactory: import("factory.ts").Factory<import("..").ApplicationValue, keyof import("..").ApplicationValue>;
     dayFactory: import("factory.ts").Factory<import("..").DayValue, "uid" | "date" | "logsById">;
     issueFactory: import("factory.ts").Factory<{
@@ -634,13 +640,19 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     };
                 };
             };
-            emotions: {
+            metrics: {
                 [x: string]: {
-                    color?: string | undefined;
-                    name: string;
-                    label: string;
-                    key: string;
-                    intensity: number | null;
+                    doc?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
+                    data: {
+                        label: string;
+                        metricInputValue: number;
+                        absoluteAttributeValue: number;
+                    };
+                    attribute: {
+                        name: string;
+                        key: string;
+                        icon: NonNullable<import("..").MetricIcons | undefined>;
+                    };
                 };
             };
         };
@@ -757,6 +769,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     };
                     isCompleted: NonNullable<boolean | undefined>;
                 } | undefined;
+                doc: import("../schema/utils/firestore").DocumentReferenceLike<unknown>;
                 tactic: {
                     createdAt?: {
                         isEqual?: any;
@@ -1178,7 +1191,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         url?: string | null | undefined;
                     };
                 };
-                doc: import("../schema/utils/firestore").DocumentReferenceLike<unknown>;
             };
         };
         checkboxLabel: string;

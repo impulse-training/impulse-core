@@ -10,7 +10,7 @@ export declare const daySchema: yup.ObjectSchema<{
         toDate: Function;
     };
     logsById: {
-        [x: string]: {
+        [x: string]: import("./log").WithTacticsById<{
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
@@ -48,13 +48,19 @@ export declare const daySchema: yup.ObjectSchema<{
                 storagePath: string;
                 url: string;
             } | undefined;
-            emotionData?: {
+            metricData?: {
                 [x: string]: {
-                    color?: string | undefined;
-                    name: string;
-                    label: string;
-                    key: string;
-                    intensity: number | null;
+                    doc?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
+                    data: {
+                        label: string;
+                        metricInputValue: number;
+                        absoluteAttributeValue: number;
+                    };
+                    attribute: {
+                        name: string;
+                        key: string;
+                        icon: NonNullable<import("./metric").MetricIcons | undefined>;
+                    };
                 };
             } | null | undefined;
             behaviorData?: {
@@ -114,6 +120,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         };
                         isCompleted: NonNullable<boolean | undefined>;
                     } | undefined;
+                    doc: import("./utils/firestore").DocumentReferenceLike<unknown>;
                     tactic: {
                         createdAt?: {
                             isEqual?: any;
@@ -535,7 +542,6 @@ export declare const daySchema: yup.ObjectSchema<{
                             url?: string | null | undefined;
                         };
                     };
-                    doc: import("./utils/firestore").DocumentReferenceLike<unknown>;
                 };
             };
             date: {
@@ -584,13 +590,19 @@ export declare const daySchema: yup.ObjectSchema<{
                 storagePath: string;
                 url: string;
             } | undefined;
-            emotionData?: {
+            metricData?: {
                 [x: string]: {
-                    color?: string | undefined;
-                    name: string;
-                    label: string;
-                    key: string;
-                    intensity: number | null;
+                    doc?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
+                    data: {
+                        label: string;
+                        metricInputValue: number;
+                        absoluteAttributeValue: number;
+                    };
+                    attribute: {
+                        name: string;
+                        key: string;
+                        icon: NonNullable<import("./metric").MetricIcons | undefined>;
+                    };
                 };
             } | null | undefined;
             behaviorData?: {
@@ -652,6 +664,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         };
                         isCompleted: NonNullable<boolean | undefined>;
                     } | undefined;
+                    doc: import("./utils/firestore").DocumentReferenceLike<unknown>;
                     tactic: {
                         createdAt?: {
                             isEqual?: any;
@@ -1073,7 +1086,6 @@ export declare const daySchema: yup.ObjectSchema<{
                             url?: string | null | undefined;
                         };
                     };
-                    doc: import("./utils/firestore").DocumentReferenceLike<unknown>;
                 };
             };
             date: {
@@ -1123,13 +1135,19 @@ export declare const daySchema: yup.ObjectSchema<{
                 storagePath: string;
                 url: string;
             } | undefined;
-            emotionData?: {
+            metricData?: {
                 [x: string]: {
-                    color?: string | undefined;
-                    name: string;
-                    label: string;
-                    key: string;
-                    intensity: number | null;
+                    doc?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
+                    data: {
+                        label: string;
+                        metricInputValue: number;
+                        absoluteAttributeValue: number;
+                    };
+                    attribute: {
+                        name: string;
+                        key: string;
+                        icon: NonNullable<import("./metric").MetricIcons | undefined>;
+                    };
                 };
             } | null | undefined;
             behaviorData?: {
@@ -1189,6 +1207,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         };
                         isCompleted: NonNullable<boolean | undefined>;
                     } | undefined;
+                    doc: import("./utils/firestore").DocumentReferenceLike<unknown>;
                     tactic: {
                         createdAt?: {
                             isEqual?: any;
@@ -1610,7 +1629,6 @@ export declare const daySchema: yup.ObjectSchema<{
                             url?: string | null | undefined;
                         };
                     };
-                    doc: import("./utils/firestore").DocumentReferenceLike<unknown>;
                 };
             };
             date: {
@@ -1660,13 +1678,19 @@ export declare const daySchema: yup.ObjectSchema<{
                 storagePath: string;
                 url: string;
             } | undefined;
-            emotionData?: {
+            metricData?: {
                 [x: string]: {
-                    color?: string | undefined;
-                    name: string;
-                    label: string;
-                    key: string;
-                    intensity: number | null;
+                    doc?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
+                    data: {
+                        label: string;
+                        metricInputValue: number;
+                        absoluteAttributeValue: number;
+                    };
+                    attribute: {
+                        name: string;
+                        key: string;
+                        icon: NonNullable<import("./metric").MetricIcons | undefined>;
+                    };
                 };
             } | null | undefined;
             behaviorData?: {
@@ -1733,6 +1757,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         };
                         isCompleted: NonNullable<boolean | undefined>;
                     } | undefined;
+                    doc: import("./utils/firestore").DocumentReferenceLike<unknown>;
                     tactic: {
                         createdAt?: {
                             isEqual?: any;
@@ -2154,7 +2179,6 @@ export declare const daySchema: yup.ObjectSchema<{
                             url?: string | null | undefined;
                         };
                     };
-                    doc: import("./utils/firestore").DocumentReferenceLike<unknown>;
                 };
             };
             date: {
@@ -2203,13 +2227,19 @@ export declare const daySchema: yup.ObjectSchema<{
                 storagePath: string;
                 url: string;
             } | undefined;
-            emotionData?: {
+            metricData?: {
                 [x: string]: {
-                    color?: string | undefined;
-                    name: string;
-                    label: string;
-                    key: string;
-                    intensity: number | null;
+                    doc?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
+                    data: {
+                        label: string;
+                        metricInputValue: number;
+                        absoluteAttributeValue: number;
+                    };
+                    attribute: {
+                        name: string;
+                        key: string;
+                        icon: NonNullable<import("./metric").MetricIcons | undefined>;
+                    };
                 };
             } | null | undefined;
             behaviorData?: {
@@ -2269,6 +2299,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         };
                         isCompleted: NonNullable<boolean | undefined>;
                     } | undefined;
+                    doc: import("./utils/firestore").DocumentReferenceLike<unknown>;
                     tactic: {
                         createdAt?: {
                             isEqual?: any;
@@ -2690,7 +2721,6 @@ export declare const daySchema: yup.ObjectSchema<{
                             url?: string | null | undefined;
                         };
                     };
-                    doc: import("./utils/firestore").DocumentReferenceLike<unknown>;
                 };
             };
             date: {
@@ -2741,13 +2771,19 @@ export declare const daySchema: yup.ObjectSchema<{
                 storagePath: string;
                 url: string;
             } | undefined;
-            emotionData?: {
+            metricData?: {
                 [x: string]: {
-                    color?: string | undefined;
-                    name: string;
-                    label: string;
-                    key: string;
-                    intensity: number | null;
+                    doc?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
+                    data: {
+                        label: string;
+                        metricInputValue: number;
+                        absoluteAttributeValue: number;
+                    };
+                    attribute: {
+                        name: string;
+                        key: string;
+                        icon: NonNullable<import("./metric").MetricIcons | undefined>;
+                    };
                 };
             } | null | undefined;
             behaviorData?: {
@@ -2807,6 +2843,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         };
                         isCompleted: NonNullable<boolean | undefined>;
                     } | undefined;
+                    doc: import("./utils/firestore").DocumentReferenceLike<unknown>;
                     tactic: {
                         createdAt?: {
                             isEqual?: any;
@@ -3228,7 +3265,6 @@ export declare const daySchema: yup.ObjectSchema<{
                             url?: string | null | undefined;
                         };
                     };
-                    doc: import("./utils/firestore").DocumentReferenceLike<unknown>;
                 };
             };
             date: {
@@ -3278,13 +3314,19 @@ export declare const daySchema: yup.ObjectSchema<{
                 storagePath: string;
                 url: string;
             } | undefined;
-            emotionData?: {
+            metricData?: {
                 [x: string]: {
-                    color?: string | undefined;
-                    name: string;
-                    label: string;
-                    key: string;
-                    intensity: number | null;
+                    doc?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
+                    data: {
+                        label: string;
+                        metricInputValue: number;
+                        absoluteAttributeValue: number;
+                    };
+                    attribute: {
+                        name: string;
+                        key: string;
+                        icon: NonNullable<import("./metric").MetricIcons | undefined>;
+                    };
                 };
             } | null | undefined;
             behaviorData?: {
@@ -3367,6 +3409,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         };
                         isCompleted: NonNullable<boolean | undefined>;
                     } | undefined;
+                    doc: import("./utils/firestore").DocumentReferenceLike<unknown>;
                     tactic: {
                         createdAt?: {
                             isEqual?: any;
@@ -3788,7 +3831,6 @@ export declare const daySchema: yup.ObjectSchema<{
                             url?: string | null | undefined;
                         };
                     };
-                    doc: import("./utils/firestore").DocumentReferenceLike<unknown>;
                 };
             };
             date: {
@@ -3799,7 +3841,7 @@ export declare const daySchema: yup.ObjectSchema<{
                 toDate: Function;
             };
             dateString: string;
-        };
+        }>;
     };
 }, yup.AnyObject, {
     uid: undefined;

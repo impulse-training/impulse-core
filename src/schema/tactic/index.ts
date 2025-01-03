@@ -48,7 +48,7 @@ export const tacticSchemas: Record<
   link: linkTacticSchema,
   video: videoTacticSchema,
   steps: stepsTacticSchema,
-  // emotions: emotionsTacticSchema,
+  // metrics: metricsTacticSchema,
   // 'day-review': dayReviewTacticSchema,
   // 'urge-surfing': urgeSurfingTacticSchema,
   // ...recapTacticSchemas,

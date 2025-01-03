@@ -1,16 +1,22 @@
 import * as Factory from 'factory.ts';
-import { DaysSummaryValue } from '../schema';
+import { DaysSummaryValue, MetricIcons } from '../schema';
 import { TimestampLike } from '../utils';
 
 export const makeDaysSummaryFactory = (TimestampKlass: typeof TimestampLike) =>
   Factory.makeFactory<DaysSummaryValue>({
     '2024-01-01': {
-      emotions: {
+      metrics: {
         'happy-sad': {
-          name: 'Sad',
-          label: 'Really sad',
-          intensity: 4,
-          key: 'happy-sad',
+          attribute: {
+            key: 'happy',
+            name: 'Happy',
+            icon: MetricIcons.Happy,
+          },
+          data: {
+            absoluteAttributeValue: 4,
+            metricInputValue: 4,
+            label: 'Really happy',
+          },
         },
       },
       behaviors: {

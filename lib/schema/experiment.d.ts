@@ -24,3 +24,4 @@ export declare const experimentSchema: yup.ObjectSchema<{
     createdAt: undefined;
     updatedAt: undefined;
 }, "">;
+export type ExperimentValue = yup.InferType<typeof experimentSchema>;

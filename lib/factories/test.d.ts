@@ -36,13 +36,19 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         storagePath: string;
         url: string;
     } | undefined;
-    emotionData?: {
+    metricData?: {
         [x: string]: {
-            color?: string | undefined;
-            name: string;
-            label: string;
-            key: string;
-            intensity: number | null;
+            doc?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
+            data: {
+                label: string;
+                metricInputValue: number;
+                absoluteAttributeValue: number;
+            };
+            attribute: {
+                name: string;
+                key: string;
+                icon: NonNullable<import("..").MetricIcons | undefined>;
+            };
         };
     } | null | undefined;
     behaviorData?: {
@@ -102,6 +108,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                 };
                 isCompleted: NonNullable<boolean | undefined>;
             } | undefined;
+            doc: import("../schema/utils/firestore").DocumentReferenceLike<unknown>;
             tactic: {
                 createdAt?: {
                     isEqual?: any;
@@ -523,7 +530,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                     url?: string | null | undefined;
                 };
             };
-            doc: import("../schema/utils/firestore").DocumentReferenceLike<unknown>;
         };
     };
     date: {
@@ -535,7 +541,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
     };
     dateString: string;
     role: "user";
-}, "type" | "uid" | "tacticsData" | "date" | "dateString" | "role" | ("createdAt" | "updatedAt" | "audioFile" | "emotionData" | "behaviorData" | "text" | "senderUid")>, profileFactory: import("factory.ts").Factory<{
+}, "type" | "uid" | "tacticsData" | "date" | "dateString" | "role" | ("createdAt" | "updatedAt" | "audioFile" | "metricData" | "behaviorData" | "text" | "senderUid")>, profileFactory: import("factory.ts").Factory<{
     createdAt?: {
         isEqual?: any;
         toMillis?: any;

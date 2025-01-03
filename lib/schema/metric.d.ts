@@ -1,30 +1,52 @@
 import * as yup from 'yup';
 export declare enum MetricIcons {
-    EMOTICON_OUTLINE = "emoticon-outline",
-    HEART = "heart",
-    STAR = "star"
+    Happy = "happy",
+    Sad = "sad",
+    Calm = "calm",
+    Anxious = "anxious",
+    Excited = "excited",
+    Bored = "bored",
+    Grateful = "grateful",
+    Resentful = "resentful",
+    Confident = "confident",
+    Unsure = "unsure",
+    Energetic = "energetic",
+    Tired = "tired",
+    Hopeful = "hopeful",
+    Hopeless = "hopeless",
+    Relaxed = "relaxed",
+    Stressed = "stressed",
+    Connected = "connected",
+    Lonely = "lonely",
+    Focused = "focused",
+    Distracted = "distracted"
 }
+export declare const metricAttributeSchema: yup.ObjectSchema<{
+    key: string;
+    name: string;
+    icon: NonNullable<MetricIcons | undefined>;
+}, yup.AnyObject, {
+    key: undefined;
+    name: undefined;
+    icon: undefined;
+}, "">;
 export declare const metricSchema: yup.ObjectSchema<{
-    key: string | undefined;
-    positiveMetric: {
-        name?: string | undefined;
-        color?: string | undefined;
-        key?: string | undefined;
+    positiveAttribute: {
+        name: string;
+        key: string;
         icon: NonNullable<MetricIcons | undefined>;
     };
-    negativeMetric: {
-        name?: string | undefined;
-        color?: string | undefined;
-        key?: string | undefined;
+    negativeAttribute: {
+        name: string;
+        key: string;
         icon: NonNullable<MetricIcons | undefined>;
     } | undefined;
 }, yup.AnyObject, {
-    key: undefined;
-    positiveMetric: {
+    positiveAttribute: {
         key: undefined;
         name: undefined;
         icon: undefined;
-        color: undefined;
     };
-    negativeMetric: undefined;
+    negativeAttribute: undefined;
 }, "">;
+export type MetricValue = yup.InferType<typeof metricSchema>;

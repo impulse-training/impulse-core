@@ -13,11 +13,11 @@ export const messageSchema = yup.object({
   content: yup.string().nullable().defined(),
   senderUid: yup.string(),
   isDisplayable: yup.boolean().required(),
-  emotions: optionalObjectOf(
+  metrics: optionalObjectOf(
     yup.object({
       label: yup.string().required(),
       iconName: yup.string().required(),
-      intensity: yup.number().nullable().defined(),
+      value: yup.number().nullable().defined(),
     })
   ),
   behaviors: optionalObjectOf(

@@ -5,6 +5,7 @@ import { GptLogValue, gptLogSchema } from './gpt';
 import { ShowTourLogValue, showTourLogSchema } from './showTour';
 import { ToolCallLogValue, toolCallLogSchema } from './toolCall';
 import { UserLogValue, userLogSchema } from './user';
+import { WithTacticsById } from './utils/tacticData';
 import {
   WhatsappMessageLogValue,
   whatsappMessageLogSchema,
@@ -19,7 +20,7 @@ export * from './whatsappMessage';
 
 // Utils
 export * from './utils/behaviorData';
-export * from './utils/emotionData';
+export * from './utils/metricData';
 export * from './utils/tacticData';
 
 export const logSchemas: Record<
@@ -52,7 +53,9 @@ export const logSchema = yup.lazy((value: any) => {
 
 // / This type represents the union of all possible validated tactic objects
 export type LogValues = {
-  [K in LogValue['type']]: yup.InferType<(typeof logSchemas)[K]>;
+  [K in LogValue['type']]: WithTacticsById<
+    yup.InferType<(typeof logSchemas)[K]>
+  >;
 };
 
 export type LogValue =

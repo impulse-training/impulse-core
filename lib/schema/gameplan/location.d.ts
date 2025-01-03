@@ -16,6 +16,7 @@ export declare const locationGameplanSchema: yup.ObjectSchema<{
                 };
                 isCompleted: NonNullable<boolean | undefined>;
             } | undefined;
+            doc: import("../utils/firestore").DocumentReferenceLike<unknown>;
             tactic: {
                 createdAt?: {
                     isEqual?: any;
@@ -437,7 +438,6 @@ export declare const locationGameplanSchema: yup.ObjectSchema<{
                     url?: string | null | undefined;
                 };
             };
-            doc: import("../utils/firestore").DocumentReferenceLike<unknown>;
         };
     };
     createdAt: {

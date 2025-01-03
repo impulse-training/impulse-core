@@ -16,6 +16,7 @@ export declare function gameplanBaseSchema<T extends string>(type: T): yup.Objec
                 };
                 isCompleted: NonNullable<boolean | undefined>;
             } | undefined;
+            doc: import("../utils/firestore").DocumentReferenceLike<unknown>;
             tactic: {
                 createdAt?: {
                     isEqual?: any;
@@ -437,7 +438,6 @@ export declare function gameplanBaseSchema<T extends string>(type: T): yup.Objec
                     url?: string | null | undefined;
                 };
             };
-            doc: import("../utils/firestore").DocumentReferenceLike<unknown>;
         };
     };
     createdAt: {

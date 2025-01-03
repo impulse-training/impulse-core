@@ -39,13 +39,19 @@ export declare const gptLogSchema: yup.ObjectSchema<{
         storagePath: string;
         url: string;
     } | undefined;
-    emotionData: {
+    metricData: {
         [x: string]: {
-            color?: string | undefined;
-            name: string;
-            label: string;
-            key: string;
-            intensity: number | null;
+            doc?: import("../utils/firestore").DocumentReferenceLike<unknown> | undefined;
+            data: {
+                label: string;
+                metricInputValue: number;
+                absoluteAttributeValue: number;
+            };
+            attribute: {
+                name: string;
+                key: string;
+                icon: NonNullable<import("..").MetricIcons | undefined>;
+            };
         };
     } | null | undefined;
     behaviorData: {
@@ -101,6 +107,7 @@ export declare const gptLogSchema: yup.ObjectSchema<{
                 };
                 isCompleted: NonNullable<boolean | undefined>;
             } | undefined;
+            doc: import("../utils/firestore").DocumentReferenceLike<unknown>;
             tactic: {
                 createdAt?: {
                     isEqual?: any;
@@ -522,7 +529,6 @@ export declare const gptLogSchema: yup.ObjectSchema<{
                     url?: string | null | undefined;
                 };
             };
-            doc: import("../utils/firestore").DocumentReferenceLike<unknown>;
         };
     };
     text: string | null | undefined;
@@ -542,7 +548,7 @@ export declare const gptLogSchema: yup.ObjectSchema<{
     type: undefined;
     uid: undefined;
     audioFile: undefined;
-    emotionData: undefined;
+    metricData: undefined;
     behaviorData: undefined;
     tacticsData: undefined;
     text: undefined;

@@ -30,6 +30,7 @@ export declare const makeGameplanFactory: (TimestampKlass: typeof TimestampLike)
                 };
                 isCompleted: NonNullable<boolean | undefined>;
             } | undefined;
+            doc: import("../schema/utils/firestore").DocumentReferenceLike<unknown>;
             tactic: {
                 createdAt?: {
                     isEqual?: any;
@@ -451,7 +452,6 @@ export declare const makeGameplanFactory: (TimestampKlass: typeof TimestampLike)
                     url?: string | null | undefined;
                 };
             };
-            doc: import("../schema/utils/firestore").DocumentReferenceLike<unknown>;
         };
     };
     checkboxLabel: string;

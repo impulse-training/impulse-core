@@ -3,7 +3,7 @@ import { fileSchema } from '../utils/file';
 import { optionalObjectOf } from '../utils/objectOf';
 import { optionalTimestampSchema, timestampSchema } from '../utils/timestamp';
 import { behaviorAndBehaviorDataSchema } from './utils/behaviorData';
-import { emotionDataSchema } from './utils/emotionData';
+import { metricAttributeAndDataSchema } from './utils/metricData';
 import { tacticsById } from './utils/tacticData';
 
 export function logBaseSchema<K extends string>(type: K) {
@@ -14,8 +14,8 @@ export function logBaseSchema<K extends string>(type: K) {
     uid: yup.string().required(),
     audioFile: fileSchema.optional().default(undefined),
 
-    // We deal with emotions and behaviors separately
-    emotionData: optionalObjectOf(emotionDataSchema),
+    // We deal with metrics and behaviors separately
+    metricData: optionalObjectOf(metricAttributeAndDataSchema),
     behaviorData: optionalObjectOf(behaviorAndBehaviorDataSchema),
     tacticsData: tacticsById,
 

@@ -1,22 +1,25 @@
 import * as yup from 'yup';
-import { behaviorAndBehaviorDataSchema, emotionDataSchema } from './log';
+import {
+  behaviorAndBehaviorDataSchema,
+  metricAttributeAndDataSchema,
+} from './log';
 import { objectOf } from './utils/objectOf';
 
-// A day summary is an object of behavior and emotion
+// A day summary is an object of behavior and metric
 // {
 //   behaviors: {
 //     smokingBehaviorId: { behavior, data: { numericValue: 2, formattedValue: "2 cigarettes" } }
 //   },
-//   emotions: {
+//   metrics: {
 //     label: "Really sad",
 //     name: "Sad",
 //     key: "happy-sad",
-//     intensity: 4,
+//     value: 4,
 //   }
 // }
 const behaviorTotalDataByIdSchema = yup.object({
   behaviors: objectOf(behaviorAndBehaviorDataSchema),
-  emotions: objectOf(emotionDataSchema),
+  metrics: objectOf(metricAttributeAndDataSchema),
 });
 
 // A days summary document is an object of tactic day summaries, keyed by date. Think of it

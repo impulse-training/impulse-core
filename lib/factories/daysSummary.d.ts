@@ -1,4 +1,5 @@
 import * as Factory from 'factory.ts';
+import { MetricIcons } from '../schema';
 import { TimestampLike } from '../utils';
 export declare const makeDaysSummaryFactory: (TimestampKlass: typeof TimestampLike) => Factory.Sync.Factory<{
     [x: string]: {
@@ -43,13 +44,19 @@ export declare const makeDaysSummaryFactory: (TimestampKlass: typeof TimestampLi
                 };
             };
         };
-        emotions: {
+        metrics: {
             [x: string]: {
-                color?: string | undefined;
-                name: string;
-                label: string;
-                key: string;
-                intensity: number | null;
+                doc?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
+                data: {
+                    label: string;
+                    metricInputValue: number;
+                    absoluteAttributeValue: number;
+                };
+                attribute: {
+                    name: string;
+                    key: string;
+                    icon: NonNullable<MetricIcons | undefined>;
+                };
             };
         };
     };

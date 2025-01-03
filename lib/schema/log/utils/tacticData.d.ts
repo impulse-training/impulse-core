@@ -33,6 +33,7 @@ export declare const tacticsById: yup.Lazy<{
             };
             isCompleted: NonNullable<boolean | undefined>;
         } | undefined;
+        doc: DocumentReferenceLike<unknown>;
         tactic: {
             createdAt?: {
                 isEqual?: any;
@@ -454,7 +455,6 @@ export declare const tacticsById: yup.Lazy<{
                 url?: string | null | undefined;
             };
         };
-        doc: DocumentReferenceLike<unknown>;
     };
 }, yup.AnyObject, any>;
 export type TacticsById = Record<string, {
