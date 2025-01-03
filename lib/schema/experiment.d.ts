@@ -1,6 +1,6 @@
 import * as yup from 'yup';
 export declare const experimentSchema: yup.ObjectSchema<{
-    behaviorIds: string[];
+    behaviorDocs: import("./utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
     metricDoc: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
     minimumDays: number;
     createdAt: {
@@ -18,7 +18,7 @@ export declare const experimentSchema: yup.ObjectSchema<{
         toDate: Function;
     } | null | undefined;
 }, yup.AnyObject, {
-    behaviorIds: "";
+    behaviorDocs: "";
     metricDoc: undefined;
     minimumDays: undefined;
     createdAt: undefined;
