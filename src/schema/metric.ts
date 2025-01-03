@@ -24,8 +24,8 @@ export enum MetricIcons {
 }
 
 export const metricAttributeSchema = yup.object({
-  key: yup.string().required(),
-  name: yup.string().required(),
+  key: yup.string().required('is required'),
+  name: yup.string().required('is required'),
   icon: yup
     .mixed<MetricIcons>()
     .oneOf(Object.values(MetricIcons), 'Invalid icon')
