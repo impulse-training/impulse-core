@@ -22,6 +22,7 @@ export const makeDaysSummaryFactory = (TimestampKlass: typeof TimestampLike) =>
       behaviors: {
         behavior1: {
           behavior: {
+            tacticsById: {},
             ordinal: 0,
             name: 'Watching youtube',
             trackingType: 'time',

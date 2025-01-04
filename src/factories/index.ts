@@ -3,11 +3,11 @@ import { makeApplicationFactory } from './application';
 import { makeBehaviorFactory } from './behavior';
 import { makeDayFactory } from './day';
 import { makeDaysSummaryFactory } from './daysSummary';
-import { makeGameplanFactory } from './gameplan';
 import { makeIssueFactory } from './issue';
 import { makeLocationFactory } from './location';
 import { makeLogFactories } from './log';
 import { makeProfileFactory } from './profile';
+import { makeReminderFactory } from './reminder';
 import { makeRoadmapFactory } from './roadmap';
 import { makeSuggestionFactory } from './suggestion';
 import { makeTacticFactory } from './tactic';
@@ -23,7 +23,7 @@ export function makeFactories(TimestampKlass: typeof TimestampLike) {
     locationFactory: makeLocationFactory(TimestampKlass),
     daysSummaryFactory: makeDaysSummaryFactory(TimestampKlass),
     profileFactory: makeProfileFactory(TimestampKlass),
-    gameplanFactory: makeGameplanFactory(TimestampKlass),
+    reminderFactory: makeReminderFactory(TimestampKlass),
     tacticFactory: makeTacticFactory(TimestampKlass),
     roadmapFactory: makeRoadmapFactory(TimestampKlass),
     suggestionFactory: makeSuggestionFactory(TimestampKlass),

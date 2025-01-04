@@ -1,4 +1,5 @@
 import * as yup from 'yup';
+import { tacticsById } from './log';
 import { optionalTimestampSchema } from './utils/timestamp';
 
 export const behaviorSchema = yup.object({
@@ -16,9 +17,10 @@ export const behaviorSchema = yup.object({
     }
     return schema.notRequired();
   }),
+  tacticsById,
   dailyLimit: yup.number(),
   isHelpful: yup.boolean().nullable().defined(),
-  skipGameplanAutoCreation: yup.boolean(),
+  skipReminderAutoCreation: yup.boolean(),
   createdAt: optionalTimestampSchema,
   updatedAt: optionalTimestampSchema,
 });

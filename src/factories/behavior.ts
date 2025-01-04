@@ -8,6 +8,7 @@ export const makeBehaviorFactory = (TimestampKlass: typeof TimestampLike) =>
     name: 'How long did you spend watching youtube?',
     trackingType: 'counter',
     isHelpful: null,
+    tacticsById: {},
     createdAt: TimestampKlass.now(),
     updatedAt: TimestampKlass.now(),
   });

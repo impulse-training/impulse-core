@@ -74,19 +74,455 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     } | null | undefined;
                     unit?: string | undefined;
                     dailyLimit?: number | undefined;
-                    skipGameplanAutoCreation?: boolean | undefined;
+                    skipReminderAutoCreation?: boolean | undefined;
                     name: string;
                     ordinal: number;
                     trackingType: NonNullable<"time" | "counter" | undefined>;
+                    tacticsById: {
+                        [x: string]: {
+                            data?: {
+                                setAt: {
+                                    isEqual?: any;
+                                    toMillis?: any;
+                                    seconds: number;
+                                    nanoseconds: number;
+                                    toDate: Function;
+                                };
+                                isCompleted: NonNullable<boolean | undefined>;
+                            } | undefined;
+                            tactic: {
+                                createdAt?: {
+                                    isEqual?: any;
+                                    toMillis?: any;
+                                    seconds: number;
+                                    nanoseconds: number;
+                                    toDate: Function;
+                                } | null | undefined;
+                                updatedAt?: {
+                                    isEqual?: any;
+                                    toMillis?: any;
+                                    seconds: number;
+                                    nanoseconds: number;
+                                    toDate: Function;
+                                } | null | undefined;
+                                sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
+                                sharedWithIssueIds?: string[] | undefined;
+                                uid?: string | undefined;
+                                recommendedForIssueIds?: string[] | undefined;
+                                recommendedForIssueOrdinals?: {
+                                    [x: string]: number;
+                                } | null | undefined;
+                                prompt?: string | undefined;
+                                isShared?: boolean | undefined;
+                                description?: string | null | undefined;
+                                pastTenseTitle?: string | undefined;
+                                debriefAfterMinutes?: number | null | undefined;
+                                image?: {
+                                    createdAt?: {
+                                        isEqual?: any;
+                                        toMillis?: any;
+                                        seconds: number;
+                                        nanoseconds: number;
+                                        toDate: Function;
+                                    } | null | undefined;
+                                    updatedAt?: {
+                                        isEqual?: any;
+                                        toMillis?: any;
+                                        seconds: number;
+                                        nanoseconds: number;
+                                        toDate: Function;
+                                    } | null | undefined;
+                                    localFilePath?: import("yup").Maybe<string | undefined>;
+                                    isDeleted?: boolean | undefined;
+                                    metadata?: {} | null | undefined;
+                                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                                    thumbnailUri?: import("yup").Maybe<string | undefined>;
+                                    storagePath: string;
+                                    url: string;
+                                } | undefined;
+                                backgroundColor?: string | undefined;
+                                likesCount?: number | null | undefined;
+                                timerSeconds?: import("yup").Maybe<number | undefined>;
+                                isSuggested?: boolean | undefined;
+                                repeat?: import("yup").Maybe<number | undefined>;
+                                type: "breathingExercise";
+                                inFor: number;
+                                holdFor: number;
+                                outFor: number;
+                            } | {
+                                createdAt?: {
+                                    isEqual?: any;
+                                    toMillis?: any;
+                                    seconds: number;
+                                    nanoseconds: number;
+                                    toDate: Function;
+                                } | null | undefined;
+                                updatedAt?: {
+                                    isEqual?: any;
+                                    toMillis?: any;
+                                    seconds: number;
+                                    nanoseconds: number;
+                                    toDate: Function;
+                                } | null | undefined;
+                                sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
+                                sharedWithIssueIds?: string[] | undefined;
+                                uid?: string | undefined;
+                                recommendedForIssueIds?: string[] | undefined;
+                                recommendedForIssueOrdinals?: {
+                                    [x: string]: number;
+                                } | null | undefined;
+                                prompt?: string | undefined;
+                                isShared?: boolean | undefined;
+                                description?: string | null | undefined;
+                                pastTenseTitle?: string | undefined;
+                                debriefAfterMinutes?: number | null | undefined;
+                                image?: {
+                                    createdAt?: {
+                                        isEqual?: any;
+                                        toMillis?: any;
+                                        seconds: number;
+                                        nanoseconds: number;
+                                        toDate: Function;
+                                    } | null | undefined;
+                                    updatedAt?: {
+                                        isEqual?: any;
+                                        toMillis?: any;
+                                        seconds: number;
+                                        nanoseconds: number;
+                                        toDate: Function;
+                                    } | null | undefined;
+                                    localFilePath?: import("yup").Maybe<string | undefined>;
+                                    isDeleted?: boolean | undefined;
+                                    metadata?: {} | null | undefined;
+                                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                                    thumbnailUri?: import("yup").Maybe<string | undefined>;
+                                    storagePath: string;
+                                    url: string;
+                                } | undefined;
+                                backgroundColor?: string | undefined;
+                                likesCount?: number | null | undefined;
+                                timerSeconds?: import("yup").Maybe<number | undefined>;
+                                isSuggested?: boolean | undefined;
+                                type: "notifyASupportPerson";
+                                contactIds: string[];
+                            } | {
+                                createdAt?: {
+                                    isEqual?: any;
+                                    toMillis?: any;
+                                    seconds: number;
+                                    nanoseconds: number;
+                                    toDate: Function;
+                                } | null | undefined;
+                                updatedAt?: {
+                                    isEqual?: any;
+                                    toMillis?: any;
+                                    seconds: number;
+                                    nanoseconds: number;
+                                    toDate: Function;
+                                } | null | undefined;
+                                sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
+                                sharedWithIssueIds?: string[] | undefined;
+                                uid?: string | undefined;
+                                recommendedForIssueIds?: string[] | undefined;
+                                recommendedForIssueOrdinals?: {
+                                    [x: string]: number;
+                                } | null | undefined;
+                                prompt?: string | undefined;
+                                isShared?: boolean | undefined;
+                                description?: string | null | undefined;
+                                pastTenseTitle?: string | undefined;
+                                debriefAfterMinutes?: number | null | undefined;
+                                image?: {
+                                    createdAt?: {
+                                        isEqual?: any;
+                                        toMillis?: any;
+                                        seconds: number;
+                                        nanoseconds: number;
+                                        toDate: Function;
+                                    } | null | undefined;
+                                    updatedAt?: {
+                                        isEqual?: any;
+                                        toMillis?: any;
+                                        seconds: number;
+                                        nanoseconds: number;
+                                        toDate: Function;
+                                    } | null | undefined;
+                                    localFilePath?: import("yup").Maybe<string | undefined>;
+                                    isDeleted?: boolean | undefined;
+                                    metadata?: {} | null | undefined;
+                                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                                    thumbnailUri?: import("yup").Maybe<string | undefined>;
+                                    storagePath: string;
+                                    url: string;
+                                } | undefined;
+                                backgroundColor?: string | undefined;
+                                likesCount?: number | null | undefined;
+                                timerSeconds?: import("yup").Maybe<number | undefined>;
+                                isSuggested?: boolean | undefined;
+                                type: "steps";
+                                targetSteps: number;
+                            } | {
+                                createdAt?: {
+                                    isEqual?: any;
+                                    toMillis?: any;
+                                    seconds: number;
+                                    nanoseconds: number;
+                                    toDate: Function;
+                                } | null | undefined;
+                                updatedAt?: {
+                                    isEqual?: any;
+                                    toMillis?: any;
+                                    seconds: number;
+                                    nanoseconds: number;
+                                    toDate: Function;
+                                } | null | undefined;
+                                sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
+                                sharedWithIssueIds?: string[] | undefined;
+                                uid?: string | undefined;
+                                recommendedForIssueIds?: string[] | undefined;
+                                recommendedForIssueOrdinals?: {
+                                    [x: string]: number;
+                                } | null | undefined;
+                                isShared?: boolean | undefined;
+                                description?: string | null | undefined;
+                                pastTenseTitle?: string | undefined;
+                                debriefAfterMinutes?: number | null | undefined;
+                                image?: {
+                                    createdAt?: {
+                                        isEqual?: any;
+                                        toMillis?: any;
+                                        seconds: number;
+                                        nanoseconds: number;
+                                        toDate: Function;
+                                    } | null | undefined;
+                                    updatedAt?: {
+                                        isEqual?: any;
+                                        toMillis?: any;
+                                        seconds: number;
+                                        nanoseconds: number;
+                                        toDate: Function;
+                                    } | null | undefined;
+                                    localFilePath?: import("yup").Maybe<string | undefined>;
+                                    isDeleted?: boolean | undefined;
+                                    metadata?: {} | null | undefined;
+                                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                                    thumbnailUri?: import("yup").Maybe<string | undefined>;
+                                    storagePath: string;
+                                    url: string;
+                                } | undefined;
+                                backgroundColor?: string | undefined;
+                                likesCount?: number | null | undefined;
+                                timerSeconds?: import("yup").Maybe<number | undefined>;
+                                isSuggested?: boolean | undefined;
+                                audio?: {
+                                    createdAt?: {
+                                        isEqual?: any;
+                                        toMillis?: any;
+                                        seconds: number;
+                                        nanoseconds: number;
+                                        toDate: Function;
+                                    } | null | undefined;
+                                    updatedAt?: {
+                                        isEqual?: any;
+                                        toMillis?: any;
+                                        seconds: number;
+                                        nanoseconds: number;
+                                        toDate: Function;
+                                    } | null | undefined;
+                                    localFilePath?: import("yup").Maybe<string | undefined>;
+                                    isDeleted?: boolean | undefined;
+                                    metadata?: {} | null | undefined;
+                                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                                    thumbnailUri?: import("yup").Maybe<string | undefined>;
+                                    storagePath: string;
+                                    url: string;
+                                } | null | undefined;
+                                prompt: string;
+                                type: "basic";
+                            } | {
+                                createdAt?: {
+                                    isEqual?: any;
+                                    toMillis?: any;
+                                    seconds: number;
+                                    nanoseconds: number;
+                                    toDate: Function;
+                                } | null | undefined;
+                                updatedAt?: {
+                                    isEqual?: any;
+                                    toMillis?: any;
+                                    seconds: number;
+                                    nanoseconds: number;
+                                    toDate: Function;
+                                } | null | undefined;
+                                sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
+                                sharedWithIssueIds?: string[] | undefined;
+                                uid?: string | undefined;
+                                recommendedForIssueIds?: string[] | undefined;
+                                recommendedForIssueOrdinals?: {
+                                    [x: string]: number;
+                                } | null | undefined;
+                                prompt?: string | undefined;
+                                isShared?: boolean | undefined;
+                                description?: string | null | undefined;
+                                pastTenseTitle?: string | undefined;
+                                debriefAfterMinutes?: number | null | undefined;
+                                image?: {
+                                    createdAt?: {
+                                        isEqual?: any;
+                                        toMillis?: any;
+                                        seconds: number;
+                                        nanoseconds: number;
+                                        toDate: Function;
+                                    } | null | undefined;
+                                    updatedAt?: {
+                                        isEqual?: any;
+                                        toMillis?: any;
+                                        seconds: number;
+                                        nanoseconds: number;
+                                        toDate: Function;
+                                    } | null | undefined;
+                                    localFilePath?: import("yup").Maybe<string | undefined>;
+                                    isDeleted?: boolean | undefined;
+                                    metadata?: {} | null | undefined;
+                                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                                    thumbnailUri?: import("yup").Maybe<string | undefined>;
+                                    storagePath: string;
+                                    url: string;
+                                } | undefined;
+                                backgroundColor?: string | undefined;
+                                likesCount?: number | null | undefined;
+                                timerSeconds?: import("yup").Maybe<number | undefined>;
+                                isSuggested?: boolean | undefined;
+                                type: "video";
+                                video: {
+                                    storagePath?: string | null | undefined;
+                                    url?: string | null | undefined;
+                                };
+                            } | {
+                                createdAt?: {
+                                    isEqual?: any;
+                                    toMillis?: any;
+                                    seconds: number;
+                                    nanoseconds: number;
+                                    toDate: Function;
+                                } | null | undefined;
+                                updatedAt?: {
+                                    isEqual?: any;
+                                    toMillis?: any;
+                                    seconds: number;
+                                    nanoseconds: number;
+                                    toDate: Function;
+                                } | null | undefined;
+                                sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
+                                sharedWithIssueIds?: string[] | undefined;
+                                uid?: string | undefined;
+                                recommendedForIssueIds?: string[] | undefined;
+                                recommendedForIssueOrdinals?: {
+                                    [x: string]: number;
+                                } | null | undefined;
+                                prompt?: string | undefined;
+                                isShared?: boolean | undefined;
+                                description?: string | null | undefined;
+                                pastTenseTitle?: string | undefined;
+                                debriefAfterMinutes?: number | null | undefined;
+                                image?: {
+                                    createdAt?: {
+                                        isEqual?: any;
+                                        toMillis?: any;
+                                        seconds: number;
+                                        nanoseconds: number;
+                                        toDate: Function;
+                                    } | null | undefined;
+                                    updatedAt?: {
+                                        isEqual?: any;
+                                        toMillis?: any;
+                                        seconds: number;
+                                        nanoseconds: number;
+                                        toDate: Function;
+                                    } | null | undefined;
+                                    localFilePath?: import("yup").Maybe<string | undefined>;
+                                    isDeleted?: boolean | undefined;
+                                    metadata?: {} | null | undefined;
+                                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                                    thumbnailUri?: import("yup").Maybe<string | undefined>;
+                                    storagePath: string;
+                                    url: string;
+                                } | undefined;
+                                backgroundColor?: string | undefined;
+                                likesCount?: number | null | undefined;
+                                timerSeconds?: import("yup").Maybe<number | undefined>;
+                                isSuggested?: boolean | undefined;
+                                type: "notifySupportGroup";
+                                supportGroup: import("../schema/utils/firestore").DocumentReferenceLike<unknown>;
+                            } | {
+                                createdAt?: {
+                                    isEqual?: any;
+                                    toMillis?: any;
+                                    seconds: number;
+                                    nanoseconds: number;
+                                    toDate: Function;
+                                } | null | undefined;
+                                updatedAt?: {
+                                    isEqual?: any;
+                                    toMillis?: any;
+                                    seconds: number;
+                                    nanoseconds: number;
+                                    toDate: Function;
+                                } | null | undefined;
+                                sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
+                                sharedWithIssueIds?: string[] | undefined;
+                                uid?: string | undefined;
+                                recommendedForIssueIds?: string[] | undefined;
+                                recommendedForIssueOrdinals?: {
+                                    [x: string]: number;
+                                } | null | undefined;
+                                prompt?: string | undefined;
+                                isShared?: boolean | undefined;
+                                description?: string | null | undefined;
+                                pastTenseTitle?: string | undefined;
+                                debriefAfterMinutes?: number | null | undefined;
+                                image?: {
+                                    createdAt?: {
+                                        isEqual?: any;
+                                        toMillis?: any;
+                                        seconds: number;
+                                        nanoseconds: number;
+                                        toDate: Function;
+                                    } | null | undefined;
+                                    updatedAt?: {
+                                        isEqual?: any;
+                                        toMillis?: any;
+                                        seconds: number;
+                                        nanoseconds: number;
+                                        toDate: Function;
+                                    } | null | undefined;
+                                    localFilePath?: import("yup").Maybe<string | undefined>;
+                                    isDeleted?: boolean | undefined;
+                                    metadata?: {} | null | undefined;
+                                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                                    thumbnailUri?: import("yup").Maybe<string | undefined>;
+                                    storagePath: string;
+                                    url: string;
+                                } | undefined;
+                                backgroundColor?: string | undefined;
+                                likesCount?: number | null | undefined;
+                                timerSeconds?: import("yup").Maybe<number | undefined>;
+                                isSuggested?: boolean | undefined;
+                                url: string;
+                                type: "link";
+                            };
+                            doc: import("../schema/utils/firestore").DocumentReferenceLike<unknown>;
+                        };
+                    };
                     isHelpful: boolean | null;
                 };
                 data: {
+                    counterValue?: number | undefined;
+                    timeSeconds?: number | undefined;
                     label?: {
                         color?: string | undefined;
                         text: string;
                     } | null | undefined;
-                    counterValue?: number | undefined;
-                    timeSeconds?: number | undefined;
                     formattedValue: string;
                 };
             };
@@ -103,7 +539,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     };
                     isCompleted: NonNullable<boolean | undefined>;
                 } | undefined;
-                doc: import("../schema/utils/firestore").DocumentReferenceLike<unknown>;
                 tactic: {
                     createdAt?: {
                         isEqual?: any;
@@ -119,9 +554,180 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
-                    uid?: string | undefined;
                     sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                     sharedWithIssueIds?: string[] | undefined;
+                    uid?: string | undefined;
+                    recommendedForIssueIds?: string[] | undefined;
+                    recommendedForIssueOrdinals?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                    prompt?: string | undefined;
+                    isShared?: boolean | undefined;
+                    description?: string | null | undefined;
+                    pastTenseTitle?: string | undefined;
+                    debriefAfterMinutes?: number | null | undefined;
+                    image?: {
+                        createdAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            seconds: number;
+                            nanoseconds: number;
+                            toDate: Function;
+                        } | null | undefined;
+                        updatedAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            seconds: number;
+                            nanoseconds: number;
+                            toDate: Function;
+                        } | null | undefined;
+                        localFilePath?: import("yup").Maybe<string | undefined>;
+                        isDeleted?: boolean | undefined;
+                        metadata?: {} | null | undefined;
+                        thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                        thumbnailUri?: import("yup").Maybe<string | undefined>;
+                        storagePath: string;
+                        url: string;
+                    } | undefined;
+                    backgroundColor?: string | undefined;
+                    likesCount?: number | null | undefined;
+                    timerSeconds?: import("yup").Maybe<number | undefined>;
+                    isSuggested?: boolean | undefined;
+                    repeat?: import("yup").Maybe<number | undefined>;
+                    type: "breathingExercise";
+                    inFor: number;
+                    holdFor: number;
+                    outFor: number;
+                } | {
+                    createdAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
+                    sharedWithIssueIds?: string[] | undefined;
+                    uid?: string | undefined;
+                    recommendedForIssueIds?: string[] | undefined;
+                    recommendedForIssueOrdinals?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                    prompt?: string | undefined;
+                    isShared?: boolean | undefined;
+                    description?: string | null | undefined;
+                    pastTenseTitle?: string | undefined;
+                    debriefAfterMinutes?: number | null | undefined;
+                    image?: {
+                        createdAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            seconds: number;
+                            nanoseconds: number;
+                            toDate: Function;
+                        } | null | undefined;
+                        updatedAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            seconds: number;
+                            nanoseconds: number;
+                            toDate: Function;
+                        } | null | undefined;
+                        localFilePath?: import("yup").Maybe<string | undefined>;
+                        isDeleted?: boolean | undefined;
+                        metadata?: {} | null | undefined;
+                        thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                        thumbnailUri?: import("yup").Maybe<string | undefined>;
+                        storagePath: string;
+                        url: string;
+                    } | undefined;
+                    backgroundColor?: string | undefined;
+                    likesCount?: number | null | undefined;
+                    timerSeconds?: import("yup").Maybe<number | undefined>;
+                    isSuggested?: boolean | undefined;
+                    type: "notifyASupportPerson";
+                    contactIds: string[];
+                } | {
+                    createdAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
+                    sharedWithIssueIds?: string[] | undefined;
+                    uid?: string | undefined;
+                    recommendedForIssueIds?: string[] | undefined;
+                    recommendedForIssueOrdinals?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                    prompt?: string | undefined;
+                    isShared?: boolean | undefined;
+                    description?: string | null | undefined;
+                    pastTenseTitle?: string | undefined;
+                    debriefAfterMinutes?: number | null | undefined;
+                    image?: {
+                        createdAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            seconds: number;
+                            nanoseconds: number;
+                            toDate: Function;
+                        } | null | undefined;
+                        updatedAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            seconds: number;
+                            nanoseconds: number;
+                            toDate: Function;
+                        } | null | undefined;
+                        localFilePath?: import("yup").Maybe<string | undefined>;
+                        isDeleted?: boolean | undefined;
+                        metadata?: {} | null | undefined;
+                        thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                        thumbnailUri?: import("yup").Maybe<string | undefined>;
+                        storagePath: string;
+                        url: string;
+                    } | undefined;
+                    backgroundColor?: string | undefined;
+                    likesCount?: number | null | undefined;
+                    timerSeconds?: import("yup").Maybe<number | undefined>;
+                    isSuggested?: boolean | undefined;
+                    type: "steps";
+                    targetSteps: number;
+                } | {
+                    createdAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
+                    sharedWithIssueIds?: string[] | undefined;
+                    uid?: string | undefined;
                     recommendedForIssueIds?: string[] | undefined;
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
@@ -180,8 +786,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         storagePath: string;
                         url: string;
                     } | null | undefined;
-                    type: "basic";
                     prompt: string;
+                    type: "basic";
                 } | {
                     createdAt?: {
                         isEqual?: any;
@@ -197,10 +803,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
-                    uid?: string | undefined;
-                    repeat?: import("yup").Maybe<number | undefined>;
                     sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                     sharedWithIssueIds?: string[] | undefined;
+                    uid?: string | undefined;
                     recommendedForIssueIds?: string[] | undefined;
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
@@ -237,10 +842,11 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     likesCount?: number | null | undefined;
                     timerSeconds?: import("yup").Maybe<number | undefined>;
                     isSuggested?: boolean | undefined;
-                    type: "breathingExercise";
-                    inFor: number;
-                    holdFor: number;
-                    outFor: number;
+                    type: "video";
+                    video: {
+                        storagePath?: string | null | undefined;
+                        url?: string | null | undefined;
+                    };
                 } | {
                     createdAt?: {
                         isEqual?: any;
@@ -256,121 +862,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
-                    uid?: string | undefined;
                     sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                     sharedWithIssueIds?: string[] | undefined;
-                    recommendedForIssueIds?: string[] | undefined;
-                    recommendedForIssueOrdinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
-                    prompt?: string | undefined;
-                    isShared?: boolean | undefined;
-                    description?: string | null | undefined;
-                    pastTenseTitle?: string | undefined;
-                    debriefAfterMinutes?: number | null | undefined;
-                    image?: {
-                        createdAt?: {
-                            isEqual?: any;
-                            toMillis?: any;
-                            seconds: number;
-                            nanoseconds: number;
-                            toDate: Function;
-                        } | null | undefined;
-                        updatedAt?: {
-                            isEqual?: any;
-                            toMillis?: any;
-                            seconds: number;
-                            nanoseconds: number;
-                            toDate: Function;
-                        } | null | undefined;
-                        localFilePath?: import("yup").Maybe<string | undefined>;
-                        isDeleted?: boolean | undefined;
-                        metadata?: {} | null | undefined;
-                        thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
-                        thumbnailUri?: import("yup").Maybe<string | undefined>;
-                        storagePath: string;
-                        url: string;
-                    } | undefined;
-                    backgroundColor?: string | undefined;
-                    likesCount?: number | null | undefined;
-                    timerSeconds?: import("yup").Maybe<number | undefined>;
-                    isSuggested?: boolean | undefined;
-                    type: "link";
-                    url: string;
-                } | {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
                     uid?: string | undefined;
-                    sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                    sharedWithIssueIds?: string[] | undefined;
-                    recommendedForIssueIds?: string[] | undefined;
-                    recommendedForIssueOrdinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
-                    prompt?: string | undefined;
-                    isShared?: boolean | undefined;
-                    description?: string | null | undefined;
-                    pastTenseTitle?: string | undefined;
-                    debriefAfterMinutes?: number | null | undefined;
-                    image?: {
-                        createdAt?: {
-                            isEqual?: any;
-                            toMillis?: any;
-                            seconds: number;
-                            nanoseconds: number;
-                            toDate: Function;
-                        } | null | undefined;
-                        updatedAt?: {
-                            isEqual?: any;
-                            toMillis?: any;
-                            seconds: number;
-                            nanoseconds: number;
-                            toDate: Function;
-                        } | null | undefined;
-                        localFilePath?: import("yup").Maybe<string | undefined>;
-                        isDeleted?: boolean | undefined;
-                        metadata?: {} | null | undefined;
-                        thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
-                        thumbnailUri?: import("yup").Maybe<string | undefined>;
-                        storagePath: string;
-                        url: string;
-                    } | undefined;
-                    backgroundColor?: string | undefined;
-                    likesCount?: number | null | undefined;
-                    timerSeconds?: import("yup").Maybe<number | undefined>;
-                    isSuggested?: boolean | undefined;
-                    type: "notifyASupportPerson";
-                    contactIds: string[];
-                } | {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    uid?: string | undefined;
-                    sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                    sharedWithIssueIds?: string[] | undefined;
                     recommendedForIssueIds?: string[] | undefined;
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
@@ -424,9 +918,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
-                    uid?: string | undefined;
                     sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                     sharedWithIssueIds?: string[] | undefined;
+                    uid?: string | undefined;
                     recommendedForIssueIds?: string[] | undefined;
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
@@ -463,73 +957,15 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     likesCount?: number | null | undefined;
                     timerSeconds?: import("yup").Maybe<number | undefined>;
                     isSuggested?: boolean | undefined;
-                    type: "steps";
-                    targetSteps: number;
-                } | {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    uid?: string | undefined;
-                    sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                    sharedWithIssueIds?: string[] | undefined;
-                    recommendedForIssueIds?: string[] | undefined;
-                    recommendedForIssueOrdinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
-                    prompt?: string | undefined;
-                    isShared?: boolean | undefined;
-                    description?: string | null | undefined;
-                    pastTenseTitle?: string | undefined;
-                    debriefAfterMinutes?: number | null | undefined;
-                    image?: {
-                        createdAt?: {
-                            isEqual?: any;
-                            toMillis?: any;
-                            seconds: number;
-                            nanoseconds: number;
-                            toDate: Function;
-                        } | null | undefined;
-                        updatedAt?: {
-                            isEqual?: any;
-                            toMillis?: any;
-                            seconds: number;
-                            nanoseconds: number;
-                            toDate: Function;
-                        } | null | undefined;
-                        localFilePath?: import("yup").Maybe<string | undefined>;
-                        isDeleted?: boolean | undefined;
-                        metadata?: {} | null | undefined;
-                        thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
-                        thumbnailUri?: import("yup").Maybe<string | undefined>;
-                        storagePath: string;
-                        url: string;
-                    } | undefined;
-                    backgroundColor?: string | undefined;
-                    likesCount?: number | null | undefined;
-                    timerSeconds?: import("yup").Maybe<number | undefined>;
-                    isSuggested?: boolean | undefined;
-                    type: "video";
-                    video: {
-                        storagePath?: string | null | undefined;
-                        url?: string | null | undefined;
-                    };
+                    url: string;
+                    type: "link";
                 };
+                doc: import("../schema/utils/firestore").DocumentReferenceLike<unknown>;
             };
         } | undefined;
         senderUid?: string | null | undefined;
-        type: "user";
         uid: string;
+        type: "user";
         date: {
             isEqual?: any;
             toMillis?: any;
@@ -539,7 +975,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         };
         dateString: string;
         role: "user";
-    }, "type" | "uid" | "date" | "dateString" | "role" | ("createdAt" | "updatedAt" | "text" | "audioFile" | "metricData" | "behaviorData" | "tacticsData" | "senderUid")>;
+    }, "uid" | "type" | "date" | "dateString" | "role" | ("createdAt" | "updatedAt" | "text" | "audioFile" | "metricData" | "behaviorData" | "tacticsData" | "senderUid")>;
     applicationFactory: import("factory.ts").Factory<import("..").ApplicationValue, keyof import("..").ApplicationValue>;
     dayFactory: import("factory.ts").Factory<import("..").DayValue, "uid" | "date" | "logsById">;
     issueFactory: import("factory.ts").Factory<{
@@ -569,9 +1005,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         isFeatured?: boolean | null | undefined;
         blandContext?: string | undefined;
         recommendedStrategies?: import("../schema/utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
-        gameplanTactics?: import("../schema/utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
+        reminderTactics?: import("../schema/utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
         name: string;
-    }, "name" | ("path" | "createdAt" | "updatedAt" | "ordinal" | "parentId" | "parentName" | "hasDebriefBehavior" | "synonyms" | "parentIds" | "parentNames" | "profileCount" | "isFeatured" | "blandContext" | "recommendedStrategies" | "gameplanTactics")>;
+    }, "name" | ("path" | "createdAt" | "updatedAt" | "ordinal" | "parentId" | "parentName" | "hasDebriefBehavior" | "synonyms" | "parentIds" | "parentNames" | "profileCount" | "isFeatured" | "blandContext" | "recommendedStrategies" | "reminderTactics")>;
     locationFactory: import("factory.ts").Factory<{
         createdAt?: {
             isEqual?: any;
@@ -615,19 +1051,455 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         } | null | undefined;
                         unit?: string | undefined;
                         dailyLimit?: number | undefined;
-                        skipGameplanAutoCreation?: boolean | undefined;
+                        skipReminderAutoCreation?: boolean | undefined;
                         name: string;
                         ordinal: number;
                         trackingType: NonNullable<"time" | "counter" | undefined>;
+                        tacticsById: {
+                            [x: string]: {
+                                data?: {
+                                    setAt: {
+                                        isEqual?: any;
+                                        toMillis?: any;
+                                        seconds: number;
+                                        nanoseconds: number;
+                                        toDate: Function;
+                                    };
+                                    isCompleted: NonNullable<boolean | undefined>;
+                                } | undefined;
+                                tactic: {
+                                    createdAt?: {
+                                        isEqual?: any;
+                                        toMillis?: any;
+                                        seconds: number;
+                                        nanoseconds: number;
+                                        toDate: Function;
+                                    } | null | undefined;
+                                    updatedAt?: {
+                                        isEqual?: any;
+                                        toMillis?: any;
+                                        seconds: number;
+                                        nanoseconds: number;
+                                        toDate: Function;
+                                    } | null | undefined;
+                                    sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
+                                    sharedWithIssueIds?: string[] | undefined;
+                                    uid?: string | undefined;
+                                    recommendedForIssueIds?: string[] | undefined;
+                                    recommendedForIssueOrdinals?: {
+                                        [x: string]: number;
+                                    } | null | undefined;
+                                    prompt?: string | undefined;
+                                    isShared?: boolean | undefined;
+                                    description?: string | null | undefined;
+                                    pastTenseTitle?: string | undefined;
+                                    debriefAfterMinutes?: number | null | undefined;
+                                    image?: {
+                                        createdAt?: {
+                                            isEqual?: any;
+                                            toMillis?: any;
+                                            seconds: number;
+                                            nanoseconds: number;
+                                            toDate: Function;
+                                        } | null | undefined;
+                                        updatedAt?: {
+                                            isEqual?: any;
+                                            toMillis?: any;
+                                            seconds: number;
+                                            nanoseconds: number;
+                                            toDate: Function;
+                                        } | null | undefined;
+                                        localFilePath?: import("yup").Maybe<string | undefined>;
+                                        isDeleted?: boolean | undefined;
+                                        metadata?: {} | null | undefined;
+                                        thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                                        thumbnailUri?: import("yup").Maybe<string | undefined>;
+                                        storagePath: string;
+                                        url: string;
+                                    } | undefined;
+                                    backgroundColor?: string | undefined;
+                                    likesCount?: number | null | undefined;
+                                    timerSeconds?: import("yup").Maybe<number | undefined>;
+                                    isSuggested?: boolean | undefined;
+                                    repeat?: import("yup").Maybe<number | undefined>;
+                                    type: "breathingExercise";
+                                    inFor: number;
+                                    holdFor: number;
+                                    outFor: number;
+                                } | {
+                                    createdAt?: {
+                                        isEqual?: any;
+                                        toMillis?: any;
+                                        seconds: number;
+                                        nanoseconds: number;
+                                        toDate: Function;
+                                    } | null | undefined;
+                                    updatedAt?: {
+                                        isEqual?: any;
+                                        toMillis?: any;
+                                        seconds: number;
+                                        nanoseconds: number;
+                                        toDate: Function;
+                                    } | null | undefined;
+                                    sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
+                                    sharedWithIssueIds?: string[] | undefined;
+                                    uid?: string | undefined;
+                                    recommendedForIssueIds?: string[] | undefined;
+                                    recommendedForIssueOrdinals?: {
+                                        [x: string]: number;
+                                    } | null | undefined;
+                                    prompt?: string | undefined;
+                                    isShared?: boolean | undefined;
+                                    description?: string | null | undefined;
+                                    pastTenseTitle?: string | undefined;
+                                    debriefAfterMinutes?: number | null | undefined;
+                                    image?: {
+                                        createdAt?: {
+                                            isEqual?: any;
+                                            toMillis?: any;
+                                            seconds: number;
+                                            nanoseconds: number;
+                                            toDate: Function;
+                                        } | null | undefined;
+                                        updatedAt?: {
+                                            isEqual?: any;
+                                            toMillis?: any;
+                                            seconds: number;
+                                            nanoseconds: number;
+                                            toDate: Function;
+                                        } | null | undefined;
+                                        localFilePath?: import("yup").Maybe<string | undefined>;
+                                        isDeleted?: boolean | undefined;
+                                        metadata?: {} | null | undefined;
+                                        thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                                        thumbnailUri?: import("yup").Maybe<string | undefined>;
+                                        storagePath: string;
+                                        url: string;
+                                    } | undefined;
+                                    backgroundColor?: string | undefined;
+                                    likesCount?: number | null | undefined;
+                                    timerSeconds?: import("yup").Maybe<number | undefined>;
+                                    isSuggested?: boolean | undefined;
+                                    type: "notifyASupportPerson";
+                                    contactIds: string[];
+                                } | {
+                                    createdAt?: {
+                                        isEqual?: any;
+                                        toMillis?: any;
+                                        seconds: number;
+                                        nanoseconds: number;
+                                        toDate: Function;
+                                    } | null | undefined;
+                                    updatedAt?: {
+                                        isEqual?: any;
+                                        toMillis?: any;
+                                        seconds: number;
+                                        nanoseconds: number;
+                                        toDate: Function;
+                                    } | null | undefined;
+                                    sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
+                                    sharedWithIssueIds?: string[] | undefined;
+                                    uid?: string | undefined;
+                                    recommendedForIssueIds?: string[] | undefined;
+                                    recommendedForIssueOrdinals?: {
+                                        [x: string]: number;
+                                    } | null | undefined;
+                                    prompt?: string | undefined;
+                                    isShared?: boolean | undefined;
+                                    description?: string | null | undefined;
+                                    pastTenseTitle?: string | undefined;
+                                    debriefAfterMinutes?: number | null | undefined;
+                                    image?: {
+                                        createdAt?: {
+                                            isEqual?: any;
+                                            toMillis?: any;
+                                            seconds: number;
+                                            nanoseconds: number;
+                                            toDate: Function;
+                                        } | null | undefined;
+                                        updatedAt?: {
+                                            isEqual?: any;
+                                            toMillis?: any;
+                                            seconds: number;
+                                            nanoseconds: number;
+                                            toDate: Function;
+                                        } | null | undefined;
+                                        localFilePath?: import("yup").Maybe<string | undefined>;
+                                        isDeleted?: boolean | undefined;
+                                        metadata?: {} | null | undefined;
+                                        thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                                        thumbnailUri?: import("yup").Maybe<string | undefined>;
+                                        storagePath: string;
+                                        url: string;
+                                    } | undefined;
+                                    backgroundColor?: string | undefined;
+                                    likesCount?: number | null | undefined;
+                                    timerSeconds?: import("yup").Maybe<number | undefined>;
+                                    isSuggested?: boolean | undefined;
+                                    type: "steps";
+                                    targetSteps: number;
+                                } | {
+                                    createdAt?: {
+                                        isEqual?: any;
+                                        toMillis?: any;
+                                        seconds: number;
+                                        nanoseconds: number;
+                                        toDate: Function;
+                                    } | null | undefined;
+                                    updatedAt?: {
+                                        isEqual?: any;
+                                        toMillis?: any;
+                                        seconds: number;
+                                        nanoseconds: number;
+                                        toDate: Function;
+                                    } | null | undefined;
+                                    sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
+                                    sharedWithIssueIds?: string[] | undefined;
+                                    uid?: string | undefined;
+                                    recommendedForIssueIds?: string[] | undefined;
+                                    recommendedForIssueOrdinals?: {
+                                        [x: string]: number;
+                                    } | null | undefined;
+                                    isShared?: boolean | undefined;
+                                    description?: string | null | undefined;
+                                    pastTenseTitle?: string | undefined;
+                                    debriefAfterMinutes?: number | null | undefined;
+                                    image?: {
+                                        createdAt?: {
+                                            isEqual?: any;
+                                            toMillis?: any;
+                                            seconds: number;
+                                            nanoseconds: number;
+                                            toDate: Function;
+                                        } | null | undefined;
+                                        updatedAt?: {
+                                            isEqual?: any;
+                                            toMillis?: any;
+                                            seconds: number;
+                                            nanoseconds: number;
+                                            toDate: Function;
+                                        } | null | undefined;
+                                        localFilePath?: import("yup").Maybe<string | undefined>;
+                                        isDeleted?: boolean | undefined;
+                                        metadata?: {} | null | undefined;
+                                        thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                                        thumbnailUri?: import("yup").Maybe<string | undefined>;
+                                        storagePath: string;
+                                        url: string;
+                                    } | undefined;
+                                    backgroundColor?: string | undefined;
+                                    likesCount?: number | null | undefined;
+                                    timerSeconds?: import("yup").Maybe<number | undefined>;
+                                    isSuggested?: boolean | undefined;
+                                    audio?: {
+                                        createdAt?: {
+                                            isEqual?: any;
+                                            toMillis?: any;
+                                            seconds: number;
+                                            nanoseconds: number;
+                                            toDate: Function;
+                                        } | null | undefined;
+                                        updatedAt?: {
+                                            isEqual?: any;
+                                            toMillis?: any;
+                                            seconds: number;
+                                            nanoseconds: number;
+                                            toDate: Function;
+                                        } | null | undefined;
+                                        localFilePath?: import("yup").Maybe<string | undefined>;
+                                        isDeleted?: boolean | undefined;
+                                        metadata?: {} | null | undefined;
+                                        thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                                        thumbnailUri?: import("yup").Maybe<string | undefined>;
+                                        storagePath: string;
+                                        url: string;
+                                    } | null | undefined;
+                                    prompt: string;
+                                    type: "basic";
+                                } | {
+                                    createdAt?: {
+                                        isEqual?: any;
+                                        toMillis?: any;
+                                        seconds: number;
+                                        nanoseconds: number;
+                                        toDate: Function;
+                                    } | null | undefined;
+                                    updatedAt?: {
+                                        isEqual?: any;
+                                        toMillis?: any;
+                                        seconds: number;
+                                        nanoseconds: number;
+                                        toDate: Function;
+                                    } | null | undefined;
+                                    sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
+                                    sharedWithIssueIds?: string[] | undefined;
+                                    uid?: string | undefined;
+                                    recommendedForIssueIds?: string[] | undefined;
+                                    recommendedForIssueOrdinals?: {
+                                        [x: string]: number;
+                                    } | null | undefined;
+                                    prompt?: string | undefined;
+                                    isShared?: boolean | undefined;
+                                    description?: string | null | undefined;
+                                    pastTenseTitle?: string | undefined;
+                                    debriefAfterMinutes?: number | null | undefined;
+                                    image?: {
+                                        createdAt?: {
+                                            isEqual?: any;
+                                            toMillis?: any;
+                                            seconds: number;
+                                            nanoseconds: number;
+                                            toDate: Function;
+                                        } | null | undefined;
+                                        updatedAt?: {
+                                            isEqual?: any;
+                                            toMillis?: any;
+                                            seconds: number;
+                                            nanoseconds: number;
+                                            toDate: Function;
+                                        } | null | undefined;
+                                        localFilePath?: import("yup").Maybe<string | undefined>;
+                                        isDeleted?: boolean | undefined;
+                                        metadata?: {} | null | undefined;
+                                        thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                                        thumbnailUri?: import("yup").Maybe<string | undefined>;
+                                        storagePath: string;
+                                        url: string;
+                                    } | undefined;
+                                    backgroundColor?: string | undefined;
+                                    likesCount?: number | null | undefined;
+                                    timerSeconds?: import("yup").Maybe<number | undefined>;
+                                    isSuggested?: boolean | undefined;
+                                    type: "video";
+                                    video: {
+                                        storagePath?: string | null | undefined;
+                                        url?: string | null | undefined;
+                                    };
+                                } | {
+                                    createdAt?: {
+                                        isEqual?: any;
+                                        toMillis?: any;
+                                        seconds: number;
+                                        nanoseconds: number;
+                                        toDate: Function;
+                                    } | null | undefined;
+                                    updatedAt?: {
+                                        isEqual?: any;
+                                        toMillis?: any;
+                                        seconds: number;
+                                        nanoseconds: number;
+                                        toDate: Function;
+                                    } | null | undefined;
+                                    sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
+                                    sharedWithIssueIds?: string[] | undefined;
+                                    uid?: string | undefined;
+                                    recommendedForIssueIds?: string[] | undefined;
+                                    recommendedForIssueOrdinals?: {
+                                        [x: string]: number;
+                                    } | null | undefined;
+                                    prompt?: string | undefined;
+                                    isShared?: boolean | undefined;
+                                    description?: string | null | undefined;
+                                    pastTenseTitle?: string | undefined;
+                                    debriefAfterMinutes?: number | null | undefined;
+                                    image?: {
+                                        createdAt?: {
+                                            isEqual?: any;
+                                            toMillis?: any;
+                                            seconds: number;
+                                            nanoseconds: number;
+                                            toDate: Function;
+                                        } | null | undefined;
+                                        updatedAt?: {
+                                            isEqual?: any;
+                                            toMillis?: any;
+                                            seconds: number;
+                                            nanoseconds: number;
+                                            toDate: Function;
+                                        } | null | undefined;
+                                        localFilePath?: import("yup").Maybe<string | undefined>;
+                                        isDeleted?: boolean | undefined;
+                                        metadata?: {} | null | undefined;
+                                        thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                                        thumbnailUri?: import("yup").Maybe<string | undefined>;
+                                        storagePath: string;
+                                        url: string;
+                                    } | undefined;
+                                    backgroundColor?: string | undefined;
+                                    likesCount?: number | null | undefined;
+                                    timerSeconds?: import("yup").Maybe<number | undefined>;
+                                    isSuggested?: boolean | undefined;
+                                    type: "notifySupportGroup";
+                                    supportGroup: import("../schema/utils/firestore").DocumentReferenceLike<unknown>;
+                                } | {
+                                    createdAt?: {
+                                        isEqual?: any;
+                                        toMillis?: any;
+                                        seconds: number;
+                                        nanoseconds: number;
+                                        toDate: Function;
+                                    } | null | undefined;
+                                    updatedAt?: {
+                                        isEqual?: any;
+                                        toMillis?: any;
+                                        seconds: number;
+                                        nanoseconds: number;
+                                        toDate: Function;
+                                    } | null | undefined;
+                                    sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
+                                    sharedWithIssueIds?: string[] | undefined;
+                                    uid?: string | undefined;
+                                    recommendedForIssueIds?: string[] | undefined;
+                                    recommendedForIssueOrdinals?: {
+                                        [x: string]: number;
+                                    } | null | undefined;
+                                    prompt?: string | undefined;
+                                    isShared?: boolean | undefined;
+                                    description?: string | null | undefined;
+                                    pastTenseTitle?: string | undefined;
+                                    debriefAfterMinutes?: number | null | undefined;
+                                    image?: {
+                                        createdAt?: {
+                                            isEqual?: any;
+                                            toMillis?: any;
+                                            seconds: number;
+                                            nanoseconds: number;
+                                            toDate: Function;
+                                        } | null | undefined;
+                                        updatedAt?: {
+                                            isEqual?: any;
+                                            toMillis?: any;
+                                            seconds: number;
+                                            nanoseconds: number;
+                                            toDate: Function;
+                                        } | null | undefined;
+                                        localFilePath?: import("yup").Maybe<string | undefined>;
+                                        isDeleted?: boolean | undefined;
+                                        metadata?: {} | null | undefined;
+                                        thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                                        thumbnailUri?: import("yup").Maybe<string | undefined>;
+                                        storagePath: string;
+                                        url: string;
+                                    } | undefined;
+                                    backgroundColor?: string | undefined;
+                                    likesCount?: number | null | undefined;
+                                    timerSeconds?: import("yup").Maybe<number | undefined>;
+                                    isSuggested?: boolean | undefined;
+                                    url: string;
+                                    type: "link";
+                                };
+                                doc: import("../schema/utils/firestore").DocumentReferenceLike<unknown>;
+                            };
+                        };
                         isHelpful: boolean | null;
                     };
                     data: {
+                        counterValue?: number | undefined;
+                        timeSeconds?: number | undefined;
                         label?: {
                             color?: string | undefined;
                             text: string;
                         } | null | undefined;
-                        counterValue?: number | undefined;
-                        timeSeconds?: number | undefined;
                         formattedValue: string;
                     };
                 };
@@ -687,7 +1559,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             toDate: Function;
         } | null | undefined;
         activeImpulseDoc?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
-        defaultGameplanDoc?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
+        defaultReminderDoc?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
         tourCompletedAt?: {
             isEqual?: any;
             toMillis?: any;
@@ -730,8 +1602,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             [x: string]: string;
         };
         timezone: string;
-    }, "uids" | "verificationCode" | "dayReviewTime" | "recentSummaries" | "timezone" | ("createdAt" | "updatedAt" | "parentIds" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseDoc" | "defaultGameplanDoc" | "tourCompletedAt" | "scheduledNotificationIds" | "whatsappStrategyDoc" | "onboardedWithZaraAt" | "currentAppState" | "expoPushToken" | "notificationPreferences" | "goal" | "isReadyForTour" | "isOnboardingComplete" | "sendDebriefRemindersAfterMinutes" | "androidPermissions" | "historicalInsights" | "isTourDismissed" | "region" | "enableZara")>;
-    gameplanFactory: import("factory.ts").Factory<{
+    }, "uids" | "verificationCode" | "dayReviewTime" | "recentSummaries" | "timezone" | ("createdAt" | "updatedAt" | "parentIds" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseDoc" | "defaultReminderDoc" | "tourCompletedAt" | "scheduledNotificationIds" | "whatsappStrategyDoc" | "onboardedWithZaraAt" | "currentAppState" | "expoPushToken" | "notificationPreferences" | "goal" | "isReadyForTour" | "isOnboardingComplete" | "sendDebriefRemindersAfterMinutes" | "androidPermissions" | "historicalInsights" | "isTourDismissed" | "region" | "enableZara")>;
+    reminderFactory: import("factory.ts").Factory<{
         createdAt?: {
             isEqual?: any;
             toMillis?: any;
@@ -761,7 +1633,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     };
                     isCompleted: NonNullable<boolean | undefined>;
                 } | undefined;
-                doc: import("../schema/utils/firestore").DocumentReferenceLike<unknown>;
                 tactic: {
                     createdAt?: {
                         isEqual?: any;
@@ -777,9 +1648,180 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
-                    uid?: string | undefined;
                     sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                     sharedWithIssueIds?: string[] | undefined;
+                    uid?: string | undefined;
+                    recommendedForIssueIds?: string[] | undefined;
+                    recommendedForIssueOrdinals?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                    prompt?: string | undefined;
+                    isShared?: boolean | undefined;
+                    description?: string | null | undefined;
+                    pastTenseTitle?: string | undefined;
+                    debriefAfterMinutes?: number | null | undefined;
+                    image?: {
+                        createdAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            seconds: number;
+                            nanoseconds: number;
+                            toDate: Function;
+                        } | null | undefined;
+                        updatedAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            seconds: number;
+                            nanoseconds: number;
+                            toDate: Function;
+                        } | null | undefined;
+                        localFilePath?: import("yup").Maybe<string | undefined>;
+                        isDeleted?: boolean | undefined;
+                        metadata?: {} | null | undefined;
+                        thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                        thumbnailUri?: import("yup").Maybe<string | undefined>;
+                        storagePath: string;
+                        url: string;
+                    } | undefined;
+                    backgroundColor?: string | undefined;
+                    likesCount?: number | null | undefined;
+                    timerSeconds?: import("yup").Maybe<number | undefined>;
+                    isSuggested?: boolean | undefined;
+                    repeat?: import("yup").Maybe<number | undefined>;
+                    type: "breathingExercise";
+                    inFor: number;
+                    holdFor: number;
+                    outFor: number;
+                } | {
+                    createdAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
+                    sharedWithIssueIds?: string[] | undefined;
+                    uid?: string | undefined;
+                    recommendedForIssueIds?: string[] | undefined;
+                    recommendedForIssueOrdinals?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                    prompt?: string | undefined;
+                    isShared?: boolean | undefined;
+                    description?: string | null | undefined;
+                    pastTenseTitle?: string | undefined;
+                    debriefAfterMinutes?: number | null | undefined;
+                    image?: {
+                        createdAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            seconds: number;
+                            nanoseconds: number;
+                            toDate: Function;
+                        } | null | undefined;
+                        updatedAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            seconds: number;
+                            nanoseconds: number;
+                            toDate: Function;
+                        } | null | undefined;
+                        localFilePath?: import("yup").Maybe<string | undefined>;
+                        isDeleted?: boolean | undefined;
+                        metadata?: {} | null | undefined;
+                        thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                        thumbnailUri?: import("yup").Maybe<string | undefined>;
+                        storagePath: string;
+                        url: string;
+                    } | undefined;
+                    backgroundColor?: string | undefined;
+                    likesCount?: number | null | undefined;
+                    timerSeconds?: import("yup").Maybe<number | undefined>;
+                    isSuggested?: boolean | undefined;
+                    type: "notifyASupportPerson";
+                    contactIds: string[];
+                } | {
+                    createdAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
+                    sharedWithIssueIds?: string[] | undefined;
+                    uid?: string | undefined;
+                    recommendedForIssueIds?: string[] | undefined;
+                    recommendedForIssueOrdinals?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                    prompt?: string | undefined;
+                    isShared?: boolean | undefined;
+                    description?: string | null | undefined;
+                    pastTenseTitle?: string | undefined;
+                    debriefAfterMinutes?: number | null | undefined;
+                    image?: {
+                        createdAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            seconds: number;
+                            nanoseconds: number;
+                            toDate: Function;
+                        } | null | undefined;
+                        updatedAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            seconds: number;
+                            nanoseconds: number;
+                            toDate: Function;
+                        } | null | undefined;
+                        localFilePath?: import("yup").Maybe<string | undefined>;
+                        isDeleted?: boolean | undefined;
+                        metadata?: {} | null | undefined;
+                        thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                        thumbnailUri?: import("yup").Maybe<string | undefined>;
+                        storagePath: string;
+                        url: string;
+                    } | undefined;
+                    backgroundColor?: string | undefined;
+                    likesCount?: number | null | undefined;
+                    timerSeconds?: import("yup").Maybe<number | undefined>;
+                    isSuggested?: boolean | undefined;
+                    type: "steps";
+                    targetSteps: number;
+                } | {
+                    createdAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
+                    sharedWithIssueIds?: string[] | undefined;
+                    uid?: string | undefined;
                     recommendedForIssueIds?: string[] | undefined;
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
@@ -838,8 +1880,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         storagePath: string;
                         url: string;
                     } | null | undefined;
-                    type: "basic";
                     prompt: string;
+                    type: "basic";
                 } | {
                     createdAt?: {
                         isEqual?: any;
@@ -855,10 +1897,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
-                    uid?: string | undefined;
-                    repeat?: import("yup").Maybe<number | undefined>;
                     sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                     sharedWithIssueIds?: string[] | undefined;
+                    uid?: string | undefined;
                     recommendedForIssueIds?: string[] | undefined;
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
@@ -895,10 +1936,11 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     likesCount?: number | null | undefined;
                     timerSeconds?: import("yup").Maybe<number | undefined>;
                     isSuggested?: boolean | undefined;
-                    type: "breathingExercise";
-                    inFor: number;
-                    holdFor: number;
-                    outFor: number;
+                    type: "video";
+                    video: {
+                        storagePath?: string | null | undefined;
+                        url?: string | null | undefined;
+                    };
                 } | {
                     createdAt?: {
                         isEqual?: any;
@@ -914,121 +1956,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
-                    uid?: string | undefined;
                     sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                     sharedWithIssueIds?: string[] | undefined;
-                    recommendedForIssueIds?: string[] | undefined;
-                    recommendedForIssueOrdinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
-                    prompt?: string | undefined;
-                    isShared?: boolean | undefined;
-                    description?: string | null | undefined;
-                    pastTenseTitle?: string | undefined;
-                    debriefAfterMinutes?: number | null | undefined;
-                    image?: {
-                        createdAt?: {
-                            isEqual?: any;
-                            toMillis?: any;
-                            seconds: number;
-                            nanoseconds: number;
-                            toDate: Function;
-                        } | null | undefined;
-                        updatedAt?: {
-                            isEqual?: any;
-                            toMillis?: any;
-                            seconds: number;
-                            nanoseconds: number;
-                            toDate: Function;
-                        } | null | undefined;
-                        localFilePath?: import("yup").Maybe<string | undefined>;
-                        isDeleted?: boolean | undefined;
-                        metadata?: {} | null | undefined;
-                        thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
-                        thumbnailUri?: import("yup").Maybe<string | undefined>;
-                        storagePath: string;
-                        url: string;
-                    } | undefined;
-                    backgroundColor?: string | undefined;
-                    likesCount?: number | null | undefined;
-                    timerSeconds?: import("yup").Maybe<number | undefined>;
-                    isSuggested?: boolean | undefined;
-                    type: "link";
-                    url: string;
-                } | {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
                     uid?: string | undefined;
-                    sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                    sharedWithIssueIds?: string[] | undefined;
-                    recommendedForIssueIds?: string[] | undefined;
-                    recommendedForIssueOrdinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
-                    prompt?: string | undefined;
-                    isShared?: boolean | undefined;
-                    description?: string | null | undefined;
-                    pastTenseTitle?: string | undefined;
-                    debriefAfterMinutes?: number | null | undefined;
-                    image?: {
-                        createdAt?: {
-                            isEqual?: any;
-                            toMillis?: any;
-                            seconds: number;
-                            nanoseconds: number;
-                            toDate: Function;
-                        } | null | undefined;
-                        updatedAt?: {
-                            isEqual?: any;
-                            toMillis?: any;
-                            seconds: number;
-                            nanoseconds: number;
-                            toDate: Function;
-                        } | null | undefined;
-                        localFilePath?: import("yup").Maybe<string | undefined>;
-                        isDeleted?: boolean | undefined;
-                        metadata?: {} | null | undefined;
-                        thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
-                        thumbnailUri?: import("yup").Maybe<string | undefined>;
-                        storagePath: string;
-                        url: string;
-                    } | undefined;
-                    backgroundColor?: string | undefined;
-                    likesCount?: number | null | undefined;
-                    timerSeconds?: import("yup").Maybe<number | undefined>;
-                    isSuggested?: boolean | undefined;
-                    type: "notifyASupportPerson";
-                    contactIds: string[];
-                } | {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    uid?: string | undefined;
-                    sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                    sharedWithIssueIds?: string[] | undefined;
                     recommendedForIssueIds?: string[] | undefined;
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
@@ -1082,9 +2012,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
-                    uid?: string | undefined;
                     sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                     sharedWithIssueIds?: string[] | undefined;
+                    uid?: string | undefined;
                     recommendedForIssueIds?: string[] | undefined;
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
@@ -1121,68 +2051,10 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     likesCount?: number | null | undefined;
                     timerSeconds?: import("yup").Maybe<number | undefined>;
                     isSuggested?: boolean | undefined;
-                    type: "steps";
-                    targetSteps: number;
-                } | {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    uid?: string | undefined;
-                    sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                    sharedWithIssueIds?: string[] | undefined;
-                    recommendedForIssueIds?: string[] | undefined;
-                    recommendedForIssueOrdinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
-                    prompt?: string | undefined;
-                    isShared?: boolean | undefined;
-                    description?: string | null | undefined;
-                    pastTenseTitle?: string | undefined;
-                    debriefAfterMinutes?: number | null | undefined;
-                    image?: {
-                        createdAt?: {
-                            isEqual?: any;
-                            toMillis?: any;
-                            seconds: number;
-                            nanoseconds: number;
-                            toDate: Function;
-                        } | null | undefined;
-                        updatedAt?: {
-                            isEqual?: any;
-                            toMillis?: any;
-                            seconds: number;
-                            nanoseconds: number;
-                            toDate: Function;
-                        } | null | undefined;
-                        localFilePath?: import("yup").Maybe<string | undefined>;
-                        isDeleted?: boolean | undefined;
-                        metadata?: {} | null | undefined;
-                        thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
-                        thumbnailUri?: import("yup").Maybe<string | undefined>;
-                        storagePath: string;
-                        url: string;
-                    } | undefined;
-                    backgroundColor?: string | undefined;
-                    likesCount?: number | null | undefined;
-                    timerSeconds?: import("yup").Maybe<number | undefined>;
-                    isSuggested?: boolean | undefined;
-                    type: "video";
-                    video: {
-                        storagePath?: string | null | undefined;
-                        url?: string | null | undefined;
-                    };
+                    url: string;
+                    type: "link";
                 };
+                doc: import("../schema/utils/firestore").DocumentReferenceLike<unknown>;
             };
         };
         checkboxLabel: string;
@@ -1192,7 +2064,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             weekdays: (number | undefined)[];
         }[];
     }, "name" | "type" | "tacticsById" | "checkboxLabel" | "schedule" | ("createdAt" | "updatedAt" | "ordinal")>;
-    tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "type" | "uid" | "sourceFile" | "sharedWithIssueIds" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "prompt" | "isShared" | "description" | "pastTenseTitle" | "debriefAfterMinutes" | "image" | "backgroundColor" | "likesCount" | "timerSeconds" | "isSuggested">;
+    tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "sourceFile" | "sharedWithIssueIds" | "uid" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "prompt" | "isShared" | "description" | "type" | "pastTenseTitle" | "debriefAfterMinutes" | "image" | "backgroundColor" | "likesCount" | "timerSeconds" | "isSuggested">;
     roadmapFactory: import("factory.ts").Factory<{
         createdAt?: {
             isEqual?: any;
@@ -1258,10 +2130,446 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         } | null | undefined;
         unit?: string | undefined;
         dailyLimit?: number | undefined;
-        skipGameplanAutoCreation?: boolean | undefined;
+        skipReminderAutoCreation?: boolean | undefined;
         name: string;
         ordinal: number;
         trackingType: NonNullable<"time" | "counter" | undefined>;
+        tacticsById: {
+            [x: string]: {
+                data?: {
+                    setAt: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    };
+                    isCompleted: NonNullable<boolean | undefined>;
+                } | undefined;
+                tactic: {
+                    createdAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
+                    sharedWithIssueIds?: string[] | undefined;
+                    uid?: string | undefined;
+                    recommendedForIssueIds?: string[] | undefined;
+                    recommendedForIssueOrdinals?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                    prompt?: string | undefined;
+                    isShared?: boolean | undefined;
+                    description?: string | null | undefined;
+                    pastTenseTitle?: string | undefined;
+                    debriefAfterMinutes?: number | null | undefined;
+                    image?: {
+                        createdAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            seconds: number;
+                            nanoseconds: number;
+                            toDate: Function;
+                        } | null | undefined;
+                        updatedAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            seconds: number;
+                            nanoseconds: number;
+                            toDate: Function;
+                        } | null | undefined;
+                        localFilePath?: import("yup").Maybe<string | undefined>;
+                        isDeleted?: boolean | undefined;
+                        metadata?: {} | null | undefined;
+                        thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                        thumbnailUri?: import("yup").Maybe<string | undefined>;
+                        storagePath: string;
+                        url: string;
+                    } | undefined;
+                    backgroundColor?: string | undefined;
+                    likesCount?: number | null | undefined;
+                    timerSeconds?: import("yup").Maybe<number | undefined>;
+                    isSuggested?: boolean | undefined;
+                    repeat?: import("yup").Maybe<number | undefined>;
+                    type: "breathingExercise";
+                    inFor: number;
+                    holdFor: number;
+                    outFor: number;
+                } | {
+                    createdAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
+                    sharedWithIssueIds?: string[] | undefined;
+                    uid?: string | undefined;
+                    recommendedForIssueIds?: string[] | undefined;
+                    recommendedForIssueOrdinals?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                    prompt?: string | undefined;
+                    isShared?: boolean | undefined;
+                    description?: string | null | undefined;
+                    pastTenseTitle?: string | undefined;
+                    debriefAfterMinutes?: number | null | undefined;
+                    image?: {
+                        createdAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            seconds: number;
+                            nanoseconds: number;
+                            toDate: Function;
+                        } | null | undefined;
+                        updatedAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            seconds: number;
+                            nanoseconds: number;
+                            toDate: Function;
+                        } | null | undefined;
+                        localFilePath?: import("yup").Maybe<string | undefined>;
+                        isDeleted?: boolean | undefined;
+                        metadata?: {} | null | undefined;
+                        thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                        thumbnailUri?: import("yup").Maybe<string | undefined>;
+                        storagePath: string;
+                        url: string;
+                    } | undefined;
+                    backgroundColor?: string | undefined;
+                    likesCount?: number | null | undefined;
+                    timerSeconds?: import("yup").Maybe<number | undefined>;
+                    isSuggested?: boolean | undefined;
+                    type: "notifyASupportPerson";
+                    contactIds: string[];
+                } | {
+                    createdAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
+                    sharedWithIssueIds?: string[] | undefined;
+                    uid?: string | undefined;
+                    recommendedForIssueIds?: string[] | undefined;
+                    recommendedForIssueOrdinals?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                    prompt?: string | undefined;
+                    isShared?: boolean | undefined;
+                    description?: string | null | undefined;
+                    pastTenseTitle?: string | undefined;
+                    debriefAfterMinutes?: number | null | undefined;
+                    image?: {
+                        createdAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            seconds: number;
+                            nanoseconds: number;
+                            toDate: Function;
+                        } | null | undefined;
+                        updatedAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            seconds: number;
+                            nanoseconds: number;
+                            toDate: Function;
+                        } | null | undefined;
+                        localFilePath?: import("yup").Maybe<string | undefined>;
+                        isDeleted?: boolean | undefined;
+                        metadata?: {} | null | undefined;
+                        thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                        thumbnailUri?: import("yup").Maybe<string | undefined>;
+                        storagePath: string;
+                        url: string;
+                    } | undefined;
+                    backgroundColor?: string | undefined;
+                    likesCount?: number | null | undefined;
+                    timerSeconds?: import("yup").Maybe<number | undefined>;
+                    isSuggested?: boolean | undefined;
+                    type: "steps";
+                    targetSteps: number;
+                } | {
+                    createdAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
+                    sharedWithIssueIds?: string[] | undefined;
+                    uid?: string | undefined;
+                    recommendedForIssueIds?: string[] | undefined;
+                    recommendedForIssueOrdinals?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                    isShared?: boolean | undefined;
+                    description?: string | null | undefined;
+                    pastTenseTitle?: string | undefined;
+                    debriefAfterMinutes?: number | null | undefined;
+                    image?: {
+                        createdAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            seconds: number;
+                            nanoseconds: number;
+                            toDate: Function;
+                        } | null | undefined;
+                        updatedAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            seconds: number;
+                            nanoseconds: number;
+                            toDate: Function;
+                        } | null | undefined;
+                        localFilePath?: import("yup").Maybe<string | undefined>;
+                        isDeleted?: boolean | undefined;
+                        metadata?: {} | null | undefined;
+                        thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                        thumbnailUri?: import("yup").Maybe<string | undefined>;
+                        storagePath: string;
+                        url: string;
+                    } | undefined;
+                    backgroundColor?: string | undefined;
+                    likesCount?: number | null | undefined;
+                    timerSeconds?: import("yup").Maybe<number | undefined>;
+                    isSuggested?: boolean | undefined;
+                    audio?: {
+                        createdAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            seconds: number;
+                            nanoseconds: number;
+                            toDate: Function;
+                        } | null | undefined;
+                        updatedAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            seconds: number;
+                            nanoseconds: number;
+                            toDate: Function;
+                        } | null | undefined;
+                        localFilePath?: import("yup").Maybe<string | undefined>;
+                        isDeleted?: boolean | undefined;
+                        metadata?: {} | null | undefined;
+                        thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                        thumbnailUri?: import("yup").Maybe<string | undefined>;
+                        storagePath: string;
+                        url: string;
+                    } | null | undefined;
+                    prompt: string;
+                    type: "basic";
+                } | {
+                    createdAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
+                    sharedWithIssueIds?: string[] | undefined;
+                    uid?: string | undefined;
+                    recommendedForIssueIds?: string[] | undefined;
+                    recommendedForIssueOrdinals?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                    prompt?: string | undefined;
+                    isShared?: boolean | undefined;
+                    description?: string | null | undefined;
+                    pastTenseTitle?: string | undefined;
+                    debriefAfterMinutes?: number | null | undefined;
+                    image?: {
+                        createdAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            seconds: number;
+                            nanoseconds: number;
+                            toDate: Function;
+                        } | null | undefined;
+                        updatedAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            seconds: number;
+                            nanoseconds: number;
+                            toDate: Function;
+                        } | null | undefined;
+                        localFilePath?: import("yup").Maybe<string | undefined>;
+                        isDeleted?: boolean | undefined;
+                        metadata?: {} | null | undefined;
+                        thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                        thumbnailUri?: import("yup").Maybe<string | undefined>;
+                        storagePath: string;
+                        url: string;
+                    } | undefined;
+                    backgroundColor?: string | undefined;
+                    likesCount?: number | null | undefined;
+                    timerSeconds?: import("yup").Maybe<number | undefined>;
+                    isSuggested?: boolean | undefined;
+                    type: "video";
+                    video: {
+                        storagePath?: string | null | undefined;
+                        url?: string | null | undefined;
+                    };
+                } | {
+                    createdAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
+                    sharedWithIssueIds?: string[] | undefined;
+                    uid?: string | undefined;
+                    recommendedForIssueIds?: string[] | undefined;
+                    recommendedForIssueOrdinals?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                    prompt?: string | undefined;
+                    isShared?: boolean | undefined;
+                    description?: string | null | undefined;
+                    pastTenseTitle?: string | undefined;
+                    debriefAfterMinutes?: number | null | undefined;
+                    image?: {
+                        createdAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            seconds: number;
+                            nanoseconds: number;
+                            toDate: Function;
+                        } | null | undefined;
+                        updatedAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            seconds: number;
+                            nanoseconds: number;
+                            toDate: Function;
+                        } | null | undefined;
+                        localFilePath?: import("yup").Maybe<string | undefined>;
+                        isDeleted?: boolean | undefined;
+                        metadata?: {} | null | undefined;
+                        thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                        thumbnailUri?: import("yup").Maybe<string | undefined>;
+                        storagePath: string;
+                        url: string;
+                    } | undefined;
+                    backgroundColor?: string | undefined;
+                    likesCount?: number | null | undefined;
+                    timerSeconds?: import("yup").Maybe<number | undefined>;
+                    isSuggested?: boolean | undefined;
+                    type: "notifySupportGroup";
+                    supportGroup: import("../schema/utils/firestore").DocumentReferenceLike<unknown>;
+                } | {
+                    createdAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
+                    sharedWithIssueIds?: string[] | undefined;
+                    uid?: string | undefined;
+                    recommendedForIssueIds?: string[] | undefined;
+                    recommendedForIssueOrdinals?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                    prompt?: string | undefined;
+                    isShared?: boolean | undefined;
+                    description?: string | null | undefined;
+                    pastTenseTitle?: string | undefined;
+                    debriefAfterMinutes?: number | null | undefined;
+                    image?: {
+                        createdAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            seconds: number;
+                            nanoseconds: number;
+                            toDate: Function;
+                        } | null | undefined;
+                        updatedAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            seconds: number;
+                            nanoseconds: number;
+                            toDate: Function;
+                        } | null | undefined;
+                        localFilePath?: import("yup").Maybe<string | undefined>;
+                        isDeleted?: boolean | undefined;
+                        metadata?: {} | null | undefined;
+                        thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                        thumbnailUri?: import("yup").Maybe<string | undefined>;
+                        storagePath: string;
+                        url: string;
+                    } | undefined;
+                    backgroundColor?: string | undefined;
+                    likesCount?: number | null | undefined;
+                    timerSeconds?: import("yup").Maybe<number | undefined>;
+                    isSuggested?: boolean | undefined;
+                    url: string;
+                    type: "link";
+                };
+                doc: import("../schema/utils/firestore").DocumentReferenceLike<unknown>;
+            };
+        };
         isHelpful: boolean | null;
-    }, "name" | "ordinal" | "trackingType" | "isHelpful" | ("createdAt" | "updatedAt" | "unit" | "dailyLimit" | "skipGameplanAutoCreation")>;
+    }, "name" | "ordinal" | "trackingType" | "tacticsById" | "isHelpful" | ("createdAt" | "updatedAt" | "unit" | "dailyLimit" | "skipReminderAutoCreation")>;
 };

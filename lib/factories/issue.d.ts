@@ -27,6 +27,6 @@ export declare const makeIssueFactory: (TimestampKlass: typeof TimestampLike) =>
     isFeatured?: boolean | null | undefined;
     blandContext?: string | undefined;
     recommendedStrategies?: import("../schema/utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
-    gameplanTactics?: import("../schema/utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
+    reminderTactics?: import("../schema/utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
     name: string;
-}, "name" | ("path" | "createdAt" | "updatedAt" | "ordinal" | "parentId" | "parentName" | "hasDebriefBehavior" | "synonyms" | "parentIds" | "parentNames" | "profileCount" | "isFeatured" | "blandContext" | "recommendedStrategies" | "gameplanTactics")>;
+}, "name" | ("path" | "createdAt" | "updatedAt" | "ordinal" | "parentId" | "parentName" | "hasDebriefBehavior" | "synonyms" | "parentIds" | "parentNames" | "profileCount" | "isFeatured" | "blandContext" | "recommendedStrategies" | "reminderTactics")>;

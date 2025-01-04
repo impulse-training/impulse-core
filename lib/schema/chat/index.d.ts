@@ -26,8 +26,8 @@ export declare const chatSchema: yup.Lazy<{
     } | null | undefined;
     senderName?: string | undefined;
     issueIds?: string[] | undefined;
-    type: "whatsapp";
     uid: string;
+    type: "whatsapp";
     sessionExpiresAt: {
         isEqual?: any;
         toMillis?: any;

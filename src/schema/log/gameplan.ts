@@ -4,7 +4,7 @@ import { logBaseSchema } from './base';
 
 export const gameplanLogSchema = logBaseSchema('gameplan').shape({
   role: yup.mixed<'user'>().oneOf(['user']).required(),
-  gameplanDoc: documentReferenceSchema,
+  triggerDoc: documentReferenceSchema,
   outcome: yup.mixed<'success' | 'setback'>().oneOf(['success', 'setback']),
 });
 

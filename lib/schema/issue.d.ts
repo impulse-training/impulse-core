@@ -27,7 +27,7 @@ export declare const issueSchema: yup.ObjectSchema<{
     isFeatured: boolean | null | undefined;
     blandContext: string | undefined;
     recommendedStrategies: import("./utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
-    gameplanTactics: import("./utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
+    reminderTactics: import("./utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
 }, yup.AnyObject, {
     createdAt: undefined;
     updatedAt: undefined;
@@ -44,6 +44,6 @@ export declare const issueSchema: yup.ObjectSchema<{
     isFeatured: undefined;
     blandContext: undefined;
     recommendedStrategies: "";
-    gameplanTactics: "";
+    reminderTactics: "";
 }, "">;
 export type IssueValue = yup.InferType<typeof issueSchema>;

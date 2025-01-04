@@ -4,11 +4,11 @@ import { makeFactories } from '../../factories';
 import {
   daySchema,
   daysSummarySchema,
-  gameplanSchema,
   issueSchema,
   locationSchema,
   logSchema,
   profileSchema,
+  reminderSchema,
   roadmapSchema,
   suggestionSchema,
   tacticSchema,
@@ -67,5 +67,5 @@ const schemaMap: Record<keyof typeof factories, null | Schema | Lazy<unknown>> =
     roadmapFactory: roadmapSchema,
     tacticFactory: tacticSchema,
     behaviorFactory: behaviorSchema,
-    gameplanFactory: gameplanSchema,
+    reminderFactory: reminderSchema,
   };

@@ -22,9 +22,9 @@ export const issueSchema = yup.object().shape({
 
   // For top-level issues, we store references to recommended support groups
   recommendedStrategies: yup.array().of(documentReferenceSchema.required()),
-  // For profile issues, we store references to the tactics that are the user's "gameplan" for the
+  // For profile issues, we store references to the tactics that are the user's "reminder" for the
   // issue
 
-  gameplanTactics: yup.array().of(documentReferenceSchema.required()),
+  reminderTactics: yup.array().of(documentReferenceSchema.required()),
 });
 export type IssueValue = yup.InferType<typeof issueSchema>;

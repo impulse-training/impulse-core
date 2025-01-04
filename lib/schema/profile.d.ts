@@ -55,7 +55,7 @@ export declare const profileSchema: yup.ObjectSchema<{
     androidPermissions: {
         [x: string]: NonNullable<boolean | undefined>;
     } | null | undefined;
-    defaultGameplanDoc: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
+    defaultReminderDoc: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
     historicalInsights: string[] | undefined;
     recentSummaries: {
         [x: string]: string;
@@ -99,7 +99,7 @@ export declare const profileSchema: yup.ObjectSchema<{
     parentIds: "";
     sendDebriefRemindersAfterMinutes: undefined;
     androidPermissions: undefined;
-    defaultGameplanDoc: undefined;
+    defaultReminderDoc: undefined;
     historicalInsights: "";
     recentSummaries: undefined;
     isTourDismissed: undefined;

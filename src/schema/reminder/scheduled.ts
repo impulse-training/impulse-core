@@ -1,7 +1,7 @@
 import * as yup from 'yup';
-import { gameplanBaseSchema } from './base';
+import { reminderBaseSchema } from './base';
 
-export const scheduledGameplanSchema = gameplanBaseSchema('scheduled').shape({
+export const scheduledReminderSchema = reminderBaseSchema('scheduled').shape({
   schedule: yup
     .array()
     .of(
@@ -13,6 +13,7 @@ export const scheduledGameplanSchema = gameplanBaseSchema('scheduled').shape({
     )
     .required(),
 });
-export type ScheduledGameplanValue = yup.InferType<
-  typeof scheduledGameplanSchema
+
+export type ScheduledReminderValue = yup.InferType<
+  typeof scheduledReminderSchema
 >;
