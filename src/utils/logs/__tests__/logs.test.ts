@@ -15,7 +15,8 @@ describe(logTextForGpt, () => {
               name: 'Time spent watching',
             },
             data: {
-              stringValue: '3 hrs',
+              timeSeconds: 3 * 60 * 60,
+              formattedValue: '3 hrs',
             },
           },
         },

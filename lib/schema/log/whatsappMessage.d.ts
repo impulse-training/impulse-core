@@ -80,18 +80,9 @@ export declare const whatsappMessageLogSchema: yup.ObjectSchema<{
                 isHelpful: boolean | null;
             };
             data: {
-                label?: string | undefined;
-                idValue?: string | undefined;
-                numericValue?: number | undefined;
-                setAt: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                };
-                stringValue: string;
-                unit: string;
+                counterValue?: number | undefined;
+                timeSeconds?: number | undefined;
+                formattedValue: string;
             };
         };
     } | null | undefined;

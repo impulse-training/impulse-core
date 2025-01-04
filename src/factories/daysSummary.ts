@@ -28,10 +28,8 @@ export const makeDaysSummaryFactory = (TimestampKlass: typeof TimestampLike) =>
             isHelpful: null,
           },
           data: {
-            unit: 'time',
-            numericValue: 1,
-            setAt: TimestampKlass.now(),
-            stringValue: '1 minute',
+            timeSeconds: 60,
+            formattedValue: '1 minute',
           },
           // optionId: 'tactic1',
           // optionColor: 'blue',

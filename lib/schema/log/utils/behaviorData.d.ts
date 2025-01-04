@@ -1,30 +1,12 @@
 import * as yup from 'yup';
 export declare const behaviorDataSchema: yup.ObjectSchema<{
-    idValue: string | undefined;
-    numericValue: number | undefined;
-    stringValue: string;
-    label: string | undefined;
-    unit: string;
-    setAt: {
-        isEqual?: any;
-        toMillis?: any;
-        seconds: number;
-        nanoseconds: number;
-        toDate: Function;
-    };
+    counterValue: number | undefined;
+    timeSeconds: number | undefined;
+    formattedValue: string;
 }, yup.AnyObject, {
-    idValue: undefined;
-    numericValue: undefined;
-    stringValue: undefined;
-    label: undefined;
-    unit: undefined;
-    setAt: {
-        seconds: undefined;
-        nanoseconds: undefined;
-        isEqual: undefined;
-        toMillis: undefined;
-        toDate: undefined;
-    };
+    counterValue: undefined;
+    timeSeconds: undefined;
+    formattedValue: undefined;
 }, "">;
 export declare const behaviorAndBehaviorDataSchema: yup.ObjectSchema<{
     behavior: {
@@ -50,18 +32,9 @@ export declare const behaviorAndBehaviorDataSchema: yup.ObjectSchema<{
         isHelpful: boolean | null;
     };
     data: {
-        label?: string | undefined;
-        idValue?: string | undefined;
-        numericValue?: number | undefined;
-        setAt: {
-            isEqual?: any;
-            toMillis?: any;
-            seconds: number;
-            nanoseconds: number;
-            toDate: Function;
-        };
-        stringValue: string;
-        unit: string;
+        counterValue?: number | undefined;
+        timeSeconds?: number | undefined;
+        formattedValue: string;
     };
     color: string | undefined;
 }, yup.AnyObject, {
@@ -76,18 +49,9 @@ export declare const behaviorAndBehaviorDataSchema: yup.ObjectSchema<{
         updatedAt: undefined;
     };
     data: {
-        idValue: undefined;
-        numericValue: undefined;
-        stringValue: undefined;
-        label: undefined;
-        unit: undefined;
-        setAt: {
-            seconds: undefined;
-            nanoseconds: undefined;
-            isEqual: undefined;
-            toMillis: undefined;
-            toDate: undefined;
-        };
+        counterValue: undefined;
+        timeSeconds: undefined;
+        formattedValue: undefined;
     };
     color: undefined;
 }, "">;

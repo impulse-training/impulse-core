@@ -11,7 +11,6 @@ export function logTextForGpt(log: LogValue): string {
   let text = log.text! + ' ';
 
   // Handle tactics that have been completed
-
   if (log.behaviorData) {
     const behaviorsDescription = compact(
       flatMap(log.behaviorData, ({ behavior, data }) => {
@@ -19,7 +18,7 @@ export function logTextForGpt(log: LogValue): string {
           ? ` (goal is ${behavior.dailyLimit} or less)`
           : '';
         if (!data) return null;
-        return [behavior.name + goalText, data.stringValue].join(': ');
+        return [behavior.name + goalText, data.formattedValue].join(': ');
       })
     );
     text += behaviorsDescription.join(SEPARATOR);
