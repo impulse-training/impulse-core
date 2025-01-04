@@ -72,6 +72,7 @@ export declare function logBaseSchema<K extends string>(type: K): yup.ObjectSche
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                unit?: string | undefined;
                 dailyLimit?: number | undefined;
                 skipGameplanAutoCreation?: boolean | undefined;
                 name: string;
@@ -80,6 +81,10 @@ export declare function logBaseSchema<K extends string>(type: K): yup.ObjectSche
                 isHelpful: boolean | null;
             };
             data: {
+                label?: {
+                    color?: string | undefined;
+                    text: string;
+                } | null | undefined;
                 counterValue?: number | undefined;
                 timeSeconds?: number | undefined;
                 formattedValue: string;

@@ -15,6 +15,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
+        text?: string | null | undefined;
         audioFile?: {
             createdAt?: {
                 isEqual?: any;
@@ -71,6 +72,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    unit?: string | undefined;
                     dailyLimit?: number | undefined;
                     skipGameplanAutoCreation?: boolean | undefined;
                     name: string;
@@ -79,13 +81,16 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     isHelpful: boolean | null;
                 };
                 data: {
+                    label?: {
+                        color?: string | undefined;
+                        text: string;
+                    } | null | undefined;
                     counterValue?: number | undefined;
                     timeSeconds?: number | undefined;
                     formattedValue: string;
                 };
             };
         } | null | undefined;
-        text?: string | null | undefined;
         senderUid?: string | null | undefined;
         type: "user";
         uid: string;
@@ -534,7 +539,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         };
         dateString: string;
         role: "user";
-    }, "type" | "uid" | "tacticsData" | "date" | "dateString" | "role" | ("createdAt" | "updatedAt" | "audioFile" | "metricData" | "behaviorData" | "text" | "senderUid")>;
+    }, "type" | "uid" | "tacticsData" | "date" | "dateString" | "role" | ("createdAt" | "updatedAt" | "text" | "audioFile" | "metricData" | "behaviorData" | "senderUid")>;
     applicationFactory: import("factory.ts").Factory<import("..").ApplicationValue, keyof import("..").ApplicationValue>;
     dayFactory: import("factory.ts").Factory<import("..").DayValue, "uid" | "date" | "logsById">;
     issueFactory: import("factory.ts").Factory<{
@@ -608,6 +613,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
+                        unit?: string | undefined;
                         dailyLimit?: number | undefined;
                         skipGameplanAutoCreation?: boolean | undefined;
                         name: string;
@@ -616,6 +622,10 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         isHelpful: boolean | null;
                     };
                     data: {
+                        label?: {
+                            color?: string | undefined;
+                            text: string;
+                        } | null | undefined;
                         counterValue?: number | undefined;
                         timeSeconds?: number | undefined;
                         formattedValue: string;
@@ -1246,11 +1256,12 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
+        unit?: string | undefined;
         dailyLimit?: number | undefined;
         skipGameplanAutoCreation?: boolean | undefined;
         name: string;
         ordinal: number;
         trackingType: NonNullable<"time" | "counter" | undefined>;
         isHelpful: boolean | null;
-    }, "name" | "ordinal" | "trackingType" | "isHelpful" | ("createdAt" | "updatedAt" | "dailyLimit" | "skipGameplanAutoCreation")>;
+    }, "name" | "ordinal" | "trackingType" | "isHelpful" | ("createdAt" | "updatedAt" | "unit" | "dailyLimit" | "skipGameplanAutoCreation")>;
 };

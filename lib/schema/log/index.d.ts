@@ -32,6 +32,7 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
+    text?: string | null | undefined;
     audioFile?: {
         createdAt?: {
             isEqual?: any;
@@ -88,6 +89,7 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                unit?: string | undefined;
                 dailyLimit?: number | undefined;
                 skipGameplanAutoCreation?: boolean | undefined;
                 name: string;
@@ -96,13 +98,16 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                 isHelpful: boolean | null;
             };
             data: {
+                label?: {
+                    color?: string | undefined;
+                    text: string;
+                } | null | undefined;
                 counterValue?: number | undefined;
                 timeSeconds?: number | undefined;
                 formattedValue: string;
             };
         };
     } | null | undefined;
-    text?: string | null | undefined;
     senderUid?: string | null | undefined;
     type: "call";
     uid: string;
@@ -565,6 +570,7 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
+    text?: string | null | undefined;
     audioFile?: {
         createdAt?: {
             isEqual?: any;
@@ -621,6 +627,7 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                unit?: string | undefined;
                 dailyLimit?: number | undefined;
                 skipGameplanAutoCreation?: boolean | undefined;
                 name: string;
@@ -629,13 +636,16 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                 isHelpful: boolean | null;
             };
             data: {
+                label?: {
+                    color?: string | undefined;
+                    text: string;
+                } | null | undefined;
                 counterValue?: number | undefined;
                 timeSeconds?: number | undefined;
                 formattedValue: string;
             };
         };
     } | null | undefined;
-    text?: string | null | undefined;
     senderUid?: string | null | undefined;
     gameplanDoc?: import("../utils/firestore").DocumentReferenceLike<unknown> | undefined;
     outcome?: "success" | "setback" | undefined;
@@ -1101,6 +1111,7 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
+    text?: string | null | undefined;
     audioFile?: {
         createdAt?: {
             isEqual?: any;
@@ -1157,6 +1168,7 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                unit?: string | undefined;
                 dailyLimit?: number | undefined;
                 skipGameplanAutoCreation?: boolean | undefined;
                 name: string;
@@ -1165,13 +1177,16 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                 isHelpful: boolean | null;
             };
             data: {
+                label?: {
+                    color?: string | undefined;
+                    text: string;
+                } | null | undefined;
                 counterValue?: number | undefined;
                 timeSeconds?: number | undefined;
                 formattedValue: string;
             };
         };
     } | null | undefined;
-    text?: string | null | undefined;
     senderUid?: string | null | undefined;
     type: "gpt";
     uid: string;
@@ -1635,6 +1650,7 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
+    text?: string | null | undefined;
     audioFile?: {
         createdAt?: {
             isEqual?: any;
@@ -1691,6 +1707,7 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                unit?: string | undefined;
                 dailyLimit?: number | undefined;
                 skipGameplanAutoCreation?: boolean | undefined;
                 name: string;
@@ -1699,13 +1716,16 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                 isHelpful: boolean | null;
             };
             data: {
+                label?: {
+                    color?: string | undefined;
+                    text: string;
+                } | null | undefined;
                 counterValue?: number | undefined;
                 timeSeconds?: number | undefined;
                 formattedValue: string;
             };
         };
     } | null | undefined;
-    text?: string | null | undefined;
     senderUid?: string | null | undefined;
     animationFileName?: string | undefined;
     type: "showTour";
@@ -2175,6 +2195,7 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
+    text?: string | null | undefined;
     audioFile?: {
         createdAt?: {
             isEqual?: any;
@@ -2231,6 +2252,7 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                unit?: string | undefined;
                 dailyLimit?: number | undefined;
                 skipGameplanAutoCreation?: boolean | undefined;
                 name: string;
@@ -2239,13 +2261,16 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                 isHelpful: boolean | null;
             };
             data: {
+                label?: {
+                    color?: string | undefined;
+                    text: string;
+                } | null | undefined;
                 counterValue?: number | undefined;
                 timeSeconds?: number | undefined;
                 formattedValue: string;
             };
         };
     } | null | undefined;
-    text?: string | null | undefined;
     senderUid?: string | null | undefined;
     type: "toolCall";
     uid: string;
@@ -2710,6 +2735,7 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
+    text?: string | null | undefined;
     audioFile?: {
         createdAt?: {
             isEqual?: any;
@@ -2766,6 +2792,7 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                unit?: string | undefined;
                 dailyLimit?: number | undefined;
                 skipGameplanAutoCreation?: boolean | undefined;
                 name: string;
@@ -2774,13 +2801,16 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                 isHelpful: boolean | null;
             };
             data: {
+                label?: {
+                    color?: string | undefined;
+                    text: string;
+                } | null | undefined;
                 counterValue?: number | undefined;
                 timeSeconds?: number | undefined;
                 formattedValue: string;
             };
         };
     } | null | undefined;
-    text?: string | null | undefined;
     senderUid?: string | null | undefined;
     type: "user";
     uid: string;
@@ -3244,6 +3274,7 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
+    text?: string | null | undefined;
     audioFile?: {
         createdAt?: {
             isEqual?: any;
@@ -3300,6 +3331,7 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                unit?: string | undefined;
                 dailyLimit?: number | undefined;
                 skipGameplanAutoCreation?: boolean | undefined;
                 name: string;
@@ -3308,13 +3340,16 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                 isHelpful: boolean | null;
             };
             data: {
+                label?: {
+                    color?: string | undefined;
+                    text: string;
+                } | null | undefined;
                 counterValue?: number | undefined;
                 timeSeconds?: number | undefined;
                 formattedValue: string;
             };
         };
     } | null | undefined;
-    text?: string | null | undefined;
     senderUid?: string | null | undefined;
     files?: yup.Maybe<{
         createdAt?: {

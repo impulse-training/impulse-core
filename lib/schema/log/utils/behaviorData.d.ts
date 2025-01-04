@@ -3,10 +3,15 @@ export declare const behaviorDataSchema: yup.ObjectSchema<{
     counterValue: number | undefined;
     timeSeconds: number | undefined;
     formattedValue: string;
+    label: {
+        color?: string | undefined;
+        text: string;
+    } | null | undefined;
 }, yup.AnyObject, {
     counterValue: undefined;
     timeSeconds: undefined;
     formattedValue: undefined;
+    label: undefined;
 }, "">;
 export declare const behaviorAndBehaviorDataSchema: yup.ObjectSchema<{
     behavior: {
@@ -24,6 +29,7 @@ export declare const behaviorAndBehaviorDataSchema: yup.ObjectSchema<{
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
+        unit?: string | undefined;
         dailyLimit?: number | undefined;
         skipGameplanAutoCreation?: boolean | undefined;
         name: string;
@@ -32,6 +38,10 @@ export declare const behaviorAndBehaviorDataSchema: yup.ObjectSchema<{
         isHelpful: boolean | null;
     };
     data: {
+        label?: {
+            color?: string | undefined;
+            text: string;
+        } | null | undefined;
         counterValue?: number | undefined;
         timeSeconds?: number | undefined;
         formattedValue: string;
@@ -42,6 +52,7 @@ export declare const behaviorAndBehaviorDataSchema: yup.ObjectSchema<{
         name: undefined;
         ordinal: undefined;
         trackingType: undefined;
+        unit: undefined;
         dailyLimit: undefined;
         isHelpful: undefined;
         skipGameplanAutoCreation: undefined;
@@ -52,6 +63,7 @@ export declare const behaviorAndBehaviorDataSchema: yup.ObjectSchema<{
         counterValue: undefined;
         timeSeconds: undefined;
         formattedValue: undefined;
+        label: undefined;
     };
     color: undefined;
 }, "">;

@@ -21,6 +21,7 @@ export declare const makeDaysSummaryFactory: (TimestampKlass: typeof TimestampLi
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    unit?: string | undefined;
                     dailyLimit?: number | undefined;
                     skipGameplanAutoCreation?: boolean | undefined;
                     name: string;
@@ -29,6 +30,10 @@ export declare const makeDaysSummaryFactory: (TimestampKlass: typeof TimestampLi
                     isHelpful: boolean | null;
                 };
                 data: {
+                    label?: {
+                        color?: string | undefined;
+                        text: string;
+                    } | null | undefined;
                     counterValue?: number | undefined;
                     timeSeconds?: number | undefined;
                     formattedValue: string;

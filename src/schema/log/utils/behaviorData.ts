@@ -10,6 +10,16 @@ export const behaviorDataSchema = yup
 
     // In either case, this is a string-formatted representation of the value
     formattedValue: yup.string().required(),
+
+    // An optional label may be provided
+    label: yup
+      .object({
+        text: yup.string().required(),
+        color: yup.string(),
+      })
+      .optional()
+      .nullable()
+      .default(undefined),
   })
   .test(
     'counter-or-time-required',

@@ -13,6 +13,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
+    text?: string | null | undefined;
     audioFile?: {
         createdAt?: {
             isEqual?: any;
@@ -69,6 +70,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                unit?: string | undefined;
                 dailyLimit?: number | undefined;
                 skipGameplanAutoCreation?: boolean | undefined;
                 name: string;
@@ -77,13 +79,16 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                 isHelpful: boolean | null;
             };
             data: {
+                label?: {
+                    color?: string | undefined;
+                    text: string;
+                } | null | undefined;
                 counterValue?: number | undefined;
                 timeSeconds?: number | undefined;
                 formattedValue: string;
             };
         };
     } | null | undefined;
-    text?: string | null | undefined;
     senderUid?: string | null | undefined;
     type: "user";
     uid: string;
@@ -532,7 +537,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
     };
     dateString: string;
     role: "user";
-}, "type" | "uid" | "tacticsData" | "date" | "dateString" | "role" | ("createdAt" | "updatedAt" | "audioFile" | "metricData" | "behaviorData" | "text" | "senderUid")>, profileFactory: import("factory.ts").Factory<{
+}, "type" | "uid" | "tacticsData" | "date" | "dateString" | "role" | ("createdAt" | "updatedAt" | "text" | "audioFile" | "metricData" | "behaviorData" | "senderUid")>, profileFactory: import("factory.ts").Factory<{
     createdAt?: {
         isEqual?: any;
         toMillis?: any;

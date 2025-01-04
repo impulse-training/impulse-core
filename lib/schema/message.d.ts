@@ -49,6 +49,7 @@ export declare const messageSchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                unit?: string | undefined;
                 dailyLimit?: number | undefined;
                 skipGameplanAutoCreation?: boolean | undefined;
                 name: string;
@@ -57,6 +58,10 @@ export declare const messageSchema: yup.ObjectSchema<{
                 isHelpful: boolean | null;
             };
             data: {
+                label?: {
+                    color?: string | undefined;
+                    text: string;
+                } | null | undefined;
                 counterValue?: number | undefined;
                 timeSeconds?: number | undefined;
                 formattedValue: string;

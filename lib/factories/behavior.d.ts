@@ -15,10 +15,11 @@ export declare const makeBehaviorFactory: (TimestampKlass: typeof TimestampLike)
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
+    unit?: string | undefined;
     dailyLimit?: number | undefined;
     skipGameplanAutoCreation?: boolean | undefined;
     name: string;
     ordinal: number;
     trackingType: NonNullable<"time" | "counter" | undefined>;
     isHelpful: boolean | null;
-}, "name" | "ordinal" | "trackingType" | "isHelpful" | ("createdAt" | "updatedAt" | "dailyLimit" | "skipGameplanAutoCreation")>;
+}, "name" | "ordinal" | "trackingType" | "isHelpful" | ("createdAt" | "updatedAt" | "unit" | "dailyLimit" | "skipGameplanAutoCreation")>;

@@ -8,6 +8,14 @@ export const behaviorSchema = yup.object({
     .mixed<'time' | 'counter'>()
     .oneOf(['time', 'counter'])
     .required(),
+  unit: yup.string().when('trackingType', (trackingType, schema) => {
+    if ((trackingType as unknown as string) === 'counter') {
+      return schema.required(
+        'Unit is required when trackingType is "counter".'
+      );
+    }
+    return schema.notRequired();
+  }),
   dailyLimit: yup.number(),
   isHelpful: yup.boolean().nullable().defined(),
   skipGameplanAutoCreation: yup.boolean(),
