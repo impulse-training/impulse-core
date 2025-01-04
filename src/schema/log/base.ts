@@ -17,7 +17,7 @@ export function logBaseSchema<K extends string>(type: K) {
     // We deal with metrics and behaviors separately
     metricData: optionalObjectOf(metricAttributeAndDataSchema),
     behaviorData: optionalObjectOf(behaviorAndBehaviorDataSchema),
-    tacticsData: tacticsById,
+    tacticsData: tacticsById.optional(),
 
     text: yup.string().nullable(),
     date: timestampSchema,

@@ -3,7 +3,7 @@ import { requiredStringArray } from './utils/array';
 import { objectOf } from './utils/objectOf';
 import { optionalTimestampSchema } from './utils/timestamp';
 
-export const conversationSchema = yup.object({
+export const supportGroupSchema = yup.object({
   createdAt: optionalTimestampSchema,
   updatedAt: optionalTimestampSchema,
   name: yup.string(),
@@ -11,4 +11,4 @@ export const conversationSchema = yup.object({
   unreadCounts: objectOf(yup.number().required()),
 });
 
-export type ConversationValue = yup.InferType<typeof conversationSchema>;
+export type SupportGroupValue = yup.InferType<typeof supportGroupSchema>;

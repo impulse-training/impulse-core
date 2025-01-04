@@ -526,7 +526,7 @@ export declare const whatsappMessageLogSchema: yup.ObjectSchema<{
                 };
             };
         };
-    };
+    } | undefined;
     text: string | null | undefined;
     date: {
         isEqual?: any;

@@ -1,5 +1,5 @@
 import * as yup from 'yup';
-export declare const conversationSchema: yup.ObjectSchema<{
+export declare const supportGroupSchema: yup.ObjectSchema<{
     createdAt: {
         isEqual?: any;
         toMillis?: any;
@@ -26,4 +26,4 @@ export declare const conversationSchema: yup.ObjectSchema<{
     participantUids: "";
     unreadCounts: undefined;
 }, "">;
-export type ConversationValue = yup.InferType<typeof conversationSchema>;
+export type SupportGroupValue = yup.InferType<typeof supportGroupSchema>;

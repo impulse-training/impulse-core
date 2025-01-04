@@ -89,10 +89,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             };
         };
     } | null | undefined;
-    senderUid?: string | null | undefined;
-    type: "user";
-    uid: string;
-    tacticsData: {
+    tacticsData?: {
         [x: string]: {
             data?: {
                 setAt: {
@@ -527,7 +524,10 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                 };
             };
         };
-    };
+    } | undefined;
+    senderUid?: string | null | undefined;
+    type: "user";
+    uid: string;
     date: {
         isEqual?: any;
         toMillis?: any;
@@ -537,7 +537,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
     };
     dateString: string;
     role: "user";
-}, "type" | "uid" | "tacticsData" | "date" | "dateString" | "role" | ("createdAt" | "updatedAt" | "text" | "audioFile" | "metricData" | "behaviorData" | "senderUid")>, profileFactory: import("factory.ts").Factory<{
+}, "type" | "uid" | "date" | "dateString" | "role" | ("createdAt" | "updatedAt" | "text" | "audioFile" | "metricData" | "behaviorData" | "tacticsData" | "senderUid")>, profileFactory: import("factory.ts").Factory<{
     createdAt?: {
         isEqual?: any;
         toMillis?: any;

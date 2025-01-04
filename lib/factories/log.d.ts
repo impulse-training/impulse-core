@@ -92,10 +92,7 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 };
             };
         } | null | undefined;
-        senderUid?: string | null | undefined;
-        type: "user";
-        uid: string;
-        tacticsData: {
+        tacticsData?: {
             [x: string]: {
                 data?: {
                     setAt: {
@@ -530,7 +527,10 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     };
                 };
             };
-        };
+        } | undefined;
+        senderUid?: string | null | undefined;
+        type: "user";
+        uid: string;
         date: {
             isEqual?: any;
             toMillis?: any;
@@ -540,5 +540,5 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
         };
         dateString: string;
         role: "user";
-    }, "type" | "uid" | "tacticsData" | "date" | "dateString" | "role" | ("createdAt" | "updatedAt" | "text" | "audioFile" | "metricData" | "behaviorData" | "senderUid")>;
+    }, "type" | "uid" | "date" | "dateString" | "role" | ("createdAt" | "updatedAt" | "text" | "audioFile" | "metricData" | "behaviorData" | "tacticsData" | "senderUid")>;
 };

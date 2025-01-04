@@ -90,10 +90,7 @@ export declare const factories: {
                 };
             };
         } | null | undefined;
-        senderUid?: string | null | undefined;
-        type: "user";
-        uid: string;
-        tacticsData: {
+        tacticsData?: {
             [x: string]: {
                 data?: {
                     setAt: {
@@ -528,7 +525,10 @@ export declare const factories: {
                     };
                 };
             };
-        };
+        } | undefined;
+        senderUid?: string | null | undefined;
+        type: "user";
+        uid: string;
         date: {
             isEqual?: any;
             toMillis?: any;
@@ -538,7 +538,7 @@ export declare const factories: {
         };
         dateString: string;
         role: "user";
-    }, "type" | "uid" | "tacticsData" | "date" | "dateString" | "role" | ("createdAt" | "updatedAt" | "text" | "audioFile" | "metricData" | "behaviorData" | "senderUid")>;
+    }, "type" | "uid" | "date" | "dateString" | "role" | ("createdAt" | "updatedAt" | "text" | "audioFile" | "metricData" | "behaviorData" | "tacticsData" | "senderUid")>;
     applicationFactory: import("factory.ts").Factory<import("..").ApplicationValue, keyof import("..").ApplicationValue>;
     dayFactory: import("factory.ts").Factory<import("..").DayValue, "uid" | "date" | "logsById">;
     issueFactory: import("factory.ts").Factory<{

@@ -537,7 +537,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
                 };
             };
         };
-    };
+    } | undefined;
     text: string | null | undefined;
     date: {
         isEqual?: any;

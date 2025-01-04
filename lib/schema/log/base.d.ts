@@ -526,7 +526,7 @@ export declare function logBaseSchema<K extends string>(type: K): yup.ObjectSche
                 };
             };
         };
-    };
+    } | undefined;
     text: string | null | undefined;
     date: {
         isEqual?: any;

@@ -101,10 +101,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     };
                 };
             } | null | undefined;
-            senderUid?: string | null | undefined;
-            type: "call";
-            uid: string;
-            tacticsData: {
+            tacticsData?: {
                 [x: string]: {
                     data?: {
                         setAt: {
@@ -539,7 +536,10 @@ export declare const daySchema: yup.ObjectSchema<{
                         };
                     };
                 };
-            };
+            } | undefined;
+            senderUid?: string | null | undefined;
+            type: "call";
+            uid: string;
             date: {
                 isEqual?: any;
                 toMillis?: any;
@@ -639,12 +639,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     };
                 };
             } | null | undefined;
-            senderUid?: string | null | undefined;
-            gameplanDoc?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-            outcome?: "success" | "setback" | undefined;
-            type: "gameplan";
-            uid: string;
-            tacticsData: {
+            tacticsData?: {
                 [x: string]: {
                     data?: {
                         setAt: {
@@ -1079,7 +1074,12 @@ export declare const daySchema: yup.ObjectSchema<{
                         };
                     };
                 };
-            };
+            } | undefined;
+            senderUid?: string | null | undefined;
+            gameplanDoc?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
+            outcome?: "success" | "setback" | undefined;
+            type: "gameplan";
+            uid: string;
             date: {
                 isEqual?: any;
                 toMillis?: any;
@@ -1180,10 +1180,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     };
                 };
             } | null | undefined;
-            senderUid?: string | null | undefined;
-            type: "gpt";
-            uid: string;
-            tacticsData: {
+            tacticsData?: {
                 [x: string]: {
                     data?: {
                         setAt: {
@@ -1618,7 +1615,10 @@ export declare const daySchema: yup.ObjectSchema<{
                         };
                     };
                 };
-            };
+            } | undefined;
+            senderUid?: string | null | undefined;
+            type: "gpt";
+            uid: string;
             date: {
                 isEqual?: any;
                 toMillis?: any;
@@ -1719,17 +1719,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     };
                 };
             } | null | undefined;
-            senderUid?: string | null | undefined;
-            animationFileName?: string | undefined;
-            type: "showTour";
-            uid: string;
-            steps: {
-                message: string;
-                elementRefName: string;
-                title: string;
-                confirmButtonLabel: string;
-            }[];
-            tacticsData: {
+            tacticsData?: {
                 [x: string]: {
                     data?: {
                         setAt: {
@@ -2164,7 +2154,17 @@ export declare const daySchema: yup.ObjectSchema<{
                         };
                     };
                 };
-            };
+            } | undefined;
+            senderUid?: string | null | undefined;
+            animationFileName?: string | undefined;
+            type: "showTour";
+            uid: string;
+            steps: {
+                message: string;
+                elementRefName: string;
+                title: string;
+                confirmButtonLabel: string;
+            }[];
             date: {
                 isEqual?: any;
                 toMillis?: any;
@@ -2264,10 +2264,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     };
                 };
             } | null | undefined;
-            senderUid?: string | null | undefined;
-            type: "toolCall";
-            uid: string;
-            tacticsData: {
+            tacticsData?: {
                 [x: string]: {
                     data?: {
                         setAt: {
@@ -2702,7 +2699,10 @@ export declare const daySchema: yup.ObjectSchema<{
                         };
                     };
                 };
-            };
+            } | undefined;
+            senderUid?: string | null | undefined;
+            type: "toolCall";
+            uid: string;
             date: {
                 isEqual?: any;
                 toMillis?: any;
@@ -2804,10 +2804,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     };
                 };
             } | null | undefined;
-            senderUid?: string | null | undefined;
-            type: "user";
-            uid: string;
-            tacticsData: {
+            tacticsData?: {
                 [x: string]: {
                     data?: {
                         setAt: {
@@ -3242,7 +3239,10 @@ export declare const daySchema: yup.ObjectSchema<{
                         };
                     };
                 };
-            };
+            } | undefined;
+            senderUid?: string | null | undefined;
+            type: "user";
+            uid: string;
             date: {
                 isEqual?: any;
                 toMillis?: any;
@@ -3343,33 +3343,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     };
                 };
             } | null | undefined;
-            senderUid?: string | null | undefined;
-            files?: yup.Maybe<{
-                createdAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                updatedAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                localFilePath?: yup.Maybe<string | undefined>;
-                isDeleted?: boolean | undefined;
-                metadata?: {} | null | undefined;
-                thumbnailStoragePath?: yup.Maybe<string | undefined>;
-                thumbnailUri?: yup.Maybe<string | undefined>;
-                storagePath: string;
-                url: string;
-            }[] | undefined>;
-            type: "whatsappMessage";
-            uid: string;
-            tacticsData: {
+            tacticsData?: {
                 [x: string]: {
                     data?: {
                         setAt: {
@@ -3804,7 +3778,33 @@ export declare const daySchema: yup.ObjectSchema<{
                         };
                     };
                 };
-            };
+            } | undefined;
+            senderUid?: string | null | undefined;
+            files?: yup.Maybe<{
+                createdAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                updatedAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                localFilePath?: yup.Maybe<string | undefined>;
+                isDeleted?: boolean | undefined;
+                metadata?: {} | null | undefined;
+                thumbnailStoragePath?: yup.Maybe<string | undefined>;
+                thumbnailUri?: yup.Maybe<string | undefined>;
+                storagePath: string;
+                url: string;
+            }[] | undefined>;
+            type: "whatsappMessage";
+            uid: string;
             date: {
                 isEqual?: any;
                 toMillis?: any;

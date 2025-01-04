@@ -526,7 +526,7 @@ export declare const gameplanLogSchema: yup.ObjectSchema<{
                 };
             };
         };
-    };
+    } | undefined;
     text: string | null | undefined;
     date: {
         isEqual?: any;
