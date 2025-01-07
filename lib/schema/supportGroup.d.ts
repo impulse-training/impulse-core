@@ -17,6 +17,7 @@ export declare const supportGroupSchema: yup.ObjectSchema<{
     name: string | undefined;
     participantUids: string[];
     lastMessagePreview: string;
+    lastMessageUid: string;
     unreadCounts: {
         [x: string]: number;
     };
@@ -26,6 +27,7 @@ export declare const supportGroupSchema: yup.ObjectSchema<{
     name: undefined;
     participantUids: "";
     lastMessagePreview: undefined;
+    lastMessageUid: undefined;
     unreadCounts: undefined;
 }, "">;
 export type SupportGroupValue = yup.InferType<typeof supportGroupSchema>;

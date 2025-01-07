@@ -23,19 +23,6 @@ export function logBaseSchema<K extends string>(type: K) {
     date: timestampSchema,
     dateString: yup.string().required(),
 
-    // tacticId: yup.string().nullable(),
-    // tactic: yup.lazy((_value, options) => {
-    //   // Access the context to get the entire object being validated
-    //   const { tacticId } = options.parent;
-    //   // Check if tacticId is defined, then apply tacticSchema
-    //   if (tacticId) return tacticSchema;
-    //   // If tacticId is not defined, tactic is not required
-    //   return yup.mixed().notRequired();
-    // }),
-    // // For now, we don't type this object, but it's used to store metadata like the pedometer step
-    // // count at the time of activating the tactic, in the case of the steps tactic
-    // tacticData: optionalObjectOf(yup.mixed()),
-
     senderUid: yup.string().nullable(),
   });
 }

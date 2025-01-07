@@ -28,6 +28,7 @@ export * from './supportGroup';
 export * from './tactic';
 export * from './tacticImpression';
 export * from './therapists';
+export * from './thread';
 
 // Utils
 export * from './utils/file';
