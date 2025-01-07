@@ -7,6 +7,7 @@ export const threadSchema = yup.object({
   dateString: yup.string().required(),
   date: timestampSchema,
   title: yup.string(),
+  summary: yup.string(),
   logsById: objectOf(logSchema),
   debriefedAt: optionalTimestampSchema,
   debriefAfter: optionalTimestampSchema,

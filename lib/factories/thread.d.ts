@@ -37,6 +37,7 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
+    summary?: string | undefined;
     date: {
         isEqual?: any;
         toMillis?: any;
@@ -6903,4 +6904,4 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
             dateString: string;
         }>;
     };
-}, "date" | "dateString" | "logsById" | ("createdAt" | "updatedAt" | "title" | "debriefedAt" | "debriefAfter" | "debriefReminderSentAt")>;
+}, "date" | "dateString" | "logsById" | ("createdAt" | "updatedAt" | "title" | "debriefedAt" | "debriefAfter" | "debriefReminderSentAt" | "summary")>;

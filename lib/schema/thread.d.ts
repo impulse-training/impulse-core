@@ -9,6 +9,7 @@ export declare const threadSchema: yup.ObjectSchema<{
         toDate: Function;
     };
     title: string | undefined;
+    summary: string | undefined;
     logsById: {
         [x: string]: import("./log").WithTacticsById<{
             createdAt?: {
@@ -6912,6 +6913,7 @@ export declare const threadSchema: yup.ObjectSchema<{
         toDate: undefined;
     };
     title: undefined;
+    summary: undefined;
     logsById: undefined;
     debriefedAt: undefined;
     debriefAfter: undefined;
