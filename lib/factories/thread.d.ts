@@ -38,6 +38,7 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
         toDate: Function;
     } | null | undefined;
     summary?: string | undefined;
+    outcome?: "success" | "setback" | undefined;
     date: {
         isEqual?: any;
         toMillis?: any;
@@ -1986,7 +1987,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
             } | undefined;
             senderUid?: string | null | undefined;
             triggerDoc?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
-            outcome?: "success" | "setback" | undefined;
             uid: string;
             type: "gameplan";
             date: {
@@ -6904,4 +6904,4 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
             dateString: string;
         }>;
     };
-}, "date" | "dateString" | "logsById" | ("createdAt" | "updatedAt" | "title" | "debriefedAt" | "debriefAfter" | "debriefReminderSentAt" | "summary")>;
+}, "date" | "dateString" | "logsById" | ("createdAt" | "updatedAt" | "title" | "debriefedAt" | "debriefAfter" | "debriefReminderSentAt" | "summary" | "outcome")>;

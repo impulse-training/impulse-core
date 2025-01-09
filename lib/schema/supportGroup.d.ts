@@ -16,8 +16,8 @@ export declare const supportGroupSchema: yup.ObjectSchema<{
     } | null | undefined;
     name: string | undefined;
     participantUids: string[];
-    lastMessagePreview: string;
-    lastMessageUid: string;
+    lastMessagePreview: string | undefined;
+    lastMessageUid: string | undefined;
     unreadCounts: {
         [x: string]: number;
     };

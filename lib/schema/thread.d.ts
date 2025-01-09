@@ -1950,7 +1950,6 @@ export declare const threadSchema: yup.ObjectSchema<{
             } | undefined;
             senderUid?: string | null | undefined;
             triggerDoc?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-            outcome?: "success" | "setback" | undefined;
             uid: string;
             type: "gameplan";
             date: {
@@ -6889,6 +6888,7 @@ export declare const threadSchema: yup.ObjectSchema<{
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
+    outcome: "success" | "setback" | undefined;
     createdAt: {
         isEqual?: any;
         toMillis?: any;
@@ -6918,6 +6918,7 @@ export declare const threadSchema: yup.ObjectSchema<{
     debriefedAt: undefined;
     debriefAfter: undefined;
     debriefReminderSentAt: undefined;
+    outcome: undefined;
     createdAt: undefined;
     updatedAt: undefined;
 }, "">;

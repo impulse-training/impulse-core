@@ -1949,7 +1949,6 @@ export declare const daySchema: yup.ObjectSchema<{
             } | undefined;
             senderUid?: string | null | undefined;
             triggerDoc?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-            outcome?: "success" | "setback" | undefined;
             uid: string;
             type: "gameplan";
             date: {

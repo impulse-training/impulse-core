@@ -8,8 +8,8 @@ export const supportGroupSchema = yup.object({
   updatedAt: optionalTimestampSchema,
   name: yup.string(),
   participantUids: requiredStringArray,
-  lastMessagePreview: yup.string().required(),
-  lastMessageUid: yup.string().required(),
+  lastMessagePreview: yup.string(),
+  lastMessageUid: yup.string(),
   unreadCounts: objectOf(yup.number().required()),
 });
 
