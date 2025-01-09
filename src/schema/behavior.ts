@@ -9,13 +9,11 @@ export const behaviorSchema = yup.object({
     .mixed<'time' | 'counter'>()
     .oneOf(['time', 'counter'])
     .required(),
-  unit: yup.string().when('trackingType', (trackingType, schema) => {
-    if ((trackingType as unknown as string) === 'counter') {
-      return schema.required(
-        'Unit is required when trackingType is "counter".'
-      );
-    }
-    return schema.notRequired();
+  unit: yup.string().when('trackingType', {
+    is: 'counter',
+    then: schema =>
+      schema.required('Unit is required when trackingType is "counter".'),
+    otherwise: schema => schema.notRequired(),
   }),
   tacticsById,
   dailyLimit: yup.number(),
