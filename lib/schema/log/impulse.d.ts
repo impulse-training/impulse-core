@@ -1,5 +1,5 @@
 import * as yup from 'yup';
-export declare const gameplanLogSchema: yup.ObjectSchema<{
+export declare const impulseLogSchema: yup.ObjectSchema<{
     createdAt: {
         isEqual?: any;
         toMillis?: any;
@@ -14,7 +14,7 @@ export declare const gameplanLogSchema: yup.ObjectSchema<{
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
-    type: "gameplan";
+    type: "impulse";
     uid: string;
     audioFile: {
         createdAt?: {
@@ -997,4 +997,4 @@ export declare const gameplanLogSchema: yup.ObjectSchema<{
     role: undefined;
     triggerDoc: undefined;
 }, "">;
-export type GameplanLogValue = yup.InferType<typeof gameplanLogSchema>;
+export type ImpulseLogValue = yup.InferType<typeof impulseLogSchema>;

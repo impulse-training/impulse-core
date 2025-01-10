@@ -1949,9 +1949,8 @@ export declare const threadSchema: yup.ObjectSchema<{
                 };
             } | undefined;
             senderUid?: string | null | undefined;
-            triggerDoc?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
             uid: string;
-            type: "gameplan";
+            type: "gpt";
             date: {
                 isEqual?: any;
                 toMillis?: any;
@@ -1960,7 +1959,7 @@ export declare const threadSchema: yup.ObjectSchema<{
                 toDate: Function;
             };
             dateString: string;
-            role: "user";
+            role: "assistant";
         } | {
             createdAt?: {
                 isEqual?: any;
@@ -2925,8 +2924,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                 };
             } | undefined;
             senderUid?: string | null | undefined;
+            triggerDoc?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
             uid: string;
-            type: "gpt";
+            type: "impulse";
             date: {
                 isEqual?: any;
                 toMillis?: any;
@@ -2935,7 +2935,7 @@ export declare const threadSchema: yup.ObjectSchema<{
                 toDate: Function;
             };
             dateString: string;
-            role: "assistant";
+            role: "user";
         } | {
             createdAt?: {
                 isEqual?: any;

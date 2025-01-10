@@ -12,7 +12,7 @@ export const behaviorSchema = yup.object({
   unit: yup.string().when('trackingType', {
     is: 'counter',
     then: schema =>
-      schema.required('Unit is required when trackingType is "counter".'),
+      schema.required('Unit is required when tracking type is "counter".'),
     otherwise: schema => schema.notRequired(),
   }),
   tacticsById,

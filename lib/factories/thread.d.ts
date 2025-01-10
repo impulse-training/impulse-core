@@ -1986,9 +1986,8 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                 };
             } | undefined;
             senderUid?: string | null | undefined;
-            triggerDoc?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
             uid: string;
-            type: "gameplan";
+            type: "gpt";
             date: {
                 isEqual?: any;
                 toMillis?: any;
@@ -1997,7 +1996,7 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                 toDate: Function;
             };
             dateString: string;
-            role: "user";
+            role: "assistant";
         } | {
             createdAt?: {
                 isEqual?: any;
@@ -2962,8 +2961,9 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                 };
             } | undefined;
             senderUid?: string | null | undefined;
+            triggerDoc?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
             uid: string;
-            type: "gpt";
+            type: "impulse";
             date: {
                 isEqual?: any;
                 toMillis?: any;
@@ -2972,7 +2972,7 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                 toDate: Function;
             };
             dateString: string;
-            role: "assistant";
+            role: "user";
         } | {
             createdAt?: {
                 isEqual?: any;

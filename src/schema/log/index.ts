@@ -1,7 +1,7 @@
 import * as yup from 'yup';
 import { CallLogValue, callLogSchema } from './call';
-import { GameplanLogValue, gameplanLogSchema } from './gameplan';
 import { GptLogValue, gptLogSchema } from './gpt';
+import { ImpulseLogValue, impulseLogSchema } from './impulse';
 import { ShowTourLogValue, showTourLogSchema } from './showTour';
 import { ToolCallLogValue, toolCallLogSchema } from './toolCall';
 import { UserLogValue, userLogSchema } from './user';
@@ -11,8 +11,8 @@ import {
   whatsappMessageLogSchema,
 } from './whatsappMessage';
 
-export * from './gameplan';
 export * from './gpt';
+export * from './impulse';
 export * from './showTour';
 export * from './toolCall';
 export * from './user';
@@ -27,7 +27,7 @@ export const logSchemas: Record<
   LogValue['type'],
   yup.ObjectSchema<LogValue>
 > = {
-  gameplan: gameplanLogSchema,
+  impulse: impulseLogSchema,
   call: callLogSchema,
   toolCall: toolCallLogSchema,
   showTour: showTourLogSchema,
@@ -64,5 +64,5 @@ export type LogValue =
   | ShowTourLogValue
   | ToolCallLogValue
   | WhatsappMessageLogValue
-  | GameplanLogValue
+  | ImpulseLogValue
   | GptLogValue;

@@ -4,6 +4,7 @@ import {
   metricAttributeAndDataSchema,
 } from './log';
 import { objectOf } from './utils/objectOf';
+import { optionalTimestampSchema } from './utils/timestamp';
 
 // A day summary is an object of behavior and metric
 // {
@@ -22,16 +23,23 @@ const behaviorTotalDataByIdSchema = yup.object({
   metrics: objectOf(metricAttributeAndDataSchema),
 });
 
-// A days summary document is an object of tactic day summaries, keyed by date. Think of it
-// as:
+// A days summary document is an object of tactic day summaries, keyed by date. Think of it as:
 // {
 //   "2024-01-30": {
-//     smokingBehaviorId: { behavior, data: { numericValue: 2, formattedValue: "2 cigarettes" } }
+//     behaviors: {
+//       smokingBehaviorId: { behavior, data: { numericValue: 2, formattedValue: "2 cigarettes" } }
+//     }
 //   },
 //   "2024-01-31": {
-//     smokingBehaviorId: { behavior, data: { numericValue: 2, formattedValue: "3 cigarettes" } }
+//     behaviors: {
+//       smokingBehaviorId: { behavior, data: { numericValue: 2, formattedValue: "3 cigarettes" } }
+//     }
 //   }
 // }
-export const daysSummarySchema = objectOf(behaviorTotalDataByIdSchema);
+export const daysSummarySchema = yup.object({
+  dates: objectOf(behaviorTotalDataByIdSchema),
+  createdAt: optionalTimestampSchema,
+  updatedAt: optionalTimestampSchema,
+});
 
 export type DaysSummaryValue = yup.InferType<typeof daysSummarySchema>;

@@ -1,14 +1,14 @@
 import * as yup from 'yup';
 import { CallLogValue } from './call';
-import { GameplanLogValue } from './gameplan';
 import { GptLogValue } from './gpt';
+import { ImpulseLogValue } from './impulse';
 import { ShowTourLogValue } from './showTour';
 import { ToolCallLogValue } from './toolCall';
 import { UserLogValue } from './user';
 import { WithTacticsById } from './utils/tacticData';
 import { WhatsappMessageLogValue } from './whatsappMessage';
-export * from './gameplan';
 export * from './gpt';
+export * from './impulse';
 export * from './showTour';
 export * from './toolCall';
 export * from './user';
@@ -1955,9 +1955,8 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
         };
     } | undefined;
     senderUid?: string | null | undefined;
-    triggerDoc?: import("../utils/firestore").DocumentReferenceLike<unknown> | undefined;
     uid: string;
-    type: "gameplan";
+    type: "gpt";
     date: {
         isEqual?: any;
         toMillis?: any;
@@ -1966,7 +1965,7 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
         toDate: Function;
     };
     dateString: string;
-    role: "user";
+    role: "assistant";
 } | {
     createdAt?: {
         isEqual?: any;
@@ -2931,8 +2930,9 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
         };
     } | undefined;
     senderUid?: string | null | undefined;
+    triggerDoc?: import("../utils/firestore").DocumentReferenceLike<unknown> | undefined;
     uid: string;
-    type: "gpt";
+    type: "impulse";
     date: {
         isEqual?: any;
         toMillis?: any;
@@ -2941,7 +2941,7 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
         toDate: Function;
     };
     dateString: string;
-    role: "assistant";
+    role: "user";
 } | {
     createdAt?: {
         isEqual?: any;
@@ -6875,4 +6875,4 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
 export type LogValues = {
     [K in LogValue['type']]: WithTacticsById<yup.InferType<(typeof logSchemas)[K]>>;
 };
-export type LogValue = UserLogValue | CallLogValue | ShowTourLogValue | ToolCallLogValue | WhatsappMessageLogValue | GameplanLogValue | GptLogValue;
+export type LogValue = UserLogValue | CallLogValue | ShowTourLogValue | ToolCallLogValue | WhatsappMessageLogValue | ImpulseLogValue | GptLogValue;
