@@ -7,7 +7,7 @@ import { makeIssueFactory } from './issue';
 import { makeLocationFactory } from './location';
 import { makeLogFactories } from './log';
 import { makeProfileFactory } from './profile';
-import { makeRoutineFactory } from './reminder';
+import { makeRoutineFactory } from './routine';
 import { makeSuggestionFactory } from './suggestion';
 import { makeTacticFactory } from './tactic';
 

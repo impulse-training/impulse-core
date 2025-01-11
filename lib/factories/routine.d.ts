@@ -454,9 +454,7 @@ export declare const makeRoutineFactory: (TimestampKlass: typeof TimestampLike) 
             doc: import("../schema/utils/firestore").DocumentReferenceLike<unknown>;
         };
     };
-    schedule: {
-        hour: number;
-        minute: number;
-        weekdays: (number | undefined)[];
-    }[];
-}, "name" | "type" | "tacticsById" | "schedule" | ("createdAt" | "updatedAt" | "ordinal")>;
+    hour: number;
+    minute: number;
+    weekdays: (number | undefined)[];
+}, "name" | "type" | "tacticsById" | "hour" | "minute" | "weekdays" | ("createdAt" | "updatedAt" | "ordinal")>;

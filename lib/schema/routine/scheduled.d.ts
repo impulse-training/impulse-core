@@ -453,11 +453,9 @@ export declare const scheduledRoutineSchema: yup.ObjectSchema<{
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
-    schedule: {
-        hour: number;
-        minute: number;
-        weekdays: (number | undefined)[];
-    }[];
+    hour: number;
+    minute: number;
+    weekdays: (number | undefined)[];
 }, yup.AnyObject, {
     name: undefined;
     type: undefined;
@@ -465,6 +463,8 @@ export declare const scheduledRoutineSchema: yup.ObjectSchema<{
     tacticsById: undefined;
     createdAt: undefined;
     updatedAt: undefined;
-    schedule: "";
+    hour: undefined;
+    minute: undefined;
+    weekdays: "";
 }, "">;
 export type ScheduledRoutineValue = yup.InferType<typeof scheduledRoutineSchema>;

@@ -914,11 +914,9 @@ export declare const routineSchema: yup.Lazy<WithTacticsById<{
             doc: import("../utils/firestore").DocumentReferenceLike<unknown>;
         };
     };
-    schedule: {
-        hour: number;
-        minute: number;
-        weekdays: (number | undefined)[];
-    }[];
+    hour: number;
+    minute: number;
+    weekdays: (number | undefined)[];
 }>, yup.AnyObject, any>;
 export type RoutineTypes = {
     [K in RoutineValue['type']]: WithTacticsById<yup.InferType<(typeof RoutineSchemas)[K]>>;
