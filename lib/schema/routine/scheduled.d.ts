@@ -1,7 +1,6 @@
 import * as yup from 'yup';
 export declare const scheduledRoutineSchema: yup.ObjectSchema<{
     name: string;
-    checkboxLabel: string;
     type: "scheduled";
     ordinal: number | undefined;
     tacticsById: {
@@ -461,7 +460,6 @@ export declare const scheduledRoutineSchema: yup.ObjectSchema<{
     }[];
 }, yup.AnyObject, {
     name: undefined;
-    checkboxLabel: undefined;
     type: undefined;
     ordinal: undefined;
     tacticsById: undefined;

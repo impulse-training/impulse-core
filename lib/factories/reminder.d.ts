@@ -454,10 +454,9 @@ export declare const makeRoutineFactory: (TimestampKlass: typeof TimestampLike) 
             doc: import("../schema/utils/firestore").DocumentReferenceLike<unknown>;
         };
     };
-    checkboxLabel: string;
     schedule: {
         hour: number;
         minute: number;
         weekdays: (number | undefined)[];
     }[];
-}, "name" | "type" | "tacticsById" | "checkboxLabel" | "schedule" | ("createdAt" | "updatedAt" | "ordinal")>;
+}, "name" | "type" | "tacticsById" | "schedule" | ("createdAt" | "updatedAt" | "ordinal")>;

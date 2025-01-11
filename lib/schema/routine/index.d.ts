@@ -6,7 +6,7 @@ export * from './location';
 export * from './scheduled';
 export type RoutineValue = ScheduledRoutineValue | LocationRoutineValue;
 export declare const RoutineSchemas: Record<RoutineValue['type'], yup.ObjectSchema<RoutineValue>>;
-export declare const reminderSchema: yup.Lazy<WithTacticsById<{
+export declare const routineSchema: yup.Lazy<WithTacticsById<{
     createdAt?: {
         isEqual?: any;
         toMillis?: any;
@@ -460,7 +460,6 @@ export declare const reminderSchema: yup.Lazy<WithTacticsById<{
             doc: import("../utils/firestore").DocumentReferenceLike<unknown>;
         };
     };
-    checkboxLabel: string;
 } | {
     createdAt?: {
         isEqual?: any;
@@ -915,7 +914,6 @@ export declare const reminderSchema: yup.Lazy<WithTacticsById<{
             doc: import("../utils/firestore").DocumentReferenceLike<unknown>;
         };
     };
-    checkboxLabel: string;
     schedule: {
         hour: number;
         minute: number;

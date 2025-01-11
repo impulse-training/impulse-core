@@ -1,7 +1,6 @@
 import * as yup from 'yup';
 export declare const locationRoutineSchema: yup.ObjectSchema<{
     name: string;
-    checkboxLabel: string;
     type: NonNullable<"arrival" | "departure" | "both" | undefined>;
     ordinal: number | undefined;
     tacticsById: {
@@ -456,7 +455,6 @@ export declare const locationRoutineSchema: yup.ObjectSchema<{
     } | null | undefined;
 }, yup.AnyObject, {
     name: undefined;
-    checkboxLabel: undefined;
     type: undefined;
     ordinal: undefined;
     tacticsById: undefined;

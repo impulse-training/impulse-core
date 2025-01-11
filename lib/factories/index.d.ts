@@ -1618,7 +1618,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         };
         timezone: string;
     }, "uids" | "verificationCode" | "dayReviewTime" | "recentSummaries" | "timezone" | ("createdAt" | "updatedAt" | "parentIds" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseDoc" | "defaultBehaviorDoc" | "tourCompletedAt" | "scheduledNotificationIds" | "whatsappStrategyDoc" | "onboardedWithZaraAt" | "currentAppState" | "expoPushToken" | "notificationPreferences" | "goal" | "isReadyForTour" | "isOnboardingComplete" | "sendDebriefRoutinesAfterMinutes" | "androidPermissions" | "historicalInsights" | "isTourDismissed" | "region" | "enableZara")>;
-    reminderFactory: import("factory.ts").Factory<{
+    routineFactory: import("factory.ts").Factory<{
         createdAt?: {
             isEqual?: any;
             toMillis?: any;
@@ -2072,13 +2072,12 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 doc: import("../schema/utils/firestore").DocumentReferenceLike<unknown>;
             };
         };
-        checkboxLabel: string;
         schedule: {
             hour: number;
             minute: number;
             weekdays: (number | undefined)[];
         }[];
-    }, "name" | "type" | "tacticsById" | "checkboxLabel" | "schedule" | ("createdAt" | "updatedAt" | "ordinal")>;
+    }, "name" | "type" | "tacticsById" | "schedule" | ("createdAt" | "updatedAt" | "ordinal")>;
     tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "sourceFile" | "sharedWithIssueIds" | "uid" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "prompt" | "isShared" | "description" | "type" | "pastTenseTitle" | "debriefAfterMinutes" | "image" | "backgroundColor" | "likesCount" | "timerSeconds" | "isSuggested">;
     suggestionFactory: import("factory.ts").Factory<{
         createdAt?: {

@@ -1,7 +1,6 @@
 import * as yup from 'yup';
 export declare function reminderBaseSchema<T extends string>(type: T): yup.ObjectSchema<{
     name: string;
-    checkboxLabel: string;
     type: T & {};
     ordinal: number | undefined;
     tacticsById: {
@@ -456,7 +455,6 @@ export declare function reminderBaseSchema<T extends string>(type: T): yup.Objec
     } | null | undefined;
 }, yup.AnyObject, {
     name: undefined;
-    checkboxLabel: undefined;
     type: undefined;
     ordinal: undefined;
     tacticsById: undefined;

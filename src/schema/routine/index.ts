@@ -18,7 +18,7 @@ export const RoutineSchemas: Record<
   location: locationRoutineSchema,
 } as any;
 
-export const reminderSchema = yup.lazy(value => {
+export const routineSchema = yup.lazy(value => {
   if (typeof value.type === 'string' && value.type in RoutineSchemas) {
     return RoutineSchemas[value.type as RoutineValue['type']];
   }

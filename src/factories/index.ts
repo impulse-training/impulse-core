@@ -22,7 +22,7 @@ export function makeFactories(TimestampKlass: typeof TimestampLike) {
     locationFactory: makeLocationFactory(TimestampKlass),
     daysSummaryFactory: makeDaysSummaryFactory(TimestampKlass),
     profileFactory: makeProfileFactory(TimestampKlass),
-    reminderFactory: makeRoutineFactory(TimestampKlass),
+    routineFactory: makeRoutineFactory(TimestampKlass),
     tacticFactory: makeTacticFactory(TimestampKlass),
     suggestionFactory: makeSuggestionFactory(TimestampKlass),
     behaviorFactory: makeBehaviorFactory(TimestampKlass),
