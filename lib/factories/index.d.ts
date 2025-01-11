@@ -963,6 +963,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             };
         } | undefined;
         senderUid?: string | null | undefined;
+        senderName?: string | null | undefined;
         uid: string;
         type: "user";
         date: {
@@ -974,7 +975,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         };
         dateString: string;
         role: "user";
-    }, "uid" | "type" | "date" | "dateString" | "role" | ("createdAt" | "updatedAt" | "text" | "audioFile" | "metricData" | "behaviorData" | "tacticsData" | "senderUid")>;
+    }, "uid" | "type" | "date" | "dateString" | "role" | ("createdAt" | "updatedAt" | "text" | "audioFile" | "metricData" | "behaviorData" | "tacticsData" | "senderUid" | "senderName")>;
     applicationFactory: import("factory.ts").Factory<import("..").ApplicationValue, keyof import("..").ApplicationValue>;
     dayFactory: import("factory.ts").Factory<import("..").DayValue, "uid" | "date" | "logsById">;
     issueFactory: import("factory.ts").Factory<{

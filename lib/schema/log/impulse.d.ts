@@ -972,6 +972,7 @@ export declare const impulseLogSchema: yup.ObjectSchema<{
     };
     dateString: string;
     senderUid: string | null | undefined;
+    senderName: string | null | undefined;
     role: "user";
     triggerDoc: import("../utils/firestore").DocumentReferenceLike<unknown> | undefined;
 }, yup.AnyObject, {
@@ -993,6 +994,7 @@ export declare const impulseLogSchema: yup.ObjectSchema<{
     };
     dateString: undefined;
     senderUid: undefined;
+    senderName: undefined;
     role: undefined;
     triggerDoc: undefined;
 }, "">;

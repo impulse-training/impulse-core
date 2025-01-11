@@ -964,6 +964,7 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
             };
         } | undefined;
         senderUid?: string | null | undefined;
+        senderName?: string | null | undefined;
         uid: string;
         type: "user";
         date: {
@@ -975,5 +976,5 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
         };
         dateString: string;
         role: "user";
-    }, "uid" | "type" | "date" | "dateString" | "role" | ("createdAt" | "updatedAt" | "text" | "audioFile" | "metricData" | "behaviorData" | "tacticsData" | "senderUid")>;
+    }, "uid" | "type" | "date" | "dateString" | "role" | ("createdAt" | "updatedAt" | "text" | "audioFile" | "metricData" | "behaviorData" | "tacticsData" | "senderUid" | "senderName")>;
 };

@@ -17,6 +17,7 @@ export declare const chatSchema: yup.Lazy<{
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
+    senderName?: string | undefined;
     filesUpdatedAt?: {
         isEqual?: any;
         toMillis?: any;
@@ -24,7 +25,6 @@ export declare const chatSchema: yup.Lazy<{
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
-    senderName?: string | undefined;
     issueIds?: string[] | undefined;
     uid: string;
     type: "whatsapp";

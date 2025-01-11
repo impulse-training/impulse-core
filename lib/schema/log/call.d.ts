@@ -972,6 +972,7 @@ export declare const callLogSchema: yup.ObjectSchema<{
     };
     dateString: string;
     senderUid: string | null | undefined;
+    senderName: string | null | undefined;
 }, yup.AnyObject, {
     createdAt: undefined;
     updatedAt: undefined;
@@ -991,5 +992,6 @@ export declare const callLogSchema: yup.ObjectSchema<{
     };
     dateString: undefined;
     senderUid: undefined;
+    senderName: undefined;
 }, "">;
 export type CallLogValue = yup.InferType<typeof callLogSchema>;

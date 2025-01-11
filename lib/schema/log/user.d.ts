@@ -972,6 +972,7 @@ export declare const userLogSchema: yup.ObjectSchema<{
     };
     dateString: string;
     senderUid: string | null | undefined;
+    senderName: string | null | undefined;
     role: "user";
 }, yup.AnyObject, {
     createdAt: undefined;
@@ -992,6 +993,7 @@ export declare const userLogSchema: yup.ObjectSchema<{
     };
     dateString: undefined;
     senderUid: undefined;
+    senderName: undefined;
     role: undefined;
 }, "">;
 export type UserLogValue = yup.InferType<typeof userLogSchema>;

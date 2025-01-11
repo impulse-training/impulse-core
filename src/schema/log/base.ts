@@ -24,5 +24,6 @@ export function logBaseSchema<K extends string>(type: K) {
     dateString: yup.string().required(),
 
     senderUid: yup.string().nullable(),
+    senderName: yup.string().nullable(),
   });
 }

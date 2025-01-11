@@ -967,6 +967,7 @@ export declare const logsById: yup.Lazy<{
                 };
             } | undefined;
             senderUid?: string | null | undefined;
+            senderName?: string | null | undefined;
             uid: string;
             type: "call";
             date: {
@@ -1940,6 +1941,7 @@ export declare const logsById: yup.Lazy<{
                 };
             } | undefined;
             senderUid?: string | null | undefined;
+            senderName?: string | null | undefined;
             uid: string;
             type: "gpt";
             date: {
@@ -2914,6 +2916,7 @@ export declare const logsById: yup.Lazy<{
                 };
             } | undefined;
             senderUid?: string | null | undefined;
+            senderName?: string | null | undefined;
             triggerDoc?: DocumentReferenceLike<unknown> | undefined;
             uid: string;
             type: "impulse";
@@ -3889,6 +3892,7 @@ export declare const logsById: yup.Lazy<{
                 };
             } | undefined;
             senderUid?: string | null | undefined;
+            senderName?: string | null | undefined;
             animationFileName?: string | undefined;
             uid: string;
             type: "showTour";
@@ -4869,6 +4873,7 @@ export declare const logsById: yup.Lazy<{
                 };
             } | undefined;
             senderUid?: string | null | undefined;
+            senderName?: string | null | undefined;
             uid: string;
             type: "toolCall";
             date: {
@@ -5844,6 +5849,7 @@ export declare const logsById: yup.Lazy<{
                 };
             } | undefined;
             senderUid?: string | null | undefined;
+            senderName?: string | null | undefined;
             uid: string;
             type: "user";
             date: {
@@ -6818,6 +6824,7 @@ export declare const logsById: yup.Lazy<{
                 };
             } | undefined;
             senderUid?: string | null | undefined;
+            senderName?: string | null | undefined;
             files?: yup.Maybe<{
                 createdAt?: {
                     isEqual?: any;
@@ -7833,6 +7840,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     };
                 } | undefined;
                 senderUid?: string | null | undefined;
+                senderName?: string | null | undefined;
                 uid: string;
                 type: "call";
                 date: {
@@ -8806,6 +8814,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     };
                 } | undefined;
                 senderUid?: string | null | undefined;
+                senderName?: string | null | undefined;
                 uid: string;
                 type: "gpt";
                 date: {
@@ -9780,6 +9789,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     };
                 } | undefined;
                 senderUid?: string | null | undefined;
+                senderName?: string | null | undefined;
                 triggerDoc?: DocumentReferenceLike<unknown> | undefined;
                 uid: string;
                 type: "impulse";
@@ -10755,6 +10765,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     };
                 } | undefined;
                 senderUid?: string | null | undefined;
+                senderName?: string | null | undefined;
                 animationFileName?: string | undefined;
                 uid: string;
                 type: "showTour";
@@ -11735,6 +11746,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     };
                 } | undefined;
                 senderUid?: string | null | undefined;
+                senderName?: string | null | undefined;
                 uid: string;
                 type: "toolCall";
                 date: {
@@ -12710,6 +12722,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     };
                 } | undefined;
                 senderUid?: string | null | undefined;
+                senderName?: string | null | undefined;
                 uid: string;
                 type: "user";
                 date: {
@@ -13684,6 +13697,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     };
                 } | undefined;
                 senderUid?: string | null | undefined;
+                senderName?: string | null | undefined;
                 files?: yup.Maybe<{
                     createdAt?: {
                         isEqual?: any;

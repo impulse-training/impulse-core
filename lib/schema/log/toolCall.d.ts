@@ -972,6 +972,7 @@ export declare const toolCallLogSchema: yup.ObjectSchema<{
     };
     dateString: string;
     senderUid: string | null | undefined;
+    senderName: string | null | undefined;
     role: "tool";
     toolCallId: string;
 }, yup.AnyObject, {
@@ -993,6 +994,7 @@ export declare const toolCallLogSchema: yup.ObjectSchema<{
     };
     dateString: undefined;
     senderUid: undefined;
+    senderName: undefined;
     role: undefined;
     toolCallId: undefined;
 }, "">;

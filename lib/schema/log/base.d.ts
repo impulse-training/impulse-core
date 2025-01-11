@@ -972,6 +972,7 @@ export declare function logBaseSchema<K extends string>(type: K): yup.ObjectSche
     };
     dateString: string;
     senderUid: string | null | undefined;
+    senderName: string | null | undefined;
 }, yup.AnyObject, {
     createdAt: undefined;
     updatedAt: undefined;
@@ -991,4 +992,5 @@ export declare function logBaseSchema<K extends string>(type: K): yup.ObjectSche
     };
     dateString: undefined;
     senderUid: undefined;
+    senderName: undefined;
 }, "">;

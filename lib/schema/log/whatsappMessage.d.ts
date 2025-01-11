@@ -972,6 +972,7 @@ export declare const whatsappMessageLogSchema: yup.ObjectSchema<{
     };
     dateString: string;
     senderUid: string | null | undefined;
+    senderName: string | null | undefined;
     files: yup.Maybe<{
         createdAt?: {
             isEqual?: any;
@@ -1014,6 +1015,7 @@ export declare const whatsappMessageLogSchema: yup.ObjectSchema<{
     };
     dateString: undefined;
     senderUid: undefined;
+    senderName: undefined;
     files: "";
 }, "">;
 export type WhatsappMessageLogValue = yup.InferType<typeof whatsappMessageLogSchema>;

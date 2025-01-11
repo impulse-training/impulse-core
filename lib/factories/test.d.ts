@@ -961,6 +961,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         };
     } | undefined;
     senderUid?: string | null | undefined;
+    senderName?: string | null | undefined;
     uid: string;
     type: "user";
     date: {
@@ -972,7 +973,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
     };
     dateString: string;
     role: "user";
-}, "uid" | "type" | "date" | "dateString" | "role" | ("createdAt" | "updatedAt" | "text" | "audioFile" | "metricData" | "behaviorData" | "tacticsData" | "senderUid")>, profileFactory: import("factory.ts").Factory<{
+}, "uid" | "type" | "date" | "dateString" | "role" | ("createdAt" | "updatedAt" | "text" | "audioFile" | "metricData" | "behaviorData" | "tacticsData" | "senderUid" | "senderName")>, profileFactory: import("factory.ts").Factory<{
     createdAt?: {
         isEqual?: any;
         toMillis?: any;

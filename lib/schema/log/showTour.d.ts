@@ -983,6 +983,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
     };
     dateString: string;
     senderUid: string | null | undefined;
+    senderName: string | null | undefined;
     steps: {
         message: string;
         elementRefName: string;
@@ -1009,6 +1010,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
     };
     dateString: undefined;
     senderUid: undefined;
+    senderName: undefined;
     steps: "";
     animationFileName: undefined;
 }, "">;

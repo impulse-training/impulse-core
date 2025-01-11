@@ -980,6 +980,7 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
         };
     } | undefined;
     senderUid?: string | null | undefined;
+    senderName?: string | null | undefined;
     uid: string;
     type: "call";
     date: {
@@ -1953,6 +1954,7 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
         };
     } | undefined;
     senderUid?: string | null | undefined;
+    senderName?: string | null | undefined;
     uid: string;
     type: "gpt";
     date: {
@@ -2927,6 +2929,7 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
         };
     } | undefined;
     senderUid?: string | null | undefined;
+    senderName?: string | null | undefined;
     triggerDoc?: import("../utils/firestore").DocumentReferenceLike<unknown> | undefined;
     uid: string;
     type: "impulse";
@@ -3902,6 +3905,7 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
         };
     } | undefined;
     senderUid?: string | null | undefined;
+    senderName?: string | null | undefined;
     animationFileName?: string | undefined;
     uid: string;
     type: "showTour";
@@ -4882,6 +4886,7 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
         };
     } | undefined;
     senderUid?: string | null | undefined;
+    senderName?: string | null | undefined;
     uid: string;
     type: "toolCall";
     date: {
@@ -5857,6 +5862,7 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
         };
     } | undefined;
     senderUid?: string | null | undefined;
+    senderName?: string | null | undefined;
     uid: string;
     type: "user";
     date: {
@@ -6831,6 +6837,7 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
         };
     } | undefined;
     senderUid?: string | null | undefined;
+    senderName?: string | null | undefined;
     files?: yup.Maybe<{
         createdAt?: {
             isEqual?: any;
