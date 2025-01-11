@@ -73,7 +73,6 @@ export declare const factories: {
                     } | null | undefined;
                     unit?: string | undefined;
                     dailyLimit?: number | undefined;
-                    skipReminderAutoCreation?: boolean | undefined;
                     name: string;
                     ordinal: number;
                     trackingType: NonNullable<"time" | "counter" | undefined>;
@@ -1065,7 +1064,6 @@ export declare const factories: {
                             } | null | undefined;
                             unit?: string | undefined;
                             dailyLimit?: number | undefined;
-                            skipReminderAutoCreation?: boolean | undefined;
                             name: string;
                             ordinal: number;
                             trackingType: NonNullable<"time" | "counter" | undefined>;
@@ -1599,7 +1597,7 @@ export declare const factories: {
         goal?: string | null | undefined;
         isReadyForTour?: boolean | undefined;
         isOnboardingComplete?: boolean | undefined;
-        sendDebriefRemindersAfterMinutes?: number | undefined;
+        sendDebriefRoutinesAfterMinutes?: number | undefined;
         androidPermissions?: {
             [x: string]: NonNullable<boolean | undefined>;
         } | null | undefined;
@@ -1617,7 +1615,7 @@ export declare const factories: {
             [x: string]: string;
         };
         timezone: string;
-    }, "uids" | "verificationCode" | "dayReviewTime" | "recentSummaries" | "timezone" | ("createdAt" | "updatedAt" | "parentIds" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseDoc" | "defaultBehaviorDoc" | "tourCompletedAt" | "scheduledNotificationIds" | "whatsappStrategyDoc" | "onboardedWithZaraAt" | "currentAppState" | "expoPushToken" | "notificationPreferences" | "goal" | "isReadyForTour" | "isOnboardingComplete" | "sendDebriefRemindersAfterMinutes" | "androidPermissions" | "historicalInsights" | "isTourDismissed" | "region" | "enableZara")>;
+    }, "uids" | "verificationCode" | "dayReviewTime" | "recentSummaries" | "timezone" | ("createdAt" | "updatedAt" | "parentIds" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseDoc" | "defaultBehaviorDoc" | "tourCompletedAt" | "scheduledNotificationIds" | "whatsappStrategyDoc" | "onboardedWithZaraAt" | "currentAppState" | "expoPushToken" | "notificationPreferences" | "goal" | "isReadyForTour" | "isOnboardingComplete" | "sendDebriefRoutinesAfterMinutes" | "androidPermissions" | "historicalInsights" | "isTourDismissed" | "region" | "enableZara")>;
     reminderFactory: import("factory.ts").Factory<{
         createdAt?: {
             isEqual?: any;
@@ -2080,34 +2078,6 @@ export declare const factories: {
         }[];
     }, "name" | "type" | "tacticsById" | "checkboxLabel" | "schedule" | ("createdAt" | "updatedAt" | "ordinal")>;
     tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "sourceFile" | "sharedWithIssueIds" | "uid" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "prompt" | "isShared" | "description" | "type" | "pastTenseTitle" | "debriefAfterMinutes" | "image" | "backgroundColor" | "likesCount" | "timerSeconds" | "isSuggested">;
-    roadmapFactory: import("factory.ts").Factory<{
-        createdAt?: {
-            isEqual?: any;
-            toMillis?: any;
-            seconds: number;
-            nanoseconds: number;
-            toDate: Function;
-        } | null | undefined;
-        updatedAt?: {
-            isEqual?: any;
-            toMillis?: any;
-            seconds: number;
-            nanoseconds: number;
-            toDate: Function;
-        } | null | undefined;
-        recommendedForIssueIds?: string[] | undefined;
-        recommendedForIssueOrdinals?: {
-            [x: string]: number;
-        } | null | undefined;
-        name: string;
-        stages: {
-            name: string;
-            graduationCriteria: {
-                requiredWinRate: number;
-                requiredWinRateDays: number;
-            };
-        }[];
-    }, "name" | "stages" | ("createdAt" | "updatedAt" | "recommendedForIssueIds" | "recommendedForIssueOrdinals")>;
     suggestionFactory: import("factory.ts").Factory<{
         createdAt?: {
             isEqual?: any;
@@ -2123,11 +2093,11 @@ export declare const factories: {
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        stages?: number[] | undefined;
         tacticDocs?: import("../schema/utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
+        stages?: number[] | undefined;
         title: string;
         gptContext: string;
-    }, "title" | "gptContext" | ("createdAt" | "updatedAt" | "stages" | "tacticDocs")>;
+    }, "title" | "gptContext" | ("createdAt" | "updatedAt" | "tacticDocs" | "stages")>;
     behaviorFactory: import("factory.ts").Factory<{
         createdAt?: {
             isEqual?: any;
@@ -2145,7 +2115,6 @@ export declare const factories: {
         } | null | undefined;
         unit?: string | undefined;
         dailyLimit?: number | undefined;
-        skipReminderAutoCreation?: boolean | undefined;
         name: string;
         ordinal: number;
         trackingType: NonNullable<"time" | "counter" | undefined>;
@@ -2586,5 +2555,5 @@ export declare const factories: {
             };
         };
         isHelpful: boolean | null;
-    }, "name" | "ordinal" | "trackingType" | "tacticsById" | "isHelpful" | ("createdAt" | "updatedAt" | "unit" | "dailyLimit" | "skipReminderAutoCreation")>;
+    }, "name" | "ordinal" | "trackingType" | "tacticsById" | "isHelpful" | ("createdAt" | "updatedAt" | "unit" | "dailyLimit")>;
 };

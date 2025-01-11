@@ -85,7 +85,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                         } | null | undefined;
                         unit?: string | undefined;
                         dailyLimit?: number | undefined;
-                        skipReminderAutoCreation?: boolean | undefined;
                         name: string;
                         ordinal: number;
                         trackingType: NonNullable<"time" | "counter" | undefined>;
@@ -1059,7 +1058,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                         } | null | undefined;
                         unit?: string | undefined;
                         dailyLimit?: number | undefined;
-                        skipReminderAutoCreation?: boolean | undefined;
                         name: string;
                         ordinal: number;
                         trackingType: NonNullable<"time" | "counter" | undefined>;
@@ -2034,7 +2032,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                         } | null | undefined;
                         unit?: string | undefined;
                         dailyLimit?: number | undefined;
-                        skipReminderAutoCreation?: boolean | undefined;
                         name: string;
                         ordinal: number;
                         trackingType: NonNullable<"time" | "counter" | undefined>;
@@ -3010,7 +3007,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                         } | null | undefined;
                         unit?: string | undefined;
                         dailyLimit?: number | undefined;
-                        skipReminderAutoCreation?: boolean | undefined;
                         name: string;
                         ordinal: number;
                         trackingType: NonNullable<"time" | "counter" | undefined>;
@@ -3991,7 +3987,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                         } | null | undefined;
                         unit?: string | undefined;
                         dailyLimit?: number | undefined;
-                        skipReminderAutoCreation?: boolean | undefined;
                         name: string;
                         ordinal: number;
                         trackingType: NonNullable<"time" | "counter" | undefined>;
@@ -4967,7 +4962,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                         } | null | undefined;
                         unit?: string | undefined;
                         dailyLimit?: number | undefined;
-                        skipReminderAutoCreation?: boolean | undefined;
                         name: string;
                         ordinal: number;
                         trackingType: NonNullable<"time" | "counter" | undefined>;
@@ -5942,7 +5936,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                         } | null | undefined;
                         unit?: string | undefined;
                         dailyLimit?: number | undefined;
-                        skipReminderAutoCreation?: boolean | undefined;
                         name: string;
                         ordinal: number;
                         trackingType: NonNullable<"time" | "counter" | undefined>;
@@ -6881,7 +6874,7 @@ export declare const threadSchema: yup.ObjectSchema<{
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
-    debriefReminderSentAt: {
+    debriefRoutineSentAt: {
         isEqual?: any;
         toMillis?: any;
         seconds: number;
@@ -6917,7 +6910,7 @@ export declare const threadSchema: yup.ObjectSchema<{
     logsById: undefined;
     debriefedAt: undefined;
     debriefAfter: undefined;
-    debriefReminderSentAt: undefined;
+    debriefRoutineSentAt: undefined;
     outcome: undefined;
     createdAt: undefined;
     updatedAt: undefined;

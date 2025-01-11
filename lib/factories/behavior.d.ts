@@ -17,7 +17,6 @@ export declare const makeBehaviorFactory: (TimestampKlass: typeof TimestampLike)
     } | null | undefined;
     unit?: string | undefined;
     dailyLimit?: number | undefined;
-    skipReminderAutoCreation?: boolean | undefined;
     name: string;
     ordinal: number;
     trackingType: NonNullable<"time" | "counter" | undefined>;
@@ -458,4 +457,4 @@ export declare const makeBehaviorFactory: (TimestampKlass: typeof TimestampLike)
         };
     };
     isHelpful: boolean | null;
-}, "name" | "ordinal" | "trackingType" | "tacticsById" | "isHelpful" | ("createdAt" | "updatedAt" | "unit" | "dailyLimit" | "skipReminderAutoCreation")>;
+}, "name" | "ordinal" | "trackingType" | "tacticsById" | "isHelpful" | ("createdAt" | "updatedAt" | "unit" | "dailyLimit")>;

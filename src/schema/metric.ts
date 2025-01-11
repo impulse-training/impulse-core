@@ -35,5 +35,7 @@ export const metricAttributeSchema = yup.object({
 export const metricSchema = yup.object({
   positiveAttribute: metricAttributeSchema.required(),
   negativeAttribute: metricAttributeSchema.optional().default(undefined),
+  isRecommendedForExperiments: yup.boolean(),
+  overallDescription: yup.string(),
 });
 export type MetricValue = yup.InferType<typeof metricSchema>;

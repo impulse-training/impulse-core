@@ -78,7 +78,6 @@ export declare const logsById: yup.Lazy<{
                         } | null | undefined;
                         unit?: string | undefined;
                         dailyLimit?: number | undefined;
-                        skipReminderAutoCreation?: boolean | undefined;
                         name: string;
                         ordinal: number;
                         trackingType: NonNullable<"time" | "counter" | undefined>;
@@ -1052,7 +1051,6 @@ export declare const logsById: yup.Lazy<{
                         } | null | undefined;
                         unit?: string | undefined;
                         dailyLimit?: number | undefined;
-                        skipReminderAutoCreation?: boolean | undefined;
                         name: string;
                         ordinal: number;
                         trackingType: NonNullable<"time" | "counter" | undefined>;
@@ -2027,7 +2025,6 @@ export declare const logsById: yup.Lazy<{
                         } | null | undefined;
                         unit?: string | undefined;
                         dailyLimit?: number | undefined;
-                        skipReminderAutoCreation?: boolean | undefined;
                         name: string;
                         ordinal: number;
                         trackingType: NonNullable<"time" | "counter" | undefined>;
@@ -3003,7 +3000,6 @@ export declare const logsById: yup.Lazy<{
                         } | null | undefined;
                         unit?: string | undefined;
                         dailyLimit?: number | undefined;
-                        skipReminderAutoCreation?: boolean | undefined;
                         name: string;
                         ordinal: number;
                         trackingType: NonNullable<"time" | "counter" | undefined>;
@@ -3984,7 +3980,6 @@ export declare const logsById: yup.Lazy<{
                         } | null | undefined;
                         unit?: string | undefined;
                         dailyLimit?: number | undefined;
-                        skipReminderAutoCreation?: boolean | undefined;
                         name: string;
                         ordinal: number;
                         trackingType: NonNullable<"time" | "counter" | undefined>;
@@ -4960,7 +4955,6 @@ export declare const logsById: yup.Lazy<{
                         } | null | undefined;
                         unit?: string | undefined;
                         dailyLimit?: number | undefined;
-                        skipReminderAutoCreation?: boolean | undefined;
                         name: string;
                         ordinal: number;
                         trackingType: NonNullable<"time" | "counter" | undefined>;
@@ -5935,7 +5929,6 @@ export declare const logsById: yup.Lazy<{
                         } | null | undefined;
                         unit?: string | undefined;
                         dailyLimit?: number | undefined;
-                        skipReminderAutoCreation?: boolean | undefined;
                         name: string;
                         ordinal: number;
                         trackingType: NonNullable<"time" | "counter" | undefined>;
@@ -6951,7 +6944,6 @@ export declare const daySchema: yup.ObjectSchema<{
                             } | null | undefined;
                             unit?: string | undefined;
                             dailyLimit?: number | undefined;
-                            skipReminderAutoCreation?: boolean | undefined;
                             name: string;
                             ordinal: number;
                             trackingType: NonNullable<"time" | "counter" | undefined>;
@@ -7925,7 +7917,6 @@ export declare const daySchema: yup.ObjectSchema<{
                             } | null | undefined;
                             unit?: string | undefined;
                             dailyLimit?: number | undefined;
-                            skipReminderAutoCreation?: boolean | undefined;
                             name: string;
                             ordinal: number;
                             trackingType: NonNullable<"time" | "counter" | undefined>;
@@ -8900,7 +8891,6 @@ export declare const daySchema: yup.ObjectSchema<{
                             } | null | undefined;
                             unit?: string | undefined;
                             dailyLimit?: number | undefined;
-                            skipReminderAutoCreation?: boolean | undefined;
                             name: string;
                             ordinal: number;
                             trackingType: NonNullable<"time" | "counter" | undefined>;
@@ -9876,7 +9866,6 @@ export declare const daySchema: yup.ObjectSchema<{
                             } | null | undefined;
                             unit?: string | undefined;
                             dailyLimit?: number | undefined;
-                            skipReminderAutoCreation?: boolean | undefined;
                             name: string;
                             ordinal: number;
                             trackingType: NonNullable<"time" | "counter" | undefined>;
@@ -10857,7 +10846,6 @@ export declare const daySchema: yup.ObjectSchema<{
                             } | null | undefined;
                             unit?: string | undefined;
                             dailyLimit?: number | undefined;
-                            skipReminderAutoCreation?: boolean | undefined;
                             name: string;
                             ordinal: number;
                             trackingType: NonNullable<"time" | "counter" | undefined>;
@@ -11833,7 +11821,6 @@ export declare const daySchema: yup.ObjectSchema<{
                             } | null | undefined;
                             unit?: string | undefined;
                             dailyLimit?: number | undefined;
-                            skipReminderAutoCreation?: boolean | undefined;
                             name: string;
                             ordinal: number;
                             trackingType: NonNullable<"time" | "counter" | undefined>;
@@ -12808,7 +12795,6 @@ export declare const daySchema: yup.ObjectSchema<{
                             } | null | undefined;
                             unit?: string | undefined;
                             dailyLimit?: number | undefined;
-                            skipReminderAutoCreation?: boolean | undefined;
                             name: string;
                             ordinal: number;
                             trackingType: NonNullable<"time" | "counter" | undefined>;

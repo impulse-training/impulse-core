@@ -18,7 +18,6 @@ export const behaviorSchema = yup.object({
   tacticsById,
   dailyLimit: yup.number(),
   isHelpful: yup.boolean().nullable().defined(),
-  skipReminderAutoCreation: yup.boolean(),
   createdAt: optionalTimestampSchema,
   updatedAt: optionalTimestampSchema,
 });

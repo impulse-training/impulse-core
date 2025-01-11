@@ -31,7 +31,6 @@ export declare const behaviorAndBehaviorDataSchema: yup.ObjectSchema<{
         } | null | undefined;
         unit?: string | undefined;
         dailyLimit?: number | undefined;
-        skipReminderAutoCreation?: boolean | undefined;
         name: string;
         ordinal: number;
         trackingType: NonNullable<"time" | "counter" | undefined>;
@@ -492,7 +491,6 @@ export declare const behaviorAndBehaviorDataSchema: yup.ObjectSchema<{
         tacticsById: undefined;
         dailyLimit: undefined;
         isHelpful: undefined;
-        skipReminderAutoCreation: undefined;
         createdAt: undefined;
         updatedAt: undefined;
     };

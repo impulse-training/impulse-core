@@ -75,7 +75,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     } | null | undefined;
                     unit?: string | undefined;
                     dailyLimit?: number | undefined;
-                    skipReminderAutoCreation?: boolean | undefined;
                     name: string;
                     ordinal: number;
                     trackingType: NonNullable<"time" | "counter" | undefined>;

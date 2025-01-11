@@ -1,8 +1,8 @@
 import * as yup from 'yup';
-export declare const scheduledReminderSchema: yup.ObjectSchema<{
+export declare const locationRoutineSchema: yup.ObjectSchema<{
     name: string;
     checkboxLabel: string;
-    type: "scheduled";
+    type: NonNullable<"arrival" | "departure" | "both" | undefined>;
     ordinal: number | undefined;
     tacticsById: {
         [x: string]: {
@@ -454,11 +454,6 @@ export declare const scheduledReminderSchema: yup.ObjectSchema<{
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
-    schedule: {
-        hour: number;
-        minute: number;
-        weekdays: (number | undefined)[];
-    }[];
 }, yup.AnyObject, {
     name: undefined;
     checkboxLabel: undefined;
@@ -467,6 +462,5 @@ export declare const scheduledReminderSchema: yup.ObjectSchema<{
     tacticsById: undefined;
     createdAt: undefined;
     updatedAt: undefined;
-    schedule: "";
 }, "">;
-export type ScheduledReminderValue = yup.InferType<typeof scheduledReminderSchema>;
+export type LocationRoutineValue = yup.InferType<typeof locationRoutineSchema>;

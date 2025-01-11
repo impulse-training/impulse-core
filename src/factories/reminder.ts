@@ -1,9 +1,9 @@
 import * as Factory from 'factory.ts';
-import { ScheduledReminderValue } from '../schema';
+import { ScheduledRoutineValue } from '../schema';
 import { TimestampLike } from '../utils';
 
-export const makeReminderFactory = (TimestampKlass: typeof TimestampLike) =>
-  Factory.makeFactory<ScheduledReminderValue>({
+export const makeRoutineFactory = (TimestampKlass: typeof TimestampLike) =>
+  Factory.makeFactory<ScheduledRoutineValue>({
     name: 'Cigarettes',
     checkboxLabel: 'Craving for cigarettes',
     type: 'scheduled',

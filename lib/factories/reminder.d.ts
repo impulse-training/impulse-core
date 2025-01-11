@@ -1,6 +1,6 @@
 import * as Factory from 'factory.ts';
 import { TimestampLike } from '../utils';
-export declare const makeReminderFactory: (TimestampKlass: typeof TimestampLike) => Factory.Sync.Factory<{
+export declare const makeRoutineFactory: (TimestampKlass: typeof TimestampLike) => Factory.Sync.Factory<{
     createdAt?: {
         isEqual?: any;
         toMillis?: any;

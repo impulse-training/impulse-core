@@ -11,7 +11,7 @@ export const threadSchema = yup.object({
   logsById: objectOf(logSchema),
   debriefedAt: optionalTimestampSchema,
   debriefAfter: optionalTimestampSchema,
-  debriefReminderSentAt: optionalTimestampSchema,
+  debriefRoutineSentAt: optionalTimestampSchema,
   outcome: yup.mixed<'success' | 'setback'>().oneOf(['success', 'setback']),
   createdAt: optionalTimestampSchema,
   updatedAt: optionalTimestampSchema,

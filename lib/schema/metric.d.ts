@@ -41,6 +41,8 @@ export declare const metricSchema: yup.ObjectSchema<{
         key: string;
         icon: NonNullable<MetricIcons | undefined>;
     } | undefined;
+    isRecommendedForExperiments: boolean | undefined;
+    overallDescription: string | undefined;
 }, yup.AnyObject, {
     positiveAttribute: {
         key: undefined;
@@ -48,5 +50,7 @@ export declare const metricSchema: yup.ObjectSchema<{
         icon: undefined;
     };
     negativeAttribute: undefined;
+    isRecommendedForExperiments: undefined;
+    overallDescription: undefined;
 }, "">;
 export type MetricValue = yup.InferType<typeof metricSchema>;

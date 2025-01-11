@@ -51,7 +51,7 @@ export declare const profileSchema: yup.ObjectSchema<{
     isReadyForTour: boolean | undefined;
     isOnboardingComplete: boolean | undefined;
     parentIds: string[] | undefined;
-    sendDebriefRemindersAfterMinutes: number | undefined;
+    sendDebriefRoutinesAfterMinutes: number | undefined;
     androidPermissions: {
         [x: string]: NonNullable<boolean | undefined>;
     } | null | undefined;
@@ -97,7 +97,7 @@ export declare const profileSchema: yup.ObjectSchema<{
     isReadyForTour: undefined;
     isOnboardingComplete: undefined;
     parentIds: "";
-    sendDebriefRemindersAfterMinutes: undefined;
+    sendDebriefRoutinesAfterMinutes: undefined;
     androidPermissions: undefined;
     defaultBehaviorDoc: undefined;
     historicalInsights: "";

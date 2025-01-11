@@ -30,7 +30,7 @@ export const profileSchema = yup.object({
   isReadyForTour: yup.boolean(),
   isOnboardingComplete: yup.boolean(),
   parentIds: optionalStringArray,
-  sendDebriefRemindersAfterMinutes: yup.number(),
+  sendDebriefRoutinesAfterMinutes: yup.number(),
 
   androidPermissions: optionalObjectOf(yup.boolean().required()),
 

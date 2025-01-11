@@ -38,7 +38,6 @@ export declare const makeDaysSummaryFactory: (TimestampKlass: typeof TimestampLi
                         } | null | undefined;
                         unit?: string | undefined;
                         dailyLimit?: number | undefined;
-                        skipReminderAutoCreation?: boolean | undefined;
                         name: string;
                         ordinal: number;
                         trackingType: NonNullable<"time" | "counter" | undefined>;

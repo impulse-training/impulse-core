@@ -30,7 +30,7 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
-    debriefReminderSentAt?: {
+    debriefRoutineSentAt?: {
         isEqual?: any;
         toMillis?: any;
         seconds: number;
@@ -122,7 +122,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                         } | null | undefined;
                         unit?: string | undefined;
                         dailyLimit?: number | undefined;
-                        skipReminderAutoCreation?: boolean | undefined;
                         name: string;
                         ordinal: number;
                         trackingType: NonNullable<"time" | "counter" | undefined>;
@@ -1096,7 +1095,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                         } | null | undefined;
                         unit?: string | undefined;
                         dailyLimit?: number | undefined;
-                        skipReminderAutoCreation?: boolean | undefined;
                         name: string;
                         ordinal: number;
                         trackingType: NonNullable<"time" | "counter" | undefined>;
@@ -2071,7 +2069,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                         } | null | undefined;
                         unit?: string | undefined;
                         dailyLimit?: number | undefined;
-                        skipReminderAutoCreation?: boolean | undefined;
                         name: string;
                         ordinal: number;
                         trackingType: NonNullable<"time" | "counter" | undefined>;
@@ -3047,7 +3044,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                         } | null | undefined;
                         unit?: string | undefined;
                         dailyLimit?: number | undefined;
-                        skipReminderAutoCreation?: boolean | undefined;
                         name: string;
                         ordinal: number;
                         trackingType: NonNullable<"time" | "counter" | undefined>;
@@ -4028,7 +4024,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                         } | null | undefined;
                         unit?: string | undefined;
                         dailyLimit?: number | undefined;
-                        skipReminderAutoCreation?: boolean | undefined;
                         name: string;
                         ordinal: number;
                         trackingType: NonNullable<"time" | "counter" | undefined>;
@@ -5004,7 +4999,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                         } | null | undefined;
                         unit?: string | undefined;
                         dailyLimit?: number | undefined;
-                        skipReminderAutoCreation?: boolean | undefined;
                         name: string;
                         ordinal: number;
                         trackingType: NonNullable<"time" | "counter" | undefined>;
@@ -5979,7 +5973,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                         } | null | undefined;
                         unit?: string | undefined;
                         dailyLimit?: number | undefined;
-                        skipReminderAutoCreation?: boolean | undefined;
                         name: string;
                         ordinal: number;
                         trackingType: NonNullable<"time" | "counter" | undefined>;
@@ -6904,4 +6897,4 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
             dateString: string;
         }>;
     };
-}, "date" | "dateString" | "logsById" | ("createdAt" | "updatedAt" | "title" | "debriefedAt" | "debriefAfter" | "debriefReminderSentAt" | "summary" | "outcome")>;
+}, "date" | "dateString" | "logsById" | ("createdAt" | "updatedAt" | "title" | "debriefedAt" | "debriefAfter" | "debriefRoutineSentAt" | "summary" | "outcome")>;

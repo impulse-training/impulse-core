@@ -1,11 +1,11 @@
 import * as yup from 'yup';
 import { WithTacticsById } from '../log';
-import { LocationReminderValue } from './location';
-import { ScheduledReminderValue } from './scheduled';
+import { LocationRoutineValue } from './location';
+import { ScheduledRoutineValue } from './scheduled';
 export * from './location';
 export * from './scheduled';
-export type ReminderValue = ScheduledReminderValue | LocationReminderValue;
-export declare const ReminderSchemas: Record<ReminderValue['type'], yup.ObjectSchema<ReminderValue>>;
+export type RoutineValue = ScheduledRoutineValue | LocationRoutineValue;
+export declare const RoutineSchemas: Record<RoutineValue['type'], yup.ObjectSchema<RoutineValue>>;
 export declare const reminderSchema: yup.Lazy<WithTacticsById<{
     createdAt?: {
         isEqual?: any;
@@ -922,6 +922,6 @@ export declare const reminderSchema: yup.Lazy<WithTacticsById<{
         weekdays: (number | undefined)[];
     }[];
 }>, yup.AnyObject, any>;
-export type ReminderTypes = {
-    [K in ReminderValue['type']]: WithTacticsById<yup.InferType<(typeof ReminderSchemas)[K]>>;
+export type RoutineTypes = {
+    [K in RoutineValue['type']]: WithTacticsById<yup.InferType<(typeof RoutineSchemas)[K]>>;
 };

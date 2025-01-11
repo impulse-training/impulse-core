@@ -7,8 +7,7 @@ import { makeIssueFactory } from './issue';
 import { makeLocationFactory } from './location';
 import { makeLogFactories } from './log';
 import { makeProfileFactory } from './profile';
-import { makeReminderFactory } from './reminder';
-import { makeRoadmapFactory } from './roadmap';
+import { makeRoutineFactory } from './reminder';
 import { makeSuggestionFactory } from './suggestion';
 import { makeTacticFactory } from './tactic';
 
@@ -23,9 +22,8 @@ export function makeFactories(TimestampKlass: typeof TimestampLike) {
     locationFactory: makeLocationFactory(TimestampKlass),
     daysSummaryFactory: makeDaysSummaryFactory(TimestampKlass),
     profileFactory: makeProfileFactory(TimestampKlass),
-    reminderFactory: makeReminderFactory(TimestampKlass),
+    reminderFactory: makeRoutineFactory(TimestampKlass),
     tacticFactory: makeTacticFactory(TimestampKlass),
-    roadmapFactory: makeRoadmapFactory(TimestampKlass),
     suggestionFactory: makeSuggestionFactory(TimestampKlass),
     behaviorFactory: makeBehaviorFactory(TimestampKlass),
     ...makeLogFactories(TimestampKlass),

@@ -442,7 +442,6 @@ export declare const behaviorSchema: yup.ObjectSchema<{
     };
     dailyLimit: number | undefined;
     isHelpful: boolean | null;
-    skipReminderAutoCreation: boolean | undefined;
     createdAt: {
         isEqual?: any;
         toMillis?: any;
@@ -465,7 +464,6 @@ export declare const behaviorSchema: yup.ObjectSchema<{
     tacticsById: undefined;
     dailyLimit: undefined;
     isHelpful: undefined;
-    skipReminderAutoCreation: undefined;
     createdAt: undefined;
     updatedAt: undefined;
 }, "">;

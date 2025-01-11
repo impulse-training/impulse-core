@@ -74,7 +74,6 @@ export declare function logBaseSchema<K extends string>(type: K): yup.ObjectSche
                 } | null | undefined;
                 unit?: string | undefined;
                 dailyLimit?: number | undefined;
-                skipReminderAutoCreation?: boolean | undefined;
                 name: string;
                 ordinal: number;
                 trackingType: NonNullable<"time" | "counter" | undefined>;

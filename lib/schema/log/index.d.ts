@@ -91,7 +91,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                 } | null | undefined;
                 unit?: string | undefined;
                 dailyLimit?: number | undefined;
-                skipReminderAutoCreation?: boolean | undefined;
                 name: string;
                 ordinal: number;
                 trackingType: NonNullable<"time" | "counter" | undefined>;
@@ -1065,7 +1064,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                 } | null | undefined;
                 unit?: string | undefined;
                 dailyLimit?: number | undefined;
-                skipReminderAutoCreation?: boolean | undefined;
                 name: string;
                 ordinal: number;
                 trackingType: NonNullable<"time" | "counter" | undefined>;
@@ -2040,7 +2038,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                 } | null | undefined;
                 unit?: string | undefined;
                 dailyLimit?: number | undefined;
-                skipReminderAutoCreation?: boolean | undefined;
                 name: string;
                 ordinal: number;
                 trackingType: NonNullable<"time" | "counter" | undefined>;
@@ -3016,7 +3013,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                 } | null | undefined;
                 unit?: string | undefined;
                 dailyLimit?: number | undefined;
-                skipReminderAutoCreation?: boolean | undefined;
                 name: string;
                 ordinal: number;
                 trackingType: NonNullable<"time" | "counter" | undefined>;
@@ -3997,7 +3993,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                 } | null | undefined;
                 unit?: string | undefined;
                 dailyLimit?: number | undefined;
-                skipReminderAutoCreation?: boolean | undefined;
                 name: string;
                 ordinal: number;
                 trackingType: NonNullable<"time" | "counter" | undefined>;
@@ -4973,7 +4968,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                 } | null | undefined;
                 unit?: string | undefined;
                 dailyLimit?: number | undefined;
-                skipReminderAutoCreation?: boolean | undefined;
                 name: string;
                 ordinal: number;
                 trackingType: NonNullable<"time" | "counter" | undefined>;
@@ -5948,7 +5942,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                 } | null | undefined;
                 unit?: string | undefined;
                 dailyLimit?: number | undefined;
-                skipReminderAutoCreation?: boolean | undefined;
                 name: string;
                 ordinal: number;
                 trackingType: NonNullable<"time" | "counter" | undefined>;
