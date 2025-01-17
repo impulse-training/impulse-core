@@ -1,7 +1,7 @@
 import * as yup from 'yup';
-import { reminderBaseSchema } from './base';
+import { routineBaseSchema } from './base';
 
-export const locationRoutineSchema = reminderBaseSchema('location').shape({
+export const locationRoutineSchema = routineBaseSchema('location').shape({
   name: yup.string().required(),
   type: yup.string().oneOf(['arrival', 'departure', 'both']).required(),
 });

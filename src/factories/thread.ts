@@ -8,6 +8,8 @@ export const makeThreadFactory = (TimestampKlass: typeof TimestampLike) =>
     date: TimestampKlass.now(),
     title: 'Getting started with Impulse',
     logsById: {},
+    type: 'general',
+    behaviorsById: {},
     createdAt: TimestampKlass.now(),
     updatedAt: TimestampKlass.now(),
   });

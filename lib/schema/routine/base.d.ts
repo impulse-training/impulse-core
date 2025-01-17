@@ -1,5 +1,5 @@
 import * as yup from 'yup';
-export declare function reminderBaseSchema<T extends string>(type: T): yup.ObjectSchema<{
+export declare function routineBaseSchema<T extends string>(type: T): yup.ObjectSchema<{
     name: string;
     type: T & {};
     ordinal: number | undefined;
