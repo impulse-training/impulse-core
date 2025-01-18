@@ -1,5 +1,5 @@
 import * as yup from 'yup';
-export declare const recoveryCode: yup.ObjectSchema<{
+export declare const recoveryCodeSchema: yup.ObjectSchema<{
     createdAt: {
         isEqual?: any;
         toMillis?: any;
@@ -32,4 +32,4 @@ export declare const recoveryCode: yup.ObjectSchema<{
     hashedCode: undefined;
     last4: undefined;
 }, "">;
-export type RecoveryCodeValue = yup.InferType<typeof recoveryCode>;
+export type RecoveryCodeValue = yup.InferType<typeof recoveryCodeSchema>;

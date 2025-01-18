@@ -975,7 +975,6 @@ export declare const factories: {
         dateString: string;
         role: "user";
     }, "uid" | "type" | "date" | "dateString" | "role" | ("createdAt" | "updatedAt" | "text" | "audioFile" | "metricData" | "behaviorData" | "tacticsData" | "senderUid" | "senderName")>;
-    applicationFactory: import("factory.ts").Factory<import("..").ApplicationValue, keyof import("..").ApplicationValue>;
     dayFactory: import("factory.ts").Factory<import("..").DayValue, "uid" | "date" | "logsById">;
     issueFactory: import("factory.ts").Factory<{
         path?: string | null | undefined;

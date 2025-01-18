@@ -1,7 +1,7 @@
 import * as yup from 'yup';
 import { optionalTimestampSchema } from './utils/timestamp';
 
-export const recoveryCode = yup.object().shape({
+export const recoveryCodeSchema = yup.object().shape({
   createdAt: optionalTimestampSchema,
   updatedAt: optionalTimestampSchema,
   usedAt: optionalTimestampSchema,
@@ -9,4 +9,4 @@ export const recoveryCode = yup.object().shape({
   hashedCode: yup.string().required(),
   last4: yup.string().required(),
 });
-export type RecoveryCodeValue = yup.InferType<typeof recoveryCode>;
+export type RecoveryCodeValue = yup.InferType<typeof recoveryCodeSchema>;

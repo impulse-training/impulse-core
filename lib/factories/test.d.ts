@@ -1,4 +1,4 @@
-export declare const applicationFactory: import("factory.ts").Factory<import("..").ApplicationValue, keyof import("..").ApplicationValue>, regularLogFactory: import("factory.ts").Factory<{
+export declare const regularLogFactory: import("factory.ts").Factory<{
     createdAt?: {
         isEqual?: any;
         toMillis?: any;

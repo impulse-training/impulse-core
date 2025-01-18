@@ -1,5 +1,4 @@
 import { TimestampLike } from '../utils/firestore/TimestampLike';
-import { makeApplicationFactory } from './application';
 import { makeBehaviorFactory } from './behavior';
 import { makeDayFactory } from './day';
 import { makeDaysSummaryFactory } from './daysSummary';
@@ -16,7 +15,6 @@ import { makeTacticFactory } from './tactic';
 // injected dependency
 export function makeFactories(TimestampKlass: typeof TimestampLike) {
   return {
-    applicationFactory: makeApplicationFactory(TimestampKlass),
     dayFactory: makeDayFactory(TimestampKlass),
     issueFactory: makeIssueFactory(TimestampKlass),
     locationFactory: makeLocationFactory(TimestampKlass),

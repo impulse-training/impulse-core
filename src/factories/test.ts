@@ -2,9 +2,5 @@
 import { makeFactories } from '.';
 import { TimestampLike } from '../utils/firestore/TimestampLike';
 
-export const {
-  applicationFactory,
-  regularLogFactory,
-  profileFactory,
-  tacticFactory,
-} = makeFactories(TimestampLike);
+export const { regularLogFactory, profileFactory, tacticFactory } =
+  makeFactories(TimestampLike);
