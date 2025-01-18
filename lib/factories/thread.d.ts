@@ -1987,6 +1987,7 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
             } | undefined;
             senderUid?: string | null | undefined;
             senderName?: string | null | undefined;
+            suggestedResponses?: string[] | undefined;
             uid: string;
             type: "gpt";
             date: {

@@ -974,6 +974,7 @@ export declare const gptLogSchema: yup.ObjectSchema<{
     senderUid: string | null | undefined;
     senderName: string | null | undefined;
     role: "assistant";
+    suggestedResponses: string[] | undefined;
 }, yup.AnyObject, {
     createdAt: undefined;
     updatedAt: undefined;
@@ -995,5 +996,6 @@ export declare const gptLogSchema: yup.ObjectSchema<{
     senderUid: undefined;
     senderName: undefined;
     role: undefined;
+    suggestedResponses: "";
 }, "">;
 export type GptLogValue = yup.InferType<typeof gptLogSchema>;

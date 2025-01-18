@@ -1955,6 +1955,7 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
     } | undefined;
     senderUid?: string | null | undefined;
     senderName?: string | null | undefined;
+    suggestedResponses?: string[] | undefined;
     uid: string;
     type: "gpt";
     date: {

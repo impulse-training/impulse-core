@@ -1942,6 +1942,7 @@ export declare const logsById: yup.Lazy<{
             } | undefined;
             senderUid?: string | null | undefined;
             senderName?: string | null | undefined;
+            suggestedResponses?: string[] | undefined;
             uid: string;
             type: "gpt";
             date: {
@@ -8815,6 +8816,7 @@ export declare const daySchema: yup.ObjectSchema<{
                 } | undefined;
                 senderUid?: string | null | undefined;
                 senderName?: string | null | undefined;
+                suggestedResponses?: string[] | undefined;
                 uid: string;
                 type: "gpt";
                 date: {

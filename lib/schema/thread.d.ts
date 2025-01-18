@@ -1949,6 +1949,7 @@ export declare const threadSchema: yup.ObjectSchema<{
             } | undefined;
             senderUid?: string | null | undefined;
             senderName?: string | null | undefined;
+            suggestedResponses?: string[] | undefined;
             uid: string;
             type: "gpt";
             date: {
