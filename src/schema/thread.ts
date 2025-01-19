@@ -4,6 +4,10 @@ import { logsById } from './day';
 import { objectOf } from './utils/objectOf';
 import { optionalTimestampSchema, timestampSchema } from './utils/timestamp';
 
+export const outcome = yup
+  .mixed<'success' | 'setback'>()
+  .oneOf(['success', 'setback']);
+
 export const threadSchema = yup.object({
   dateString: yup.string().required(),
   date: timestampSchema,
@@ -15,7 +19,7 @@ export const threadSchema = yup.object({
   debriefAfter: optionalTimestampSchema,
   debriefRoutineSentAt: optionalTimestampSchema,
   type: yup.mixed<'impulse' | 'general'>().oneOf(['impulse', 'general']),
-  outcome: yup.mixed<'success' | 'setback'>().oneOf(['success', 'setback']),
+  outcome,
   createdAt: optionalTimestampSchema,
   updatedAt: optionalTimestampSchema,
 });
