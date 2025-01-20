@@ -20,13 +20,7 @@ export const profileSchema = yup.object({
   ),
   goal: yup.string().nullable().optional(),
   verificationCode: yup.string().required(),
-  dayReviewTime: yup
-    .object({
-      hour: yup.number().required(),
-      minute: yup.number().required(),
-    })
-    .nullable()
-    .default(null),
+  dayReviewTimeMinutes: yup.number().nullable(),
   isReadyForTour: yup.boolean(),
   isOnboardingComplete: yup.boolean(),
   parentIds: optionalStringArray,

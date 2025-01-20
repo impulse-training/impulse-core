@@ -44,10 +44,7 @@ export declare const profileSchema: yup.ObjectSchema<{
     } | null | undefined;
     goal: string | null | undefined;
     verificationCode: string;
-    dayReviewTime: {
-        hour: number;
-        minute: number;
-    } | null;
+    dayReviewTimeMinutes: number | null | undefined;
     isReadyForTour: boolean | undefined;
     isOnboardingComplete: boolean | undefined;
     parentIds: string[] | undefined;
@@ -93,7 +90,7 @@ export declare const profileSchema: yup.ObjectSchema<{
     notificationPreferences: undefined;
     goal: undefined;
     verificationCode: undefined;
-    dayReviewTime: null;
+    dayReviewTimeMinutes: undefined;
     isReadyForTour: undefined;
     isOnboardingComplete: undefined;
     parentIds: "";

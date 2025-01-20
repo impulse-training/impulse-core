@@ -13,5 +13,5 @@ export const makeProfileFactory = (TimestampKlass: typeof TimestampLike) =>
     verificationCode: '12345',
     notificationPreferences: {},
     uids: ['uid1', 'uid2'],
-    dayReviewTime: null,
+    dayReviewTimeMinutes: null,
   });
