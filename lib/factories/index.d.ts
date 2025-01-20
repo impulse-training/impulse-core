@@ -1598,7 +1598,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         goal?: string | null | undefined;
         isReadyForTour?: boolean | undefined;
         isOnboardingComplete?: boolean | undefined;
-        sendDebriefRoutinesAfterMinutes?: number | undefined;
+        debriefReminderDelayMinutes?: number | null | undefined;
         androidPermissions?: {
             [x: string]: NonNullable<boolean | undefined>;
         } | null | undefined;
@@ -1616,7 +1616,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             [x: string]: string;
         };
         timezone: string;
-    }, "uids" | "verificationCode" | "dayReviewTime" | "recentSummaries" | "timezone" | ("createdAt" | "updatedAt" | "parentIds" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseDoc" | "defaultBehaviorDoc" | "tourCompletedAt" | "scheduledNotificationIds" | "whatsappStrategyDoc" | "onboardedWithZaraAt" | "currentAppState" | "expoPushToken" | "notificationPreferences" | "goal" | "isReadyForTour" | "isOnboardingComplete" | "sendDebriefRoutinesAfterMinutes" | "androidPermissions" | "historicalInsights" | "isTourDismissed" | "region" | "enableZara")>;
+    }, "uids" | "verificationCode" | "dayReviewTime" | "recentSummaries" | "timezone" | ("createdAt" | "updatedAt" | "parentIds" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseDoc" | "defaultBehaviorDoc" | "tourCompletedAt" | "scheduledNotificationIds" | "whatsappStrategyDoc" | "onboardedWithZaraAt" | "currentAppState" | "expoPushToken" | "notificationPreferences" | "goal" | "isReadyForTour" | "isOnboardingComplete" | "debriefReminderDelayMinutes" | "androidPermissions" | "historicalInsights" | "isTourDismissed" | "region" | "enableZara")>;
     routineFactory: import("factory.ts").Factory<{
         createdAt?: {
             isEqual?: any;
