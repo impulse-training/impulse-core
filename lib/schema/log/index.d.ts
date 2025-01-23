@@ -3698,7 +3698,7 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
     uid: string;
     type: "showTour";
     steps: {
-        message: string;
+        description: string;
         elementRefName: string;
         title: string;
         confirmButtonLabel: string;

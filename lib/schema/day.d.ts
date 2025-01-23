@@ -3683,7 +3683,7 @@ export declare const logsById: yup.Lazy<{
             uid: string;
             type: "showTour";
             steps: {
-                message: string;
+                description: string;
                 elementRefName: string;
                 title: string;
                 confirmButtonLabel: string;
@@ -9615,7 +9615,7 @@ export declare const daySchema: yup.ObjectSchema<{
                 uid: string;
                 type: "showTour";
                 steps: {
-                    message: string;
+                    description: string;
                     elementRefName: string;
                     title: string;
                     confirmButtonLabel: string;

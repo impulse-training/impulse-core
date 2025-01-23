@@ -4,7 +4,7 @@ import { logBaseSchema } from './base';
 export const tourStepSchema = yup.object({
   elementRefName: yup.string().required(),
   title: yup.string().required(),
-  message: yup.string().required(),
+  description: yup.string().required(),
   confirmButtonLabel: yup.string().required().default('Ok'),
 });
 

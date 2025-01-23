@@ -3693,7 +3693,7 @@ export declare const threadSchema: yup.ObjectSchema<{
                 uid: string;
                 type: "showTour";
                 steps: {
-                    message: string;
+                    description: string;
                     elementRefName: string;
                     title: string;
                     confirmButtonLabel: string;

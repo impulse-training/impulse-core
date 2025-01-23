@@ -4038,7 +4038,7 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                 uid: string;
                 type: "showTour";
                 steps: {
-                    message: string;
+                    description: string;
                     elementRefName: string;
                     title: string;
                     confirmButtonLabel: string;

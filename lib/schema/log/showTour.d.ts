@@ -2,12 +2,12 @@ import * as yup from 'yup';
 export declare const tourStepSchema: yup.ObjectSchema<{
     elementRefName: string;
     title: string;
-    message: string;
+    description: string;
     confirmButtonLabel: string;
 }, yup.AnyObject, {
     elementRefName: undefined;
     title: undefined;
-    message: undefined;
+    description: undefined;
     confirmButtonLabel: "Ok";
 }, "">;
 export declare const showTourLogSchema: yup.ObjectSchema<{
@@ -747,7 +747,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
     senderUid: string | null | undefined;
     senderName: string | null | undefined;
     steps: {
-        message: string;
+        description: string;
         elementRefName: string;
         title: string;
         confirmButtonLabel: string;
