@@ -53,6 +53,7 @@ export declare const profileSchema: yup.ObjectSchema<{
         [x: string]: NonNullable<boolean | undefined>;
     } | null | undefined;
     defaultBehaviorDoc: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
+    behaviorsDescription: string | undefined;
     historicalInsights: string[] | undefined;
     recentSummaries: {
         [x: string]: string;
@@ -97,6 +98,7 @@ export declare const profileSchema: yup.ObjectSchema<{
     debriefReminderDelayMinutes: undefined;
     androidPermissions: undefined;
     defaultBehaviorDoc: undefined;
+    behaviorsDescription: undefined;
     historicalInsights: "";
     recentSummaries: undefined;
     isTourDismissed: undefined;

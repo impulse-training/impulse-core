@@ -20,9 +20,11 @@ export const threadSchema = yup.object({
   debriefedAt: optionalTimestampSchema,
   debriefAfter: optionalTimestampSchema,
   debriefRoutineSentAt: optionalTimestampSchema,
-  // type: yup.mixed<'impulse' | 'general'>().oneOf(['impulse', 'general']),
+  agentType: yup
+    .mixed<'impulse' | 'general' | 'onboarding'>()
+    .oneOf(['impulse', 'general', 'onboarding'])
+    .required(),
   outcome,
-  gptSystemMessage: yup.string().required(),
   createdAt: optionalTimestampSchema,
   updatedAt: optionalTimestampSchema,
 });

@@ -6608,8 +6608,8 @@ export declare const threadSchema: yup.ObjectSchema<{
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
+    agentType: NonNullable<"impulse" | "general" | "onboarding" | undefined>;
     outcome: "success" | "setback" | undefined;
-    gptSystemMessage: string;
     createdAt: {
         isEqual?: any;
         toMillis?: any;
@@ -6641,8 +6641,8 @@ export declare const threadSchema: yup.ObjectSchema<{
     debriefedAt: undefined;
     debriefAfter: undefined;
     debriefRoutineSentAt: undefined;
+    agentType: undefined;
     outcome: undefined;
-    gptSystemMessage: undefined;
     createdAt: undefined;
     updatedAt: undefined;
 }, "">;

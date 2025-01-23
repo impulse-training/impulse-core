@@ -28,7 +28,9 @@ export const profileSchema = yup.object({
 
   androidPermissions: optionalObjectOf(yup.boolean().required()),
 
+  // Behavior data
   defaultBehaviorDoc: documentReferenceSchema,
+  behaviorsDescription: yup.string(),
 
   // System message context for interacting with OpenAI
   historicalInsights: yup.array().of(yup.string().required()),

@@ -6623,5 +6623,5 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
             isHelpful: boolean | null;
         };
     };
-    gptSystemMessage: string;
-}, "date" | "dateString" | "logsById" | "behaviorsById" | "gptSystemMessage" | ("createdAt" | "updatedAt" | "title" | "outcome" | "debriefedAt" | "debriefAfter" | "debriefRoutineSentAt" | "summary" | "suggestedTactics")>;
+    agentType: NonNullable<"impulse" | "general" | "onboarding" | undefined>;
+}, "date" | "dateString" | "logsById" | "behaviorsById" | "agentType" | ("createdAt" | "updatedAt" | "title" | "outcome" | "debriefedAt" | "debriefAfter" | "debriefRoutineSentAt" | "summary" | "suggestedTactics")>;
