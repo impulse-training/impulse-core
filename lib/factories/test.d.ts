@@ -1,4 +1,5 @@
 export declare const regularLogFactory: import("factory.ts").Factory<{
+    text?: string | null | undefined;
     createdAt?: {
         isEqual?: any;
         toMillis?: any;
@@ -13,22 +14,7 @@ export declare const regularLogFactory: import("factory.ts").Factory<{
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
-    text?: string | null | undefined;
     audioFile?: {
-        createdAt?: {
-            isEqual?: any;
-            toMillis?: any;
-            seconds: number;
-            nanoseconds: number;
-            toDate: Function;
-        } | null | undefined;
-        updatedAt?: {
-            isEqual?: any;
-            toMillis?: any;
-            seconds: number;
-            nanoseconds: number;
-            toDate: Function;
-        } | null | undefined;
         localFilePath?: import("yup").Maybe<string | undefined>;
         isDeleted?: boolean | undefined;
         metadata?: {} | null | undefined;
@@ -115,20 +101,6 @@ export declare const regularLogFactory: import("factory.ts").Factory<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: import("yup").Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -174,20 +146,6 @@ export declare const regularLogFactory: import("factory.ts").Factory<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: import("yup").Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -230,20 +188,6 @@ export declare const regularLogFactory: import("factory.ts").Factory<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: import("yup").Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -285,20 +229,6 @@ export declare const regularLogFactory: import("factory.ts").Factory<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: import("yup").Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -312,20 +242,6 @@ export declare const regularLogFactory: import("factory.ts").Factory<{
                             timerSeconds?: import("yup").Maybe<number | undefined>;
                             isSuggested?: boolean | undefined;
                             audio?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: import("yup").Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -364,20 +280,6 @@ export declare const regularLogFactory: import("factory.ts").Factory<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: import("yup").Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -423,20 +325,6 @@ export declare const regularLogFactory: import("factory.ts").Factory<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: import("yup").Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -479,20 +367,6 @@ export declare const regularLogFactory: import("factory.ts").Factory<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: import("yup").Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -564,20 +438,6 @@ export declare const regularLogFactory: import("factory.ts").Factory<{
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     metadata?: {} | null | undefined;
@@ -623,20 +483,6 @@ export declare const regularLogFactory: import("factory.ts").Factory<{
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     metadata?: {} | null | undefined;
@@ -679,20 +525,6 @@ export declare const regularLogFactory: import("factory.ts").Factory<{
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     metadata?: {} | null | undefined;
@@ -734,20 +566,6 @@ export declare const regularLogFactory: import("factory.ts").Factory<{
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     metadata?: {} | null | undefined;
@@ -761,20 +579,6 @@ export declare const regularLogFactory: import("factory.ts").Factory<{
                 timerSeconds?: import("yup").Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
                 audio?: {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     metadata?: {} | null | undefined;
@@ -813,20 +617,6 @@ export declare const regularLogFactory: import("factory.ts").Factory<{
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     metadata?: {} | null | undefined;
@@ -872,20 +662,6 @@ export declare const regularLogFactory: import("factory.ts").Factory<{
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     metadata?: {} | null | undefined;
@@ -928,20 +704,6 @@ export declare const regularLogFactory: import("factory.ts").Factory<{
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     metadata?: {} | null | undefined;
@@ -973,7 +735,7 @@ export declare const regularLogFactory: import("factory.ts").Factory<{
     };
     dateString: string;
     role: "user";
-}, "uid" | "type" | "date" | "dateString" | "role" | ("createdAt" | "updatedAt" | "text" | "audioFile" | "metricData" | "behaviorData" | "tacticsData" | "senderUid" | "senderName")>, profileFactory: import("factory.ts").Factory<{
+}, "uid" | "type" | "date" | "dateString" | "role" | ("text" | "createdAt" | "updatedAt" | "audioFile" | "metricData" | "behaviorData" | "tacticsData" | "senderUid" | "senderName")>, profileFactory: import("factory.ts").Factory<{
     createdAt?: {
         isEqual?: any;
         toMillis?: any;

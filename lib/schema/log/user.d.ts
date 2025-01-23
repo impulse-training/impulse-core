@@ -17,20 +17,6 @@ export declare const userLogSchema: yup.ObjectSchema<{
     type: "user";
     uid: string;
     audioFile: {
-        createdAt?: {
-            isEqual?: any;
-            toMillis?: any;
-            seconds: number;
-            nanoseconds: number;
-            toDate: Function;
-        } | null | undefined;
-        updatedAt?: {
-            isEqual?: any;
-            toMillis?: any;
-            seconds: number;
-            nanoseconds: number;
-            toDate: Function;
-        } | null | undefined;
         localFilePath?: yup.Maybe<string | undefined>;
         isDeleted?: boolean | undefined;
         metadata?: {} | null | undefined;
@@ -117,20 +103,6 @@ export declare const userLogSchema: yup.ObjectSchema<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -176,20 +148,6 @@ export declare const userLogSchema: yup.ObjectSchema<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -232,20 +190,6 @@ export declare const userLogSchema: yup.ObjectSchema<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -287,20 +231,6 @@ export declare const userLogSchema: yup.ObjectSchema<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -314,20 +244,6 @@ export declare const userLogSchema: yup.ObjectSchema<{
                             timerSeconds?: yup.Maybe<number | undefined>;
                             isSuggested?: boolean | undefined;
                             audio?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -366,20 +282,6 @@ export declare const userLogSchema: yup.ObjectSchema<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -425,20 +327,6 @@ export declare const userLogSchema: yup.ObjectSchema<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -481,20 +369,6 @@ export declare const userLogSchema: yup.ObjectSchema<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -566,20 +440,6 @@ export declare const userLogSchema: yup.ObjectSchema<{
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     metadata?: {} | null | undefined;
@@ -625,20 +485,6 @@ export declare const userLogSchema: yup.ObjectSchema<{
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     metadata?: {} | null | undefined;
@@ -681,20 +527,6 @@ export declare const userLogSchema: yup.ObjectSchema<{
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     metadata?: {} | null | undefined;
@@ -736,20 +568,6 @@ export declare const userLogSchema: yup.ObjectSchema<{
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     metadata?: {} | null | undefined;
@@ -763,20 +581,6 @@ export declare const userLogSchema: yup.ObjectSchema<{
                 timerSeconds?: yup.Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
                 audio?: {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     metadata?: {} | null | undefined;
@@ -815,20 +619,6 @@ export declare const userLogSchema: yup.ObjectSchema<{
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     metadata?: {} | null | undefined;
@@ -874,20 +664,6 @@ export declare const userLogSchema: yup.ObjectSchema<{
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     metadata?: {} | null | undefined;
@@ -930,20 +706,6 @@ export declare const userLogSchema: yup.ObjectSchema<{
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     metadata?: {} | null | undefined;

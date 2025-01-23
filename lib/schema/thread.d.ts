@@ -15,6 +15,7 @@ export declare const threadSchema: yup.ObjectSchema<{
         [x: string]: {
             doc: import("./utils/firestore").DocumentReferenceLike<unknown>;
             log: import("./log").WithTacticsById<{
+                text?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -29,22 +30,7 @@ export declare const threadSchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                text?: string | null | undefined;
                 audioFile?: {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     metadata?: {} | null | undefined;
@@ -131,20 +117,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                                         pastTenseTitle?: string | undefined;
                                         debriefAfterMinutes?: number | null | undefined;
                                         image?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: yup.Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -190,20 +162,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                                         pastTenseTitle?: string | undefined;
                                         debriefAfterMinutes?: number | null | undefined;
                                         image?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: yup.Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -246,20 +204,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                                         pastTenseTitle?: string | undefined;
                                         debriefAfterMinutes?: number | null | undefined;
                                         image?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: yup.Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -301,20 +245,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                                         pastTenseTitle?: string | undefined;
                                         debriefAfterMinutes?: number | null | undefined;
                                         image?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: yup.Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -328,20 +258,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                                         timerSeconds?: yup.Maybe<number | undefined>;
                                         isSuggested?: boolean | undefined;
                                         audio?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: yup.Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -380,20 +296,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                                         pastTenseTitle?: string | undefined;
                                         debriefAfterMinutes?: number | null | undefined;
                                         image?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: yup.Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -439,20 +341,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                                         pastTenseTitle?: string | undefined;
                                         debriefAfterMinutes?: number | null | undefined;
                                         image?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: yup.Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -495,20 +383,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                                         pastTenseTitle?: string | undefined;
                                         debriefAfterMinutes?: number | null | undefined;
                                         image?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: yup.Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -580,20 +454,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -639,20 +499,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -695,20 +541,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -750,20 +582,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -777,20 +595,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                             timerSeconds?: yup.Maybe<number | undefined>;
                             isSuggested?: boolean | undefined;
                             audio?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -829,20 +633,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -888,20 +678,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -944,20 +720,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -989,6 +751,7 @@ export declare const threadSchema: yup.ObjectSchema<{
                 };
                 dateString: string;
             } | {
+                text?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -1003,22 +766,7 @@ export declare const threadSchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                text?: string | null | undefined;
                 audioFile?: {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     metadata?: {} | null | undefined;
@@ -1105,20 +853,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                                         pastTenseTitle?: string | undefined;
                                         debriefAfterMinutes?: number | null | undefined;
                                         image?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: yup.Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -1164,20 +898,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                                         pastTenseTitle?: string | undefined;
                                         debriefAfterMinutes?: number | null | undefined;
                                         image?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: yup.Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -1220,20 +940,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                                         pastTenseTitle?: string | undefined;
                                         debriefAfterMinutes?: number | null | undefined;
                                         image?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: yup.Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -1275,20 +981,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                                         pastTenseTitle?: string | undefined;
                                         debriefAfterMinutes?: number | null | undefined;
                                         image?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: yup.Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -1302,20 +994,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                                         timerSeconds?: yup.Maybe<number | undefined>;
                                         isSuggested?: boolean | undefined;
                                         audio?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: yup.Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -1354,20 +1032,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                                         pastTenseTitle?: string | undefined;
                                         debriefAfterMinutes?: number | null | undefined;
                                         image?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: yup.Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -1413,20 +1077,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                                         pastTenseTitle?: string | undefined;
                                         debriefAfterMinutes?: number | null | undefined;
                                         image?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: yup.Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -1469,20 +1119,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                                         pastTenseTitle?: string | undefined;
                                         debriefAfterMinutes?: number | null | undefined;
                                         image?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: yup.Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -1554,20 +1190,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -1613,20 +1235,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -1669,20 +1277,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -1724,20 +1318,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -1751,20 +1331,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                             timerSeconds?: yup.Maybe<number | undefined>;
                             isSuggested?: boolean | undefined;
                             audio?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -1803,20 +1369,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -1862,20 +1414,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -1918,20 +1456,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -1965,6 +1489,7 @@ export declare const threadSchema: yup.ObjectSchema<{
                 dateString: string;
                 role: "assistant";
             } | {
+                text?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -1979,22 +1504,7 @@ export declare const threadSchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                text?: string | null | undefined;
                 audioFile?: {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     metadata?: {} | null | undefined;
@@ -2081,20 +1591,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                                         pastTenseTitle?: string | undefined;
                                         debriefAfterMinutes?: number | null | undefined;
                                         image?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: yup.Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -2140,20 +1636,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                                         pastTenseTitle?: string | undefined;
                                         debriefAfterMinutes?: number | null | undefined;
                                         image?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: yup.Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -2196,20 +1678,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                                         pastTenseTitle?: string | undefined;
                                         debriefAfterMinutes?: number | null | undefined;
                                         image?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: yup.Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -2251,20 +1719,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                                         pastTenseTitle?: string | undefined;
                                         debriefAfterMinutes?: number | null | undefined;
                                         image?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: yup.Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -2278,20 +1732,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                                         timerSeconds?: yup.Maybe<number | undefined>;
                                         isSuggested?: boolean | undefined;
                                         audio?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: yup.Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -2330,20 +1770,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                                         pastTenseTitle?: string | undefined;
                                         debriefAfterMinutes?: number | null | undefined;
                                         image?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: yup.Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -2389,20 +1815,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                                         pastTenseTitle?: string | undefined;
                                         debriefAfterMinutes?: number | null | undefined;
                                         image?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: yup.Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -2445,20 +1857,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                                         pastTenseTitle?: string | undefined;
                                         debriefAfterMinutes?: number | null | undefined;
                                         image?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: yup.Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -2530,20 +1928,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -2589,20 +1973,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -2645,20 +2015,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -2700,20 +2056,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -2727,20 +2069,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                             timerSeconds?: yup.Maybe<number | undefined>;
                             isSuggested?: boolean | undefined;
                             audio?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -2779,20 +2107,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -2838,20 +2152,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -2894,20 +2194,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -2941,6 +2227,7 @@ export declare const threadSchema: yup.ObjectSchema<{
                 dateString: string;
                 role: "user";
             } | {
+                text?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -2955,22 +2242,7 @@ export declare const threadSchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                text?: string | null | undefined;
                 audioFile?: {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     metadata?: {} | null | undefined;
@@ -3057,20 +2329,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                                         pastTenseTitle?: string | undefined;
                                         debriefAfterMinutes?: number | null | undefined;
                                         image?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: yup.Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -3116,20 +2374,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                                         pastTenseTitle?: string | undefined;
                                         debriefAfterMinutes?: number | null | undefined;
                                         image?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: yup.Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -3172,20 +2416,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                                         pastTenseTitle?: string | undefined;
                                         debriefAfterMinutes?: number | null | undefined;
                                         image?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: yup.Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -3227,20 +2457,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                                         pastTenseTitle?: string | undefined;
                                         debriefAfterMinutes?: number | null | undefined;
                                         image?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: yup.Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -3254,20 +2470,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                                         timerSeconds?: yup.Maybe<number | undefined>;
                                         isSuggested?: boolean | undefined;
                                         audio?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: yup.Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -3306,20 +2508,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                                         pastTenseTitle?: string | undefined;
                                         debriefAfterMinutes?: number | null | undefined;
                                         image?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: yup.Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -3365,20 +2553,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                                         pastTenseTitle?: string | undefined;
                                         debriefAfterMinutes?: number | null | undefined;
                                         image?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: yup.Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -3421,20 +2595,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                                         pastTenseTitle?: string | undefined;
                                         debriefAfterMinutes?: number | null | undefined;
                                         image?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: yup.Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -3506,20 +2666,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -3565,20 +2711,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -3621,20 +2753,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -3676,20 +2794,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -3703,20 +2807,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                             timerSeconds?: yup.Maybe<number | undefined>;
                             isSuggested?: boolean | undefined;
                             audio?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -3755,20 +2845,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -3814,20 +2890,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -3870,20 +2932,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -3916,6 +2964,7 @@ export declare const threadSchema: yup.ObjectSchema<{
                 dateString: string;
                 role: "user";
             } | {
+                text?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -3930,22 +2979,7 @@ export declare const threadSchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                text?: string | null | undefined;
                 audioFile?: {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     metadata?: {} | null | undefined;
@@ -4032,20 +3066,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                                         pastTenseTitle?: string | undefined;
                                         debriefAfterMinutes?: number | null | undefined;
                                         image?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: yup.Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -4091,20 +3111,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                                         pastTenseTitle?: string | undefined;
                                         debriefAfterMinutes?: number | null | undefined;
                                         image?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: yup.Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -4147,20 +3153,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                                         pastTenseTitle?: string | undefined;
                                         debriefAfterMinutes?: number | null | undefined;
                                         image?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: yup.Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -4202,20 +3194,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                                         pastTenseTitle?: string | undefined;
                                         debriefAfterMinutes?: number | null | undefined;
                                         image?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: yup.Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -4229,20 +3207,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                                         timerSeconds?: yup.Maybe<number | undefined>;
                                         isSuggested?: boolean | undefined;
                                         audio?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: yup.Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -4281,20 +3245,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                                         pastTenseTitle?: string | undefined;
                                         debriefAfterMinutes?: number | null | undefined;
                                         image?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: yup.Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -4340,20 +3290,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                                         pastTenseTitle?: string | undefined;
                                         debriefAfterMinutes?: number | null | undefined;
                                         image?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: yup.Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -4396,20 +3332,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                                         pastTenseTitle?: string | undefined;
                                         debriefAfterMinutes?: number | null | undefined;
                                         image?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: yup.Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -4481,20 +3403,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -4540,20 +3448,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -4596,20 +3490,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -4651,20 +3531,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -4678,20 +3544,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                             timerSeconds?: yup.Maybe<number | undefined>;
                             isSuggested?: boolean | undefined;
                             audio?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -4730,20 +3582,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -4789,20 +3627,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -4845,20 +3669,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -4897,6 +3707,7 @@ export declare const threadSchema: yup.ObjectSchema<{
                 };
                 dateString: string;
             } | {
+                text?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -4911,22 +3722,7 @@ export declare const threadSchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                text?: string | null | undefined;
                 audioFile?: {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     metadata?: {} | null | undefined;
@@ -5013,20 +3809,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                                         pastTenseTitle?: string | undefined;
                                         debriefAfterMinutes?: number | null | undefined;
                                         image?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: yup.Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -5072,20 +3854,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                                         pastTenseTitle?: string | undefined;
                                         debriefAfterMinutes?: number | null | undefined;
                                         image?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: yup.Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -5128,20 +3896,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                                         pastTenseTitle?: string | undefined;
                                         debriefAfterMinutes?: number | null | undefined;
                                         image?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: yup.Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -5183,20 +3937,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                                         pastTenseTitle?: string | undefined;
                                         debriefAfterMinutes?: number | null | undefined;
                                         image?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: yup.Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -5210,20 +3950,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                                         timerSeconds?: yup.Maybe<number | undefined>;
                                         isSuggested?: boolean | undefined;
                                         audio?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: yup.Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -5262,20 +3988,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                                         pastTenseTitle?: string | undefined;
                                         debriefAfterMinutes?: number | null | undefined;
                                         image?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: yup.Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -5321,20 +4033,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                                         pastTenseTitle?: string | undefined;
                                         debriefAfterMinutes?: number | null | undefined;
                                         image?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: yup.Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -5377,20 +4075,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                                         pastTenseTitle?: string | undefined;
                                         debriefAfterMinutes?: number | null | undefined;
                                         image?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: yup.Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -5462,20 +4146,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -5521,20 +4191,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -5577,20 +4233,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -5632,20 +4274,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -5659,20 +4287,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                             timerSeconds?: yup.Maybe<number | undefined>;
                             isSuggested?: boolean | undefined;
                             audio?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -5711,20 +4325,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -5770,20 +4370,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -5826,20 +4412,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -5873,6 +4445,7 @@ export declare const threadSchema: yup.ObjectSchema<{
                 role: "tool";
                 toolCallId: string;
             } | {
+                text?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -5887,22 +4460,7 @@ export declare const threadSchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                text?: string | null | undefined;
                 audioFile?: {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     metadata?: {} | null | undefined;
@@ -5989,20 +4547,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                                         pastTenseTitle?: string | undefined;
                                         debriefAfterMinutes?: number | null | undefined;
                                         image?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: yup.Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -6048,20 +4592,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                                         pastTenseTitle?: string | undefined;
                                         debriefAfterMinutes?: number | null | undefined;
                                         image?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: yup.Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -6104,20 +4634,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                                         pastTenseTitle?: string | undefined;
                                         debriefAfterMinutes?: number | null | undefined;
                                         image?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: yup.Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -6159,20 +4675,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                                         pastTenseTitle?: string | undefined;
                                         debriefAfterMinutes?: number | null | undefined;
                                         image?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: yup.Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -6186,20 +4688,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                                         timerSeconds?: yup.Maybe<number | undefined>;
                                         isSuggested?: boolean | undefined;
                                         audio?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: yup.Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -6238,20 +4726,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                                         pastTenseTitle?: string | undefined;
                                         debriefAfterMinutes?: number | null | undefined;
                                         image?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: yup.Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -6297,20 +4771,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                                         pastTenseTitle?: string | undefined;
                                         debriefAfterMinutes?: number | null | undefined;
                                         image?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: yup.Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -6353,20 +4813,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                                         pastTenseTitle?: string | undefined;
                                         debriefAfterMinutes?: number | null | undefined;
                                         image?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: yup.Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -6438,20 +4884,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -6497,20 +4929,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -6553,20 +4971,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -6608,20 +5012,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -6635,20 +5025,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                             timerSeconds?: yup.Maybe<number | undefined>;
                             isSuggested?: boolean | undefined;
                             audio?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -6687,20 +5063,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -6746,20 +5108,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -6802,20 +5150,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -6837,20 +5171,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                 senderUid?: string | null | undefined;
                 senderName?: string | null | undefined;
                 files?: yup.Maybe<{
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     metadata?: {} | null | undefined;
@@ -6870,6 +5190,7 @@ export declare const threadSchema: yup.ObjectSchema<{
                 };
                 dateString: string;
             } | {
+                text?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -6884,22 +5205,7 @@ export declare const threadSchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                text?: string | null | undefined;
                 audioFile?: {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     metadata?: {} | null | undefined;
@@ -6986,20 +5292,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                                         pastTenseTitle?: string | undefined;
                                         debriefAfterMinutes?: number | null | undefined;
                                         image?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: yup.Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -7045,20 +5337,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                                         pastTenseTitle?: string | undefined;
                                         debriefAfterMinutes?: number | null | undefined;
                                         image?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: yup.Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -7101,20 +5379,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                                         pastTenseTitle?: string | undefined;
                                         debriefAfterMinutes?: number | null | undefined;
                                         image?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: yup.Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -7156,20 +5420,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                                         pastTenseTitle?: string | undefined;
                                         debriefAfterMinutes?: number | null | undefined;
                                         image?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: yup.Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -7183,20 +5433,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                                         timerSeconds?: yup.Maybe<number | undefined>;
                                         isSuggested?: boolean | undefined;
                                         audio?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: yup.Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -7235,20 +5471,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                                         pastTenseTitle?: string | undefined;
                                         debriefAfterMinutes?: number | null | undefined;
                                         image?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: yup.Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -7294,20 +5516,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                                         pastTenseTitle?: string | undefined;
                                         debriefAfterMinutes?: number | null | undefined;
                                         image?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: yup.Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -7350,20 +5558,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                                         pastTenseTitle?: string | undefined;
                                         debriefAfterMinutes?: number | null | undefined;
                                         image?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: yup.Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -7435,20 +5629,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -7494,20 +5674,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -7550,20 +5716,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -7605,20 +5757,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -7632,20 +5770,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                             timerSeconds?: yup.Maybe<number | undefined>;
                             isSuggested?: boolean | undefined;
                             audio?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -7684,20 +5808,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -7743,20 +5853,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -7799,20 +5895,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -7909,20 +5991,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                         pastTenseTitle?: string | undefined;
                         debriefAfterMinutes?: number | null | undefined;
                         image?: {
-                            createdAt?: {
-                                isEqual?: any;
-                                toMillis?: any;
-                                seconds: number;
-                                nanoseconds: number;
-                                toDate: Function;
-                            } | null | undefined;
-                            updatedAt?: {
-                                isEqual?: any;
-                                toMillis?: any;
-                                seconds: number;
-                                nanoseconds: number;
-                                toDate: Function;
-                            } | null | undefined;
                             localFilePath?: yup.Maybe<string | undefined>;
                             isDeleted?: boolean | undefined;
                             metadata?: {} | null | undefined;
@@ -7968,20 +6036,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                         pastTenseTitle?: string | undefined;
                         debriefAfterMinutes?: number | null | undefined;
                         image?: {
-                            createdAt?: {
-                                isEqual?: any;
-                                toMillis?: any;
-                                seconds: number;
-                                nanoseconds: number;
-                                toDate: Function;
-                            } | null | undefined;
-                            updatedAt?: {
-                                isEqual?: any;
-                                toMillis?: any;
-                                seconds: number;
-                                nanoseconds: number;
-                                toDate: Function;
-                            } | null | undefined;
                             localFilePath?: yup.Maybe<string | undefined>;
                             isDeleted?: boolean | undefined;
                             metadata?: {} | null | undefined;
@@ -8024,20 +6078,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                         pastTenseTitle?: string | undefined;
                         debriefAfterMinutes?: number | null | undefined;
                         image?: {
-                            createdAt?: {
-                                isEqual?: any;
-                                toMillis?: any;
-                                seconds: number;
-                                nanoseconds: number;
-                                toDate: Function;
-                            } | null | undefined;
-                            updatedAt?: {
-                                isEqual?: any;
-                                toMillis?: any;
-                                seconds: number;
-                                nanoseconds: number;
-                                toDate: Function;
-                            } | null | undefined;
                             localFilePath?: yup.Maybe<string | undefined>;
                             isDeleted?: boolean | undefined;
                             metadata?: {} | null | undefined;
@@ -8079,20 +6119,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                         pastTenseTitle?: string | undefined;
                         debriefAfterMinutes?: number | null | undefined;
                         image?: {
-                            createdAt?: {
-                                isEqual?: any;
-                                toMillis?: any;
-                                seconds: number;
-                                nanoseconds: number;
-                                toDate: Function;
-                            } | null | undefined;
-                            updatedAt?: {
-                                isEqual?: any;
-                                toMillis?: any;
-                                seconds: number;
-                                nanoseconds: number;
-                                toDate: Function;
-                            } | null | undefined;
                             localFilePath?: yup.Maybe<string | undefined>;
                             isDeleted?: boolean | undefined;
                             metadata?: {} | null | undefined;
@@ -8106,20 +6132,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isSuggested?: boolean | undefined;
                         audio?: {
-                            createdAt?: {
-                                isEqual?: any;
-                                toMillis?: any;
-                                seconds: number;
-                                nanoseconds: number;
-                                toDate: Function;
-                            } | null | undefined;
-                            updatedAt?: {
-                                isEqual?: any;
-                                toMillis?: any;
-                                seconds: number;
-                                nanoseconds: number;
-                                toDate: Function;
-                            } | null | undefined;
                             localFilePath?: yup.Maybe<string | undefined>;
                             isDeleted?: boolean | undefined;
                             metadata?: {} | null | undefined;
@@ -8158,20 +6170,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                         pastTenseTitle?: string | undefined;
                         debriefAfterMinutes?: number | null | undefined;
                         image?: {
-                            createdAt?: {
-                                isEqual?: any;
-                                toMillis?: any;
-                                seconds: number;
-                                nanoseconds: number;
-                                toDate: Function;
-                            } | null | undefined;
-                            updatedAt?: {
-                                isEqual?: any;
-                                toMillis?: any;
-                                seconds: number;
-                                nanoseconds: number;
-                                toDate: Function;
-                            } | null | undefined;
                             localFilePath?: yup.Maybe<string | undefined>;
                             isDeleted?: boolean | undefined;
                             metadata?: {} | null | undefined;
@@ -8217,20 +6215,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                         pastTenseTitle?: string | undefined;
                         debriefAfterMinutes?: number | null | undefined;
                         image?: {
-                            createdAt?: {
-                                isEqual?: any;
-                                toMillis?: any;
-                                seconds: number;
-                                nanoseconds: number;
-                                toDate: Function;
-                            } | null | undefined;
-                            updatedAt?: {
-                                isEqual?: any;
-                                toMillis?: any;
-                                seconds: number;
-                                nanoseconds: number;
-                                toDate: Function;
-                            } | null | undefined;
                             localFilePath?: yup.Maybe<string | undefined>;
                             isDeleted?: boolean | undefined;
                             metadata?: {} | null | undefined;
@@ -8273,20 +6257,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                         pastTenseTitle?: string | undefined;
                         debriefAfterMinutes?: number | null | undefined;
                         image?: {
-                            createdAt?: {
-                                isEqual?: any;
-                                toMillis?: any;
-                                seconds: number;
-                                nanoseconds: number;
-                                toDate: Function;
-                            } | null | undefined;
-                            updatedAt?: {
-                                isEqual?: any;
-                                toMillis?: any;
-                                seconds: number;
-                                nanoseconds: number;
-                                toDate: Function;
-                            } | null | undefined;
                             localFilePath?: yup.Maybe<string | undefined>;
                             isDeleted?: boolean | undefined;
                             metadata?: {} | null | undefined;
@@ -8336,20 +6306,6 @@ export declare const threadSchema: yup.ObjectSchema<{
         pastTenseTitle?: string | undefined;
         debriefAfterMinutes?: number | null | undefined;
         image?: {
-            createdAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            updatedAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
             localFilePath?: yup.Maybe<string | undefined>;
             isDeleted?: boolean | undefined;
             metadata?: {} | null | undefined;
@@ -8395,20 +6351,6 @@ export declare const threadSchema: yup.ObjectSchema<{
         pastTenseTitle?: string | undefined;
         debriefAfterMinutes?: number | null | undefined;
         image?: {
-            createdAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            updatedAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
             localFilePath?: yup.Maybe<string | undefined>;
             isDeleted?: boolean | undefined;
             metadata?: {} | null | undefined;
@@ -8451,20 +6393,6 @@ export declare const threadSchema: yup.ObjectSchema<{
         pastTenseTitle?: string | undefined;
         debriefAfterMinutes?: number | null | undefined;
         image?: {
-            createdAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            updatedAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
             localFilePath?: yup.Maybe<string | undefined>;
             isDeleted?: boolean | undefined;
             metadata?: {} | null | undefined;
@@ -8506,20 +6434,6 @@ export declare const threadSchema: yup.ObjectSchema<{
         pastTenseTitle?: string | undefined;
         debriefAfterMinutes?: number | null | undefined;
         image?: {
-            createdAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            updatedAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
             localFilePath?: yup.Maybe<string | undefined>;
             isDeleted?: boolean | undefined;
             metadata?: {} | null | undefined;
@@ -8533,20 +6447,6 @@ export declare const threadSchema: yup.ObjectSchema<{
         timerSeconds?: yup.Maybe<number | undefined>;
         isSuggested?: boolean | undefined;
         audio?: {
-            createdAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            updatedAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
             localFilePath?: yup.Maybe<string | undefined>;
             isDeleted?: boolean | undefined;
             metadata?: {} | null | undefined;
@@ -8585,20 +6485,6 @@ export declare const threadSchema: yup.ObjectSchema<{
         pastTenseTitle?: string | undefined;
         debriefAfterMinutes?: number | null | undefined;
         image?: {
-            createdAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            updatedAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
             localFilePath?: yup.Maybe<string | undefined>;
             isDeleted?: boolean | undefined;
             metadata?: {} | null | undefined;
@@ -8644,20 +6530,6 @@ export declare const threadSchema: yup.ObjectSchema<{
         pastTenseTitle?: string | undefined;
         debriefAfterMinutes?: number | null | undefined;
         image?: {
-            createdAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            updatedAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
             localFilePath?: yup.Maybe<string | undefined>;
             isDeleted?: boolean | undefined;
             metadata?: {} | null | undefined;
@@ -8700,20 +6572,6 @@ export declare const threadSchema: yup.ObjectSchema<{
         pastTenseTitle?: string | undefined;
         debriefAfterMinutes?: number | null | undefined;
         image?: {
-            createdAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            updatedAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
             localFilePath?: yup.Maybe<string | undefined>;
             isDeleted?: boolean | undefined;
             metadata?: {} | null | undefined;
@@ -8750,8 +6608,8 @@ export declare const threadSchema: yup.ObjectSchema<{
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
-    type: "impulse" | "general" | undefined;
     outcome: "success" | "setback" | undefined;
+    gptSystemMessage: string;
     createdAt: {
         isEqual?: any;
         toMillis?: any;
@@ -8783,8 +6641,8 @@ export declare const threadSchema: yup.ObjectSchema<{
     debriefedAt: undefined;
     debriefAfter: undefined;
     debriefRoutineSentAt: undefined;
-    type: undefined;
     outcome: undefined;
+    gptSystemMessage: undefined;
     createdAt: undefined;
     updatedAt: undefined;
 }, "">;

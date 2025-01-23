@@ -15,7 +15,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
-    type?: "impulse" | "general" | undefined;
     title?: string | undefined;
     outcome?: "success" | "setback" | undefined;
     debriefedAt?: {
@@ -68,20 +67,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
         pastTenseTitle?: string | undefined;
         debriefAfterMinutes?: number | null | undefined;
         image?: {
-            createdAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            updatedAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
             localFilePath?: import("yup").Maybe<string | undefined>;
             isDeleted?: boolean | undefined;
             metadata?: {} | null | undefined;
@@ -127,20 +112,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
         pastTenseTitle?: string | undefined;
         debriefAfterMinutes?: number | null | undefined;
         image?: {
-            createdAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            updatedAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
             localFilePath?: import("yup").Maybe<string | undefined>;
             isDeleted?: boolean | undefined;
             metadata?: {} | null | undefined;
@@ -183,20 +154,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
         pastTenseTitle?: string | undefined;
         debriefAfterMinutes?: number | null | undefined;
         image?: {
-            createdAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            updatedAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
             localFilePath?: import("yup").Maybe<string | undefined>;
             isDeleted?: boolean | undefined;
             metadata?: {} | null | undefined;
@@ -238,20 +195,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
         pastTenseTitle?: string | undefined;
         debriefAfterMinutes?: number | null | undefined;
         image?: {
-            createdAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            updatedAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
             localFilePath?: import("yup").Maybe<string | undefined>;
             isDeleted?: boolean | undefined;
             metadata?: {} | null | undefined;
@@ -265,20 +208,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
         timerSeconds?: import("yup").Maybe<number | undefined>;
         isSuggested?: boolean | undefined;
         audio?: {
-            createdAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            updatedAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
             localFilePath?: import("yup").Maybe<string | undefined>;
             isDeleted?: boolean | undefined;
             metadata?: {} | null | undefined;
@@ -317,20 +246,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
         pastTenseTitle?: string | undefined;
         debriefAfterMinutes?: number | null | undefined;
         image?: {
-            createdAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            updatedAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
             localFilePath?: import("yup").Maybe<string | undefined>;
             isDeleted?: boolean | undefined;
             metadata?: {} | null | undefined;
@@ -376,20 +291,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
         pastTenseTitle?: string | undefined;
         debriefAfterMinutes?: number | null | undefined;
         image?: {
-            createdAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            updatedAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
             localFilePath?: import("yup").Maybe<string | undefined>;
             isDeleted?: boolean | undefined;
             metadata?: {} | null | undefined;
@@ -432,20 +333,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
         pastTenseTitle?: string | undefined;
         debriefAfterMinutes?: number | null | undefined;
         image?: {
-            createdAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            updatedAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
             localFilePath?: import("yup").Maybe<string | undefined>;
             isDeleted?: boolean | undefined;
             metadata?: {} | null | undefined;
@@ -473,6 +360,7 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
         [x: string]: {
             doc: import("../schema/utils/firestore").DocumentReferenceLike<unknown>;
             log: import("../schema").WithTacticsById<{
+                text?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -487,22 +375,7 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                text?: string | null | undefined;
                 audioFile?: {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     metadata?: {} | null | undefined;
@@ -589,20 +462,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                                         pastTenseTitle?: string | undefined;
                                         debriefAfterMinutes?: number | null | undefined;
                                         image?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: import("yup").Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -648,20 +507,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                                         pastTenseTitle?: string | undefined;
                                         debriefAfterMinutes?: number | null | undefined;
                                         image?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: import("yup").Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -704,20 +549,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                                         pastTenseTitle?: string | undefined;
                                         debriefAfterMinutes?: number | null | undefined;
                                         image?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: import("yup").Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -759,20 +590,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                                         pastTenseTitle?: string | undefined;
                                         debriefAfterMinutes?: number | null | undefined;
                                         image?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: import("yup").Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -786,20 +603,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                                         timerSeconds?: import("yup").Maybe<number | undefined>;
                                         isSuggested?: boolean | undefined;
                                         audio?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: import("yup").Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -838,20 +641,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                                         pastTenseTitle?: string | undefined;
                                         debriefAfterMinutes?: number | null | undefined;
                                         image?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: import("yup").Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -897,20 +686,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                                         pastTenseTitle?: string | undefined;
                                         debriefAfterMinutes?: number | null | undefined;
                                         image?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: import("yup").Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -953,20 +728,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                                         pastTenseTitle?: string | undefined;
                                         debriefAfterMinutes?: number | null | undefined;
                                         image?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: import("yup").Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -1038,20 +799,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: import("yup").Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -1097,20 +844,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: import("yup").Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -1153,20 +886,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: import("yup").Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -1208,20 +927,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: import("yup").Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -1235,20 +940,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                             timerSeconds?: import("yup").Maybe<number | undefined>;
                             isSuggested?: boolean | undefined;
                             audio?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: import("yup").Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -1287,20 +978,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: import("yup").Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -1346,20 +1023,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: import("yup").Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -1402,20 +1065,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: import("yup").Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -1447,6 +1096,7 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                 };
                 dateString: string;
             } | {
+                text?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -1461,22 +1111,7 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                text?: string | null | undefined;
                 audioFile?: {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     metadata?: {} | null | undefined;
@@ -1563,20 +1198,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                                         pastTenseTitle?: string | undefined;
                                         debriefAfterMinutes?: number | null | undefined;
                                         image?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: import("yup").Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -1622,20 +1243,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                                         pastTenseTitle?: string | undefined;
                                         debriefAfterMinutes?: number | null | undefined;
                                         image?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: import("yup").Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -1678,20 +1285,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                                         pastTenseTitle?: string | undefined;
                                         debriefAfterMinutes?: number | null | undefined;
                                         image?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: import("yup").Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -1733,20 +1326,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                                         pastTenseTitle?: string | undefined;
                                         debriefAfterMinutes?: number | null | undefined;
                                         image?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: import("yup").Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -1760,20 +1339,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                                         timerSeconds?: import("yup").Maybe<number | undefined>;
                                         isSuggested?: boolean | undefined;
                                         audio?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: import("yup").Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -1812,20 +1377,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                                         pastTenseTitle?: string | undefined;
                                         debriefAfterMinutes?: number | null | undefined;
                                         image?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: import("yup").Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -1871,20 +1422,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                                         pastTenseTitle?: string | undefined;
                                         debriefAfterMinutes?: number | null | undefined;
                                         image?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: import("yup").Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -1927,20 +1464,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                                         pastTenseTitle?: string | undefined;
                                         debriefAfterMinutes?: number | null | undefined;
                                         image?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: import("yup").Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -2012,20 +1535,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: import("yup").Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -2071,20 +1580,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: import("yup").Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -2127,20 +1622,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: import("yup").Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -2182,20 +1663,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: import("yup").Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -2209,20 +1676,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                             timerSeconds?: import("yup").Maybe<number | undefined>;
                             isSuggested?: boolean | undefined;
                             audio?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: import("yup").Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -2261,20 +1714,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: import("yup").Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -2320,20 +1759,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: import("yup").Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -2376,20 +1801,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: import("yup").Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -2423,6 +1834,7 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                 dateString: string;
                 role: "assistant";
             } | {
+                text?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -2437,22 +1849,7 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                text?: string | null | undefined;
                 audioFile?: {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     metadata?: {} | null | undefined;
@@ -2539,20 +1936,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                                         pastTenseTitle?: string | undefined;
                                         debriefAfterMinutes?: number | null | undefined;
                                         image?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: import("yup").Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -2598,20 +1981,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                                         pastTenseTitle?: string | undefined;
                                         debriefAfterMinutes?: number | null | undefined;
                                         image?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: import("yup").Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -2654,20 +2023,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                                         pastTenseTitle?: string | undefined;
                                         debriefAfterMinutes?: number | null | undefined;
                                         image?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: import("yup").Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -2709,20 +2064,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                                         pastTenseTitle?: string | undefined;
                                         debriefAfterMinutes?: number | null | undefined;
                                         image?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: import("yup").Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -2736,20 +2077,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                                         timerSeconds?: import("yup").Maybe<number | undefined>;
                                         isSuggested?: boolean | undefined;
                                         audio?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: import("yup").Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -2788,20 +2115,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                                         pastTenseTitle?: string | undefined;
                                         debriefAfterMinutes?: number | null | undefined;
                                         image?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: import("yup").Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -2847,20 +2160,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                                         pastTenseTitle?: string | undefined;
                                         debriefAfterMinutes?: number | null | undefined;
                                         image?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: import("yup").Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -2903,20 +2202,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                                         pastTenseTitle?: string | undefined;
                                         debriefAfterMinutes?: number | null | undefined;
                                         image?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: import("yup").Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -2988,20 +2273,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: import("yup").Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -3047,20 +2318,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: import("yup").Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -3103,20 +2360,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: import("yup").Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -3158,20 +2401,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: import("yup").Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -3185,20 +2414,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                             timerSeconds?: import("yup").Maybe<number | undefined>;
                             isSuggested?: boolean | undefined;
                             audio?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: import("yup").Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -3237,20 +2452,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: import("yup").Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -3296,20 +2497,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: import("yup").Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -3352,20 +2539,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: import("yup").Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -3399,6 +2572,7 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                 dateString: string;
                 role: "user";
             } | {
+                text?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -3413,22 +2587,7 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                text?: string | null | undefined;
                 audioFile?: {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     metadata?: {} | null | undefined;
@@ -3515,20 +2674,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                                         pastTenseTitle?: string | undefined;
                                         debriefAfterMinutes?: number | null | undefined;
                                         image?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: import("yup").Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -3574,20 +2719,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                                         pastTenseTitle?: string | undefined;
                                         debriefAfterMinutes?: number | null | undefined;
                                         image?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: import("yup").Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -3630,20 +2761,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                                         pastTenseTitle?: string | undefined;
                                         debriefAfterMinutes?: number | null | undefined;
                                         image?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: import("yup").Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -3685,20 +2802,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                                         pastTenseTitle?: string | undefined;
                                         debriefAfterMinutes?: number | null | undefined;
                                         image?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: import("yup").Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -3712,20 +2815,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                                         timerSeconds?: import("yup").Maybe<number | undefined>;
                                         isSuggested?: boolean | undefined;
                                         audio?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: import("yup").Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -3764,20 +2853,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                                         pastTenseTitle?: string | undefined;
                                         debriefAfterMinutes?: number | null | undefined;
                                         image?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: import("yup").Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -3823,20 +2898,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                                         pastTenseTitle?: string | undefined;
                                         debriefAfterMinutes?: number | null | undefined;
                                         image?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: import("yup").Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -3879,20 +2940,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                                         pastTenseTitle?: string | undefined;
                                         debriefAfterMinutes?: number | null | undefined;
                                         image?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: import("yup").Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -3964,20 +3011,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: import("yup").Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -4023,20 +3056,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: import("yup").Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -4079,20 +3098,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: import("yup").Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -4134,20 +3139,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: import("yup").Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -4161,20 +3152,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                             timerSeconds?: import("yup").Maybe<number | undefined>;
                             isSuggested?: boolean | undefined;
                             audio?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: import("yup").Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -4213,20 +3190,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: import("yup").Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -4272,20 +3235,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: import("yup").Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -4328,20 +3277,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: import("yup").Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -4374,6 +3309,7 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                 dateString: string;
                 role: "user";
             } | {
+                text?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -4388,22 +3324,7 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                text?: string | null | undefined;
                 audioFile?: {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     metadata?: {} | null | undefined;
@@ -4490,20 +3411,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                                         pastTenseTitle?: string | undefined;
                                         debriefAfterMinutes?: number | null | undefined;
                                         image?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: import("yup").Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -4549,20 +3456,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                                         pastTenseTitle?: string | undefined;
                                         debriefAfterMinutes?: number | null | undefined;
                                         image?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: import("yup").Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -4605,20 +3498,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                                         pastTenseTitle?: string | undefined;
                                         debriefAfterMinutes?: number | null | undefined;
                                         image?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: import("yup").Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -4660,20 +3539,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                                         pastTenseTitle?: string | undefined;
                                         debriefAfterMinutes?: number | null | undefined;
                                         image?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: import("yup").Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -4687,20 +3552,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                                         timerSeconds?: import("yup").Maybe<number | undefined>;
                                         isSuggested?: boolean | undefined;
                                         audio?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: import("yup").Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -4739,20 +3590,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                                         pastTenseTitle?: string | undefined;
                                         debriefAfterMinutes?: number | null | undefined;
                                         image?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: import("yup").Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -4798,20 +3635,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                                         pastTenseTitle?: string | undefined;
                                         debriefAfterMinutes?: number | null | undefined;
                                         image?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: import("yup").Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -4854,20 +3677,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                                         pastTenseTitle?: string | undefined;
                                         debriefAfterMinutes?: number | null | undefined;
                                         image?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: import("yup").Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -4939,20 +3748,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: import("yup").Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -4998,20 +3793,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: import("yup").Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -5054,20 +3835,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: import("yup").Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -5109,20 +3876,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: import("yup").Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -5136,20 +3889,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                             timerSeconds?: import("yup").Maybe<number | undefined>;
                             isSuggested?: boolean | undefined;
                             audio?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: import("yup").Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -5188,20 +3927,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: import("yup").Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -5247,20 +3972,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: import("yup").Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -5303,20 +4014,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: import("yup").Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -5355,6 +4052,7 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                 };
                 dateString: string;
             } | {
+                text?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -5369,22 +4067,7 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                text?: string | null | undefined;
                 audioFile?: {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     metadata?: {} | null | undefined;
@@ -5471,20 +4154,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                                         pastTenseTitle?: string | undefined;
                                         debriefAfterMinutes?: number | null | undefined;
                                         image?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: import("yup").Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -5530,20 +4199,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                                         pastTenseTitle?: string | undefined;
                                         debriefAfterMinutes?: number | null | undefined;
                                         image?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: import("yup").Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -5586,20 +4241,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                                         pastTenseTitle?: string | undefined;
                                         debriefAfterMinutes?: number | null | undefined;
                                         image?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: import("yup").Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -5641,20 +4282,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                                         pastTenseTitle?: string | undefined;
                                         debriefAfterMinutes?: number | null | undefined;
                                         image?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: import("yup").Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -5668,20 +4295,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                                         timerSeconds?: import("yup").Maybe<number | undefined>;
                                         isSuggested?: boolean | undefined;
                                         audio?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: import("yup").Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -5720,20 +4333,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                                         pastTenseTitle?: string | undefined;
                                         debriefAfterMinutes?: number | null | undefined;
                                         image?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: import("yup").Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -5779,20 +4378,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                                         pastTenseTitle?: string | undefined;
                                         debriefAfterMinutes?: number | null | undefined;
                                         image?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: import("yup").Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -5835,20 +4420,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                                         pastTenseTitle?: string | undefined;
                                         debriefAfterMinutes?: number | null | undefined;
                                         image?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: import("yup").Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -5920,20 +4491,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: import("yup").Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -5979,20 +4536,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: import("yup").Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -6035,20 +4578,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: import("yup").Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -6090,20 +4619,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: import("yup").Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -6117,20 +4632,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                             timerSeconds?: import("yup").Maybe<number | undefined>;
                             isSuggested?: boolean | undefined;
                             audio?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: import("yup").Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -6169,20 +4670,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: import("yup").Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -6228,20 +4715,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: import("yup").Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -6284,20 +4757,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: import("yup").Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -6331,6 +4790,7 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                 role: "tool";
                 toolCallId: string;
             } | {
+                text?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -6345,22 +4805,7 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                text?: string | null | undefined;
                 audioFile?: {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     metadata?: {} | null | undefined;
@@ -6447,20 +4892,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                                         pastTenseTitle?: string | undefined;
                                         debriefAfterMinutes?: number | null | undefined;
                                         image?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: import("yup").Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -6506,20 +4937,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                                         pastTenseTitle?: string | undefined;
                                         debriefAfterMinutes?: number | null | undefined;
                                         image?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: import("yup").Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -6562,20 +4979,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                                         pastTenseTitle?: string | undefined;
                                         debriefAfterMinutes?: number | null | undefined;
                                         image?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: import("yup").Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -6617,20 +5020,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                                         pastTenseTitle?: string | undefined;
                                         debriefAfterMinutes?: number | null | undefined;
                                         image?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: import("yup").Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -6644,20 +5033,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                                         timerSeconds?: import("yup").Maybe<number | undefined>;
                                         isSuggested?: boolean | undefined;
                                         audio?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: import("yup").Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -6696,20 +5071,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                                         pastTenseTitle?: string | undefined;
                                         debriefAfterMinutes?: number | null | undefined;
                                         image?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: import("yup").Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -6755,20 +5116,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                                         pastTenseTitle?: string | undefined;
                                         debriefAfterMinutes?: number | null | undefined;
                                         image?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: import("yup").Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -6811,20 +5158,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                                         pastTenseTitle?: string | undefined;
                                         debriefAfterMinutes?: number | null | undefined;
                                         image?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: import("yup").Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -6896,20 +5229,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: import("yup").Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -6955,20 +5274,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: import("yup").Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -7011,20 +5316,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: import("yup").Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -7066,20 +5357,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: import("yup").Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -7093,20 +5370,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                             timerSeconds?: import("yup").Maybe<number | undefined>;
                             isSuggested?: boolean | undefined;
                             audio?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: import("yup").Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -7145,20 +5408,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: import("yup").Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -7204,20 +5453,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: import("yup").Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -7260,20 +5495,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: import("yup").Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -7295,20 +5516,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                 senderUid?: string | null | undefined;
                 senderName?: string | null | undefined;
                 files?: import("yup").Maybe<{
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     metadata?: {} | null | undefined;
@@ -7328,6 +5535,7 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                 };
                 dateString: string;
             } | {
+                text?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -7342,22 +5550,7 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                text?: string | null | undefined;
                 audioFile?: {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     metadata?: {} | null | undefined;
@@ -7444,20 +5637,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                                         pastTenseTitle?: string | undefined;
                                         debriefAfterMinutes?: number | null | undefined;
                                         image?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: import("yup").Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -7503,20 +5682,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                                         pastTenseTitle?: string | undefined;
                                         debriefAfterMinutes?: number | null | undefined;
                                         image?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: import("yup").Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -7559,20 +5724,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                                         pastTenseTitle?: string | undefined;
                                         debriefAfterMinutes?: number | null | undefined;
                                         image?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: import("yup").Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -7614,20 +5765,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                                         pastTenseTitle?: string | undefined;
                                         debriefAfterMinutes?: number | null | undefined;
                                         image?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: import("yup").Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -7641,20 +5778,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                                         timerSeconds?: import("yup").Maybe<number | undefined>;
                                         isSuggested?: boolean | undefined;
                                         audio?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: import("yup").Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -7693,20 +5816,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                                         pastTenseTitle?: string | undefined;
                                         debriefAfterMinutes?: number | null | undefined;
                                         image?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: import("yup").Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -7752,20 +5861,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                                         pastTenseTitle?: string | undefined;
                                         debriefAfterMinutes?: number | null | undefined;
                                         image?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: import("yup").Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -7808,20 +5903,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                                         pastTenseTitle?: string | undefined;
                                         debriefAfterMinutes?: number | null | undefined;
                                         image?: {
-                                            createdAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
-                                            updatedAt?: {
-                                                isEqual?: any;
-                                                toMillis?: any;
-                                                seconds: number;
-                                                nanoseconds: number;
-                                                toDate: Function;
-                                            } | null | undefined;
                                             localFilePath?: import("yup").Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -7893,20 +5974,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: import("yup").Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -7952,20 +6019,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: import("yup").Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -8008,20 +6061,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: import("yup").Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -8063,20 +6102,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: import("yup").Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -8090,20 +6115,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                             timerSeconds?: import("yup").Maybe<number | undefined>;
                             isSuggested?: boolean | undefined;
                             audio?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: import("yup").Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -8142,20 +6153,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: import("yup").Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -8201,20 +6198,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: import("yup").Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -8257,20 +6240,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: import("yup").Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -8367,20 +6336,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                         pastTenseTitle?: string | undefined;
                         debriefAfterMinutes?: number | null | undefined;
                         image?: {
-                            createdAt?: {
-                                isEqual?: any;
-                                toMillis?: any;
-                                seconds: number;
-                                nanoseconds: number;
-                                toDate: Function;
-                            } | null | undefined;
-                            updatedAt?: {
-                                isEqual?: any;
-                                toMillis?: any;
-                                seconds: number;
-                                nanoseconds: number;
-                                toDate: Function;
-                            } | null | undefined;
                             localFilePath?: import("yup").Maybe<string | undefined>;
                             isDeleted?: boolean | undefined;
                             metadata?: {} | null | undefined;
@@ -8426,20 +6381,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                         pastTenseTitle?: string | undefined;
                         debriefAfterMinutes?: number | null | undefined;
                         image?: {
-                            createdAt?: {
-                                isEqual?: any;
-                                toMillis?: any;
-                                seconds: number;
-                                nanoseconds: number;
-                                toDate: Function;
-                            } | null | undefined;
-                            updatedAt?: {
-                                isEqual?: any;
-                                toMillis?: any;
-                                seconds: number;
-                                nanoseconds: number;
-                                toDate: Function;
-                            } | null | undefined;
                             localFilePath?: import("yup").Maybe<string | undefined>;
                             isDeleted?: boolean | undefined;
                             metadata?: {} | null | undefined;
@@ -8482,20 +6423,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                         pastTenseTitle?: string | undefined;
                         debriefAfterMinutes?: number | null | undefined;
                         image?: {
-                            createdAt?: {
-                                isEqual?: any;
-                                toMillis?: any;
-                                seconds: number;
-                                nanoseconds: number;
-                                toDate: Function;
-                            } | null | undefined;
-                            updatedAt?: {
-                                isEqual?: any;
-                                toMillis?: any;
-                                seconds: number;
-                                nanoseconds: number;
-                                toDate: Function;
-                            } | null | undefined;
                             localFilePath?: import("yup").Maybe<string | undefined>;
                             isDeleted?: boolean | undefined;
                             metadata?: {} | null | undefined;
@@ -8537,20 +6464,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                         pastTenseTitle?: string | undefined;
                         debriefAfterMinutes?: number | null | undefined;
                         image?: {
-                            createdAt?: {
-                                isEqual?: any;
-                                toMillis?: any;
-                                seconds: number;
-                                nanoseconds: number;
-                                toDate: Function;
-                            } | null | undefined;
-                            updatedAt?: {
-                                isEqual?: any;
-                                toMillis?: any;
-                                seconds: number;
-                                nanoseconds: number;
-                                toDate: Function;
-                            } | null | undefined;
                             localFilePath?: import("yup").Maybe<string | undefined>;
                             isDeleted?: boolean | undefined;
                             metadata?: {} | null | undefined;
@@ -8564,20 +6477,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                         timerSeconds?: import("yup").Maybe<number | undefined>;
                         isSuggested?: boolean | undefined;
                         audio?: {
-                            createdAt?: {
-                                isEqual?: any;
-                                toMillis?: any;
-                                seconds: number;
-                                nanoseconds: number;
-                                toDate: Function;
-                            } | null | undefined;
-                            updatedAt?: {
-                                isEqual?: any;
-                                toMillis?: any;
-                                seconds: number;
-                                nanoseconds: number;
-                                toDate: Function;
-                            } | null | undefined;
                             localFilePath?: import("yup").Maybe<string | undefined>;
                             isDeleted?: boolean | undefined;
                             metadata?: {} | null | undefined;
@@ -8616,20 +6515,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                         pastTenseTitle?: string | undefined;
                         debriefAfterMinutes?: number | null | undefined;
                         image?: {
-                            createdAt?: {
-                                isEqual?: any;
-                                toMillis?: any;
-                                seconds: number;
-                                nanoseconds: number;
-                                toDate: Function;
-                            } | null | undefined;
-                            updatedAt?: {
-                                isEqual?: any;
-                                toMillis?: any;
-                                seconds: number;
-                                nanoseconds: number;
-                                toDate: Function;
-                            } | null | undefined;
                             localFilePath?: import("yup").Maybe<string | undefined>;
                             isDeleted?: boolean | undefined;
                             metadata?: {} | null | undefined;
@@ -8675,20 +6560,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                         pastTenseTitle?: string | undefined;
                         debriefAfterMinutes?: number | null | undefined;
                         image?: {
-                            createdAt?: {
-                                isEqual?: any;
-                                toMillis?: any;
-                                seconds: number;
-                                nanoseconds: number;
-                                toDate: Function;
-                            } | null | undefined;
-                            updatedAt?: {
-                                isEqual?: any;
-                                toMillis?: any;
-                                seconds: number;
-                                nanoseconds: number;
-                                toDate: Function;
-                            } | null | undefined;
                             localFilePath?: import("yup").Maybe<string | undefined>;
                             isDeleted?: boolean | undefined;
                             metadata?: {} | null | undefined;
@@ -8731,20 +6602,6 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
                         pastTenseTitle?: string | undefined;
                         debriefAfterMinutes?: number | null | undefined;
                         image?: {
-                            createdAt?: {
-                                isEqual?: any;
-                                toMillis?: any;
-                                seconds: number;
-                                nanoseconds: number;
-                                toDate: Function;
-                            } | null | undefined;
-                            updatedAt?: {
-                                isEqual?: any;
-                                toMillis?: any;
-                                seconds: number;
-                                nanoseconds: number;
-                                toDate: Function;
-                            } | null | undefined;
                             localFilePath?: import("yup").Maybe<string | undefined>;
                             isDeleted?: boolean | undefined;
                             metadata?: {} | null | undefined;
@@ -8766,4 +6623,5 @@ export declare const makeThreadFactory: (TimestampKlass: typeof TimestampLike) =
             isHelpful: boolean | null;
         };
     };
-}, "date" | "dateString" | "logsById" | "behaviorsById" | ("createdAt" | "updatedAt" | "type" | "title" | "outcome" | "debriefedAt" | "debriefAfter" | "debriefRoutineSentAt" | "summary" | "suggestedTactics")>;
+    gptSystemMessage: string;
+}, "date" | "dateString" | "logsById" | "behaviorsById" | "gptSystemMessage" | ("createdAt" | "updatedAt" | "title" | "outcome" | "debriefedAt" | "debriefAfter" | "debriefRoutineSentAt" | "summary" | "suggestedTactics")>;

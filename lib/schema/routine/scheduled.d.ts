@@ -43,20 +43,6 @@ export declare const scheduledRoutineSchema: yup.ObjectSchema<{
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     metadata?: {} | null | undefined;
@@ -102,20 +88,6 @@ export declare const scheduledRoutineSchema: yup.ObjectSchema<{
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     metadata?: {} | null | undefined;
@@ -158,20 +130,6 @@ export declare const scheduledRoutineSchema: yup.ObjectSchema<{
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     metadata?: {} | null | undefined;
@@ -213,20 +171,6 @@ export declare const scheduledRoutineSchema: yup.ObjectSchema<{
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     metadata?: {} | null | undefined;
@@ -240,20 +184,6 @@ export declare const scheduledRoutineSchema: yup.ObjectSchema<{
                 timerSeconds?: yup.Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
                 audio?: {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     metadata?: {} | null | undefined;
@@ -292,20 +222,6 @@ export declare const scheduledRoutineSchema: yup.ObjectSchema<{
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     metadata?: {} | null | undefined;
@@ -351,20 +267,6 @@ export declare const scheduledRoutineSchema: yup.ObjectSchema<{
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     metadata?: {} | null | undefined;
@@ -407,20 +309,6 @@ export declare const scheduledRoutineSchema: yup.ObjectSchema<{
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     metadata?: {} | null | undefined;

@@ -81,20 +81,6 @@ export declare const makeDaysSummaryFactory: (TimestampKlass: typeof TimestampLi
                                     pastTenseTitle?: string | undefined;
                                     debriefAfterMinutes?: number | null | undefined;
                                     image?: {
-                                        createdAt?: {
-                                            isEqual?: any;
-                                            toMillis?: any;
-                                            seconds: number;
-                                            nanoseconds: number;
-                                            toDate: Function;
-                                        } | null | undefined;
-                                        updatedAt?: {
-                                            isEqual?: any;
-                                            toMillis?: any;
-                                            seconds: number;
-                                            nanoseconds: number;
-                                            toDate: Function;
-                                        } | null | undefined;
                                         localFilePath?: import("yup").Maybe<string | undefined>;
                                         isDeleted?: boolean | undefined;
                                         metadata?: {} | null | undefined;
@@ -140,20 +126,6 @@ export declare const makeDaysSummaryFactory: (TimestampKlass: typeof TimestampLi
                                     pastTenseTitle?: string | undefined;
                                     debriefAfterMinutes?: number | null | undefined;
                                     image?: {
-                                        createdAt?: {
-                                            isEqual?: any;
-                                            toMillis?: any;
-                                            seconds: number;
-                                            nanoseconds: number;
-                                            toDate: Function;
-                                        } | null | undefined;
-                                        updatedAt?: {
-                                            isEqual?: any;
-                                            toMillis?: any;
-                                            seconds: number;
-                                            nanoseconds: number;
-                                            toDate: Function;
-                                        } | null | undefined;
                                         localFilePath?: import("yup").Maybe<string | undefined>;
                                         isDeleted?: boolean | undefined;
                                         metadata?: {} | null | undefined;
@@ -196,20 +168,6 @@ export declare const makeDaysSummaryFactory: (TimestampKlass: typeof TimestampLi
                                     pastTenseTitle?: string | undefined;
                                     debriefAfterMinutes?: number | null | undefined;
                                     image?: {
-                                        createdAt?: {
-                                            isEqual?: any;
-                                            toMillis?: any;
-                                            seconds: number;
-                                            nanoseconds: number;
-                                            toDate: Function;
-                                        } | null | undefined;
-                                        updatedAt?: {
-                                            isEqual?: any;
-                                            toMillis?: any;
-                                            seconds: number;
-                                            nanoseconds: number;
-                                            toDate: Function;
-                                        } | null | undefined;
                                         localFilePath?: import("yup").Maybe<string | undefined>;
                                         isDeleted?: boolean | undefined;
                                         metadata?: {} | null | undefined;
@@ -251,20 +209,6 @@ export declare const makeDaysSummaryFactory: (TimestampKlass: typeof TimestampLi
                                     pastTenseTitle?: string | undefined;
                                     debriefAfterMinutes?: number | null | undefined;
                                     image?: {
-                                        createdAt?: {
-                                            isEqual?: any;
-                                            toMillis?: any;
-                                            seconds: number;
-                                            nanoseconds: number;
-                                            toDate: Function;
-                                        } | null | undefined;
-                                        updatedAt?: {
-                                            isEqual?: any;
-                                            toMillis?: any;
-                                            seconds: number;
-                                            nanoseconds: number;
-                                            toDate: Function;
-                                        } | null | undefined;
                                         localFilePath?: import("yup").Maybe<string | undefined>;
                                         isDeleted?: boolean | undefined;
                                         metadata?: {} | null | undefined;
@@ -278,20 +222,6 @@ export declare const makeDaysSummaryFactory: (TimestampKlass: typeof TimestampLi
                                     timerSeconds?: import("yup").Maybe<number | undefined>;
                                     isSuggested?: boolean | undefined;
                                     audio?: {
-                                        createdAt?: {
-                                            isEqual?: any;
-                                            toMillis?: any;
-                                            seconds: number;
-                                            nanoseconds: number;
-                                            toDate: Function;
-                                        } | null | undefined;
-                                        updatedAt?: {
-                                            isEqual?: any;
-                                            toMillis?: any;
-                                            seconds: number;
-                                            nanoseconds: number;
-                                            toDate: Function;
-                                        } | null | undefined;
                                         localFilePath?: import("yup").Maybe<string | undefined>;
                                         isDeleted?: boolean | undefined;
                                         metadata?: {} | null | undefined;
@@ -330,20 +260,6 @@ export declare const makeDaysSummaryFactory: (TimestampKlass: typeof TimestampLi
                                     pastTenseTitle?: string | undefined;
                                     debriefAfterMinutes?: number | null | undefined;
                                     image?: {
-                                        createdAt?: {
-                                            isEqual?: any;
-                                            toMillis?: any;
-                                            seconds: number;
-                                            nanoseconds: number;
-                                            toDate: Function;
-                                        } | null | undefined;
-                                        updatedAt?: {
-                                            isEqual?: any;
-                                            toMillis?: any;
-                                            seconds: number;
-                                            nanoseconds: number;
-                                            toDate: Function;
-                                        } | null | undefined;
                                         localFilePath?: import("yup").Maybe<string | undefined>;
                                         isDeleted?: boolean | undefined;
                                         metadata?: {} | null | undefined;
@@ -389,20 +305,6 @@ export declare const makeDaysSummaryFactory: (TimestampKlass: typeof TimestampLi
                                     pastTenseTitle?: string | undefined;
                                     debriefAfterMinutes?: number | null | undefined;
                                     image?: {
-                                        createdAt?: {
-                                            isEqual?: any;
-                                            toMillis?: any;
-                                            seconds: number;
-                                            nanoseconds: number;
-                                            toDate: Function;
-                                        } | null | undefined;
-                                        updatedAt?: {
-                                            isEqual?: any;
-                                            toMillis?: any;
-                                            seconds: number;
-                                            nanoseconds: number;
-                                            toDate: Function;
-                                        } | null | undefined;
                                         localFilePath?: import("yup").Maybe<string | undefined>;
                                         isDeleted?: boolean | undefined;
                                         metadata?: {} | null | undefined;
@@ -445,20 +347,6 @@ export declare const makeDaysSummaryFactory: (TimestampKlass: typeof TimestampLi
                                     pastTenseTitle?: string | undefined;
                                     debriefAfterMinutes?: number | null | undefined;
                                     image?: {
-                                        createdAt?: {
-                                            isEqual?: any;
-                                            toMillis?: any;
-                                            seconds: number;
-                                            nanoseconds: number;
-                                            toDate: Function;
-                                        } | null | undefined;
-                                        updatedAt?: {
-                                            isEqual?: any;
-                                            toMillis?: any;
-                                            seconds: number;
-                                            nanoseconds: number;
-                                            toDate: Function;
-                                        } | null | undefined;
                                         localFilePath?: import("yup").Maybe<string | undefined>;
                                         isDeleted?: boolean | undefined;
                                         metadata?: {} | null | undefined;

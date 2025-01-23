@@ -2,6 +2,7 @@ import * as Factory from 'factory.ts';
 import { TimestampLike } from '../utils/firestore/TimestampLike';
 export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) => {
     regularLogFactory: Factory.Sync.Factory<{
+        text?: string | null | undefined;
         createdAt?: {
             isEqual?: any;
             toMillis?: any;
@@ -16,22 +17,7 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        text?: string | null | undefined;
         audioFile?: {
-            createdAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            updatedAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
             localFilePath?: import("yup").Maybe<string | undefined>;
             isDeleted?: boolean | undefined;
             metadata?: {} | null | undefined;
@@ -118,20 +104,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                                 pastTenseTitle?: string | undefined;
                                 debriefAfterMinutes?: number | null | undefined;
                                 image?: {
-                                    createdAt?: {
-                                        isEqual?: any;
-                                        toMillis?: any;
-                                        seconds: number;
-                                        nanoseconds: number;
-                                        toDate: Function;
-                                    } | null | undefined;
-                                    updatedAt?: {
-                                        isEqual?: any;
-                                        toMillis?: any;
-                                        seconds: number;
-                                        nanoseconds: number;
-                                        toDate: Function;
-                                    } | null | undefined;
                                     localFilePath?: import("yup").Maybe<string | undefined>;
                                     isDeleted?: boolean | undefined;
                                     metadata?: {} | null | undefined;
@@ -177,20 +149,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                                 pastTenseTitle?: string | undefined;
                                 debriefAfterMinutes?: number | null | undefined;
                                 image?: {
-                                    createdAt?: {
-                                        isEqual?: any;
-                                        toMillis?: any;
-                                        seconds: number;
-                                        nanoseconds: number;
-                                        toDate: Function;
-                                    } | null | undefined;
-                                    updatedAt?: {
-                                        isEqual?: any;
-                                        toMillis?: any;
-                                        seconds: number;
-                                        nanoseconds: number;
-                                        toDate: Function;
-                                    } | null | undefined;
                                     localFilePath?: import("yup").Maybe<string | undefined>;
                                     isDeleted?: boolean | undefined;
                                     metadata?: {} | null | undefined;
@@ -233,20 +191,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                                 pastTenseTitle?: string | undefined;
                                 debriefAfterMinutes?: number | null | undefined;
                                 image?: {
-                                    createdAt?: {
-                                        isEqual?: any;
-                                        toMillis?: any;
-                                        seconds: number;
-                                        nanoseconds: number;
-                                        toDate: Function;
-                                    } | null | undefined;
-                                    updatedAt?: {
-                                        isEqual?: any;
-                                        toMillis?: any;
-                                        seconds: number;
-                                        nanoseconds: number;
-                                        toDate: Function;
-                                    } | null | undefined;
                                     localFilePath?: import("yup").Maybe<string | undefined>;
                                     isDeleted?: boolean | undefined;
                                     metadata?: {} | null | undefined;
@@ -288,20 +232,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                                 pastTenseTitle?: string | undefined;
                                 debriefAfterMinutes?: number | null | undefined;
                                 image?: {
-                                    createdAt?: {
-                                        isEqual?: any;
-                                        toMillis?: any;
-                                        seconds: number;
-                                        nanoseconds: number;
-                                        toDate: Function;
-                                    } | null | undefined;
-                                    updatedAt?: {
-                                        isEqual?: any;
-                                        toMillis?: any;
-                                        seconds: number;
-                                        nanoseconds: number;
-                                        toDate: Function;
-                                    } | null | undefined;
                                     localFilePath?: import("yup").Maybe<string | undefined>;
                                     isDeleted?: boolean | undefined;
                                     metadata?: {} | null | undefined;
@@ -315,20 +245,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                                 timerSeconds?: import("yup").Maybe<number | undefined>;
                                 isSuggested?: boolean | undefined;
                                 audio?: {
-                                    createdAt?: {
-                                        isEqual?: any;
-                                        toMillis?: any;
-                                        seconds: number;
-                                        nanoseconds: number;
-                                        toDate: Function;
-                                    } | null | undefined;
-                                    updatedAt?: {
-                                        isEqual?: any;
-                                        toMillis?: any;
-                                        seconds: number;
-                                        nanoseconds: number;
-                                        toDate: Function;
-                                    } | null | undefined;
                                     localFilePath?: import("yup").Maybe<string | undefined>;
                                     isDeleted?: boolean | undefined;
                                     metadata?: {} | null | undefined;
@@ -367,20 +283,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                                 pastTenseTitle?: string | undefined;
                                 debriefAfterMinutes?: number | null | undefined;
                                 image?: {
-                                    createdAt?: {
-                                        isEqual?: any;
-                                        toMillis?: any;
-                                        seconds: number;
-                                        nanoseconds: number;
-                                        toDate: Function;
-                                    } | null | undefined;
-                                    updatedAt?: {
-                                        isEqual?: any;
-                                        toMillis?: any;
-                                        seconds: number;
-                                        nanoseconds: number;
-                                        toDate: Function;
-                                    } | null | undefined;
                                     localFilePath?: import("yup").Maybe<string | undefined>;
                                     isDeleted?: boolean | undefined;
                                     metadata?: {} | null | undefined;
@@ -426,20 +328,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                                 pastTenseTitle?: string | undefined;
                                 debriefAfterMinutes?: number | null | undefined;
                                 image?: {
-                                    createdAt?: {
-                                        isEqual?: any;
-                                        toMillis?: any;
-                                        seconds: number;
-                                        nanoseconds: number;
-                                        toDate: Function;
-                                    } | null | undefined;
-                                    updatedAt?: {
-                                        isEqual?: any;
-                                        toMillis?: any;
-                                        seconds: number;
-                                        nanoseconds: number;
-                                        toDate: Function;
-                                    } | null | undefined;
                                     localFilePath?: import("yup").Maybe<string | undefined>;
                                     isDeleted?: boolean | undefined;
                                     metadata?: {} | null | undefined;
@@ -482,20 +370,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                                 pastTenseTitle?: string | undefined;
                                 debriefAfterMinutes?: number | null | undefined;
                                 image?: {
-                                    createdAt?: {
-                                        isEqual?: any;
-                                        toMillis?: any;
-                                        seconds: number;
-                                        nanoseconds: number;
-                                        toDate: Function;
-                                    } | null | undefined;
-                                    updatedAt?: {
-                                        isEqual?: any;
-                                        toMillis?: any;
-                                        seconds: number;
-                                        nanoseconds: number;
-                                        toDate: Function;
-                                    } | null | undefined;
                                     localFilePath?: import("yup").Maybe<string | undefined>;
                                     isDeleted?: boolean | undefined;
                                     metadata?: {} | null | undefined;
@@ -567,20 +441,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     pastTenseTitle?: string | undefined;
                     debriefAfterMinutes?: number | null | undefined;
                     image?: {
-                        createdAt?: {
-                            isEqual?: any;
-                            toMillis?: any;
-                            seconds: number;
-                            nanoseconds: number;
-                            toDate: Function;
-                        } | null | undefined;
-                        updatedAt?: {
-                            isEqual?: any;
-                            toMillis?: any;
-                            seconds: number;
-                            nanoseconds: number;
-                            toDate: Function;
-                        } | null | undefined;
                         localFilePath?: import("yup").Maybe<string | undefined>;
                         isDeleted?: boolean | undefined;
                         metadata?: {} | null | undefined;
@@ -626,20 +486,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     pastTenseTitle?: string | undefined;
                     debriefAfterMinutes?: number | null | undefined;
                     image?: {
-                        createdAt?: {
-                            isEqual?: any;
-                            toMillis?: any;
-                            seconds: number;
-                            nanoseconds: number;
-                            toDate: Function;
-                        } | null | undefined;
-                        updatedAt?: {
-                            isEqual?: any;
-                            toMillis?: any;
-                            seconds: number;
-                            nanoseconds: number;
-                            toDate: Function;
-                        } | null | undefined;
                         localFilePath?: import("yup").Maybe<string | undefined>;
                         isDeleted?: boolean | undefined;
                         metadata?: {} | null | undefined;
@@ -682,20 +528,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     pastTenseTitle?: string | undefined;
                     debriefAfterMinutes?: number | null | undefined;
                     image?: {
-                        createdAt?: {
-                            isEqual?: any;
-                            toMillis?: any;
-                            seconds: number;
-                            nanoseconds: number;
-                            toDate: Function;
-                        } | null | undefined;
-                        updatedAt?: {
-                            isEqual?: any;
-                            toMillis?: any;
-                            seconds: number;
-                            nanoseconds: number;
-                            toDate: Function;
-                        } | null | undefined;
                         localFilePath?: import("yup").Maybe<string | undefined>;
                         isDeleted?: boolean | undefined;
                         metadata?: {} | null | undefined;
@@ -737,20 +569,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     pastTenseTitle?: string | undefined;
                     debriefAfterMinutes?: number | null | undefined;
                     image?: {
-                        createdAt?: {
-                            isEqual?: any;
-                            toMillis?: any;
-                            seconds: number;
-                            nanoseconds: number;
-                            toDate: Function;
-                        } | null | undefined;
-                        updatedAt?: {
-                            isEqual?: any;
-                            toMillis?: any;
-                            seconds: number;
-                            nanoseconds: number;
-                            toDate: Function;
-                        } | null | undefined;
                         localFilePath?: import("yup").Maybe<string | undefined>;
                         isDeleted?: boolean | undefined;
                         metadata?: {} | null | undefined;
@@ -764,20 +582,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     timerSeconds?: import("yup").Maybe<number | undefined>;
                     isSuggested?: boolean | undefined;
                     audio?: {
-                        createdAt?: {
-                            isEqual?: any;
-                            toMillis?: any;
-                            seconds: number;
-                            nanoseconds: number;
-                            toDate: Function;
-                        } | null | undefined;
-                        updatedAt?: {
-                            isEqual?: any;
-                            toMillis?: any;
-                            seconds: number;
-                            nanoseconds: number;
-                            toDate: Function;
-                        } | null | undefined;
                         localFilePath?: import("yup").Maybe<string | undefined>;
                         isDeleted?: boolean | undefined;
                         metadata?: {} | null | undefined;
@@ -816,20 +620,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     pastTenseTitle?: string | undefined;
                     debriefAfterMinutes?: number | null | undefined;
                     image?: {
-                        createdAt?: {
-                            isEqual?: any;
-                            toMillis?: any;
-                            seconds: number;
-                            nanoseconds: number;
-                            toDate: Function;
-                        } | null | undefined;
-                        updatedAt?: {
-                            isEqual?: any;
-                            toMillis?: any;
-                            seconds: number;
-                            nanoseconds: number;
-                            toDate: Function;
-                        } | null | undefined;
                         localFilePath?: import("yup").Maybe<string | undefined>;
                         isDeleted?: boolean | undefined;
                         metadata?: {} | null | undefined;
@@ -875,20 +665,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     pastTenseTitle?: string | undefined;
                     debriefAfterMinutes?: number | null | undefined;
                     image?: {
-                        createdAt?: {
-                            isEqual?: any;
-                            toMillis?: any;
-                            seconds: number;
-                            nanoseconds: number;
-                            toDate: Function;
-                        } | null | undefined;
-                        updatedAt?: {
-                            isEqual?: any;
-                            toMillis?: any;
-                            seconds: number;
-                            nanoseconds: number;
-                            toDate: Function;
-                        } | null | undefined;
                         localFilePath?: import("yup").Maybe<string | undefined>;
                         isDeleted?: boolean | undefined;
                         metadata?: {} | null | undefined;
@@ -931,20 +707,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     pastTenseTitle?: string | undefined;
                     debriefAfterMinutes?: number | null | undefined;
                     image?: {
-                        createdAt?: {
-                            isEqual?: any;
-                            toMillis?: any;
-                            seconds: number;
-                            nanoseconds: number;
-                            toDate: Function;
-                        } | null | undefined;
-                        updatedAt?: {
-                            isEqual?: any;
-                            toMillis?: any;
-                            seconds: number;
-                            nanoseconds: number;
-                            toDate: Function;
-                        } | null | undefined;
                         localFilePath?: import("yup").Maybe<string | undefined>;
                         isDeleted?: boolean | undefined;
                         metadata?: {} | null | undefined;
@@ -976,5 +738,5 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
         };
         dateString: string;
         role: "user";
-    }, "uid" | "type" | "date" | "dateString" | "role" | ("createdAt" | "updatedAt" | "text" | "audioFile" | "metricData" | "behaviorData" | "tacticsData" | "senderUid" | "senderName")>;
+    }, "uid" | "type" | "date" | "dateString" | "role" | ("text" | "createdAt" | "updatedAt" | "audioFile" | "metricData" | "behaviorData" | "tacticsData" | "senderUid" | "senderName")>;
 };

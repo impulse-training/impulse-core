@@ -20,6 +20,7 @@ export * from './utils/metricData';
 export * from './utils/tacticData';
 export declare const logSchemas: Record<LogValue['type'], yup.ObjectSchema<LogValue>>;
 export declare const logSchema: yup.Lazy<WithTacticsById<{
+    text?: string | null | undefined;
     createdAt?: {
         isEqual?: any;
         toMillis?: any;
@@ -34,22 +35,7 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
-    text?: string | null | undefined;
     audioFile?: {
-        createdAt?: {
-            isEqual?: any;
-            toMillis?: any;
-            seconds: number;
-            nanoseconds: number;
-            toDate: Function;
-        } | null | undefined;
-        updatedAt?: {
-            isEqual?: any;
-            toMillis?: any;
-            seconds: number;
-            nanoseconds: number;
-            toDate: Function;
-        } | null | undefined;
         localFilePath?: yup.Maybe<string | undefined>;
         isDeleted?: boolean | undefined;
         metadata?: {} | null | undefined;
@@ -136,20 +122,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -195,20 +167,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -251,20 +209,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -306,20 +250,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -333,20 +263,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                             timerSeconds?: yup.Maybe<number | undefined>;
                             isSuggested?: boolean | undefined;
                             audio?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -385,20 +301,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -444,20 +346,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -500,20 +388,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -585,20 +459,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     metadata?: {} | null | undefined;
@@ -644,20 +504,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     metadata?: {} | null | undefined;
@@ -700,20 +546,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     metadata?: {} | null | undefined;
@@ -755,20 +587,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     metadata?: {} | null | undefined;
@@ -782,20 +600,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                 timerSeconds?: yup.Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
                 audio?: {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     metadata?: {} | null | undefined;
@@ -834,20 +638,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     metadata?: {} | null | undefined;
@@ -893,20 +683,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     metadata?: {} | null | undefined;
@@ -949,20 +725,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     metadata?: {} | null | undefined;
@@ -994,6 +756,7 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
     };
     dateString: string;
 } | {
+    text?: string | null | undefined;
     createdAt?: {
         isEqual?: any;
         toMillis?: any;
@@ -1008,22 +771,7 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
-    text?: string | null | undefined;
     audioFile?: {
-        createdAt?: {
-            isEqual?: any;
-            toMillis?: any;
-            seconds: number;
-            nanoseconds: number;
-            toDate: Function;
-        } | null | undefined;
-        updatedAt?: {
-            isEqual?: any;
-            toMillis?: any;
-            seconds: number;
-            nanoseconds: number;
-            toDate: Function;
-        } | null | undefined;
         localFilePath?: yup.Maybe<string | undefined>;
         isDeleted?: boolean | undefined;
         metadata?: {} | null | undefined;
@@ -1110,20 +858,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -1169,20 +903,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -1225,20 +945,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -1280,20 +986,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -1307,20 +999,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                             timerSeconds?: yup.Maybe<number | undefined>;
                             isSuggested?: boolean | undefined;
                             audio?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -1359,20 +1037,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -1418,20 +1082,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -1474,20 +1124,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -1559,20 +1195,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     metadata?: {} | null | undefined;
@@ -1618,20 +1240,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     metadata?: {} | null | undefined;
@@ -1674,20 +1282,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     metadata?: {} | null | undefined;
@@ -1729,20 +1323,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     metadata?: {} | null | undefined;
@@ -1756,20 +1336,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                 timerSeconds?: yup.Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
                 audio?: {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     metadata?: {} | null | undefined;
@@ -1808,20 +1374,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     metadata?: {} | null | undefined;
@@ -1867,20 +1419,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     metadata?: {} | null | undefined;
@@ -1923,20 +1461,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     metadata?: {} | null | undefined;
@@ -1970,6 +1494,7 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
     dateString: string;
     role: "assistant";
 } | {
+    text?: string | null | undefined;
     createdAt?: {
         isEqual?: any;
         toMillis?: any;
@@ -1984,22 +1509,7 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
-    text?: string | null | undefined;
     audioFile?: {
-        createdAt?: {
-            isEqual?: any;
-            toMillis?: any;
-            seconds: number;
-            nanoseconds: number;
-            toDate: Function;
-        } | null | undefined;
-        updatedAt?: {
-            isEqual?: any;
-            toMillis?: any;
-            seconds: number;
-            nanoseconds: number;
-            toDate: Function;
-        } | null | undefined;
         localFilePath?: yup.Maybe<string | undefined>;
         isDeleted?: boolean | undefined;
         metadata?: {} | null | undefined;
@@ -2086,20 +1596,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -2145,20 +1641,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -2201,20 +1683,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -2256,20 +1724,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -2283,20 +1737,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                             timerSeconds?: yup.Maybe<number | undefined>;
                             isSuggested?: boolean | undefined;
                             audio?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -2335,20 +1775,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -2394,20 +1820,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -2450,20 +1862,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -2535,20 +1933,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     metadata?: {} | null | undefined;
@@ -2594,20 +1978,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     metadata?: {} | null | undefined;
@@ -2650,20 +2020,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     metadata?: {} | null | undefined;
@@ -2705,20 +2061,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     metadata?: {} | null | undefined;
@@ -2732,20 +2074,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                 timerSeconds?: yup.Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
                 audio?: {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     metadata?: {} | null | undefined;
@@ -2784,20 +2112,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     metadata?: {} | null | undefined;
@@ -2843,20 +2157,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     metadata?: {} | null | undefined;
@@ -2899,20 +2199,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     metadata?: {} | null | undefined;
@@ -2946,6 +2232,7 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
     dateString: string;
     role: "user";
 } | {
+    text?: string | null | undefined;
     createdAt?: {
         isEqual?: any;
         toMillis?: any;
@@ -2960,22 +2247,7 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
-    text?: string | null | undefined;
     audioFile?: {
-        createdAt?: {
-            isEqual?: any;
-            toMillis?: any;
-            seconds: number;
-            nanoseconds: number;
-            toDate: Function;
-        } | null | undefined;
-        updatedAt?: {
-            isEqual?: any;
-            toMillis?: any;
-            seconds: number;
-            nanoseconds: number;
-            toDate: Function;
-        } | null | undefined;
         localFilePath?: yup.Maybe<string | undefined>;
         isDeleted?: boolean | undefined;
         metadata?: {} | null | undefined;
@@ -3062,20 +2334,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -3121,20 +2379,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -3177,20 +2421,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -3232,20 +2462,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -3259,20 +2475,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                             timerSeconds?: yup.Maybe<number | undefined>;
                             isSuggested?: boolean | undefined;
                             audio?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -3311,20 +2513,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -3370,20 +2558,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -3426,20 +2600,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -3511,20 +2671,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     metadata?: {} | null | undefined;
@@ -3570,20 +2716,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     metadata?: {} | null | undefined;
@@ -3626,20 +2758,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     metadata?: {} | null | undefined;
@@ -3681,20 +2799,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     metadata?: {} | null | undefined;
@@ -3708,20 +2812,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                 timerSeconds?: yup.Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
                 audio?: {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     metadata?: {} | null | undefined;
@@ -3760,20 +2850,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     metadata?: {} | null | undefined;
@@ -3819,20 +2895,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     metadata?: {} | null | undefined;
@@ -3875,20 +2937,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     metadata?: {} | null | undefined;
@@ -3921,6 +2969,7 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
     dateString: string;
     role: "user";
 } | {
+    text?: string | null | undefined;
     createdAt?: {
         isEqual?: any;
         toMillis?: any;
@@ -3935,22 +2984,7 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
-    text?: string | null | undefined;
     audioFile?: {
-        createdAt?: {
-            isEqual?: any;
-            toMillis?: any;
-            seconds: number;
-            nanoseconds: number;
-            toDate: Function;
-        } | null | undefined;
-        updatedAt?: {
-            isEqual?: any;
-            toMillis?: any;
-            seconds: number;
-            nanoseconds: number;
-            toDate: Function;
-        } | null | undefined;
         localFilePath?: yup.Maybe<string | undefined>;
         isDeleted?: boolean | undefined;
         metadata?: {} | null | undefined;
@@ -4037,20 +3071,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -4096,20 +3116,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -4152,20 +3158,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -4207,20 +3199,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -4234,20 +3212,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                             timerSeconds?: yup.Maybe<number | undefined>;
                             isSuggested?: boolean | undefined;
                             audio?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -4286,20 +3250,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -4345,20 +3295,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -4401,20 +3337,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -4486,20 +3408,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     metadata?: {} | null | undefined;
@@ -4545,20 +3453,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     metadata?: {} | null | undefined;
@@ -4601,20 +3495,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     metadata?: {} | null | undefined;
@@ -4656,20 +3536,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     metadata?: {} | null | undefined;
@@ -4683,20 +3549,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                 timerSeconds?: yup.Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
                 audio?: {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     metadata?: {} | null | undefined;
@@ -4735,20 +3587,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     metadata?: {} | null | undefined;
@@ -4794,20 +3632,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     metadata?: {} | null | undefined;
@@ -4850,20 +3674,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     metadata?: {} | null | undefined;
@@ -4902,6 +3712,7 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
     };
     dateString: string;
 } | {
+    text?: string | null | undefined;
     createdAt?: {
         isEqual?: any;
         toMillis?: any;
@@ -4916,22 +3727,7 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
-    text?: string | null | undefined;
     audioFile?: {
-        createdAt?: {
-            isEqual?: any;
-            toMillis?: any;
-            seconds: number;
-            nanoseconds: number;
-            toDate: Function;
-        } | null | undefined;
-        updatedAt?: {
-            isEqual?: any;
-            toMillis?: any;
-            seconds: number;
-            nanoseconds: number;
-            toDate: Function;
-        } | null | undefined;
         localFilePath?: yup.Maybe<string | undefined>;
         isDeleted?: boolean | undefined;
         metadata?: {} | null | undefined;
@@ -5018,20 +3814,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -5077,20 +3859,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -5133,20 +3901,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -5188,20 +3942,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -5215,20 +3955,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                             timerSeconds?: yup.Maybe<number | undefined>;
                             isSuggested?: boolean | undefined;
                             audio?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -5267,20 +3993,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -5326,20 +4038,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -5382,20 +4080,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -5467,20 +4151,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     metadata?: {} | null | undefined;
@@ -5526,20 +4196,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     metadata?: {} | null | undefined;
@@ -5582,20 +4238,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     metadata?: {} | null | undefined;
@@ -5637,20 +4279,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     metadata?: {} | null | undefined;
@@ -5664,20 +4292,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                 timerSeconds?: yup.Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
                 audio?: {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     metadata?: {} | null | undefined;
@@ -5716,20 +4330,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     metadata?: {} | null | undefined;
@@ -5775,20 +4375,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     metadata?: {} | null | undefined;
@@ -5831,20 +4417,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     metadata?: {} | null | undefined;
@@ -5878,6 +4450,7 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
     role: "tool";
     toolCallId: string;
 } | {
+    text?: string | null | undefined;
     createdAt?: {
         isEqual?: any;
         toMillis?: any;
@@ -5892,22 +4465,7 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
-    text?: string | null | undefined;
     audioFile?: {
-        createdAt?: {
-            isEqual?: any;
-            toMillis?: any;
-            seconds: number;
-            nanoseconds: number;
-            toDate: Function;
-        } | null | undefined;
-        updatedAt?: {
-            isEqual?: any;
-            toMillis?: any;
-            seconds: number;
-            nanoseconds: number;
-            toDate: Function;
-        } | null | undefined;
         localFilePath?: yup.Maybe<string | undefined>;
         isDeleted?: boolean | undefined;
         metadata?: {} | null | undefined;
@@ -5994,20 +4552,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -6053,20 +4597,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -6109,20 +4639,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -6164,20 +4680,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -6191,20 +4693,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                             timerSeconds?: yup.Maybe<number | undefined>;
                             isSuggested?: boolean | undefined;
                             audio?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -6243,20 +4731,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -6302,20 +4776,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -6358,20 +4818,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -6443,20 +4889,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     metadata?: {} | null | undefined;
@@ -6502,20 +4934,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     metadata?: {} | null | undefined;
@@ -6558,20 +4976,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     metadata?: {} | null | undefined;
@@ -6613,20 +5017,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     metadata?: {} | null | undefined;
@@ -6640,20 +5030,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                 timerSeconds?: yup.Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
                 audio?: {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     metadata?: {} | null | undefined;
@@ -6692,20 +5068,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     metadata?: {} | null | undefined;
@@ -6751,20 +5113,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     metadata?: {} | null | undefined;
@@ -6807,20 +5155,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     metadata?: {} | null | undefined;
@@ -6842,20 +5176,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
     senderUid?: string | null | undefined;
     senderName?: string | null | undefined;
     files?: yup.Maybe<{
-        createdAt?: {
-            isEqual?: any;
-            toMillis?: any;
-            seconds: number;
-            nanoseconds: number;
-            toDate: Function;
-        } | null | undefined;
-        updatedAt?: {
-            isEqual?: any;
-            toMillis?: any;
-            seconds: number;
-            nanoseconds: number;
-            toDate: Function;
-        } | null | undefined;
         localFilePath?: yup.Maybe<string | undefined>;
         isDeleted?: boolean | undefined;
         metadata?: {} | null | undefined;
@@ -6875,6 +5195,7 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
     };
     dateString: string;
 } | {
+    text?: string | null | undefined;
     createdAt?: {
         isEqual?: any;
         toMillis?: any;
@@ -6889,22 +5210,7 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
-    text?: string | null | undefined;
     audioFile?: {
-        createdAt?: {
-            isEqual?: any;
-            toMillis?: any;
-            seconds: number;
-            nanoseconds: number;
-            toDate: Function;
-        } | null | undefined;
-        updatedAt?: {
-            isEqual?: any;
-            toMillis?: any;
-            seconds: number;
-            nanoseconds: number;
-            toDate: Function;
-        } | null | undefined;
         localFilePath?: yup.Maybe<string | undefined>;
         isDeleted?: boolean | undefined;
         metadata?: {} | null | undefined;
@@ -6991,20 +5297,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -7050,20 +5342,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -7106,20 +5384,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -7161,20 +5425,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -7188,20 +5438,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                             timerSeconds?: yup.Maybe<number | undefined>;
                             isSuggested?: boolean | undefined;
                             audio?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -7240,20 +5476,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -7299,20 +5521,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -7355,20 +5563,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                             pastTenseTitle?: string | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
-                                createdAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    isEqual?: any;
-                                    toMillis?: any;
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -7440,20 +5634,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     metadata?: {} | null | undefined;
@@ -7499,20 +5679,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     metadata?: {} | null | undefined;
@@ -7555,20 +5721,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     metadata?: {} | null | undefined;
@@ -7610,20 +5762,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     metadata?: {} | null | undefined;
@@ -7637,20 +5775,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                 timerSeconds?: yup.Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
                 audio?: {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     metadata?: {} | null | undefined;
@@ -7689,20 +5813,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     metadata?: {} | null | undefined;
@@ -7748,20 +5858,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     metadata?: {} | null | undefined;
@@ -7804,20 +5900,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     metadata?: {} | null | undefined;

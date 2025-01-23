@@ -8,7 +8,7 @@ export const makeThreadFactory = (TimestampKlass: typeof TimestampLike) =>
     date: TimestampKlass.now(),
     title: 'Getting started with Impulse',
     logsById: {},
-    type: 'general',
+    gptSystemMessage: 'You are a helpful assistant.',
     behaviorsById: {},
     createdAt: TimestampKlass.now(),
     updatedAt: TimestampKlass.now(),

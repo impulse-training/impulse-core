@@ -1,9 +1,6 @@
 import * as yup from 'yup';
-import { optionalTimestampSchema } from './timestamp';
 
 export const fileSchema = yup.object({
-  createdAt: optionalTimestampSchema,
-  updatedAt: optionalTimestampSchema,
   storagePath: yup.string().required(),
   url: yup.string().required(),
   localFilePath: yup.string().notRequired(),
