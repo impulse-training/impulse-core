@@ -1,4 +1,5 @@
 import * as yup from 'yup';
+import { LogsById } from './day';
 export declare const outcome: yup.MixedSchema<"success" | "setback" | undefined, yup.AnyObject, undefined, "">;
 export declare const threadSchema: yup.ObjectSchema<{
     dateString: string;
@@ -6646,4 +6647,6 @@ export declare const threadSchema: yup.ObjectSchema<{
     createdAt: undefined;
     updatedAt: undefined;
 }, "">;
-export type ThreadValue = yup.InferType<typeof threadSchema>;
+export type ThreadValue = Omit<yup.InferType<typeof threadSchema>, 'logsById'> & {
+    logsById: LogsById;
+};

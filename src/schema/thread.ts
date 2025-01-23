@@ -1,6 +1,6 @@
 import * as yup from 'yup';
 import { behaviorSchema } from './behavior';
-import { logsById } from './day';
+import { LogsById, logsById } from './day';
 import { tacticSchema } from './tactic';
 import { objectOf } from './utils/objectOf';
 import { optionalTimestampSchema, timestampSchema } from './utils/timestamp';
@@ -29,4 +29,9 @@ export const threadSchema = yup.object({
   updatedAt: optionalTimestampSchema,
 });
 
-export type ThreadValue = yup.InferType<typeof threadSchema>;
+export type ThreadValue = Omit<
+  yup.InferType<typeof threadSchema>,
+  'logsById'
+> & {
+  logsById: LogsById;
+};
