@@ -69,7 +69,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                unit?: string | undefined;
+                trackingUnit?: string | undefined;
                 dailyLimit?: number | undefined;
                 name: string;
                 ordinal: number;

@@ -3,7 +3,7 @@ export declare const behaviorSchema: yup.ObjectSchema<{
     name: string;
     ordinal: number;
     trackingType: NonNullable<"time" | "counter" | undefined>;
-    unit: string | undefined;
+    trackingUnit: string | undefined;
     tacticsById: {
         [x: string]: {
             data?: {
@@ -348,7 +348,7 @@ export declare const behaviorSchema: yup.ObjectSchema<{
     name: undefined;
     ordinal: undefined;
     trackingType: undefined;
-    unit: undefined;
+    trackingUnit: undefined;
     tacticsById: undefined;
     dailyLimit: undefined;
     isHelpful: undefined;

@@ -56,7 +56,7 @@ export declare const regularLogFactory: import("factory.ts").Factory<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                unit?: string | undefined;
+                trackingUnit?: string | undefined;
                 dailyLimit?: number | undefined;
                 name: string;
                 ordinal: number;

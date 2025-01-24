@@ -9,6 +9,10 @@ export const outcome = yup
   .mixed<'success' | 'setback'>()
   .oneOf(['success', 'setback']);
 
+export const agentType = yup
+  .mixed<'impulse' | 'general' | 'onboarding'>()
+  .oneOf(['impulse', 'general', 'onboarding']);
+
 export const threadSchema = yup.object({
   dateString: yup.string().required(),
   date: timestampSchema,
@@ -20,10 +24,7 @@ export const threadSchema = yup.object({
   debriefedAt: optionalTimestampSchema,
   debriefAfter: optionalTimestampSchema,
   debriefRoutineSentAt: optionalTimestampSchema,
-  agentType: yup
-    .mixed<'impulse' | 'general' | 'onboarding'>()
-    .oneOf(['impulse', 'general', 'onboarding'])
-    .required(),
+  agentType: agentType.nonNullable().required(),
   outcome,
   createdAt: optionalTimestampSchema,
   updatedAt: optionalTimestampSchema,

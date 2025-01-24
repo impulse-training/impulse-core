@@ -29,7 +29,7 @@ export declare const behaviorAndBehaviorDataSchema: yup.ObjectSchema<{
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        unit?: string | undefined;
+        trackingUnit?: string | undefined;
         dailyLimit?: number | undefined;
         name: string;
         ordinal: number;
@@ -375,7 +375,7 @@ export declare const behaviorAndBehaviorDataSchema: yup.ObjectSchema<{
         name: undefined;
         ordinal: undefined;
         trackingType: undefined;
-        unit: undefined;
+        trackingUnit: undefined;
         tacticsById: undefined;
         dailyLimit: undefined;
         isHelpful: undefined;

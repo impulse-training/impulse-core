@@ -9,7 +9,7 @@ export const behaviorSchema = yup.object({
     .mixed<'time' | 'counter'>()
     .oneOf(['time', 'counter'])
     .required(),
-  unit: yup.string().when('trackingType', {
+  trackingUnit: yup.string().when('trackingType', {
     is: 'counter',
     then: schema =>
       schema.required('Unit is required when tracking type is "counter".'),

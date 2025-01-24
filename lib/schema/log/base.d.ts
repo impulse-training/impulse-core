@@ -58,7 +58,7 @@ export declare function logBaseSchema<K extends string>(type: K): yup.ObjectSche
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                unit?: string | undefined;
+                trackingUnit?: string | undefined;
                 dailyLimit?: number | undefined;
                 name: string;
                 ordinal: number;

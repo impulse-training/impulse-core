@@ -57,7 +57,7 @@ export declare const factories: {
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
-                    unit?: string | undefined;
+                    trackingUnit?: string | undefined;
                     dailyLimit?: number | undefined;
                     name: string;
                     ordinal: number;
@@ -824,7 +824,7 @@ export declare const factories: {
                                 nanoseconds: number;
                                 toDate: Function;
                             } | null | undefined;
-                            unit?: string | undefined;
+                            trackingUnit?: string | undefined;
                             dailyLimit?: number | undefined;
                             name: string;
                             ordinal: number;
@@ -1646,7 +1646,7 @@ export declare const factories: {
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        unit?: string | undefined;
+        trackingUnit?: string | undefined;
         dailyLimit?: number | undefined;
         name: string;
         ordinal: number;
@@ -1976,5 +1976,5 @@ export declare const factories: {
             };
         };
         isHelpful: boolean | null;
-    }, "name" | "ordinal" | "trackingType" | "tacticsById" | "isHelpful" | ("createdAt" | "updatedAt" | "unit" | "dailyLimit")>;
+    }, "name" | "ordinal" | "trackingType" | "tacticsById" | "isHelpful" | ("createdAt" | "updatedAt" | "trackingUnit" | "dailyLimit")>;
 };

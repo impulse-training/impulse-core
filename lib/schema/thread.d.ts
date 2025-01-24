@@ -1,6 +1,7 @@
 import * as yup from 'yup';
 import { LogsById } from './day';
 export declare const outcome: yup.MixedSchema<"success" | "setback" | undefined, yup.AnyObject, undefined, "">;
+export declare const agentType: yup.MixedSchema<"impulse" | "general" | "onboarding" | undefined, yup.AnyObject, undefined, "">;
 export declare const threadSchema: yup.ObjectSchema<{
     dateString: string;
     date: {
@@ -73,7 +74,7 @@ export declare const threadSchema: yup.ObjectSchema<{
                                 nanoseconds: number;
                                 toDate: Function;
                             } | null | undefined;
-                            unit?: string | undefined;
+                            trackingUnit?: string | undefined;
                             dailyLimit?: number | undefined;
                             name: string;
                             ordinal: number;
@@ -809,7 +810,7 @@ export declare const threadSchema: yup.ObjectSchema<{
                                 nanoseconds: number;
                                 toDate: Function;
                             } | null | undefined;
-                            unit?: string | undefined;
+                            trackingUnit?: string | undefined;
                             dailyLimit?: number | undefined;
                             name: string;
                             ordinal: number;
@@ -1547,7 +1548,7 @@ export declare const threadSchema: yup.ObjectSchema<{
                                 nanoseconds: number;
                                 toDate: Function;
                             } | null | undefined;
-                            unit?: string | undefined;
+                            trackingUnit?: string | undefined;
                             dailyLimit?: number | undefined;
                             name: string;
                             ordinal: number;
@@ -2285,7 +2286,7 @@ export declare const threadSchema: yup.ObjectSchema<{
                                 nanoseconds: number;
                                 toDate: Function;
                             } | null | undefined;
-                            unit?: string | undefined;
+                            trackingUnit?: string | undefined;
                             dailyLimit?: number | undefined;
                             name: string;
                             ordinal: number;
@@ -3022,7 +3023,7 @@ export declare const threadSchema: yup.ObjectSchema<{
                                 nanoseconds: number;
                                 toDate: Function;
                             } | null | undefined;
-                            unit?: string | undefined;
+                            trackingUnit?: string | undefined;
                             dailyLimit?: number | undefined;
                             name: string;
                             ordinal: number;
@@ -3765,7 +3766,7 @@ export declare const threadSchema: yup.ObjectSchema<{
                                 nanoseconds: number;
                                 toDate: Function;
                             } | null | undefined;
-                            unit?: string | undefined;
+                            trackingUnit?: string | undefined;
                             dailyLimit?: number | undefined;
                             name: string;
                             ordinal: number;
@@ -4503,7 +4504,7 @@ export declare const threadSchema: yup.ObjectSchema<{
                                 nanoseconds: number;
                                 toDate: Function;
                             } | null | undefined;
-                            unit?: string | undefined;
+                            trackingUnit?: string | undefined;
                             dailyLimit?: number | undefined;
                             name: string;
                             ordinal: number;
@@ -5248,7 +5249,7 @@ export declare const threadSchema: yup.ObjectSchema<{
                                 nanoseconds: number;
                                 toDate: Function;
                             } | null | undefined;
-                            unit?: string | undefined;
+                            trackingUnit?: string | undefined;
                             dailyLimit?: number | undefined;
                             name: string;
                             ordinal: number;
@@ -5947,7 +5948,7 @@ export declare const threadSchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            unit?: string | undefined;
+            trackingUnit?: string | undefined;
             dailyLimit?: number | undefined;
             name: string;
             ordinal: number;

@@ -62,7 +62,7 @@ export declare const logsById: yup.Lazy<{
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
-                        unit?: string | undefined;
+                        trackingUnit?: string | undefined;
                         dailyLimit?: number | undefined;
                         name: string;
                         ordinal: number;
@@ -798,7 +798,7 @@ export declare const logsById: yup.Lazy<{
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
-                        unit?: string | undefined;
+                        trackingUnit?: string | undefined;
                         dailyLimit?: number | undefined;
                         name: string;
                         ordinal: number;
@@ -1536,7 +1536,7 @@ export declare const logsById: yup.Lazy<{
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
-                        unit?: string | undefined;
+                        trackingUnit?: string | undefined;
                         dailyLimit?: number | undefined;
                         name: string;
                         ordinal: number;
@@ -2274,7 +2274,7 @@ export declare const logsById: yup.Lazy<{
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
-                        unit?: string | undefined;
+                        trackingUnit?: string | undefined;
                         dailyLimit?: number | undefined;
                         name: string;
                         ordinal: number;
@@ -3011,7 +3011,7 @@ export declare const logsById: yup.Lazy<{
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
-                        unit?: string | undefined;
+                        trackingUnit?: string | undefined;
                         dailyLimit?: number | undefined;
                         name: string;
                         ordinal: number;
@@ -3754,7 +3754,7 @@ export declare const logsById: yup.Lazy<{
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
-                        unit?: string | undefined;
+                        trackingUnit?: string | undefined;
                         dailyLimit?: number | undefined;
                         name: string;
                         ordinal: number;
@@ -4492,7 +4492,7 @@ export declare const logsById: yup.Lazy<{
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
-                        unit?: string | undefined;
+                        trackingUnit?: string | undefined;
                         dailyLimit?: number | undefined;
                         name: string;
                         ordinal: number;
@@ -5237,7 +5237,7 @@ export declare const logsById: yup.Lazy<{
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
-                        unit?: string | undefined;
+                        trackingUnit?: string | undefined;
                         dailyLimit?: number | undefined;
                         name: string;
                         ordinal: number;
@@ -5994,7 +5994,7 @@ export declare const daySchema: yup.ObjectSchema<{
                                 nanoseconds: number;
                                 toDate: Function;
                             } | null | undefined;
-                            unit?: string | undefined;
+                            trackingUnit?: string | undefined;
                             dailyLimit?: number | undefined;
                             name: string;
                             ordinal: number;
@@ -6730,7 +6730,7 @@ export declare const daySchema: yup.ObjectSchema<{
                                 nanoseconds: number;
                                 toDate: Function;
                             } | null | undefined;
-                            unit?: string | undefined;
+                            trackingUnit?: string | undefined;
                             dailyLimit?: number | undefined;
                             name: string;
                             ordinal: number;
@@ -7468,7 +7468,7 @@ export declare const daySchema: yup.ObjectSchema<{
                                 nanoseconds: number;
                                 toDate: Function;
                             } | null | undefined;
-                            unit?: string | undefined;
+                            trackingUnit?: string | undefined;
                             dailyLimit?: number | undefined;
                             name: string;
                             ordinal: number;
@@ -8206,7 +8206,7 @@ export declare const daySchema: yup.ObjectSchema<{
                                 nanoseconds: number;
                                 toDate: Function;
                             } | null | undefined;
-                            unit?: string | undefined;
+                            trackingUnit?: string | undefined;
                             dailyLimit?: number | undefined;
                             name: string;
                             ordinal: number;
@@ -8943,7 +8943,7 @@ export declare const daySchema: yup.ObjectSchema<{
                                 nanoseconds: number;
                                 toDate: Function;
                             } | null | undefined;
-                            unit?: string | undefined;
+                            trackingUnit?: string | undefined;
                             dailyLimit?: number | undefined;
                             name: string;
                             ordinal: number;
@@ -9686,7 +9686,7 @@ export declare const daySchema: yup.ObjectSchema<{
                                 nanoseconds: number;
                                 toDate: Function;
                             } | null | undefined;
-                            unit?: string | undefined;
+                            trackingUnit?: string | undefined;
                             dailyLimit?: number | undefined;
                             name: string;
                             ordinal: number;
@@ -10424,7 +10424,7 @@ export declare const daySchema: yup.ObjectSchema<{
                                 nanoseconds: number;
                                 toDate: Function;
                             } | null | undefined;
-                            unit?: string | undefined;
+                            trackingUnit?: string | undefined;
                             dailyLimit?: number | undefined;
                             name: string;
                             ordinal: number;
@@ -11169,7 +11169,7 @@ export declare const daySchema: yup.ObjectSchema<{
                                 nanoseconds: number;
                                 toDate: Function;
                             } | null | undefined;
-                            unit?: string | undefined;
+                            trackingUnit?: string | undefined;
                             dailyLimit?: number | undefined;
                             name: string;
                             ordinal: number;

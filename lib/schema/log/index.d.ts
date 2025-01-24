@@ -77,7 +77,7 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                unit?: string | undefined;
+                trackingUnit?: string | undefined;
                 dailyLimit?: number | undefined;
                 name: string;
                 ordinal: number;
@@ -813,7 +813,7 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                unit?: string | undefined;
+                trackingUnit?: string | undefined;
                 dailyLimit?: number | undefined;
                 name: string;
                 ordinal: number;
@@ -1551,7 +1551,7 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                unit?: string | undefined;
+                trackingUnit?: string | undefined;
                 dailyLimit?: number | undefined;
                 name: string;
                 ordinal: number;
@@ -2289,7 +2289,7 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                unit?: string | undefined;
+                trackingUnit?: string | undefined;
                 dailyLimit?: number | undefined;
                 name: string;
                 ordinal: number;
@@ -3026,7 +3026,7 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                unit?: string | undefined;
+                trackingUnit?: string | undefined;
                 dailyLimit?: number | undefined;
                 name: string;
                 ordinal: number;
@@ -3769,7 +3769,7 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                unit?: string | undefined;
+                trackingUnit?: string | undefined;
                 dailyLimit?: number | undefined;
                 name: string;
                 ordinal: number;
@@ -4507,7 +4507,7 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                unit?: string | undefined;
+                trackingUnit?: string | undefined;
                 dailyLimit?: number | undefined;
                 name: string;
                 ordinal: number;
@@ -5252,7 +5252,7 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                unit?: string | undefined;
+                trackingUnit?: string | undefined;
                 dailyLimit?: number | undefined;
                 name: string;
                 ordinal: number;
