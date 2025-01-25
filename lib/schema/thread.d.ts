@@ -6279,7 +6279,7 @@ export declare const threadSchema: yup.ObjectSchema<{
             };
             isHelpful: boolean | null;
         };
-    };
+    } | null | undefined;
     suggestedTactics: ({
         createdAt?: {
             isEqual?: any;
