@@ -25,6 +25,7 @@ export const threadSchema = yup.object({
   debriefAfter: optionalTimestampSchema,
   debriefRoutineSentAt: optionalTimestampSchema,
   agentType: agentType.nonNullable().required(),
+  hasImpulse: yup.boolean(),
   outcome,
   createdAt: optionalTimestampSchema,
   updatedAt: optionalTimestampSchema,

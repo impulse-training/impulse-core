@@ -6611,6 +6611,7 @@ export declare const threadSchema: yup.ObjectSchema<{
         toDate: Function;
     } | null | undefined;
     agentType: NonNullable<"impulse" | "general" | "onboarding" | undefined>;
+    hasImpulse: boolean | undefined;
     outcome: "success" | "setback" | undefined;
     createdAt: {
         isEqual?: any;
@@ -6644,6 +6645,7 @@ export declare const threadSchema: yup.ObjectSchema<{
     debriefAfter: undefined;
     debriefRoutineSentAt: undefined;
     agentType: undefined;
+    hasImpulse: undefined;
     outcome: undefined;
     createdAt: undefined;
     updatedAt: undefined;
