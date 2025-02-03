@@ -740,6 +740,7 @@ export declare const threadSchema: yup.ObjectSchema<{
                         doc: import("./utils/firestore").DocumentReferenceLike<unknown>;
                     };
                 } | undefined;
+                transcript?: string | undefined;
                 senderUid?: string | null | undefined;
                 senderName?: string | null | undefined;
                 uid: string;
@@ -1476,6 +1477,7 @@ export declare const threadSchema: yup.ObjectSchema<{
                         doc: import("./utils/firestore").DocumentReferenceLike<unknown>;
                     };
                 } | undefined;
+                transcript?: string | undefined;
                 senderUid?: string | null | undefined;
                 senderName?: string | null | undefined;
                 suggestedResponses?: string[] | undefined;
@@ -2214,6 +2216,7 @@ export declare const threadSchema: yup.ObjectSchema<{
                         doc: import("./utils/firestore").DocumentReferenceLike<unknown>;
                     };
                 } | undefined;
+                transcript?: string | undefined;
                 senderUid?: string | null | undefined;
                 senderName?: string | null | undefined;
                 triggerDoc?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
@@ -2952,6 +2955,7 @@ export declare const threadSchema: yup.ObjectSchema<{
                         doc: import("./utils/firestore").DocumentReferenceLike<unknown>;
                     };
                 } | undefined;
+                transcript?: string | undefined;
                 senderUid?: string | null | undefined;
                 senderName?: string | null | undefined;
                 uid: string;
@@ -3689,6 +3693,7 @@ export declare const threadSchema: yup.ObjectSchema<{
                         doc: import("./utils/firestore").DocumentReferenceLike<unknown>;
                     };
                 } | undefined;
+                transcript?: string | undefined;
                 senderUid?: string | null | undefined;
                 senderName?: string | null | undefined;
                 animationFileName?: string | undefined;
@@ -4432,6 +4437,7 @@ export declare const threadSchema: yup.ObjectSchema<{
                         doc: import("./utils/firestore").DocumentReferenceLike<unknown>;
                     };
                 } | undefined;
+                transcript?: string | undefined;
                 senderUid?: string | null | undefined;
                 senderName?: string | null | undefined;
                 uid: string;
@@ -5170,6 +5176,7 @@ export declare const threadSchema: yup.ObjectSchema<{
                         doc: import("./utils/firestore").DocumentReferenceLike<unknown>;
                     };
                 } | undefined;
+                transcript?: string | undefined;
                 senderUid?: string | null | undefined;
                 senderName?: string | null | undefined;
                 files?: yup.Maybe<{
@@ -5915,6 +5922,7 @@ export declare const threadSchema: yup.ObjectSchema<{
                         doc: import("./utils/firestore").DocumentReferenceLike<unknown>;
                     };
                 } | undefined;
+                transcript?: string | undefined;
                 senderUid?: string | null | undefined;
                 senderName?: string | null | undefined;
                 outcome?: "success" | "setback" | undefined;

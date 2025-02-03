@@ -725,6 +725,7 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 doc: import("../schema/utils/firestore").DocumentReferenceLike<unknown>;
             };
         } | undefined;
+        transcript?: string | undefined;
         senderUid?: string | null | undefined;
         senderName?: string | null | undefined;
         uid: string;
@@ -738,5 +739,5 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
         };
         dateString: string;
         role: "user";
-    }, "uid" | "type" | "date" | "dateString" | "role" | ("text" | "createdAt" | "updatedAt" | "audioFile" | "metricData" | "behaviorData" | "tacticsData" | "senderUid" | "senderName")>;
+    }, "uid" | "type" | "date" | "dateString" | "role" | ("text" | "createdAt" | "updatedAt" | "audioFile" | "metricData" | "behaviorData" | "tacticsData" | "transcript" | "senderUid" | "senderName")>;
 };

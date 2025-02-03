@@ -725,6 +725,7 @@ export declare const gptLogSchema: yup.ObjectSchema<{
         };
     } | undefined;
     text: string | null | undefined;
+    transcript: string | undefined;
     date: {
         isEqual?: any;
         toMillis?: any;
@@ -747,6 +748,7 @@ export declare const gptLogSchema: yup.ObjectSchema<{
     behaviorData: undefined;
     tacticsData: undefined;
     text: undefined;
+    transcript: undefined;
     date: {
         seconds: undefined;
         nanoseconds: undefined;

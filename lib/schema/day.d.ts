@@ -728,6 +728,7 @@ export declare const logsById: yup.Lazy<{
                     doc: DocumentReferenceLike<unknown>;
                 };
             } | undefined;
+            transcript?: string | undefined;
             senderUid?: string | null | undefined;
             senderName?: string | null | undefined;
             uid: string;
@@ -1464,6 +1465,7 @@ export declare const logsById: yup.Lazy<{
                     doc: DocumentReferenceLike<unknown>;
                 };
             } | undefined;
+            transcript?: string | undefined;
             senderUid?: string | null | undefined;
             senderName?: string | null | undefined;
             suggestedResponses?: string[] | undefined;
@@ -2202,6 +2204,7 @@ export declare const logsById: yup.Lazy<{
                     doc: DocumentReferenceLike<unknown>;
                 };
             } | undefined;
+            transcript?: string | undefined;
             senderUid?: string | null | undefined;
             senderName?: string | null | undefined;
             triggerDoc?: DocumentReferenceLike<unknown> | undefined;
@@ -2940,6 +2943,7 @@ export declare const logsById: yup.Lazy<{
                     doc: DocumentReferenceLike<unknown>;
                 };
             } | undefined;
+            transcript?: string | undefined;
             senderUid?: string | null | undefined;
             senderName?: string | null | undefined;
             uid: string;
@@ -3677,6 +3681,7 @@ export declare const logsById: yup.Lazy<{
                     doc: DocumentReferenceLike<unknown>;
                 };
             } | undefined;
+            transcript?: string | undefined;
             senderUid?: string | null | undefined;
             senderName?: string | null | undefined;
             animationFileName?: string | undefined;
@@ -4420,6 +4425,7 @@ export declare const logsById: yup.Lazy<{
                     doc: DocumentReferenceLike<unknown>;
                 };
             } | undefined;
+            transcript?: string | undefined;
             senderUid?: string | null | undefined;
             senderName?: string | null | undefined;
             uid: string;
@@ -5158,6 +5164,7 @@ export declare const logsById: yup.Lazy<{
                     doc: DocumentReferenceLike<unknown>;
                 };
             } | undefined;
+            transcript?: string | undefined;
             senderUid?: string | null | undefined;
             senderName?: string | null | undefined;
             files?: yup.Maybe<{
@@ -5903,6 +5910,7 @@ export declare const logsById: yup.Lazy<{
                     doc: DocumentReferenceLike<unknown>;
                 };
             } | undefined;
+            transcript?: string | undefined;
             senderUid?: string | null | undefined;
             senderName?: string | null | undefined;
             outcome?: "success" | "setback" | undefined;
@@ -6660,6 +6668,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         doc: DocumentReferenceLike<unknown>;
                     };
                 } | undefined;
+                transcript?: string | undefined;
                 senderUid?: string | null | undefined;
                 senderName?: string | null | undefined;
                 uid: string;
@@ -7396,6 +7405,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         doc: DocumentReferenceLike<unknown>;
                     };
                 } | undefined;
+                transcript?: string | undefined;
                 senderUid?: string | null | undefined;
                 senderName?: string | null | undefined;
                 suggestedResponses?: string[] | undefined;
@@ -8134,6 +8144,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         doc: DocumentReferenceLike<unknown>;
                     };
                 } | undefined;
+                transcript?: string | undefined;
                 senderUid?: string | null | undefined;
                 senderName?: string | null | undefined;
                 triggerDoc?: DocumentReferenceLike<unknown> | undefined;
@@ -8872,6 +8883,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         doc: DocumentReferenceLike<unknown>;
                     };
                 } | undefined;
+                transcript?: string | undefined;
                 senderUid?: string | null | undefined;
                 senderName?: string | null | undefined;
                 uid: string;
@@ -9609,6 +9621,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         doc: DocumentReferenceLike<unknown>;
                     };
                 } | undefined;
+                transcript?: string | undefined;
                 senderUid?: string | null | undefined;
                 senderName?: string | null | undefined;
                 animationFileName?: string | undefined;
@@ -10352,6 +10365,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         doc: DocumentReferenceLike<unknown>;
                     };
                 } | undefined;
+                transcript?: string | undefined;
                 senderUid?: string | null | undefined;
                 senderName?: string | null | undefined;
                 uid: string;
@@ -11090,6 +11104,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         doc: DocumentReferenceLike<unknown>;
                     };
                 } | undefined;
+                transcript?: string | undefined;
                 senderUid?: string | null | undefined;
                 senderName?: string | null | undefined;
                 files?: yup.Maybe<{
@@ -11835,6 +11850,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         doc: DocumentReferenceLike<unknown>;
                     };
                 } | undefined;
+                transcript?: string | undefined;
                 senderUid?: string | null | undefined;
                 senderName?: string | null | undefined;
                 outcome?: "success" | "setback" | undefined;

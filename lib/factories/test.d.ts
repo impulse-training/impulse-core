@@ -722,6 +722,7 @@ export declare const regularLogFactory: import("factory.ts").Factory<{
             doc: import("../schema/utils/firestore").DocumentReferenceLike<unknown>;
         };
     } | undefined;
+    transcript?: string | undefined;
     senderUid?: string | null | undefined;
     senderName?: string | null | undefined;
     uid: string;
@@ -735,7 +736,7 @@ export declare const regularLogFactory: import("factory.ts").Factory<{
     };
     dateString: string;
     role: "user";
-}, "uid" | "type" | "date" | "dateString" | "role" | ("text" | "createdAt" | "updatedAt" | "audioFile" | "metricData" | "behaviorData" | "tacticsData" | "senderUid" | "senderName")>, profileFactory: import("factory.ts").Factory<{
+}, "uid" | "type" | "date" | "dateString" | "role" | ("text" | "createdAt" | "updatedAt" | "audioFile" | "metricData" | "behaviorData" | "tacticsData" | "transcript" | "senderUid" | "senderName")>, profileFactory: import("factory.ts").Factory<{
     createdAt?: {
         isEqual?: any;
         toMillis?: any;

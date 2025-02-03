@@ -725,6 +725,7 @@ export declare function logBaseSchema<K extends string>(type: K): yup.ObjectSche
         };
     } | undefined;
     text: string | null | undefined;
+    transcript: string | undefined;
     date: {
         isEqual?: any;
         toMillis?: any;
@@ -745,6 +746,7 @@ export declare function logBaseSchema<K extends string>(type: K): yup.ObjectSche
     behaviorData: undefined;
     tacticsData: undefined;
     text: undefined;
+    transcript: undefined;
     date: {
         seconds: undefined;
         nanoseconds: undefined;
