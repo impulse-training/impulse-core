@@ -1,8 +1,6 @@
 import * as yup from 'yup';
-import { behaviorSchema } from './behavior';
 import { LogsById, logsById } from './day';
 import { tacticSchema } from './tactic';
-import { optionalObjectOf } from './utils/objectOf';
 import { optionalTimestampSchema, timestampSchema } from './utils/timestamp';
 
 export const outcome = yup
@@ -19,7 +17,6 @@ export const threadSchema = yup.object({
   title: yup.string(),
   summary: yup.string(),
   logsById,
-  behaviorsById: optionalObjectOf(behaviorSchema),
   suggestedTactics: yup.array().of(tacticSchema),
   debriefedAt: optionalTimestampSchema,
   debriefAfter: optionalTimestampSchema,

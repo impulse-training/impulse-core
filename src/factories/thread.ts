@@ -9,7 +9,6 @@ export const makeThreadFactory = (TimestampKlass: typeof TimestampLike) =>
     title: 'Getting started with Impulse',
     logsById: {},
     agentType: 'onboarding',
-    behaviorsById: {},
     createdAt: TimestampKlass.now(),
     updatedAt: TimestampKlass.now(),
   });
