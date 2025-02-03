@@ -24,6 +24,9 @@ export const threadSchema = yup.object({
   agentType: agentType.nonNullable().required(),
   hasImpulse: yup.boolean(),
   outcome,
+  // Instead of a boolean, this is a timestamp of when a message was sent to ZARA. This allows us to
+  // have a simple timeout on showing a processing spinner without a scheduled callback.
+  zaraResponseStartedProcessingAt: optionalTimestampSchema,
   createdAt: optionalTimestampSchema,
   updatedAt: optionalTimestampSchema,
 });

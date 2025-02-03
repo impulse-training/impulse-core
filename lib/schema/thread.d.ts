@@ -6281,6 +6281,13 @@ export declare const threadSchema: yup.ObjectSchema<{
     agentType: NonNullable<"impulse" | "general" | "onboarding" | undefined>;
     hasImpulse: boolean | undefined;
     outcome: "success" | "setback" | undefined;
+    zaraResponseStartedProcessingAt: {
+        isEqual?: any;
+        toMillis?: any;
+        seconds: number;
+        nanoseconds: number;
+        toDate: Function;
+    } | null | undefined;
     createdAt: {
         isEqual?: any;
         toMillis?: any;
@@ -6314,6 +6321,7 @@ export declare const threadSchema: yup.ObjectSchema<{
     agentType: undefined;
     hasImpulse: undefined;
     outcome: undefined;
+    zaraResponseStartedProcessingAt: undefined;
     createdAt: undefined;
     updatedAt: undefined;
 }, "">;
