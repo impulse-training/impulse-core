@@ -744,6 +744,7 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
         };
     } | undefined;
     transcript?: string | undefined;
+    transcribedLocally?: boolean | undefined;
     senderUid?: string | null | undefined;
     senderName?: string | null | undefined;
     uid: string;
@@ -1481,6 +1482,7 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
         };
     } | undefined;
     transcript?: string | undefined;
+    transcribedLocally?: boolean | undefined;
     senderUid?: string | null | undefined;
     senderName?: string | null | undefined;
     suggestedResponses?: string[] | undefined;
@@ -2220,6 +2222,7 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
         };
     } | undefined;
     transcript?: string | undefined;
+    transcribedLocally?: boolean | undefined;
     senderUid?: string | null | undefined;
     senderName?: string | null | undefined;
     triggerDoc?: import("../utils/firestore").DocumentReferenceLike<unknown> | undefined;
@@ -2959,6 +2962,7 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
         };
     } | undefined;
     transcript?: string | undefined;
+    transcribedLocally?: boolean | undefined;
     senderUid?: string | null | undefined;
     senderName?: string | null | undefined;
     uid: string;
@@ -3697,6 +3701,7 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
         };
     } | undefined;
     transcript?: string | undefined;
+    transcribedLocally?: boolean | undefined;
     senderUid?: string | null | undefined;
     senderName?: string | null | undefined;
     animationFileName?: string | undefined;
@@ -4441,6 +4446,7 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
         };
     } | undefined;
     transcript?: string | undefined;
+    transcribedLocally?: boolean | undefined;
     senderUid?: string | null | undefined;
     senderName?: string | null | undefined;
     uid: string;
@@ -5180,6 +5186,7 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
         };
     } | undefined;
     transcript?: string | undefined;
+    transcribedLocally?: boolean | undefined;
     senderUid?: string | null | undefined;
     senderName?: string | null | undefined;
     files?: yup.Maybe<{
@@ -5926,6 +5933,7 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
         };
     } | undefined;
     transcript?: string | undefined;
+    transcribedLocally?: boolean | undefined;
     senderUid?: string | null | undefined;
     senderName?: string | null | undefined;
     outcome?: "success" | "setback" | undefined;

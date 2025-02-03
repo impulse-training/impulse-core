@@ -724,6 +724,7 @@ export declare const factories: {
             };
         } | undefined;
         transcript?: string | undefined;
+        transcribedLocally?: boolean | undefined;
         senderUid?: string | null | undefined;
         senderName?: string | null | undefined;
         uid: string;
@@ -737,7 +738,7 @@ export declare const factories: {
         };
         dateString: string;
         role: "user";
-    }, "uid" | "type" | "date" | "dateString" | "role" | ("text" | "createdAt" | "updatedAt" | "audioFile" | "metricData" | "behaviorData" | "tacticsData" | "transcript" | "senderUid" | "senderName")>;
+    }, "uid" | "type" | "date" | "dateString" | "role" | ("text" | "createdAt" | "updatedAt" | "audioFile" | "metricData" | "behaviorData" | "tacticsData" | "transcript" | "transcribedLocally" | "senderUid" | "senderName")>;
     dayFactory: import("factory.ts").Factory<import("..").DayValue, "uid" | "date" | "logsById">;
     issueFactory: import("factory.ts").Factory<{
         path?: string | null | undefined;

@@ -21,6 +21,7 @@ export function logBaseSchema<K extends string>(type: K) {
 
     text: yup.string().nullable(),
     transcript: yup.string(),
+    transcribedLocally: yup.boolean(),
     date: timestampSchema,
     dateString: yup.string().required(),
 
