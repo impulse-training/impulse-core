@@ -36,6 +36,7 @@ export const profileSchema = yup.object({
   historicalInsights: yup.array().of(yup.string().required()),
   recentSummaries: objectOf(yup.string().required()),
 
+  activeImpulseThreadDoc: documentReferenceSchema,
   isTourDismissed: yup.boolean(),
   tourCompletedAt: optionalTimestampSchema,
   region: yup.string().nullable().optional(),
