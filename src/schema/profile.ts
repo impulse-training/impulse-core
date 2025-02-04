@@ -4,7 +4,7 @@ import { notificationOptionSchema } from './notification';
 import { optionalStringArray, requiredStringArray } from './utils/array';
 import { documentReferenceSchema } from './utils/firestore';
 import { objectOf, optionalObjectOf } from './utils/objectOf';
-import { optionalTimestampSchema } from './utils/timestamp';
+import { optionalTimestampSchema, timestampSchema } from './utils/timestamp';
 
 export const profileSchema = yup.object({
   createdAt: optionalTimestampSchema,
@@ -36,7 +36,12 @@ export const profileSchema = yup.object({
   historicalInsights: yup.array().of(yup.string().required()),
   recentSummaries: objectOf(yup.string().required()),
 
-  activeImpulseThreadDoc: documentReferenceSchema,
+  activeImpulseThread: yup
+    .object({
+      doc: documentReferenceSchema,
+      expiresAt: timestampSchema,
+    })
+    .optional(),
   isTourDismissed: yup.boolean(),
   tourCompletedAt: optionalTimestampSchema,
   region: yup.string().nullable().optional(),

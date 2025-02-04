@@ -58,7 +58,16 @@ export declare const profileSchema: yup.ObjectSchema<{
     recentSummaries: {
         [x: string]: string;
     };
-    activeImpulseThreadDoc: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
+    activeImpulseThread: {
+        doc?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
+        expiresAt: {
+            isEqual?: any;
+            toMillis?: any;
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        };
+    } | undefined;
     isTourDismissed: boolean | undefined;
     tourCompletedAt: {
         isEqual?: any;
@@ -102,7 +111,16 @@ export declare const profileSchema: yup.ObjectSchema<{
     behaviorsDescription: undefined;
     historicalInsights: "";
     recentSummaries: undefined;
-    activeImpulseThreadDoc: undefined;
+    activeImpulseThread: {
+        doc: undefined;
+        expiresAt: {
+            seconds: undefined;
+            nanoseconds: undefined;
+            isEqual: undefined;
+            toMillis: undefined;
+            toDate: undefined;
+        };
+    };
     isTourDismissed: undefined;
     tourCompletedAt: undefined;
     region: undefined;
