@@ -732,6 +732,7 @@ export declare const logsById: yup.Lazy<{
             transcribedLocally?: boolean | undefined;
             senderUid?: string | null | undefined;
             senderName?: string | null | undefined;
+            durationSeconds?: number | undefined;
             uid: string;
             type: "call";
             date: {
@@ -742,6 +743,7 @@ export declare const logsById: yup.Lazy<{
                 toDate: Function;
             };
             dateString: string;
+            agentContext: string;
         } | {
             text?: string | null | undefined;
             createdAt?: {
@@ -6680,6 +6682,7 @@ export declare const daySchema: yup.ObjectSchema<{
                 transcribedLocally?: boolean | undefined;
                 senderUid?: string | null | undefined;
                 senderName?: string | null | undefined;
+                durationSeconds?: number | undefined;
                 uid: string;
                 type: "call";
                 date: {
@@ -6690,6 +6693,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     toDate: Function;
                 };
                 dateString: string;
+                agentContext: string;
             } | {
                 text?: string | null | undefined;
                 createdAt?: {

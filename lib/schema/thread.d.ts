@@ -744,6 +744,7 @@ export declare const threadSchema: yup.ObjectSchema<{
                 transcribedLocally?: boolean | undefined;
                 senderUid?: string | null | undefined;
                 senderName?: string | null | undefined;
+                durationSeconds?: number | undefined;
                 uid: string;
                 type: "call";
                 date: {
@@ -754,6 +755,7 @@ export declare const threadSchema: yup.ObjectSchema<{
                     toDate: Function;
                 };
                 dateString: string;
+                agentContext: string;
             } | {
                 text?: string | null | undefined;
                 createdAt?: {
