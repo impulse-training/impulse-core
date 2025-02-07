@@ -732,7 +732,13 @@ export declare const logsById: yup.Lazy<{
             transcribedLocally?: boolean | undefined;
             senderUid?: string | null | undefined;
             senderName?: string | null | undefined;
-            durationSeconds?: number | undefined;
+            endedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
             uid: string;
             type: "call";
             date: {
@@ -6682,7 +6688,13 @@ export declare const daySchema: yup.ObjectSchema<{
                 transcribedLocally?: boolean | undefined;
                 senderUid?: string | null | undefined;
                 senderName?: string | null | undefined;
-                durationSeconds?: number | undefined;
+                endedAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
                 uid: string;
                 type: "call";
                 date: {

@@ -738,7 +738,13 @@ export declare const callLogSchema: yup.ObjectSchema<{
     senderUid: string | null | undefined;
     senderName: string | null | undefined;
     agentContext: string;
-    durationSeconds: number | undefined;
+    endedAt: {
+        isEqual?: any;
+        toMillis?: any;
+        seconds: number;
+        nanoseconds: number;
+        toDate: Function;
+    } | null | undefined;
 }, yup.AnyObject, {
     createdAt: undefined;
     updatedAt: undefined;
@@ -762,6 +768,6 @@ export declare const callLogSchema: yup.ObjectSchema<{
     senderUid: undefined;
     senderName: undefined;
     agentContext: undefined;
-    durationSeconds: undefined;
+    endedAt: undefined;
 }, "">;
 export type CallLogValue = yup.InferType<typeof callLogSchema>;
