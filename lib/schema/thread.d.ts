@@ -744,6 +744,13 @@ export declare const threadSchema: yup.ObjectSchema<{
                 transcribedLocally?: boolean | undefined;
                 senderUid?: string | null | undefined;
                 senderName?: string | null | undefined;
+                agentConnectedAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
                 endedAt?: {
                     isEqual?: any;
                     toMillis?: any;

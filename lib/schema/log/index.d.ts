@@ -747,6 +747,13 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
     transcribedLocally?: boolean | undefined;
     senderUid?: string | null | undefined;
     senderName?: string | null | undefined;
+    agentConnectedAt?: {
+        isEqual?: any;
+        toMillis?: any;
+        seconds: number;
+        nanoseconds: number;
+        toDate: Function;
+    } | null | undefined;
     endedAt?: {
         isEqual?: any;
         toMillis?: any;
