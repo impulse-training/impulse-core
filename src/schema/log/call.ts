@@ -16,7 +16,7 @@ export const callLogSchema = logBaseSchema('call').shape({
         .mixed<'user' | 'assistant'>()
         .oneOf(['user', 'assistant'])
         .required(),
-      text: yup.string().required(),
+      content: yup.string().required(),
       sentAt: timestampSchema,
     })
   ),

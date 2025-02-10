@@ -12,6 +12,7 @@ import {
   whatsappMessageLogSchema,
 } from './whatsappMessage';
 
+export * from './call';
 export * from './gpt';
 export * from './impulse';
 export * from './outcome';

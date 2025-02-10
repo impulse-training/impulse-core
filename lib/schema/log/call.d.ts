@@ -767,7 +767,6 @@ export declare const callLogSchema: yup.ObjectSchema<{
     formattedDuration: string | undefined;
     transcriptSummary: string | undefined;
     transcriptItems: {
-        text: string;
         sentAt: {
             isEqual?: any;
             toMillis?: any;
@@ -776,6 +775,7 @@ export declare const callLogSchema: yup.ObjectSchema<{
             toDate: Function;
         };
         role: NonNullable<"user" | "assistant" | undefined>;
+        content: string;
     }[] | undefined;
 }, yup.AnyObject, {
     createdAt: undefined;

@@ -8,6 +8,7 @@ import { ToolCallLogValue } from './toolCall';
 import { UserLogValue } from './user';
 import { WithTacticsById } from './utils/tacticData';
 import { WhatsappMessageLogValue } from './whatsappMessage';
+export * from './call';
 export * from './gpt';
 export * from './impulse';
 export * from './outcome';
@@ -776,7 +777,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
     formattedDuration?: string | undefined;
     transcriptSummary?: string | undefined;
     transcriptItems?: {
-        text: string;
         sentAt: {
             isEqual?: any;
             toMillis?: any;
@@ -785,6 +785,7 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
             toDate: Function;
         };
         role: NonNullable<"user" | "assistant" | undefined>;
+        content: string;
     }[] | undefined;
     uid: string;
     type: "call";

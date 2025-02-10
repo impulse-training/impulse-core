@@ -3,13 +3,17 @@ import { LogsById, logsById } from './day';
 import { tacticSchema } from './tactic';
 import { optionalTimestampSchema, timestampSchema } from './utils/timestamp';
 
+export enum AgentType {
+  GENERAL = 'general',
+  ONBOARDING = 'onboarding',
+  DEBRIEFING = 'debriefing',
+}
+
 export const outcome = yup
   .mixed<'success' | 'setback'>()
   .oneOf(['success', 'setback']);
 
-export const agentType = yup
-  .mixed<'impulse' | 'general' | 'onboarding'>()
-  .oneOf(['impulse', 'general', 'onboarding']);
+export const agentType = yup.mixed<AgentType>().oneOf(Object.values(AgentType));
 
 export const threadSchema = yup.object({
   dateString: yup.string().required(),

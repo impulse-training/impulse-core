@@ -1,7 +1,12 @@
 import * as yup from 'yup';
 import { LogsById } from './day';
+export declare enum AgentType {
+    GENERAL = "general",
+    ONBOARDING = "onboarding",
+    DEBRIEFING = "debriefing"
+}
 export declare const outcome: yup.MixedSchema<"success" | "setback" | undefined, yup.AnyObject, undefined, "">;
-export declare const agentType: yup.MixedSchema<"impulse" | "general" | "onboarding" | undefined, yup.AnyObject, undefined, "">;
+export declare const agentType: yup.MixedSchema<AgentType | undefined, yup.AnyObject, undefined, "">;
 export declare const threadSchema: yup.ObjectSchema<{
     dateString: string;
     date: {
@@ -773,7 +778,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                 formattedDuration?: string | undefined;
                 transcriptSummary?: string | undefined;
                 transcriptItems?: {
-                    text: string;
                     sentAt: {
                         isEqual?: any;
                         toMillis?: any;
@@ -782,6 +786,7 @@ export declare const threadSchema: yup.ObjectSchema<{
                         toDate: Function;
                     };
                     role: NonNullable<"user" | "assistant" | undefined>;
+                    content: string;
                 }[] | undefined;
                 uid: string;
                 type: "call";
@@ -6306,7 +6311,7 @@ export declare const threadSchema: yup.ObjectSchema<{
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
-    agentType: NonNullable<"impulse" | "general" | "onboarding" | undefined>;
+    agentType: NonNullable<AgentType | undefined>;
     hasImpulse: boolean | undefined;
     outcome: "success" | "setback" | undefined;
     zaraResponseStartedProcessingAt: {
