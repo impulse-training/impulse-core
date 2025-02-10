@@ -770,6 +770,8 @@ export declare const threadSchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                formattedDuration?: string | undefined;
+                transcriptSummary?: string | undefined;
                 transcriptItems?: {
                     text: string;
                     sentAt: {

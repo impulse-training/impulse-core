@@ -764,6 +764,8 @@ export declare const callLogSchema: yup.ObjectSchema<{
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
+    formattedDuration: string | undefined;
+    transcriptSummary: string | undefined;
     transcriptItems: {
         text: string;
         sentAt: {
@@ -800,6 +802,8 @@ export declare const callLogSchema: yup.ObjectSchema<{
     endedAt: undefined;
     startedSummarizingTranscriptAt: undefined;
     finishedSummarizingTranscriptAt: undefined;
+    formattedDuration: undefined;
+    transcriptSummary: undefined;
     transcriptItems: "";
 }, "">;
 export type CallLogValue = yup.InferType<typeof callLogSchema>;

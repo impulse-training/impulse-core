@@ -758,6 +758,8 @@ export declare const logsById: yup.Lazy<{
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
+            formattedDuration?: string | undefined;
+            transcriptSummary?: string | undefined;
             transcriptItems?: {
                 text: string;
                 sentAt: {
@@ -6732,6 +6734,8 @@ export declare const daySchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                formattedDuration?: string | undefined;
+                transcriptSummary?: string | undefined;
                 transcriptItems?: {
                     text: string;
                     sentAt: {

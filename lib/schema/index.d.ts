@@ -6,6 +6,7 @@ export * from './chat/base';
 export * from './day';
 export * from './daysSummary';
 export * from './experiment';
+export * from './insight';
 export * from './issue';
 export * from './location';
 export * from './log';

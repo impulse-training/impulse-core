@@ -8,6 +8,8 @@ export const callLogSchema = logBaseSchema('call').shape({
   endedAt: optionalTimestampSchema,
   startedSummarizingTranscriptAt: optionalTimestampSchema,
   finishedSummarizingTranscriptAt: optionalTimestampSchema,
+  formattedDuration: yup.string(),
+  transcriptSummary: yup.string(),
   transcriptItems: yup.array().of(
     yup.object({
       role: yup
