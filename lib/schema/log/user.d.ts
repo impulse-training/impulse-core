@@ -725,8 +725,6 @@ export declare const userLogSchema: yup.ObjectSchema<{
         };
     } | undefined;
     text: string | null | undefined;
-    transcript: string | undefined;
-    transcribedLocally: boolean | undefined;
     date: {
         isEqual?: any;
         toMillis?: any;
@@ -738,6 +736,8 @@ export declare const userLogSchema: yup.ObjectSchema<{
     senderUid: string | null | undefined;
     senderName: string | null | undefined;
     role: "user";
+    audioTranscript: string | undefined;
+    audioTranscribedLocally: boolean | undefined;
 }, yup.AnyObject, {
     createdAt: undefined;
     updatedAt: undefined;
@@ -748,8 +748,6 @@ export declare const userLogSchema: yup.ObjectSchema<{
     behaviorData: undefined;
     tacticsData: undefined;
     text: undefined;
-    transcript: undefined;
-    transcribedLocally: undefined;
     date: {
         seconds: undefined;
         nanoseconds: undefined;
@@ -761,5 +759,7 @@ export declare const userLogSchema: yup.ObjectSchema<{
     senderUid: undefined;
     senderName: undefined;
     role: undefined;
+    audioTranscript: undefined;
+    audioTranscribedLocally: undefined;
 }, "">;
 export type UserLogValue = yup.InferType<typeof userLogSchema>;

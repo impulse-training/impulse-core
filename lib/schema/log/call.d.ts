@@ -725,8 +725,6 @@ export declare const callLogSchema: yup.ObjectSchema<{
         };
     } | undefined;
     text: string | null | undefined;
-    transcript: string | undefined;
-    transcribedLocally: boolean | undefined;
     date: {
         isEqual?: any;
         toMillis?: any;
@@ -752,6 +750,31 @@ export declare const callLogSchema: yup.ObjectSchema<{
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
+    startedSummarizingTranscriptAt: {
+        isEqual?: any;
+        toMillis?: any;
+        seconds: number;
+        nanoseconds: number;
+        toDate: Function;
+    } | null | undefined;
+    finishedSummarizingTranscriptAt: {
+        isEqual?: any;
+        toMillis?: any;
+        seconds: number;
+        nanoseconds: number;
+        toDate: Function;
+    } | null | undefined;
+    transcriptItems: {
+        text: string;
+        sentAt: {
+            isEqual?: any;
+            toMillis?: any;
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        };
+        role: NonNullable<"user" | "assistant" | undefined>;
+    }[] | undefined;
 }, yup.AnyObject, {
     createdAt: undefined;
     updatedAt: undefined;
@@ -762,8 +785,6 @@ export declare const callLogSchema: yup.ObjectSchema<{
     behaviorData: undefined;
     tacticsData: undefined;
     text: undefined;
-    transcript: undefined;
-    transcribedLocally: undefined;
     date: {
         seconds: undefined;
         nanoseconds: undefined;
@@ -777,5 +798,8 @@ export declare const callLogSchema: yup.ObjectSchema<{
     agentContext: undefined;
     agentConnectedAt: undefined;
     endedAt: undefined;
+    startedSummarizingTranscriptAt: undefined;
+    finishedSummarizingTranscriptAt: undefined;
+    transcriptItems: "";
 }, "">;
 export type CallLogValue = yup.InferType<typeof callLogSchema>;

@@ -728,8 +728,6 @@ export declare const logsById: yup.Lazy<{
                     doc: DocumentReferenceLike<unknown>;
                 };
             } | undefined;
-            transcript?: string | undefined;
-            transcribedLocally?: boolean | undefined;
             senderUid?: string | null | undefined;
             senderName?: string | null | undefined;
             agentConnectedAt?: {
@@ -746,6 +744,31 @@ export declare const logsById: yup.Lazy<{
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
+            startedSummarizingTranscriptAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            finishedSummarizingTranscriptAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            transcriptItems?: {
+                text: string;
+                sentAt: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                };
+                role: NonNullable<"user" | "assistant" | undefined>;
+            }[] | undefined;
             uid: string;
             type: "call";
             date: {
@@ -1481,8 +1504,6 @@ export declare const logsById: yup.Lazy<{
                     doc: DocumentReferenceLike<unknown>;
                 };
             } | undefined;
-            transcript?: string | undefined;
-            transcribedLocally?: boolean | undefined;
             senderUid?: string | null | undefined;
             senderName?: string | null | undefined;
             suggestedResponses?: string[] | undefined;
@@ -2221,8 +2242,6 @@ export declare const logsById: yup.Lazy<{
                     doc: DocumentReferenceLike<unknown>;
                 };
             } | undefined;
-            transcript?: string | undefined;
-            transcribedLocally?: boolean | undefined;
             senderUid?: string | null | undefined;
             senderName?: string | null | undefined;
             triggerDoc?: DocumentReferenceLike<unknown> | undefined;
@@ -2961,10 +2980,10 @@ export declare const logsById: yup.Lazy<{
                     doc: DocumentReferenceLike<unknown>;
                 };
             } | undefined;
-            transcript?: string | undefined;
-            transcribedLocally?: boolean | undefined;
             senderUid?: string | null | undefined;
             senderName?: string | null | undefined;
+            audioTranscript?: string | undefined;
+            audioTranscribedLocally?: boolean | undefined;
             uid: string;
             type: "user";
             date: {
@@ -3700,8 +3719,6 @@ export declare const logsById: yup.Lazy<{
                     doc: DocumentReferenceLike<unknown>;
                 };
             } | undefined;
-            transcript?: string | undefined;
-            transcribedLocally?: boolean | undefined;
             senderUid?: string | null | undefined;
             senderName?: string | null | undefined;
             animationFileName?: string | undefined;
@@ -4445,8 +4462,6 @@ export declare const logsById: yup.Lazy<{
                     doc: DocumentReferenceLike<unknown>;
                 };
             } | undefined;
-            transcript?: string | undefined;
-            transcribedLocally?: boolean | undefined;
             senderUid?: string | null | undefined;
             senderName?: string | null | undefined;
             uid: string;
@@ -5185,8 +5200,6 @@ export declare const logsById: yup.Lazy<{
                     doc: DocumentReferenceLike<unknown>;
                 };
             } | undefined;
-            transcript?: string | undefined;
-            transcribedLocally?: boolean | undefined;
             senderUid?: string | null | undefined;
             senderName?: string | null | undefined;
             files?: yup.Maybe<{
@@ -5932,8 +5945,6 @@ export declare const logsById: yup.Lazy<{
                     doc: DocumentReferenceLike<unknown>;
                 };
             } | undefined;
-            transcript?: string | undefined;
-            transcribedLocally?: boolean | undefined;
             senderUid?: string | null | undefined;
             senderName?: string | null | undefined;
             outcome?: "success" | "setback" | undefined;
@@ -6691,8 +6702,6 @@ export declare const daySchema: yup.ObjectSchema<{
                         doc: DocumentReferenceLike<unknown>;
                     };
                 } | undefined;
-                transcript?: string | undefined;
-                transcribedLocally?: boolean | undefined;
                 senderUid?: string | null | undefined;
                 senderName?: string | null | undefined;
                 agentConnectedAt?: {
@@ -6709,6 +6718,31 @@ export declare const daySchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                startedSummarizingTranscriptAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                finishedSummarizingTranscriptAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                transcriptItems?: {
+                    text: string;
+                    sentAt: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    };
+                    role: NonNullable<"user" | "assistant" | undefined>;
+                }[] | undefined;
                 uid: string;
                 type: "call";
                 date: {
@@ -7444,8 +7478,6 @@ export declare const daySchema: yup.ObjectSchema<{
                         doc: DocumentReferenceLike<unknown>;
                     };
                 } | undefined;
-                transcript?: string | undefined;
-                transcribedLocally?: boolean | undefined;
                 senderUid?: string | null | undefined;
                 senderName?: string | null | undefined;
                 suggestedResponses?: string[] | undefined;
@@ -8184,8 +8216,6 @@ export declare const daySchema: yup.ObjectSchema<{
                         doc: DocumentReferenceLike<unknown>;
                     };
                 } | undefined;
-                transcript?: string | undefined;
-                transcribedLocally?: boolean | undefined;
                 senderUid?: string | null | undefined;
                 senderName?: string | null | undefined;
                 triggerDoc?: DocumentReferenceLike<unknown> | undefined;
@@ -8924,10 +8954,10 @@ export declare const daySchema: yup.ObjectSchema<{
                         doc: DocumentReferenceLike<unknown>;
                     };
                 } | undefined;
-                transcript?: string | undefined;
-                transcribedLocally?: boolean | undefined;
                 senderUid?: string | null | undefined;
                 senderName?: string | null | undefined;
+                audioTranscript?: string | undefined;
+                audioTranscribedLocally?: boolean | undefined;
                 uid: string;
                 type: "user";
                 date: {
@@ -9663,8 +9693,6 @@ export declare const daySchema: yup.ObjectSchema<{
                         doc: DocumentReferenceLike<unknown>;
                     };
                 } | undefined;
-                transcript?: string | undefined;
-                transcribedLocally?: boolean | undefined;
                 senderUid?: string | null | undefined;
                 senderName?: string | null | undefined;
                 animationFileName?: string | undefined;
@@ -10408,8 +10436,6 @@ export declare const daySchema: yup.ObjectSchema<{
                         doc: DocumentReferenceLike<unknown>;
                     };
                 } | undefined;
-                transcript?: string | undefined;
-                transcribedLocally?: boolean | undefined;
                 senderUid?: string | null | undefined;
                 senderName?: string | null | undefined;
                 uid: string;
@@ -11148,8 +11174,6 @@ export declare const daySchema: yup.ObjectSchema<{
                         doc: DocumentReferenceLike<unknown>;
                     };
                 } | undefined;
-                transcript?: string | undefined;
-                transcribedLocally?: boolean | undefined;
                 senderUid?: string | null | undefined;
                 senderName?: string | null | undefined;
                 files?: yup.Maybe<{
@@ -11895,8 +11919,6 @@ export declare const daySchema: yup.ObjectSchema<{
                         doc: DocumentReferenceLike<unknown>;
                     };
                 } | undefined;
-                transcript?: string | undefined;
-                transcribedLocally?: boolean | undefined;
                 senderUid?: string | null | undefined;
                 senderName?: string | null | undefined;
                 outcome?: "success" | "setback" | undefined;

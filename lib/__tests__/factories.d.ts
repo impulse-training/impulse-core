@@ -723,10 +723,10 @@ export declare const factories: {
                 doc: import("../schema/utils/firestore").DocumentReferenceLike<unknown>;
             };
         } | undefined;
-        transcript?: string | undefined;
-        transcribedLocally?: boolean | undefined;
         senderUid?: string | null | undefined;
         senderName?: string | null | undefined;
+        audioTranscript?: string | undefined;
+        audioTranscribedLocally?: boolean | undefined;
         uid: string;
         type: "user";
         date: {
@@ -738,7 +738,7 @@ export declare const factories: {
         };
         dateString: string;
         role: "user";
-    }, "uid" | "type" | "date" | "dateString" | "role" | ("text" | "createdAt" | "updatedAt" | "audioFile" | "metricData" | "behaviorData" | "tacticsData" | "transcript" | "transcribedLocally" | "senderUid" | "senderName")>;
+    }, "uid" | "type" | "date" | "dateString" | "role" | ("text" | "createdAt" | "updatedAt" | "audioFile" | "metricData" | "behaviorData" | "tacticsData" | "senderUid" | "senderName" | "audioTranscript" | "audioTranscribedLocally")>;
     dayFactory: import("factory.ts").Factory<import("..").DayValue, "uid" | "date" | "logsById">;
     issueFactory: import("factory.ts").Factory<{
         path?: string | null | undefined;

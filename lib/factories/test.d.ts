@@ -722,10 +722,10 @@ export declare const regularLogFactory: import("factory.ts").Factory<{
             doc: import("../schema/utils/firestore").DocumentReferenceLike<unknown>;
         };
     } | undefined;
-    transcript?: string | undefined;
-    transcribedLocally?: boolean | undefined;
     senderUid?: string | null | undefined;
     senderName?: string | null | undefined;
+    audioTranscript?: string | undefined;
+    audioTranscribedLocally?: boolean | undefined;
     uid: string;
     type: "user";
     date: {
@@ -737,7 +737,7 @@ export declare const regularLogFactory: import("factory.ts").Factory<{
     };
     dateString: string;
     role: "user";
-}, "uid" | "type" | "date" | "dateString" | "role" | ("text" | "createdAt" | "updatedAt" | "audioFile" | "metricData" | "behaviorData" | "tacticsData" | "transcript" | "transcribedLocally" | "senderUid" | "senderName")>, profileFactory: import("factory.ts").Factory<{
+}, "uid" | "type" | "date" | "dateString" | "role" | ("text" | "createdAt" | "updatedAt" | "audioFile" | "metricData" | "behaviorData" | "tacticsData" | "senderUid" | "senderName" | "audioTranscript" | "audioTranscribedLocally")>, profileFactory: import("factory.ts").Factory<{
     createdAt?: {
         isEqual?: any;
         toMillis?: any;

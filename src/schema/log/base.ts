@@ -20,8 +20,6 @@ export function logBaseSchema<K extends string>(type: K) {
     tacticsData: tacticsById.optional(),
 
     text: yup.string().nullable(),
-    transcript: yup.string(),
-    transcribedLocally: yup.boolean(),
     date: timestampSchema,
     dateString: yup.string().required(),
 
