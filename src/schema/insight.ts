@@ -6,6 +6,7 @@ export const insightSchema = yup.object().shape({
   createdAt: optionalTimestampSchema,
   updatedAt: optionalTimestampSchema,
   summary: yup.string().required(),
+  behaviorDocs: yup.array().of(documentReferenceSchema.required()),
   // We also keep a collection of linked threads, which serve as evidence to support this insight
   threads: yup.array().of(
     yup.object({

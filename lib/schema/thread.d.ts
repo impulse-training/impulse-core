@@ -3,7 +3,8 @@ import { LogsById } from './day';
 export declare enum AgentType {
     GENERAL = "general",
     ONBOARDING = "onboarding",
-    DEBRIEFING = "debriefing"
+    DEBRIEFING = "debriefing",
+    IMPULSE = "impulse"
 }
 export declare const outcome: yup.MixedSchema<"success" | "setback" | undefined, yup.AnyObject, undefined, "">;
 export declare const agentType: yup.MixedSchema<AgentType | undefined, yup.AnyObject, undefined, "">;

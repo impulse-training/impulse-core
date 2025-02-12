@@ -7,6 +7,7 @@ export enum AgentType {
   GENERAL = 'general',
   ONBOARDING = 'onboarding',
   DEBRIEFING = 'debriefing',
+  IMPULSE = 'impulse',
 }
 
 export const outcome = yup

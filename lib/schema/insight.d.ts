@@ -15,6 +15,7 @@ export declare const insightSchema: yup.ObjectSchema<{
         toDate: Function;
     } | null | undefined;
     summary: string;
+    behaviorDocs: import("./utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
     threads: {
         threadDoc?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
         explanation: string;
@@ -23,6 +24,7 @@ export declare const insightSchema: yup.ObjectSchema<{
     createdAt: undefined;
     updatedAt: undefined;
     summary: undefined;
+    behaviorDocs: "";
     threads: "";
 }, "">;
 export type InsightValue = yup.InferType<typeof insightSchema>;
