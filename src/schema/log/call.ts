@@ -11,14 +11,12 @@ export const callLogSchema = logBaseSchema('call').shape({
   formattedDuration: yup.string(),
   transcriptSummary: yup.string(),
   transcriptItems: yup.array().of(
-    yup.object({
-      role: yup
-        .mixed<'user' | 'assistant'>()
-        .oneOf(['user', 'assistant'])
-        .required(),
-      content: yup.string().required(),
-      sentAt: timestampSchema,
-    })
+    yup
+      .object({
+        text: yup.string().required(),
+        timestamp: timestampSchema,
+      })
+      .required()
   ),
 });
 export type CallLogValue = yup.InferType<typeof callLogSchema>;

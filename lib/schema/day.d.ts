@@ -761,15 +761,14 @@ export declare const logsById: yup.Lazy<{
             formattedDuration?: string | undefined;
             transcriptSummary?: string | undefined;
             transcriptItems?: {
-                sentAt: {
+                text: string;
+                timestamp: {
                     isEqual?: any;
                     toMillis?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
                 };
-                role: NonNullable<"user" | "assistant" | undefined>;
-                content: string;
             }[] | undefined;
             uid: string;
             type: "call";
@@ -7473,15 +7472,14 @@ export declare const daySchema: yup.ObjectSchema<{
                 formattedDuration?: string | undefined;
                 transcriptSummary?: string | undefined;
                 transcriptItems?: {
-                    sentAt: {
+                    text: string;
+                    timestamp: {
                         isEqual?: any;
                         toMillis?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
                     };
-                    role: NonNullable<"user" | "assistant" | undefined>;
-                    content: string;
                 }[] | undefined;
                 uid: string;
                 type: "call";

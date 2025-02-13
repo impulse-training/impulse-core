@@ -779,15 +779,14 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
     formattedDuration?: string | undefined;
     transcriptSummary?: string | undefined;
     transcriptItems?: {
-        sentAt: {
+        text: string;
+        timestamp: {
             isEqual?: any;
             toMillis?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
         };
-        role: NonNullable<"user" | "assistant" | undefined>;
-        content: string;
     }[] | undefined;
     uid: string;
     type: "call";
