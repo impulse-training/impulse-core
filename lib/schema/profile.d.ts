@@ -36,7 +36,6 @@ export declare const profileSchema: yup.ObjectSchema<{
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
-    activeImpulseDoc: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
     currentAppState: AppStateStatus | undefined;
     expoPushToken: string | undefined;
     notificationPreferences: {
@@ -59,7 +58,7 @@ export declare const profileSchema: yup.ObjectSchema<{
         [x: string]: string;
     };
     activeImpulseThread: {
-        doc?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
+        doc: import("./utils/firestore").DocumentReferenceLike<unknown>;
         expiresAt: {
             isEqual?: any;
             toMillis?: any;
@@ -95,7 +94,6 @@ export declare const profileSchema: yup.ObjectSchema<{
     lastActiveAt: undefined;
     widgetInstalledAt: undefined;
     widgetLastPressedAt: undefined;
-    activeImpulseDoc: undefined;
     currentAppState: undefined;
     expoPushToken: undefined;
     notificationPreferences: undefined;

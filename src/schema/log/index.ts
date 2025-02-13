@@ -2,6 +2,7 @@ import * as yup from 'yup';
 import { CallLogValue, callLogSchema } from './call';
 import { GptLogValue, gptLogSchema } from './gpt';
 import { ImpulseLogValue, impulseLogSchema } from './impulse';
+import { MeetingLogValue, meetingLogSchema } from './meeting';
 import { OutcomeLogValue, outcomeLogSchema } from './outcome';
 import { ShowTourLogValue, showTourLogSchema } from './showTour';
 import { ToolCallLogValue, toolCallLogSchema } from './toolCall';
@@ -15,6 +16,7 @@ import {
 export * from './call';
 export * from './gpt';
 export * from './impulse';
+export * from './meeting';
 export * from './outcome';
 export * from './showTour';
 export * from './toolCall';
@@ -33,6 +35,7 @@ export const logSchemas: Record<
   impulse: impulseLogSchema,
   call: callLogSchema,
   toolCall: toolCallLogSchema,
+  meeting: meetingLogSchema,
   showTour: showTourLogSchema,
   user: userLogSchema,
   gpt: gptLogSchema,
@@ -65,6 +68,7 @@ export type LogValues = {
 export type LogValue =
   | UserLogValue
   | CallLogValue
+  | MeetingLogValue
   | ShowTourLogValue
   | ToolCallLogValue
   | WhatsappMessageLogValue
