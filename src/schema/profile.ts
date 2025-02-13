@@ -31,6 +31,10 @@ export const profileSchema = yup.object({
   defaultBehaviorDoc: documentReferenceSchema,
   behaviorsDescription: yup.string(),
 
+  initialImpulseMode: yup
+    .mixed<'text' | 'liveAudio'>()
+    .oneOf(['text', 'liveAudio']),
+
   // System message context for interacting with OpenAI
   historicalInsights: yup.array().of(yup.string().required()),
   recentSummaries: objectOf(yup.string().required()),

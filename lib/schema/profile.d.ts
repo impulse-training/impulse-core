@@ -53,6 +53,7 @@ export declare const profileSchema: yup.ObjectSchema<{
     } | null | undefined;
     defaultBehaviorDoc: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
     behaviorsDescription: string | undefined;
+    initialImpulseMode: "text" | "liveAudio" | undefined;
     historicalInsights: string[] | undefined;
     recentSummaries: {
         [x: string]: string;
@@ -107,6 +108,7 @@ export declare const profileSchema: yup.ObjectSchema<{
     androidPermissions: undefined;
     defaultBehaviorDoc: undefined;
     behaviorsDescription: undefined;
+    initialImpulseMode: undefined;
     historicalInsights: "";
     recentSummaries: undefined;
     activeImpulseThread: {

@@ -68,6 +68,7 @@ export declare const makeProfileFactory: (TimestampKlass: typeof TimestampLike) 
         [x: string]: NonNullable<boolean | undefined>;
     } | null | undefined;
     behaviorsDescription?: string | undefined;
+    initialImpulseMode?: "text" | "liveAudio" | undefined;
     historicalInsights?: string[] | undefined;
     activeImpulseThread?: {
         doc: import("../schema/utils/firestore").DocumentReferenceLike<unknown>;
@@ -88,4 +89,4 @@ export declare const makeProfileFactory: (TimestampKlass: typeof TimestampLike) 
         [x: string]: string;
     };
     timezone: string;
-}, "uids" | "verificationCode" | "recentSummaries" | "timezone" | ("createdAt" | "updatedAt" | "parentIds" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "defaultBehaviorDoc" | "tourCompletedAt" | "scheduledNotificationIds" | "whatsappStrategyDoc" | "onboardedWithZaraAt" | "currentAppState" | "expoPushToken" | "notificationPreferences" | "goal" | "dayReviewTimeMinutes" | "isReadyForTour" | "isOnboardingComplete" | "debriefReminderDelayMinutes" | "androidPermissions" | "behaviorsDescription" | "historicalInsights" | "activeImpulseThread" | "isTourDismissed" | "region" | "enableZara")>;
+}, "uids" | "verificationCode" | "recentSummaries" | "timezone" | ("createdAt" | "updatedAt" | "parentIds" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "defaultBehaviorDoc" | "tourCompletedAt" | "scheduledNotificationIds" | "whatsappStrategyDoc" | "onboardedWithZaraAt" | "currentAppState" | "expoPushToken" | "notificationPreferences" | "goal" | "dayReviewTimeMinutes" | "isReadyForTour" | "isOnboardingComplete" | "debriefReminderDelayMinutes" | "androidPermissions" | "behaviorsDescription" | "initialImpulseMode" | "historicalInsights" | "activeImpulseThread" | "isTourDismissed" | "region" | "enableZara")>;
