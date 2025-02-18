@@ -3011,6 +3011,8 @@ export declare const threadSchema: yup.ObjectSchema<{
                     toDate: Function;
                 };
                 dateString: string;
+                mentorName: string;
+                mentorAvatarUrl: string;
             } | {
                 text?: string | null | undefined;
                 createdAt?: {

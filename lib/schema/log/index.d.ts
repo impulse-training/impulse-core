@@ -3011,6 +3011,8 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
         toDate: Function;
     };
     dateString: string;
+    mentorName: string;
+    mentorAvatarUrl: string;
 } | {
     text?: string | null | undefined;
     createdAt?: {

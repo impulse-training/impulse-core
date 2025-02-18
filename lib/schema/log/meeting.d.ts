@@ -735,6 +735,8 @@ export declare const meetingLogSchema: yup.ObjectSchema<{
     dateString: string;
     senderUid: string | null | undefined;
     senderName: string | null | undefined;
+    mentorName: string;
+    mentorAvatarUrl: string;
 }, yup.AnyObject, {
     createdAt: undefined;
     updatedAt: undefined;
@@ -755,5 +757,7 @@ export declare const meetingLogSchema: yup.ObjectSchema<{
     dateString: undefined;
     senderUid: undefined;
     senderName: undefined;
+    mentorName: undefined;
+    mentorAvatarUrl: undefined;
 }, "">;
 export type MeetingLogValue = yup.InferType<typeof meetingLogSchema>;

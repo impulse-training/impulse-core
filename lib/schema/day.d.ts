@@ -2993,6 +2993,8 @@ export declare const logsById: yup.Lazy<{
                 toDate: Function;
             };
             dateString: string;
+            mentorName: string;
+            mentorAvatarUrl: string;
         } | {
             text?: string | null | undefined;
             createdAt?: {
@@ -9704,6 +9706,8 @@ export declare const daySchema: yup.ObjectSchema<{
                     toDate: Function;
                 };
                 dateString: string;
+                mentorName: string;
+                mentorAvatarUrl: string;
             } | {
                 text?: string | null | undefined;
                 createdAt?: {
