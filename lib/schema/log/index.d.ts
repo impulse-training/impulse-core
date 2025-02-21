@@ -4478,6 +4478,7 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
     } | undefined;
     senderUid?: string | null | undefined;
     senderName?: string | null | undefined;
+    startButtonLabel?: string | undefined;
     animationFileName?: string | undefined;
     uid: string;
     type: "showTour";
@@ -4496,7 +4497,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
     };
     dateString: string;
     role: "assistant";
-    startButtonLabel: string;
 } | {
     text?: string | null | undefined;
     createdAt?: {

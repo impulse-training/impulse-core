@@ -4460,6 +4460,7 @@ export declare const logsById: yup.Lazy<{
             } | undefined;
             senderUid?: string | null | undefined;
             senderName?: string | null | undefined;
+            startButtonLabel?: string | undefined;
             animationFileName?: string | undefined;
             uid: string;
             type: "showTour";
@@ -4478,7 +4479,6 @@ export declare const logsById: yup.Lazy<{
             };
             dateString: string;
             role: "assistant";
-            startButtonLabel: string;
         } | {
             text?: string | null | undefined;
             createdAt?: {
@@ -11175,6 +11175,7 @@ export declare const daySchema: yup.ObjectSchema<{
                 } | undefined;
                 senderUid?: string | null | undefined;
                 senderName?: string | null | undefined;
+                startButtonLabel?: string | undefined;
                 animationFileName?: string | undefined;
                 uid: string;
                 type: "showTour";
@@ -11193,7 +11194,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 };
                 dateString: string;
                 role: "assistant";
-                startButtonLabel: string;
             } | {
                 text?: string | null | undefined;
                 createdAt?: {

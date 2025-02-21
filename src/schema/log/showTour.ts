@@ -11,7 +11,7 @@ export const tourStepSchema = yup.object({
 export const showTourLogSchema = logBaseSchema('showTour').shape({
   role: yup.mixed<'assistant'>().oneOf(['assistant']).required(),
   steps: yup.array().of(tourStepSchema).required(),
-  startButtonLabel: yup.string().required(),
+  startButtonLabel: yup.string(),
   animationFileName: yup.string(),
 });
 

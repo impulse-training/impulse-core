@@ -753,7 +753,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
         title: string;
         confirmButtonLabel: string;
     }[];
-    startButtonLabel: string;
+    startButtonLabel: string | undefined;
     animationFileName: string | undefined;
 }, yup.AnyObject, {
     createdAt: undefined;
