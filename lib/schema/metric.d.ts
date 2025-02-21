@@ -43,6 +43,20 @@ export declare const metricSchema: yup.ObjectSchema<{
     } | undefined;
     isRecommendedForExperiments: boolean | undefined;
     overallDescription: string | undefined;
+    createdAt: {
+        isEqual?: any;
+        toMillis?: any;
+        seconds: number;
+        nanoseconds: number;
+        toDate: Function;
+    } | null | undefined;
+    updatedAt: {
+        isEqual?: any;
+        toMillis?: any;
+        seconds: number;
+        nanoseconds: number;
+        toDate: Function;
+    } | null | undefined;
 }, yup.AnyObject, {
     positiveAttribute: {
         key: undefined;
@@ -52,5 +66,7 @@ export declare const metricSchema: yup.ObjectSchema<{
     negativeAttribute: undefined;
     isRecommendedForExperiments: undefined;
     overallDescription: undefined;
+    createdAt: undefined;
+    updatedAt: undefined;
 }, "">;
 export type MetricValue = yup.InferType<typeof metricSchema>;

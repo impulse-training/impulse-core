@@ -1,4 +1,5 @@
 import * as yup from 'yup';
+import { optionalTimestampSchema } from './utils/timestamp';
 
 export enum MetricIcons {
   Happy = 'happy',
@@ -37,5 +38,7 @@ export const metricSchema = yup.object({
   negativeAttribute: metricAttributeSchema.optional().default(undefined),
   isRecommendedForExperiments: yup.boolean(),
   overallDescription: yup.string(),
+  createdAt: optionalTimestampSchema,
+  updatedAt: optionalTimestampSchema,
 });
 export type MetricValue = yup.InferType<typeof metricSchema>;
