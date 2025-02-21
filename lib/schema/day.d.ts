@@ -4477,6 +4477,7 @@ export declare const logsById: yup.Lazy<{
                 toDate: Function;
             };
             dateString: string;
+            role: "assistant";
             startButtonLabel: string;
         } | {
             text?: string | null | undefined;
@@ -11191,6 +11192,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     toDate: Function;
                 };
                 dateString: string;
+                role: "assistant";
                 startButtonLabel: string;
             } | {
                 text?: string | null | undefined;

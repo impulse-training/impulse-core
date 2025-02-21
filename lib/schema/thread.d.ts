@@ -4496,6 +4496,7 @@ export declare const threadSchema: yup.ObjectSchema<{
                     toDate: Function;
                 };
                 dateString: string;
+                role: "assistant";
                 startButtonLabel: string;
             } | {
                 text?: string | null | undefined;
