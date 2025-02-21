@@ -2,6 +2,7 @@ export * from './behaviors';
 export * from './colors';
 export * from './dates';
 export * from './days';
+export * from './daySummaries';
 export * from './docsById';
 export * from './errors';
 export * from './firestore/TimestampLike';
