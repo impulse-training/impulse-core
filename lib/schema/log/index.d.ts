@@ -4495,6 +4495,7 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
         toDate: Function;
     };
     dateString: string;
+    startButtonLabel: string;
 } | {
     text?: string | null | undefined;
     createdAt?: {

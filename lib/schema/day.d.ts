@@ -4477,6 +4477,7 @@ export declare const logsById: yup.Lazy<{
                 toDate: Function;
             };
             dateString: string;
+            startButtonLabel: string;
         } | {
             text?: string | null | undefined;
             createdAt?: {
@@ -11190,6 +11191,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     toDate: Function;
                 };
                 dateString: string;
+                startButtonLabel: string;
             } | {
                 text?: string | null | undefined;
                 createdAt?: {

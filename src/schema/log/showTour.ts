@@ -10,6 +10,7 @@ export const tourStepSchema = yup.object({
 
 export const showTourLogSchema = logBaseSchema('showTour').shape({
   steps: yup.array().of(tourStepSchema).required(),
+  startButtonLabel: yup.string().required(),
   animationFileName: yup.string(),
 });
 

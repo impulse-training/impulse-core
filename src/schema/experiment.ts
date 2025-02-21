@@ -10,4 +10,5 @@ export const experimentSchema = yup.object({
   createdAt: optionalTimestampSchema,
   updatedAt: optionalTimestampSchema,
 });
+
 export type ExperimentValue = yup.InferType<typeof experimentSchema>;

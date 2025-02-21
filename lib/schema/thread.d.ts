@@ -9,6 +9,7 @@ export declare enum AgentType {
 export declare const outcome: yup.MixedSchema<"success" | "setback" | undefined, yup.AnyObject, undefined, "">;
 export declare const agentType: yup.MixedSchema<AgentType | undefined, yup.AnyObject, undefined, "">;
 export declare const threadSchema: yup.ObjectSchema<{
+    isDisplayable: NonNullable<boolean | undefined>;
     dateString: string;
     date: {
         isEqual?: any;
@@ -4495,6 +4496,7 @@ export declare const threadSchema: yup.ObjectSchema<{
                     toDate: Function;
                 };
                 dateString: string;
+                startButtonLabel: string;
             } | {
                 text?: string | null | undefined;
                 createdAt?: {
@@ -7074,6 +7076,7 @@ export declare const threadSchema: yup.ObjectSchema<{
         toDate: Function;
     } | null | undefined;
 }, yup.AnyObject, {
+    isDisplayable: undefined;
     dateString: undefined;
     date: {
         seconds: undefined;

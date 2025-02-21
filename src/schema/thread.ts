@@ -17,6 +17,7 @@ export const outcome = yup
 export const agentType = yup.mixed<AgentType>().oneOf(Object.values(AgentType));
 
 export const threadSchema = yup.object({
+  isDisplayable: yup.boolean().required(),
   dateString: yup.string().required(),
   date: timestampSchema,
   title: yup.string(),

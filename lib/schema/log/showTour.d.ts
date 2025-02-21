@@ -752,6 +752,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
         title: string;
         confirmButtonLabel: string;
     }[];
+    startButtonLabel: string;
     animationFileName: string | undefined;
 }, yup.AnyObject, {
     createdAt: undefined;
@@ -774,6 +775,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
     senderUid: undefined;
     senderName: undefined;
     steps: "";
+    startButtonLabel: undefined;
     animationFileName: undefined;
 }, "">;
 export type ShowTourLogValue = yup.InferType<typeof showTourLogSchema>;
