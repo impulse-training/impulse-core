@@ -736,7 +736,7 @@ export declare const outcomeLogSchema: yup.ObjectSchema<{
     senderUid: string | null | undefined;
     senderName: string | null | undefined;
     role: "user";
-    outcome: "success" | "setback" | undefined;
+    outcome: NonNullable<"success" | "setback" | undefined>;
 }, yup.AnyObject, {
     createdAt: undefined;
     updatedAt: undefined;

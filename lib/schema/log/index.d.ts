@@ -6707,7 +6707,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
     } | undefined;
     senderUid?: string | null | undefined;
     senderName?: string | null | undefined;
-    outcome?: "success" | "setback" | undefined;
     uid: string;
     type: "outcome";
     date: {
@@ -6719,6 +6718,7 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
     };
     dateString: string;
     role: "user";
+    outcome: NonNullable<"success" | "setback" | undefined>;
 }>, yup.AnyObject, any>;
 export type LogValues = {
     [K in LogValue['type']]: WithTacticsById<yup.InferType<(typeof logSchemas)[K]>>;

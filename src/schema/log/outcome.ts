@@ -4,6 +4,6 @@ import { logBaseSchema } from './base';
 
 export const outcomeLogSchema = logBaseSchema('outcome').shape({
   role: yup.mixed<'user'>().oneOf(['user']).required(),
-  outcome,
+  outcome: outcome.required(),
 });
 export type OutcomeLogValue = yup.InferType<typeof outcomeLogSchema>;

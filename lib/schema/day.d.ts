@@ -6689,7 +6689,6 @@ export declare const logsById: yup.Lazy<{
             } | undefined;
             senderUid?: string | null | undefined;
             senderName?: string | null | undefined;
-            outcome?: "success" | "setback" | undefined;
             uid: string;
             type: "outcome";
             date: {
@@ -6701,6 +6700,7 @@ export declare const logsById: yup.Lazy<{
             };
             dateString: string;
             role: "user";
+            outcome: NonNullable<"success" | "setback" | undefined>;
         }>;
     };
 }, yup.AnyObject, any>;
@@ -13405,7 +13405,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 } | undefined;
                 senderUid?: string | null | undefined;
                 senderName?: string | null | undefined;
-                outcome?: "success" | "setback" | undefined;
                 uid: string;
                 type: "outcome";
                 date: {
@@ -13417,6 +13416,7 @@ export declare const daySchema: yup.ObjectSchema<{
                 };
                 dateString: string;
                 role: "user";
+                outcome: NonNullable<"success" | "setback" | undefined>;
             }>;
         };
     };

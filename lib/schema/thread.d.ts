@@ -6708,7 +6708,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                 } | undefined;
                 senderUid?: string | null | undefined;
                 senderName?: string | null | undefined;
-                outcome?: "success" | "setback" | undefined;
                 uid: string;
                 type: "outcome";
                 date: {
@@ -6720,6 +6719,7 @@ export declare const threadSchema: yup.ObjectSchema<{
                 };
                 dateString: string;
                 role: "user";
+                outcome: NonNullable<"success" | "setback" | undefined>;
             }>;
         };
     };
