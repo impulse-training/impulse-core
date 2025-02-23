@@ -4478,6 +4478,7 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
     } | undefined;
     senderUid?: string | null | undefined;
     senderName?: string | null | undefined;
+    firstNavigateToRoute?: string | undefined;
     startButtonLabel?: string | undefined;
     animationFileName?: string | undefined;
     uid: string;

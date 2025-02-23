@@ -753,6 +753,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
         title: string;
         confirmButtonLabel: string;
     }[];
+    firstNavigateToRoute: string | undefined;
     startButtonLabel: string | undefined;
     animationFileName: string | undefined;
 }, yup.AnyObject, {
@@ -777,6 +778,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
     senderName: undefined;
     role: undefined;
     steps: "";
+    firstNavigateToRoute: undefined;
     startButtonLabel: undefined;
     animationFileName: undefined;
 }, "">;

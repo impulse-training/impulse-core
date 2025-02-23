@@ -4479,6 +4479,7 @@ export declare const threadSchema: yup.ObjectSchema<{
                 } | undefined;
                 senderUid?: string | null | undefined;
                 senderName?: string | null | undefined;
+                firstNavigateToRoute?: string | undefined;
                 startButtonLabel?: string | undefined;
                 animationFileName?: string | undefined;
                 uid: string;

@@ -4460,6 +4460,7 @@ export declare const logsById: yup.Lazy<{
             } | undefined;
             senderUid?: string | null | undefined;
             senderName?: string | null | undefined;
+            firstNavigateToRoute?: string | undefined;
             startButtonLabel?: string | undefined;
             animationFileName?: string | undefined;
             uid: string;
@@ -11175,6 +11176,7 @@ export declare const daySchema: yup.ObjectSchema<{
                 } | undefined;
                 senderUid?: string | null | undefined;
                 senderName?: string | null | undefined;
+                firstNavigateToRoute?: string | undefined;
                 startButtonLabel?: string | undefined;
                 animationFileName?: string | undefined;
                 uid: string;
