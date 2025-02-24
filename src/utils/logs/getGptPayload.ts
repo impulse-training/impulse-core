@@ -1,12 +1,6 @@
-import { differenceInSeconds } from 'date-fns';
 import { compact, flatMap } from 'lodash';
 import { ChatCompletionMessageParam } from 'openai/resources';
-import {
-  formatSecondsInWords,
-  GptLogValue,
-  LogValue,
-  UserLogValue,
-} from '../../schema';
+import { GptLogValue, LogValue, UserLogValue } from '../../schema';
 import { formatBehaviorLimit } from '../behaviors';
 
 export function getGptPayload(
@@ -15,40 +9,30 @@ export function getGptPayload(
   let text = `${log.text || (log as UserLogValue).audioTranscript} `;
 
   if (log.type === 'call') {
-    if (!log.endedAt || log.transcriptSummary) {
-      return {
-        role: 'user',
-        content: 'We had a live voice call. The transcript is pending.',
-      };
-    }
-    const durationInSeconds = differenceInSeconds(
-      log.endedAt.toDate(),
-      log.date.toDate()
-    );
-    const formattedDuration = formatSecondsInWords(durationInSeconds);
-
+    if (!log.endedAt || log.transcriptSummary) return undefined;
     return {
-      role: 'user',
-      content: `We had a call that lasted ${formattedDuration}. ${log.transcriptSummary}`,
+      role: 'assistant',
+      content: `<SYSTEM>CALL BETWEEN ASSISTANT AND USER: ${log.transcriptSummary}</SYSTEM>`,
     };
   }
 
   if (log.type === 'impulse') {
     return {
       role: 'user',
-      content: "I'm having an impulse moment (a craving or urge)",
+      content:
+        "<SYSTEM>IMPULSE BUTTON PRESSED IN-APP. I'M HAVING AN URGE OR CRAVING</SYSTEM>",
     };
   }
 
   if (log.type === 'outcome' && log.outcome) {
     return {
       role: 'user',
-      content: 'This impulse moment was marked as a ' + log.outcome,
+      content: `<SYSTEM>THIS MOMENT WAS MARKED AS A ${log.outcome}</SYSTEM>`,
     };
   }
 
   if (log.behaviorData) {
-    text += `The user reported acting on the impulse, tracking: \n`;
+    text += `<SYSTEM>The user reported acting on the impulse, tracking: \n`;
 
     const behaviorsDescription = compact(
       flatMap(log.behaviorData, ({ behavior, data }) => {
@@ -64,23 +48,23 @@ export function getGptPayload(
         return trackedDescription;
       })
     );
-    text += behaviorsDescription.join('\n');
+    text += behaviorsDescription.join('\n') + '</SYSTEM>';
   }
 
   if (log.metricData) {
-    text += 'Emotions: \n';
+    text += '<SYSTEM>Emotions: \n';
     const metricsDescription = compact(
       flatMap(log.metricData, ({ data }) => data.label)
     );
-    text += metricsDescription.join('\n');
+    text += metricsDescription.join('\n') + '</SYSTEM>';
   }
 
   if (log.tacticsData) {
-    text += 'Strategies used: \n';
+    text += '<SYSTEM>Strategies used: \n';
     const tacticsDescription = compact(
       flatMap(log.tacticsData, ({ tactic }) => tactic.prompt)
     );
-    text += tacticsDescription.join('\n');
+    text += tacticsDescription.join('\n') + '</SYSTEM>';
   }
 
   if (log.type === 'toolCall') {
