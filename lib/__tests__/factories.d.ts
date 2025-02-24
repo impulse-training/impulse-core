@@ -723,6 +723,7 @@ export declare const factories: {
                 doc: import("../schema/utils/firestore").DocumentReferenceLike<unknown>;
             };
         } | undefined;
+        skipGptResponse?: boolean | undefined;
         senderUid?: string | null | undefined;
         senderName?: string | null | undefined;
         audioTranscript?: string | undefined;
@@ -738,7 +739,7 @@ export declare const factories: {
         };
         dateString: string;
         role: "user";
-    }, "uid" | "type" | "date" | "dateString" | "role" | ("text" | "createdAt" | "updatedAt" | "audioFile" | "metricData" | "behaviorData" | "tacticsData" | "senderUid" | "senderName" | "audioTranscript" | "audioTranscribedLocally")>;
+    }, "uid" | "type" | "date" | "dateString" | "role" | ("text" | "createdAt" | "updatedAt" | "audioFile" | "metricData" | "behaviorData" | "tacticsData" | "skipGptResponse" | "senderUid" | "senderName" | "audioTranscript" | "audioTranscribedLocally")>;
     dayFactory: import("factory.ts").Factory<import("..").DayValue, "uid" | "date" | "logsById">;
     issueFactory: import("factory.ts").Factory<{
         path?: string | null | undefined;

@@ -728,6 +728,7 @@ export declare const logsById: yup.Lazy<{
                     doc: DocumentReferenceLike<unknown>;
                 };
             } | undefined;
+            skipGptResponse?: boolean | undefined;
             senderUid?: string | null | undefined;
             senderName?: string | null | undefined;
             agentConnectedAt?: {
@@ -1505,6 +1506,7 @@ export declare const logsById: yup.Lazy<{
                     doc: DocumentReferenceLike<unknown>;
                 };
             } | undefined;
+            skipGptResponse?: boolean | undefined;
             senderUid?: string | null | undefined;
             senderName?: string | null | undefined;
             suggestedResponses?: string[] | undefined;
@@ -2243,6 +2245,7 @@ export declare const logsById: yup.Lazy<{
                     doc: DocumentReferenceLike<unknown>;
                 };
             } | undefined;
+            skipGptResponse?: boolean | undefined;
             senderUid?: string | null | undefined;
             senderName?: string | null | undefined;
             triggerDoc?: DocumentReferenceLike<unknown> | undefined;
@@ -2981,6 +2984,7 @@ export declare const logsById: yup.Lazy<{
                     doc: DocumentReferenceLike<unknown>;
                 };
             } | undefined;
+            skipGptResponse?: boolean | undefined;
             senderUid?: string | null | undefined;
             senderName?: string | null | undefined;
             uid: string;
@@ -3719,6 +3723,7 @@ export declare const logsById: yup.Lazy<{
                     doc: DocumentReferenceLike<unknown>;
                 };
             } | undefined;
+            skipGptResponse?: boolean | undefined;
             senderUid?: string | null | undefined;
             senderName?: string | null | undefined;
             audioTranscript?: string | undefined;
@@ -4458,6 +4463,7 @@ export declare const logsById: yup.Lazy<{
                     doc: DocumentReferenceLike<unknown>;
                 };
             } | undefined;
+            skipGptResponse?: boolean | undefined;
             senderUid?: string | null | undefined;
             senderName?: string | null | undefined;
             firstNavigateToRoute?: string | undefined;
@@ -5204,6 +5210,7 @@ export declare const logsById: yup.Lazy<{
                     doc: DocumentReferenceLike<unknown>;
                 };
             } | undefined;
+            skipGptResponse?: boolean | undefined;
             senderUid?: string | null | undefined;
             senderName?: string | null | undefined;
             uid: string;
@@ -5942,6 +5949,7 @@ export declare const logsById: yup.Lazy<{
                     doc: DocumentReferenceLike<unknown>;
                 };
             } | undefined;
+            skipGptResponse?: boolean | undefined;
             senderUid?: string | null | undefined;
             senderName?: string | null | undefined;
             files?: yup.Maybe<{
@@ -6687,6 +6695,7 @@ export declare const logsById: yup.Lazy<{
                     doc: DocumentReferenceLike<unknown>;
                 };
             } | undefined;
+            skipGptResponse?: boolean | undefined;
             senderUid?: string | null | undefined;
             senderName?: string | null | undefined;
             uid: string;
@@ -7444,6 +7453,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         doc: DocumentReferenceLike<unknown>;
                     };
                 } | undefined;
+                skipGptResponse?: boolean | undefined;
                 senderUid?: string | null | undefined;
                 senderName?: string | null | undefined;
                 agentConnectedAt?: {
@@ -8221,6 +8231,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         doc: DocumentReferenceLike<unknown>;
                     };
                 } | undefined;
+                skipGptResponse?: boolean | undefined;
                 senderUid?: string | null | undefined;
                 senderName?: string | null | undefined;
                 suggestedResponses?: string[] | undefined;
@@ -8959,6 +8970,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         doc: DocumentReferenceLike<unknown>;
                     };
                 } | undefined;
+                skipGptResponse?: boolean | undefined;
                 senderUid?: string | null | undefined;
                 senderName?: string | null | undefined;
                 triggerDoc?: DocumentReferenceLike<unknown> | undefined;
@@ -9697,6 +9709,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         doc: DocumentReferenceLike<unknown>;
                     };
                 } | undefined;
+                skipGptResponse?: boolean | undefined;
                 senderUid?: string | null | undefined;
                 senderName?: string | null | undefined;
                 uid: string;
@@ -10435,6 +10448,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         doc: DocumentReferenceLike<unknown>;
                     };
                 } | undefined;
+                skipGptResponse?: boolean | undefined;
                 senderUid?: string | null | undefined;
                 senderName?: string | null | undefined;
                 audioTranscript?: string | undefined;
@@ -11174,6 +11188,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         doc: DocumentReferenceLike<unknown>;
                     };
                 } | undefined;
+                skipGptResponse?: boolean | undefined;
                 senderUid?: string | null | undefined;
                 senderName?: string | null | undefined;
                 firstNavigateToRoute?: string | undefined;
@@ -11920,6 +11935,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         doc: DocumentReferenceLike<unknown>;
                     };
                 } | undefined;
+                skipGptResponse?: boolean | undefined;
                 senderUid?: string | null | undefined;
                 senderName?: string | null | undefined;
                 uid: string;
@@ -12658,6 +12674,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         doc: DocumentReferenceLike<unknown>;
                     };
                 } | undefined;
+                skipGptResponse?: boolean | undefined;
                 senderUid?: string | null | undefined;
                 senderName?: string | null | undefined;
                 files?: yup.Maybe<{
@@ -13403,6 +13420,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         doc: DocumentReferenceLike<unknown>;
                     };
                 } | undefined;
+                skipGptResponse?: boolean | undefined;
                 senderUid?: string | null | undefined;
                 senderName?: string | null | undefined;
                 uid: string;

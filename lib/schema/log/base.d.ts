@@ -724,6 +724,7 @@ export declare function logBaseSchema<K extends string>(type: K): yup.ObjectSche
             doc: import("../utils/firestore").DocumentReferenceLike<unknown>;
         };
     } | undefined;
+    skipGptResponse: boolean | undefined;
     text: string | null | undefined;
     date: {
         isEqual?: any;
@@ -744,6 +745,7 @@ export declare function logBaseSchema<K extends string>(type: K): yup.ObjectSche
     metricData: undefined;
     behaviorData: undefined;
     tacticsData: undefined;
+    skipGptResponse: undefined;
     text: undefined;
     date: {
         seconds: undefined;

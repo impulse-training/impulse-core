@@ -19,6 +19,8 @@ export function logBaseSchema<K extends string>(type: K) {
     behaviorData: optionalObjectOf(behaviorAndBehaviorDataSchema),
     tacticsData: tacticsById.optional(),
 
+    skipGptResponse: yup.boolean(),
+
     text: yup.string().nullable(),
     date: timestampSchema,
     dateString: yup.string().required(),

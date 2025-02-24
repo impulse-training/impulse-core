@@ -725,6 +725,7 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 doc: import("../schema/utils/firestore").DocumentReferenceLike<unknown>;
             };
         } | undefined;
+        skipGptResponse?: boolean | undefined;
         senderUid?: string | null | undefined;
         senderName?: string | null | undefined;
         audioTranscript?: string | undefined;
@@ -740,5 +741,5 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
         };
         dateString: string;
         role: "user";
-    }, "uid" | "type" | "date" | "dateString" | "role" | ("text" | "createdAt" | "updatedAt" | "audioFile" | "metricData" | "behaviorData" | "tacticsData" | "senderUid" | "senderName" | "audioTranscript" | "audioTranscribedLocally")>;
+    }, "uid" | "type" | "date" | "dateString" | "role" | ("text" | "createdAt" | "updatedAt" | "audioFile" | "metricData" | "behaviorData" | "tacticsData" | "skipGptResponse" | "senderUid" | "senderName" | "audioTranscript" | "audioTranscribedLocally")>;
 };

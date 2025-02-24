@@ -724,6 +724,7 @@ export declare const gptLogSchema: yup.ObjectSchema<{
             doc: import("../utils/firestore").DocumentReferenceLike<unknown>;
         };
     } | undefined;
+    skipGptResponse: boolean | undefined;
     text: string | null | undefined;
     date: {
         isEqual?: any;
@@ -746,6 +747,7 @@ export declare const gptLogSchema: yup.ObjectSchema<{
     metricData: undefined;
     behaviorData: undefined;
     tacticsData: undefined;
+    skipGptResponse: undefined;
     text: undefined;
     date: {
         seconds: undefined;

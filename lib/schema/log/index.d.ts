@@ -746,6 +746,7 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
             doc: import("../utils/firestore").DocumentReferenceLike<unknown>;
         };
     } | undefined;
+    skipGptResponse?: boolean | undefined;
     senderUid?: string | null | undefined;
     senderName?: string | null | undefined;
     agentConnectedAt?: {
@@ -1523,6 +1524,7 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
             doc: import("../utils/firestore").DocumentReferenceLike<unknown>;
         };
     } | undefined;
+    skipGptResponse?: boolean | undefined;
     senderUid?: string | null | undefined;
     senderName?: string | null | undefined;
     suggestedResponses?: string[] | undefined;
@@ -2261,6 +2263,7 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
             doc: import("../utils/firestore").DocumentReferenceLike<unknown>;
         };
     } | undefined;
+    skipGptResponse?: boolean | undefined;
     senderUid?: string | null | undefined;
     senderName?: string | null | undefined;
     triggerDoc?: import("../utils/firestore").DocumentReferenceLike<unknown> | undefined;
@@ -2999,6 +3002,7 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
             doc: import("../utils/firestore").DocumentReferenceLike<unknown>;
         };
     } | undefined;
+    skipGptResponse?: boolean | undefined;
     senderUid?: string | null | undefined;
     senderName?: string | null | undefined;
     uid: string;
@@ -3737,6 +3741,7 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
             doc: import("../utils/firestore").DocumentReferenceLike<unknown>;
         };
     } | undefined;
+    skipGptResponse?: boolean | undefined;
     senderUid?: string | null | undefined;
     senderName?: string | null | undefined;
     audioTranscript?: string | undefined;
@@ -4476,6 +4481,7 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
             doc: import("../utils/firestore").DocumentReferenceLike<unknown>;
         };
     } | undefined;
+    skipGptResponse?: boolean | undefined;
     senderUid?: string | null | undefined;
     senderName?: string | null | undefined;
     firstNavigateToRoute?: string | undefined;
@@ -5222,6 +5228,7 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
             doc: import("../utils/firestore").DocumentReferenceLike<unknown>;
         };
     } | undefined;
+    skipGptResponse?: boolean | undefined;
     senderUid?: string | null | undefined;
     senderName?: string | null | undefined;
     uid: string;
@@ -5960,6 +5967,7 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
             doc: import("../utils/firestore").DocumentReferenceLike<unknown>;
         };
     } | undefined;
+    skipGptResponse?: boolean | undefined;
     senderUid?: string | null | undefined;
     senderName?: string | null | undefined;
     files?: yup.Maybe<{
@@ -6705,6 +6713,7 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
             doc: import("../utils/firestore").DocumentReferenceLike<unknown>;
         };
     } | undefined;
+    skipGptResponse?: boolean | undefined;
     senderUid?: string | null | undefined;
     senderName?: string | null | undefined;
     uid: string;
