@@ -740,7 +740,7 @@ export declare const factories: {
         dateString: string;
         role: "user";
     }, "uid" | "type" | "date" | "dateString" | "role" | ("text" | "createdAt" | "updatedAt" | "audioFile" | "metricData" | "behaviorData" | "tacticsData" | "skipGptResponse" | "senderUid" | "senderName" | "audioTranscript" | "audioTranscribedLocally")>;
-    dayFactory: import("factory.ts").Factory<import("..").DayValue, "uid" | "date" | "logsById">;
+    dayFactory: import("factory.ts").Factory<import("..").DayValue, "uid" | "date" | "logsById" | "cachedSummaryText">;
     issueFactory: import("factory.ts").Factory<{
         path?: string | null | undefined;
         createdAt?: {

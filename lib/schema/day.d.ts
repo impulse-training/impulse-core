@@ -13438,6 +13438,7 @@ export declare const daySchema: yup.ObjectSchema<{
             }>;
         };
     };
+    cachedSummaryText: string | undefined;
 }, yup.AnyObject, {
     uid: undefined;
     date: {
@@ -13448,6 +13449,7 @@ export declare const daySchema: yup.ObjectSchema<{
         toDate: undefined;
     };
     logsById: undefined;
+    cachedSummaryText: undefined;
 }, "">;
 export type DayValue = Omit<yup.InferType<typeof daySchema>, 'logsById'> & {
     logsById: LogsById;

@@ -22,6 +22,7 @@ export const daySchema = yup.object({
   uid: yup.string().required(),
   date: timestampSchema,
   logsById,
+  cachedSummaryText: yup.string(),
 });
 
 // We short-cut to the LogValue schema, instead of using yup to derive the LogSchema again. This
