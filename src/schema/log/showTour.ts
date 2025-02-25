@@ -6,6 +6,7 @@ export const tourStepSchema = yup.object({
   title: yup.string().required(),
   description: yup.string().required(),
   confirmButtonLabel: yup.string().required().default('Ok'),
+  nextOnImpulseButtonPress: yup.boolean(),
 });
 
 export const showTourLogSchema = logBaseSchema('showTour').shape({

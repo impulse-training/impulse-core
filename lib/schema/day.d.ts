@@ -4472,6 +4472,7 @@ export declare const logsById: yup.Lazy<{
             uid: string;
             type: "showTour";
             steps: {
+                nextOnImpulseButtonPress?: boolean | undefined;
                 description: string;
                 elementRefName: string;
                 title: string;
@@ -11197,6 +11198,7 @@ export declare const daySchema: yup.ObjectSchema<{
                 uid: string;
                 type: "showTour";
                 steps: {
+                    nextOnImpulseButtonPress?: boolean | undefined;
                     description: string;
                     elementRefName: string;
                     title: string;

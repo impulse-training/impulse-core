@@ -4491,6 +4491,7 @@ export declare const threadSchema: yup.ObjectSchema<{
                 uid: string;
                 type: "showTour";
                 steps: {
+                    nextOnImpulseButtonPress?: boolean | undefined;
                     description: string;
                     elementRefName: string;
                     title: string;

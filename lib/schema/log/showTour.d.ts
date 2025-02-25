@@ -4,11 +4,13 @@ export declare const tourStepSchema: yup.ObjectSchema<{
     title: string;
     description: string;
     confirmButtonLabel: string;
+    nextOnImpulseButtonPress: boolean | undefined;
 }, yup.AnyObject, {
     elementRefName: undefined;
     title: undefined;
     description: undefined;
     confirmButtonLabel: "Ok";
+    nextOnImpulseButtonPress: undefined;
 }, "">;
 export declare const showTourLogSchema: yup.ObjectSchema<{
     createdAt: {
@@ -749,6 +751,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
     senderName: string | null | undefined;
     role: "assistant";
     steps: {
+        nextOnImpulseButtonPress?: boolean | undefined;
         description: string;
         elementRefName: string;
         title: string;
