@@ -7,7 +7,10 @@ export const tourStepSchema = yup.object({
   description: yup.string().required(),
   confirmButtonLabel: yup.string().required().default('Ok'),
   nextOnImpulseButtonPress: yup.boolean(),
+  borderRadius: yup.number(),
+  innerPadding: yup.number(),
 });
+export type TourStepValue = yup.InferType<typeof tourStepSchema>;
 
 export const showTourLogSchema = logBaseSchema('showTour').shape({
   role: yup.mixed<'assistant'>().oneOf(['assistant']).required(),

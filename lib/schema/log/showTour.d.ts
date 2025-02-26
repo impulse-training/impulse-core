@@ -5,13 +5,18 @@ export declare const tourStepSchema: yup.ObjectSchema<{
     description: string;
     confirmButtonLabel: string;
     nextOnImpulseButtonPress: boolean | undefined;
+    borderRadius: number | undefined;
+    innerPadding: number | undefined;
 }, yup.AnyObject, {
     elementRefName: undefined;
     title: undefined;
     description: undefined;
     confirmButtonLabel: "Ok";
     nextOnImpulseButtonPress: undefined;
+    borderRadius: undefined;
+    innerPadding: undefined;
 }, "">;
+export type TourStepValue = yup.InferType<typeof tourStepSchema>;
 export declare const showTourLogSchema: yup.ObjectSchema<{
     createdAt: {
         isEqual?: any;
@@ -752,6 +757,8 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
     role: "assistant";
     steps: {
         nextOnImpulseButtonPress?: boolean | undefined;
+        borderRadius?: number | undefined;
+        innerPadding?: number | undefined;
         description: string;
         elementRefName: string;
         title: string;

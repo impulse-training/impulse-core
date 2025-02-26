@@ -4491,6 +4491,8 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
     type: "showTour";
     steps: {
         nextOnImpulseButtonPress?: boolean | undefined;
+        borderRadius?: number | undefined;
+        innerPadding?: number | undefined;
         description: string;
         elementRefName: string;
         title: string;

@@ -4473,6 +4473,8 @@ export declare const logsById: yup.Lazy<{
             type: "showTour";
             steps: {
                 nextOnImpulseButtonPress?: boolean | undefined;
+                borderRadius?: number | undefined;
+                innerPadding?: number | undefined;
                 description: string;
                 elementRefName: string;
                 title: string;
@@ -11199,6 +11201,8 @@ export declare const daySchema: yup.ObjectSchema<{
                 type: "showTour";
                 steps: {
                     nextOnImpulseButtonPress?: boolean | undefined;
+                    borderRadius?: number | undefined;
+                    innerPadding?: number | undefined;
                     description: string;
                     elementRefName: string;
                     title: string;
