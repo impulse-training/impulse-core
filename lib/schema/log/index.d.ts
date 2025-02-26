@@ -56,9 +56,9 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                 absoluteAttributeValue: number;
             };
             attribute: {
+                icon?: import("..").MetricIcons | undefined;
                 name: string;
                 key: string;
-                icon: NonNullable<import("..").MetricIcons | undefined>;
             };
         };
     } | null | undefined;
@@ -834,9 +834,9 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                 absoluteAttributeValue: number;
             };
             attribute: {
+                icon?: import("..").MetricIcons | undefined;
                 name: string;
                 key: string;
-                icon: NonNullable<import("..").MetricIcons | undefined>;
             };
         };
     } | null | undefined;
@@ -1573,9 +1573,9 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                 absoluteAttributeValue: number;
             };
             attribute: {
+                icon?: import("..").MetricIcons | undefined;
                 name: string;
                 key: string;
-                icon: NonNullable<import("..").MetricIcons | undefined>;
             };
         };
     } | null | undefined;
@@ -2312,9 +2312,9 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                 absoluteAttributeValue: number;
             };
             attribute: {
+                icon?: import("..").MetricIcons | undefined;
                 name: string;
                 key: string;
-                icon: NonNullable<import("..").MetricIcons | undefined>;
             };
         };
     } | null | undefined;
@@ -3051,9 +3051,9 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                 absoluteAttributeValue: number;
             };
             attribute: {
+                icon?: import("..").MetricIcons | undefined;
                 name: string;
                 key: string;
-                icon: NonNullable<import("..").MetricIcons | undefined>;
             };
         };
     } | null | undefined;
@@ -3791,9 +3791,9 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                 absoluteAttributeValue: number;
             };
             attribute: {
+                icon?: import("..").MetricIcons | undefined;
                 name: string;
                 key: string;
-                icon: NonNullable<import("..").MetricIcons | undefined>;
             };
         };
     } | null | undefined;
@@ -4541,9 +4541,9 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                 absoluteAttributeValue: number;
             };
             attribute: {
+                icon?: import("..").MetricIcons | undefined;
                 name: string;
                 key: string;
-                icon: NonNullable<import("..").MetricIcons | undefined>;
             };
         };
     } | null | undefined;
@@ -5280,9 +5280,9 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                 absoluteAttributeValue: number;
             };
             attribute: {
+                icon?: import("..").MetricIcons | undefined;
                 name: string;
                 key: string;
-                icon: NonNullable<import("..").MetricIcons | undefined>;
             };
         };
     } | null | undefined;
@@ -6026,9 +6026,9 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
                 absoluteAttributeValue: number;
             };
             attribute: {
+                icon?: import("..").MetricIcons | undefined;
                 name: string;
                 key: string;
-                icon: NonNullable<import("..").MetricIcons | undefined>;
             };
         };
     } | null | undefined;

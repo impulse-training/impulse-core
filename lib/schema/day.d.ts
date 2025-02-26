@@ -38,9 +38,9 @@ export declare const logsById: yup.Lazy<{
                         absoluteAttributeValue: number;
                     };
                     attribute: {
+                        icon?: import("./metric").MetricIcons | undefined;
                         name: string;
                         key: string;
-                        icon: NonNullable<import("./metric").MetricIcons | undefined>;
                     };
                 };
             } | null | undefined;
@@ -816,9 +816,9 @@ export declare const logsById: yup.Lazy<{
                         absoluteAttributeValue: number;
                     };
                     attribute: {
+                        icon?: import("./metric").MetricIcons | undefined;
                         name: string;
                         key: string;
-                        icon: NonNullable<import("./metric").MetricIcons | undefined>;
                     };
                 };
             } | null | undefined;
@@ -1555,9 +1555,9 @@ export declare const logsById: yup.Lazy<{
                         absoluteAttributeValue: number;
                     };
                     attribute: {
+                        icon?: import("./metric").MetricIcons | undefined;
                         name: string;
                         key: string;
-                        icon: NonNullable<import("./metric").MetricIcons | undefined>;
                     };
                 };
             } | null | undefined;
@@ -2294,9 +2294,9 @@ export declare const logsById: yup.Lazy<{
                         absoluteAttributeValue: number;
                     };
                     attribute: {
+                        icon?: import("./metric").MetricIcons | undefined;
                         name: string;
                         key: string;
-                        icon: NonNullable<import("./metric").MetricIcons | undefined>;
                     };
                 };
             } | null | undefined;
@@ -3033,9 +3033,9 @@ export declare const logsById: yup.Lazy<{
                         absoluteAttributeValue: number;
                     };
                     attribute: {
+                        icon?: import("./metric").MetricIcons | undefined;
                         name: string;
                         key: string;
-                        icon: NonNullable<import("./metric").MetricIcons | undefined>;
                     };
                 };
             } | null | undefined;
@@ -3773,9 +3773,9 @@ export declare const logsById: yup.Lazy<{
                         absoluteAttributeValue: number;
                     };
                     attribute: {
+                        icon?: import("./metric").MetricIcons | undefined;
                         name: string;
                         key: string;
-                        icon: NonNullable<import("./metric").MetricIcons | undefined>;
                     };
                 };
             } | null | undefined;
@@ -4523,9 +4523,9 @@ export declare const logsById: yup.Lazy<{
                         absoluteAttributeValue: number;
                     };
                     attribute: {
+                        icon?: import("./metric").MetricIcons | undefined;
                         name: string;
                         key: string;
-                        icon: NonNullable<import("./metric").MetricIcons | undefined>;
                     };
                 };
             } | null | undefined;
@@ -5262,9 +5262,9 @@ export declare const logsById: yup.Lazy<{
                         absoluteAttributeValue: number;
                     };
                     attribute: {
+                        icon?: import("./metric").MetricIcons | undefined;
                         name: string;
                         key: string;
-                        icon: NonNullable<import("./metric").MetricIcons | undefined>;
                     };
                 };
             } | null | undefined;
@@ -6008,9 +6008,9 @@ export declare const logsById: yup.Lazy<{
                         absoluteAttributeValue: number;
                     };
                     attribute: {
+                        icon?: import("./metric").MetricIcons | undefined;
                         name: string;
                         key: string;
-                        icon: NonNullable<import("./metric").MetricIcons | undefined>;
                     };
                 };
             } | null | undefined;
@@ -6766,9 +6766,9 @@ export declare const daySchema: yup.ObjectSchema<{
                             absoluteAttributeValue: number;
                         };
                         attribute: {
+                            icon?: import("./metric").MetricIcons | undefined;
                             name: string;
                             key: string;
-                            icon: NonNullable<import("./metric").MetricIcons | undefined>;
                         };
                     };
                 } | null | undefined;
@@ -7544,9 +7544,9 @@ export declare const daySchema: yup.ObjectSchema<{
                             absoluteAttributeValue: number;
                         };
                         attribute: {
+                            icon?: import("./metric").MetricIcons | undefined;
                             name: string;
                             key: string;
-                            icon: NonNullable<import("./metric").MetricIcons | undefined>;
                         };
                     };
                 } | null | undefined;
@@ -8283,9 +8283,9 @@ export declare const daySchema: yup.ObjectSchema<{
                             absoluteAttributeValue: number;
                         };
                         attribute: {
+                            icon?: import("./metric").MetricIcons | undefined;
                             name: string;
                             key: string;
-                            icon: NonNullable<import("./metric").MetricIcons | undefined>;
                         };
                     };
                 } | null | undefined;
@@ -9022,9 +9022,9 @@ export declare const daySchema: yup.ObjectSchema<{
                             absoluteAttributeValue: number;
                         };
                         attribute: {
+                            icon?: import("./metric").MetricIcons | undefined;
                             name: string;
                             key: string;
-                            icon: NonNullable<import("./metric").MetricIcons | undefined>;
                         };
                     };
                 } | null | undefined;
@@ -9761,9 +9761,9 @@ export declare const daySchema: yup.ObjectSchema<{
                             absoluteAttributeValue: number;
                         };
                         attribute: {
+                            icon?: import("./metric").MetricIcons | undefined;
                             name: string;
                             key: string;
-                            icon: NonNullable<import("./metric").MetricIcons | undefined>;
                         };
                     };
                 } | null | undefined;
@@ -10501,9 +10501,9 @@ export declare const daySchema: yup.ObjectSchema<{
                             absoluteAttributeValue: number;
                         };
                         attribute: {
+                            icon?: import("./metric").MetricIcons | undefined;
                             name: string;
                             key: string;
-                            icon: NonNullable<import("./metric").MetricIcons | undefined>;
                         };
                     };
                 } | null | undefined;
@@ -11251,9 +11251,9 @@ export declare const daySchema: yup.ObjectSchema<{
                             absoluteAttributeValue: number;
                         };
                         attribute: {
+                            icon?: import("./metric").MetricIcons | undefined;
                             name: string;
                             key: string;
-                            icon: NonNullable<import("./metric").MetricIcons | undefined>;
                         };
                     };
                 } | null | undefined;
@@ -11990,9 +11990,9 @@ export declare const daySchema: yup.ObjectSchema<{
                             absoluteAttributeValue: number;
                         };
                         attribute: {
+                            icon?: import("./metric").MetricIcons | undefined;
                             name: string;
                             key: string;
-                            icon: NonNullable<import("./metric").MetricIcons | undefined>;
                         };
                     };
                 } | null | undefined;
@@ -12736,9 +12736,9 @@ export declare const daySchema: yup.ObjectSchema<{
                             absoluteAttributeValue: number;
                         };
                         attribute: {
+                            icon?: import("./metric").MetricIcons | undefined;
                             name: string;
                             key: string;
-                            icon: NonNullable<import("./metric").MetricIcons | undefined>;
                         };
                     };
                 } | null | undefined;

@@ -33,9 +33,9 @@ export declare const factories: {
                     absoluteAttributeValue: number;
                 };
                 attribute: {
+                    icon?: import("..").MetricIcons | undefined;
                     name: string;
                     key: string;
-                    icon: NonNullable<import("..").MetricIcons | undefined>;
                 };
             };
         } | null | undefined;
@@ -1178,9 +1178,9 @@ export declare const factories: {
                             absoluteAttributeValue: number;
                         };
                         attribute: {
+                            icon?: import("..").MetricIcons | undefined;
                             name: string;
                             key: string;
-                            icon: NonNullable<import("..").MetricIcons | undefined>;
                         };
                     };
                 };

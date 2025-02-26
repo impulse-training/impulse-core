@@ -12,9 +12,9 @@ export type MetricDataValue = yup.InferType<typeof metricDataSchema>;
 export declare const metricAttributeAndDataSchema: yup.ObjectSchema<{
     doc: import("../../utils/firestore").DocumentReferenceLike<unknown> | undefined;
     attribute: {
+        icon?: import("../../metric").MetricIcons | undefined;
         name: string;
         key: string;
-        icon: NonNullable<import("../../metric").MetricIcons | undefined>;
     };
     data: {
         label: string;

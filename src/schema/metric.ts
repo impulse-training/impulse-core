@@ -30,13 +30,12 @@ export const metricAttributeSchema = yup.object({
   icon: yup
     .mixed<MetricIcons>()
     .oneOf(Object.values(MetricIcons), 'Invalid icon')
-    .required(),
+    .optional(),
 });
 
 export const metricSchema = yup.object({
   positiveAttribute: metricAttributeSchema.required(),
   negativeAttribute: metricAttributeSchema.optional().default(undefined),
-  isRecommendedForExperiments: yup.boolean(),
   overallDescription: yup.string(),
   createdAt: optionalTimestampSchema,
   updatedAt: optionalTimestampSchema,

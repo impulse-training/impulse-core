@@ -32,9 +32,9 @@ export declare const regularLogFactory: import("factory.ts").Factory<{
                 absoluteAttributeValue: number;
             };
             attribute: {
+                icon?: import("..").MetricIcons | undefined;
                 name: string;
                 key: string;
-                icon: NonNullable<import("..").MetricIcons | undefined>;
             };
         };
     } | null | undefined;

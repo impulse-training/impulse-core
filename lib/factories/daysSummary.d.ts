@@ -387,9 +387,9 @@ export declare const makeDaysSummaryFactory: (TimestampKlass: typeof TimestampLi
                         absoluteAttributeValue: number;
                     };
                     attribute: {
+                        icon?: MetricIcons | undefined;
                         name: string;
                         key: string;
-                        icon: NonNullable<MetricIcons | undefined>;
                     };
                 };
             };

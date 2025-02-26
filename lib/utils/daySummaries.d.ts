@@ -8,9 +8,9 @@ export declare function dayAverageMetricData(logsById: DayValue['logsById']): {
             absoluteAttributeValue: number;
         };
         attribute: {
+            icon?: import("../schema").MetricIcons | undefined;
             name: string;
             key: string;
-            icon: NonNullable<import("../schema").MetricIcons | undefined>;
         };
     };
 };

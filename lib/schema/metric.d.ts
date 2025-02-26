@@ -24,7 +24,7 @@ export declare enum MetricIcons {
 export declare const metricAttributeSchema: yup.ObjectSchema<{
     key: string;
     name: string;
-    icon: NonNullable<MetricIcons | undefined>;
+    icon: MetricIcons | undefined;
 }, yup.AnyObject, {
     key: undefined;
     name: undefined;
@@ -32,16 +32,15 @@ export declare const metricAttributeSchema: yup.ObjectSchema<{
 }, "">;
 export declare const metricSchema: yup.ObjectSchema<{
     positiveAttribute: {
+        icon?: MetricIcons | undefined;
         name: string;
         key: string;
-        icon: NonNullable<MetricIcons | undefined>;
     };
     negativeAttribute: {
+        icon?: MetricIcons | undefined;
         name: string;
         key: string;
-        icon: NonNullable<MetricIcons | undefined>;
     } | undefined;
-    isRecommendedForExperiments: boolean | undefined;
     overallDescription: string | undefined;
     createdAt: {
         isEqual?: any;
@@ -64,7 +63,6 @@ export declare const metricSchema: yup.ObjectSchema<{
         icon: undefined;
     };
     negativeAttribute: undefined;
-    isRecommendedForExperiments: undefined;
     overallDescription: undefined;
     createdAt: undefined;
     updatedAt: undefined;
