@@ -1,7 +1,7 @@
 import * as yup from 'yup';
 export declare const locationRoutineSchema: yup.ObjectSchema<{
     name: string;
-    type: NonNullable<"arrival" | "departure" | "both" | undefined>;
+    type: "location";
     ordinal: number | undefined;
     tacticsById: {
         [x: string]: {
@@ -341,6 +341,10 @@ export declare const locationRoutineSchema: yup.ObjectSchema<{
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
+    locationName: string;
+    triggerType: NonNullable<"arrival" | "departure" | undefined>;
+    latitude: number;
+    longitude: number;
 }, yup.AnyObject, {
     name: undefined;
     type: undefined;
@@ -348,5 +352,9 @@ export declare const locationRoutineSchema: yup.ObjectSchema<{
     tacticsById: undefined;
     createdAt: undefined;
     updatedAt: undefined;
+    locationName: undefined;
+    triggerType: undefined;
+    latitude: undefined;
+    longitude: undefined;
 }, "">;
 export type LocationRoutineValue = yup.InferType<typeof locationRoutineSchema>;

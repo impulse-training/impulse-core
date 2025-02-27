@@ -23,7 +23,7 @@ export declare const routineSchema: yup.Lazy<WithTacticsById<{
     } | null | undefined;
     ordinal?: number | undefined;
     name: string;
-    type: NonNullable<"arrival" | "departure" | "both" | undefined>;
+    type: "location";
     tacticsById: {
         [x: string]: {
             data?: {
@@ -348,6 +348,10 @@ export declare const routineSchema: yup.Lazy<WithTacticsById<{
             doc: import("../utils/firestore").DocumentReferenceLike<unknown>;
         };
     };
+    latitude: number;
+    longitude: number;
+    locationName: string;
+    triggerType: NonNullable<"arrival" | "departure" | undefined>;
 } | {
     createdAt?: {
         isEqual?: any;
