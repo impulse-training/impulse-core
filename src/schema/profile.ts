@@ -39,7 +39,7 @@ export const profileSchema = yup.object({
   historicalInsights: yup.array().of(yup.string().required()),
   recentSummaries: objectOf(yup.string().required()),
 
-  activeImpulseThread: yup
+  activeThread: yup
     .object({
       doc: documentReferenceSchema.required(),
       expiresAt: timestampSchema,

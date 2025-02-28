@@ -808,7 +808,7 @@ export declare const regularLogFactory: import("factory.ts").Factory<{
     behaviorsDescription?: string | undefined;
     initialImpulseMode?: "text" | "liveAudio" | undefined;
     historicalInsights?: string[] | undefined;
-    activeImpulseThread?: {
+    activeThread?: {
         doc: import("../schema/utils/firestore").DocumentReferenceLike<unknown>;
         expiresAt: {
             isEqual?: any;
@@ -827,4 +827,4 @@ export declare const regularLogFactory: import("factory.ts").Factory<{
         [x: string]: string;
     };
     timezone: string;
-}, "uids" | "verificationCode" | "recentSummaries" | "timezone" | ("createdAt" | "updatedAt" | "parentIds" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "defaultBehaviorDoc" | "tourCompletedAt" | "scheduledNotificationIds" | "whatsappStrategyDoc" | "onboardedWithZaraAt" | "currentAppState" | "expoPushToken" | "notificationPreferences" | "goal" | "dayReviewTimeMinutes" | "isReadyForTour" | "isOnboardingComplete" | "debriefReminderDelayMinutes" | "androidPermissions" | "behaviorsDescription" | "initialImpulseMode" | "historicalInsights" | "activeImpulseThread" | "isTourDismissed" | "region" | "enableZara")>, tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "sourceFile" | "sharedWithIssueIds" | "uid" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "prompt" | "isShared" | "description" | "type" | "pastTenseTitle" | "debriefAfterMinutes" | "image" | "backgroundColor" | "likesCount" | "timerSeconds" | "isSuggested">;
+}, "uids" | "verificationCode" | "recentSummaries" | "timezone" | ("createdAt" | "updatedAt" | "parentIds" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "defaultBehaviorDoc" | "tourCompletedAt" | "scheduledNotificationIds" | "whatsappStrategyDoc" | "onboardedWithZaraAt" | "currentAppState" | "expoPushToken" | "notificationPreferences" | "goal" | "dayReviewTimeMinutes" | "isReadyForTour" | "isOnboardingComplete" | "debriefReminderDelayMinutes" | "androidPermissions" | "behaviorsDescription" | "initialImpulseMode" | "historicalInsights" | "activeThread" | "isTourDismissed" | "region" | "enableZara")>, tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "sourceFile" | "sharedWithIssueIds" | "uid" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "prompt" | "isShared" | "description" | "type" | "pastTenseTitle" | "debriefAfterMinutes" | "image" | "backgroundColor" | "likesCount" | "timerSeconds" | "isSuggested">;

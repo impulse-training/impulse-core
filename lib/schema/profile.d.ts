@@ -58,7 +58,7 @@ export declare const profileSchema: yup.ObjectSchema<{
     recentSummaries: {
         [x: string]: string;
     };
-    activeImpulseThread: {
+    activeThread: {
         doc: import("./utils/firestore").DocumentReferenceLike<unknown>;
         expiresAt: {
             isEqual?: any;
@@ -111,7 +111,7 @@ export declare const profileSchema: yup.ObjectSchema<{
     initialImpulseMode: undefined;
     historicalInsights: "";
     recentSummaries: undefined;
-    activeImpulseThread: {
+    activeThread: {
         doc: undefined;
         expiresAt: {
             seconds: undefined;
