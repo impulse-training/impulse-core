@@ -19,7 +19,7 @@ export function getGptPayload(
   if (log.type === 'showTour' && log.completedAt) {
     return {
       role: 'assistant',
-      content: `<SYSTEM>THE USER VIEWED A DEMO OF AN IN-APP FEATURE: ${log.steps
+      content: `<SYSTEM>USER VIEWED AN APP FEATURE DEMO: ${log.steps
         .map(step => step.title)
         .join(', ')}</SYSTEM>`,
     };

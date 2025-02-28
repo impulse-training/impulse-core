@@ -29,6 +29,7 @@ export declare const logsById: yup.Lazy<{
                 storagePath: string;
                 url: string;
             } | undefined;
+            skipGptResponse?: boolean | undefined;
             metricData?: {
                 [x: string]: {
                     doc?: DocumentReferenceLike<unknown> | undefined;
@@ -728,7 +729,6 @@ export declare const logsById: yup.Lazy<{
                     doc: DocumentReferenceLike<unknown>;
                 };
             } | undefined;
-            skipGptResponse?: boolean | undefined;
             senderUid?: string | null | undefined;
             senderName?: string | null | undefined;
             agentConnectedAt?: {
@@ -780,6 +780,7 @@ export declare const logsById: yup.Lazy<{
                 nanoseconds: number;
                 toDate: Function;
             };
+            isDisplayable: NonNullable<boolean | undefined>;
             dateString: string;
             agentContext: string;
         } | {
@@ -807,6 +808,7 @@ export declare const logsById: yup.Lazy<{
                 storagePath: string;
                 url: string;
             } | undefined;
+            skipGptResponse?: boolean | undefined;
             metricData?: {
                 [x: string]: {
                     doc?: DocumentReferenceLike<unknown> | undefined;
@@ -1506,7 +1508,6 @@ export declare const logsById: yup.Lazy<{
                     doc: DocumentReferenceLike<unknown>;
                 };
             } | undefined;
-            skipGptResponse?: boolean | undefined;
             senderUid?: string | null | undefined;
             senderName?: string | null | undefined;
             suggestedResponses?: string[] | undefined;
@@ -1519,6 +1520,7 @@ export declare const logsById: yup.Lazy<{
                 nanoseconds: number;
                 toDate: Function;
             };
+            isDisplayable: NonNullable<boolean | undefined>;
             dateString: string;
             role: "assistant";
         } | {
@@ -1546,6 +1548,7 @@ export declare const logsById: yup.Lazy<{
                 storagePath: string;
                 url: string;
             } | undefined;
+            skipGptResponse?: boolean | undefined;
             metricData?: {
                 [x: string]: {
                     doc?: DocumentReferenceLike<unknown> | undefined;
@@ -2245,7 +2248,6 @@ export declare const logsById: yup.Lazy<{
                     doc: DocumentReferenceLike<unknown>;
                 };
             } | undefined;
-            skipGptResponse?: boolean | undefined;
             senderUid?: string | null | undefined;
             senderName?: string | null | undefined;
             triggerDoc?: DocumentReferenceLike<unknown> | undefined;
@@ -2258,6 +2260,7 @@ export declare const logsById: yup.Lazy<{
                 nanoseconds: number;
                 toDate: Function;
             };
+            isDisplayable: NonNullable<boolean | undefined>;
             dateString: string;
             role: "user";
         } | {
@@ -2285,6 +2288,7 @@ export declare const logsById: yup.Lazy<{
                 storagePath: string;
                 url: string;
             } | undefined;
+            skipGptResponse?: boolean | undefined;
             metricData?: {
                 [x: string]: {
                     doc?: DocumentReferenceLike<unknown> | undefined;
@@ -2984,7 +2988,6 @@ export declare const logsById: yup.Lazy<{
                     doc: DocumentReferenceLike<unknown>;
                 };
             } | undefined;
-            skipGptResponse?: boolean | undefined;
             senderUid?: string | null | undefined;
             senderName?: string | null | undefined;
             uid: string;
@@ -2996,6 +2999,7 @@ export declare const logsById: yup.Lazy<{
                 nanoseconds: number;
                 toDate: Function;
             };
+            isDisplayable: NonNullable<boolean | undefined>;
             dateString: string;
             mentorName: string;
             mentorAvatarUrl: string;
@@ -3024,6 +3028,7 @@ export declare const logsById: yup.Lazy<{
                 storagePath: string;
                 url: string;
             } | undefined;
+            skipGptResponse?: boolean | undefined;
             metricData?: {
                 [x: string]: {
                     doc?: DocumentReferenceLike<unknown> | undefined;
@@ -3723,7 +3728,6 @@ export declare const logsById: yup.Lazy<{
                     doc: DocumentReferenceLike<unknown>;
                 };
             } | undefined;
-            skipGptResponse?: boolean | undefined;
             senderUid?: string | null | undefined;
             senderName?: string | null | undefined;
             audioTranscript?: string | undefined;
@@ -3737,6 +3741,7 @@ export declare const logsById: yup.Lazy<{
                 nanoseconds: number;
                 toDate: Function;
             };
+            isDisplayable: NonNullable<boolean | undefined>;
             dateString: string;
             role: "user";
         } | {
@@ -3765,6 +3770,7 @@ export declare const logsById: yup.Lazy<{
                 storagePath: string;
                 url: string;
             } | undefined;
+            skipGptResponse?: boolean | undefined;
             metricData?: {
                 [x: string]: {
                     doc?: DocumentReferenceLike<unknown> | undefined;
@@ -4464,7 +4470,6 @@ export declare const logsById: yup.Lazy<{
                     doc: DocumentReferenceLike<unknown>;
                 };
             } | undefined;
-            skipGptResponse?: boolean | undefined;
             senderUid?: string | null | undefined;
             senderName?: string | null | undefined;
             firstNavigateToRoute?: string | undefined;
@@ -4495,6 +4500,7 @@ export declare const logsById: yup.Lazy<{
                 nanoseconds: number;
                 toDate: Function;
             };
+            isDisplayable: NonNullable<boolean | undefined>;
             dateString: string;
             role: "assistant";
         } | {
@@ -4522,6 +4528,7 @@ export declare const logsById: yup.Lazy<{
                 storagePath: string;
                 url: string;
             } | undefined;
+            skipGptResponse?: boolean | undefined;
             metricData?: {
                 [x: string]: {
                     doc?: DocumentReferenceLike<unknown> | undefined;
@@ -5221,7 +5228,6 @@ export declare const logsById: yup.Lazy<{
                     doc: DocumentReferenceLike<unknown>;
                 };
             } | undefined;
-            skipGptResponse?: boolean | undefined;
             senderUid?: string | null | undefined;
             senderName?: string | null | undefined;
             uid: string;
@@ -5233,6 +5239,7 @@ export declare const logsById: yup.Lazy<{
                 nanoseconds: number;
                 toDate: Function;
             };
+            isDisplayable: NonNullable<boolean | undefined>;
             dateString: string;
             role: "tool";
             toolCallId: string;
@@ -5261,6 +5268,7 @@ export declare const logsById: yup.Lazy<{
                 storagePath: string;
                 url: string;
             } | undefined;
+            skipGptResponse?: boolean | undefined;
             metricData?: {
                 [x: string]: {
                     doc?: DocumentReferenceLike<unknown> | undefined;
@@ -5960,7 +5968,6 @@ export declare const logsById: yup.Lazy<{
                     doc: DocumentReferenceLike<unknown>;
                 };
             } | undefined;
-            skipGptResponse?: boolean | undefined;
             senderUid?: string | null | undefined;
             senderName?: string | null | undefined;
             files?: yup.Maybe<{
@@ -5981,6 +5988,7 @@ export declare const logsById: yup.Lazy<{
                 nanoseconds: number;
                 toDate: Function;
             };
+            isDisplayable: NonNullable<boolean | undefined>;
             dateString: string;
         } | {
             text?: string | null | undefined;
@@ -6007,6 +6015,7 @@ export declare const logsById: yup.Lazy<{
                 storagePath: string;
                 url: string;
             } | undefined;
+            skipGptResponse?: boolean | undefined;
             metricData?: {
                 [x: string]: {
                     doc?: DocumentReferenceLike<unknown> | undefined;
@@ -6706,7 +6715,6 @@ export declare const logsById: yup.Lazy<{
                     doc: DocumentReferenceLike<unknown>;
                 };
             } | undefined;
-            skipGptResponse?: boolean | undefined;
             senderUid?: string | null | undefined;
             senderName?: string | null | undefined;
             uid: string;
@@ -6718,6 +6726,7 @@ export declare const logsById: yup.Lazy<{
                 nanoseconds: number;
                 toDate: Function;
             };
+            isDisplayable: NonNullable<boolean | undefined>;
             dateString: string;
             role: "user";
             outcome: NonNullable<"success" | "setback" | undefined>;
@@ -6765,6 +6774,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     storagePath: string;
                     url: string;
                 } | undefined;
+                skipGptResponse?: boolean | undefined;
                 metricData?: {
                     [x: string]: {
                         doc?: DocumentReferenceLike<unknown> | undefined;
@@ -7464,7 +7474,6 @@ export declare const daySchema: yup.ObjectSchema<{
                         doc: DocumentReferenceLike<unknown>;
                     };
                 } | undefined;
-                skipGptResponse?: boolean | undefined;
                 senderUid?: string | null | undefined;
                 senderName?: string | null | undefined;
                 agentConnectedAt?: {
@@ -7516,6 +7525,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 };
+                isDisplayable: NonNullable<boolean | undefined>;
                 dateString: string;
                 agentContext: string;
             } | {
@@ -7543,6 +7553,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     storagePath: string;
                     url: string;
                 } | undefined;
+                skipGptResponse?: boolean | undefined;
                 metricData?: {
                     [x: string]: {
                         doc?: DocumentReferenceLike<unknown> | undefined;
@@ -8242,7 +8253,6 @@ export declare const daySchema: yup.ObjectSchema<{
                         doc: DocumentReferenceLike<unknown>;
                     };
                 } | undefined;
-                skipGptResponse?: boolean | undefined;
                 senderUid?: string | null | undefined;
                 senderName?: string | null | undefined;
                 suggestedResponses?: string[] | undefined;
@@ -8255,6 +8265,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 };
+                isDisplayable: NonNullable<boolean | undefined>;
                 dateString: string;
                 role: "assistant";
             } | {
@@ -8282,6 +8293,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     storagePath: string;
                     url: string;
                 } | undefined;
+                skipGptResponse?: boolean | undefined;
                 metricData?: {
                     [x: string]: {
                         doc?: DocumentReferenceLike<unknown> | undefined;
@@ -8981,7 +8993,6 @@ export declare const daySchema: yup.ObjectSchema<{
                         doc: DocumentReferenceLike<unknown>;
                     };
                 } | undefined;
-                skipGptResponse?: boolean | undefined;
                 senderUid?: string | null | undefined;
                 senderName?: string | null | undefined;
                 triggerDoc?: DocumentReferenceLike<unknown> | undefined;
@@ -8994,6 +9005,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 };
+                isDisplayable: NonNullable<boolean | undefined>;
                 dateString: string;
                 role: "user";
             } | {
@@ -9021,6 +9033,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     storagePath: string;
                     url: string;
                 } | undefined;
+                skipGptResponse?: boolean | undefined;
                 metricData?: {
                     [x: string]: {
                         doc?: DocumentReferenceLike<unknown> | undefined;
@@ -9720,7 +9733,6 @@ export declare const daySchema: yup.ObjectSchema<{
                         doc: DocumentReferenceLike<unknown>;
                     };
                 } | undefined;
-                skipGptResponse?: boolean | undefined;
                 senderUid?: string | null | undefined;
                 senderName?: string | null | undefined;
                 uid: string;
@@ -9732,6 +9744,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 };
+                isDisplayable: NonNullable<boolean | undefined>;
                 dateString: string;
                 mentorName: string;
                 mentorAvatarUrl: string;
@@ -9760,6 +9773,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     storagePath: string;
                     url: string;
                 } | undefined;
+                skipGptResponse?: boolean | undefined;
                 metricData?: {
                     [x: string]: {
                         doc?: DocumentReferenceLike<unknown> | undefined;
@@ -10459,7 +10473,6 @@ export declare const daySchema: yup.ObjectSchema<{
                         doc: DocumentReferenceLike<unknown>;
                     };
                 } | undefined;
-                skipGptResponse?: boolean | undefined;
                 senderUid?: string | null | undefined;
                 senderName?: string | null | undefined;
                 audioTranscript?: string | undefined;
@@ -10473,6 +10486,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 };
+                isDisplayable: NonNullable<boolean | undefined>;
                 dateString: string;
                 role: "user";
             } | {
@@ -10501,6 +10515,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     storagePath: string;
                     url: string;
                 } | undefined;
+                skipGptResponse?: boolean | undefined;
                 metricData?: {
                     [x: string]: {
                         doc?: DocumentReferenceLike<unknown> | undefined;
@@ -11200,7 +11215,6 @@ export declare const daySchema: yup.ObjectSchema<{
                         doc: DocumentReferenceLike<unknown>;
                     };
                 } | undefined;
-                skipGptResponse?: boolean | undefined;
                 senderUid?: string | null | undefined;
                 senderName?: string | null | undefined;
                 firstNavigateToRoute?: string | undefined;
@@ -11231,6 +11245,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 };
+                isDisplayable: NonNullable<boolean | undefined>;
                 dateString: string;
                 role: "assistant";
             } | {
@@ -11258,6 +11273,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     storagePath: string;
                     url: string;
                 } | undefined;
+                skipGptResponse?: boolean | undefined;
                 metricData?: {
                     [x: string]: {
                         doc?: DocumentReferenceLike<unknown> | undefined;
@@ -11957,7 +11973,6 @@ export declare const daySchema: yup.ObjectSchema<{
                         doc: DocumentReferenceLike<unknown>;
                     };
                 } | undefined;
-                skipGptResponse?: boolean | undefined;
                 senderUid?: string | null | undefined;
                 senderName?: string | null | undefined;
                 uid: string;
@@ -11969,6 +11984,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 };
+                isDisplayable: NonNullable<boolean | undefined>;
                 dateString: string;
                 role: "tool";
                 toolCallId: string;
@@ -11997,6 +12013,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     storagePath: string;
                     url: string;
                 } | undefined;
+                skipGptResponse?: boolean | undefined;
                 metricData?: {
                     [x: string]: {
                         doc?: DocumentReferenceLike<unknown> | undefined;
@@ -12696,7 +12713,6 @@ export declare const daySchema: yup.ObjectSchema<{
                         doc: DocumentReferenceLike<unknown>;
                     };
                 } | undefined;
-                skipGptResponse?: boolean | undefined;
                 senderUid?: string | null | undefined;
                 senderName?: string | null | undefined;
                 files?: yup.Maybe<{
@@ -12717,6 +12733,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 };
+                isDisplayable: NonNullable<boolean | undefined>;
                 dateString: string;
             } | {
                 text?: string | null | undefined;
@@ -12743,6 +12760,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     storagePath: string;
                     url: string;
                 } | undefined;
+                skipGptResponse?: boolean | undefined;
                 metricData?: {
                     [x: string]: {
                         doc?: DocumentReferenceLike<unknown> | undefined;
@@ -13442,7 +13460,6 @@ export declare const daySchema: yup.ObjectSchema<{
                         doc: DocumentReferenceLike<unknown>;
                     };
                 } | undefined;
-                skipGptResponse?: boolean | undefined;
                 senderUid?: string | null | undefined;
                 senderName?: string | null | undefined;
                 uid: string;
@@ -13454,6 +13471,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 };
+                isDisplayable: NonNullable<boolean | undefined>;
                 dateString: string;
                 role: "user";
                 outcome: NonNullable<"success" | "setback" | undefined>;

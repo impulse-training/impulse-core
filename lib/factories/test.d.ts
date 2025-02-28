@@ -23,6 +23,7 @@ export declare const regularLogFactory: import("factory.ts").Factory<{
         storagePath: string;
         url: string;
     } | undefined;
+    skipGptResponse?: boolean | undefined;
     metricData?: {
         [x: string]: {
             doc?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
@@ -722,7 +723,6 @@ export declare const regularLogFactory: import("factory.ts").Factory<{
             doc: import("../schema/utils/firestore").DocumentReferenceLike<unknown>;
         };
     } | undefined;
-    skipGptResponse?: boolean | undefined;
     senderUid?: string | null | undefined;
     senderName?: string | null | undefined;
     audioTranscript?: string | undefined;
@@ -736,9 +736,10 @@ export declare const regularLogFactory: import("factory.ts").Factory<{
         nanoseconds: number;
         toDate: Function;
     };
+    isDisplayable: NonNullable<boolean | undefined>;
     dateString: string;
     role: "user";
-}, "uid" | "type" | "date" | "dateString" | "role" | ("text" | "createdAt" | "updatedAt" | "audioFile" | "metricData" | "behaviorData" | "tacticsData" | "skipGptResponse" | "senderUid" | "senderName" | "audioTranscript" | "audioTranscribedLocally")>, profileFactory: import("factory.ts").Factory<{
+}, "uid" | "type" | "date" | "isDisplayable" | "dateString" | "role" | ("text" | "createdAt" | "updatedAt" | "audioFile" | "skipGptResponse" | "metricData" | "behaviorData" | "tacticsData" | "senderUid" | "senderName" | "audioTranscript" | "audioTranscribedLocally")>, profileFactory: import("factory.ts").Factory<{
     createdAt?: {
         isEqual?: any;
         toMillis?: any;

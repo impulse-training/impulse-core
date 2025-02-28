@@ -25,6 +25,8 @@ export declare function logBaseSchema<K extends string>(type: K): yup.ObjectSche
         storagePath: string;
         url: string;
     } | undefined;
+    isDisplayable: NonNullable<boolean | undefined>;
+    skipGptResponse: boolean | undefined;
     metricData: {
         [x: string]: {
             doc?: import("../utils/firestore").DocumentReferenceLike<unknown> | undefined;
@@ -724,7 +726,6 @@ export declare function logBaseSchema<K extends string>(type: K): yup.ObjectSche
             doc: import("../utils/firestore").DocumentReferenceLike<unknown>;
         };
     } | undefined;
-    skipGptResponse: boolean | undefined;
     text: string | null | undefined;
     date: {
         isEqual?: any;
@@ -742,10 +743,11 @@ export declare function logBaseSchema<K extends string>(type: K): yup.ObjectSche
     type: undefined;
     uid: undefined;
     audioFile: undefined;
+    isDisplayable: undefined;
+    skipGptResponse: undefined;
     metricData: undefined;
     behaviorData: undefined;
     tacticsData: undefined;
-    skipGptResponse: undefined;
     text: undefined;
     date: {
         seconds: undefined;

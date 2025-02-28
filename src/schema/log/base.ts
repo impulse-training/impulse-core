@@ -14,12 +14,15 @@ export function logBaseSchema<K extends string>(type: K) {
     uid: yup.string().required(),
     audioFile: fileSchema.optional().default(undefined),
 
+    // This is set to false for tool call logs, etc
+    isDisplayable: yup.boolean().required(),
+    // When explicitly set to true, we'll force Zara not to respond
+    skipGptResponse: yup.boolean(),
+
     // We deal with metrics and behaviors separately
     metricData: optionalObjectOf(metricAttributeAndDataSchema),
     behaviorData: optionalObjectOf(behaviorAndBehaviorDataSchema),
     tacticsData: tacticsById.optional(),
-
-    skipGptResponse: yup.boolean(),
 
     text: yup.string().nullable(),
     date: timestampSchema,

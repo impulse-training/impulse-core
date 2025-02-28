@@ -26,6 +26,7 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
             storagePath: string;
             url: string;
         } | undefined;
+        skipGptResponse?: boolean | undefined;
         metricData?: {
             [x: string]: {
                 doc?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
@@ -725,7 +726,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 doc: import("../schema/utils/firestore").DocumentReferenceLike<unknown>;
             };
         } | undefined;
-        skipGptResponse?: boolean | undefined;
         senderUid?: string | null | undefined;
         senderName?: string | null | undefined;
         audioTranscript?: string | undefined;
@@ -739,7 +739,8 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
             nanoseconds: number;
             toDate: Function;
         };
+        isDisplayable: NonNullable<boolean | undefined>;
         dateString: string;
         role: "user";
-    }, "uid" | "type" | "date" | "dateString" | "role" | ("text" | "createdAt" | "updatedAt" | "audioFile" | "metricData" | "behaviorData" | "tacticsData" | "skipGptResponse" | "senderUid" | "senderName" | "audioTranscript" | "audioTranscribedLocally")>;
+    }, "uid" | "type" | "date" | "isDisplayable" | "dateString" | "role" | ("text" | "createdAt" | "updatedAt" | "audioFile" | "skipGptResponse" | "metricData" | "behaviorData" | "tacticsData" | "senderUid" | "senderName" | "audioTranscript" | "audioTranscribedLocally")>;
 };

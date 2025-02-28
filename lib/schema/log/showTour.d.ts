@@ -47,6 +47,8 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
         storagePath: string;
         url: string;
     } | undefined;
+    isDisplayable: NonNullable<boolean | undefined>;
+    skipGptResponse: boolean | undefined;
     metricData: {
         [x: string]: {
             doc?: import("../utils/firestore").DocumentReferenceLike<unknown> | undefined;
@@ -746,7 +748,6 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             doc: import("../utils/firestore").DocumentReferenceLike<unknown>;
         };
     } | undefined;
-    skipGptResponse: boolean | undefined;
     text: string | null | undefined;
     date: {
         isEqual?: any;
@@ -785,10 +786,11 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
     type: undefined;
     uid: undefined;
     audioFile: undefined;
+    isDisplayable: undefined;
+    skipGptResponse: undefined;
     metricData: undefined;
     behaviorData: undefined;
     tacticsData: undefined;
-    skipGptResponse: undefined;
     text: undefined;
     date: {
         seconds: undefined;

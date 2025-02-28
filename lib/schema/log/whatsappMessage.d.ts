@@ -25,6 +25,8 @@ export declare const whatsappMessageLogSchema: yup.ObjectSchema<{
         storagePath: string;
         url: string;
     } | undefined;
+    isDisplayable: NonNullable<boolean | undefined>;
+    skipGptResponse: boolean | undefined;
     metricData: {
         [x: string]: {
             doc?: import("../utils/firestore").DocumentReferenceLike<unknown> | undefined;
@@ -724,7 +726,6 @@ export declare const whatsappMessageLogSchema: yup.ObjectSchema<{
             doc: import("../utils/firestore").DocumentReferenceLike<unknown>;
         };
     } | undefined;
-    skipGptResponse: boolean | undefined;
     text: string | null | undefined;
     date: {
         isEqual?: any;
@@ -751,10 +752,11 @@ export declare const whatsappMessageLogSchema: yup.ObjectSchema<{
     type: undefined;
     uid: undefined;
     audioFile: undefined;
+    isDisplayable: undefined;
+    skipGptResponse: undefined;
     metricData: undefined;
     behaviorData: undefined;
     tacticsData: undefined;
-    skipGptResponse: undefined;
     text: undefined;
     date: {
         seconds: undefined;

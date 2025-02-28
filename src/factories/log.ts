@@ -8,6 +8,7 @@ export const makeLogFactories = (TimestampKlass: typeof TimestampLike) => ({
     senderUid: Factory.each(i => i.toString()),
     type: 'user',
     role: 'user',
+    isDisplayable: true,
     createdAt: TimestampKlass.now(),
     updatedAt: TimestampKlass.now(),
     behaviorData: {},
