@@ -1,4 +1,5 @@
 import * as yup from 'yup';
+import { optionalTimestampSchema } from '../utils/timestamp';
 import { logBaseSchema } from './base';
 
 export enum TourIcon {
@@ -23,6 +24,8 @@ export const showTourLogSchema = logBaseSchema('showTour').shape({
   firstNavigateToRoute: yup.string(),
   startButtonLabel: yup.string(),
   animationFileName: yup.string(),
+  completedAt: optionalTimestampSchema,
+  openAutomatically: yup.boolean(),
   icon: yup
     .mixed<TourIcon>()
     .oneOf(Object.values(TourIcon), 'Invalid icon')

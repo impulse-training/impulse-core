@@ -4489,6 +4489,14 @@ export declare const threadSchema: yup.ObjectSchema<{
                 firstNavigateToRoute?: string | undefined;
                 startButtonLabel?: string | undefined;
                 animationFileName?: string | undefined;
+                completedAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                openAutomatically?: boolean | undefined;
                 uid: string;
                 type: "showTour";
                 steps: {

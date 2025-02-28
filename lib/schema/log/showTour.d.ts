@@ -771,6 +771,14 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
     firstNavigateToRoute: string | undefined;
     startButtonLabel: string | undefined;
     animationFileName: string | undefined;
+    completedAt: {
+        isEqual?: any;
+        toMillis?: any;
+        seconds: number;
+        nanoseconds: number;
+        toDate: Function;
+    } | null | undefined;
+    openAutomatically: boolean | undefined;
     icon: TourIcon | undefined;
 }, yup.AnyObject, {
     createdAt: undefined;
@@ -798,6 +806,8 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
     firstNavigateToRoute: undefined;
     startButtonLabel: undefined;
     animationFileName: undefined;
+    completedAt: undefined;
+    openAutomatically: undefined;
     icon: undefined;
 }, "">;
 export type ShowTourLogValue = yup.InferType<typeof showTourLogSchema>;

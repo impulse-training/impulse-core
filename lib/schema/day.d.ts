@@ -4470,6 +4470,14 @@ export declare const logsById: yup.Lazy<{
             firstNavigateToRoute?: string | undefined;
             startButtonLabel?: string | undefined;
             animationFileName?: string | undefined;
+            completedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            openAutomatically?: boolean | undefined;
             uid: string;
             type: "showTour";
             steps: {
@@ -11199,6 +11207,14 @@ export declare const daySchema: yup.ObjectSchema<{
                 firstNavigateToRoute?: string | undefined;
                 startButtonLabel?: string | undefined;
                 animationFileName?: string | undefined;
+                completedAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                openAutomatically?: boolean | undefined;
                 uid: string;
                 type: "showTour";
                 steps: {
