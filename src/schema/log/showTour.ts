@@ -1,6 +1,11 @@
 import * as yup from 'yup';
 import { logBaseSchema } from './base';
 
+export enum TourIcon {
+  DockBehaviorsButton = 'dockBehaviorsButton',
+  DockMetricsButton = 'dockMetricsButton',
+}
+
 export const tourStepSchema = yup.object({
   elementRefName: yup.string().required(),
   title: yup.string().required(),
@@ -18,6 +23,10 @@ export const showTourLogSchema = logBaseSchema('showTour').shape({
   firstNavigateToRoute: yup.string(),
   startButtonLabel: yup.string(),
   animationFileName: yup.string(),
+  icon: yup
+    .mixed<TourIcon>()
+    .oneOf(Object.values(TourIcon), 'Invalid icon')
+    .optional(),
 });
 
 export type ShowTourLogValue = yup.InferType<typeof showTourLogSchema>;

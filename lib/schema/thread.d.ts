@@ -3774,6 +3774,7 @@ export declare const threadSchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                icon?: import("./log").TourIcon | undefined;
                 audioFile?: {
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;

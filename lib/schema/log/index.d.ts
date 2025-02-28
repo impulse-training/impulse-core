@@ -3773,6 +3773,7 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
+    icon?: import("./showTour").TourIcon | undefined;
     audioFile?: {
         localFilePath?: yup.Maybe<string | undefined>;
         isDeleted?: boolean | undefined;

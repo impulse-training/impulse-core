@@ -3755,6 +3755,7 @@ export declare const logsById: yup.Lazy<{
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
+            icon?: import("./log").TourIcon | undefined;
             audioFile?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 isDeleted?: boolean | undefined;
@@ -10483,6 +10484,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                icon?: import("./log").TourIcon | undefined;
                 audioFile?: {
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;

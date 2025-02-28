@@ -1,4 +1,8 @@
 import * as yup from 'yup';
+export declare enum TourIcon {
+    DockBehaviorsButton = "dockBehaviorsButton",
+    DockMetricsButton = "dockMetricsButton"
+}
 export declare const tourStepSchema: yup.ObjectSchema<{
     elementRefName: string;
     title: string;
@@ -767,6 +771,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
     firstNavigateToRoute: string | undefined;
     startButtonLabel: string | undefined;
     animationFileName: string | undefined;
+    icon: TourIcon | undefined;
 }, yup.AnyObject, {
     createdAt: undefined;
     updatedAt: undefined;
@@ -793,5 +798,6 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
     firstNavigateToRoute: undefined;
     startButtonLabel: undefined;
     animationFileName: undefined;
+    icon: undefined;
 }, "">;
 export type ShowTourLogValue = yup.InferType<typeof showTourLogSchema>;
