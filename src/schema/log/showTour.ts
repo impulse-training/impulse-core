@@ -25,7 +25,6 @@ export const showTourLogSchema = logBaseSchema('showTour').shape({
   startButtonLabel: yup.string(),
   animationFileName: yup.string(),
   completedAt: optionalTimestampSchema,
-  openAutomatically: yup.boolean(),
   icon: yup
     .mixed<TourIcon>()
     .oneOf(Object.values(TourIcon), 'Invalid icon')

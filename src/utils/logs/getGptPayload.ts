@@ -16,6 +16,15 @@ export function getGptPayload(
     };
   }
 
+  if (log.type === 'showTour' && log.completedAt) {
+    return {
+      role: 'assistant',
+      content: `<SYSTEM>THE USER VIEWED A DEMO OF AN IN-APP FEATURE: ${log.steps
+        .map(step => step.title)
+        .join(', ')}</SYSTEM>`,
+    };
+  }
+
   if (log.type === 'impulse') {
     return {
       role: 'user',

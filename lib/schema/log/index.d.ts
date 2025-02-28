@@ -4495,7 +4495,6 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
-    openAutomatically?: boolean | undefined;
     uid: string;
     type: "showTour";
     steps: {

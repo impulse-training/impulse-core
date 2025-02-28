@@ -4496,7 +4496,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                openAutomatically?: boolean | undefined;
                 uid: string;
                 type: "showTour";
                 steps: {

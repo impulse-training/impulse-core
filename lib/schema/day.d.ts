@@ -4477,7 +4477,6 @@ export declare const logsById: yup.Lazy<{
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            openAutomatically?: boolean | undefined;
             uid: string;
             type: "showTour";
             steps: {
@@ -11214,7 +11213,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                openAutomatically?: boolean | undefined;
                 uid: string;
                 type: "showTour";
                 steps: {
