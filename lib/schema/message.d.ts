@@ -394,7 +394,7 @@ export declare const messageSchema: yup.ObjectSchema<{
     files: (import("./utils/firestore").DocumentReferenceLike<unknown> | undefined)[] | undefined;
     filesDeleted: boolean | undefined;
     externalId: string | undefined;
-    role: NonNullable<"assistant" | "user" | "tool" | "system" | undefined>;
+    role: NonNullable<"assistant" | "tool" | "user" | "system" | undefined>;
 }, yup.AnyObject, {
     createdAt: undefined;
     updatedAt: undefined;

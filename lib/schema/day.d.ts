@@ -1513,6 +1513,10 @@ export declare const logsById: yup.Lazy<{
             suggestedResponses?: string[] | undefined;
             uid: string;
             type: "gpt";
+            message: {
+                role?: "assistant" | "tool" | undefined;
+                tool_calls?: (import("openai/resources").ChatCompletionMessageToolCall | undefined)[] | undefined;
+            };
             date: {
                 isEqual?: any;
                 toMillis?: any;
@@ -8258,6 +8262,10 @@ export declare const daySchema: yup.ObjectSchema<{
                 suggestedResponses?: string[] | undefined;
                 uid: string;
                 type: "gpt";
+                message: {
+                    role?: "assistant" | "tool" | undefined;
+                    tool_calls?: (import("openai/resources").ChatCompletionMessageToolCall | undefined)[] | undefined;
+                };
                 date: {
                     isEqual?: any;
                     toMillis?: any;

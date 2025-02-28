@@ -1,3 +1,4 @@
+import { ChatCompletionMessageToolCall } from 'openai/resources';
 import * as yup from 'yup';
 export declare const gptLogSchema: yup.ObjectSchema<{
     createdAt: {
@@ -739,6 +740,10 @@ export declare const gptLogSchema: yup.ObjectSchema<{
     senderName: string | null | undefined;
     role: "assistant";
     suggestedResponses: string[] | undefined;
+    message: {
+        role?: "assistant" | "tool" | undefined;
+        tool_calls?: (ChatCompletionMessageToolCall | undefined)[] | undefined;
+    };
 }, yup.AnyObject, {
     createdAt: undefined;
     updatedAt: undefined;
@@ -763,5 +768,9 @@ export declare const gptLogSchema: yup.ObjectSchema<{
     senderName: undefined;
     role: undefined;
     suggestedResponses: "";
+    message: {
+        role: undefined;
+        tool_calls: "";
+    };
 }, "">;
 export type GptLogValue = yup.InferType<typeof gptLogSchema>;

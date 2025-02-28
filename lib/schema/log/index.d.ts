@@ -1531,6 +1531,10 @@ export declare const logSchema: yup.Lazy<WithTacticsById<{
     suggestedResponses?: string[] | undefined;
     uid: string;
     type: "gpt";
+    message: {
+        role?: "assistant" | "tool" | undefined;
+        tool_calls?: (import("openai/resources").ChatCompletionMessageToolCall | undefined)[] | undefined;
+    };
     date: {
         isEqual?: any;
         toMillis?: any;

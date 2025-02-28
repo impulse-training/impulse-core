@@ -1,5 +1,8 @@
 import { compact, flatMap } from 'lodash';
-import { ChatCompletionMessageParam } from 'openai/resources';
+import {
+  ChatCompletionAssistantMessageParam,
+  ChatCompletionMessageParam,
+} from 'openai/resources';
 import { GptLogValue, LogValue, UserLogValue } from '../../schema';
 import { formatBehaviorLimit } from '../behaviors';
 
@@ -85,10 +88,22 @@ export function getGptPayload(
   }
 
   if (hasRole(log)) {
-    return {
-      role: log.role,
-      content: text,
-    };
+    if (log.role === 'assistant') {
+      const output: ChatCompletionAssistantMessageParam = {
+        role: log.role,
+        content: text,
+        // TODO: the GPT messages is mixed-in
+        tool_calls: (log as any).message.tool_calls,
+      };
+      return output;
+    }
+
+    if (log.role === 'user') {
+      return {
+        role: log.role,
+        content: text,
+      };
+    }
   }
 
   return;
