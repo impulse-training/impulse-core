@@ -48,6 +48,7 @@ export declare const profileSchema: yup.ObjectSchema<{
     isOnboardingComplete: boolean | undefined;
     parentIds: string[] | undefined;
     debriefReminderDelayMinutes: number | null | undefined;
+    agentType: NonNullable<import("./thread").AgentType | undefined>;
     androidPermissions: {
         [x: string]: NonNullable<boolean | undefined>;
     } | null | undefined;
@@ -105,6 +106,7 @@ export declare const profileSchema: yup.ObjectSchema<{
     isOnboardingComplete: undefined;
     parentIds: "";
     debriefReminderDelayMinutes: undefined;
+    agentType: undefined;
     androidPermissions: undefined;
     defaultBehaviorDoc: undefined;
     behaviorsDescription: undefined;

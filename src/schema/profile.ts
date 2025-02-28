@@ -1,6 +1,7 @@
 import { AppStateStatus } from 'react-native';
 import * as yup from 'yup';
 import { notificationOptionSchema } from './notification';
+import { agentType } from './thread';
 import { optionalStringArray, requiredStringArray } from './utils/array';
 import { documentReferenceSchema } from './utils/firestore';
 import { objectOf, optionalObjectOf } from './utils/objectOf';
@@ -24,6 +25,9 @@ export const profileSchema = yup.object({
   isOnboardingComplete: yup.boolean(),
   parentIds: optionalStringArray,
   debriefReminderDelayMinutes: yup.number().nullable(),
+
+  // This determines the type of GPT agent that they're connected to
+  agentType: agentType.required(),
 
   androidPermissions: optionalObjectOf(yup.boolean().required()),
 

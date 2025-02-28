@@ -1,5 +1,5 @@
 import * as Factory from 'factory.ts';
-import { ProfileValue } from '../schema';
+import { AgentType, ProfileValue } from '../schema';
 import { TimestampLike } from '../utils/firestore/TimestampLike';
 
 export const makeProfileFactory = (TimestampKlass: typeof TimestampLike) =>
@@ -7,6 +7,7 @@ export const makeProfileFactory = (TimestampKlass: typeof TimestampLike) =>
     createdAt: TimestampKlass.now(),
     updatedAt: TimestampKlass.now(),
     region: 'US',
+    agentType: AgentType.ONBOARDING,
     historicalInsights: ['The user is struggling with YouTube addiction.'],
     recentSummaries: {},
     timezone: 'America/Bogota',
