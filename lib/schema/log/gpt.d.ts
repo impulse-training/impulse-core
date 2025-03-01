@@ -741,9 +741,14 @@ export declare const gptLogSchema: yup.ObjectSchema<{
     role: "assistant";
     suggestedResponses: string[] | undefined;
     message: {
-        role?: "assistant" | "tool" | undefined;
+        role?: "assistant" | undefined;
         tool_calls?: (ChatCompletionMessageToolCall | undefined)[] | undefined;
     };
+    toolCallResponses: {
+        role: "tool";
+        tool_call_id: string;
+        content: string;
+    }[] | undefined;
 }, yup.AnyObject, {
     createdAt: undefined;
     updatedAt: undefined;
@@ -772,5 +777,6 @@ export declare const gptLogSchema: yup.ObjectSchema<{
         role: undefined;
         tool_calls: "";
     };
+    toolCallResponses: "";
 }, "">;
 export type GptLogValue = yup.InferType<typeof gptLogSchema>;

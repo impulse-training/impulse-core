@@ -1511,10 +1511,15 @@ export declare const logsById: yup.Lazy<{
             senderUid?: string | null | undefined;
             senderName?: string | null | undefined;
             suggestedResponses?: string[] | undefined;
+            toolCallResponses?: {
+                role: "tool";
+                tool_call_id: string;
+                content: string;
+            }[] | undefined;
             uid: string;
             type: "gpt";
             message: {
-                role?: "assistant" | "tool" | undefined;
+                role?: "assistant" | undefined;
                 tool_calls?: (import("openai/resources").ChatCompletionMessageToolCall | undefined)[] | undefined;
             };
             date: {
@@ -8260,10 +8265,15 @@ export declare const daySchema: yup.ObjectSchema<{
                 senderUid?: string | null | undefined;
                 senderName?: string | null | undefined;
                 suggestedResponses?: string[] | undefined;
+                toolCallResponses?: {
+                    role: "tool";
+                    tool_call_id: string;
+                    content: string;
+                }[] | undefined;
                 uid: string;
                 type: "gpt";
                 message: {
-                    role?: "assistant" | "tool" | undefined;
+                    role?: "assistant" | undefined;
                     tool_calls?: (import("openai/resources").ChatCompletionMessageToolCall | undefined)[] | undefined;
                 };
                 date: {
