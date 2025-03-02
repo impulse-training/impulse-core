@@ -91,12 +91,9 @@ export declare const factories: {
                                     toDate: Function;
                                 } | null | undefined;
                                 sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                                sharedWithIssueIds?: string[] | undefined;
                                 uid?: string | undefined;
                                 recommendedForIssueIds?: string[] | undefined;
-                                recommendedForIssueOrdinals?: {
-                                    [x: string]: number;
-                                } | null | undefined;
+                                isDemoTactic?: boolean | undefined;
                                 prompt?: string | undefined;
                                 isShared?: boolean | undefined;
                                 description?: string | null | undefined;
@@ -136,12 +133,9 @@ export declare const factories: {
                                     toDate: Function;
                                 } | null | undefined;
                                 sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                                sharedWithIssueIds?: string[] | undefined;
                                 uid?: string | undefined;
                                 recommendedForIssueIds?: string[] | undefined;
-                                recommendedForIssueOrdinals?: {
-                                    [x: string]: number;
-                                } | null | undefined;
+                                isDemoTactic?: boolean | undefined;
                                 prompt?: string | undefined;
                                 isShared?: boolean | undefined;
                                 description?: string | null | undefined;
@@ -178,12 +172,9 @@ export declare const factories: {
                                     toDate: Function;
                                 } | null | undefined;
                                 sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                                sharedWithIssueIds?: string[] | undefined;
                                 uid?: string | undefined;
                                 recommendedForIssueIds?: string[] | undefined;
-                                recommendedForIssueOrdinals?: {
-                                    [x: string]: number;
-                                } | null | undefined;
+                                isDemoTactic?: boolean | undefined;
                                 prompt?: string | undefined;
                                 isShared?: boolean | undefined;
                                 description?: string | null | undefined;
@@ -220,12 +211,9 @@ export declare const factories: {
                                     toDate: Function;
                                 } | null | undefined;
                                 sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                                sharedWithIssueIds?: string[] | undefined;
                                 uid?: string | undefined;
                                 recommendedForIssueIds?: string[] | undefined;
-                                recommendedForIssueOrdinals?: {
-                                    [x: string]: number;
-                                } | null | undefined;
+                                isDemoTactic?: boolean | undefined;
                                 isShared?: boolean | undefined;
                                 description?: string | null | undefined;
                                 pastTenseTitle?: string | undefined;
@@ -270,12 +258,9 @@ export declare const factories: {
                                     toDate: Function;
                                 } | null | undefined;
                                 sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                                sharedWithIssueIds?: string[] | undefined;
                                 uid?: string | undefined;
                                 recommendedForIssueIds?: string[] | undefined;
-                                recommendedForIssueOrdinals?: {
-                                    [x: string]: number;
-                                } | null | undefined;
+                                isDemoTactic?: boolean | undefined;
                                 prompt?: string | undefined;
                                 isShared?: boolean | undefined;
                                 description?: string | null | undefined;
@@ -315,12 +300,9 @@ export declare const factories: {
                                     toDate: Function;
                                 } | null | undefined;
                                 sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                                sharedWithIssueIds?: string[] | undefined;
                                 uid?: string | undefined;
                                 recommendedForIssueIds?: string[] | undefined;
-                                recommendedForIssueOrdinals?: {
-                                    [x: string]: number;
-                                } | null | undefined;
+                                isDemoTactic?: boolean | undefined;
                                 prompt?: string | undefined;
                                 isShared?: boolean | undefined;
                                 description?: string | null | undefined;
@@ -357,12 +339,9 @@ export declare const factories: {
                                     toDate: Function;
                                 } | null | undefined;
                                 sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                                sharedWithIssueIds?: string[] | undefined;
                                 uid?: string | undefined;
                                 recommendedForIssueIds?: string[] | undefined;
-                                recommendedForIssueOrdinals?: {
-                                    [x: string]: number;
-                                } | null | undefined;
+                                isDemoTactic?: boolean | undefined;
                                 prompt?: string | undefined;
                                 isShared?: boolean | undefined;
                                 description?: string | null | undefined;
@@ -428,12 +407,9 @@ export declare const factories: {
                         toDate: Function;
                     } | null | undefined;
                     sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                    sharedWithIssueIds?: string[] | undefined;
                     uid?: string | undefined;
                     recommendedForIssueIds?: string[] | undefined;
-                    recommendedForIssueOrdinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
+                    isDemoTactic?: boolean | undefined;
                     prompt?: string | undefined;
                     isShared?: boolean | undefined;
                     description?: string | null | undefined;
@@ -473,12 +449,9 @@ export declare const factories: {
                         toDate: Function;
                     } | null | undefined;
                     sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                    sharedWithIssueIds?: string[] | undefined;
                     uid?: string | undefined;
                     recommendedForIssueIds?: string[] | undefined;
-                    recommendedForIssueOrdinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
+                    isDemoTactic?: boolean | undefined;
                     prompt?: string | undefined;
                     isShared?: boolean | undefined;
                     description?: string | null | undefined;
@@ -515,12 +488,9 @@ export declare const factories: {
                         toDate: Function;
                     } | null | undefined;
                     sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                    sharedWithIssueIds?: string[] | undefined;
                     uid?: string | undefined;
                     recommendedForIssueIds?: string[] | undefined;
-                    recommendedForIssueOrdinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
+                    isDemoTactic?: boolean | undefined;
                     prompt?: string | undefined;
                     isShared?: boolean | undefined;
                     description?: string | null | undefined;
@@ -557,12 +527,9 @@ export declare const factories: {
                         toDate: Function;
                     } | null | undefined;
                     sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                    sharedWithIssueIds?: string[] | undefined;
                     uid?: string | undefined;
                     recommendedForIssueIds?: string[] | undefined;
-                    recommendedForIssueOrdinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
+                    isDemoTactic?: boolean | undefined;
                     isShared?: boolean | undefined;
                     description?: string | null | undefined;
                     pastTenseTitle?: string | undefined;
@@ -607,12 +574,9 @@ export declare const factories: {
                         toDate: Function;
                     } | null | undefined;
                     sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                    sharedWithIssueIds?: string[] | undefined;
                     uid?: string | undefined;
                     recommendedForIssueIds?: string[] | undefined;
-                    recommendedForIssueOrdinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
+                    isDemoTactic?: boolean | undefined;
                     prompt?: string | undefined;
                     isShared?: boolean | undefined;
                     description?: string | null | undefined;
@@ -652,12 +616,9 @@ export declare const factories: {
                         toDate: Function;
                     } | null | undefined;
                     sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                    sharedWithIssueIds?: string[] | undefined;
                     uid?: string | undefined;
                     recommendedForIssueIds?: string[] | undefined;
-                    recommendedForIssueOrdinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
+                    isDemoTactic?: boolean | undefined;
                     prompt?: string | undefined;
                     isShared?: boolean | undefined;
                     description?: string | null | undefined;
@@ -694,12 +655,9 @@ export declare const factories: {
                         toDate: Function;
                     } | null | undefined;
                     sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                    sharedWithIssueIds?: string[] | undefined;
                     uid?: string | undefined;
                     recommendedForIssueIds?: string[] | undefined;
-                    recommendedForIssueOrdinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
+                    isDemoTactic?: boolean | undefined;
                     prompt?: string | undefined;
                     isShared?: boolean | undefined;
                     description?: string | null | undefined;
@@ -861,12 +819,9 @@ export declare const factories: {
                                             toDate: Function;
                                         } | null | undefined;
                                         sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                                        sharedWithIssueIds?: string[] | undefined;
                                         uid?: string | undefined;
                                         recommendedForIssueIds?: string[] | undefined;
-                                        recommendedForIssueOrdinals?: {
-                                            [x: string]: number;
-                                        } | null | undefined;
+                                        isDemoTactic?: boolean | undefined;
                                         prompt?: string | undefined;
                                         isShared?: boolean | undefined;
                                         description?: string | null | undefined;
@@ -906,12 +861,9 @@ export declare const factories: {
                                             toDate: Function;
                                         } | null | undefined;
                                         sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                                        sharedWithIssueIds?: string[] | undefined;
                                         uid?: string | undefined;
                                         recommendedForIssueIds?: string[] | undefined;
-                                        recommendedForIssueOrdinals?: {
-                                            [x: string]: number;
-                                        } | null | undefined;
+                                        isDemoTactic?: boolean | undefined;
                                         prompt?: string | undefined;
                                         isShared?: boolean | undefined;
                                         description?: string | null | undefined;
@@ -948,12 +900,9 @@ export declare const factories: {
                                             toDate: Function;
                                         } | null | undefined;
                                         sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                                        sharedWithIssueIds?: string[] | undefined;
                                         uid?: string | undefined;
                                         recommendedForIssueIds?: string[] | undefined;
-                                        recommendedForIssueOrdinals?: {
-                                            [x: string]: number;
-                                        } | null | undefined;
+                                        isDemoTactic?: boolean | undefined;
                                         prompt?: string | undefined;
                                         isShared?: boolean | undefined;
                                         description?: string | null | undefined;
@@ -990,12 +939,9 @@ export declare const factories: {
                                             toDate: Function;
                                         } | null | undefined;
                                         sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                                        sharedWithIssueIds?: string[] | undefined;
                                         uid?: string | undefined;
                                         recommendedForIssueIds?: string[] | undefined;
-                                        recommendedForIssueOrdinals?: {
-                                            [x: string]: number;
-                                        } | null | undefined;
+                                        isDemoTactic?: boolean | undefined;
                                         isShared?: boolean | undefined;
                                         description?: string | null | undefined;
                                         pastTenseTitle?: string | undefined;
@@ -1040,12 +986,9 @@ export declare const factories: {
                                             toDate: Function;
                                         } | null | undefined;
                                         sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                                        sharedWithIssueIds?: string[] | undefined;
                                         uid?: string | undefined;
                                         recommendedForIssueIds?: string[] | undefined;
-                                        recommendedForIssueOrdinals?: {
-                                            [x: string]: number;
-                                        } | null | undefined;
+                                        isDemoTactic?: boolean | undefined;
                                         prompt?: string | undefined;
                                         isShared?: boolean | undefined;
                                         description?: string | null | undefined;
@@ -1085,12 +1028,9 @@ export declare const factories: {
                                             toDate: Function;
                                         } | null | undefined;
                                         sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                                        sharedWithIssueIds?: string[] | undefined;
                                         uid?: string | undefined;
                                         recommendedForIssueIds?: string[] | undefined;
-                                        recommendedForIssueOrdinals?: {
-                                            [x: string]: number;
-                                        } | null | undefined;
+                                        isDemoTactic?: boolean | undefined;
                                         prompt?: string | undefined;
                                         isShared?: boolean | undefined;
                                         description?: string | null | undefined;
@@ -1127,12 +1067,9 @@ export declare const factories: {
                                             toDate: Function;
                                         } | null | undefined;
                                         sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                                        sharedWithIssueIds?: string[] | undefined;
                                         uid?: string | undefined;
                                         recommendedForIssueIds?: string[] | undefined;
-                                        recommendedForIssueOrdinals?: {
-                                            [x: string]: number;
-                                        } | null | undefined;
+                                        isDemoTactic?: boolean | undefined;
                                         prompt?: string | undefined;
                                         isShared?: boolean | undefined;
                                         description?: string | null | undefined;
@@ -1325,12 +1262,9 @@ export declare const factories: {
                         toDate: Function;
                     } | null | undefined;
                     sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                    sharedWithIssueIds?: string[] | undefined;
                     uid?: string | undefined;
                     recommendedForIssueIds?: string[] | undefined;
-                    recommendedForIssueOrdinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
+                    isDemoTactic?: boolean | undefined;
                     prompt?: string | undefined;
                     isShared?: boolean | undefined;
                     description?: string | null | undefined;
@@ -1370,12 +1304,9 @@ export declare const factories: {
                         toDate: Function;
                     } | null | undefined;
                     sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                    sharedWithIssueIds?: string[] | undefined;
                     uid?: string | undefined;
                     recommendedForIssueIds?: string[] | undefined;
-                    recommendedForIssueOrdinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
+                    isDemoTactic?: boolean | undefined;
                     prompt?: string | undefined;
                     isShared?: boolean | undefined;
                     description?: string | null | undefined;
@@ -1412,12 +1343,9 @@ export declare const factories: {
                         toDate: Function;
                     } | null | undefined;
                     sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                    sharedWithIssueIds?: string[] | undefined;
                     uid?: string | undefined;
                     recommendedForIssueIds?: string[] | undefined;
-                    recommendedForIssueOrdinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
+                    isDemoTactic?: boolean | undefined;
                     prompt?: string | undefined;
                     isShared?: boolean | undefined;
                     description?: string | null | undefined;
@@ -1454,12 +1382,9 @@ export declare const factories: {
                         toDate: Function;
                     } | null | undefined;
                     sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                    sharedWithIssueIds?: string[] | undefined;
                     uid?: string | undefined;
                     recommendedForIssueIds?: string[] | undefined;
-                    recommendedForIssueOrdinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
+                    isDemoTactic?: boolean | undefined;
                     isShared?: boolean | undefined;
                     description?: string | null | undefined;
                     pastTenseTitle?: string | undefined;
@@ -1504,12 +1429,9 @@ export declare const factories: {
                         toDate: Function;
                     } | null | undefined;
                     sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                    sharedWithIssueIds?: string[] | undefined;
                     uid?: string | undefined;
                     recommendedForIssueIds?: string[] | undefined;
-                    recommendedForIssueOrdinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
+                    isDemoTactic?: boolean | undefined;
                     prompt?: string | undefined;
                     isShared?: boolean | undefined;
                     description?: string | null | undefined;
@@ -1549,12 +1471,9 @@ export declare const factories: {
                         toDate: Function;
                     } | null | undefined;
                     sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                    sharedWithIssueIds?: string[] | undefined;
                     uid?: string | undefined;
                     recommendedForIssueIds?: string[] | undefined;
-                    recommendedForIssueOrdinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
+                    isDemoTactic?: boolean | undefined;
                     prompt?: string | undefined;
                     isShared?: boolean | undefined;
                     description?: string | null | undefined;
@@ -1591,12 +1510,9 @@ export declare const factories: {
                         toDate: Function;
                     } | null | undefined;
                     sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                    sharedWithIssueIds?: string[] | undefined;
                     uid?: string | undefined;
                     recommendedForIssueIds?: string[] | undefined;
-                    recommendedForIssueOrdinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
+                    isDemoTactic?: boolean | undefined;
                     prompt?: string | undefined;
                     isShared?: boolean | undefined;
                     description?: string | null | undefined;
@@ -1625,7 +1541,7 @@ export declare const factories: {
         minute: number;
         weekdays: (number | undefined)[];
     }, "name" | "type" | "tacticsById" | "hour" | "minute" | "weekdays" | ("createdAt" | "updatedAt" | "ordinal")>;
-    tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "sourceFile" | "sharedWithIssueIds" | "uid" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "prompt" | "isShared" | "description" | "type" | "pastTenseTitle" | "debriefAfterMinutes" | "image" | "backgroundColor" | "likesCount" | "timerSeconds" | "isSuggested">;
+    tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "sourceFile" | "uid" | "recommendedForIssueIds" | "isDemoTactic" | "prompt" | "isShared" | "description" | "type" | "pastTenseTitle" | "debriefAfterMinutes" | "image" | "backgroundColor" | "likesCount" | "timerSeconds" | "isSuggested">;
     suggestionFactory: import("factory.ts").Factory<{
         createdAt?: {
             isEqual?: any;
@@ -1694,12 +1610,9 @@ export declare const factories: {
                         toDate: Function;
                     } | null | undefined;
                     sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                    sharedWithIssueIds?: string[] | undefined;
                     uid?: string | undefined;
                     recommendedForIssueIds?: string[] | undefined;
-                    recommendedForIssueOrdinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
+                    isDemoTactic?: boolean | undefined;
                     prompt?: string | undefined;
                     isShared?: boolean | undefined;
                     description?: string | null | undefined;
@@ -1739,12 +1652,9 @@ export declare const factories: {
                         toDate: Function;
                     } | null | undefined;
                     sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                    sharedWithIssueIds?: string[] | undefined;
                     uid?: string | undefined;
                     recommendedForIssueIds?: string[] | undefined;
-                    recommendedForIssueOrdinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
+                    isDemoTactic?: boolean | undefined;
                     prompt?: string | undefined;
                     isShared?: boolean | undefined;
                     description?: string | null | undefined;
@@ -1781,12 +1691,9 @@ export declare const factories: {
                         toDate: Function;
                     } | null | undefined;
                     sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                    sharedWithIssueIds?: string[] | undefined;
                     uid?: string | undefined;
                     recommendedForIssueIds?: string[] | undefined;
-                    recommendedForIssueOrdinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
+                    isDemoTactic?: boolean | undefined;
                     prompt?: string | undefined;
                     isShared?: boolean | undefined;
                     description?: string | null | undefined;
@@ -1823,12 +1730,9 @@ export declare const factories: {
                         toDate: Function;
                     } | null | undefined;
                     sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                    sharedWithIssueIds?: string[] | undefined;
                     uid?: string | undefined;
                     recommendedForIssueIds?: string[] | undefined;
-                    recommendedForIssueOrdinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
+                    isDemoTactic?: boolean | undefined;
                     isShared?: boolean | undefined;
                     description?: string | null | undefined;
                     pastTenseTitle?: string | undefined;
@@ -1873,12 +1777,9 @@ export declare const factories: {
                         toDate: Function;
                     } | null | undefined;
                     sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                    sharedWithIssueIds?: string[] | undefined;
                     uid?: string | undefined;
                     recommendedForIssueIds?: string[] | undefined;
-                    recommendedForIssueOrdinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
+                    isDemoTactic?: boolean | undefined;
                     prompt?: string | undefined;
                     isShared?: boolean | undefined;
                     description?: string | null | undefined;
@@ -1918,12 +1819,9 @@ export declare const factories: {
                         toDate: Function;
                     } | null | undefined;
                     sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                    sharedWithIssueIds?: string[] | undefined;
                     uid?: string | undefined;
                     recommendedForIssueIds?: string[] | undefined;
-                    recommendedForIssueOrdinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
+                    isDemoTactic?: boolean | undefined;
                     prompt?: string | undefined;
                     isShared?: boolean | undefined;
                     description?: string | null | undefined;
@@ -1960,12 +1858,9 @@ export declare const factories: {
                         toDate: Function;
                     } | null | undefined;
                     sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                    sharedWithIssueIds?: string[] | undefined;
                     uid?: string | undefined;
                     recommendedForIssueIds?: string[] | undefined;
-                    recommendedForIssueOrdinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
+                    isDemoTactic?: boolean | undefined;
                     prompt?: string | undefined;
                     isShared?: boolean | undefined;
                     description?: string | null | undefined;

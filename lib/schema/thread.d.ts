@@ -115,12 +115,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                             toDate: Function;
                                         } | null | undefined;
                                         sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                                        sharedWithIssueIds?: string[] | undefined;
                                         uid?: string | undefined;
                                         recommendedForIssueIds?: string[] | undefined;
-                                        recommendedForIssueOrdinals?: {
-                                            [x: string]: number;
-                                        } | null | undefined;
+                                        isDemoTactic?: boolean | undefined;
                                         prompt?: string | undefined;
                                         isShared?: boolean | undefined;
                                         description?: string | null | undefined;
@@ -160,12 +157,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                             toDate: Function;
                                         } | null | undefined;
                                         sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                                        sharedWithIssueIds?: string[] | undefined;
                                         uid?: string | undefined;
                                         recommendedForIssueIds?: string[] | undefined;
-                                        recommendedForIssueOrdinals?: {
-                                            [x: string]: number;
-                                        } | null | undefined;
+                                        isDemoTactic?: boolean | undefined;
                                         prompt?: string | undefined;
                                         isShared?: boolean | undefined;
                                         description?: string | null | undefined;
@@ -202,12 +196,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                             toDate: Function;
                                         } | null | undefined;
                                         sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                                        sharedWithIssueIds?: string[] | undefined;
                                         uid?: string | undefined;
                                         recommendedForIssueIds?: string[] | undefined;
-                                        recommendedForIssueOrdinals?: {
-                                            [x: string]: number;
-                                        } | null | undefined;
+                                        isDemoTactic?: boolean | undefined;
                                         prompt?: string | undefined;
                                         isShared?: boolean | undefined;
                                         description?: string | null | undefined;
@@ -244,12 +235,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                             toDate: Function;
                                         } | null | undefined;
                                         sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                                        sharedWithIssueIds?: string[] | undefined;
                                         uid?: string | undefined;
                                         recommendedForIssueIds?: string[] | undefined;
-                                        recommendedForIssueOrdinals?: {
-                                            [x: string]: number;
-                                        } | null | undefined;
+                                        isDemoTactic?: boolean | undefined;
                                         isShared?: boolean | undefined;
                                         description?: string | null | undefined;
                                         pastTenseTitle?: string | undefined;
@@ -294,12 +282,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                             toDate: Function;
                                         } | null | undefined;
                                         sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                                        sharedWithIssueIds?: string[] | undefined;
                                         uid?: string | undefined;
                                         recommendedForIssueIds?: string[] | undefined;
-                                        recommendedForIssueOrdinals?: {
-                                            [x: string]: number;
-                                        } | null | undefined;
+                                        isDemoTactic?: boolean | undefined;
                                         prompt?: string | undefined;
                                         isShared?: boolean | undefined;
                                         description?: string | null | undefined;
@@ -339,12 +324,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                             toDate: Function;
                                         } | null | undefined;
                                         sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                                        sharedWithIssueIds?: string[] | undefined;
                                         uid?: string | undefined;
                                         recommendedForIssueIds?: string[] | undefined;
-                                        recommendedForIssueOrdinals?: {
-                                            [x: string]: number;
-                                        } | null | undefined;
+                                        isDemoTactic?: boolean | undefined;
                                         prompt?: string | undefined;
                                         isShared?: boolean | undefined;
                                         description?: string | null | undefined;
@@ -381,12 +363,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                             toDate: Function;
                                         } | null | undefined;
                                         sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                                        sharedWithIssueIds?: string[] | undefined;
                                         uid?: string | undefined;
                                         recommendedForIssueIds?: string[] | undefined;
-                                        recommendedForIssueOrdinals?: {
-                                            [x: string]: number;
-                                        } | null | undefined;
+                                        isDemoTactic?: boolean | undefined;
                                         prompt?: string | undefined;
                                         isShared?: boolean | undefined;
                                         description?: string | null | undefined;
@@ -452,12 +431,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                 toDate: Function;
                             } | null | undefined;
                             sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                            sharedWithIssueIds?: string[] | undefined;
                             uid?: string | undefined;
                             recommendedForIssueIds?: string[] | undefined;
-                            recommendedForIssueOrdinals?: {
-                                [x: string]: number;
-                            } | null | undefined;
+                            isDemoTactic?: boolean | undefined;
                             prompt?: string | undefined;
                             isShared?: boolean | undefined;
                             description?: string | null | undefined;
@@ -497,12 +473,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                 toDate: Function;
                             } | null | undefined;
                             sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                            sharedWithIssueIds?: string[] | undefined;
                             uid?: string | undefined;
                             recommendedForIssueIds?: string[] | undefined;
-                            recommendedForIssueOrdinals?: {
-                                [x: string]: number;
-                            } | null | undefined;
+                            isDemoTactic?: boolean | undefined;
                             prompt?: string | undefined;
                             isShared?: boolean | undefined;
                             description?: string | null | undefined;
@@ -539,12 +512,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                 toDate: Function;
                             } | null | undefined;
                             sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                            sharedWithIssueIds?: string[] | undefined;
                             uid?: string | undefined;
                             recommendedForIssueIds?: string[] | undefined;
-                            recommendedForIssueOrdinals?: {
-                                [x: string]: number;
-                            } | null | undefined;
+                            isDemoTactic?: boolean | undefined;
                             prompt?: string | undefined;
                             isShared?: boolean | undefined;
                             description?: string | null | undefined;
@@ -581,12 +551,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                 toDate: Function;
                             } | null | undefined;
                             sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                            sharedWithIssueIds?: string[] | undefined;
                             uid?: string | undefined;
                             recommendedForIssueIds?: string[] | undefined;
-                            recommendedForIssueOrdinals?: {
-                                [x: string]: number;
-                            } | null | undefined;
+                            isDemoTactic?: boolean | undefined;
                             isShared?: boolean | undefined;
                             description?: string | null | undefined;
                             pastTenseTitle?: string | undefined;
@@ -631,12 +598,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                 toDate: Function;
                             } | null | undefined;
                             sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                            sharedWithIssueIds?: string[] | undefined;
                             uid?: string | undefined;
                             recommendedForIssueIds?: string[] | undefined;
-                            recommendedForIssueOrdinals?: {
-                                [x: string]: number;
-                            } | null | undefined;
+                            isDemoTactic?: boolean | undefined;
                             prompt?: string | undefined;
                             isShared?: boolean | undefined;
                             description?: string | null | undefined;
@@ -676,12 +640,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                 toDate: Function;
                             } | null | undefined;
                             sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                            sharedWithIssueIds?: string[] | undefined;
                             uid?: string | undefined;
                             recommendedForIssueIds?: string[] | undefined;
-                            recommendedForIssueOrdinals?: {
-                                [x: string]: number;
-                            } | null | undefined;
+                            isDemoTactic?: boolean | undefined;
                             prompt?: string | undefined;
                             isShared?: boolean | undefined;
                             description?: string | null | undefined;
@@ -718,12 +679,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                 toDate: Function;
                             } | null | undefined;
                             sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                            sharedWithIssueIds?: string[] | undefined;
                             uid?: string | undefined;
                             recommendedForIssueIds?: string[] | undefined;
-                            recommendedForIssueOrdinals?: {
-                                [x: string]: number;
-                            } | null | undefined;
+                            isDemoTactic?: boolean | undefined;
                             prompt?: string | undefined;
                             isShared?: boolean | undefined;
                             description?: string | null | undefined;
@@ -894,12 +852,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                             toDate: Function;
                                         } | null | undefined;
                                         sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                                        sharedWithIssueIds?: string[] | undefined;
                                         uid?: string | undefined;
                                         recommendedForIssueIds?: string[] | undefined;
-                                        recommendedForIssueOrdinals?: {
-                                            [x: string]: number;
-                                        } | null | undefined;
+                                        isDemoTactic?: boolean | undefined;
                                         prompt?: string | undefined;
                                         isShared?: boolean | undefined;
                                         description?: string | null | undefined;
@@ -939,12 +894,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                             toDate: Function;
                                         } | null | undefined;
                                         sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                                        sharedWithIssueIds?: string[] | undefined;
                                         uid?: string | undefined;
                                         recommendedForIssueIds?: string[] | undefined;
-                                        recommendedForIssueOrdinals?: {
-                                            [x: string]: number;
-                                        } | null | undefined;
+                                        isDemoTactic?: boolean | undefined;
                                         prompt?: string | undefined;
                                         isShared?: boolean | undefined;
                                         description?: string | null | undefined;
@@ -981,12 +933,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                             toDate: Function;
                                         } | null | undefined;
                                         sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                                        sharedWithIssueIds?: string[] | undefined;
                                         uid?: string | undefined;
                                         recommendedForIssueIds?: string[] | undefined;
-                                        recommendedForIssueOrdinals?: {
-                                            [x: string]: number;
-                                        } | null | undefined;
+                                        isDemoTactic?: boolean | undefined;
                                         prompt?: string | undefined;
                                         isShared?: boolean | undefined;
                                         description?: string | null | undefined;
@@ -1023,12 +972,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                             toDate: Function;
                                         } | null | undefined;
                                         sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                                        sharedWithIssueIds?: string[] | undefined;
                                         uid?: string | undefined;
                                         recommendedForIssueIds?: string[] | undefined;
-                                        recommendedForIssueOrdinals?: {
-                                            [x: string]: number;
-                                        } | null | undefined;
+                                        isDemoTactic?: boolean | undefined;
                                         isShared?: boolean | undefined;
                                         description?: string | null | undefined;
                                         pastTenseTitle?: string | undefined;
@@ -1073,12 +1019,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                             toDate: Function;
                                         } | null | undefined;
                                         sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                                        sharedWithIssueIds?: string[] | undefined;
                                         uid?: string | undefined;
                                         recommendedForIssueIds?: string[] | undefined;
-                                        recommendedForIssueOrdinals?: {
-                                            [x: string]: number;
-                                        } | null | undefined;
+                                        isDemoTactic?: boolean | undefined;
                                         prompt?: string | undefined;
                                         isShared?: boolean | undefined;
                                         description?: string | null | undefined;
@@ -1118,12 +1061,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                             toDate: Function;
                                         } | null | undefined;
                                         sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                                        sharedWithIssueIds?: string[] | undefined;
                                         uid?: string | undefined;
                                         recommendedForIssueIds?: string[] | undefined;
-                                        recommendedForIssueOrdinals?: {
-                                            [x: string]: number;
-                                        } | null | undefined;
+                                        isDemoTactic?: boolean | undefined;
                                         prompt?: string | undefined;
                                         isShared?: boolean | undefined;
                                         description?: string | null | undefined;
@@ -1160,12 +1100,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                             toDate: Function;
                                         } | null | undefined;
                                         sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                                        sharedWithIssueIds?: string[] | undefined;
                                         uid?: string | undefined;
                                         recommendedForIssueIds?: string[] | undefined;
-                                        recommendedForIssueOrdinals?: {
-                                            [x: string]: number;
-                                        } | null | undefined;
+                                        isDemoTactic?: boolean | undefined;
                                         prompt?: string | undefined;
                                         isShared?: boolean | undefined;
                                         description?: string | null | undefined;
@@ -1231,12 +1168,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                 toDate: Function;
                             } | null | undefined;
                             sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                            sharedWithIssueIds?: string[] | undefined;
                             uid?: string | undefined;
                             recommendedForIssueIds?: string[] | undefined;
-                            recommendedForIssueOrdinals?: {
-                                [x: string]: number;
-                            } | null | undefined;
+                            isDemoTactic?: boolean | undefined;
                             prompt?: string | undefined;
                             isShared?: boolean | undefined;
                             description?: string | null | undefined;
@@ -1276,12 +1210,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                 toDate: Function;
                             } | null | undefined;
                             sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                            sharedWithIssueIds?: string[] | undefined;
                             uid?: string | undefined;
                             recommendedForIssueIds?: string[] | undefined;
-                            recommendedForIssueOrdinals?: {
-                                [x: string]: number;
-                            } | null | undefined;
+                            isDemoTactic?: boolean | undefined;
                             prompt?: string | undefined;
                             isShared?: boolean | undefined;
                             description?: string | null | undefined;
@@ -1318,12 +1249,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                 toDate: Function;
                             } | null | undefined;
                             sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                            sharedWithIssueIds?: string[] | undefined;
                             uid?: string | undefined;
                             recommendedForIssueIds?: string[] | undefined;
-                            recommendedForIssueOrdinals?: {
-                                [x: string]: number;
-                            } | null | undefined;
+                            isDemoTactic?: boolean | undefined;
                             prompt?: string | undefined;
                             isShared?: boolean | undefined;
                             description?: string | null | undefined;
@@ -1360,12 +1288,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                 toDate: Function;
                             } | null | undefined;
                             sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                            sharedWithIssueIds?: string[] | undefined;
                             uid?: string | undefined;
                             recommendedForIssueIds?: string[] | undefined;
-                            recommendedForIssueOrdinals?: {
-                                [x: string]: number;
-                            } | null | undefined;
+                            isDemoTactic?: boolean | undefined;
                             isShared?: boolean | undefined;
                             description?: string | null | undefined;
                             pastTenseTitle?: string | undefined;
@@ -1410,12 +1335,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                 toDate: Function;
                             } | null | undefined;
                             sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                            sharedWithIssueIds?: string[] | undefined;
                             uid?: string | undefined;
                             recommendedForIssueIds?: string[] | undefined;
-                            recommendedForIssueOrdinals?: {
-                                [x: string]: number;
-                            } | null | undefined;
+                            isDemoTactic?: boolean | undefined;
                             prompt?: string | undefined;
                             isShared?: boolean | undefined;
                             description?: string | null | undefined;
@@ -1455,12 +1377,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                 toDate: Function;
                             } | null | undefined;
                             sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                            sharedWithIssueIds?: string[] | undefined;
                             uid?: string | undefined;
                             recommendedForIssueIds?: string[] | undefined;
-                            recommendedForIssueOrdinals?: {
-                                [x: string]: number;
-                            } | null | undefined;
+                            isDemoTactic?: boolean | undefined;
                             prompt?: string | undefined;
                             isShared?: boolean | undefined;
                             description?: string | null | undefined;
@@ -1497,12 +1416,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                 toDate: Function;
                             } | null | undefined;
                             sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                            sharedWithIssueIds?: string[] | undefined;
                             uid?: string | undefined;
                             recommendedForIssueIds?: string[] | undefined;
-                            recommendedForIssueOrdinals?: {
-                                [x: string]: number;
-                            } | null | undefined;
+                            isDemoTactic?: boolean | undefined;
                             prompt?: string | undefined;
                             isShared?: boolean | undefined;
                             description?: string | null | undefined;
@@ -1643,12 +1559,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                             toDate: Function;
                                         } | null | undefined;
                                         sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                                        sharedWithIssueIds?: string[] | undefined;
                                         uid?: string | undefined;
                                         recommendedForIssueIds?: string[] | undefined;
-                                        recommendedForIssueOrdinals?: {
-                                            [x: string]: number;
-                                        } | null | undefined;
+                                        isDemoTactic?: boolean | undefined;
                                         prompt?: string | undefined;
                                         isShared?: boolean | undefined;
                                         description?: string | null | undefined;
@@ -1688,12 +1601,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                             toDate: Function;
                                         } | null | undefined;
                                         sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                                        sharedWithIssueIds?: string[] | undefined;
                                         uid?: string | undefined;
                                         recommendedForIssueIds?: string[] | undefined;
-                                        recommendedForIssueOrdinals?: {
-                                            [x: string]: number;
-                                        } | null | undefined;
+                                        isDemoTactic?: boolean | undefined;
                                         prompt?: string | undefined;
                                         isShared?: boolean | undefined;
                                         description?: string | null | undefined;
@@ -1730,12 +1640,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                             toDate: Function;
                                         } | null | undefined;
                                         sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                                        sharedWithIssueIds?: string[] | undefined;
                                         uid?: string | undefined;
                                         recommendedForIssueIds?: string[] | undefined;
-                                        recommendedForIssueOrdinals?: {
-                                            [x: string]: number;
-                                        } | null | undefined;
+                                        isDemoTactic?: boolean | undefined;
                                         prompt?: string | undefined;
                                         isShared?: boolean | undefined;
                                         description?: string | null | undefined;
@@ -1772,12 +1679,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                             toDate: Function;
                                         } | null | undefined;
                                         sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                                        sharedWithIssueIds?: string[] | undefined;
                                         uid?: string | undefined;
                                         recommendedForIssueIds?: string[] | undefined;
-                                        recommendedForIssueOrdinals?: {
-                                            [x: string]: number;
-                                        } | null | undefined;
+                                        isDemoTactic?: boolean | undefined;
                                         isShared?: boolean | undefined;
                                         description?: string | null | undefined;
                                         pastTenseTitle?: string | undefined;
@@ -1822,12 +1726,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                             toDate: Function;
                                         } | null | undefined;
                                         sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                                        sharedWithIssueIds?: string[] | undefined;
                                         uid?: string | undefined;
                                         recommendedForIssueIds?: string[] | undefined;
-                                        recommendedForIssueOrdinals?: {
-                                            [x: string]: number;
-                                        } | null | undefined;
+                                        isDemoTactic?: boolean | undefined;
                                         prompt?: string | undefined;
                                         isShared?: boolean | undefined;
                                         description?: string | null | undefined;
@@ -1867,12 +1768,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                             toDate: Function;
                                         } | null | undefined;
                                         sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                                        sharedWithIssueIds?: string[] | undefined;
                                         uid?: string | undefined;
                                         recommendedForIssueIds?: string[] | undefined;
-                                        recommendedForIssueOrdinals?: {
-                                            [x: string]: number;
-                                        } | null | undefined;
+                                        isDemoTactic?: boolean | undefined;
                                         prompt?: string | undefined;
                                         isShared?: boolean | undefined;
                                         description?: string | null | undefined;
@@ -1909,12 +1807,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                             toDate: Function;
                                         } | null | undefined;
                                         sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                                        sharedWithIssueIds?: string[] | undefined;
                                         uid?: string | undefined;
                                         recommendedForIssueIds?: string[] | undefined;
-                                        recommendedForIssueOrdinals?: {
-                                            [x: string]: number;
-                                        } | null | undefined;
+                                        isDemoTactic?: boolean | undefined;
                                         prompt?: string | undefined;
                                         isShared?: boolean | undefined;
                                         description?: string | null | undefined;
@@ -1980,12 +1875,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                 toDate: Function;
                             } | null | undefined;
                             sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                            sharedWithIssueIds?: string[] | undefined;
                             uid?: string | undefined;
                             recommendedForIssueIds?: string[] | undefined;
-                            recommendedForIssueOrdinals?: {
-                                [x: string]: number;
-                            } | null | undefined;
+                            isDemoTactic?: boolean | undefined;
                             prompt?: string | undefined;
                             isShared?: boolean | undefined;
                             description?: string | null | undefined;
@@ -2025,12 +1917,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                 toDate: Function;
                             } | null | undefined;
                             sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                            sharedWithIssueIds?: string[] | undefined;
                             uid?: string | undefined;
                             recommendedForIssueIds?: string[] | undefined;
-                            recommendedForIssueOrdinals?: {
-                                [x: string]: number;
-                            } | null | undefined;
+                            isDemoTactic?: boolean | undefined;
                             prompt?: string | undefined;
                             isShared?: boolean | undefined;
                             description?: string | null | undefined;
@@ -2067,12 +1956,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                 toDate: Function;
                             } | null | undefined;
                             sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                            sharedWithIssueIds?: string[] | undefined;
                             uid?: string | undefined;
                             recommendedForIssueIds?: string[] | undefined;
-                            recommendedForIssueOrdinals?: {
-                                [x: string]: number;
-                            } | null | undefined;
+                            isDemoTactic?: boolean | undefined;
                             prompt?: string | undefined;
                             isShared?: boolean | undefined;
                             description?: string | null | undefined;
@@ -2109,12 +1995,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                 toDate: Function;
                             } | null | undefined;
                             sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                            sharedWithIssueIds?: string[] | undefined;
                             uid?: string | undefined;
                             recommendedForIssueIds?: string[] | undefined;
-                            recommendedForIssueOrdinals?: {
-                                [x: string]: number;
-                            } | null | undefined;
+                            isDemoTactic?: boolean | undefined;
                             isShared?: boolean | undefined;
                             description?: string | null | undefined;
                             pastTenseTitle?: string | undefined;
@@ -2159,12 +2042,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                 toDate: Function;
                             } | null | undefined;
                             sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                            sharedWithIssueIds?: string[] | undefined;
                             uid?: string | undefined;
                             recommendedForIssueIds?: string[] | undefined;
-                            recommendedForIssueOrdinals?: {
-                                [x: string]: number;
-                            } | null | undefined;
+                            isDemoTactic?: boolean | undefined;
                             prompt?: string | undefined;
                             isShared?: boolean | undefined;
                             description?: string | null | undefined;
@@ -2204,12 +2084,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                 toDate: Function;
                             } | null | undefined;
                             sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                            sharedWithIssueIds?: string[] | undefined;
                             uid?: string | undefined;
                             recommendedForIssueIds?: string[] | undefined;
-                            recommendedForIssueOrdinals?: {
-                                [x: string]: number;
-                            } | null | undefined;
+                            isDemoTactic?: boolean | undefined;
                             prompt?: string | undefined;
                             isShared?: boolean | undefined;
                             description?: string | null | undefined;
@@ -2246,12 +2123,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                 toDate: Function;
                             } | null | undefined;
                             sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                            sharedWithIssueIds?: string[] | undefined;
                             uid?: string | undefined;
                             recommendedForIssueIds?: string[] | undefined;
-                            recommendedForIssueOrdinals?: {
-                                [x: string]: number;
-                            } | null | undefined;
+                            isDemoTactic?: boolean | undefined;
                             prompt?: string | undefined;
                             isShared?: boolean | undefined;
                             description?: string | null | undefined;
@@ -2383,12 +2257,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                             toDate: Function;
                                         } | null | undefined;
                                         sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                                        sharedWithIssueIds?: string[] | undefined;
                                         uid?: string | undefined;
                                         recommendedForIssueIds?: string[] | undefined;
-                                        recommendedForIssueOrdinals?: {
-                                            [x: string]: number;
-                                        } | null | undefined;
+                                        isDemoTactic?: boolean | undefined;
                                         prompt?: string | undefined;
                                         isShared?: boolean | undefined;
                                         description?: string | null | undefined;
@@ -2428,12 +2299,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                             toDate: Function;
                                         } | null | undefined;
                                         sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                                        sharedWithIssueIds?: string[] | undefined;
                                         uid?: string | undefined;
                                         recommendedForIssueIds?: string[] | undefined;
-                                        recommendedForIssueOrdinals?: {
-                                            [x: string]: number;
-                                        } | null | undefined;
+                                        isDemoTactic?: boolean | undefined;
                                         prompt?: string | undefined;
                                         isShared?: boolean | undefined;
                                         description?: string | null | undefined;
@@ -2470,12 +2338,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                             toDate: Function;
                                         } | null | undefined;
                                         sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                                        sharedWithIssueIds?: string[] | undefined;
                                         uid?: string | undefined;
                                         recommendedForIssueIds?: string[] | undefined;
-                                        recommendedForIssueOrdinals?: {
-                                            [x: string]: number;
-                                        } | null | undefined;
+                                        isDemoTactic?: boolean | undefined;
                                         prompt?: string | undefined;
                                         isShared?: boolean | undefined;
                                         description?: string | null | undefined;
@@ -2512,12 +2377,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                             toDate: Function;
                                         } | null | undefined;
                                         sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                                        sharedWithIssueIds?: string[] | undefined;
                                         uid?: string | undefined;
                                         recommendedForIssueIds?: string[] | undefined;
-                                        recommendedForIssueOrdinals?: {
-                                            [x: string]: number;
-                                        } | null | undefined;
+                                        isDemoTactic?: boolean | undefined;
                                         isShared?: boolean | undefined;
                                         description?: string | null | undefined;
                                         pastTenseTitle?: string | undefined;
@@ -2562,12 +2424,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                             toDate: Function;
                                         } | null | undefined;
                                         sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                                        sharedWithIssueIds?: string[] | undefined;
                                         uid?: string | undefined;
                                         recommendedForIssueIds?: string[] | undefined;
-                                        recommendedForIssueOrdinals?: {
-                                            [x: string]: number;
-                                        } | null | undefined;
+                                        isDemoTactic?: boolean | undefined;
                                         prompt?: string | undefined;
                                         isShared?: boolean | undefined;
                                         description?: string | null | undefined;
@@ -2607,12 +2466,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                             toDate: Function;
                                         } | null | undefined;
                                         sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                                        sharedWithIssueIds?: string[] | undefined;
                                         uid?: string | undefined;
                                         recommendedForIssueIds?: string[] | undefined;
-                                        recommendedForIssueOrdinals?: {
-                                            [x: string]: number;
-                                        } | null | undefined;
+                                        isDemoTactic?: boolean | undefined;
                                         prompt?: string | undefined;
                                         isShared?: boolean | undefined;
                                         description?: string | null | undefined;
@@ -2649,12 +2505,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                             toDate: Function;
                                         } | null | undefined;
                                         sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                                        sharedWithIssueIds?: string[] | undefined;
                                         uid?: string | undefined;
                                         recommendedForIssueIds?: string[] | undefined;
-                                        recommendedForIssueOrdinals?: {
-                                            [x: string]: number;
-                                        } | null | undefined;
+                                        isDemoTactic?: boolean | undefined;
                                         prompt?: string | undefined;
                                         isShared?: boolean | undefined;
                                         description?: string | null | undefined;
@@ -2720,12 +2573,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                 toDate: Function;
                             } | null | undefined;
                             sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                            sharedWithIssueIds?: string[] | undefined;
                             uid?: string | undefined;
                             recommendedForIssueIds?: string[] | undefined;
-                            recommendedForIssueOrdinals?: {
-                                [x: string]: number;
-                            } | null | undefined;
+                            isDemoTactic?: boolean | undefined;
                             prompt?: string | undefined;
                             isShared?: boolean | undefined;
                             description?: string | null | undefined;
@@ -2765,12 +2615,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                 toDate: Function;
                             } | null | undefined;
                             sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                            sharedWithIssueIds?: string[] | undefined;
                             uid?: string | undefined;
                             recommendedForIssueIds?: string[] | undefined;
-                            recommendedForIssueOrdinals?: {
-                                [x: string]: number;
-                            } | null | undefined;
+                            isDemoTactic?: boolean | undefined;
                             prompt?: string | undefined;
                             isShared?: boolean | undefined;
                             description?: string | null | undefined;
@@ -2807,12 +2654,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                 toDate: Function;
                             } | null | undefined;
                             sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                            sharedWithIssueIds?: string[] | undefined;
                             uid?: string | undefined;
                             recommendedForIssueIds?: string[] | undefined;
-                            recommendedForIssueOrdinals?: {
-                                [x: string]: number;
-                            } | null | undefined;
+                            isDemoTactic?: boolean | undefined;
                             prompt?: string | undefined;
                             isShared?: boolean | undefined;
                             description?: string | null | undefined;
@@ -2849,12 +2693,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                 toDate: Function;
                             } | null | undefined;
                             sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                            sharedWithIssueIds?: string[] | undefined;
                             uid?: string | undefined;
                             recommendedForIssueIds?: string[] | undefined;
-                            recommendedForIssueOrdinals?: {
-                                [x: string]: number;
-                            } | null | undefined;
+                            isDemoTactic?: boolean | undefined;
                             isShared?: boolean | undefined;
                             description?: string | null | undefined;
                             pastTenseTitle?: string | undefined;
@@ -2899,12 +2740,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                 toDate: Function;
                             } | null | undefined;
                             sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                            sharedWithIssueIds?: string[] | undefined;
                             uid?: string | undefined;
                             recommendedForIssueIds?: string[] | undefined;
-                            recommendedForIssueOrdinals?: {
-                                [x: string]: number;
-                            } | null | undefined;
+                            isDemoTactic?: boolean | undefined;
                             prompt?: string | undefined;
                             isShared?: boolean | undefined;
                             description?: string | null | undefined;
@@ -2944,12 +2782,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                 toDate: Function;
                             } | null | undefined;
                             sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                            sharedWithIssueIds?: string[] | undefined;
                             uid?: string | undefined;
                             recommendedForIssueIds?: string[] | undefined;
-                            recommendedForIssueOrdinals?: {
-                                [x: string]: number;
-                            } | null | undefined;
+                            isDemoTactic?: boolean | undefined;
                             prompt?: string | undefined;
                             isShared?: boolean | undefined;
                             description?: string | null | undefined;
@@ -2986,12 +2821,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                 toDate: Function;
                             } | null | undefined;
                             sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                            sharedWithIssueIds?: string[] | undefined;
                             uid?: string | undefined;
                             recommendedForIssueIds?: string[] | undefined;
-                            recommendedForIssueOrdinals?: {
-                                [x: string]: number;
-                            } | null | undefined;
+                            isDemoTactic?: boolean | undefined;
                             prompt?: string | undefined;
                             isShared?: boolean | undefined;
                             description?: string | null | undefined;
@@ -3123,12 +2955,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                             toDate: Function;
                                         } | null | undefined;
                                         sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                                        sharedWithIssueIds?: string[] | undefined;
                                         uid?: string | undefined;
                                         recommendedForIssueIds?: string[] | undefined;
-                                        recommendedForIssueOrdinals?: {
-                                            [x: string]: number;
-                                        } | null | undefined;
+                                        isDemoTactic?: boolean | undefined;
                                         prompt?: string | undefined;
                                         isShared?: boolean | undefined;
                                         description?: string | null | undefined;
@@ -3168,12 +2997,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                             toDate: Function;
                                         } | null | undefined;
                                         sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                                        sharedWithIssueIds?: string[] | undefined;
                                         uid?: string | undefined;
                                         recommendedForIssueIds?: string[] | undefined;
-                                        recommendedForIssueOrdinals?: {
-                                            [x: string]: number;
-                                        } | null | undefined;
+                                        isDemoTactic?: boolean | undefined;
                                         prompt?: string | undefined;
                                         isShared?: boolean | undefined;
                                         description?: string | null | undefined;
@@ -3210,12 +3036,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                             toDate: Function;
                                         } | null | undefined;
                                         sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                                        sharedWithIssueIds?: string[] | undefined;
                                         uid?: string | undefined;
                                         recommendedForIssueIds?: string[] | undefined;
-                                        recommendedForIssueOrdinals?: {
-                                            [x: string]: number;
-                                        } | null | undefined;
+                                        isDemoTactic?: boolean | undefined;
                                         prompt?: string | undefined;
                                         isShared?: boolean | undefined;
                                         description?: string | null | undefined;
@@ -3252,12 +3075,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                             toDate: Function;
                                         } | null | undefined;
                                         sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                                        sharedWithIssueIds?: string[] | undefined;
                                         uid?: string | undefined;
                                         recommendedForIssueIds?: string[] | undefined;
-                                        recommendedForIssueOrdinals?: {
-                                            [x: string]: number;
-                                        } | null | undefined;
+                                        isDemoTactic?: boolean | undefined;
                                         isShared?: boolean | undefined;
                                         description?: string | null | undefined;
                                         pastTenseTitle?: string | undefined;
@@ -3302,12 +3122,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                             toDate: Function;
                                         } | null | undefined;
                                         sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                                        sharedWithIssueIds?: string[] | undefined;
                                         uid?: string | undefined;
                                         recommendedForIssueIds?: string[] | undefined;
-                                        recommendedForIssueOrdinals?: {
-                                            [x: string]: number;
-                                        } | null | undefined;
+                                        isDemoTactic?: boolean | undefined;
                                         prompt?: string | undefined;
                                         isShared?: boolean | undefined;
                                         description?: string | null | undefined;
@@ -3347,12 +3164,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                             toDate: Function;
                                         } | null | undefined;
                                         sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                                        sharedWithIssueIds?: string[] | undefined;
                                         uid?: string | undefined;
                                         recommendedForIssueIds?: string[] | undefined;
-                                        recommendedForIssueOrdinals?: {
-                                            [x: string]: number;
-                                        } | null | undefined;
+                                        isDemoTactic?: boolean | undefined;
                                         prompt?: string | undefined;
                                         isShared?: boolean | undefined;
                                         description?: string | null | undefined;
@@ -3389,12 +3203,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                             toDate: Function;
                                         } | null | undefined;
                                         sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                                        sharedWithIssueIds?: string[] | undefined;
                                         uid?: string | undefined;
                                         recommendedForIssueIds?: string[] | undefined;
-                                        recommendedForIssueOrdinals?: {
-                                            [x: string]: number;
-                                        } | null | undefined;
+                                        isDemoTactic?: boolean | undefined;
                                         prompt?: string | undefined;
                                         isShared?: boolean | undefined;
                                         description?: string | null | undefined;
@@ -3460,12 +3271,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                 toDate: Function;
                             } | null | undefined;
                             sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                            sharedWithIssueIds?: string[] | undefined;
                             uid?: string | undefined;
                             recommendedForIssueIds?: string[] | undefined;
-                            recommendedForIssueOrdinals?: {
-                                [x: string]: number;
-                            } | null | undefined;
+                            isDemoTactic?: boolean | undefined;
                             prompt?: string | undefined;
                             isShared?: boolean | undefined;
                             description?: string | null | undefined;
@@ -3505,12 +3313,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                 toDate: Function;
                             } | null | undefined;
                             sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                            sharedWithIssueIds?: string[] | undefined;
                             uid?: string | undefined;
                             recommendedForIssueIds?: string[] | undefined;
-                            recommendedForIssueOrdinals?: {
-                                [x: string]: number;
-                            } | null | undefined;
+                            isDemoTactic?: boolean | undefined;
                             prompt?: string | undefined;
                             isShared?: boolean | undefined;
                             description?: string | null | undefined;
@@ -3547,12 +3352,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                 toDate: Function;
                             } | null | undefined;
                             sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                            sharedWithIssueIds?: string[] | undefined;
                             uid?: string | undefined;
                             recommendedForIssueIds?: string[] | undefined;
-                            recommendedForIssueOrdinals?: {
-                                [x: string]: number;
-                            } | null | undefined;
+                            isDemoTactic?: boolean | undefined;
                             prompt?: string | undefined;
                             isShared?: boolean | undefined;
                             description?: string | null | undefined;
@@ -3589,12 +3391,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                 toDate: Function;
                             } | null | undefined;
                             sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                            sharedWithIssueIds?: string[] | undefined;
                             uid?: string | undefined;
                             recommendedForIssueIds?: string[] | undefined;
-                            recommendedForIssueOrdinals?: {
-                                [x: string]: number;
-                            } | null | undefined;
+                            isDemoTactic?: boolean | undefined;
                             isShared?: boolean | undefined;
                             description?: string | null | undefined;
                             pastTenseTitle?: string | undefined;
@@ -3639,12 +3438,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                 toDate: Function;
                             } | null | undefined;
                             sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                            sharedWithIssueIds?: string[] | undefined;
                             uid?: string | undefined;
                             recommendedForIssueIds?: string[] | undefined;
-                            recommendedForIssueOrdinals?: {
-                                [x: string]: number;
-                            } | null | undefined;
+                            isDemoTactic?: boolean | undefined;
                             prompt?: string | undefined;
                             isShared?: boolean | undefined;
                             description?: string | null | undefined;
@@ -3684,12 +3480,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                 toDate: Function;
                             } | null | undefined;
                             sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                            sharedWithIssueIds?: string[] | undefined;
                             uid?: string | undefined;
                             recommendedForIssueIds?: string[] | undefined;
-                            recommendedForIssueOrdinals?: {
-                                [x: string]: number;
-                            } | null | undefined;
+                            isDemoTactic?: boolean | undefined;
                             prompt?: string | undefined;
                             isShared?: boolean | undefined;
                             description?: string | null | undefined;
@@ -3726,12 +3519,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                 toDate: Function;
                             } | null | undefined;
                             sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                            sharedWithIssueIds?: string[] | undefined;
                             uid?: string | undefined;
                             recommendedForIssueIds?: string[] | undefined;
-                            recommendedForIssueOrdinals?: {
-                                [x: string]: number;
-                            } | null | undefined;
+                            isDemoTactic?: boolean | undefined;
                             prompt?: string | undefined;
                             isShared?: boolean | undefined;
                             description?: string | null | undefined;
@@ -3865,12 +3655,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                             toDate: Function;
                                         } | null | undefined;
                                         sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                                        sharedWithIssueIds?: string[] | undefined;
                                         uid?: string | undefined;
                                         recommendedForIssueIds?: string[] | undefined;
-                                        recommendedForIssueOrdinals?: {
-                                            [x: string]: number;
-                                        } | null | undefined;
+                                        isDemoTactic?: boolean | undefined;
                                         prompt?: string | undefined;
                                         isShared?: boolean | undefined;
                                         description?: string | null | undefined;
@@ -3910,12 +3697,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                             toDate: Function;
                                         } | null | undefined;
                                         sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                                        sharedWithIssueIds?: string[] | undefined;
                                         uid?: string | undefined;
                                         recommendedForIssueIds?: string[] | undefined;
-                                        recommendedForIssueOrdinals?: {
-                                            [x: string]: number;
-                                        } | null | undefined;
+                                        isDemoTactic?: boolean | undefined;
                                         prompt?: string | undefined;
                                         isShared?: boolean | undefined;
                                         description?: string | null | undefined;
@@ -3952,12 +3736,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                             toDate: Function;
                                         } | null | undefined;
                                         sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                                        sharedWithIssueIds?: string[] | undefined;
                                         uid?: string | undefined;
                                         recommendedForIssueIds?: string[] | undefined;
-                                        recommendedForIssueOrdinals?: {
-                                            [x: string]: number;
-                                        } | null | undefined;
+                                        isDemoTactic?: boolean | undefined;
                                         prompt?: string | undefined;
                                         isShared?: boolean | undefined;
                                         description?: string | null | undefined;
@@ -3994,12 +3775,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                             toDate: Function;
                                         } | null | undefined;
                                         sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                                        sharedWithIssueIds?: string[] | undefined;
                                         uid?: string | undefined;
                                         recommendedForIssueIds?: string[] | undefined;
-                                        recommendedForIssueOrdinals?: {
-                                            [x: string]: number;
-                                        } | null | undefined;
+                                        isDemoTactic?: boolean | undefined;
                                         isShared?: boolean | undefined;
                                         description?: string | null | undefined;
                                         pastTenseTitle?: string | undefined;
@@ -4044,12 +3822,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                             toDate: Function;
                                         } | null | undefined;
                                         sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                                        sharedWithIssueIds?: string[] | undefined;
                                         uid?: string | undefined;
                                         recommendedForIssueIds?: string[] | undefined;
-                                        recommendedForIssueOrdinals?: {
-                                            [x: string]: number;
-                                        } | null | undefined;
+                                        isDemoTactic?: boolean | undefined;
                                         prompt?: string | undefined;
                                         isShared?: boolean | undefined;
                                         description?: string | null | undefined;
@@ -4089,12 +3864,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                             toDate: Function;
                                         } | null | undefined;
                                         sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                                        sharedWithIssueIds?: string[] | undefined;
                                         uid?: string | undefined;
                                         recommendedForIssueIds?: string[] | undefined;
-                                        recommendedForIssueOrdinals?: {
-                                            [x: string]: number;
-                                        } | null | undefined;
+                                        isDemoTactic?: boolean | undefined;
                                         prompt?: string | undefined;
                                         isShared?: boolean | undefined;
                                         description?: string | null | undefined;
@@ -4131,12 +3903,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                             toDate: Function;
                                         } | null | undefined;
                                         sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                                        sharedWithIssueIds?: string[] | undefined;
                                         uid?: string | undefined;
                                         recommendedForIssueIds?: string[] | undefined;
-                                        recommendedForIssueOrdinals?: {
-                                            [x: string]: number;
-                                        } | null | undefined;
+                                        isDemoTactic?: boolean | undefined;
                                         prompt?: string | undefined;
                                         isShared?: boolean | undefined;
                                         description?: string | null | undefined;
@@ -4202,12 +3971,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                 toDate: Function;
                             } | null | undefined;
                             sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                            sharedWithIssueIds?: string[] | undefined;
                             uid?: string | undefined;
                             recommendedForIssueIds?: string[] | undefined;
-                            recommendedForIssueOrdinals?: {
-                                [x: string]: number;
-                            } | null | undefined;
+                            isDemoTactic?: boolean | undefined;
                             prompt?: string | undefined;
                             isShared?: boolean | undefined;
                             description?: string | null | undefined;
@@ -4247,12 +4013,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                 toDate: Function;
                             } | null | undefined;
                             sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                            sharedWithIssueIds?: string[] | undefined;
                             uid?: string | undefined;
                             recommendedForIssueIds?: string[] | undefined;
-                            recommendedForIssueOrdinals?: {
-                                [x: string]: number;
-                            } | null | undefined;
+                            isDemoTactic?: boolean | undefined;
                             prompt?: string | undefined;
                             isShared?: boolean | undefined;
                             description?: string | null | undefined;
@@ -4289,12 +4052,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                 toDate: Function;
                             } | null | undefined;
                             sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                            sharedWithIssueIds?: string[] | undefined;
                             uid?: string | undefined;
                             recommendedForIssueIds?: string[] | undefined;
-                            recommendedForIssueOrdinals?: {
-                                [x: string]: number;
-                            } | null | undefined;
+                            isDemoTactic?: boolean | undefined;
                             prompt?: string | undefined;
                             isShared?: boolean | undefined;
                             description?: string | null | undefined;
@@ -4331,12 +4091,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                 toDate: Function;
                             } | null | undefined;
                             sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                            sharedWithIssueIds?: string[] | undefined;
                             uid?: string | undefined;
                             recommendedForIssueIds?: string[] | undefined;
-                            recommendedForIssueOrdinals?: {
-                                [x: string]: number;
-                            } | null | undefined;
+                            isDemoTactic?: boolean | undefined;
                             isShared?: boolean | undefined;
                             description?: string | null | undefined;
                             pastTenseTitle?: string | undefined;
@@ -4381,12 +4138,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                 toDate: Function;
                             } | null | undefined;
                             sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                            sharedWithIssueIds?: string[] | undefined;
                             uid?: string | undefined;
                             recommendedForIssueIds?: string[] | undefined;
-                            recommendedForIssueOrdinals?: {
-                                [x: string]: number;
-                            } | null | undefined;
+                            isDemoTactic?: boolean | undefined;
                             prompt?: string | undefined;
                             isShared?: boolean | undefined;
                             description?: string | null | undefined;
@@ -4426,12 +4180,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                 toDate: Function;
                             } | null | undefined;
                             sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                            sharedWithIssueIds?: string[] | undefined;
                             uid?: string | undefined;
                             recommendedForIssueIds?: string[] | undefined;
-                            recommendedForIssueOrdinals?: {
-                                [x: string]: number;
-                            } | null | undefined;
+                            isDemoTactic?: boolean | undefined;
                             prompt?: string | undefined;
                             isShared?: boolean | undefined;
                             description?: string | null | undefined;
@@ -4468,12 +4219,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                 toDate: Function;
                             } | null | undefined;
                             sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                            sharedWithIssueIds?: string[] | undefined;
                             uid?: string | undefined;
                             recommendedForIssueIds?: string[] | undefined;
-                            recommendedForIssueOrdinals?: {
-                                [x: string]: number;
-                            } | null | undefined;
+                            isDemoTactic?: boolean | undefined;
                             prompt?: string | undefined;
                             isShared?: boolean | undefined;
                             description?: string | null | undefined;
@@ -4623,12 +4371,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                             toDate: Function;
                                         } | null | undefined;
                                         sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                                        sharedWithIssueIds?: string[] | undefined;
                                         uid?: string | undefined;
                                         recommendedForIssueIds?: string[] | undefined;
-                                        recommendedForIssueOrdinals?: {
-                                            [x: string]: number;
-                                        } | null | undefined;
+                                        isDemoTactic?: boolean | undefined;
                                         prompt?: string | undefined;
                                         isShared?: boolean | undefined;
                                         description?: string | null | undefined;
@@ -4668,12 +4413,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                             toDate: Function;
                                         } | null | undefined;
                                         sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                                        sharedWithIssueIds?: string[] | undefined;
                                         uid?: string | undefined;
                                         recommendedForIssueIds?: string[] | undefined;
-                                        recommendedForIssueOrdinals?: {
-                                            [x: string]: number;
-                                        } | null | undefined;
+                                        isDemoTactic?: boolean | undefined;
                                         prompt?: string | undefined;
                                         isShared?: boolean | undefined;
                                         description?: string | null | undefined;
@@ -4710,12 +4452,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                             toDate: Function;
                                         } | null | undefined;
                                         sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                                        sharedWithIssueIds?: string[] | undefined;
                                         uid?: string | undefined;
                                         recommendedForIssueIds?: string[] | undefined;
-                                        recommendedForIssueOrdinals?: {
-                                            [x: string]: number;
-                                        } | null | undefined;
+                                        isDemoTactic?: boolean | undefined;
                                         prompt?: string | undefined;
                                         isShared?: boolean | undefined;
                                         description?: string | null | undefined;
@@ -4752,12 +4491,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                             toDate: Function;
                                         } | null | undefined;
                                         sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                                        sharedWithIssueIds?: string[] | undefined;
                                         uid?: string | undefined;
                                         recommendedForIssueIds?: string[] | undefined;
-                                        recommendedForIssueOrdinals?: {
-                                            [x: string]: number;
-                                        } | null | undefined;
+                                        isDemoTactic?: boolean | undefined;
                                         isShared?: boolean | undefined;
                                         description?: string | null | undefined;
                                         pastTenseTitle?: string | undefined;
@@ -4802,12 +4538,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                             toDate: Function;
                                         } | null | undefined;
                                         sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                                        sharedWithIssueIds?: string[] | undefined;
                                         uid?: string | undefined;
                                         recommendedForIssueIds?: string[] | undefined;
-                                        recommendedForIssueOrdinals?: {
-                                            [x: string]: number;
-                                        } | null | undefined;
+                                        isDemoTactic?: boolean | undefined;
                                         prompt?: string | undefined;
                                         isShared?: boolean | undefined;
                                         description?: string | null | undefined;
@@ -4847,12 +4580,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                             toDate: Function;
                                         } | null | undefined;
                                         sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                                        sharedWithIssueIds?: string[] | undefined;
                                         uid?: string | undefined;
                                         recommendedForIssueIds?: string[] | undefined;
-                                        recommendedForIssueOrdinals?: {
-                                            [x: string]: number;
-                                        } | null | undefined;
+                                        isDemoTactic?: boolean | undefined;
                                         prompt?: string | undefined;
                                         isShared?: boolean | undefined;
                                         description?: string | null | undefined;
@@ -4889,12 +4619,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                             toDate: Function;
                                         } | null | undefined;
                                         sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                                        sharedWithIssueIds?: string[] | undefined;
                                         uid?: string | undefined;
                                         recommendedForIssueIds?: string[] | undefined;
-                                        recommendedForIssueOrdinals?: {
-                                            [x: string]: number;
-                                        } | null | undefined;
+                                        isDemoTactic?: boolean | undefined;
                                         prompt?: string | undefined;
                                         isShared?: boolean | undefined;
                                         description?: string | null | undefined;
@@ -4960,12 +4687,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                 toDate: Function;
                             } | null | undefined;
                             sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                            sharedWithIssueIds?: string[] | undefined;
                             uid?: string | undefined;
                             recommendedForIssueIds?: string[] | undefined;
-                            recommendedForIssueOrdinals?: {
-                                [x: string]: number;
-                            } | null | undefined;
+                            isDemoTactic?: boolean | undefined;
                             prompt?: string | undefined;
                             isShared?: boolean | undefined;
                             description?: string | null | undefined;
@@ -5005,12 +4729,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                 toDate: Function;
                             } | null | undefined;
                             sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                            sharedWithIssueIds?: string[] | undefined;
                             uid?: string | undefined;
                             recommendedForIssueIds?: string[] | undefined;
-                            recommendedForIssueOrdinals?: {
-                                [x: string]: number;
-                            } | null | undefined;
+                            isDemoTactic?: boolean | undefined;
                             prompt?: string | undefined;
                             isShared?: boolean | undefined;
                             description?: string | null | undefined;
@@ -5047,12 +4768,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                 toDate: Function;
                             } | null | undefined;
                             sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                            sharedWithIssueIds?: string[] | undefined;
                             uid?: string | undefined;
                             recommendedForIssueIds?: string[] | undefined;
-                            recommendedForIssueOrdinals?: {
-                                [x: string]: number;
-                            } | null | undefined;
+                            isDemoTactic?: boolean | undefined;
                             prompt?: string | undefined;
                             isShared?: boolean | undefined;
                             description?: string | null | undefined;
@@ -5089,12 +4807,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                 toDate: Function;
                             } | null | undefined;
                             sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                            sharedWithIssueIds?: string[] | undefined;
                             uid?: string | undefined;
                             recommendedForIssueIds?: string[] | undefined;
-                            recommendedForIssueOrdinals?: {
-                                [x: string]: number;
-                            } | null | undefined;
+                            isDemoTactic?: boolean | undefined;
                             isShared?: boolean | undefined;
                             description?: string | null | undefined;
                             pastTenseTitle?: string | undefined;
@@ -5139,12 +4854,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                 toDate: Function;
                             } | null | undefined;
                             sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                            sharedWithIssueIds?: string[] | undefined;
                             uid?: string | undefined;
                             recommendedForIssueIds?: string[] | undefined;
-                            recommendedForIssueOrdinals?: {
-                                [x: string]: number;
-                            } | null | undefined;
+                            isDemoTactic?: boolean | undefined;
                             prompt?: string | undefined;
                             isShared?: boolean | undefined;
                             description?: string | null | undefined;
@@ -5184,12 +4896,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                 toDate: Function;
                             } | null | undefined;
                             sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                            sharedWithIssueIds?: string[] | undefined;
                             uid?: string | undefined;
                             recommendedForIssueIds?: string[] | undefined;
-                            recommendedForIssueOrdinals?: {
-                                [x: string]: number;
-                            } | null | undefined;
+                            isDemoTactic?: boolean | undefined;
                             prompt?: string | undefined;
                             isShared?: boolean | undefined;
                             description?: string | null | undefined;
@@ -5226,12 +4935,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                 toDate: Function;
                             } | null | undefined;
                             sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                            sharedWithIssueIds?: string[] | undefined;
                             uid?: string | undefined;
                             recommendedForIssueIds?: string[] | undefined;
-                            recommendedForIssueOrdinals?: {
-                                [x: string]: number;
-                            } | null | undefined;
+                            isDemoTactic?: boolean | undefined;
                             prompt?: string | undefined;
                             isShared?: boolean | undefined;
                             description?: string | null | undefined;
@@ -5363,12 +5069,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                             toDate: Function;
                                         } | null | undefined;
                                         sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                                        sharedWithIssueIds?: string[] | undefined;
                                         uid?: string | undefined;
                                         recommendedForIssueIds?: string[] | undefined;
-                                        recommendedForIssueOrdinals?: {
-                                            [x: string]: number;
-                                        } | null | undefined;
+                                        isDemoTactic?: boolean | undefined;
                                         prompt?: string | undefined;
                                         isShared?: boolean | undefined;
                                         description?: string | null | undefined;
@@ -5408,12 +5111,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                             toDate: Function;
                                         } | null | undefined;
                                         sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                                        sharedWithIssueIds?: string[] | undefined;
                                         uid?: string | undefined;
                                         recommendedForIssueIds?: string[] | undefined;
-                                        recommendedForIssueOrdinals?: {
-                                            [x: string]: number;
-                                        } | null | undefined;
+                                        isDemoTactic?: boolean | undefined;
                                         prompt?: string | undefined;
                                         isShared?: boolean | undefined;
                                         description?: string | null | undefined;
@@ -5450,12 +5150,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                             toDate: Function;
                                         } | null | undefined;
                                         sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                                        sharedWithIssueIds?: string[] | undefined;
                                         uid?: string | undefined;
                                         recommendedForIssueIds?: string[] | undefined;
-                                        recommendedForIssueOrdinals?: {
-                                            [x: string]: number;
-                                        } | null | undefined;
+                                        isDemoTactic?: boolean | undefined;
                                         prompt?: string | undefined;
                                         isShared?: boolean | undefined;
                                         description?: string | null | undefined;
@@ -5492,12 +5189,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                             toDate: Function;
                                         } | null | undefined;
                                         sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                                        sharedWithIssueIds?: string[] | undefined;
                                         uid?: string | undefined;
                                         recommendedForIssueIds?: string[] | undefined;
-                                        recommendedForIssueOrdinals?: {
-                                            [x: string]: number;
-                                        } | null | undefined;
+                                        isDemoTactic?: boolean | undefined;
                                         isShared?: boolean | undefined;
                                         description?: string | null | undefined;
                                         pastTenseTitle?: string | undefined;
@@ -5542,12 +5236,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                             toDate: Function;
                                         } | null | undefined;
                                         sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                                        sharedWithIssueIds?: string[] | undefined;
                                         uid?: string | undefined;
                                         recommendedForIssueIds?: string[] | undefined;
-                                        recommendedForIssueOrdinals?: {
-                                            [x: string]: number;
-                                        } | null | undefined;
+                                        isDemoTactic?: boolean | undefined;
                                         prompt?: string | undefined;
                                         isShared?: boolean | undefined;
                                         description?: string | null | undefined;
@@ -5587,12 +5278,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                             toDate: Function;
                                         } | null | undefined;
                                         sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                                        sharedWithIssueIds?: string[] | undefined;
                                         uid?: string | undefined;
                                         recommendedForIssueIds?: string[] | undefined;
-                                        recommendedForIssueOrdinals?: {
-                                            [x: string]: number;
-                                        } | null | undefined;
+                                        isDemoTactic?: boolean | undefined;
                                         prompt?: string | undefined;
                                         isShared?: boolean | undefined;
                                         description?: string | null | undefined;
@@ -5629,12 +5317,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                             toDate: Function;
                                         } | null | undefined;
                                         sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                                        sharedWithIssueIds?: string[] | undefined;
                                         uid?: string | undefined;
                                         recommendedForIssueIds?: string[] | undefined;
-                                        recommendedForIssueOrdinals?: {
-                                            [x: string]: number;
-                                        } | null | undefined;
+                                        isDemoTactic?: boolean | undefined;
                                         prompt?: string | undefined;
                                         isShared?: boolean | undefined;
                                         description?: string | null | undefined;
@@ -5700,12 +5385,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                 toDate: Function;
                             } | null | undefined;
                             sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                            sharedWithIssueIds?: string[] | undefined;
                             uid?: string | undefined;
                             recommendedForIssueIds?: string[] | undefined;
-                            recommendedForIssueOrdinals?: {
-                                [x: string]: number;
-                            } | null | undefined;
+                            isDemoTactic?: boolean | undefined;
                             prompt?: string | undefined;
                             isShared?: boolean | undefined;
                             description?: string | null | undefined;
@@ -5745,12 +5427,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                 toDate: Function;
                             } | null | undefined;
                             sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                            sharedWithIssueIds?: string[] | undefined;
                             uid?: string | undefined;
                             recommendedForIssueIds?: string[] | undefined;
-                            recommendedForIssueOrdinals?: {
-                                [x: string]: number;
-                            } | null | undefined;
+                            isDemoTactic?: boolean | undefined;
                             prompt?: string | undefined;
                             isShared?: boolean | undefined;
                             description?: string | null | undefined;
@@ -5787,12 +5466,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                 toDate: Function;
                             } | null | undefined;
                             sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                            sharedWithIssueIds?: string[] | undefined;
                             uid?: string | undefined;
                             recommendedForIssueIds?: string[] | undefined;
-                            recommendedForIssueOrdinals?: {
-                                [x: string]: number;
-                            } | null | undefined;
+                            isDemoTactic?: boolean | undefined;
                             prompt?: string | undefined;
                             isShared?: boolean | undefined;
                             description?: string | null | undefined;
@@ -5829,12 +5505,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                 toDate: Function;
                             } | null | undefined;
                             sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                            sharedWithIssueIds?: string[] | undefined;
                             uid?: string | undefined;
                             recommendedForIssueIds?: string[] | undefined;
-                            recommendedForIssueOrdinals?: {
-                                [x: string]: number;
-                            } | null | undefined;
+                            isDemoTactic?: boolean | undefined;
                             isShared?: boolean | undefined;
                             description?: string | null | undefined;
                             pastTenseTitle?: string | undefined;
@@ -5879,12 +5552,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                 toDate: Function;
                             } | null | undefined;
                             sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                            sharedWithIssueIds?: string[] | undefined;
                             uid?: string | undefined;
                             recommendedForIssueIds?: string[] | undefined;
-                            recommendedForIssueOrdinals?: {
-                                [x: string]: number;
-                            } | null | undefined;
+                            isDemoTactic?: boolean | undefined;
                             prompt?: string | undefined;
                             isShared?: boolean | undefined;
                             description?: string | null | undefined;
@@ -5924,12 +5594,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                 toDate: Function;
                             } | null | undefined;
                             sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                            sharedWithIssueIds?: string[] | undefined;
                             uid?: string | undefined;
                             recommendedForIssueIds?: string[] | undefined;
-                            recommendedForIssueOrdinals?: {
-                                [x: string]: number;
-                            } | null | undefined;
+                            isDemoTactic?: boolean | undefined;
                             prompt?: string | undefined;
                             isShared?: boolean | undefined;
                             description?: string | null | undefined;
@@ -5966,12 +5633,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                 toDate: Function;
                             } | null | undefined;
                             sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                            sharedWithIssueIds?: string[] | undefined;
                             uid?: string | undefined;
                             recommendedForIssueIds?: string[] | undefined;
-                            recommendedForIssueOrdinals?: {
-                                [x: string]: number;
-                            } | null | undefined;
+                            isDemoTactic?: boolean | undefined;
                             prompt?: string | undefined;
                             isShared?: boolean | undefined;
                             description?: string | null | undefined;
@@ -6110,12 +5774,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                             toDate: Function;
                                         } | null | undefined;
                                         sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                                        sharedWithIssueIds?: string[] | undefined;
                                         uid?: string | undefined;
                                         recommendedForIssueIds?: string[] | undefined;
-                                        recommendedForIssueOrdinals?: {
-                                            [x: string]: number;
-                                        } | null | undefined;
+                                        isDemoTactic?: boolean | undefined;
                                         prompt?: string | undefined;
                                         isShared?: boolean | undefined;
                                         description?: string | null | undefined;
@@ -6155,12 +5816,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                             toDate: Function;
                                         } | null | undefined;
                                         sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                                        sharedWithIssueIds?: string[] | undefined;
                                         uid?: string | undefined;
                                         recommendedForIssueIds?: string[] | undefined;
-                                        recommendedForIssueOrdinals?: {
-                                            [x: string]: number;
-                                        } | null | undefined;
+                                        isDemoTactic?: boolean | undefined;
                                         prompt?: string | undefined;
                                         isShared?: boolean | undefined;
                                         description?: string | null | undefined;
@@ -6197,12 +5855,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                             toDate: Function;
                                         } | null | undefined;
                                         sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                                        sharedWithIssueIds?: string[] | undefined;
                                         uid?: string | undefined;
                                         recommendedForIssueIds?: string[] | undefined;
-                                        recommendedForIssueOrdinals?: {
-                                            [x: string]: number;
-                                        } | null | undefined;
+                                        isDemoTactic?: boolean | undefined;
                                         prompt?: string | undefined;
                                         isShared?: boolean | undefined;
                                         description?: string | null | undefined;
@@ -6239,12 +5894,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                             toDate: Function;
                                         } | null | undefined;
                                         sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                                        sharedWithIssueIds?: string[] | undefined;
                                         uid?: string | undefined;
                                         recommendedForIssueIds?: string[] | undefined;
-                                        recommendedForIssueOrdinals?: {
-                                            [x: string]: number;
-                                        } | null | undefined;
+                                        isDemoTactic?: boolean | undefined;
                                         isShared?: boolean | undefined;
                                         description?: string | null | undefined;
                                         pastTenseTitle?: string | undefined;
@@ -6289,12 +5941,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                             toDate: Function;
                                         } | null | undefined;
                                         sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                                        sharedWithIssueIds?: string[] | undefined;
                                         uid?: string | undefined;
                                         recommendedForIssueIds?: string[] | undefined;
-                                        recommendedForIssueOrdinals?: {
-                                            [x: string]: number;
-                                        } | null | undefined;
+                                        isDemoTactic?: boolean | undefined;
                                         prompt?: string | undefined;
                                         isShared?: boolean | undefined;
                                         description?: string | null | undefined;
@@ -6334,12 +5983,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                             toDate: Function;
                                         } | null | undefined;
                                         sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                                        sharedWithIssueIds?: string[] | undefined;
                                         uid?: string | undefined;
                                         recommendedForIssueIds?: string[] | undefined;
-                                        recommendedForIssueOrdinals?: {
-                                            [x: string]: number;
-                                        } | null | undefined;
+                                        isDemoTactic?: boolean | undefined;
                                         prompt?: string | undefined;
                                         isShared?: boolean | undefined;
                                         description?: string | null | undefined;
@@ -6376,12 +6022,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                             toDate: Function;
                                         } | null | undefined;
                                         sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                                        sharedWithIssueIds?: string[] | undefined;
                                         uid?: string | undefined;
                                         recommendedForIssueIds?: string[] | undefined;
-                                        recommendedForIssueOrdinals?: {
-                                            [x: string]: number;
-                                        } | null | undefined;
+                                        isDemoTactic?: boolean | undefined;
                                         prompt?: string | undefined;
                                         isShared?: boolean | undefined;
                                         description?: string | null | undefined;
@@ -6447,12 +6090,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                 toDate: Function;
                             } | null | undefined;
                             sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                            sharedWithIssueIds?: string[] | undefined;
                             uid?: string | undefined;
                             recommendedForIssueIds?: string[] | undefined;
-                            recommendedForIssueOrdinals?: {
-                                [x: string]: number;
-                            } | null | undefined;
+                            isDemoTactic?: boolean | undefined;
                             prompt?: string | undefined;
                             isShared?: boolean | undefined;
                             description?: string | null | undefined;
@@ -6492,12 +6132,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                 toDate: Function;
                             } | null | undefined;
                             sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                            sharedWithIssueIds?: string[] | undefined;
                             uid?: string | undefined;
                             recommendedForIssueIds?: string[] | undefined;
-                            recommendedForIssueOrdinals?: {
-                                [x: string]: number;
-                            } | null | undefined;
+                            isDemoTactic?: boolean | undefined;
                             prompt?: string | undefined;
                             isShared?: boolean | undefined;
                             description?: string | null | undefined;
@@ -6534,12 +6171,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                 toDate: Function;
                             } | null | undefined;
                             sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                            sharedWithIssueIds?: string[] | undefined;
                             uid?: string | undefined;
                             recommendedForIssueIds?: string[] | undefined;
-                            recommendedForIssueOrdinals?: {
-                                [x: string]: number;
-                            } | null | undefined;
+                            isDemoTactic?: boolean | undefined;
                             prompt?: string | undefined;
                             isShared?: boolean | undefined;
                             description?: string | null | undefined;
@@ -6576,12 +6210,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                 toDate: Function;
                             } | null | undefined;
                             sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                            sharedWithIssueIds?: string[] | undefined;
                             uid?: string | undefined;
                             recommendedForIssueIds?: string[] | undefined;
-                            recommendedForIssueOrdinals?: {
-                                [x: string]: number;
-                            } | null | undefined;
+                            isDemoTactic?: boolean | undefined;
                             isShared?: boolean | undefined;
                             description?: string | null | undefined;
                             pastTenseTitle?: string | undefined;
@@ -6626,12 +6257,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                 toDate: Function;
                             } | null | undefined;
                             sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                            sharedWithIssueIds?: string[] | undefined;
                             uid?: string | undefined;
                             recommendedForIssueIds?: string[] | undefined;
-                            recommendedForIssueOrdinals?: {
-                                [x: string]: number;
-                            } | null | undefined;
+                            isDemoTactic?: boolean | undefined;
                             prompt?: string | undefined;
                             isShared?: boolean | undefined;
                             description?: string | null | undefined;
@@ -6671,12 +6299,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                 toDate: Function;
                             } | null | undefined;
                             sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                            sharedWithIssueIds?: string[] | undefined;
                             uid?: string | undefined;
                             recommendedForIssueIds?: string[] | undefined;
-                            recommendedForIssueOrdinals?: {
-                                [x: string]: number;
-                            } | null | undefined;
+                            isDemoTactic?: boolean | undefined;
                             prompt?: string | undefined;
                             isShared?: boolean | undefined;
                             description?: string | null | undefined;
@@ -6713,12 +6338,9 @@ export declare const threadSchema: yup.ObjectSchema<{
                                 toDate: Function;
                             } | null | undefined;
                             sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                            sharedWithIssueIds?: string[] | undefined;
                             uid?: string | undefined;
                             recommendedForIssueIds?: string[] | undefined;
-                            recommendedForIssueOrdinals?: {
-                                [x: string]: number;
-                            } | null | undefined;
+                            isDemoTactic?: boolean | undefined;
                             prompt?: string | undefined;
                             isShared?: boolean | undefined;
                             description?: string | null | undefined;
@@ -6777,12 +6399,9 @@ export declare const threadSchema: yup.ObjectSchema<{
             toDate: Function;
         } | null | undefined;
         sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-        sharedWithIssueIds?: string[] | undefined;
         uid?: string | undefined;
         recommendedForIssueIds?: string[] | undefined;
-        recommendedForIssueOrdinals?: {
-            [x: string]: number;
-        } | null | undefined;
+        isDemoTactic?: boolean | undefined;
         prompt?: string | undefined;
         isShared?: boolean | undefined;
         description?: string | null | undefined;
@@ -6822,12 +6441,9 @@ export declare const threadSchema: yup.ObjectSchema<{
             toDate: Function;
         } | null | undefined;
         sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-        sharedWithIssueIds?: string[] | undefined;
         uid?: string | undefined;
         recommendedForIssueIds?: string[] | undefined;
-        recommendedForIssueOrdinals?: {
-            [x: string]: number;
-        } | null | undefined;
+        isDemoTactic?: boolean | undefined;
         prompt?: string | undefined;
         isShared?: boolean | undefined;
         description?: string | null | undefined;
@@ -6864,12 +6480,9 @@ export declare const threadSchema: yup.ObjectSchema<{
             toDate: Function;
         } | null | undefined;
         sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-        sharedWithIssueIds?: string[] | undefined;
         uid?: string | undefined;
         recommendedForIssueIds?: string[] | undefined;
-        recommendedForIssueOrdinals?: {
-            [x: string]: number;
-        } | null | undefined;
+        isDemoTactic?: boolean | undefined;
         prompt?: string | undefined;
         isShared?: boolean | undefined;
         description?: string | null | undefined;
@@ -6906,12 +6519,9 @@ export declare const threadSchema: yup.ObjectSchema<{
             toDate: Function;
         } | null | undefined;
         sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-        sharedWithIssueIds?: string[] | undefined;
         uid?: string | undefined;
         recommendedForIssueIds?: string[] | undefined;
-        recommendedForIssueOrdinals?: {
-            [x: string]: number;
-        } | null | undefined;
+        isDemoTactic?: boolean | undefined;
         isShared?: boolean | undefined;
         description?: string | null | undefined;
         pastTenseTitle?: string | undefined;
@@ -6956,12 +6566,9 @@ export declare const threadSchema: yup.ObjectSchema<{
             toDate: Function;
         } | null | undefined;
         sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-        sharedWithIssueIds?: string[] | undefined;
         uid?: string | undefined;
         recommendedForIssueIds?: string[] | undefined;
-        recommendedForIssueOrdinals?: {
-            [x: string]: number;
-        } | null | undefined;
+        isDemoTactic?: boolean | undefined;
         prompt?: string | undefined;
         isShared?: boolean | undefined;
         description?: string | null | undefined;
@@ -7001,12 +6608,9 @@ export declare const threadSchema: yup.ObjectSchema<{
             toDate: Function;
         } | null | undefined;
         sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-        sharedWithIssueIds?: string[] | undefined;
         uid?: string | undefined;
         recommendedForIssueIds?: string[] | undefined;
-        recommendedForIssueOrdinals?: {
-            [x: string]: number;
-        } | null | undefined;
+        isDemoTactic?: boolean | undefined;
         prompt?: string | undefined;
         isShared?: boolean | undefined;
         description?: string | null | undefined;
@@ -7043,12 +6647,9 @@ export declare const threadSchema: yup.ObjectSchema<{
             toDate: Function;
         } | null | undefined;
         sourceFile?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-        sharedWithIssueIds?: string[] | undefined;
         uid?: string | undefined;
         recommendedForIssueIds?: string[] | undefined;
-        recommendedForIssueOrdinals?: {
-            [x: string]: number;
-        } | null | undefined;
+        isDemoTactic?: boolean | undefined;
         prompt?: string | undefined;
         isShared?: boolean | undefined;
         description?: string | null | undefined;

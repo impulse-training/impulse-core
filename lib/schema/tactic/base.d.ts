@@ -3,10 +3,7 @@ export declare function tacticBaseSchema<K extends string>(type: K): yup.ObjectS
     uid: string | undefined;
     recommendedForIssueIds: string[] | undefined;
     sourceFile: import("../utils/firestore").DocumentReferenceLike<unknown> | undefined;
-    sharedWithIssueIds: string[] | undefined;
-    recommendedForIssueOrdinals: {
-        [x: string]: number;
-    } | null | undefined;
+    isDemoTactic: boolean | undefined;
     prompt: string | undefined;
     isShared: boolean | undefined;
     description: string | null | undefined;
@@ -44,8 +41,7 @@ export declare function tacticBaseSchema<K extends string>(type: K): yup.ObjectS
     uid: undefined;
     recommendedForIssueIds: "";
     sourceFile: undefined;
-    sharedWithIssueIds: "";
-    recommendedForIssueOrdinals: undefined;
+    isDemoTactic: undefined;
     prompt: undefined;
     isShared: undefined;
     description: undefined;

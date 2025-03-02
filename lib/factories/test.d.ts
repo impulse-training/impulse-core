@@ -90,12 +90,9 @@ export declare const regularLogFactory: import("factory.ts").Factory<{
                                 toDate: Function;
                             } | null | undefined;
                             sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                            sharedWithIssueIds?: string[] | undefined;
                             uid?: string | undefined;
                             recommendedForIssueIds?: string[] | undefined;
-                            recommendedForIssueOrdinals?: {
-                                [x: string]: number;
-                            } | null | undefined;
+                            isDemoTactic?: boolean | undefined;
                             prompt?: string | undefined;
                             isShared?: boolean | undefined;
                             description?: string | null | undefined;
@@ -135,12 +132,9 @@ export declare const regularLogFactory: import("factory.ts").Factory<{
                                 toDate: Function;
                             } | null | undefined;
                             sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                            sharedWithIssueIds?: string[] | undefined;
                             uid?: string | undefined;
                             recommendedForIssueIds?: string[] | undefined;
-                            recommendedForIssueOrdinals?: {
-                                [x: string]: number;
-                            } | null | undefined;
+                            isDemoTactic?: boolean | undefined;
                             prompt?: string | undefined;
                             isShared?: boolean | undefined;
                             description?: string | null | undefined;
@@ -177,12 +171,9 @@ export declare const regularLogFactory: import("factory.ts").Factory<{
                                 toDate: Function;
                             } | null | undefined;
                             sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                            sharedWithIssueIds?: string[] | undefined;
                             uid?: string | undefined;
                             recommendedForIssueIds?: string[] | undefined;
-                            recommendedForIssueOrdinals?: {
-                                [x: string]: number;
-                            } | null | undefined;
+                            isDemoTactic?: boolean | undefined;
                             prompt?: string | undefined;
                             isShared?: boolean | undefined;
                             description?: string | null | undefined;
@@ -219,12 +210,9 @@ export declare const regularLogFactory: import("factory.ts").Factory<{
                                 toDate: Function;
                             } | null | undefined;
                             sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                            sharedWithIssueIds?: string[] | undefined;
                             uid?: string | undefined;
                             recommendedForIssueIds?: string[] | undefined;
-                            recommendedForIssueOrdinals?: {
-                                [x: string]: number;
-                            } | null | undefined;
+                            isDemoTactic?: boolean | undefined;
                             isShared?: boolean | undefined;
                             description?: string | null | undefined;
                             pastTenseTitle?: string | undefined;
@@ -269,12 +257,9 @@ export declare const regularLogFactory: import("factory.ts").Factory<{
                                 toDate: Function;
                             } | null | undefined;
                             sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                            sharedWithIssueIds?: string[] | undefined;
                             uid?: string | undefined;
                             recommendedForIssueIds?: string[] | undefined;
-                            recommendedForIssueOrdinals?: {
-                                [x: string]: number;
-                            } | null | undefined;
+                            isDemoTactic?: boolean | undefined;
                             prompt?: string | undefined;
                             isShared?: boolean | undefined;
                             description?: string | null | undefined;
@@ -314,12 +299,9 @@ export declare const regularLogFactory: import("factory.ts").Factory<{
                                 toDate: Function;
                             } | null | undefined;
                             sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                            sharedWithIssueIds?: string[] | undefined;
                             uid?: string | undefined;
                             recommendedForIssueIds?: string[] | undefined;
-                            recommendedForIssueOrdinals?: {
-                                [x: string]: number;
-                            } | null | undefined;
+                            isDemoTactic?: boolean | undefined;
                             prompt?: string | undefined;
                             isShared?: boolean | undefined;
                             description?: string | null | undefined;
@@ -356,12 +338,9 @@ export declare const regularLogFactory: import("factory.ts").Factory<{
                                 toDate: Function;
                             } | null | undefined;
                             sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                            sharedWithIssueIds?: string[] | undefined;
                             uid?: string | undefined;
                             recommendedForIssueIds?: string[] | undefined;
-                            recommendedForIssueOrdinals?: {
-                                [x: string]: number;
-                            } | null | undefined;
+                            isDemoTactic?: boolean | undefined;
                             prompt?: string | undefined;
                             isShared?: boolean | undefined;
                             description?: string | null | undefined;
@@ -427,12 +406,9 @@ export declare const regularLogFactory: import("factory.ts").Factory<{
                     toDate: Function;
                 } | null | undefined;
                 sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                sharedWithIssueIds?: string[] | undefined;
                 uid?: string | undefined;
                 recommendedForIssueIds?: string[] | undefined;
-                recommendedForIssueOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
+                isDemoTactic?: boolean | undefined;
                 prompt?: string | undefined;
                 isShared?: boolean | undefined;
                 description?: string | null | undefined;
@@ -472,12 +448,9 @@ export declare const regularLogFactory: import("factory.ts").Factory<{
                     toDate: Function;
                 } | null | undefined;
                 sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                sharedWithIssueIds?: string[] | undefined;
                 uid?: string | undefined;
                 recommendedForIssueIds?: string[] | undefined;
-                recommendedForIssueOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
+                isDemoTactic?: boolean | undefined;
                 prompt?: string | undefined;
                 isShared?: boolean | undefined;
                 description?: string | null | undefined;
@@ -514,12 +487,9 @@ export declare const regularLogFactory: import("factory.ts").Factory<{
                     toDate: Function;
                 } | null | undefined;
                 sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                sharedWithIssueIds?: string[] | undefined;
                 uid?: string | undefined;
                 recommendedForIssueIds?: string[] | undefined;
-                recommendedForIssueOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
+                isDemoTactic?: boolean | undefined;
                 prompt?: string | undefined;
                 isShared?: boolean | undefined;
                 description?: string | null | undefined;
@@ -556,12 +526,9 @@ export declare const regularLogFactory: import("factory.ts").Factory<{
                     toDate: Function;
                 } | null | undefined;
                 sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                sharedWithIssueIds?: string[] | undefined;
                 uid?: string | undefined;
                 recommendedForIssueIds?: string[] | undefined;
-                recommendedForIssueOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
+                isDemoTactic?: boolean | undefined;
                 isShared?: boolean | undefined;
                 description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
@@ -606,12 +573,9 @@ export declare const regularLogFactory: import("factory.ts").Factory<{
                     toDate: Function;
                 } | null | undefined;
                 sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                sharedWithIssueIds?: string[] | undefined;
                 uid?: string | undefined;
                 recommendedForIssueIds?: string[] | undefined;
-                recommendedForIssueOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
+                isDemoTactic?: boolean | undefined;
                 prompt?: string | undefined;
                 isShared?: boolean | undefined;
                 description?: string | null | undefined;
@@ -651,12 +615,9 @@ export declare const regularLogFactory: import("factory.ts").Factory<{
                     toDate: Function;
                 } | null | undefined;
                 sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                sharedWithIssueIds?: string[] | undefined;
                 uid?: string | undefined;
                 recommendedForIssueIds?: string[] | undefined;
-                recommendedForIssueOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
+                isDemoTactic?: boolean | undefined;
                 prompt?: string | undefined;
                 isShared?: boolean | undefined;
                 description?: string | null | undefined;
@@ -693,12 +654,9 @@ export declare const regularLogFactory: import("factory.ts").Factory<{
                     toDate: Function;
                 } | null | undefined;
                 sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                sharedWithIssueIds?: string[] | undefined;
                 uid?: string | undefined;
                 recommendedForIssueIds?: string[] | undefined;
-                recommendedForIssueOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
+                isDemoTactic?: boolean | undefined;
                 prompt?: string | undefined;
                 isShared?: boolean | undefined;
                 description?: string | null | undefined;
@@ -829,4 +787,4 @@ export declare const regularLogFactory: import("factory.ts").Factory<{
         [x: string]: string;
     };
     timezone: string;
-}, "agentType" | "uids" | "verificationCode" | "recentSummaries" | "timezone" | ("createdAt" | "updatedAt" | "parentIds" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "defaultBehaviorDoc" | "tourCompletedAt" | "scheduledNotificationIds" | "whatsappStrategyDoc" | "onboardedWithZaraAt" | "currentAppState" | "expoPushToken" | "notificationPreferences" | "goal" | "dayReviewTimeMinutes" | "isReadyForTour" | "isOnboardingComplete" | "debriefReminderDelayMinutes" | "androidPermissions" | "behaviorsDescription" | "initialImpulseMode" | "historicalInsights" | "activeThread" | "isTourDismissed" | "region" | "enableZara")>, tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "sourceFile" | "sharedWithIssueIds" | "uid" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "prompt" | "isShared" | "description" | "type" | "pastTenseTitle" | "debriefAfterMinutes" | "image" | "backgroundColor" | "likesCount" | "timerSeconds" | "isSuggested">;
+}, "agentType" | "uids" | "verificationCode" | "recentSummaries" | "timezone" | ("createdAt" | "updatedAt" | "parentIds" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "defaultBehaviorDoc" | "tourCompletedAt" | "scheduledNotificationIds" | "whatsappStrategyDoc" | "onboardedWithZaraAt" | "currentAppState" | "expoPushToken" | "notificationPreferences" | "goal" | "dayReviewTimeMinutes" | "isReadyForTour" | "isOnboardingComplete" | "debriefReminderDelayMinutes" | "androidPermissions" | "behaviorsDescription" | "initialImpulseMode" | "historicalInsights" | "activeThread" | "isTourDismissed" | "region" | "enableZara")>, tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "sourceFile" | "uid" | "recommendedForIssueIds" | "isDemoTactic" | "prompt" | "isShared" | "description" | "type" | "pastTenseTitle" | "debriefAfterMinutes" | "image" | "backgroundColor" | "likesCount" | "timerSeconds" | "isSuggested">;
