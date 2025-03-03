@@ -16,8 +16,8 @@ export declare const makeRoutineFactory: (TimestampKlass: typeof TimestampLike) 
         toDate: Function;
     } | null | undefined;
     ordinal?: number | undefined;
-    name: string;
     type: "scheduled";
+    name: string;
     tacticsById: {
         [x: string]: {
             data?: {
@@ -259,8 +259,8 @@ export declare const makeRoutineFactory: (TimestampKlass: typeof TimestampLike) 
                 } | undefined;
                 backgroundColor?: string | undefined;
                 timerSeconds?: import("yup").Maybe<number | undefined>;
-                url: string;
                 type: "link";
+                url: string;
             };
             doc: import("../schema/utils/firestore").DocumentReferenceLike<unknown>;
         };
@@ -268,4 +268,4 @@ export declare const makeRoutineFactory: (TimestampKlass: typeof TimestampLike) 
     hour: number;
     minute: number;
     weekdays: (number | undefined)[];
-}, "name" | "type" | "tacticsById" | "hour" | "minute" | "weekdays" | ("createdAt" | "updatedAt" | "ordinal")>;
+}, "type" | "name" | "tacticsById" | "hour" | "minute" | "weekdays" | ("createdAt" | "updatedAt" | "ordinal")>;

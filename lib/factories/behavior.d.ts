@@ -261,8 +261,8 @@ export declare const makeBehaviorFactory: (TimestampKlass: typeof TimestampLike)
                 } | undefined;
                 backgroundColor?: string | undefined;
                 timerSeconds?: import("yup").Maybe<number | undefined>;
-                url: string;
                 type: "link";
+                url: string;
             };
             doc: import("../schema/utils/firestore").DocumentReferenceLike<unknown>;
         };

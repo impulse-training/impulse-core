@@ -17,6 +17,15 @@ export declare function dayAverageMetricData(logsById: DayValue['logsById']): {
 export declare function dayTotalBehaviorData(logsById: DayValue['logsById']): {
     [x: string]: {
         color?: string | undefined;
+        data: {
+            label?: {
+                color?: string | undefined;
+                text: string;
+            } | null | undefined;
+            counterValue?: number | undefined;
+            timeSeconds?: number | undefined;
+            formattedValue: string;
+        };
         behavior: {
             createdAt?: {
                 isEqual?: any;
@@ -278,22 +287,13 @@ export declare function dayTotalBehaviorData(logsById: DayValue['logsById']): {
                         } | undefined;
                         backgroundColor?: string | undefined;
                         timerSeconds?: import("yup").Maybe<number | undefined>;
-                        url: string;
                         type: "link";
+                        url: string;
                     };
                     doc: import("../schema/utils/firestore").DocumentReferenceLike<unknown>;
                 };
             };
             isHelpful: boolean | null;
-        };
-        data: {
-            counterValue?: number | undefined;
-            timeSeconds?: number | undefined;
-            label?: {
-                color?: string | undefined;
-                text: string;
-            } | null | undefined;
-            formattedValue: string;
         };
     };
 };

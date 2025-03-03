@@ -1,7 +1,6 @@
 import * as Factory from 'factory.ts';
 import { TimestampLike } from '../utils/firestore/TimestampLike';
 export declare const makeIssueFactory: (TimestampKlass: typeof TimestampLike) => Factory.Sync.Factory<{
-    path?: string | null | undefined;
     createdAt?: {
         isEqual?: any;
         toMillis?: any;
@@ -16,6 +15,7 @@ export declare const makeIssueFactory: (TimestampKlass: typeof TimestampLike) =>
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
+    path?: string | null | undefined;
     ordinal?: number | undefined;
     parentId?: string | null | undefined;
     parentName?: string | null | undefined;
@@ -29,4 +29,4 @@ export declare const makeIssueFactory: (TimestampKlass: typeof TimestampLike) =>
     recommendedStrategies?: import("../schema/utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
     reminderTactics?: import("../schema/utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
     name: string;
-}, "name" | ("path" | "createdAt" | "updatedAt" | "ordinal" | "parentId" | "parentName" | "hasDebriefBehavior" | "synonyms" | "parentIds" | "parentNames" | "profileCount" | "isFeatured" | "blandContext" | "recommendedStrategies" | "reminderTactics")>;
+}, "name" | ("createdAt" | "updatedAt" | "path" | "ordinal" | "parentId" | "parentName" | "hasDebriefBehavior" | "synonyms" | "parentIds" | "parentNames" | "profileCount" | "isFeatured" | "blandContext" | "recommendedStrategies" | "reminderTactics")>;

@@ -1,6 +1,5 @@
 export declare const factories: {
     regularLogFactory: import("factory.ts").Factory<{
-        text?: string | null | undefined;
         createdAt?: {
             isEqual?: any;
             toMillis?: any;
@@ -43,6 +42,15 @@ export declare const factories: {
         behaviorData?: {
             [x: string]: {
                 color?: string | undefined;
+                data: {
+                    label?: {
+                        color?: string | undefined;
+                        text: string;
+                    } | null | undefined;
+                    counterValue?: number | undefined;
+                    timeSeconds?: number | undefined;
+                    formattedValue: string;
+                };
                 behavior: {
                     createdAt?: {
                         isEqual?: any;
@@ -304,25 +312,17 @@ export declare const factories: {
                                 } | undefined;
                                 backgroundColor?: string | undefined;
                                 timerSeconds?: import("yup").Maybe<number | undefined>;
-                                url: string;
                                 type: "link";
+                                url: string;
                             };
                             doc: import("../schema/utils/firestore").DocumentReferenceLike<unknown>;
                         };
                     };
                     isHelpful: boolean | null;
                 };
-                data: {
-                    counterValue?: number | undefined;
-                    timeSeconds?: number | undefined;
-                    label?: {
-                        color?: string | undefined;
-                        text: string;
-                    } | null | undefined;
-                    formattedValue: string;
-                };
             };
         } | null | undefined;
+        text?: string | null | undefined;
         tacticsData?: {
             [x: string]: {
                 data?: {
@@ -564,8 +564,8 @@ export declare const factories: {
                     } | undefined;
                     backgroundColor?: string | undefined;
                     timerSeconds?: import("yup").Maybe<number | undefined>;
-                    url: string;
                     type: "link";
+                    url: string;
                 };
                 doc: import("../schema/utils/firestore").DocumentReferenceLike<unknown>;
             };
@@ -586,10 +586,9 @@ export declare const factories: {
         isDisplayable: NonNullable<boolean | undefined>;
         dateString: string;
         role: "user";
-    }, "uid" | "type" | "date" | "isDisplayable" | "dateString" | "role" | ("text" | "createdAt" | "updatedAt" | "audioFile" | "skipGptResponse" | "metricData" | "behaviorData" | "tacticsData" | "senderUid" | "senderName" | "audioTranscript" | "audioTranscribedLocally")>;
+    }, "uid" | "type" | "date" | "isDisplayable" | "dateString" | "role" | ("createdAt" | "updatedAt" | "audioFile" | "skipGptResponse" | "metricData" | "behaviorData" | "text" | "tacticsData" | "senderUid" | "senderName" | "audioTranscript" | "audioTranscribedLocally")>;
     dayFactory: import("factory.ts").Factory<import("..").DayValue, "uid" | "date" | "logsById" | "cachedSummaryText">;
     issueFactory: import("factory.ts").Factory<{
-        path?: string | null | undefined;
         createdAt?: {
             isEqual?: any;
             toMillis?: any;
@@ -604,6 +603,7 @@ export declare const factories: {
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
+        path?: string | null | undefined;
         ordinal?: number | undefined;
         parentId?: string | null | undefined;
         parentName?: string | null | undefined;
@@ -617,7 +617,7 @@ export declare const factories: {
         recommendedStrategies?: import("../schema/utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
         reminderTactics?: import("../schema/utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
         name: string;
-    }, "name" | ("path" | "createdAt" | "updatedAt" | "ordinal" | "parentId" | "parentName" | "hasDebriefBehavior" | "synonyms" | "parentIds" | "parentNames" | "profileCount" | "isFeatured" | "blandContext" | "recommendedStrategies" | "reminderTactics")>;
+    }, "name" | ("createdAt" | "updatedAt" | "path" | "ordinal" | "parentId" | "parentName" | "hasDebriefBehavior" | "synonyms" | "parentIds" | "parentNames" | "profileCount" | "isFeatured" | "blandContext" | "recommendedStrategies" | "reminderTactics")>;
     locationFactory: import("factory.ts").Factory<{
         createdAt?: {
             isEqual?: any;
@@ -635,10 +635,10 @@ export declare const factories: {
         } | null | undefined;
         latitude?: number | undefined;
         longitude?: number | undefined;
-        name: string;
         uid: string;
+        name: string;
         address: string;
-    }, "name" | "uid" | "address" | ("createdAt" | "updatedAt" | "latitude" | "longitude")>;
+    }, "uid" | "name" | "address" | ("createdAt" | "updatedAt" | "latitude" | "longitude")>;
     daysSummaryFactory: import("factory.ts").Factory<{
         createdAt?: {
             isEqual?: any;
@@ -659,6 +659,15 @@ export declare const factories: {
                 behaviors: {
                     [x: string]: {
                         color?: string | undefined;
+                        data: {
+                            label?: {
+                                color?: string | undefined;
+                                text: string;
+                            } | null | undefined;
+                            counterValue?: number | undefined;
+                            timeSeconds?: number | undefined;
+                            formattedValue: string;
+                        };
                         behavior: {
                             createdAt?: {
                                 isEqual?: any;
@@ -920,22 +929,13 @@ export declare const factories: {
                                         } | undefined;
                                         backgroundColor?: string | undefined;
                                         timerSeconds?: import("yup").Maybe<number | undefined>;
-                                        url: string;
                                         type: "link";
+                                        url: string;
                                     };
                                     doc: import("../schema/utils/firestore").DocumentReferenceLike<unknown>;
                                 };
                             };
                             isHelpful: boolean | null;
-                        };
-                        data: {
-                            counterValue?: number | undefined;
-                            timeSeconds?: number | undefined;
-                            label?: {
-                                color?: string | undefined;
-                                text: string;
-                            } | null | undefined;
-                            formattedValue: string;
                         };
                     };
                 };
@@ -1040,14 +1040,14 @@ export declare const factories: {
         isTourDismissed?: boolean | undefined;
         region?: string | null | undefined;
         enableZara?: boolean | undefined;
-        agentType: NonNullable<import("..").AgentType | undefined>;
         uids: string[];
         verificationCode: string;
+        agentType: NonNullable<import("..").AgentType | undefined>;
         recentSummaries: {
             [x: string]: string;
         };
         timezone: string;
-    }, "agentType" | "uids" | "verificationCode" | "recentSummaries" | "timezone" | ("createdAt" | "updatedAt" | "parentIds" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "defaultBehaviorDoc" | "tourCompletedAt" | "scheduledNotificationIds" | "whatsappStrategyDoc" | "onboardedWithZaraAt" | "currentAppState" | "expoPushToken" | "notificationPreferences" | "goal" | "dayReviewTimeMinutes" | "isReadyForTour" | "isOnboardingComplete" | "debriefReminderDelayMinutes" | "androidPermissions" | "behaviorsDescription" | "initialImpulseMode" | "historicalInsights" | "activeThread" | "isTourDismissed" | "region" | "enableZara")>;
+    }, "uids" | "verificationCode" | "agentType" | "recentSummaries" | "timezone" | ("createdAt" | "updatedAt" | "parentIds" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "defaultBehaviorDoc" | "tourCompletedAt" | "scheduledNotificationIds" | "whatsappStrategyDoc" | "onboardedWithZaraAt" | "currentAppState" | "expoPushToken" | "notificationPreferences" | "goal" | "dayReviewTimeMinutes" | "isReadyForTour" | "isOnboardingComplete" | "debriefReminderDelayMinutes" | "androidPermissions" | "behaviorsDescription" | "initialImpulseMode" | "historicalInsights" | "activeThread" | "isTourDismissed" | "region" | "enableZara")>;
     routineFactory: import("factory.ts").Factory<{
         createdAt?: {
             isEqual?: any;
@@ -1064,8 +1064,8 @@ export declare const factories: {
             toDate: Function;
         } | null | undefined;
         ordinal?: number | undefined;
-        name: string;
         type: "scheduled";
+        name: string;
         tacticsById: {
             [x: string]: {
                 data?: {
@@ -1307,8 +1307,8 @@ export declare const factories: {
                     } | undefined;
                     backgroundColor?: string | undefined;
                     timerSeconds?: import("yup").Maybe<number | undefined>;
-                    url: string;
                     type: "link";
+                    url: string;
                 };
                 doc: import("../schema/utils/firestore").DocumentReferenceLike<unknown>;
             };
@@ -1316,7 +1316,7 @@ export declare const factories: {
         hour: number;
         minute: number;
         weekdays: (number | undefined)[];
-    }, "name" | "type" | "tacticsById" | "hour" | "minute" | "weekdays" | ("createdAt" | "updatedAt" | "ordinal")>;
+    }, "type" | "name" | "tacticsById" | "hour" | "minute" | "weekdays" | ("createdAt" | "updatedAt" | "ordinal")>;
     tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "uid" | "prompt" | "description" | "type" | "image" | "backgroundColor" | "timerSeconds">;
     suggestionFactory: import("factory.ts").Factory<{
         createdAt?: {
@@ -1599,8 +1599,8 @@ export declare const factories: {
                     } | undefined;
                     backgroundColor?: string | undefined;
                     timerSeconds?: import("yup").Maybe<number | undefined>;
-                    url: string;
                     type: "link";
+                    url: string;
                 };
                 doc: import("../schema/utils/firestore").DocumentReferenceLike<unknown>;
             };

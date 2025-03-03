@@ -9,6 +9,7 @@
   "types": "lib/index.d.ts",
   "scripts": {
     "tsc:build": "tsc --project tsconfig.build.json",
+    "tsc:watch": "tsc --project tsconfig.build.json --watch",
     "clean": "rm -rf ./lib/",
     "build": "yarn clean && yarn tsc:build",
     "cm": "cz",

@@ -2,7 +2,6 @@ import * as Factory from 'factory.ts';
 import { TimestampLike } from '../utils/firestore/TimestampLike';
 export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) => {
     regularLogFactory: Factory.Sync.Factory<{
-        text?: string | null | undefined;
         createdAt?: {
             isEqual?: any;
             toMillis?: any;
@@ -45,6 +44,15 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
         behaviorData?: {
             [x: string]: {
                 color?: string | undefined;
+                data: {
+                    label?: {
+                        color?: string | undefined;
+                        text: string;
+                    } | null | undefined;
+                    counterValue?: number | undefined;
+                    timeSeconds?: number | undefined;
+                    formattedValue: string;
+                };
                 behavior: {
                     createdAt?: {
                         isEqual?: any;
@@ -306,25 +314,17 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                                 } | undefined;
                                 backgroundColor?: string | undefined;
                                 timerSeconds?: import("yup").Maybe<number | undefined>;
-                                url: string;
                                 type: "link";
+                                url: string;
                             };
                             doc: import("../schema/utils/firestore").DocumentReferenceLike<unknown>;
                         };
                     };
                     isHelpful: boolean | null;
                 };
-                data: {
-                    counterValue?: number | undefined;
-                    timeSeconds?: number | undefined;
-                    label?: {
-                        color?: string | undefined;
-                        text: string;
-                    } | null | undefined;
-                    formattedValue: string;
-                };
             };
         } | null | undefined;
+        text?: string | null | undefined;
         tacticsData?: {
             [x: string]: {
                 data?: {
@@ -566,8 +566,8 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     } | undefined;
                     backgroundColor?: string | undefined;
                     timerSeconds?: import("yup").Maybe<number | undefined>;
-                    url: string;
                     type: "link";
+                    url: string;
                 };
                 doc: import("../schema/utils/firestore").DocumentReferenceLike<unknown>;
             };
@@ -588,5 +588,5 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
         isDisplayable: NonNullable<boolean | undefined>;
         dateString: string;
         role: "user";
-    }, "uid" | "type" | "date" | "isDisplayable" | "dateString" | "role" | ("text" | "createdAt" | "updatedAt" | "audioFile" | "skipGptResponse" | "metricData" | "behaviorData" | "tacticsData" | "senderUid" | "senderName" | "audioTranscript" | "audioTranscribedLocally")>;
+    }, "uid" | "type" | "date" | "isDisplayable" | "dateString" | "role" | ("createdAt" | "updatedAt" | "audioFile" | "skipGptResponse" | "metricData" | "behaviorData" | "text" | "tacticsData" | "senderUid" | "senderName" | "audioTranscript" | "audioTranscribedLocally")>;
 };

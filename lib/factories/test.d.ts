@@ -1,5 +1,4 @@
 export declare const regularLogFactory: import("factory.ts").Factory<{
-    text?: string | null | undefined;
     createdAt?: {
         isEqual?: any;
         toMillis?: any;
@@ -42,6 +41,15 @@ export declare const regularLogFactory: import("factory.ts").Factory<{
     behaviorData?: {
         [x: string]: {
             color?: string | undefined;
+            data: {
+                label?: {
+                    color?: string | undefined;
+                    text: string;
+                } | null | undefined;
+                counterValue?: number | undefined;
+                timeSeconds?: number | undefined;
+                formattedValue: string;
+            };
             behavior: {
                 createdAt?: {
                     isEqual?: any;
@@ -303,25 +311,17 @@ export declare const regularLogFactory: import("factory.ts").Factory<{
                             } | undefined;
                             backgroundColor?: string | undefined;
                             timerSeconds?: import("yup").Maybe<number | undefined>;
-                            url: string;
                             type: "link";
+                            url: string;
                         };
                         doc: import("../schema/utils/firestore").DocumentReferenceLike<unknown>;
                     };
                 };
                 isHelpful: boolean | null;
             };
-            data: {
-                counterValue?: number | undefined;
-                timeSeconds?: number | undefined;
-                label?: {
-                    color?: string | undefined;
-                    text: string;
-                } | null | undefined;
-                formattedValue: string;
-            };
         };
     } | null | undefined;
+    text?: string | null | undefined;
     tacticsData?: {
         [x: string]: {
             data?: {
@@ -563,8 +563,8 @@ export declare const regularLogFactory: import("factory.ts").Factory<{
                 } | undefined;
                 backgroundColor?: string | undefined;
                 timerSeconds?: import("yup").Maybe<number | undefined>;
-                url: string;
                 type: "link";
+                url: string;
             };
             doc: import("../schema/utils/firestore").DocumentReferenceLike<unknown>;
         };
@@ -585,7 +585,7 @@ export declare const regularLogFactory: import("factory.ts").Factory<{
     isDisplayable: NonNullable<boolean | undefined>;
     dateString: string;
     role: "user";
-}, "uid" | "type" | "date" | "isDisplayable" | "dateString" | "role" | ("text" | "createdAt" | "updatedAt" | "audioFile" | "skipGptResponse" | "metricData" | "behaviorData" | "tacticsData" | "senderUid" | "senderName" | "audioTranscript" | "audioTranscribedLocally")>, profileFactory: import("factory.ts").Factory<{
+}, "uid" | "type" | "date" | "isDisplayable" | "dateString" | "role" | ("createdAt" | "updatedAt" | "audioFile" | "skipGptResponse" | "metricData" | "behaviorData" | "text" | "tacticsData" | "senderUid" | "senderName" | "audioTranscript" | "audioTranscribedLocally")>, profileFactory: import("factory.ts").Factory<{
     createdAt?: {
         isEqual?: any;
         toMillis?: any;
@@ -668,11 +668,11 @@ export declare const regularLogFactory: import("factory.ts").Factory<{
     isTourDismissed?: boolean | undefined;
     region?: string | null | undefined;
     enableZara?: boolean | undefined;
-    agentType: NonNullable<import("..").AgentType | undefined>;
     uids: string[];
     verificationCode: string;
+    agentType: NonNullable<import("..").AgentType | undefined>;
     recentSummaries: {
         [x: string]: string;
     };
     timezone: string;
-}, "agentType" | "uids" | "verificationCode" | "recentSummaries" | "timezone" | ("createdAt" | "updatedAt" | "parentIds" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "defaultBehaviorDoc" | "tourCompletedAt" | "scheduledNotificationIds" | "whatsappStrategyDoc" | "onboardedWithZaraAt" | "currentAppState" | "expoPushToken" | "notificationPreferences" | "goal" | "dayReviewTimeMinutes" | "isReadyForTour" | "isOnboardingComplete" | "debriefReminderDelayMinutes" | "androidPermissions" | "behaviorsDescription" | "initialImpulseMode" | "historicalInsights" | "activeThread" | "isTourDismissed" | "region" | "enableZara")>, tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "uid" | "prompt" | "description" | "type" | "image" | "backgroundColor" | "timerSeconds">;
+}, "uids" | "verificationCode" | "agentType" | "recentSummaries" | "timezone" | ("createdAt" | "updatedAt" | "parentIds" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "defaultBehaviorDoc" | "tourCompletedAt" | "scheduledNotificationIds" | "whatsappStrategyDoc" | "onboardedWithZaraAt" | "currentAppState" | "expoPushToken" | "notificationPreferences" | "goal" | "dayReviewTimeMinutes" | "isReadyForTour" | "isOnboardingComplete" | "debriefReminderDelayMinutes" | "androidPermissions" | "behaviorsDescription" | "initialImpulseMode" | "historicalInsights" | "activeThread" | "isTourDismissed" | "region" | "enableZara")>, tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "uid" | "prompt" | "description" | "type" | "image" | "backgroundColor" | "timerSeconds">;
