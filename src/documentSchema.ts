@@ -30,8 +30,8 @@ export const schemaMap: Record<string, yup.Schema | yup.Lazy<unknown>> = {
   recoveryCodes: schemas.recoveryCodeSchema,
   suggestions: schemas.suggestionSchema,
   supportGroups: schemas.supportGroupSchema,
-  tacticImpressions: schemas.tacticImpressionSchema,
   therapists: schemas.therapistSchema,
   threads: schemas.threadSchema,
-  // notifications: schemas.notificationSchema,
+  tactics: schemas.tacticSchema,
+  userTactics: schemas.userTacticSchema,
 };

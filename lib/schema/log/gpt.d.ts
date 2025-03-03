@@ -93,15 +93,9 @@ export declare const gptLogSchema: yup.ObjectSchema<{
                                 nanoseconds: number;
                                 toDate: Function;
                             } | null | undefined;
-                            sourceFile?: import("../utils/firestore").DocumentReferenceLike<unknown> | undefined;
                             uid?: string | undefined;
-                            recommendedForIssueIds?: string[] | undefined;
-                            isDemoTactic?: boolean | undefined;
                             prompt?: string | undefined;
-                            isShared?: boolean | undefined;
                             description?: string | null | undefined;
-                            pastTenseTitle?: string | undefined;
-                            debriefAfterMinutes?: number | null | undefined;
                             image?: {
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
@@ -112,9 +106,7 @@ export declare const gptLogSchema: yup.ObjectSchema<{
                                 url: string;
                             } | undefined;
                             backgroundColor?: string | undefined;
-                            likesCount?: number | null | undefined;
                             timerSeconds?: yup.Maybe<number | undefined>;
-                            isSuggested?: boolean | undefined;
                             repeat?: yup.Maybe<number | undefined>;
                             type: "breathingExercise";
                             inFor: number;
@@ -135,15 +127,9 @@ export declare const gptLogSchema: yup.ObjectSchema<{
                                 nanoseconds: number;
                                 toDate: Function;
                             } | null | undefined;
-                            sourceFile?: import("../utils/firestore").DocumentReferenceLike<unknown> | undefined;
                             uid?: string | undefined;
-                            recommendedForIssueIds?: string[] | undefined;
-                            isDemoTactic?: boolean | undefined;
                             prompt?: string | undefined;
-                            isShared?: boolean | undefined;
                             description?: string | null | undefined;
-                            pastTenseTitle?: string | undefined;
-                            debriefAfterMinutes?: number | null | undefined;
                             image?: {
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
@@ -154,9 +140,7 @@ export declare const gptLogSchema: yup.ObjectSchema<{
                                 url: string;
                             } | undefined;
                             backgroundColor?: string | undefined;
-                            likesCount?: number | null | undefined;
                             timerSeconds?: yup.Maybe<number | undefined>;
-                            isSuggested?: boolean | undefined;
                             type: "notifyASupportPerson";
                             contactIds: string[];
                         } | {
@@ -174,15 +158,9 @@ export declare const gptLogSchema: yup.ObjectSchema<{
                                 nanoseconds: number;
                                 toDate: Function;
                             } | null | undefined;
-                            sourceFile?: import("../utils/firestore").DocumentReferenceLike<unknown> | undefined;
                             uid?: string | undefined;
-                            recommendedForIssueIds?: string[] | undefined;
-                            isDemoTactic?: boolean | undefined;
                             prompt?: string | undefined;
-                            isShared?: boolean | undefined;
                             description?: string | null | undefined;
-                            pastTenseTitle?: string | undefined;
-                            debriefAfterMinutes?: number | null | undefined;
                             image?: {
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
@@ -193,9 +171,7 @@ export declare const gptLogSchema: yup.ObjectSchema<{
                                 url: string;
                             } | undefined;
                             backgroundColor?: string | undefined;
-                            likesCount?: number | null | undefined;
                             timerSeconds?: yup.Maybe<number | undefined>;
-                            isSuggested?: boolean | undefined;
                             type: "steps";
                             targetSteps: number;
                         } | {
@@ -213,14 +189,8 @@ export declare const gptLogSchema: yup.ObjectSchema<{
                                 nanoseconds: number;
                                 toDate: Function;
                             } | null | undefined;
-                            sourceFile?: import("../utils/firestore").DocumentReferenceLike<unknown> | undefined;
                             uid?: string | undefined;
-                            recommendedForIssueIds?: string[] | undefined;
-                            isDemoTactic?: boolean | undefined;
-                            isShared?: boolean | undefined;
                             description?: string | null | undefined;
-                            pastTenseTitle?: string | undefined;
-                            debriefAfterMinutes?: number | null | undefined;
                             image?: {
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
@@ -231,9 +201,7 @@ export declare const gptLogSchema: yup.ObjectSchema<{
                                 url: string;
                             } | undefined;
                             backgroundColor?: string | undefined;
-                            likesCount?: number | null | undefined;
                             timerSeconds?: yup.Maybe<number | undefined>;
-                            isSuggested?: boolean | undefined;
                             audio?: {
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
@@ -260,15 +228,9 @@ export declare const gptLogSchema: yup.ObjectSchema<{
                                 nanoseconds: number;
                                 toDate: Function;
                             } | null | undefined;
-                            sourceFile?: import("../utils/firestore").DocumentReferenceLike<unknown> | undefined;
                             uid?: string | undefined;
-                            recommendedForIssueIds?: string[] | undefined;
-                            isDemoTactic?: boolean | undefined;
                             prompt?: string | undefined;
-                            isShared?: boolean | undefined;
                             description?: string | null | undefined;
-                            pastTenseTitle?: string | undefined;
-                            debriefAfterMinutes?: number | null | undefined;
                             image?: {
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
@@ -279,9 +241,7 @@ export declare const gptLogSchema: yup.ObjectSchema<{
                                 url: string;
                             } | undefined;
                             backgroundColor?: string | undefined;
-                            likesCount?: number | null | undefined;
                             timerSeconds?: yup.Maybe<number | undefined>;
-                            isSuggested?: boolean | undefined;
                             type: "video";
                             video: {
                                 storagePath?: string | null | undefined;
@@ -302,15 +262,9 @@ export declare const gptLogSchema: yup.ObjectSchema<{
                                 nanoseconds: number;
                                 toDate: Function;
                             } | null | undefined;
-                            sourceFile?: import("../utils/firestore").DocumentReferenceLike<unknown> | undefined;
                             uid?: string | undefined;
-                            recommendedForIssueIds?: string[] | undefined;
-                            isDemoTactic?: boolean | undefined;
                             prompt?: string | undefined;
-                            isShared?: boolean | undefined;
                             description?: string | null | undefined;
-                            pastTenseTitle?: string | undefined;
-                            debriefAfterMinutes?: number | null | undefined;
                             image?: {
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
@@ -321,9 +275,7 @@ export declare const gptLogSchema: yup.ObjectSchema<{
                                 url: string;
                             } | undefined;
                             backgroundColor?: string | undefined;
-                            likesCount?: number | null | undefined;
                             timerSeconds?: yup.Maybe<number | undefined>;
-                            isSuggested?: boolean | undefined;
                             type: "notifySupportGroup";
                             supportGroup: import("../utils/firestore").DocumentReferenceLike<unknown>;
                         } | {
@@ -341,15 +293,9 @@ export declare const gptLogSchema: yup.ObjectSchema<{
                                 nanoseconds: number;
                                 toDate: Function;
                             } | null | undefined;
-                            sourceFile?: import("../utils/firestore").DocumentReferenceLike<unknown> | undefined;
                             uid?: string | undefined;
-                            recommendedForIssueIds?: string[] | undefined;
-                            isDemoTactic?: boolean | undefined;
                             prompt?: string | undefined;
-                            isShared?: boolean | undefined;
                             description?: string | null | undefined;
-                            pastTenseTitle?: string | undefined;
-                            debriefAfterMinutes?: number | null | undefined;
                             image?: {
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
@@ -360,9 +306,7 @@ export declare const gptLogSchema: yup.ObjectSchema<{
                                 url: string;
                             } | undefined;
                             backgroundColor?: string | undefined;
-                            likesCount?: number | null | undefined;
                             timerSeconds?: yup.Maybe<number | undefined>;
-                            isSuggested?: boolean | undefined;
                             url: string;
                             type: "link";
                         };
@@ -409,15 +353,9 @@ export declare const gptLogSchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                sourceFile?: import("../utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 uid?: string | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                isDemoTactic?: boolean | undefined;
                 prompt?: string | undefined;
-                isShared?: boolean | undefined;
                 description?: string | null | undefined;
-                pastTenseTitle?: string | undefined;
-                debriefAfterMinutes?: number | null | undefined;
                 image?: {
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
@@ -428,9 +366,7 @@ export declare const gptLogSchema: yup.ObjectSchema<{
                     url: string;
                 } | undefined;
                 backgroundColor?: string | undefined;
-                likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
-                isSuggested?: boolean | undefined;
                 repeat?: yup.Maybe<number | undefined>;
                 type: "breathingExercise";
                 inFor: number;
@@ -451,15 +387,9 @@ export declare const gptLogSchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                sourceFile?: import("../utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 uid?: string | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                isDemoTactic?: boolean | undefined;
                 prompt?: string | undefined;
-                isShared?: boolean | undefined;
                 description?: string | null | undefined;
-                pastTenseTitle?: string | undefined;
-                debriefAfterMinutes?: number | null | undefined;
                 image?: {
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
@@ -470,9 +400,7 @@ export declare const gptLogSchema: yup.ObjectSchema<{
                     url: string;
                 } | undefined;
                 backgroundColor?: string | undefined;
-                likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
-                isSuggested?: boolean | undefined;
                 type: "notifyASupportPerson";
                 contactIds: string[];
             } | {
@@ -490,15 +418,9 @@ export declare const gptLogSchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                sourceFile?: import("../utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 uid?: string | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                isDemoTactic?: boolean | undefined;
                 prompt?: string | undefined;
-                isShared?: boolean | undefined;
                 description?: string | null | undefined;
-                pastTenseTitle?: string | undefined;
-                debriefAfterMinutes?: number | null | undefined;
                 image?: {
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
@@ -509,9 +431,7 @@ export declare const gptLogSchema: yup.ObjectSchema<{
                     url: string;
                 } | undefined;
                 backgroundColor?: string | undefined;
-                likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
-                isSuggested?: boolean | undefined;
                 type: "steps";
                 targetSteps: number;
             } | {
@@ -529,14 +449,8 @@ export declare const gptLogSchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                sourceFile?: import("../utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 uid?: string | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                isDemoTactic?: boolean | undefined;
-                isShared?: boolean | undefined;
                 description?: string | null | undefined;
-                pastTenseTitle?: string | undefined;
-                debriefAfterMinutes?: number | null | undefined;
                 image?: {
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
@@ -547,9 +461,7 @@ export declare const gptLogSchema: yup.ObjectSchema<{
                     url: string;
                 } | undefined;
                 backgroundColor?: string | undefined;
-                likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
-                isSuggested?: boolean | undefined;
                 audio?: {
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
@@ -576,15 +488,9 @@ export declare const gptLogSchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                sourceFile?: import("../utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 uid?: string | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                isDemoTactic?: boolean | undefined;
                 prompt?: string | undefined;
-                isShared?: boolean | undefined;
                 description?: string | null | undefined;
-                pastTenseTitle?: string | undefined;
-                debriefAfterMinutes?: number | null | undefined;
                 image?: {
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
@@ -595,9 +501,7 @@ export declare const gptLogSchema: yup.ObjectSchema<{
                     url: string;
                 } | undefined;
                 backgroundColor?: string | undefined;
-                likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
-                isSuggested?: boolean | undefined;
                 type: "video";
                 video: {
                     storagePath?: string | null | undefined;
@@ -618,15 +522,9 @@ export declare const gptLogSchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                sourceFile?: import("../utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 uid?: string | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                isDemoTactic?: boolean | undefined;
                 prompt?: string | undefined;
-                isShared?: boolean | undefined;
                 description?: string | null | undefined;
-                pastTenseTitle?: string | undefined;
-                debriefAfterMinutes?: number | null | undefined;
                 image?: {
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
@@ -637,9 +535,7 @@ export declare const gptLogSchema: yup.ObjectSchema<{
                     url: string;
                 } | undefined;
                 backgroundColor?: string | undefined;
-                likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
-                isSuggested?: boolean | undefined;
                 type: "notifySupportGroup";
                 supportGroup: import("../utils/firestore").DocumentReferenceLike<unknown>;
             } | {
@@ -657,15 +553,9 @@ export declare const gptLogSchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                sourceFile?: import("../utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 uid?: string | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                isDemoTactic?: boolean | undefined;
                 prompt?: string | undefined;
-                isShared?: boolean | undefined;
                 description?: string | null | undefined;
-                pastTenseTitle?: string | undefined;
-                debriefAfterMinutes?: number | null | undefined;
                 image?: {
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
@@ -676,9 +566,7 @@ export declare const gptLogSchema: yup.ObjectSchema<{
                     url: string;
                 } | undefined;
                 backgroundColor?: string | undefined;
-                likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
-                isSuggested?: boolean | undefined;
                 url: string;
                 type: "link";
             };

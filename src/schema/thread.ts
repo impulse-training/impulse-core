@@ -20,7 +20,10 @@ export const threadSchema = yup.object({
   isDisplayable: yup.boolean().required(),
   dateString: yup.string().required(),
   date: timestampSchema,
+  // This is shown inside the thread component - it's optional
   title: yup.string(),
+  // This is shown when navigating to a thread - it must always be set
+  navigationTitle: yup.string().required(),
   summary: yup.string(),
   logsById,
   suggestedTactics: yup.array().of(tacticSchema),

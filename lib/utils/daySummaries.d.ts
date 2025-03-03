@@ -64,15 +64,9 @@ export declare function dayTotalBehaviorData(logsById: DayValue['logsById']): {
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
-                        sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                         uid?: string | undefined;
-                        recommendedForIssueIds?: string[] | undefined;
-                        isDemoTactic?: boolean | undefined;
                         prompt?: string | undefined;
-                        isShared?: boolean | undefined;
                         description?: string | null | undefined;
-                        pastTenseTitle?: string | undefined;
-                        debriefAfterMinutes?: number | null | undefined;
                         image?: {
                             localFilePath?: import("yup").Maybe<string | undefined>;
                             isDeleted?: boolean | undefined;
@@ -83,9 +77,7 @@ export declare function dayTotalBehaviorData(logsById: DayValue['logsById']): {
                             url: string;
                         } | undefined;
                         backgroundColor?: string | undefined;
-                        likesCount?: number | null | undefined;
                         timerSeconds?: import("yup").Maybe<number | undefined>;
-                        isSuggested?: boolean | undefined;
                         repeat?: import("yup").Maybe<number | undefined>;
                         type: "breathingExercise";
                         inFor: number;
@@ -106,15 +98,9 @@ export declare function dayTotalBehaviorData(logsById: DayValue['logsById']): {
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
-                        sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                         uid?: string | undefined;
-                        recommendedForIssueIds?: string[] | undefined;
-                        isDemoTactic?: boolean | undefined;
                         prompt?: string | undefined;
-                        isShared?: boolean | undefined;
                         description?: string | null | undefined;
-                        pastTenseTitle?: string | undefined;
-                        debriefAfterMinutes?: number | null | undefined;
                         image?: {
                             localFilePath?: import("yup").Maybe<string | undefined>;
                             isDeleted?: boolean | undefined;
@@ -125,9 +111,7 @@ export declare function dayTotalBehaviorData(logsById: DayValue['logsById']): {
                             url: string;
                         } | undefined;
                         backgroundColor?: string | undefined;
-                        likesCount?: number | null | undefined;
                         timerSeconds?: import("yup").Maybe<number | undefined>;
-                        isSuggested?: boolean | undefined;
                         type: "notifyASupportPerson";
                         contactIds: string[];
                     } | {
@@ -145,15 +129,9 @@ export declare function dayTotalBehaviorData(logsById: DayValue['logsById']): {
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
-                        sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                         uid?: string | undefined;
-                        recommendedForIssueIds?: string[] | undefined;
-                        isDemoTactic?: boolean | undefined;
                         prompt?: string | undefined;
-                        isShared?: boolean | undefined;
                         description?: string | null | undefined;
-                        pastTenseTitle?: string | undefined;
-                        debriefAfterMinutes?: number | null | undefined;
                         image?: {
                             localFilePath?: import("yup").Maybe<string | undefined>;
                             isDeleted?: boolean | undefined;
@@ -164,9 +142,7 @@ export declare function dayTotalBehaviorData(logsById: DayValue['logsById']): {
                             url: string;
                         } | undefined;
                         backgroundColor?: string | undefined;
-                        likesCount?: number | null | undefined;
                         timerSeconds?: import("yup").Maybe<number | undefined>;
-                        isSuggested?: boolean | undefined;
                         type: "steps";
                         targetSteps: number;
                     } | {
@@ -184,14 +160,8 @@ export declare function dayTotalBehaviorData(logsById: DayValue['logsById']): {
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
-                        sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                         uid?: string | undefined;
-                        recommendedForIssueIds?: string[] | undefined;
-                        isDemoTactic?: boolean | undefined;
-                        isShared?: boolean | undefined;
                         description?: string | null | undefined;
-                        pastTenseTitle?: string | undefined;
-                        debriefAfterMinutes?: number | null | undefined;
                         image?: {
                             localFilePath?: import("yup").Maybe<string | undefined>;
                             isDeleted?: boolean | undefined;
@@ -202,9 +172,7 @@ export declare function dayTotalBehaviorData(logsById: DayValue['logsById']): {
                             url: string;
                         } | undefined;
                         backgroundColor?: string | undefined;
-                        likesCount?: number | null | undefined;
                         timerSeconds?: import("yup").Maybe<number | undefined>;
-                        isSuggested?: boolean | undefined;
                         audio?: {
                             localFilePath?: import("yup").Maybe<string | undefined>;
                             isDeleted?: boolean | undefined;
@@ -231,15 +199,9 @@ export declare function dayTotalBehaviorData(logsById: DayValue['logsById']): {
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
-                        sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                         uid?: string | undefined;
-                        recommendedForIssueIds?: string[] | undefined;
-                        isDemoTactic?: boolean | undefined;
                         prompt?: string | undefined;
-                        isShared?: boolean | undefined;
                         description?: string | null | undefined;
-                        pastTenseTitle?: string | undefined;
-                        debriefAfterMinutes?: number | null | undefined;
                         image?: {
                             localFilePath?: import("yup").Maybe<string | undefined>;
                             isDeleted?: boolean | undefined;
@@ -250,9 +212,7 @@ export declare function dayTotalBehaviorData(logsById: DayValue['logsById']): {
                             url: string;
                         } | undefined;
                         backgroundColor?: string | undefined;
-                        likesCount?: number | null | undefined;
                         timerSeconds?: import("yup").Maybe<number | undefined>;
-                        isSuggested?: boolean | undefined;
                         type: "video";
                         video: {
                             storagePath?: string | null | undefined;
@@ -273,15 +233,9 @@ export declare function dayTotalBehaviorData(logsById: DayValue['logsById']): {
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
-                        sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                         uid?: string | undefined;
-                        recommendedForIssueIds?: string[] | undefined;
-                        isDemoTactic?: boolean | undefined;
                         prompt?: string | undefined;
-                        isShared?: boolean | undefined;
                         description?: string | null | undefined;
-                        pastTenseTitle?: string | undefined;
-                        debriefAfterMinutes?: number | null | undefined;
                         image?: {
                             localFilePath?: import("yup").Maybe<string | undefined>;
                             isDeleted?: boolean | undefined;
@@ -292,9 +246,7 @@ export declare function dayTotalBehaviorData(logsById: DayValue['logsById']): {
                             url: string;
                         } | undefined;
                         backgroundColor?: string | undefined;
-                        likesCount?: number | null | undefined;
                         timerSeconds?: import("yup").Maybe<number | undefined>;
-                        isSuggested?: boolean | undefined;
                         type: "notifySupportGroup";
                         supportGroup: import("../schema/utils/firestore").DocumentReferenceLike<unknown>;
                     } | {
@@ -312,15 +264,9 @@ export declare function dayTotalBehaviorData(logsById: DayValue['logsById']): {
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
-                        sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                         uid?: string | undefined;
-                        recommendedForIssueIds?: string[] | undefined;
-                        isDemoTactic?: boolean | undefined;
                         prompt?: string | undefined;
-                        isShared?: boolean | undefined;
                         description?: string | null | undefined;
-                        pastTenseTitle?: string | undefined;
-                        debriefAfterMinutes?: number | null | undefined;
                         image?: {
                             localFilePath?: import("yup").Maybe<string | undefined>;
                             isDeleted?: boolean | undefined;
@@ -331,9 +277,7 @@ export declare function dayTotalBehaviorData(logsById: DayValue['logsById']): {
                             url: string;
                         } | undefined;
                         backgroundColor?: string | undefined;
-                        likesCount?: number | null | undefined;
                         timerSeconds?: import("yup").Maybe<number | undefined>;
-                        isSuggested?: boolean | undefined;
                         url: string;
                         type: "link";
                     };

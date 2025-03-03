@@ -91,15 +91,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                                     nanoseconds: number;
                                     toDate: Function;
                                 } | null | undefined;
-                                sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                                 uid?: string | undefined;
-                                recommendedForIssueIds?: string[] | undefined;
-                                isDemoTactic?: boolean | undefined;
                                 prompt?: string | undefined;
-                                isShared?: boolean | undefined;
                                 description?: string | null | undefined;
-                                pastTenseTitle?: string | undefined;
-                                debriefAfterMinutes?: number | null | undefined;
                                 image?: {
                                     localFilePath?: import("yup").Maybe<string | undefined>;
                                     isDeleted?: boolean | undefined;
@@ -110,9 +104,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                                     url: string;
                                 } | undefined;
                                 backgroundColor?: string | undefined;
-                                likesCount?: number | null | undefined;
                                 timerSeconds?: import("yup").Maybe<number | undefined>;
-                                isSuggested?: boolean | undefined;
                                 repeat?: import("yup").Maybe<number | undefined>;
                                 type: "breathingExercise";
                                 inFor: number;
@@ -133,15 +125,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                                     nanoseconds: number;
                                     toDate: Function;
                                 } | null | undefined;
-                                sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                                 uid?: string | undefined;
-                                recommendedForIssueIds?: string[] | undefined;
-                                isDemoTactic?: boolean | undefined;
                                 prompt?: string | undefined;
-                                isShared?: boolean | undefined;
                                 description?: string | null | undefined;
-                                pastTenseTitle?: string | undefined;
-                                debriefAfterMinutes?: number | null | undefined;
                                 image?: {
                                     localFilePath?: import("yup").Maybe<string | undefined>;
                                     isDeleted?: boolean | undefined;
@@ -152,9 +138,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                                     url: string;
                                 } | undefined;
                                 backgroundColor?: string | undefined;
-                                likesCount?: number | null | undefined;
                                 timerSeconds?: import("yup").Maybe<number | undefined>;
-                                isSuggested?: boolean | undefined;
                                 type: "notifyASupportPerson";
                                 contactIds: string[];
                             } | {
@@ -172,15 +156,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                                     nanoseconds: number;
                                     toDate: Function;
                                 } | null | undefined;
-                                sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                                 uid?: string | undefined;
-                                recommendedForIssueIds?: string[] | undefined;
-                                isDemoTactic?: boolean | undefined;
                                 prompt?: string | undefined;
-                                isShared?: boolean | undefined;
                                 description?: string | null | undefined;
-                                pastTenseTitle?: string | undefined;
-                                debriefAfterMinutes?: number | null | undefined;
                                 image?: {
                                     localFilePath?: import("yup").Maybe<string | undefined>;
                                     isDeleted?: boolean | undefined;
@@ -191,9 +169,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                                     url: string;
                                 } | undefined;
                                 backgroundColor?: string | undefined;
-                                likesCount?: number | null | undefined;
                                 timerSeconds?: import("yup").Maybe<number | undefined>;
-                                isSuggested?: boolean | undefined;
                                 type: "steps";
                                 targetSteps: number;
                             } | {
@@ -211,14 +187,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                                     nanoseconds: number;
                                     toDate: Function;
                                 } | null | undefined;
-                                sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                                 uid?: string | undefined;
-                                recommendedForIssueIds?: string[] | undefined;
-                                isDemoTactic?: boolean | undefined;
-                                isShared?: boolean | undefined;
                                 description?: string | null | undefined;
-                                pastTenseTitle?: string | undefined;
-                                debriefAfterMinutes?: number | null | undefined;
                                 image?: {
                                     localFilePath?: import("yup").Maybe<string | undefined>;
                                     isDeleted?: boolean | undefined;
@@ -229,9 +199,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                                     url: string;
                                 } | undefined;
                                 backgroundColor?: string | undefined;
-                                likesCount?: number | null | undefined;
                                 timerSeconds?: import("yup").Maybe<number | undefined>;
-                                isSuggested?: boolean | undefined;
                                 audio?: {
                                     localFilePath?: import("yup").Maybe<string | undefined>;
                                     isDeleted?: boolean | undefined;
@@ -258,15 +226,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                                     nanoseconds: number;
                                     toDate: Function;
                                 } | null | undefined;
-                                sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                                 uid?: string | undefined;
-                                recommendedForIssueIds?: string[] | undefined;
-                                isDemoTactic?: boolean | undefined;
                                 prompt?: string | undefined;
-                                isShared?: boolean | undefined;
                                 description?: string | null | undefined;
-                                pastTenseTitle?: string | undefined;
-                                debriefAfterMinutes?: number | null | undefined;
                                 image?: {
                                     localFilePath?: import("yup").Maybe<string | undefined>;
                                     isDeleted?: boolean | undefined;
@@ -277,9 +239,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                                     url: string;
                                 } | undefined;
                                 backgroundColor?: string | undefined;
-                                likesCount?: number | null | undefined;
                                 timerSeconds?: import("yup").Maybe<number | undefined>;
-                                isSuggested?: boolean | undefined;
                                 type: "video";
                                 video: {
                                     storagePath?: string | null | undefined;
@@ -300,15 +260,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                                     nanoseconds: number;
                                     toDate: Function;
                                 } | null | undefined;
-                                sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                                 uid?: string | undefined;
-                                recommendedForIssueIds?: string[] | undefined;
-                                isDemoTactic?: boolean | undefined;
                                 prompt?: string | undefined;
-                                isShared?: boolean | undefined;
                                 description?: string | null | undefined;
-                                pastTenseTitle?: string | undefined;
-                                debriefAfterMinutes?: number | null | undefined;
                                 image?: {
                                     localFilePath?: import("yup").Maybe<string | undefined>;
                                     isDeleted?: boolean | undefined;
@@ -319,9 +273,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                                     url: string;
                                 } | undefined;
                                 backgroundColor?: string | undefined;
-                                likesCount?: number | null | undefined;
                                 timerSeconds?: import("yup").Maybe<number | undefined>;
-                                isSuggested?: boolean | undefined;
                                 type: "notifySupportGroup";
                                 supportGroup: import("../schema/utils/firestore").DocumentReferenceLike<unknown>;
                             } | {
@@ -339,15 +291,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                                     nanoseconds: number;
                                     toDate: Function;
                                 } | null | undefined;
-                                sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                                 uid?: string | undefined;
-                                recommendedForIssueIds?: string[] | undefined;
-                                isDemoTactic?: boolean | undefined;
                                 prompt?: string | undefined;
-                                isShared?: boolean | undefined;
                                 description?: string | null | undefined;
-                                pastTenseTitle?: string | undefined;
-                                debriefAfterMinutes?: number | null | undefined;
                                 image?: {
                                     localFilePath?: import("yup").Maybe<string | undefined>;
                                     isDeleted?: boolean | undefined;
@@ -358,9 +304,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                                     url: string;
                                 } | undefined;
                                 backgroundColor?: string | undefined;
-                                likesCount?: number | null | undefined;
                                 timerSeconds?: import("yup").Maybe<number | undefined>;
-                                isSuggested?: boolean | undefined;
                                 url: string;
                                 type: "link";
                             };
@@ -407,15 +351,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
-                    sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                     uid?: string | undefined;
-                    recommendedForIssueIds?: string[] | undefined;
-                    isDemoTactic?: boolean | undefined;
                     prompt?: string | undefined;
-                    isShared?: boolean | undefined;
                     description?: string | null | undefined;
-                    pastTenseTitle?: string | undefined;
-                    debriefAfterMinutes?: number | null | undefined;
                     image?: {
                         localFilePath?: import("yup").Maybe<string | undefined>;
                         isDeleted?: boolean | undefined;
@@ -426,9 +364,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         url: string;
                     } | undefined;
                     backgroundColor?: string | undefined;
-                    likesCount?: number | null | undefined;
                     timerSeconds?: import("yup").Maybe<number | undefined>;
-                    isSuggested?: boolean | undefined;
                     repeat?: import("yup").Maybe<number | undefined>;
                     type: "breathingExercise";
                     inFor: number;
@@ -449,15 +385,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
-                    sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                     uid?: string | undefined;
-                    recommendedForIssueIds?: string[] | undefined;
-                    isDemoTactic?: boolean | undefined;
                     prompt?: string | undefined;
-                    isShared?: boolean | undefined;
                     description?: string | null | undefined;
-                    pastTenseTitle?: string | undefined;
-                    debriefAfterMinutes?: number | null | undefined;
                     image?: {
                         localFilePath?: import("yup").Maybe<string | undefined>;
                         isDeleted?: boolean | undefined;
@@ -468,9 +398,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         url: string;
                     } | undefined;
                     backgroundColor?: string | undefined;
-                    likesCount?: number | null | undefined;
                     timerSeconds?: import("yup").Maybe<number | undefined>;
-                    isSuggested?: boolean | undefined;
                     type: "notifyASupportPerson";
                     contactIds: string[];
                 } | {
@@ -488,15 +416,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
-                    sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                     uid?: string | undefined;
-                    recommendedForIssueIds?: string[] | undefined;
-                    isDemoTactic?: boolean | undefined;
                     prompt?: string | undefined;
-                    isShared?: boolean | undefined;
                     description?: string | null | undefined;
-                    pastTenseTitle?: string | undefined;
-                    debriefAfterMinutes?: number | null | undefined;
                     image?: {
                         localFilePath?: import("yup").Maybe<string | undefined>;
                         isDeleted?: boolean | undefined;
@@ -507,9 +429,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         url: string;
                     } | undefined;
                     backgroundColor?: string | undefined;
-                    likesCount?: number | null | undefined;
                     timerSeconds?: import("yup").Maybe<number | undefined>;
-                    isSuggested?: boolean | undefined;
                     type: "steps";
                     targetSteps: number;
                 } | {
@@ -527,14 +447,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
-                    sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                     uid?: string | undefined;
-                    recommendedForIssueIds?: string[] | undefined;
-                    isDemoTactic?: boolean | undefined;
-                    isShared?: boolean | undefined;
                     description?: string | null | undefined;
-                    pastTenseTitle?: string | undefined;
-                    debriefAfterMinutes?: number | null | undefined;
                     image?: {
                         localFilePath?: import("yup").Maybe<string | undefined>;
                         isDeleted?: boolean | undefined;
@@ -545,9 +459,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         url: string;
                     } | undefined;
                     backgroundColor?: string | undefined;
-                    likesCount?: number | null | undefined;
                     timerSeconds?: import("yup").Maybe<number | undefined>;
-                    isSuggested?: boolean | undefined;
                     audio?: {
                         localFilePath?: import("yup").Maybe<string | undefined>;
                         isDeleted?: boolean | undefined;
@@ -574,15 +486,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
-                    sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                     uid?: string | undefined;
-                    recommendedForIssueIds?: string[] | undefined;
-                    isDemoTactic?: boolean | undefined;
                     prompt?: string | undefined;
-                    isShared?: boolean | undefined;
                     description?: string | null | undefined;
-                    pastTenseTitle?: string | undefined;
-                    debriefAfterMinutes?: number | null | undefined;
                     image?: {
                         localFilePath?: import("yup").Maybe<string | undefined>;
                         isDeleted?: boolean | undefined;
@@ -593,9 +499,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         url: string;
                     } | undefined;
                     backgroundColor?: string | undefined;
-                    likesCount?: number | null | undefined;
                     timerSeconds?: import("yup").Maybe<number | undefined>;
-                    isSuggested?: boolean | undefined;
                     type: "video";
                     video: {
                         storagePath?: string | null | undefined;
@@ -616,15 +520,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
-                    sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                     uid?: string | undefined;
-                    recommendedForIssueIds?: string[] | undefined;
-                    isDemoTactic?: boolean | undefined;
                     prompt?: string | undefined;
-                    isShared?: boolean | undefined;
                     description?: string | null | undefined;
-                    pastTenseTitle?: string | undefined;
-                    debriefAfterMinutes?: number | null | undefined;
                     image?: {
                         localFilePath?: import("yup").Maybe<string | undefined>;
                         isDeleted?: boolean | undefined;
@@ -635,9 +533,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         url: string;
                     } | undefined;
                     backgroundColor?: string | undefined;
-                    likesCount?: number | null | undefined;
                     timerSeconds?: import("yup").Maybe<number | undefined>;
-                    isSuggested?: boolean | undefined;
                     type: "notifySupportGroup";
                     supportGroup: import("../schema/utils/firestore").DocumentReferenceLike<unknown>;
                 } | {
@@ -655,15 +551,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
-                    sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                     uid?: string | undefined;
-                    recommendedForIssueIds?: string[] | undefined;
-                    isDemoTactic?: boolean | undefined;
                     prompt?: string | undefined;
-                    isShared?: boolean | undefined;
                     description?: string | null | undefined;
-                    pastTenseTitle?: string | undefined;
-                    debriefAfterMinutes?: number | null | undefined;
                     image?: {
                         localFilePath?: import("yup").Maybe<string | undefined>;
                         isDeleted?: boolean | undefined;
@@ -674,9 +564,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         url: string;
                     } | undefined;
                     backgroundColor?: string | undefined;
-                    likesCount?: number | null | undefined;
                     timerSeconds?: import("yup").Maybe<number | undefined>;
-                    isSuggested?: boolean | undefined;
                     url: string;
                     type: "link";
                 };
@@ -819,15 +707,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                                             nanoseconds: number;
                                             toDate: Function;
                                         } | null | undefined;
-                                        sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                                         uid?: string | undefined;
-                                        recommendedForIssueIds?: string[] | undefined;
-                                        isDemoTactic?: boolean | undefined;
                                         prompt?: string | undefined;
-                                        isShared?: boolean | undefined;
                                         description?: string | null | undefined;
-                                        pastTenseTitle?: string | undefined;
-                                        debriefAfterMinutes?: number | null | undefined;
                                         image?: {
                                             localFilePath?: import("yup").Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
@@ -838,9 +720,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                                             url: string;
                                         } | undefined;
                                         backgroundColor?: string | undefined;
-                                        likesCount?: number | null | undefined;
                                         timerSeconds?: import("yup").Maybe<number | undefined>;
-                                        isSuggested?: boolean | undefined;
                                         repeat?: import("yup").Maybe<number | undefined>;
                                         type: "breathingExercise";
                                         inFor: number;
@@ -861,15 +741,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                                             nanoseconds: number;
                                             toDate: Function;
                                         } | null | undefined;
-                                        sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                                         uid?: string | undefined;
-                                        recommendedForIssueIds?: string[] | undefined;
-                                        isDemoTactic?: boolean | undefined;
                                         prompt?: string | undefined;
-                                        isShared?: boolean | undefined;
                                         description?: string | null | undefined;
-                                        pastTenseTitle?: string | undefined;
-                                        debriefAfterMinutes?: number | null | undefined;
                                         image?: {
                                             localFilePath?: import("yup").Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
@@ -880,9 +754,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                                             url: string;
                                         } | undefined;
                                         backgroundColor?: string | undefined;
-                                        likesCount?: number | null | undefined;
                                         timerSeconds?: import("yup").Maybe<number | undefined>;
-                                        isSuggested?: boolean | undefined;
                                         type: "notifyASupportPerson";
                                         contactIds: string[];
                                     } | {
@@ -900,15 +772,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                                             nanoseconds: number;
                                             toDate: Function;
                                         } | null | undefined;
-                                        sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                                         uid?: string | undefined;
-                                        recommendedForIssueIds?: string[] | undefined;
-                                        isDemoTactic?: boolean | undefined;
                                         prompt?: string | undefined;
-                                        isShared?: boolean | undefined;
                                         description?: string | null | undefined;
-                                        pastTenseTitle?: string | undefined;
-                                        debriefAfterMinutes?: number | null | undefined;
                                         image?: {
                                             localFilePath?: import("yup").Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
@@ -919,9 +785,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                                             url: string;
                                         } | undefined;
                                         backgroundColor?: string | undefined;
-                                        likesCount?: number | null | undefined;
                                         timerSeconds?: import("yup").Maybe<number | undefined>;
-                                        isSuggested?: boolean | undefined;
                                         type: "steps";
                                         targetSteps: number;
                                     } | {
@@ -939,14 +803,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                                             nanoseconds: number;
                                             toDate: Function;
                                         } | null | undefined;
-                                        sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                                         uid?: string | undefined;
-                                        recommendedForIssueIds?: string[] | undefined;
-                                        isDemoTactic?: boolean | undefined;
-                                        isShared?: boolean | undefined;
                                         description?: string | null | undefined;
-                                        pastTenseTitle?: string | undefined;
-                                        debriefAfterMinutes?: number | null | undefined;
                                         image?: {
                                             localFilePath?: import("yup").Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
@@ -957,9 +815,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                                             url: string;
                                         } | undefined;
                                         backgroundColor?: string | undefined;
-                                        likesCount?: number | null | undefined;
                                         timerSeconds?: import("yup").Maybe<number | undefined>;
-                                        isSuggested?: boolean | undefined;
                                         audio?: {
                                             localFilePath?: import("yup").Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
@@ -986,15 +842,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                                             nanoseconds: number;
                                             toDate: Function;
                                         } | null | undefined;
-                                        sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                                         uid?: string | undefined;
-                                        recommendedForIssueIds?: string[] | undefined;
-                                        isDemoTactic?: boolean | undefined;
                                         prompt?: string | undefined;
-                                        isShared?: boolean | undefined;
                                         description?: string | null | undefined;
-                                        pastTenseTitle?: string | undefined;
-                                        debriefAfterMinutes?: number | null | undefined;
                                         image?: {
                                             localFilePath?: import("yup").Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
@@ -1005,9 +855,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                                             url: string;
                                         } | undefined;
                                         backgroundColor?: string | undefined;
-                                        likesCount?: number | null | undefined;
                                         timerSeconds?: import("yup").Maybe<number | undefined>;
-                                        isSuggested?: boolean | undefined;
                                         type: "video";
                                         video: {
                                             storagePath?: string | null | undefined;
@@ -1028,15 +876,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                                             nanoseconds: number;
                                             toDate: Function;
                                         } | null | undefined;
-                                        sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                                         uid?: string | undefined;
-                                        recommendedForIssueIds?: string[] | undefined;
-                                        isDemoTactic?: boolean | undefined;
                                         prompt?: string | undefined;
-                                        isShared?: boolean | undefined;
                                         description?: string | null | undefined;
-                                        pastTenseTitle?: string | undefined;
-                                        debriefAfterMinutes?: number | null | undefined;
                                         image?: {
                                             localFilePath?: import("yup").Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
@@ -1047,9 +889,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                                             url: string;
                                         } | undefined;
                                         backgroundColor?: string | undefined;
-                                        likesCount?: number | null | undefined;
                                         timerSeconds?: import("yup").Maybe<number | undefined>;
-                                        isSuggested?: boolean | undefined;
                                         type: "notifySupportGroup";
                                         supportGroup: import("../schema/utils/firestore").DocumentReferenceLike<unknown>;
                                     } | {
@@ -1067,15 +907,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                                             nanoseconds: number;
                                             toDate: Function;
                                         } | null | undefined;
-                                        sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                                         uid?: string | undefined;
-                                        recommendedForIssueIds?: string[] | undefined;
-                                        isDemoTactic?: boolean | undefined;
                                         prompt?: string | undefined;
-                                        isShared?: boolean | undefined;
                                         description?: string | null | undefined;
-                                        pastTenseTitle?: string | undefined;
-                                        debriefAfterMinutes?: number | null | undefined;
                                         image?: {
                                             localFilePath?: import("yup").Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
@@ -1086,9 +920,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                                             url: string;
                                         } | undefined;
                                         backgroundColor?: string | undefined;
-                                        likesCount?: number | null | undefined;
                                         timerSeconds?: import("yup").Maybe<number | undefined>;
-                                        isSuggested?: boolean | undefined;
                                         url: string;
                                         type: "link";
                                     };
@@ -1262,15 +1094,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
-                    sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                     uid?: string | undefined;
-                    recommendedForIssueIds?: string[] | undefined;
-                    isDemoTactic?: boolean | undefined;
                     prompt?: string | undefined;
-                    isShared?: boolean | undefined;
                     description?: string | null | undefined;
-                    pastTenseTitle?: string | undefined;
-                    debriefAfterMinutes?: number | null | undefined;
                     image?: {
                         localFilePath?: import("yup").Maybe<string | undefined>;
                         isDeleted?: boolean | undefined;
@@ -1281,9 +1107,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         url: string;
                     } | undefined;
                     backgroundColor?: string | undefined;
-                    likesCount?: number | null | undefined;
                     timerSeconds?: import("yup").Maybe<number | undefined>;
-                    isSuggested?: boolean | undefined;
                     repeat?: import("yup").Maybe<number | undefined>;
                     type: "breathingExercise";
                     inFor: number;
@@ -1304,15 +1128,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
-                    sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                     uid?: string | undefined;
-                    recommendedForIssueIds?: string[] | undefined;
-                    isDemoTactic?: boolean | undefined;
                     prompt?: string | undefined;
-                    isShared?: boolean | undefined;
                     description?: string | null | undefined;
-                    pastTenseTitle?: string | undefined;
-                    debriefAfterMinutes?: number | null | undefined;
                     image?: {
                         localFilePath?: import("yup").Maybe<string | undefined>;
                         isDeleted?: boolean | undefined;
@@ -1323,9 +1141,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         url: string;
                     } | undefined;
                     backgroundColor?: string | undefined;
-                    likesCount?: number | null | undefined;
                     timerSeconds?: import("yup").Maybe<number | undefined>;
-                    isSuggested?: boolean | undefined;
                     type: "notifyASupportPerson";
                     contactIds: string[];
                 } | {
@@ -1343,15 +1159,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
-                    sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                     uid?: string | undefined;
-                    recommendedForIssueIds?: string[] | undefined;
-                    isDemoTactic?: boolean | undefined;
                     prompt?: string | undefined;
-                    isShared?: boolean | undefined;
                     description?: string | null | undefined;
-                    pastTenseTitle?: string | undefined;
-                    debriefAfterMinutes?: number | null | undefined;
                     image?: {
                         localFilePath?: import("yup").Maybe<string | undefined>;
                         isDeleted?: boolean | undefined;
@@ -1362,9 +1172,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         url: string;
                     } | undefined;
                     backgroundColor?: string | undefined;
-                    likesCount?: number | null | undefined;
                     timerSeconds?: import("yup").Maybe<number | undefined>;
-                    isSuggested?: boolean | undefined;
                     type: "steps";
                     targetSteps: number;
                 } | {
@@ -1382,14 +1190,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
-                    sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                     uid?: string | undefined;
-                    recommendedForIssueIds?: string[] | undefined;
-                    isDemoTactic?: boolean | undefined;
-                    isShared?: boolean | undefined;
                     description?: string | null | undefined;
-                    pastTenseTitle?: string | undefined;
-                    debriefAfterMinutes?: number | null | undefined;
                     image?: {
                         localFilePath?: import("yup").Maybe<string | undefined>;
                         isDeleted?: boolean | undefined;
@@ -1400,9 +1202,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         url: string;
                     } | undefined;
                     backgroundColor?: string | undefined;
-                    likesCount?: number | null | undefined;
                     timerSeconds?: import("yup").Maybe<number | undefined>;
-                    isSuggested?: boolean | undefined;
                     audio?: {
                         localFilePath?: import("yup").Maybe<string | undefined>;
                         isDeleted?: boolean | undefined;
@@ -1429,15 +1229,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
-                    sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                     uid?: string | undefined;
-                    recommendedForIssueIds?: string[] | undefined;
-                    isDemoTactic?: boolean | undefined;
                     prompt?: string | undefined;
-                    isShared?: boolean | undefined;
                     description?: string | null | undefined;
-                    pastTenseTitle?: string | undefined;
-                    debriefAfterMinutes?: number | null | undefined;
                     image?: {
                         localFilePath?: import("yup").Maybe<string | undefined>;
                         isDeleted?: boolean | undefined;
@@ -1448,9 +1242,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         url: string;
                     } | undefined;
                     backgroundColor?: string | undefined;
-                    likesCount?: number | null | undefined;
                     timerSeconds?: import("yup").Maybe<number | undefined>;
-                    isSuggested?: boolean | undefined;
                     type: "video";
                     video: {
                         storagePath?: string | null | undefined;
@@ -1471,15 +1263,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
-                    sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                     uid?: string | undefined;
-                    recommendedForIssueIds?: string[] | undefined;
-                    isDemoTactic?: boolean | undefined;
                     prompt?: string | undefined;
-                    isShared?: boolean | undefined;
                     description?: string | null | undefined;
-                    pastTenseTitle?: string | undefined;
-                    debriefAfterMinutes?: number | null | undefined;
                     image?: {
                         localFilePath?: import("yup").Maybe<string | undefined>;
                         isDeleted?: boolean | undefined;
@@ -1490,9 +1276,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         url: string;
                     } | undefined;
                     backgroundColor?: string | undefined;
-                    likesCount?: number | null | undefined;
                     timerSeconds?: import("yup").Maybe<number | undefined>;
-                    isSuggested?: boolean | undefined;
                     type: "notifySupportGroup";
                     supportGroup: import("../schema/utils/firestore").DocumentReferenceLike<unknown>;
                 } | {
@@ -1510,15 +1294,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
-                    sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                     uid?: string | undefined;
-                    recommendedForIssueIds?: string[] | undefined;
-                    isDemoTactic?: boolean | undefined;
                     prompt?: string | undefined;
-                    isShared?: boolean | undefined;
                     description?: string | null | undefined;
-                    pastTenseTitle?: string | undefined;
-                    debriefAfterMinutes?: number | null | undefined;
                     image?: {
                         localFilePath?: import("yup").Maybe<string | undefined>;
                         isDeleted?: boolean | undefined;
@@ -1529,9 +1307,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         url: string;
                     } | undefined;
                     backgroundColor?: string | undefined;
-                    likesCount?: number | null | undefined;
                     timerSeconds?: import("yup").Maybe<number | undefined>;
-                    isSuggested?: boolean | undefined;
                     url: string;
                     type: "link";
                 };
@@ -1542,7 +1318,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         minute: number;
         weekdays: (number | undefined)[];
     }, "name" | "type" | "tacticsById" | "hour" | "minute" | "weekdays" | ("createdAt" | "updatedAt" | "ordinal")>;
-    tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "sourceFile" | "uid" | "recommendedForIssueIds" | "isDemoTactic" | "prompt" | "isShared" | "description" | "type" | "pastTenseTitle" | "debriefAfterMinutes" | "image" | "backgroundColor" | "likesCount" | "timerSeconds" | "isSuggested">;
+    tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "uid" | "prompt" | "description" | "type" | "image" | "backgroundColor" | "timerSeconds">;
     suggestionFactory: import("factory.ts").Factory<{
         createdAt?: {
             isEqual?: any;
@@ -1610,15 +1386,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
-                    sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                     uid?: string | undefined;
-                    recommendedForIssueIds?: string[] | undefined;
-                    isDemoTactic?: boolean | undefined;
                     prompt?: string | undefined;
-                    isShared?: boolean | undefined;
                     description?: string | null | undefined;
-                    pastTenseTitle?: string | undefined;
-                    debriefAfterMinutes?: number | null | undefined;
                     image?: {
                         localFilePath?: import("yup").Maybe<string | undefined>;
                         isDeleted?: boolean | undefined;
@@ -1629,9 +1399,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         url: string;
                     } | undefined;
                     backgroundColor?: string | undefined;
-                    likesCount?: number | null | undefined;
                     timerSeconds?: import("yup").Maybe<number | undefined>;
-                    isSuggested?: boolean | undefined;
                     repeat?: import("yup").Maybe<number | undefined>;
                     type: "breathingExercise";
                     inFor: number;
@@ -1652,15 +1420,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
-                    sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                     uid?: string | undefined;
-                    recommendedForIssueIds?: string[] | undefined;
-                    isDemoTactic?: boolean | undefined;
                     prompt?: string | undefined;
-                    isShared?: boolean | undefined;
                     description?: string | null | undefined;
-                    pastTenseTitle?: string | undefined;
-                    debriefAfterMinutes?: number | null | undefined;
                     image?: {
                         localFilePath?: import("yup").Maybe<string | undefined>;
                         isDeleted?: boolean | undefined;
@@ -1671,9 +1433,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         url: string;
                     } | undefined;
                     backgroundColor?: string | undefined;
-                    likesCount?: number | null | undefined;
                     timerSeconds?: import("yup").Maybe<number | undefined>;
-                    isSuggested?: boolean | undefined;
                     type: "notifyASupportPerson";
                     contactIds: string[];
                 } | {
@@ -1691,15 +1451,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
-                    sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                     uid?: string | undefined;
-                    recommendedForIssueIds?: string[] | undefined;
-                    isDemoTactic?: boolean | undefined;
                     prompt?: string | undefined;
-                    isShared?: boolean | undefined;
                     description?: string | null | undefined;
-                    pastTenseTitle?: string | undefined;
-                    debriefAfterMinutes?: number | null | undefined;
                     image?: {
                         localFilePath?: import("yup").Maybe<string | undefined>;
                         isDeleted?: boolean | undefined;
@@ -1710,9 +1464,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         url: string;
                     } | undefined;
                     backgroundColor?: string | undefined;
-                    likesCount?: number | null | undefined;
                     timerSeconds?: import("yup").Maybe<number | undefined>;
-                    isSuggested?: boolean | undefined;
                     type: "steps";
                     targetSteps: number;
                 } | {
@@ -1730,14 +1482,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
-                    sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                     uid?: string | undefined;
-                    recommendedForIssueIds?: string[] | undefined;
-                    isDemoTactic?: boolean | undefined;
-                    isShared?: boolean | undefined;
                     description?: string | null | undefined;
-                    pastTenseTitle?: string | undefined;
-                    debriefAfterMinutes?: number | null | undefined;
                     image?: {
                         localFilePath?: import("yup").Maybe<string | undefined>;
                         isDeleted?: boolean | undefined;
@@ -1748,9 +1494,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         url: string;
                     } | undefined;
                     backgroundColor?: string | undefined;
-                    likesCount?: number | null | undefined;
                     timerSeconds?: import("yup").Maybe<number | undefined>;
-                    isSuggested?: boolean | undefined;
                     audio?: {
                         localFilePath?: import("yup").Maybe<string | undefined>;
                         isDeleted?: boolean | undefined;
@@ -1777,15 +1521,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
-                    sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                     uid?: string | undefined;
-                    recommendedForIssueIds?: string[] | undefined;
-                    isDemoTactic?: boolean | undefined;
                     prompt?: string | undefined;
-                    isShared?: boolean | undefined;
                     description?: string | null | undefined;
-                    pastTenseTitle?: string | undefined;
-                    debriefAfterMinutes?: number | null | undefined;
                     image?: {
                         localFilePath?: import("yup").Maybe<string | undefined>;
                         isDeleted?: boolean | undefined;
@@ -1796,9 +1534,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         url: string;
                     } | undefined;
                     backgroundColor?: string | undefined;
-                    likesCount?: number | null | undefined;
                     timerSeconds?: import("yup").Maybe<number | undefined>;
-                    isSuggested?: boolean | undefined;
                     type: "video";
                     video: {
                         storagePath?: string | null | undefined;
@@ -1819,15 +1555,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
-                    sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                     uid?: string | undefined;
-                    recommendedForIssueIds?: string[] | undefined;
-                    isDemoTactic?: boolean | undefined;
                     prompt?: string | undefined;
-                    isShared?: boolean | undefined;
                     description?: string | null | undefined;
-                    pastTenseTitle?: string | undefined;
-                    debriefAfterMinutes?: number | null | undefined;
                     image?: {
                         localFilePath?: import("yup").Maybe<string | undefined>;
                         isDeleted?: boolean | undefined;
@@ -1838,9 +1568,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         url: string;
                     } | undefined;
                     backgroundColor?: string | undefined;
-                    likesCount?: number | null | undefined;
                     timerSeconds?: import("yup").Maybe<number | undefined>;
-                    isSuggested?: boolean | undefined;
                     type: "notifySupportGroup";
                     supportGroup: import("../schema/utils/firestore").DocumentReferenceLike<unknown>;
                 } | {
@@ -1858,15 +1586,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
-                    sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                     uid?: string | undefined;
-                    recommendedForIssueIds?: string[] | undefined;
-                    isDemoTactic?: boolean | undefined;
                     prompt?: string | undefined;
-                    isShared?: boolean | undefined;
                     description?: string | null | undefined;
-                    pastTenseTitle?: string | undefined;
-                    debriefAfterMinutes?: number | null | undefined;
                     image?: {
                         localFilePath?: import("yup").Maybe<string | undefined>;
                         isDeleted?: boolean | undefined;
@@ -1877,9 +1599,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         url: string;
                     } | undefined;
                     backgroundColor?: string | undefined;
-                    likesCount?: number | null | undefined;
                     timerSeconds?: import("yup").Maybe<number | undefined>;
-                    isSuggested?: boolean | undefined;
                     url: string;
                     type: "link";
                 };

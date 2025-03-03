@@ -89,15 +89,9 @@ export declare const regularLogFactory: import("factory.ts").Factory<{
                                 nanoseconds: number;
                                 toDate: Function;
                             } | null | undefined;
-                            sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                             uid?: string | undefined;
-                            recommendedForIssueIds?: string[] | undefined;
-                            isDemoTactic?: boolean | undefined;
                             prompt?: string | undefined;
-                            isShared?: boolean | undefined;
                             description?: string | null | undefined;
-                            pastTenseTitle?: string | undefined;
-                            debriefAfterMinutes?: number | null | undefined;
                             image?: {
                                 localFilePath?: import("yup").Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
@@ -108,9 +102,7 @@ export declare const regularLogFactory: import("factory.ts").Factory<{
                                 url: string;
                             } | undefined;
                             backgroundColor?: string | undefined;
-                            likesCount?: number | null | undefined;
                             timerSeconds?: import("yup").Maybe<number | undefined>;
-                            isSuggested?: boolean | undefined;
                             repeat?: import("yup").Maybe<number | undefined>;
                             type: "breathingExercise";
                             inFor: number;
@@ -131,15 +123,9 @@ export declare const regularLogFactory: import("factory.ts").Factory<{
                                 nanoseconds: number;
                                 toDate: Function;
                             } | null | undefined;
-                            sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                             uid?: string | undefined;
-                            recommendedForIssueIds?: string[] | undefined;
-                            isDemoTactic?: boolean | undefined;
                             prompt?: string | undefined;
-                            isShared?: boolean | undefined;
                             description?: string | null | undefined;
-                            pastTenseTitle?: string | undefined;
-                            debriefAfterMinutes?: number | null | undefined;
                             image?: {
                                 localFilePath?: import("yup").Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
@@ -150,9 +136,7 @@ export declare const regularLogFactory: import("factory.ts").Factory<{
                                 url: string;
                             } | undefined;
                             backgroundColor?: string | undefined;
-                            likesCount?: number | null | undefined;
                             timerSeconds?: import("yup").Maybe<number | undefined>;
-                            isSuggested?: boolean | undefined;
                             type: "notifyASupportPerson";
                             contactIds: string[];
                         } | {
@@ -170,15 +154,9 @@ export declare const regularLogFactory: import("factory.ts").Factory<{
                                 nanoseconds: number;
                                 toDate: Function;
                             } | null | undefined;
-                            sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                             uid?: string | undefined;
-                            recommendedForIssueIds?: string[] | undefined;
-                            isDemoTactic?: boolean | undefined;
                             prompt?: string | undefined;
-                            isShared?: boolean | undefined;
                             description?: string | null | undefined;
-                            pastTenseTitle?: string | undefined;
-                            debriefAfterMinutes?: number | null | undefined;
                             image?: {
                                 localFilePath?: import("yup").Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
@@ -189,9 +167,7 @@ export declare const regularLogFactory: import("factory.ts").Factory<{
                                 url: string;
                             } | undefined;
                             backgroundColor?: string | undefined;
-                            likesCount?: number | null | undefined;
                             timerSeconds?: import("yup").Maybe<number | undefined>;
-                            isSuggested?: boolean | undefined;
                             type: "steps";
                             targetSteps: number;
                         } | {
@@ -209,14 +185,8 @@ export declare const regularLogFactory: import("factory.ts").Factory<{
                                 nanoseconds: number;
                                 toDate: Function;
                             } | null | undefined;
-                            sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                             uid?: string | undefined;
-                            recommendedForIssueIds?: string[] | undefined;
-                            isDemoTactic?: boolean | undefined;
-                            isShared?: boolean | undefined;
                             description?: string | null | undefined;
-                            pastTenseTitle?: string | undefined;
-                            debriefAfterMinutes?: number | null | undefined;
                             image?: {
                                 localFilePath?: import("yup").Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
@@ -227,9 +197,7 @@ export declare const regularLogFactory: import("factory.ts").Factory<{
                                 url: string;
                             } | undefined;
                             backgroundColor?: string | undefined;
-                            likesCount?: number | null | undefined;
                             timerSeconds?: import("yup").Maybe<number | undefined>;
-                            isSuggested?: boolean | undefined;
                             audio?: {
                                 localFilePath?: import("yup").Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
@@ -256,15 +224,9 @@ export declare const regularLogFactory: import("factory.ts").Factory<{
                                 nanoseconds: number;
                                 toDate: Function;
                             } | null | undefined;
-                            sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                             uid?: string | undefined;
-                            recommendedForIssueIds?: string[] | undefined;
-                            isDemoTactic?: boolean | undefined;
                             prompt?: string | undefined;
-                            isShared?: boolean | undefined;
                             description?: string | null | undefined;
-                            pastTenseTitle?: string | undefined;
-                            debriefAfterMinutes?: number | null | undefined;
                             image?: {
                                 localFilePath?: import("yup").Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
@@ -275,9 +237,7 @@ export declare const regularLogFactory: import("factory.ts").Factory<{
                                 url: string;
                             } | undefined;
                             backgroundColor?: string | undefined;
-                            likesCount?: number | null | undefined;
                             timerSeconds?: import("yup").Maybe<number | undefined>;
-                            isSuggested?: boolean | undefined;
                             type: "video";
                             video: {
                                 storagePath?: string | null | undefined;
@@ -298,15 +258,9 @@ export declare const regularLogFactory: import("factory.ts").Factory<{
                                 nanoseconds: number;
                                 toDate: Function;
                             } | null | undefined;
-                            sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                             uid?: string | undefined;
-                            recommendedForIssueIds?: string[] | undefined;
-                            isDemoTactic?: boolean | undefined;
                             prompt?: string | undefined;
-                            isShared?: boolean | undefined;
                             description?: string | null | undefined;
-                            pastTenseTitle?: string | undefined;
-                            debriefAfterMinutes?: number | null | undefined;
                             image?: {
                                 localFilePath?: import("yup").Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
@@ -317,9 +271,7 @@ export declare const regularLogFactory: import("factory.ts").Factory<{
                                 url: string;
                             } | undefined;
                             backgroundColor?: string | undefined;
-                            likesCount?: number | null | undefined;
                             timerSeconds?: import("yup").Maybe<number | undefined>;
-                            isSuggested?: boolean | undefined;
                             type: "notifySupportGroup";
                             supportGroup: import("../schema/utils/firestore").DocumentReferenceLike<unknown>;
                         } | {
@@ -337,15 +289,9 @@ export declare const regularLogFactory: import("factory.ts").Factory<{
                                 nanoseconds: number;
                                 toDate: Function;
                             } | null | undefined;
-                            sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                             uid?: string | undefined;
-                            recommendedForIssueIds?: string[] | undefined;
-                            isDemoTactic?: boolean | undefined;
                             prompt?: string | undefined;
-                            isShared?: boolean | undefined;
                             description?: string | null | undefined;
-                            pastTenseTitle?: string | undefined;
-                            debriefAfterMinutes?: number | null | undefined;
                             image?: {
                                 localFilePath?: import("yup").Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
@@ -356,9 +302,7 @@ export declare const regularLogFactory: import("factory.ts").Factory<{
                                 url: string;
                             } | undefined;
                             backgroundColor?: string | undefined;
-                            likesCount?: number | null | undefined;
                             timerSeconds?: import("yup").Maybe<number | undefined>;
-                            isSuggested?: boolean | undefined;
                             url: string;
                             type: "link";
                         };
@@ -405,15 +349,9 @@ export declare const regularLogFactory: import("factory.ts").Factory<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 uid?: string | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                isDemoTactic?: boolean | undefined;
                 prompt?: string | undefined;
-                isShared?: boolean | undefined;
                 description?: string | null | undefined;
-                pastTenseTitle?: string | undefined;
-                debriefAfterMinutes?: number | null | undefined;
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
@@ -424,9 +362,7 @@ export declare const regularLogFactory: import("factory.ts").Factory<{
                     url: string;
                 } | undefined;
                 backgroundColor?: string | undefined;
-                likesCount?: number | null | undefined;
                 timerSeconds?: import("yup").Maybe<number | undefined>;
-                isSuggested?: boolean | undefined;
                 repeat?: import("yup").Maybe<number | undefined>;
                 type: "breathingExercise";
                 inFor: number;
@@ -447,15 +383,9 @@ export declare const regularLogFactory: import("factory.ts").Factory<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 uid?: string | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                isDemoTactic?: boolean | undefined;
                 prompt?: string | undefined;
-                isShared?: boolean | undefined;
                 description?: string | null | undefined;
-                pastTenseTitle?: string | undefined;
-                debriefAfterMinutes?: number | null | undefined;
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
@@ -466,9 +396,7 @@ export declare const regularLogFactory: import("factory.ts").Factory<{
                     url: string;
                 } | undefined;
                 backgroundColor?: string | undefined;
-                likesCount?: number | null | undefined;
                 timerSeconds?: import("yup").Maybe<number | undefined>;
-                isSuggested?: boolean | undefined;
                 type: "notifyASupportPerson";
                 contactIds: string[];
             } | {
@@ -486,15 +414,9 @@ export declare const regularLogFactory: import("factory.ts").Factory<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 uid?: string | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                isDemoTactic?: boolean | undefined;
                 prompt?: string | undefined;
-                isShared?: boolean | undefined;
                 description?: string | null | undefined;
-                pastTenseTitle?: string | undefined;
-                debriefAfterMinutes?: number | null | undefined;
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
@@ -505,9 +427,7 @@ export declare const regularLogFactory: import("factory.ts").Factory<{
                     url: string;
                 } | undefined;
                 backgroundColor?: string | undefined;
-                likesCount?: number | null | undefined;
                 timerSeconds?: import("yup").Maybe<number | undefined>;
-                isSuggested?: boolean | undefined;
                 type: "steps";
                 targetSteps: number;
             } | {
@@ -525,14 +445,8 @@ export declare const regularLogFactory: import("factory.ts").Factory<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 uid?: string | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                isDemoTactic?: boolean | undefined;
-                isShared?: boolean | undefined;
                 description?: string | null | undefined;
-                pastTenseTitle?: string | undefined;
-                debriefAfterMinutes?: number | null | undefined;
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
@@ -543,9 +457,7 @@ export declare const regularLogFactory: import("factory.ts").Factory<{
                     url: string;
                 } | undefined;
                 backgroundColor?: string | undefined;
-                likesCount?: number | null | undefined;
                 timerSeconds?: import("yup").Maybe<number | undefined>;
-                isSuggested?: boolean | undefined;
                 audio?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
@@ -572,15 +484,9 @@ export declare const regularLogFactory: import("factory.ts").Factory<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 uid?: string | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                isDemoTactic?: boolean | undefined;
                 prompt?: string | undefined;
-                isShared?: boolean | undefined;
                 description?: string | null | undefined;
-                pastTenseTitle?: string | undefined;
-                debriefAfterMinutes?: number | null | undefined;
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
@@ -591,9 +497,7 @@ export declare const regularLogFactory: import("factory.ts").Factory<{
                     url: string;
                 } | undefined;
                 backgroundColor?: string | undefined;
-                likesCount?: number | null | undefined;
                 timerSeconds?: import("yup").Maybe<number | undefined>;
-                isSuggested?: boolean | undefined;
                 type: "video";
                 video: {
                     storagePath?: string | null | undefined;
@@ -614,15 +518,9 @@ export declare const regularLogFactory: import("factory.ts").Factory<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 uid?: string | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                isDemoTactic?: boolean | undefined;
                 prompt?: string | undefined;
-                isShared?: boolean | undefined;
                 description?: string | null | undefined;
-                pastTenseTitle?: string | undefined;
-                debriefAfterMinutes?: number | null | undefined;
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
@@ -633,9 +531,7 @@ export declare const regularLogFactory: import("factory.ts").Factory<{
                     url: string;
                 } | undefined;
                 backgroundColor?: string | undefined;
-                likesCount?: number | null | undefined;
                 timerSeconds?: import("yup").Maybe<number | undefined>;
-                isSuggested?: boolean | undefined;
                 type: "notifySupportGroup";
                 supportGroup: import("../schema/utils/firestore").DocumentReferenceLike<unknown>;
             } | {
@@ -653,15 +549,9 @@ export declare const regularLogFactory: import("factory.ts").Factory<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 uid?: string | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                isDemoTactic?: boolean | undefined;
                 prompt?: string | undefined;
-                isShared?: boolean | undefined;
                 description?: string | null | undefined;
-                pastTenseTitle?: string | undefined;
-                debriefAfterMinutes?: number | null | undefined;
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
@@ -672,9 +562,7 @@ export declare const regularLogFactory: import("factory.ts").Factory<{
                     url: string;
                 } | undefined;
                 backgroundColor?: string | undefined;
-                likesCount?: number | null | undefined;
                 timerSeconds?: import("yup").Maybe<number | undefined>;
-                isSuggested?: boolean | undefined;
                 url: string;
                 type: "link";
             };
@@ -787,4 +675,4 @@ export declare const regularLogFactory: import("factory.ts").Factory<{
         [x: string]: string;
     };
     timezone: string;
-}, "agentType" | "uids" | "verificationCode" | "recentSummaries" | "timezone" | ("createdAt" | "updatedAt" | "parentIds" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "defaultBehaviorDoc" | "tourCompletedAt" | "scheduledNotificationIds" | "whatsappStrategyDoc" | "onboardedWithZaraAt" | "currentAppState" | "expoPushToken" | "notificationPreferences" | "goal" | "dayReviewTimeMinutes" | "isReadyForTour" | "isOnboardingComplete" | "debriefReminderDelayMinutes" | "androidPermissions" | "behaviorsDescription" | "initialImpulseMode" | "historicalInsights" | "activeThread" | "isTourDismissed" | "region" | "enableZara")>, tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "sourceFile" | "uid" | "recommendedForIssueIds" | "isDemoTactic" | "prompt" | "isShared" | "description" | "type" | "pastTenseTitle" | "debriefAfterMinutes" | "image" | "backgroundColor" | "likesCount" | "timerSeconds" | "isSuggested">;
+}, "agentType" | "uids" | "verificationCode" | "recentSummaries" | "timezone" | ("createdAt" | "updatedAt" | "parentIds" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "defaultBehaviorDoc" | "tourCompletedAt" | "scheduledNotificationIds" | "whatsappStrategyDoc" | "onboardedWithZaraAt" | "currentAppState" | "expoPushToken" | "notificationPreferences" | "goal" | "dayReviewTimeMinutes" | "isReadyForTour" | "isOnboardingComplete" | "debriefReminderDelayMinutes" | "androidPermissions" | "behaviorsDescription" | "initialImpulseMode" | "historicalInsights" | "activeThread" | "isTourDismissed" | "region" | "enableZara")>, tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "uid" | "prompt" | "description" | "type" | "image" | "backgroundColor" | "timerSeconds">;

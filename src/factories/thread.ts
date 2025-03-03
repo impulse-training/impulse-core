@@ -8,6 +8,7 @@ export const makeThreadFactory = (TimestampKlass: typeof TimestampLike) =>
     dateString: '2025-01-01',
     date: TimestampKlass.now(),
     title: 'Getting started with Impulse',
+    navigationTitle: 'Getting started with Impulse',
     logsById: {},
     agentType: AgentType.ONBOARDING,
     createdAt: TimestampKlass.now(),
