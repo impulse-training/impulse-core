@@ -2,11 +2,7 @@ import * as yup from 'yup';
 import { documentReferenceSchema } from '../utils/firestore';
 import { tacticBaseSchema } from './base';
 
-export const notifySupportGroupSchema = tacticBaseSchema(
-  'notifySupportGroup'
-).shape({
+export const supportGroupTacticSchema = tacticBaseSchema('supportGroup').shape({
   supportGroup: documentReferenceSchema.required(),
 });
-export type NotifySupportGroupValue = yup.InferType<
-  typeof notifySupportGroupSchema
->;
+export type supportGroupValue = yup.InferType<typeof supportGroupTacticSchema>;

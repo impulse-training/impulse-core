@@ -27,6 +27,15 @@ export declare const aiSuggestionsById: yup.Lazy<{
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
+            audio?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                isDeleted?: boolean | undefined;
+                metadata?: {} | null | undefined;
+                thumbnailStoragePath?: yup.Maybe<string | undefined>;
+                thumbnailUri?: yup.Maybe<string | undefined>;
+                storagePath: string;
+                url: string;
+            } | null | undefined;
             uid?: string | undefined;
             prompt?: string | undefined;
             description?: string | null | undefined;
@@ -41,11 +50,7 @@ export declare const aiSuggestionsById: yup.Lazy<{
             } | undefined;
             backgroundColor?: string | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
-            repeat?: yup.Maybe<number | undefined>;
-            type: "breathingExercise";
-            inFor: number;
-            holdFor: number;
-            outFor: number;
+            type: "audio";
         } | {
             createdAt?: {
                 isEqual?: any;
@@ -75,8 +80,11 @@ export declare const aiSuggestionsById: yup.Lazy<{
             } | undefined;
             backgroundColor?: string | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
-            type: "notifyASupportPerson";
-            contactIds: string[];
+            repeat?: yup.Maybe<number | undefined>;
+            type: "breathingExercise";
+            inFor: number;
+            holdFor: number;
+            outFor: number;
         } | {
             createdAt?: {
                 isEqual?: any;
@@ -136,7 +144,26 @@ export declare const aiSuggestionsById: yup.Lazy<{
             } | undefined;
             backgroundColor?: string | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
-            audio?: {
+            prompt: string;
+            type: "affirmation";
+        } | {
+            createdAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            uid?: string | undefined;
+            description?: string | null | undefined;
+            image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 isDeleted?: boolean | undefined;
                 metadata?: {} | null | undefined;
@@ -144,9 +171,11 @@ export declare const aiSuggestionsById: yup.Lazy<{
                 thumbnailUri?: yup.Maybe<string | undefined>;
                 storagePath: string;
                 url: string;
-            } | null | undefined;
+            } | undefined;
+            backgroundColor?: string | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
             prompt: string;
-            type: "basic";
+            type: "task";
         } | {
             createdAt?: {
                 isEqual?: any;
@@ -210,7 +239,7 @@ export declare const aiSuggestionsById: yup.Lazy<{
             } | undefined;
             backgroundColor?: string | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
-            type: "notifySupportGroup";
+            type: "supportGroup";
             supportGroup: import("./utils/firestore").DocumentReferenceLike<unknown>;
         } | {
             createdAt?: {
@@ -245,7 +274,7 @@ export declare const aiSuggestionsById: yup.Lazy<{
             type: "link";
         };
     };
-}, yup.AnyObject, any>;
+} | null | undefined, yup.AnyObject, any>;
 export type AiSuggestionsById = Record<string, {
     tactic: TacticValue;
     targetDoc?: any;
@@ -357,6 +386,15 @@ export declare const threadSchema: yup.ObjectSchema<{
                                             nanoseconds: number;
                                             toDate: Function;
                                         } | null | undefined;
+                                        audio?: {
+                                            localFilePath?: yup.Maybe<string | undefined>;
+                                            isDeleted?: boolean | undefined;
+                                            metadata?: {} | null | undefined;
+                                            thumbnailStoragePath?: yup.Maybe<string | undefined>;
+                                            thumbnailUri?: yup.Maybe<string | undefined>;
+                                            storagePath: string;
+                                            url: string;
+                                        } | null | undefined;
                                         uid?: string | undefined;
                                         prompt?: string | undefined;
                                         description?: string | null | undefined;
@@ -371,11 +409,7 @@ export declare const threadSchema: yup.ObjectSchema<{
                                         } | undefined;
                                         backgroundColor?: string | undefined;
                                         timerSeconds?: yup.Maybe<number | undefined>;
-                                        repeat?: yup.Maybe<number | undefined>;
-                                        type: "breathingExercise";
-                                        inFor: number;
-                                        holdFor: number;
-                                        outFor: number;
+                                        type: "audio";
                                     } | {
                                         createdAt?: {
                                             isEqual?: any;
@@ -405,8 +439,11 @@ export declare const threadSchema: yup.ObjectSchema<{
                                         } | undefined;
                                         backgroundColor?: string | undefined;
                                         timerSeconds?: yup.Maybe<number | undefined>;
-                                        type: "notifyASupportPerson";
-                                        contactIds: string[];
+                                        repeat?: yup.Maybe<number | undefined>;
+                                        type: "breathingExercise";
+                                        inFor: number;
+                                        holdFor: number;
+                                        outFor: number;
                                     } | {
                                         createdAt?: {
                                             isEqual?: any;
@@ -466,7 +503,26 @@ export declare const threadSchema: yup.ObjectSchema<{
                                         } | undefined;
                                         backgroundColor?: string | undefined;
                                         timerSeconds?: yup.Maybe<number | undefined>;
-                                        audio?: {
+                                        prompt: string;
+                                        type: "affirmation";
+                                    } | {
+                                        createdAt?: {
+                                            isEqual?: any;
+                                            toMillis?: any;
+                                            seconds: number;
+                                            nanoseconds: number;
+                                            toDate: Function;
+                                        } | null | undefined;
+                                        updatedAt?: {
+                                            isEqual?: any;
+                                            toMillis?: any;
+                                            seconds: number;
+                                            nanoseconds: number;
+                                            toDate: Function;
+                                        } | null | undefined;
+                                        uid?: string | undefined;
+                                        description?: string | null | undefined;
+                                        image?: {
                                             localFilePath?: yup.Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -474,9 +530,11 @@ export declare const threadSchema: yup.ObjectSchema<{
                                             thumbnailUri?: yup.Maybe<string | undefined>;
                                             storagePath: string;
                                             url: string;
-                                        } | null | undefined;
+                                        } | undefined;
+                                        backgroundColor?: string | undefined;
+                                        timerSeconds?: yup.Maybe<number | undefined>;
                                         prompt: string;
-                                        type: "basic";
+                                        type: "task";
                                     } | {
                                         createdAt?: {
                                             isEqual?: any;
@@ -540,7 +598,7 @@ export declare const threadSchema: yup.ObjectSchema<{
                                         } | undefined;
                                         backgroundColor?: string | undefined;
                                         timerSeconds?: yup.Maybe<number | undefined>;
-                                        type: "notifySupportGroup";
+                                        type: "supportGroup";
                                         supportGroup: import("./utils/firestore").DocumentReferenceLike<unknown>;
                                     } | {
                                         createdAt?: {
@@ -590,51 +648,7 @@ export declare const threadSchema: yup.ObjectSchema<{
                         };
                     };
                 } | null | undefined;
-                senderUid?: string | null | undefined;
-                senderName?: string | null | undefined;
-                agentConnectedAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                endedAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                startedSummarizingTranscriptAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                finishedSummarizingTranscriptAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                formattedDuration?: string | undefined;
-                transcriptSummary?: string | undefined;
-                transcriptItems?: {
-                    text: string;
-                    timestamp: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    };
-                }[] | undefined;
-                uid: string;
-                type: "call";
-                tacticsData: {
+                tacticsData?: {
                     [x: string]: {
                         data?: {
                             setAt: {
@@ -647,6 +661,45 @@ export declare const threadSchema: yup.ObjectSchema<{
                             isCompleted: NonNullable<boolean | undefined>;
                         } | undefined;
                         tactic: {
+                            createdAt?: {
+                                isEqual?: any;
+                                toMillis?: any;
+                                seconds: number;
+                                nanoseconds: number;
+                                toDate: Function;
+                            } | null | undefined;
+                            updatedAt?: {
+                                isEqual?: any;
+                                toMillis?: any;
+                                seconds: number;
+                                nanoseconds: number;
+                                toDate: Function;
+                            } | null | undefined;
+                            audio?: {
+                                localFilePath?: yup.Maybe<string | undefined>;
+                                isDeleted?: boolean | undefined;
+                                metadata?: {} | null | undefined;
+                                thumbnailStoragePath?: yup.Maybe<string | undefined>;
+                                thumbnailUri?: yup.Maybe<string | undefined>;
+                                storagePath: string;
+                                url: string;
+                            } | null | undefined;
+                            uid?: string | undefined;
+                            prompt?: string | undefined;
+                            description?: string | null | undefined;
+                            image?: {
+                                localFilePath?: yup.Maybe<string | undefined>;
+                                isDeleted?: boolean | undefined;
+                                metadata?: {} | null | undefined;
+                                thumbnailStoragePath?: yup.Maybe<string | undefined>;
+                                thumbnailUri?: yup.Maybe<string | undefined>;
+                                storagePath: string;
+                                url: string;
+                            } | undefined;
+                            backgroundColor?: string | undefined;
+                            timerSeconds?: yup.Maybe<number | undefined>;
+                            type: "audio";
+                        } | {
                             createdAt?: {
                                 isEqual?: any;
                                 toMillis?: any;
@@ -709,37 +762,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                             } | undefined;
                             backgroundColor?: string | undefined;
                             timerSeconds?: yup.Maybe<number | undefined>;
-                            type: "notifyASupportPerson";
-                            contactIds: string[];
-                        } | {
-                            createdAt?: {
-                                isEqual?: any;
-                                toMillis?: any;
-                                seconds: number;
-                                nanoseconds: number;
-                                toDate: Function;
-                            } | null | undefined;
-                            updatedAt?: {
-                                isEqual?: any;
-                                toMillis?: any;
-                                seconds: number;
-                                nanoseconds: number;
-                                toDate: Function;
-                            } | null | undefined;
-                            uid?: string | undefined;
-                            prompt?: string | undefined;
-                            description?: string | null | undefined;
-                            image?: {
-                                localFilePath?: yup.Maybe<string | undefined>;
-                                isDeleted?: boolean | undefined;
-                                metadata?: {} | null | undefined;
-                                thumbnailStoragePath?: yup.Maybe<string | undefined>;
-                                thumbnailUri?: yup.Maybe<string | undefined>;
-                                storagePath: string;
-                                url: string;
-                            } | undefined;
-                            backgroundColor?: string | undefined;
-                            timerSeconds?: yup.Maybe<number | undefined>;
                             type: "steps";
                             targetSteps: number;
                         } | {
@@ -770,7 +792,26 @@ export declare const threadSchema: yup.ObjectSchema<{
                             } | undefined;
                             backgroundColor?: string | undefined;
                             timerSeconds?: yup.Maybe<number | undefined>;
-                            audio?: {
+                            prompt: string;
+                            type: "affirmation";
+                        } | {
+                            createdAt?: {
+                                isEqual?: any;
+                                toMillis?: any;
+                                seconds: number;
+                                nanoseconds: number;
+                                toDate: Function;
+                            } | null | undefined;
+                            updatedAt?: {
+                                isEqual?: any;
+                                toMillis?: any;
+                                seconds: number;
+                                nanoseconds: number;
+                                toDate: Function;
+                            } | null | undefined;
+                            uid?: string | undefined;
+                            description?: string | null | undefined;
+                            image?: {
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -778,9 +819,11 @@ export declare const threadSchema: yup.ObjectSchema<{
                                 thumbnailUri?: yup.Maybe<string | undefined>;
                                 storagePath: string;
                                 url: string;
-                            } | null | undefined;
+                            } | undefined;
+                            backgroundColor?: string | undefined;
+                            timerSeconds?: yup.Maybe<number | undefined>;
                             prompt: string;
-                            type: "basic";
+                            type: "task";
                         } | {
                             createdAt?: {
                                 isEqual?: any;
@@ -844,7 +887,7 @@ export declare const threadSchema: yup.ObjectSchema<{
                             } | undefined;
                             backgroundColor?: string | undefined;
                             timerSeconds?: yup.Maybe<number | undefined>;
-                            type: "notifySupportGroup";
+                            type: "supportGroup";
                             supportGroup: import("./utils/firestore").DocumentReferenceLike<unknown>;
                         } | {
                             createdAt?: {
@@ -880,7 +923,51 @@ export declare const threadSchema: yup.ObjectSchema<{
                         };
                         doc: import("./utils/firestore").DocumentReferenceLike<unknown>;
                     };
-                };
+                } | null | undefined;
+                senderUid?: string | null | undefined;
+                senderName?: string | null | undefined;
+                agentConnectedAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                endedAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                startedSummarizingTranscriptAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                finishedSummarizingTranscriptAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                formattedDuration?: string | undefined;
+                transcriptSummary?: string | undefined;
+                transcriptItems?: {
+                    text: string;
+                    timestamp: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    };
+                }[] | undefined;
+                uid: string;
+                type: "call";
                 date: {
                     isEqual?: any;
                     toMillis?: any;
@@ -982,6 +1069,15 @@ export declare const threadSchema: yup.ObjectSchema<{
                                             nanoseconds: number;
                                             toDate: Function;
                                         } | null | undefined;
+                                        audio?: {
+                                            localFilePath?: yup.Maybe<string | undefined>;
+                                            isDeleted?: boolean | undefined;
+                                            metadata?: {} | null | undefined;
+                                            thumbnailStoragePath?: yup.Maybe<string | undefined>;
+                                            thumbnailUri?: yup.Maybe<string | undefined>;
+                                            storagePath: string;
+                                            url: string;
+                                        } | null | undefined;
                                         uid?: string | undefined;
                                         prompt?: string | undefined;
                                         description?: string | null | undefined;
@@ -996,11 +1092,7 @@ export declare const threadSchema: yup.ObjectSchema<{
                                         } | undefined;
                                         backgroundColor?: string | undefined;
                                         timerSeconds?: yup.Maybe<number | undefined>;
-                                        repeat?: yup.Maybe<number | undefined>;
-                                        type: "breathingExercise";
-                                        inFor: number;
-                                        holdFor: number;
-                                        outFor: number;
+                                        type: "audio";
                                     } | {
                                         createdAt?: {
                                             isEqual?: any;
@@ -1030,8 +1122,11 @@ export declare const threadSchema: yup.ObjectSchema<{
                                         } | undefined;
                                         backgroundColor?: string | undefined;
                                         timerSeconds?: yup.Maybe<number | undefined>;
-                                        type: "notifyASupportPerson";
-                                        contactIds: string[];
+                                        repeat?: yup.Maybe<number | undefined>;
+                                        type: "breathingExercise";
+                                        inFor: number;
+                                        holdFor: number;
+                                        outFor: number;
                                     } | {
                                         createdAt?: {
                                             isEqual?: any;
@@ -1091,7 +1186,26 @@ export declare const threadSchema: yup.ObjectSchema<{
                                         } | undefined;
                                         backgroundColor?: string | undefined;
                                         timerSeconds?: yup.Maybe<number | undefined>;
-                                        audio?: {
+                                        prompt: string;
+                                        type: "affirmation";
+                                    } | {
+                                        createdAt?: {
+                                            isEqual?: any;
+                                            toMillis?: any;
+                                            seconds: number;
+                                            nanoseconds: number;
+                                            toDate: Function;
+                                        } | null | undefined;
+                                        updatedAt?: {
+                                            isEqual?: any;
+                                            toMillis?: any;
+                                            seconds: number;
+                                            nanoseconds: number;
+                                            toDate: Function;
+                                        } | null | undefined;
+                                        uid?: string | undefined;
+                                        description?: string | null | undefined;
+                                        image?: {
                                             localFilePath?: yup.Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -1099,9 +1213,11 @@ export declare const threadSchema: yup.ObjectSchema<{
                                             thumbnailUri?: yup.Maybe<string | undefined>;
                                             storagePath: string;
                                             url: string;
-                                        } | null | undefined;
+                                        } | undefined;
+                                        backgroundColor?: string | undefined;
+                                        timerSeconds?: yup.Maybe<number | undefined>;
                                         prompt: string;
-                                        type: "basic";
+                                        type: "task";
                                     } | {
                                         createdAt?: {
                                             isEqual?: any;
@@ -1165,7 +1281,7 @@ export declare const threadSchema: yup.ObjectSchema<{
                                         } | undefined;
                                         backgroundColor?: string | undefined;
                                         timerSeconds?: yup.Maybe<number | undefined>;
-                                        type: "notifySupportGroup";
+                                        type: "supportGroup";
                                         supportGroup: import("./utils/firestore").DocumentReferenceLike<unknown>;
                                     } | {
                                         createdAt?: {
@@ -1215,21 +1331,7 @@ export declare const threadSchema: yup.ObjectSchema<{
                         };
                     };
                 } | null | undefined;
-                senderUid?: string | null | undefined;
-                senderName?: string | null | undefined;
-                suggestedResponses?: string[] | undefined;
-                toolCallResponses?: {
-                    role: "tool";
-                    tool_call_id: string;
-                    content: string;
-                }[] | undefined;
-                uid: string;
-                type: "gpt";
-                message: {
-                    role?: "assistant" | undefined;
-                    tool_calls?: (import("openai/resources").ChatCompletionMessageToolCall | undefined)[] | undefined;
-                };
-                tacticsData: {
+                tacticsData?: {
                     [x: string]: {
                         data?: {
                             setAt: {
@@ -1242,6 +1344,45 @@ export declare const threadSchema: yup.ObjectSchema<{
                             isCompleted: NonNullable<boolean | undefined>;
                         } | undefined;
                         tactic: {
+                            createdAt?: {
+                                isEqual?: any;
+                                toMillis?: any;
+                                seconds: number;
+                                nanoseconds: number;
+                                toDate: Function;
+                            } | null | undefined;
+                            updatedAt?: {
+                                isEqual?: any;
+                                toMillis?: any;
+                                seconds: number;
+                                nanoseconds: number;
+                                toDate: Function;
+                            } | null | undefined;
+                            audio?: {
+                                localFilePath?: yup.Maybe<string | undefined>;
+                                isDeleted?: boolean | undefined;
+                                metadata?: {} | null | undefined;
+                                thumbnailStoragePath?: yup.Maybe<string | undefined>;
+                                thumbnailUri?: yup.Maybe<string | undefined>;
+                                storagePath: string;
+                                url: string;
+                            } | null | undefined;
+                            uid?: string | undefined;
+                            prompt?: string | undefined;
+                            description?: string | null | undefined;
+                            image?: {
+                                localFilePath?: yup.Maybe<string | undefined>;
+                                isDeleted?: boolean | undefined;
+                                metadata?: {} | null | undefined;
+                                thumbnailStoragePath?: yup.Maybe<string | undefined>;
+                                thumbnailUri?: yup.Maybe<string | undefined>;
+                                storagePath: string;
+                                url: string;
+                            } | undefined;
+                            backgroundColor?: string | undefined;
+                            timerSeconds?: yup.Maybe<number | undefined>;
+                            type: "audio";
+                        } | {
                             createdAt?: {
                                 isEqual?: any;
                                 toMillis?: any;
@@ -1304,37 +1445,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                             } | undefined;
                             backgroundColor?: string | undefined;
                             timerSeconds?: yup.Maybe<number | undefined>;
-                            type: "notifyASupportPerson";
-                            contactIds: string[];
-                        } | {
-                            createdAt?: {
-                                isEqual?: any;
-                                toMillis?: any;
-                                seconds: number;
-                                nanoseconds: number;
-                                toDate: Function;
-                            } | null | undefined;
-                            updatedAt?: {
-                                isEqual?: any;
-                                toMillis?: any;
-                                seconds: number;
-                                nanoseconds: number;
-                                toDate: Function;
-                            } | null | undefined;
-                            uid?: string | undefined;
-                            prompt?: string | undefined;
-                            description?: string | null | undefined;
-                            image?: {
-                                localFilePath?: yup.Maybe<string | undefined>;
-                                isDeleted?: boolean | undefined;
-                                metadata?: {} | null | undefined;
-                                thumbnailStoragePath?: yup.Maybe<string | undefined>;
-                                thumbnailUri?: yup.Maybe<string | undefined>;
-                                storagePath: string;
-                                url: string;
-                            } | undefined;
-                            backgroundColor?: string | undefined;
-                            timerSeconds?: yup.Maybe<number | undefined>;
                             type: "steps";
                             targetSteps: number;
                         } | {
@@ -1365,7 +1475,26 @@ export declare const threadSchema: yup.ObjectSchema<{
                             } | undefined;
                             backgroundColor?: string | undefined;
                             timerSeconds?: yup.Maybe<number | undefined>;
-                            audio?: {
+                            prompt: string;
+                            type: "affirmation";
+                        } | {
+                            createdAt?: {
+                                isEqual?: any;
+                                toMillis?: any;
+                                seconds: number;
+                                nanoseconds: number;
+                                toDate: Function;
+                            } | null | undefined;
+                            updatedAt?: {
+                                isEqual?: any;
+                                toMillis?: any;
+                                seconds: number;
+                                nanoseconds: number;
+                                toDate: Function;
+                            } | null | undefined;
+                            uid?: string | undefined;
+                            description?: string | null | undefined;
+                            image?: {
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -1373,9 +1502,11 @@ export declare const threadSchema: yup.ObjectSchema<{
                                 thumbnailUri?: yup.Maybe<string | undefined>;
                                 storagePath: string;
                                 url: string;
-                            } | null | undefined;
+                            } | undefined;
+                            backgroundColor?: string | undefined;
+                            timerSeconds?: yup.Maybe<number | undefined>;
                             prompt: string;
-                            type: "basic";
+                            type: "task";
                         } | {
                             createdAt?: {
                                 isEqual?: any;
@@ -1439,7 +1570,7 @@ export declare const threadSchema: yup.ObjectSchema<{
                             } | undefined;
                             backgroundColor?: string | undefined;
                             timerSeconds?: yup.Maybe<number | undefined>;
-                            type: "notifySupportGroup";
+                            type: "supportGroup";
                             supportGroup: import("./utils/firestore").DocumentReferenceLike<unknown>;
                         } | {
                             createdAt?: {
@@ -1475,6 +1606,20 @@ export declare const threadSchema: yup.ObjectSchema<{
                         };
                         doc: import("./utils/firestore").DocumentReferenceLike<unknown>;
                     };
+                } | null | undefined;
+                senderUid?: string | null | undefined;
+                senderName?: string | null | undefined;
+                suggestedResponses?: string[] | undefined;
+                toolCallResponses?: {
+                    role: "tool";
+                    tool_call_id: string;
+                    content: string;
+                }[] | undefined;
+                uid: string;
+                type: "gpt";
+                message: {
+                    role?: "assistant" | undefined;
+                    tool_calls?: (import("openai/resources").ChatCompletionMessageToolCall | undefined)[] | undefined;
                 };
                 date: {
                     isEqual?: any;
@@ -1577,6 +1722,15 @@ export declare const threadSchema: yup.ObjectSchema<{
                                             nanoseconds: number;
                                             toDate: Function;
                                         } | null | undefined;
+                                        audio?: {
+                                            localFilePath?: yup.Maybe<string | undefined>;
+                                            isDeleted?: boolean | undefined;
+                                            metadata?: {} | null | undefined;
+                                            thumbnailStoragePath?: yup.Maybe<string | undefined>;
+                                            thumbnailUri?: yup.Maybe<string | undefined>;
+                                            storagePath: string;
+                                            url: string;
+                                        } | null | undefined;
                                         uid?: string | undefined;
                                         prompt?: string | undefined;
                                         description?: string | null | undefined;
@@ -1591,11 +1745,7 @@ export declare const threadSchema: yup.ObjectSchema<{
                                         } | undefined;
                                         backgroundColor?: string | undefined;
                                         timerSeconds?: yup.Maybe<number | undefined>;
-                                        repeat?: yup.Maybe<number | undefined>;
-                                        type: "breathingExercise";
-                                        inFor: number;
-                                        holdFor: number;
-                                        outFor: number;
+                                        type: "audio";
                                     } | {
                                         createdAt?: {
                                             isEqual?: any;
@@ -1625,8 +1775,11 @@ export declare const threadSchema: yup.ObjectSchema<{
                                         } | undefined;
                                         backgroundColor?: string | undefined;
                                         timerSeconds?: yup.Maybe<number | undefined>;
-                                        type: "notifyASupportPerson";
-                                        contactIds: string[];
+                                        repeat?: yup.Maybe<number | undefined>;
+                                        type: "breathingExercise";
+                                        inFor: number;
+                                        holdFor: number;
+                                        outFor: number;
                                     } | {
                                         createdAt?: {
                                             isEqual?: any;
@@ -1686,7 +1839,26 @@ export declare const threadSchema: yup.ObjectSchema<{
                                         } | undefined;
                                         backgroundColor?: string | undefined;
                                         timerSeconds?: yup.Maybe<number | undefined>;
-                                        audio?: {
+                                        prompt: string;
+                                        type: "affirmation";
+                                    } | {
+                                        createdAt?: {
+                                            isEqual?: any;
+                                            toMillis?: any;
+                                            seconds: number;
+                                            nanoseconds: number;
+                                            toDate: Function;
+                                        } | null | undefined;
+                                        updatedAt?: {
+                                            isEqual?: any;
+                                            toMillis?: any;
+                                            seconds: number;
+                                            nanoseconds: number;
+                                            toDate: Function;
+                                        } | null | undefined;
+                                        uid?: string | undefined;
+                                        description?: string | null | undefined;
+                                        image?: {
                                             localFilePath?: yup.Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -1694,9 +1866,11 @@ export declare const threadSchema: yup.ObjectSchema<{
                                             thumbnailUri?: yup.Maybe<string | undefined>;
                                             storagePath: string;
                                             url: string;
-                                        } | null | undefined;
+                                        } | undefined;
+                                        backgroundColor?: string | undefined;
+                                        timerSeconds?: yup.Maybe<number | undefined>;
                                         prompt: string;
-                                        type: "basic";
+                                        type: "task";
                                     } | {
                                         createdAt?: {
                                             isEqual?: any;
@@ -1760,7 +1934,7 @@ export declare const threadSchema: yup.ObjectSchema<{
                                         } | undefined;
                                         backgroundColor?: string | undefined;
                                         timerSeconds?: yup.Maybe<number | undefined>;
-                                        type: "notifySupportGroup";
+                                        type: "supportGroup";
                                         supportGroup: import("./utils/firestore").DocumentReferenceLike<unknown>;
                                     } | {
                                         createdAt?: {
@@ -1810,12 +1984,7 @@ export declare const threadSchema: yup.ObjectSchema<{
                         };
                     };
                 } | null | undefined;
-                senderUid?: string | null | undefined;
-                senderName?: string | null | undefined;
-                triggerDoc?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
-                uid: string;
-                type: "impulse";
-                tacticsData: {
+                tacticsData?: {
                     [x: string]: {
                         data?: {
                             setAt: {
@@ -1828,6 +1997,45 @@ export declare const threadSchema: yup.ObjectSchema<{
                             isCompleted: NonNullable<boolean | undefined>;
                         } | undefined;
                         tactic: {
+                            createdAt?: {
+                                isEqual?: any;
+                                toMillis?: any;
+                                seconds: number;
+                                nanoseconds: number;
+                                toDate: Function;
+                            } | null | undefined;
+                            updatedAt?: {
+                                isEqual?: any;
+                                toMillis?: any;
+                                seconds: number;
+                                nanoseconds: number;
+                                toDate: Function;
+                            } | null | undefined;
+                            audio?: {
+                                localFilePath?: yup.Maybe<string | undefined>;
+                                isDeleted?: boolean | undefined;
+                                metadata?: {} | null | undefined;
+                                thumbnailStoragePath?: yup.Maybe<string | undefined>;
+                                thumbnailUri?: yup.Maybe<string | undefined>;
+                                storagePath: string;
+                                url: string;
+                            } | null | undefined;
+                            uid?: string | undefined;
+                            prompt?: string | undefined;
+                            description?: string | null | undefined;
+                            image?: {
+                                localFilePath?: yup.Maybe<string | undefined>;
+                                isDeleted?: boolean | undefined;
+                                metadata?: {} | null | undefined;
+                                thumbnailStoragePath?: yup.Maybe<string | undefined>;
+                                thumbnailUri?: yup.Maybe<string | undefined>;
+                                storagePath: string;
+                                url: string;
+                            } | undefined;
+                            backgroundColor?: string | undefined;
+                            timerSeconds?: yup.Maybe<number | undefined>;
+                            type: "audio";
+                        } | {
                             createdAt?: {
                                 isEqual?: any;
                                 toMillis?: any;
@@ -1890,37 +2098,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                             } | undefined;
                             backgroundColor?: string | undefined;
                             timerSeconds?: yup.Maybe<number | undefined>;
-                            type: "notifyASupportPerson";
-                            contactIds: string[];
-                        } | {
-                            createdAt?: {
-                                isEqual?: any;
-                                toMillis?: any;
-                                seconds: number;
-                                nanoseconds: number;
-                                toDate: Function;
-                            } | null | undefined;
-                            updatedAt?: {
-                                isEqual?: any;
-                                toMillis?: any;
-                                seconds: number;
-                                nanoseconds: number;
-                                toDate: Function;
-                            } | null | undefined;
-                            uid?: string | undefined;
-                            prompt?: string | undefined;
-                            description?: string | null | undefined;
-                            image?: {
-                                localFilePath?: yup.Maybe<string | undefined>;
-                                isDeleted?: boolean | undefined;
-                                metadata?: {} | null | undefined;
-                                thumbnailStoragePath?: yup.Maybe<string | undefined>;
-                                thumbnailUri?: yup.Maybe<string | undefined>;
-                                storagePath: string;
-                                url: string;
-                            } | undefined;
-                            backgroundColor?: string | undefined;
-                            timerSeconds?: yup.Maybe<number | undefined>;
                             type: "steps";
                             targetSteps: number;
                         } | {
@@ -1951,7 +2128,26 @@ export declare const threadSchema: yup.ObjectSchema<{
                             } | undefined;
                             backgroundColor?: string | undefined;
                             timerSeconds?: yup.Maybe<number | undefined>;
-                            audio?: {
+                            prompt: string;
+                            type: "affirmation";
+                        } | {
+                            createdAt?: {
+                                isEqual?: any;
+                                toMillis?: any;
+                                seconds: number;
+                                nanoseconds: number;
+                                toDate: Function;
+                            } | null | undefined;
+                            updatedAt?: {
+                                isEqual?: any;
+                                toMillis?: any;
+                                seconds: number;
+                                nanoseconds: number;
+                                toDate: Function;
+                            } | null | undefined;
+                            uid?: string | undefined;
+                            description?: string | null | undefined;
+                            image?: {
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -1959,9 +2155,11 @@ export declare const threadSchema: yup.ObjectSchema<{
                                 thumbnailUri?: yup.Maybe<string | undefined>;
                                 storagePath: string;
                                 url: string;
-                            } | null | undefined;
+                            } | undefined;
+                            backgroundColor?: string | undefined;
+                            timerSeconds?: yup.Maybe<number | undefined>;
                             prompt: string;
-                            type: "basic";
+                            type: "task";
                         } | {
                             createdAt?: {
                                 isEqual?: any;
@@ -2025,7 +2223,7 @@ export declare const threadSchema: yup.ObjectSchema<{
                             } | undefined;
                             backgroundColor?: string | undefined;
                             timerSeconds?: yup.Maybe<number | undefined>;
-                            type: "notifySupportGroup";
+                            type: "supportGroup";
                             supportGroup: import("./utils/firestore").DocumentReferenceLike<unknown>;
                         } | {
                             createdAt?: {
@@ -2061,7 +2259,12 @@ export declare const threadSchema: yup.ObjectSchema<{
                         };
                         doc: import("./utils/firestore").DocumentReferenceLike<unknown>;
                     };
-                };
+                } | null | undefined;
+                senderUid?: string | null | undefined;
+                senderName?: string | null | undefined;
+                triggerDoc?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
+                uid: string;
+                type: "impulse";
                 date: {
                     isEqual?: any;
                     toMillis?: any;
@@ -2163,6 +2366,15 @@ export declare const threadSchema: yup.ObjectSchema<{
                                             nanoseconds: number;
                                             toDate: Function;
                                         } | null | undefined;
+                                        audio?: {
+                                            localFilePath?: yup.Maybe<string | undefined>;
+                                            isDeleted?: boolean | undefined;
+                                            metadata?: {} | null | undefined;
+                                            thumbnailStoragePath?: yup.Maybe<string | undefined>;
+                                            thumbnailUri?: yup.Maybe<string | undefined>;
+                                            storagePath: string;
+                                            url: string;
+                                        } | null | undefined;
                                         uid?: string | undefined;
                                         prompt?: string | undefined;
                                         description?: string | null | undefined;
@@ -2177,11 +2389,7 @@ export declare const threadSchema: yup.ObjectSchema<{
                                         } | undefined;
                                         backgroundColor?: string | undefined;
                                         timerSeconds?: yup.Maybe<number | undefined>;
-                                        repeat?: yup.Maybe<number | undefined>;
-                                        type: "breathingExercise";
-                                        inFor: number;
-                                        holdFor: number;
-                                        outFor: number;
+                                        type: "audio";
                                     } | {
                                         createdAt?: {
                                             isEqual?: any;
@@ -2211,8 +2419,11 @@ export declare const threadSchema: yup.ObjectSchema<{
                                         } | undefined;
                                         backgroundColor?: string | undefined;
                                         timerSeconds?: yup.Maybe<number | undefined>;
-                                        type: "notifyASupportPerson";
-                                        contactIds: string[];
+                                        repeat?: yup.Maybe<number | undefined>;
+                                        type: "breathingExercise";
+                                        inFor: number;
+                                        holdFor: number;
+                                        outFor: number;
                                     } | {
                                         createdAt?: {
                                             isEqual?: any;
@@ -2272,7 +2483,26 @@ export declare const threadSchema: yup.ObjectSchema<{
                                         } | undefined;
                                         backgroundColor?: string | undefined;
                                         timerSeconds?: yup.Maybe<number | undefined>;
-                                        audio?: {
+                                        prompt: string;
+                                        type: "affirmation";
+                                    } | {
+                                        createdAt?: {
+                                            isEqual?: any;
+                                            toMillis?: any;
+                                            seconds: number;
+                                            nanoseconds: number;
+                                            toDate: Function;
+                                        } | null | undefined;
+                                        updatedAt?: {
+                                            isEqual?: any;
+                                            toMillis?: any;
+                                            seconds: number;
+                                            nanoseconds: number;
+                                            toDate: Function;
+                                        } | null | undefined;
+                                        uid?: string | undefined;
+                                        description?: string | null | undefined;
+                                        image?: {
                                             localFilePath?: yup.Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -2280,9 +2510,11 @@ export declare const threadSchema: yup.ObjectSchema<{
                                             thumbnailUri?: yup.Maybe<string | undefined>;
                                             storagePath: string;
                                             url: string;
-                                        } | null | undefined;
+                                        } | undefined;
+                                        backgroundColor?: string | undefined;
+                                        timerSeconds?: yup.Maybe<number | undefined>;
                                         prompt: string;
-                                        type: "basic";
+                                        type: "task";
                                     } | {
                                         createdAt?: {
                                             isEqual?: any;
@@ -2346,7 +2578,7 @@ export declare const threadSchema: yup.ObjectSchema<{
                                         } | undefined;
                                         backgroundColor?: string | undefined;
                                         timerSeconds?: yup.Maybe<number | undefined>;
-                                        type: "notifySupportGroup";
+                                        type: "supportGroup";
                                         supportGroup: import("./utils/firestore").DocumentReferenceLike<unknown>;
                                     } | {
                                         createdAt?: {
@@ -2396,11 +2628,7 @@ export declare const threadSchema: yup.ObjectSchema<{
                         };
                     };
                 } | null | undefined;
-                senderUid?: string | null | undefined;
-                senderName?: string | null | undefined;
-                uid: string;
-                type: "meeting";
-                tacticsData: {
+                tacticsData?: {
                     [x: string]: {
                         data?: {
                             setAt: {
@@ -2413,6 +2641,45 @@ export declare const threadSchema: yup.ObjectSchema<{
                             isCompleted: NonNullable<boolean | undefined>;
                         } | undefined;
                         tactic: {
+                            createdAt?: {
+                                isEqual?: any;
+                                toMillis?: any;
+                                seconds: number;
+                                nanoseconds: number;
+                                toDate: Function;
+                            } | null | undefined;
+                            updatedAt?: {
+                                isEqual?: any;
+                                toMillis?: any;
+                                seconds: number;
+                                nanoseconds: number;
+                                toDate: Function;
+                            } | null | undefined;
+                            audio?: {
+                                localFilePath?: yup.Maybe<string | undefined>;
+                                isDeleted?: boolean | undefined;
+                                metadata?: {} | null | undefined;
+                                thumbnailStoragePath?: yup.Maybe<string | undefined>;
+                                thumbnailUri?: yup.Maybe<string | undefined>;
+                                storagePath: string;
+                                url: string;
+                            } | null | undefined;
+                            uid?: string | undefined;
+                            prompt?: string | undefined;
+                            description?: string | null | undefined;
+                            image?: {
+                                localFilePath?: yup.Maybe<string | undefined>;
+                                isDeleted?: boolean | undefined;
+                                metadata?: {} | null | undefined;
+                                thumbnailStoragePath?: yup.Maybe<string | undefined>;
+                                thumbnailUri?: yup.Maybe<string | undefined>;
+                                storagePath: string;
+                                url: string;
+                            } | undefined;
+                            backgroundColor?: string | undefined;
+                            timerSeconds?: yup.Maybe<number | undefined>;
+                            type: "audio";
+                        } | {
                             createdAt?: {
                                 isEqual?: any;
                                 toMillis?: any;
@@ -2475,37 +2742,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                             } | undefined;
                             backgroundColor?: string | undefined;
                             timerSeconds?: yup.Maybe<number | undefined>;
-                            type: "notifyASupportPerson";
-                            contactIds: string[];
-                        } | {
-                            createdAt?: {
-                                isEqual?: any;
-                                toMillis?: any;
-                                seconds: number;
-                                nanoseconds: number;
-                                toDate: Function;
-                            } | null | undefined;
-                            updatedAt?: {
-                                isEqual?: any;
-                                toMillis?: any;
-                                seconds: number;
-                                nanoseconds: number;
-                                toDate: Function;
-                            } | null | undefined;
-                            uid?: string | undefined;
-                            prompt?: string | undefined;
-                            description?: string | null | undefined;
-                            image?: {
-                                localFilePath?: yup.Maybe<string | undefined>;
-                                isDeleted?: boolean | undefined;
-                                metadata?: {} | null | undefined;
-                                thumbnailStoragePath?: yup.Maybe<string | undefined>;
-                                thumbnailUri?: yup.Maybe<string | undefined>;
-                                storagePath: string;
-                                url: string;
-                            } | undefined;
-                            backgroundColor?: string | undefined;
-                            timerSeconds?: yup.Maybe<number | undefined>;
                             type: "steps";
                             targetSteps: number;
                         } | {
@@ -2536,7 +2772,26 @@ export declare const threadSchema: yup.ObjectSchema<{
                             } | undefined;
                             backgroundColor?: string | undefined;
                             timerSeconds?: yup.Maybe<number | undefined>;
-                            audio?: {
+                            prompt: string;
+                            type: "affirmation";
+                        } | {
+                            createdAt?: {
+                                isEqual?: any;
+                                toMillis?: any;
+                                seconds: number;
+                                nanoseconds: number;
+                                toDate: Function;
+                            } | null | undefined;
+                            updatedAt?: {
+                                isEqual?: any;
+                                toMillis?: any;
+                                seconds: number;
+                                nanoseconds: number;
+                                toDate: Function;
+                            } | null | undefined;
+                            uid?: string | undefined;
+                            description?: string | null | undefined;
+                            image?: {
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -2544,9 +2799,11 @@ export declare const threadSchema: yup.ObjectSchema<{
                                 thumbnailUri?: yup.Maybe<string | undefined>;
                                 storagePath: string;
                                 url: string;
-                            } | null | undefined;
+                            } | undefined;
+                            backgroundColor?: string | undefined;
+                            timerSeconds?: yup.Maybe<number | undefined>;
                             prompt: string;
-                            type: "basic";
+                            type: "task";
                         } | {
                             createdAt?: {
                                 isEqual?: any;
@@ -2610,7 +2867,7 @@ export declare const threadSchema: yup.ObjectSchema<{
                             } | undefined;
                             backgroundColor?: string | undefined;
                             timerSeconds?: yup.Maybe<number | undefined>;
-                            type: "notifySupportGroup";
+                            type: "supportGroup";
                             supportGroup: import("./utils/firestore").DocumentReferenceLike<unknown>;
                         } | {
                             createdAt?: {
@@ -2646,7 +2903,11 @@ export declare const threadSchema: yup.ObjectSchema<{
                         };
                         doc: import("./utils/firestore").DocumentReferenceLike<unknown>;
                     };
-                };
+                } | null | undefined;
+                senderUid?: string | null | undefined;
+                senderName?: string | null | undefined;
+                uid: string;
+                type: "meeting";
                 date: {
                     isEqual?: any;
                     toMillis?: any;
@@ -2749,6 +3010,15 @@ export declare const threadSchema: yup.ObjectSchema<{
                                             nanoseconds: number;
                                             toDate: Function;
                                         } | null | undefined;
+                                        audio?: {
+                                            localFilePath?: yup.Maybe<string | undefined>;
+                                            isDeleted?: boolean | undefined;
+                                            metadata?: {} | null | undefined;
+                                            thumbnailStoragePath?: yup.Maybe<string | undefined>;
+                                            thumbnailUri?: yup.Maybe<string | undefined>;
+                                            storagePath: string;
+                                            url: string;
+                                        } | null | undefined;
                                         uid?: string | undefined;
                                         prompt?: string | undefined;
                                         description?: string | null | undefined;
@@ -2763,11 +3033,7 @@ export declare const threadSchema: yup.ObjectSchema<{
                                         } | undefined;
                                         backgroundColor?: string | undefined;
                                         timerSeconds?: yup.Maybe<number | undefined>;
-                                        repeat?: yup.Maybe<number | undefined>;
-                                        type: "breathingExercise";
-                                        inFor: number;
-                                        holdFor: number;
-                                        outFor: number;
+                                        type: "audio";
                                     } | {
                                         createdAt?: {
                                             isEqual?: any;
@@ -2797,8 +3063,11 @@ export declare const threadSchema: yup.ObjectSchema<{
                                         } | undefined;
                                         backgroundColor?: string | undefined;
                                         timerSeconds?: yup.Maybe<number | undefined>;
-                                        type: "notifyASupportPerson";
-                                        contactIds: string[];
+                                        repeat?: yup.Maybe<number | undefined>;
+                                        type: "breathingExercise";
+                                        inFor: number;
+                                        holdFor: number;
+                                        outFor: number;
                                     } | {
                                         createdAt?: {
                                             isEqual?: any;
@@ -2858,7 +3127,26 @@ export declare const threadSchema: yup.ObjectSchema<{
                                         } | undefined;
                                         backgroundColor?: string | undefined;
                                         timerSeconds?: yup.Maybe<number | undefined>;
-                                        audio?: {
+                                        prompt: string;
+                                        type: "affirmation";
+                                    } | {
+                                        createdAt?: {
+                                            isEqual?: any;
+                                            toMillis?: any;
+                                            seconds: number;
+                                            nanoseconds: number;
+                                            toDate: Function;
+                                        } | null | undefined;
+                                        updatedAt?: {
+                                            isEqual?: any;
+                                            toMillis?: any;
+                                            seconds: number;
+                                            nanoseconds: number;
+                                            toDate: Function;
+                                        } | null | undefined;
+                                        uid?: string | undefined;
+                                        description?: string | null | undefined;
+                                        image?: {
                                             localFilePath?: yup.Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -2866,9 +3154,11 @@ export declare const threadSchema: yup.ObjectSchema<{
                                             thumbnailUri?: yup.Maybe<string | undefined>;
                                             storagePath: string;
                                             url: string;
-                                        } | null | undefined;
+                                        } | undefined;
+                                        backgroundColor?: string | undefined;
+                                        timerSeconds?: yup.Maybe<number | undefined>;
                                         prompt: string;
-                                        type: "basic";
+                                        type: "task";
                                     } | {
                                         createdAt?: {
                                             isEqual?: any;
@@ -2932,7 +3222,7 @@ export declare const threadSchema: yup.ObjectSchema<{
                                         } | undefined;
                                         backgroundColor?: string | undefined;
                                         timerSeconds?: yup.Maybe<number | undefined>;
-                                        type: "notifySupportGroup";
+                                        type: "supportGroup";
                                         supportGroup: import("./utils/firestore").DocumentReferenceLike<unknown>;
                                     } | {
                                         createdAt?: {
@@ -2982,13 +3272,7 @@ export declare const threadSchema: yup.ObjectSchema<{
                         };
                     };
                 } | null | undefined;
-                senderUid?: string | null | undefined;
-                senderName?: string | null | undefined;
-                audioTranscript?: string | undefined;
-                audioTranscribedLocally?: boolean | undefined;
-                uid: string;
-                type: "user";
-                tacticsData: {
+                tacticsData?: {
                     [x: string]: {
                         data?: {
                             setAt: {
@@ -3001,6 +3285,45 @@ export declare const threadSchema: yup.ObjectSchema<{
                             isCompleted: NonNullable<boolean | undefined>;
                         } | undefined;
                         tactic: {
+                            createdAt?: {
+                                isEqual?: any;
+                                toMillis?: any;
+                                seconds: number;
+                                nanoseconds: number;
+                                toDate: Function;
+                            } | null | undefined;
+                            updatedAt?: {
+                                isEqual?: any;
+                                toMillis?: any;
+                                seconds: number;
+                                nanoseconds: number;
+                                toDate: Function;
+                            } | null | undefined;
+                            audio?: {
+                                localFilePath?: yup.Maybe<string | undefined>;
+                                isDeleted?: boolean | undefined;
+                                metadata?: {} | null | undefined;
+                                thumbnailStoragePath?: yup.Maybe<string | undefined>;
+                                thumbnailUri?: yup.Maybe<string | undefined>;
+                                storagePath: string;
+                                url: string;
+                            } | null | undefined;
+                            uid?: string | undefined;
+                            prompt?: string | undefined;
+                            description?: string | null | undefined;
+                            image?: {
+                                localFilePath?: yup.Maybe<string | undefined>;
+                                isDeleted?: boolean | undefined;
+                                metadata?: {} | null | undefined;
+                                thumbnailStoragePath?: yup.Maybe<string | undefined>;
+                                thumbnailUri?: yup.Maybe<string | undefined>;
+                                storagePath: string;
+                                url: string;
+                            } | undefined;
+                            backgroundColor?: string | undefined;
+                            timerSeconds?: yup.Maybe<number | undefined>;
+                            type: "audio";
+                        } | {
                             createdAt?: {
                                 isEqual?: any;
                                 toMillis?: any;
@@ -3063,37 +3386,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                             } | undefined;
                             backgroundColor?: string | undefined;
                             timerSeconds?: yup.Maybe<number | undefined>;
-                            type: "notifyASupportPerson";
-                            contactIds: string[];
-                        } | {
-                            createdAt?: {
-                                isEqual?: any;
-                                toMillis?: any;
-                                seconds: number;
-                                nanoseconds: number;
-                                toDate: Function;
-                            } | null | undefined;
-                            updatedAt?: {
-                                isEqual?: any;
-                                toMillis?: any;
-                                seconds: number;
-                                nanoseconds: number;
-                                toDate: Function;
-                            } | null | undefined;
-                            uid?: string | undefined;
-                            prompt?: string | undefined;
-                            description?: string | null | undefined;
-                            image?: {
-                                localFilePath?: yup.Maybe<string | undefined>;
-                                isDeleted?: boolean | undefined;
-                                metadata?: {} | null | undefined;
-                                thumbnailStoragePath?: yup.Maybe<string | undefined>;
-                                thumbnailUri?: yup.Maybe<string | undefined>;
-                                storagePath: string;
-                                url: string;
-                            } | undefined;
-                            backgroundColor?: string | undefined;
-                            timerSeconds?: yup.Maybe<number | undefined>;
                             type: "steps";
                             targetSteps: number;
                         } | {
@@ -3124,7 +3416,26 @@ export declare const threadSchema: yup.ObjectSchema<{
                             } | undefined;
                             backgroundColor?: string | undefined;
                             timerSeconds?: yup.Maybe<number | undefined>;
-                            audio?: {
+                            prompt: string;
+                            type: "affirmation";
+                        } | {
+                            createdAt?: {
+                                isEqual?: any;
+                                toMillis?: any;
+                                seconds: number;
+                                nanoseconds: number;
+                                toDate: Function;
+                            } | null | undefined;
+                            updatedAt?: {
+                                isEqual?: any;
+                                toMillis?: any;
+                                seconds: number;
+                                nanoseconds: number;
+                                toDate: Function;
+                            } | null | undefined;
+                            uid?: string | undefined;
+                            description?: string | null | undefined;
+                            image?: {
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -3132,9 +3443,11 @@ export declare const threadSchema: yup.ObjectSchema<{
                                 thumbnailUri?: yup.Maybe<string | undefined>;
                                 storagePath: string;
                                 url: string;
-                            } | null | undefined;
+                            } | undefined;
+                            backgroundColor?: string | undefined;
+                            timerSeconds?: yup.Maybe<number | undefined>;
                             prompt: string;
-                            type: "basic";
+                            type: "task";
                         } | {
                             createdAt?: {
                                 isEqual?: any;
@@ -3198,7 +3511,7 @@ export declare const threadSchema: yup.ObjectSchema<{
                             } | undefined;
                             backgroundColor?: string | undefined;
                             timerSeconds?: yup.Maybe<number | undefined>;
-                            type: "notifySupportGroup";
+                            type: "supportGroup";
                             supportGroup: import("./utils/firestore").DocumentReferenceLike<unknown>;
                         } | {
                             createdAt?: {
@@ -3234,7 +3547,13 @@ export declare const threadSchema: yup.ObjectSchema<{
                         };
                         doc: import("./utils/firestore").DocumentReferenceLike<unknown>;
                     };
-                };
+                } | null | undefined;
+                senderUid?: string | null | undefined;
+                senderName?: string | null | undefined;
+                audioTranscript?: string | undefined;
+                audioTranscribedLocally?: boolean | undefined;
+                uid: string;
+                type: "user";
                 date: {
                     isEqual?: any;
                     toMillis?: any;
@@ -3337,6 +3656,15 @@ export declare const threadSchema: yup.ObjectSchema<{
                                             nanoseconds: number;
                                             toDate: Function;
                                         } | null | undefined;
+                                        audio?: {
+                                            localFilePath?: yup.Maybe<string | undefined>;
+                                            isDeleted?: boolean | undefined;
+                                            metadata?: {} | null | undefined;
+                                            thumbnailStoragePath?: yup.Maybe<string | undefined>;
+                                            thumbnailUri?: yup.Maybe<string | undefined>;
+                                            storagePath: string;
+                                            url: string;
+                                        } | null | undefined;
                                         uid?: string | undefined;
                                         prompt?: string | undefined;
                                         description?: string | null | undefined;
@@ -3351,11 +3679,7 @@ export declare const threadSchema: yup.ObjectSchema<{
                                         } | undefined;
                                         backgroundColor?: string | undefined;
                                         timerSeconds?: yup.Maybe<number | undefined>;
-                                        repeat?: yup.Maybe<number | undefined>;
-                                        type: "breathingExercise";
-                                        inFor: number;
-                                        holdFor: number;
-                                        outFor: number;
+                                        type: "audio";
                                     } | {
                                         createdAt?: {
                                             isEqual?: any;
@@ -3385,8 +3709,11 @@ export declare const threadSchema: yup.ObjectSchema<{
                                         } | undefined;
                                         backgroundColor?: string | undefined;
                                         timerSeconds?: yup.Maybe<number | undefined>;
-                                        type: "notifyASupportPerson";
-                                        contactIds: string[];
+                                        repeat?: yup.Maybe<number | undefined>;
+                                        type: "breathingExercise";
+                                        inFor: number;
+                                        holdFor: number;
+                                        outFor: number;
                                     } | {
                                         createdAt?: {
                                             isEqual?: any;
@@ -3446,7 +3773,26 @@ export declare const threadSchema: yup.ObjectSchema<{
                                         } | undefined;
                                         backgroundColor?: string | undefined;
                                         timerSeconds?: yup.Maybe<number | undefined>;
-                                        audio?: {
+                                        prompt: string;
+                                        type: "affirmation";
+                                    } | {
+                                        createdAt?: {
+                                            isEqual?: any;
+                                            toMillis?: any;
+                                            seconds: number;
+                                            nanoseconds: number;
+                                            toDate: Function;
+                                        } | null | undefined;
+                                        updatedAt?: {
+                                            isEqual?: any;
+                                            toMillis?: any;
+                                            seconds: number;
+                                            nanoseconds: number;
+                                            toDate: Function;
+                                        } | null | undefined;
+                                        uid?: string | undefined;
+                                        description?: string | null | undefined;
+                                        image?: {
                                             localFilePath?: yup.Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -3454,9 +3800,11 @@ export declare const threadSchema: yup.ObjectSchema<{
                                             thumbnailUri?: yup.Maybe<string | undefined>;
                                             storagePath: string;
                                             url: string;
-                                        } | null | undefined;
+                                        } | undefined;
+                                        backgroundColor?: string | undefined;
+                                        timerSeconds?: yup.Maybe<number | undefined>;
                                         prompt: string;
-                                        type: "basic";
+                                        type: "task";
                                     } | {
                                         createdAt?: {
                                             isEqual?: any;
@@ -3520,7 +3868,7 @@ export declare const threadSchema: yup.ObjectSchema<{
                                         } | undefined;
                                         backgroundColor?: string | undefined;
                                         timerSeconds?: yup.Maybe<number | undefined>;
-                                        type: "notifySupportGroup";
+                                        type: "supportGroup";
                                         supportGroup: import("./utils/firestore").DocumentReferenceLike<unknown>;
                                     } | {
                                         createdAt?: {
@@ -3570,30 +3918,7 @@ export declare const threadSchema: yup.ObjectSchema<{
                         };
                     };
                 } | null | undefined;
-                senderUid?: string | null | undefined;
-                senderName?: string | null | undefined;
-                firstNavigateToRoute?: string | undefined;
-                startButtonLabel?: string | undefined;
-                animationFileName?: string | undefined;
-                completedAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                uid: string;
-                type: "showTour";
-                steps: {
-                    nextOnImpulseButtonPress?: boolean | undefined;
-                    borderRadius?: number | undefined;
-                    innerPadding?: number | undefined;
-                    description: string;
-                    elementRefName: string;
-                    title: string;
-                    confirmButtonLabel: string;
-                }[];
-                tacticsData: {
+                tacticsData?: {
                     [x: string]: {
                         data?: {
                             setAt: {
@@ -3606,6 +3931,45 @@ export declare const threadSchema: yup.ObjectSchema<{
                             isCompleted: NonNullable<boolean | undefined>;
                         } | undefined;
                         tactic: {
+                            createdAt?: {
+                                isEqual?: any;
+                                toMillis?: any;
+                                seconds: number;
+                                nanoseconds: number;
+                                toDate: Function;
+                            } | null | undefined;
+                            updatedAt?: {
+                                isEqual?: any;
+                                toMillis?: any;
+                                seconds: number;
+                                nanoseconds: number;
+                                toDate: Function;
+                            } | null | undefined;
+                            audio?: {
+                                localFilePath?: yup.Maybe<string | undefined>;
+                                isDeleted?: boolean | undefined;
+                                metadata?: {} | null | undefined;
+                                thumbnailStoragePath?: yup.Maybe<string | undefined>;
+                                thumbnailUri?: yup.Maybe<string | undefined>;
+                                storagePath: string;
+                                url: string;
+                            } | null | undefined;
+                            uid?: string | undefined;
+                            prompt?: string | undefined;
+                            description?: string | null | undefined;
+                            image?: {
+                                localFilePath?: yup.Maybe<string | undefined>;
+                                isDeleted?: boolean | undefined;
+                                metadata?: {} | null | undefined;
+                                thumbnailStoragePath?: yup.Maybe<string | undefined>;
+                                thumbnailUri?: yup.Maybe<string | undefined>;
+                                storagePath: string;
+                                url: string;
+                            } | undefined;
+                            backgroundColor?: string | undefined;
+                            timerSeconds?: yup.Maybe<number | undefined>;
+                            type: "audio";
+                        } | {
                             createdAt?: {
                                 isEqual?: any;
                                 toMillis?: any;
@@ -3668,37 +4032,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                             } | undefined;
                             backgroundColor?: string | undefined;
                             timerSeconds?: yup.Maybe<number | undefined>;
-                            type: "notifyASupportPerson";
-                            contactIds: string[];
-                        } | {
-                            createdAt?: {
-                                isEqual?: any;
-                                toMillis?: any;
-                                seconds: number;
-                                nanoseconds: number;
-                                toDate: Function;
-                            } | null | undefined;
-                            updatedAt?: {
-                                isEqual?: any;
-                                toMillis?: any;
-                                seconds: number;
-                                nanoseconds: number;
-                                toDate: Function;
-                            } | null | undefined;
-                            uid?: string | undefined;
-                            prompt?: string | undefined;
-                            description?: string | null | undefined;
-                            image?: {
-                                localFilePath?: yup.Maybe<string | undefined>;
-                                isDeleted?: boolean | undefined;
-                                metadata?: {} | null | undefined;
-                                thumbnailStoragePath?: yup.Maybe<string | undefined>;
-                                thumbnailUri?: yup.Maybe<string | undefined>;
-                                storagePath: string;
-                                url: string;
-                            } | undefined;
-                            backgroundColor?: string | undefined;
-                            timerSeconds?: yup.Maybe<number | undefined>;
                             type: "steps";
                             targetSteps: number;
                         } | {
@@ -3729,7 +4062,26 @@ export declare const threadSchema: yup.ObjectSchema<{
                             } | undefined;
                             backgroundColor?: string | undefined;
                             timerSeconds?: yup.Maybe<number | undefined>;
-                            audio?: {
+                            prompt: string;
+                            type: "affirmation";
+                        } | {
+                            createdAt?: {
+                                isEqual?: any;
+                                toMillis?: any;
+                                seconds: number;
+                                nanoseconds: number;
+                                toDate: Function;
+                            } | null | undefined;
+                            updatedAt?: {
+                                isEqual?: any;
+                                toMillis?: any;
+                                seconds: number;
+                                nanoseconds: number;
+                                toDate: Function;
+                            } | null | undefined;
+                            uid?: string | undefined;
+                            description?: string | null | undefined;
+                            image?: {
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -3737,9 +4089,11 @@ export declare const threadSchema: yup.ObjectSchema<{
                                 thumbnailUri?: yup.Maybe<string | undefined>;
                                 storagePath: string;
                                 url: string;
-                            } | null | undefined;
+                            } | undefined;
+                            backgroundColor?: string | undefined;
+                            timerSeconds?: yup.Maybe<number | undefined>;
                             prompt: string;
-                            type: "basic";
+                            type: "task";
                         } | {
                             createdAt?: {
                                 isEqual?: any;
@@ -3803,7 +4157,7 @@ export declare const threadSchema: yup.ObjectSchema<{
                             } | undefined;
                             backgroundColor?: string | undefined;
                             timerSeconds?: yup.Maybe<number | undefined>;
-                            type: "notifySupportGroup";
+                            type: "supportGroup";
                             supportGroup: import("./utils/firestore").DocumentReferenceLike<unknown>;
                         } | {
                             createdAt?: {
@@ -3839,7 +4193,30 @@ export declare const threadSchema: yup.ObjectSchema<{
                         };
                         doc: import("./utils/firestore").DocumentReferenceLike<unknown>;
                     };
-                };
+                } | null | undefined;
+                senderUid?: string | null | undefined;
+                senderName?: string | null | undefined;
+                firstNavigateToRoute?: string | undefined;
+                startButtonLabel?: string | undefined;
+                animationFileName?: string | undefined;
+                completedAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                uid: string;
+                type: "showTour";
+                steps: {
+                    nextOnImpulseButtonPress?: boolean | undefined;
+                    borderRadius?: number | undefined;
+                    innerPadding?: number | undefined;
+                    description: string;
+                    elementRefName: string;
+                    title: string;
+                    confirmButtonLabel: string;
+                }[];
                 date: {
                     isEqual?: any;
                     toMillis?: any;
@@ -3941,6 +4318,15 @@ export declare const threadSchema: yup.ObjectSchema<{
                                             nanoseconds: number;
                                             toDate: Function;
                                         } | null | undefined;
+                                        audio?: {
+                                            localFilePath?: yup.Maybe<string | undefined>;
+                                            isDeleted?: boolean | undefined;
+                                            metadata?: {} | null | undefined;
+                                            thumbnailStoragePath?: yup.Maybe<string | undefined>;
+                                            thumbnailUri?: yup.Maybe<string | undefined>;
+                                            storagePath: string;
+                                            url: string;
+                                        } | null | undefined;
                                         uid?: string | undefined;
                                         prompt?: string | undefined;
                                         description?: string | null | undefined;
@@ -3955,11 +4341,7 @@ export declare const threadSchema: yup.ObjectSchema<{
                                         } | undefined;
                                         backgroundColor?: string | undefined;
                                         timerSeconds?: yup.Maybe<number | undefined>;
-                                        repeat?: yup.Maybe<number | undefined>;
-                                        type: "breathingExercise";
-                                        inFor: number;
-                                        holdFor: number;
-                                        outFor: number;
+                                        type: "audio";
                                     } | {
                                         createdAt?: {
                                             isEqual?: any;
@@ -3989,8 +4371,11 @@ export declare const threadSchema: yup.ObjectSchema<{
                                         } | undefined;
                                         backgroundColor?: string | undefined;
                                         timerSeconds?: yup.Maybe<number | undefined>;
-                                        type: "notifyASupportPerson";
-                                        contactIds: string[];
+                                        repeat?: yup.Maybe<number | undefined>;
+                                        type: "breathingExercise";
+                                        inFor: number;
+                                        holdFor: number;
+                                        outFor: number;
                                     } | {
                                         createdAt?: {
                                             isEqual?: any;
@@ -4050,7 +4435,26 @@ export declare const threadSchema: yup.ObjectSchema<{
                                         } | undefined;
                                         backgroundColor?: string | undefined;
                                         timerSeconds?: yup.Maybe<number | undefined>;
-                                        audio?: {
+                                        prompt: string;
+                                        type: "affirmation";
+                                    } | {
+                                        createdAt?: {
+                                            isEqual?: any;
+                                            toMillis?: any;
+                                            seconds: number;
+                                            nanoseconds: number;
+                                            toDate: Function;
+                                        } | null | undefined;
+                                        updatedAt?: {
+                                            isEqual?: any;
+                                            toMillis?: any;
+                                            seconds: number;
+                                            nanoseconds: number;
+                                            toDate: Function;
+                                        } | null | undefined;
+                                        uid?: string | undefined;
+                                        description?: string | null | undefined;
+                                        image?: {
                                             localFilePath?: yup.Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -4058,9 +4462,11 @@ export declare const threadSchema: yup.ObjectSchema<{
                                             thumbnailUri?: yup.Maybe<string | undefined>;
                                             storagePath: string;
                                             url: string;
-                                        } | null | undefined;
+                                        } | undefined;
+                                        backgroundColor?: string | undefined;
+                                        timerSeconds?: yup.Maybe<number | undefined>;
                                         prompt: string;
-                                        type: "basic";
+                                        type: "task";
                                     } | {
                                         createdAt?: {
                                             isEqual?: any;
@@ -4124,7 +4530,7 @@ export declare const threadSchema: yup.ObjectSchema<{
                                         } | undefined;
                                         backgroundColor?: string | undefined;
                                         timerSeconds?: yup.Maybe<number | undefined>;
-                                        type: "notifySupportGroup";
+                                        type: "supportGroup";
                                         supportGroup: import("./utils/firestore").DocumentReferenceLike<unknown>;
                                     } | {
                                         createdAt?: {
@@ -4174,11 +4580,7 @@ export declare const threadSchema: yup.ObjectSchema<{
                         };
                     };
                 } | null | undefined;
-                senderUid?: string | null | undefined;
-                senderName?: string | null | undefined;
-                uid: string;
-                type: "toolCall";
-                tacticsData: {
+                tacticsData?: {
                     [x: string]: {
                         data?: {
                             setAt: {
@@ -4191,6 +4593,45 @@ export declare const threadSchema: yup.ObjectSchema<{
                             isCompleted: NonNullable<boolean | undefined>;
                         } | undefined;
                         tactic: {
+                            createdAt?: {
+                                isEqual?: any;
+                                toMillis?: any;
+                                seconds: number;
+                                nanoseconds: number;
+                                toDate: Function;
+                            } | null | undefined;
+                            updatedAt?: {
+                                isEqual?: any;
+                                toMillis?: any;
+                                seconds: number;
+                                nanoseconds: number;
+                                toDate: Function;
+                            } | null | undefined;
+                            audio?: {
+                                localFilePath?: yup.Maybe<string | undefined>;
+                                isDeleted?: boolean | undefined;
+                                metadata?: {} | null | undefined;
+                                thumbnailStoragePath?: yup.Maybe<string | undefined>;
+                                thumbnailUri?: yup.Maybe<string | undefined>;
+                                storagePath: string;
+                                url: string;
+                            } | null | undefined;
+                            uid?: string | undefined;
+                            prompt?: string | undefined;
+                            description?: string | null | undefined;
+                            image?: {
+                                localFilePath?: yup.Maybe<string | undefined>;
+                                isDeleted?: boolean | undefined;
+                                metadata?: {} | null | undefined;
+                                thumbnailStoragePath?: yup.Maybe<string | undefined>;
+                                thumbnailUri?: yup.Maybe<string | undefined>;
+                                storagePath: string;
+                                url: string;
+                            } | undefined;
+                            backgroundColor?: string | undefined;
+                            timerSeconds?: yup.Maybe<number | undefined>;
+                            type: "audio";
+                        } | {
                             createdAt?: {
                                 isEqual?: any;
                                 toMillis?: any;
@@ -4253,37 +4694,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                             } | undefined;
                             backgroundColor?: string | undefined;
                             timerSeconds?: yup.Maybe<number | undefined>;
-                            type: "notifyASupportPerson";
-                            contactIds: string[];
-                        } | {
-                            createdAt?: {
-                                isEqual?: any;
-                                toMillis?: any;
-                                seconds: number;
-                                nanoseconds: number;
-                                toDate: Function;
-                            } | null | undefined;
-                            updatedAt?: {
-                                isEqual?: any;
-                                toMillis?: any;
-                                seconds: number;
-                                nanoseconds: number;
-                                toDate: Function;
-                            } | null | undefined;
-                            uid?: string | undefined;
-                            prompt?: string | undefined;
-                            description?: string | null | undefined;
-                            image?: {
-                                localFilePath?: yup.Maybe<string | undefined>;
-                                isDeleted?: boolean | undefined;
-                                metadata?: {} | null | undefined;
-                                thumbnailStoragePath?: yup.Maybe<string | undefined>;
-                                thumbnailUri?: yup.Maybe<string | undefined>;
-                                storagePath: string;
-                                url: string;
-                            } | undefined;
-                            backgroundColor?: string | undefined;
-                            timerSeconds?: yup.Maybe<number | undefined>;
                             type: "steps";
                             targetSteps: number;
                         } | {
@@ -4314,7 +4724,26 @@ export declare const threadSchema: yup.ObjectSchema<{
                             } | undefined;
                             backgroundColor?: string | undefined;
                             timerSeconds?: yup.Maybe<number | undefined>;
-                            audio?: {
+                            prompt: string;
+                            type: "affirmation";
+                        } | {
+                            createdAt?: {
+                                isEqual?: any;
+                                toMillis?: any;
+                                seconds: number;
+                                nanoseconds: number;
+                                toDate: Function;
+                            } | null | undefined;
+                            updatedAt?: {
+                                isEqual?: any;
+                                toMillis?: any;
+                                seconds: number;
+                                nanoseconds: number;
+                                toDate: Function;
+                            } | null | undefined;
+                            uid?: string | undefined;
+                            description?: string | null | undefined;
+                            image?: {
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -4322,9 +4751,11 @@ export declare const threadSchema: yup.ObjectSchema<{
                                 thumbnailUri?: yup.Maybe<string | undefined>;
                                 storagePath: string;
                                 url: string;
-                            } | null | undefined;
+                            } | undefined;
+                            backgroundColor?: string | undefined;
+                            timerSeconds?: yup.Maybe<number | undefined>;
                             prompt: string;
-                            type: "basic";
+                            type: "task";
                         } | {
                             createdAt?: {
                                 isEqual?: any;
@@ -4388,7 +4819,7 @@ export declare const threadSchema: yup.ObjectSchema<{
                             } | undefined;
                             backgroundColor?: string | undefined;
                             timerSeconds?: yup.Maybe<number | undefined>;
-                            type: "notifySupportGroup";
+                            type: "supportGroup";
                             supportGroup: import("./utils/firestore").DocumentReferenceLike<unknown>;
                         } | {
                             createdAt?: {
@@ -4424,7 +4855,11 @@ export declare const threadSchema: yup.ObjectSchema<{
                         };
                         doc: import("./utils/firestore").DocumentReferenceLike<unknown>;
                     };
-                };
+                } | null | undefined;
+                senderUid?: string | null | undefined;
+                senderName?: string | null | undefined;
+                uid: string;
+                type: "toolCall";
                 date: {
                     isEqual?: any;
                     toMillis?: any;
@@ -4527,6 +4962,15 @@ export declare const threadSchema: yup.ObjectSchema<{
                                             nanoseconds: number;
                                             toDate: Function;
                                         } | null | undefined;
+                                        audio?: {
+                                            localFilePath?: yup.Maybe<string | undefined>;
+                                            isDeleted?: boolean | undefined;
+                                            metadata?: {} | null | undefined;
+                                            thumbnailStoragePath?: yup.Maybe<string | undefined>;
+                                            thumbnailUri?: yup.Maybe<string | undefined>;
+                                            storagePath: string;
+                                            url: string;
+                                        } | null | undefined;
                                         uid?: string | undefined;
                                         prompt?: string | undefined;
                                         description?: string | null | undefined;
@@ -4541,11 +4985,7 @@ export declare const threadSchema: yup.ObjectSchema<{
                                         } | undefined;
                                         backgroundColor?: string | undefined;
                                         timerSeconds?: yup.Maybe<number | undefined>;
-                                        repeat?: yup.Maybe<number | undefined>;
-                                        type: "breathingExercise";
-                                        inFor: number;
-                                        holdFor: number;
-                                        outFor: number;
+                                        type: "audio";
                                     } | {
                                         createdAt?: {
                                             isEqual?: any;
@@ -4575,8 +5015,11 @@ export declare const threadSchema: yup.ObjectSchema<{
                                         } | undefined;
                                         backgroundColor?: string | undefined;
                                         timerSeconds?: yup.Maybe<number | undefined>;
-                                        type: "notifyASupportPerson";
-                                        contactIds: string[];
+                                        repeat?: yup.Maybe<number | undefined>;
+                                        type: "breathingExercise";
+                                        inFor: number;
+                                        holdFor: number;
+                                        outFor: number;
                                     } | {
                                         createdAt?: {
                                             isEqual?: any;
@@ -4636,7 +5079,26 @@ export declare const threadSchema: yup.ObjectSchema<{
                                         } | undefined;
                                         backgroundColor?: string | undefined;
                                         timerSeconds?: yup.Maybe<number | undefined>;
-                                        audio?: {
+                                        prompt: string;
+                                        type: "affirmation";
+                                    } | {
+                                        createdAt?: {
+                                            isEqual?: any;
+                                            toMillis?: any;
+                                            seconds: number;
+                                            nanoseconds: number;
+                                            toDate: Function;
+                                        } | null | undefined;
+                                        updatedAt?: {
+                                            isEqual?: any;
+                                            toMillis?: any;
+                                            seconds: number;
+                                            nanoseconds: number;
+                                            toDate: Function;
+                                        } | null | undefined;
+                                        uid?: string | undefined;
+                                        description?: string | null | undefined;
+                                        image?: {
                                             localFilePath?: yup.Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -4644,9 +5106,11 @@ export declare const threadSchema: yup.ObjectSchema<{
                                             thumbnailUri?: yup.Maybe<string | undefined>;
                                             storagePath: string;
                                             url: string;
-                                        } | null | undefined;
+                                        } | undefined;
+                                        backgroundColor?: string | undefined;
+                                        timerSeconds?: yup.Maybe<number | undefined>;
                                         prompt: string;
-                                        type: "basic";
+                                        type: "task";
                                     } | {
                                         createdAt?: {
                                             isEqual?: any;
@@ -4710,7 +5174,7 @@ export declare const threadSchema: yup.ObjectSchema<{
                                         } | undefined;
                                         backgroundColor?: string | undefined;
                                         timerSeconds?: yup.Maybe<number | undefined>;
-                                        type: "notifySupportGroup";
+                                        type: "supportGroup";
                                         supportGroup: import("./utils/firestore").DocumentReferenceLike<unknown>;
                                     } | {
                                         createdAt?: {
@@ -4760,20 +5224,7 @@ export declare const threadSchema: yup.ObjectSchema<{
                         };
                     };
                 } | null | undefined;
-                senderUid?: string | null | undefined;
-                senderName?: string | null | undefined;
-                files?: yup.Maybe<{
-                    localFilePath?: yup.Maybe<string | undefined>;
-                    isDeleted?: boolean | undefined;
-                    metadata?: {} | null | undefined;
-                    thumbnailStoragePath?: yup.Maybe<string | undefined>;
-                    thumbnailUri?: yup.Maybe<string | undefined>;
-                    storagePath: string;
-                    url: string;
-                }[] | undefined>;
-                uid: string;
-                type: "whatsappMessage";
-                tacticsData: {
+                tacticsData?: {
                     [x: string]: {
                         data?: {
                             setAt: {
@@ -4786,6 +5237,45 @@ export declare const threadSchema: yup.ObjectSchema<{
                             isCompleted: NonNullable<boolean | undefined>;
                         } | undefined;
                         tactic: {
+                            createdAt?: {
+                                isEqual?: any;
+                                toMillis?: any;
+                                seconds: number;
+                                nanoseconds: number;
+                                toDate: Function;
+                            } | null | undefined;
+                            updatedAt?: {
+                                isEqual?: any;
+                                toMillis?: any;
+                                seconds: number;
+                                nanoseconds: number;
+                                toDate: Function;
+                            } | null | undefined;
+                            audio?: {
+                                localFilePath?: yup.Maybe<string | undefined>;
+                                isDeleted?: boolean | undefined;
+                                metadata?: {} | null | undefined;
+                                thumbnailStoragePath?: yup.Maybe<string | undefined>;
+                                thumbnailUri?: yup.Maybe<string | undefined>;
+                                storagePath: string;
+                                url: string;
+                            } | null | undefined;
+                            uid?: string | undefined;
+                            prompt?: string | undefined;
+                            description?: string | null | undefined;
+                            image?: {
+                                localFilePath?: yup.Maybe<string | undefined>;
+                                isDeleted?: boolean | undefined;
+                                metadata?: {} | null | undefined;
+                                thumbnailStoragePath?: yup.Maybe<string | undefined>;
+                                thumbnailUri?: yup.Maybe<string | undefined>;
+                                storagePath: string;
+                                url: string;
+                            } | undefined;
+                            backgroundColor?: string | undefined;
+                            timerSeconds?: yup.Maybe<number | undefined>;
+                            type: "audio";
+                        } | {
                             createdAt?: {
                                 isEqual?: any;
                                 toMillis?: any;
@@ -4848,37 +5338,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                             } | undefined;
                             backgroundColor?: string | undefined;
                             timerSeconds?: yup.Maybe<number | undefined>;
-                            type: "notifyASupportPerson";
-                            contactIds: string[];
-                        } | {
-                            createdAt?: {
-                                isEqual?: any;
-                                toMillis?: any;
-                                seconds: number;
-                                nanoseconds: number;
-                                toDate: Function;
-                            } | null | undefined;
-                            updatedAt?: {
-                                isEqual?: any;
-                                toMillis?: any;
-                                seconds: number;
-                                nanoseconds: number;
-                                toDate: Function;
-                            } | null | undefined;
-                            uid?: string | undefined;
-                            prompt?: string | undefined;
-                            description?: string | null | undefined;
-                            image?: {
-                                localFilePath?: yup.Maybe<string | undefined>;
-                                isDeleted?: boolean | undefined;
-                                metadata?: {} | null | undefined;
-                                thumbnailStoragePath?: yup.Maybe<string | undefined>;
-                                thumbnailUri?: yup.Maybe<string | undefined>;
-                                storagePath: string;
-                                url: string;
-                            } | undefined;
-                            backgroundColor?: string | undefined;
-                            timerSeconds?: yup.Maybe<number | undefined>;
                             type: "steps";
                             targetSteps: number;
                         } | {
@@ -4909,7 +5368,26 @@ export declare const threadSchema: yup.ObjectSchema<{
                             } | undefined;
                             backgroundColor?: string | undefined;
                             timerSeconds?: yup.Maybe<number | undefined>;
-                            audio?: {
+                            prompt: string;
+                            type: "affirmation";
+                        } | {
+                            createdAt?: {
+                                isEqual?: any;
+                                toMillis?: any;
+                                seconds: number;
+                                nanoseconds: number;
+                                toDate: Function;
+                            } | null | undefined;
+                            updatedAt?: {
+                                isEqual?: any;
+                                toMillis?: any;
+                                seconds: number;
+                                nanoseconds: number;
+                                toDate: Function;
+                            } | null | undefined;
+                            uid?: string | undefined;
+                            description?: string | null | undefined;
+                            image?: {
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -4917,9 +5395,11 @@ export declare const threadSchema: yup.ObjectSchema<{
                                 thumbnailUri?: yup.Maybe<string | undefined>;
                                 storagePath: string;
                                 url: string;
-                            } | null | undefined;
+                            } | undefined;
+                            backgroundColor?: string | undefined;
+                            timerSeconds?: yup.Maybe<number | undefined>;
                             prompt: string;
-                            type: "basic";
+                            type: "task";
                         } | {
                             createdAt?: {
                                 isEqual?: any;
@@ -4983,7 +5463,7 @@ export declare const threadSchema: yup.ObjectSchema<{
                             } | undefined;
                             backgroundColor?: string | undefined;
                             timerSeconds?: yup.Maybe<number | undefined>;
-                            type: "notifySupportGroup";
+                            type: "supportGroup";
                             supportGroup: import("./utils/firestore").DocumentReferenceLike<unknown>;
                         } | {
                             createdAt?: {
@@ -5019,7 +5499,20 @@ export declare const threadSchema: yup.ObjectSchema<{
                         };
                         doc: import("./utils/firestore").DocumentReferenceLike<unknown>;
                     };
-                };
+                } | null | undefined;
+                senderUid?: string | null | undefined;
+                senderName?: string | null | undefined;
+                files?: yup.Maybe<{
+                    localFilePath?: yup.Maybe<string | undefined>;
+                    isDeleted?: boolean | undefined;
+                    metadata?: {} | null | undefined;
+                    thumbnailStoragePath?: yup.Maybe<string | undefined>;
+                    thumbnailUri?: yup.Maybe<string | undefined>;
+                    storagePath: string;
+                    url: string;
+                }[] | undefined>;
+                uid: string;
+                type: "whatsappMessage";
                 date: {
                     isEqual?: any;
                     toMillis?: any;
@@ -5120,6 +5613,15 @@ export declare const threadSchema: yup.ObjectSchema<{
                                             nanoseconds: number;
                                             toDate: Function;
                                         } | null | undefined;
+                                        audio?: {
+                                            localFilePath?: yup.Maybe<string | undefined>;
+                                            isDeleted?: boolean | undefined;
+                                            metadata?: {} | null | undefined;
+                                            thumbnailStoragePath?: yup.Maybe<string | undefined>;
+                                            thumbnailUri?: yup.Maybe<string | undefined>;
+                                            storagePath: string;
+                                            url: string;
+                                        } | null | undefined;
                                         uid?: string | undefined;
                                         prompt?: string | undefined;
                                         description?: string | null | undefined;
@@ -5134,11 +5636,7 @@ export declare const threadSchema: yup.ObjectSchema<{
                                         } | undefined;
                                         backgroundColor?: string | undefined;
                                         timerSeconds?: yup.Maybe<number | undefined>;
-                                        repeat?: yup.Maybe<number | undefined>;
-                                        type: "breathingExercise";
-                                        inFor: number;
-                                        holdFor: number;
-                                        outFor: number;
+                                        type: "audio";
                                     } | {
                                         createdAt?: {
                                             isEqual?: any;
@@ -5168,8 +5666,11 @@ export declare const threadSchema: yup.ObjectSchema<{
                                         } | undefined;
                                         backgroundColor?: string | undefined;
                                         timerSeconds?: yup.Maybe<number | undefined>;
-                                        type: "notifyASupportPerson";
-                                        contactIds: string[];
+                                        repeat?: yup.Maybe<number | undefined>;
+                                        type: "breathingExercise";
+                                        inFor: number;
+                                        holdFor: number;
+                                        outFor: number;
                                     } | {
                                         createdAt?: {
                                             isEqual?: any;
@@ -5229,7 +5730,26 @@ export declare const threadSchema: yup.ObjectSchema<{
                                         } | undefined;
                                         backgroundColor?: string | undefined;
                                         timerSeconds?: yup.Maybe<number | undefined>;
-                                        audio?: {
+                                        prompt: string;
+                                        type: "affirmation";
+                                    } | {
+                                        createdAt?: {
+                                            isEqual?: any;
+                                            toMillis?: any;
+                                            seconds: number;
+                                            nanoseconds: number;
+                                            toDate: Function;
+                                        } | null | undefined;
+                                        updatedAt?: {
+                                            isEqual?: any;
+                                            toMillis?: any;
+                                            seconds: number;
+                                            nanoseconds: number;
+                                            toDate: Function;
+                                        } | null | undefined;
+                                        uid?: string | undefined;
+                                        description?: string | null | undefined;
+                                        image?: {
                                             localFilePath?: yup.Maybe<string | undefined>;
                                             isDeleted?: boolean | undefined;
                                             metadata?: {} | null | undefined;
@@ -5237,9 +5757,11 @@ export declare const threadSchema: yup.ObjectSchema<{
                                             thumbnailUri?: yup.Maybe<string | undefined>;
                                             storagePath: string;
                                             url: string;
-                                        } | null | undefined;
+                                        } | undefined;
+                                        backgroundColor?: string | undefined;
+                                        timerSeconds?: yup.Maybe<number | undefined>;
                                         prompt: string;
-                                        type: "basic";
+                                        type: "task";
                                     } | {
                                         createdAt?: {
                                             isEqual?: any;
@@ -5303,7 +5825,7 @@ export declare const threadSchema: yup.ObjectSchema<{
                                         } | undefined;
                                         backgroundColor?: string | undefined;
                                         timerSeconds?: yup.Maybe<number | undefined>;
-                                        type: "notifySupportGroup";
+                                        type: "supportGroup";
                                         supportGroup: import("./utils/firestore").DocumentReferenceLike<unknown>;
                                     } | {
                                         createdAt?: {
@@ -5353,11 +5875,7 @@ export declare const threadSchema: yup.ObjectSchema<{
                         };
                     };
                 } | null | undefined;
-                senderUid?: string | null | undefined;
-                senderName?: string | null | undefined;
-                uid: string;
-                type: "outcome";
-                tacticsData: {
+                tacticsData?: {
                     [x: string]: {
                         data?: {
                             setAt: {
@@ -5370,6 +5888,45 @@ export declare const threadSchema: yup.ObjectSchema<{
                             isCompleted: NonNullable<boolean | undefined>;
                         } | undefined;
                         tactic: {
+                            createdAt?: {
+                                isEqual?: any;
+                                toMillis?: any;
+                                seconds: number;
+                                nanoseconds: number;
+                                toDate: Function;
+                            } | null | undefined;
+                            updatedAt?: {
+                                isEqual?: any;
+                                toMillis?: any;
+                                seconds: number;
+                                nanoseconds: number;
+                                toDate: Function;
+                            } | null | undefined;
+                            audio?: {
+                                localFilePath?: yup.Maybe<string | undefined>;
+                                isDeleted?: boolean | undefined;
+                                metadata?: {} | null | undefined;
+                                thumbnailStoragePath?: yup.Maybe<string | undefined>;
+                                thumbnailUri?: yup.Maybe<string | undefined>;
+                                storagePath: string;
+                                url: string;
+                            } | null | undefined;
+                            uid?: string | undefined;
+                            prompt?: string | undefined;
+                            description?: string | null | undefined;
+                            image?: {
+                                localFilePath?: yup.Maybe<string | undefined>;
+                                isDeleted?: boolean | undefined;
+                                metadata?: {} | null | undefined;
+                                thumbnailStoragePath?: yup.Maybe<string | undefined>;
+                                thumbnailUri?: yup.Maybe<string | undefined>;
+                                storagePath: string;
+                                url: string;
+                            } | undefined;
+                            backgroundColor?: string | undefined;
+                            timerSeconds?: yup.Maybe<number | undefined>;
+                            type: "audio";
+                        } | {
                             createdAt?: {
                                 isEqual?: any;
                                 toMillis?: any;
@@ -5432,37 +5989,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                             } | undefined;
                             backgroundColor?: string | undefined;
                             timerSeconds?: yup.Maybe<number | undefined>;
-                            type: "notifyASupportPerson";
-                            contactIds: string[];
-                        } | {
-                            createdAt?: {
-                                isEqual?: any;
-                                toMillis?: any;
-                                seconds: number;
-                                nanoseconds: number;
-                                toDate: Function;
-                            } | null | undefined;
-                            updatedAt?: {
-                                isEqual?: any;
-                                toMillis?: any;
-                                seconds: number;
-                                nanoseconds: number;
-                                toDate: Function;
-                            } | null | undefined;
-                            uid?: string | undefined;
-                            prompt?: string | undefined;
-                            description?: string | null | undefined;
-                            image?: {
-                                localFilePath?: yup.Maybe<string | undefined>;
-                                isDeleted?: boolean | undefined;
-                                metadata?: {} | null | undefined;
-                                thumbnailStoragePath?: yup.Maybe<string | undefined>;
-                                thumbnailUri?: yup.Maybe<string | undefined>;
-                                storagePath: string;
-                                url: string;
-                            } | undefined;
-                            backgroundColor?: string | undefined;
-                            timerSeconds?: yup.Maybe<number | undefined>;
                             type: "steps";
                             targetSteps: number;
                         } | {
@@ -5493,7 +6019,26 @@ export declare const threadSchema: yup.ObjectSchema<{
                             } | undefined;
                             backgroundColor?: string | undefined;
                             timerSeconds?: yup.Maybe<number | undefined>;
-                            audio?: {
+                            prompt: string;
+                            type: "affirmation";
+                        } | {
+                            createdAt?: {
+                                isEqual?: any;
+                                toMillis?: any;
+                                seconds: number;
+                                nanoseconds: number;
+                                toDate: Function;
+                            } | null | undefined;
+                            updatedAt?: {
+                                isEqual?: any;
+                                toMillis?: any;
+                                seconds: number;
+                                nanoseconds: number;
+                                toDate: Function;
+                            } | null | undefined;
+                            uid?: string | undefined;
+                            description?: string | null | undefined;
+                            image?: {
                                 localFilePath?: yup.Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -5501,9 +6046,11 @@ export declare const threadSchema: yup.ObjectSchema<{
                                 thumbnailUri?: yup.Maybe<string | undefined>;
                                 storagePath: string;
                                 url: string;
-                            } | null | undefined;
+                            } | undefined;
+                            backgroundColor?: string | undefined;
+                            timerSeconds?: yup.Maybe<number | undefined>;
                             prompt: string;
-                            type: "basic";
+                            type: "task";
                         } | {
                             createdAt?: {
                                 isEqual?: any;
@@ -5567,7 +6114,7 @@ export declare const threadSchema: yup.ObjectSchema<{
                             } | undefined;
                             backgroundColor?: string | undefined;
                             timerSeconds?: yup.Maybe<number | undefined>;
-                            type: "notifySupportGroup";
+                            type: "supportGroup";
                             supportGroup: import("./utils/firestore").DocumentReferenceLike<unknown>;
                         } | {
                             createdAt?: {
@@ -5603,7 +6150,11 @@ export declare const threadSchema: yup.ObjectSchema<{
                         };
                         doc: import("./utils/firestore").DocumentReferenceLike<unknown>;
                     };
-                };
+                } | null | undefined;
+                senderUid?: string | null | undefined;
+                senderName?: string | null | undefined;
+                uid: string;
+                type: "outcome";
                 date: {
                     isEqual?: any;
                     toMillis?: any;
@@ -5619,6 +6170,45 @@ export declare const threadSchema: yup.ObjectSchema<{
         };
     };
     suggestedTactics: ({
+        createdAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        updatedAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        audio?: {
+            localFilePath?: yup.Maybe<string | undefined>;
+            isDeleted?: boolean | undefined;
+            metadata?: {} | null | undefined;
+            thumbnailStoragePath?: yup.Maybe<string | undefined>;
+            thumbnailUri?: yup.Maybe<string | undefined>;
+            storagePath: string;
+            url: string;
+        } | null | undefined;
+        uid?: string | undefined;
+        prompt?: string | undefined;
+        description?: string | null | undefined;
+        image?: {
+            localFilePath?: yup.Maybe<string | undefined>;
+            isDeleted?: boolean | undefined;
+            metadata?: {} | null | undefined;
+            thumbnailStoragePath?: yup.Maybe<string | undefined>;
+            thumbnailUri?: yup.Maybe<string | undefined>;
+            storagePath: string;
+            url: string;
+        } | undefined;
+        backgroundColor?: string | undefined;
+        timerSeconds?: yup.Maybe<number | undefined>;
+        type: "audio";
+    } | {
         createdAt?: {
             isEqual?: any;
             toMillis?: any;
@@ -5681,37 +6271,6 @@ export declare const threadSchema: yup.ObjectSchema<{
         } | undefined;
         backgroundColor?: string | undefined;
         timerSeconds?: yup.Maybe<number | undefined>;
-        type: "notifyASupportPerson";
-        contactIds: string[];
-    } | {
-        createdAt?: {
-            isEqual?: any;
-            toMillis?: any;
-            seconds: number;
-            nanoseconds: number;
-            toDate: Function;
-        } | null | undefined;
-        updatedAt?: {
-            isEqual?: any;
-            toMillis?: any;
-            seconds: number;
-            nanoseconds: number;
-            toDate: Function;
-        } | null | undefined;
-        uid?: string | undefined;
-        prompt?: string | undefined;
-        description?: string | null | undefined;
-        image?: {
-            localFilePath?: yup.Maybe<string | undefined>;
-            isDeleted?: boolean | undefined;
-            metadata?: {} | null | undefined;
-            thumbnailStoragePath?: yup.Maybe<string | undefined>;
-            thumbnailUri?: yup.Maybe<string | undefined>;
-            storagePath: string;
-            url: string;
-        } | undefined;
-        backgroundColor?: string | undefined;
-        timerSeconds?: yup.Maybe<number | undefined>;
         type: "steps";
         targetSteps: number;
     } | {
@@ -5742,7 +6301,26 @@ export declare const threadSchema: yup.ObjectSchema<{
         } | undefined;
         backgroundColor?: string | undefined;
         timerSeconds?: yup.Maybe<number | undefined>;
-        audio?: {
+        prompt: string;
+        type: "affirmation";
+    } | {
+        createdAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        updatedAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        uid?: string | undefined;
+        description?: string | null | undefined;
+        image?: {
             localFilePath?: yup.Maybe<string | undefined>;
             isDeleted?: boolean | undefined;
             metadata?: {} | null | undefined;
@@ -5750,9 +6328,11 @@ export declare const threadSchema: yup.ObjectSchema<{
             thumbnailUri?: yup.Maybe<string | undefined>;
             storagePath: string;
             url: string;
-        } | null | undefined;
+        } | undefined;
+        backgroundColor?: string | undefined;
+        timerSeconds?: yup.Maybe<number | undefined>;
         prompt: string;
-        type: "basic";
+        type: "task";
     } | {
         createdAt?: {
             isEqual?: any;
@@ -5816,7 +6396,7 @@ export declare const threadSchema: yup.ObjectSchema<{
         } | undefined;
         backgroundColor?: string | undefined;
         timerSeconds?: yup.Maybe<number | undefined>;
-        type: "notifySupportGroup";
+        type: "supportGroup";
         supportGroup: import("./utils/firestore").DocumentReferenceLike<unknown>;
     } | {
         createdAt?: {
@@ -5854,6 +6434,45 @@ export declare const threadSchema: yup.ObjectSchema<{
         [x: string]: {
             targetDoc?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
             tactic: {
+                createdAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                updatedAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                audio?: {
+                    localFilePath?: yup.Maybe<string | undefined>;
+                    isDeleted?: boolean | undefined;
+                    metadata?: {} | null | undefined;
+                    thumbnailStoragePath?: yup.Maybe<string | undefined>;
+                    thumbnailUri?: yup.Maybe<string | undefined>;
+                    storagePath: string;
+                    url: string;
+                } | null | undefined;
+                uid?: string | undefined;
+                prompt?: string | undefined;
+                description?: string | null | undefined;
+                image?: {
+                    localFilePath?: yup.Maybe<string | undefined>;
+                    isDeleted?: boolean | undefined;
+                    metadata?: {} | null | undefined;
+                    thumbnailStoragePath?: yup.Maybe<string | undefined>;
+                    thumbnailUri?: yup.Maybe<string | undefined>;
+                    storagePath: string;
+                    url: string;
+                } | undefined;
+                backgroundColor?: string | undefined;
+                timerSeconds?: yup.Maybe<number | undefined>;
+                type: "audio";
+            } | {
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -5916,37 +6535,6 @@ export declare const threadSchema: yup.ObjectSchema<{
                 } | undefined;
                 backgroundColor?: string | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
-                type: "notifyASupportPerson";
-                contactIds: string[];
-            } | {
-                createdAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                updatedAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                uid?: string | undefined;
-                prompt?: string | undefined;
-                description?: string | null | undefined;
-                image?: {
-                    localFilePath?: yup.Maybe<string | undefined>;
-                    isDeleted?: boolean | undefined;
-                    metadata?: {} | null | undefined;
-                    thumbnailStoragePath?: yup.Maybe<string | undefined>;
-                    thumbnailUri?: yup.Maybe<string | undefined>;
-                    storagePath: string;
-                    url: string;
-                } | undefined;
-                backgroundColor?: string | undefined;
-                timerSeconds?: yup.Maybe<number | undefined>;
                 type: "steps";
                 targetSteps: number;
             } | {
@@ -5977,7 +6565,26 @@ export declare const threadSchema: yup.ObjectSchema<{
                 } | undefined;
                 backgroundColor?: string | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
-                audio?: {
+                prompt: string;
+                type: "affirmation";
+            } | {
+                createdAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                updatedAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                uid?: string | undefined;
+                description?: string | null | undefined;
+                image?: {
                     localFilePath?: yup.Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     metadata?: {} | null | undefined;
@@ -5985,9 +6592,11 @@ export declare const threadSchema: yup.ObjectSchema<{
                     thumbnailUri?: yup.Maybe<string | undefined>;
                     storagePath: string;
                     url: string;
-                } | null | undefined;
+                } | undefined;
+                backgroundColor?: string | undefined;
+                timerSeconds?: yup.Maybe<number | undefined>;
                 prompt: string;
-                type: "basic";
+                type: "task";
             } | {
                 createdAt?: {
                     isEqual?: any;
@@ -6051,7 +6660,7 @@ export declare const threadSchema: yup.ObjectSchema<{
                 } | undefined;
                 backgroundColor?: string | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
-                type: "notifySupportGroup";
+                type: "supportGroup";
                 supportGroup: import("./utils/firestore").DocumentReferenceLike<unknown>;
             } | {
                 createdAt?: {
@@ -6086,7 +6695,7 @@ export declare const threadSchema: yup.ObjectSchema<{
                 type: "link";
             };
         };
-    } | undefined;
+    } | null | undefined;
     debriefedAt: {
         isEqual?: any;
         toMillis?: any;

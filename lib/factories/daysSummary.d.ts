@@ -68,6 +68,15 @@ export declare const makeDaysSummaryFactory: (TimestampKlass: typeof TimestampLi
                                         nanoseconds: number;
                                         toDate: Function;
                                     } | null | undefined;
+                                    audio?: {
+                                        localFilePath?: import("yup").Maybe<string | undefined>;
+                                        isDeleted?: boolean | undefined;
+                                        metadata?: {} | null | undefined;
+                                        thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                                        thumbnailUri?: import("yup").Maybe<string | undefined>;
+                                        storagePath: string;
+                                        url: string;
+                                    } | null | undefined;
                                     uid?: string | undefined;
                                     prompt?: string | undefined;
                                     description?: string | null | undefined;
@@ -82,11 +91,7 @@ export declare const makeDaysSummaryFactory: (TimestampKlass: typeof TimestampLi
                                     } | undefined;
                                     backgroundColor?: string | undefined;
                                     timerSeconds?: import("yup").Maybe<number | undefined>;
-                                    repeat?: import("yup").Maybe<number | undefined>;
-                                    type: "breathingExercise";
-                                    inFor: number;
-                                    holdFor: number;
-                                    outFor: number;
+                                    type: "audio";
                                 } | {
                                     createdAt?: {
                                         isEqual?: any;
@@ -116,8 +121,11 @@ export declare const makeDaysSummaryFactory: (TimestampKlass: typeof TimestampLi
                                     } | undefined;
                                     backgroundColor?: string | undefined;
                                     timerSeconds?: import("yup").Maybe<number | undefined>;
-                                    type: "notifyASupportPerson";
-                                    contactIds: string[];
+                                    repeat?: import("yup").Maybe<number | undefined>;
+                                    type: "breathingExercise";
+                                    inFor: number;
+                                    holdFor: number;
+                                    outFor: number;
                                 } | {
                                     createdAt?: {
                                         isEqual?: any;
@@ -177,7 +185,26 @@ export declare const makeDaysSummaryFactory: (TimestampKlass: typeof TimestampLi
                                     } | undefined;
                                     backgroundColor?: string | undefined;
                                     timerSeconds?: import("yup").Maybe<number | undefined>;
-                                    audio?: {
+                                    prompt: string;
+                                    type: "affirmation";
+                                } | {
+                                    createdAt?: {
+                                        isEqual?: any;
+                                        toMillis?: any;
+                                        seconds: number;
+                                        nanoseconds: number;
+                                        toDate: Function;
+                                    } | null | undefined;
+                                    updatedAt?: {
+                                        isEqual?: any;
+                                        toMillis?: any;
+                                        seconds: number;
+                                        nanoseconds: number;
+                                        toDate: Function;
+                                    } | null | undefined;
+                                    uid?: string | undefined;
+                                    description?: string | null | undefined;
+                                    image?: {
                                         localFilePath?: import("yup").Maybe<string | undefined>;
                                         isDeleted?: boolean | undefined;
                                         metadata?: {} | null | undefined;
@@ -185,9 +212,11 @@ export declare const makeDaysSummaryFactory: (TimestampKlass: typeof TimestampLi
                                         thumbnailUri?: import("yup").Maybe<string | undefined>;
                                         storagePath: string;
                                         url: string;
-                                    } | null | undefined;
+                                    } | undefined;
+                                    backgroundColor?: string | undefined;
+                                    timerSeconds?: import("yup").Maybe<number | undefined>;
                                     prompt: string;
-                                    type: "basic";
+                                    type: "task";
                                 } | {
                                     createdAt?: {
                                         isEqual?: any;
@@ -251,7 +280,7 @@ export declare const makeDaysSummaryFactory: (TimestampKlass: typeof TimestampLi
                                     } | undefined;
                                     backgroundColor?: string | undefined;
                                     timerSeconds?: import("yup").Maybe<number | undefined>;
-                                    type: "notifySupportGroup";
+                                    type: "supportGroup";
                                     supportGroup: import("../schema/utils/firestore").DocumentReferenceLike<unknown>;
                                 } | {
                                     createdAt?: {

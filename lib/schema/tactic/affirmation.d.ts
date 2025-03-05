@@ -1,9 +1,9 @@
 import * as yup from 'yup';
-export declare const basicTacticSchema: yup.ObjectSchema<{
+export declare const affirmationTacticSchema: yup.ObjectSchema<{
     uid: string | undefined;
     prompt: string;
     description: string | null | undefined;
-    type: "basic";
+    type: "affirmation";
     createdAt: {
         isEqual?: any;
         toMillis?: any;
@@ -29,15 +29,6 @@ export declare const basicTacticSchema: yup.ObjectSchema<{
     } | undefined;
     backgroundColor: string | undefined;
     timerSeconds: yup.Maybe<number | undefined>;
-    audio: {
-        localFilePath?: yup.Maybe<string | undefined>;
-        isDeleted?: boolean | undefined;
-        metadata?: {} | null | undefined;
-        thumbnailStoragePath?: yup.Maybe<string | undefined>;
-        thumbnailUri?: yup.Maybe<string | undefined>;
-        storagePath: string;
-        url: string;
-    } | null | undefined;
 }, yup.AnyObject, {
     uid: undefined;
     prompt: undefined;
@@ -48,6 +39,5 @@ export declare const basicTacticSchema: yup.ObjectSchema<{
     image: undefined;
     backgroundColor: undefined;
     timerSeconds: undefined;
-    audio: undefined;
 }, "">;
-export type BasicTacticValue = yup.InferType<typeof basicTacticSchema>;
+export type AffirmationTacticValue = yup.InferType<typeof affirmationTacticSchema>;

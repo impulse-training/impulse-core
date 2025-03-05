@@ -15,13 +15,13 @@ export const tacticDataSchema = yup.object({
 
 export type TacticDataValue = yup.InferType<typeof tacticDataSchema>;
 
-export const tacticsById = objectOf(
-  yup.object({
-    doc: documentReferenceSchema.required(),
-    tactic: tacticSchema,
-    data: tacticDataSchema.optional().default(undefined),
-  })
-);
+export const tacticAndMetadata = yup.object({
+  doc: documentReferenceSchema.required(),
+  tactic: tacticSchema,
+  data: tacticDataSchema.optional().default(undefined),
+});
+
+export const tacticsById = objectOf(tacticAndMetadata);
 export type TacticsById = Record<
   string,
   {

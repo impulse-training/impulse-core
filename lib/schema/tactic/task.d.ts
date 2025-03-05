@@ -1,9 +1,9 @@
 import * as yup from 'yup';
-export declare const notifySupportGroupSchema: yup.ObjectSchema<{
+export declare const taskTacticSchema: yup.ObjectSchema<{
     uid: string | undefined;
-    prompt: string | undefined;
+    prompt: string;
     description: string | null | undefined;
-    type: "notifySupportGroup";
+    type: "task";
     createdAt: {
         isEqual?: any;
         toMillis?: any;
@@ -29,7 +29,6 @@ export declare const notifySupportGroupSchema: yup.ObjectSchema<{
     } | undefined;
     backgroundColor: string | undefined;
     timerSeconds: yup.Maybe<number | undefined>;
-    supportGroup: import("../utils/firestore").DocumentReferenceLike<unknown>;
 }, yup.AnyObject, {
     uid: undefined;
     prompt: undefined;
@@ -40,6 +39,5 @@ export declare const notifySupportGroupSchema: yup.ObjectSchema<{
     image: undefined;
     backgroundColor: undefined;
     timerSeconds: undefined;
-    supportGroup: undefined;
 }, "">;
-export type NotifySupportGroupValue = yup.InferType<typeof notifySupportGroupSchema>;
+export type TaskTacticValue = yup.InferType<typeof taskTacticSchema>;

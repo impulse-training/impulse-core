@@ -61,6 +61,15 @@ export declare const behaviorAndBehaviorDataSchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    audio?: {
+                        localFilePath?: yup.Maybe<string | undefined>;
+                        isDeleted?: boolean | undefined;
+                        metadata?: {} | null | undefined;
+                        thumbnailStoragePath?: yup.Maybe<string | undefined>;
+                        thumbnailUri?: yup.Maybe<string | undefined>;
+                        storagePath: string;
+                        url: string;
+                    } | null | undefined;
                     uid?: string | undefined;
                     prompt?: string | undefined;
                     description?: string | null | undefined;
@@ -75,11 +84,7 @@ export declare const behaviorAndBehaviorDataSchema: yup.ObjectSchema<{
                     } | undefined;
                     backgroundColor?: string | undefined;
                     timerSeconds?: yup.Maybe<number | undefined>;
-                    repeat?: yup.Maybe<number | undefined>;
-                    type: "breathingExercise";
-                    inFor: number;
-                    holdFor: number;
-                    outFor: number;
+                    type: "audio";
                 } | {
                     createdAt?: {
                         isEqual?: any;
@@ -109,8 +114,11 @@ export declare const behaviorAndBehaviorDataSchema: yup.ObjectSchema<{
                     } | undefined;
                     backgroundColor?: string | undefined;
                     timerSeconds?: yup.Maybe<number | undefined>;
-                    type: "notifyASupportPerson";
-                    contactIds: string[];
+                    repeat?: yup.Maybe<number | undefined>;
+                    type: "breathingExercise";
+                    inFor: number;
+                    holdFor: number;
+                    outFor: number;
                 } | {
                     createdAt?: {
                         isEqual?: any;
@@ -170,7 +178,26 @@ export declare const behaviorAndBehaviorDataSchema: yup.ObjectSchema<{
                     } | undefined;
                     backgroundColor?: string | undefined;
                     timerSeconds?: yup.Maybe<number | undefined>;
-                    audio?: {
+                    prompt: string;
+                    type: "affirmation";
+                } | {
+                    createdAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    uid?: string | undefined;
+                    description?: string | null | undefined;
+                    image?: {
                         localFilePath?: yup.Maybe<string | undefined>;
                         isDeleted?: boolean | undefined;
                         metadata?: {} | null | undefined;
@@ -178,9 +205,11 @@ export declare const behaviorAndBehaviorDataSchema: yup.ObjectSchema<{
                         thumbnailUri?: yup.Maybe<string | undefined>;
                         storagePath: string;
                         url: string;
-                    } | null | undefined;
+                    } | undefined;
+                    backgroundColor?: string | undefined;
+                    timerSeconds?: yup.Maybe<number | undefined>;
                     prompt: string;
-                    type: "basic";
+                    type: "task";
                 } | {
                     createdAt?: {
                         isEqual?: any;
@@ -244,7 +273,7 @@ export declare const behaviorAndBehaviorDataSchema: yup.ObjectSchema<{
                     } | undefined;
                     backgroundColor?: string | undefined;
                     timerSeconds?: yup.Maybe<number | undefined>;
-                    type: "notifySupportGroup";
+                    type: "supportGroup";
                     supportGroup: import("../../utils/firestore").DocumentReferenceLike<unknown>;
                 } | {
                     createdAt?: {

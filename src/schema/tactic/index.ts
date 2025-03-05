@@ -1,35 +1,34 @@
 import * as yup from 'yup';
-import { BasicTacticValue, basicTacticSchema } from './basic';
+import { AffirmationTacticValue, affirmationTacticSchema } from './affirmation';
+import { AudioTacticValue, audioTacticSchema } from './audio';
 import {
   BreathingExerciseTacticValue,
   breathingExerciseTacticSchema,
 } from './breathingExercise';
 import { LinkTacticValue, linkTacticSchema } from './link';
-import { NotifyAContactValue, notifyAContactSchema } from './notifyContact';
-import {
-  NotifySupportGroupValue,
-  notifySupportGroupSchema,
-} from './notifySupportGroup';
 import { StepsTacticValue, stepsTacticSchema } from './steps';
+import { supportGroupTacticSchema, supportGroupValue } from './supportGroup';
+import { TaskTacticValue, taskTacticSchema } from './task';
 import { VideoTacticValue, videoTacticSchema } from './video';
 
-// export * from './behavior';
-export * from './basic';
+export * from './affirmation';
+export * from './audio';
 export * from './breathingExercise';
 export * from './link';
-export * from './notifyContact';
-export * from './notifySupportGroup';
 export * from './steps';
+export * from './supportGroup';
+export * from './task';
 export * from './utils';
 export * from './video';
 
 export type TacticValue =
+  | AudioTacticValue
   | BreathingExerciseTacticValue
-  | NotifyAContactValue
   | StepsTacticValue
-  | BasicTacticValue
+  | AffirmationTacticValue
+  | TaskTacticValue
   | VideoTacticValue
-  | NotifySupportGroupValue
+  | supportGroupValue
   | LinkTacticValue;
 
 // Utility to dynamically select the correct schema based on the tactic type
@@ -37,18 +36,16 @@ export const tacticSchemas: Record<
   TacticValue['type'],
   yup.ObjectSchema<TacticValue>
 > = {
+  audio: audioTacticSchema,
+  affirmation: affirmationTacticSchema,
   breathingExercise: breathingExerciseTacticSchema,
-  notifyASupportPerson: notifyAContactSchema,
-  notifySupportGroup: notifySupportGroupSchema,
-  basic: basicTacticSchema,
   link: linkTacticSchema,
-  video: videoTacticSchema,
   steps: stepsTacticSchema,
-  // metrics: metricsTacticSchema,
-  // 'day-review': dayReviewTacticSchema,
-  // 'urge-surfing': urgeSurfingTacticSchema,
-  // ...recapTacticSchemas,
+  supportGroup: supportGroupTacticSchema,
+  task: taskTacticSchema,
+  video: videoTacticSchema,
 } as any;
+
 // We do highly value static typing, but the problem is that yup's generated types are bloated and
 // cause problems. Instead of exporting generated types for top-level types like tacticSchemas, we
 // use any to bypass complex type generation, and use type assertions to ensure that the types are

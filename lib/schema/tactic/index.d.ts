@@ -1,22 +1,63 @@
 import * as yup from 'yup';
-import { BasicTacticValue } from './basic';
+import { AffirmationTacticValue } from './affirmation';
+import { AudioTacticValue } from './audio';
 import { BreathingExerciseTacticValue } from './breathingExercise';
 import { LinkTacticValue } from './link';
-import { NotifyAContactValue } from './notifyContact';
-import { NotifySupportGroupValue } from './notifySupportGroup';
 import { StepsTacticValue } from './steps';
+import { supportGroupValue } from './supportGroup';
+import { TaskTacticValue } from './task';
 import { VideoTacticValue } from './video';
-export * from './basic';
+export * from './affirmation';
+export * from './audio';
 export * from './breathingExercise';
 export * from './link';
-export * from './notifyContact';
-export * from './notifySupportGroup';
 export * from './steps';
+export * from './supportGroup';
+export * from './task';
 export * from './utils';
 export * from './video';
-export type TacticValue = BreathingExerciseTacticValue | NotifyAContactValue | StepsTacticValue | BasicTacticValue | VideoTacticValue | NotifySupportGroupValue | LinkTacticValue;
+export type TacticValue = AudioTacticValue | BreathingExerciseTacticValue | StepsTacticValue | AffirmationTacticValue | TaskTacticValue | VideoTacticValue | supportGroupValue | LinkTacticValue;
 export declare const tacticSchemas: Record<TacticValue['type'], yup.ObjectSchema<TacticValue>>;
 export declare const tacticSchema: yup.Lazy<{
+    createdAt?: {
+        isEqual?: any;
+        toMillis?: any;
+        seconds: number;
+        nanoseconds: number;
+        toDate: Function;
+    } | null | undefined;
+    updatedAt?: {
+        isEqual?: any;
+        toMillis?: any;
+        seconds: number;
+        nanoseconds: number;
+        toDate: Function;
+    } | null | undefined;
+    audio?: {
+        localFilePath?: yup.Maybe<string | undefined>;
+        isDeleted?: boolean | undefined;
+        metadata?: {} | null | undefined;
+        thumbnailStoragePath?: yup.Maybe<string | undefined>;
+        thumbnailUri?: yup.Maybe<string | undefined>;
+        storagePath: string;
+        url: string;
+    } | null | undefined;
+    uid?: string | undefined;
+    prompt?: string | undefined;
+    description?: string | null | undefined;
+    image?: {
+        localFilePath?: yup.Maybe<string | undefined>;
+        isDeleted?: boolean | undefined;
+        metadata?: {} | null | undefined;
+        thumbnailStoragePath?: yup.Maybe<string | undefined>;
+        thumbnailUri?: yup.Maybe<string | undefined>;
+        storagePath: string;
+        url: string;
+    } | undefined;
+    backgroundColor?: string | undefined;
+    timerSeconds?: yup.Maybe<number | undefined>;
+    type: "audio";
+} | {
     createdAt?: {
         isEqual?: any;
         toMillis?: any;
@@ -79,37 +120,6 @@ export declare const tacticSchema: yup.Lazy<{
     } | undefined;
     backgroundColor?: string | undefined;
     timerSeconds?: yup.Maybe<number | undefined>;
-    type: "notifyASupportPerson";
-    contactIds: string[];
-} | {
-    createdAt?: {
-        isEqual?: any;
-        toMillis?: any;
-        seconds: number;
-        nanoseconds: number;
-        toDate: Function;
-    } | null | undefined;
-    updatedAt?: {
-        isEqual?: any;
-        toMillis?: any;
-        seconds: number;
-        nanoseconds: number;
-        toDate: Function;
-    } | null | undefined;
-    uid?: string | undefined;
-    prompt?: string | undefined;
-    description?: string | null | undefined;
-    image?: {
-        localFilePath?: yup.Maybe<string | undefined>;
-        isDeleted?: boolean | undefined;
-        metadata?: {} | null | undefined;
-        thumbnailStoragePath?: yup.Maybe<string | undefined>;
-        thumbnailUri?: yup.Maybe<string | undefined>;
-        storagePath: string;
-        url: string;
-    } | undefined;
-    backgroundColor?: string | undefined;
-    timerSeconds?: yup.Maybe<number | undefined>;
     type: "steps";
     targetSteps: number;
 } | {
@@ -140,7 +150,26 @@ export declare const tacticSchema: yup.Lazy<{
     } | undefined;
     backgroundColor?: string | undefined;
     timerSeconds?: yup.Maybe<number | undefined>;
-    audio?: {
+    prompt: string;
+    type: "affirmation";
+} | {
+    createdAt?: {
+        isEqual?: any;
+        toMillis?: any;
+        seconds: number;
+        nanoseconds: number;
+        toDate: Function;
+    } | null | undefined;
+    updatedAt?: {
+        isEqual?: any;
+        toMillis?: any;
+        seconds: number;
+        nanoseconds: number;
+        toDate: Function;
+    } | null | undefined;
+    uid?: string | undefined;
+    description?: string | null | undefined;
+    image?: {
         localFilePath?: yup.Maybe<string | undefined>;
         isDeleted?: boolean | undefined;
         metadata?: {} | null | undefined;
@@ -148,9 +177,11 @@ export declare const tacticSchema: yup.Lazy<{
         thumbnailUri?: yup.Maybe<string | undefined>;
         storagePath: string;
         url: string;
-    } | null | undefined;
+    } | undefined;
+    backgroundColor?: string | undefined;
+    timerSeconds?: yup.Maybe<number | undefined>;
     prompt: string;
-    type: "basic";
+    type: "task";
 } | {
     createdAt?: {
         isEqual?: any;
@@ -214,7 +245,7 @@ export declare const tacticSchema: yup.Lazy<{
     } | undefined;
     backgroundColor?: string | undefined;
     timerSeconds?: yup.Maybe<number | undefined>;
-    type: "notifySupportGroup";
+    type: "supportGroup";
     supportGroup: import("../utils/firestore").DocumentReferenceLike<unknown>;
 } | {
     createdAt?: {

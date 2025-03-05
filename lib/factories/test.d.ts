@@ -89,6 +89,15 @@ export declare const regularLogFactory: import("factory.ts").Factory<{
                                 nanoseconds: number;
                                 toDate: Function;
                             } | null | undefined;
+                            audio?: {
+                                localFilePath?: import("yup").Maybe<string | undefined>;
+                                isDeleted?: boolean | undefined;
+                                metadata?: {} | null | undefined;
+                                thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                                thumbnailUri?: import("yup").Maybe<string | undefined>;
+                                storagePath: string;
+                                url: string;
+                            } | null | undefined;
                             uid?: string | undefined;
                             prompt?: string | undefined;
                             description?: string | null | undefined;
@@ -103,11 +112,7 @@ export declare const regularLogFactory: import("factory.ts").Factory<{
                             } | undefined;
                             backgroundColor?: string | undefined;
                             timerSeconds?: import("yup").Maybe<number | undefined>;
-                            repeat?: import("yup").Maybe<number | undefined>;
-                            type: "breathingExercise";
-                            inFor: number;
-                            holdFor: number;
-                            outFor: number;
+                            type: "audio";
                         } | {
                             createdAt?: {
                                 isEqual?: any;
@@ -137,8 +142,11 @@ export declare const regularLogFactory: import("factory.ts").Factory<{
                             } | undefined;
                             backgroundColor?: string | undefined;
                             timerSeconds?: import("yup").Maybe<number | undefined>;
-                            type: "notifyASupportPerson";
-                            contactIds: string[];
+                            repeat?: import("yup").Maybe<number | undefined>;
+                            type: "breathingExercise";
+                            inFor: number;
+                            holdFor: number;
+                            outFor: number;
                         } | {
                             createdAt?: {
                                 isEqual?: any;
@@ -198,7 +206,26 @@ export declare const regularLogFactory: import("factory.ts").Factory<{
                             } | undefined;
                             backgroundColor?: string | undefined;
                             timerSeconds?: import("yup").Maybe<number | undefined>;
-                            audio?: {
+                            prompt: string;
+                            type: "affirmation";
+                        } | {
+                            createdAt?: {
+                                isEqual?: any;
+                                toMillis?: any;
+                                seconds: number;
+                                nanoseconds: number;
+                                toDate: Function;
+                            } | null | undefined;
+                            updatedAt?: {
+                                isEqual?: any;
+                                toMillis?: any;
+                                seconds: number;
+                                nanoseconds: number;
+                                toDate: Function;
+                            } | null | undefined;
+                            uid?: string | undefined;
+                            description?: string | null | undefined;
+                            image?: {
                                 localFilePath?: import("yup").Maybe<string | undefined>;
                                 isDeleted?: boolean | undefined;
                                 metadata?: {} | null | undefined;
@@ -206,9 +233,11 @@ export declare const regularLogFactory: import("factory.ts").Factory<{
                                 thumbnailUri?: import("yup").Maybe<string | undefined>;
                                 storagePath: string;
                                 url: string;
-                            } | null | undefined;
+                            } | undefined;
+                            backgroundColor?: string | undefined;
+                            timerSeconds?: import("yup").Maybe<number | undefined>;
                             prompt: string;
-                            type: "basic";
+                            type: "task";
                         } | {
                             createdAt?: {
                                 isEqual?: any;
@@ -272,7 +301,7 @@ export declare const regularLogFactory: import("factory.ts").Factory<{
                             } | undefined;
                             backgroundColor?: string | undefined;
                             timerSeconds?: import("yup").Maybe<number | undefined>;
-                            type: "notifySupportGroup";
+                            type: "supportGroup";
                             supportGroup: import("../schema/utils/firestore").DocumentReferenceLike<unknown>;
                         } | {
                             createdAt?: {
@@ -322,13 +351,7 @@ export declare const regularLogFactory: import("factory.ts").Factory<{
             };
         };
     } | null | undefined;
-    senderUid?: string | null | undefined;
-    senderName?: string | null | undefined;
-    audioTranscript?: string | undefined;
-    audioTranscribedLocally?: boolean | undefined;
-    uid: string;
-    type: "user";
-    tacticsData: {
+    tacticsData?: {
         [x: string]: {
             data?: {
                 setAt: {
@@ -341,6 +364,45 @@ export declare const regularLogFactory: import("factory.ts").Factory<{
                 isCompleted: NonNullable<boolean | undefined>;
             } | undefined;
             tactic: {
+                createdAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                updatedAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                audio?: {
+                    localFilePath?: import("yup").Maybe<string | undefined>;
+                    isDeleted?: boolean | undefined;
+                    metadata?: {} | null | undefined;
+                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                    thumbnailUri?: import("yup").Maybe<string | undefined>;
+                    storagePath: string;
+                    url: string;
+                } | null | undefined;
+                uid?: string | undefined;
+                prompt?: string | undefined;
+                description?: string | null | undefined;
+                image?: {
+                    localFilePath?: import("yup").Maybe<string | undefined>;
+                    isDeleted?: boolean | undefined;
+                    metadata?: {} | null | undefined;
+                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                    thumbnailUri?: import("yup").Maybe<string | undefined>;
+                    storagePath: string;
+                    url: string;
+                } | undefined;
+                backgroundColor?: string | undefined;
+                timerSeconds?: import("yup").Maybe<number | undefined>;
+                type: "audio";
+            } | {
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -403,37 +465,6 @@ export declare const regularLogFactory: import("factory.ts").Factory<{
                 } | undefined;
                 backgroundColor?: string | undefined;
                 timerSeconds?: import("yup").Maybe<number | undefined>;
-                type: "notifyASupportPerson";
-                contactIds: string[];
-            } | {
-                createdAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                updatedAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                uid?: string | undefined;
-                prompt?: string | undefined;
-                description?: string | null | undefined;
-                image?: {
-                    localFilePath?: import("yup").Maybe<string | undefined>;
-                    isDeleted?: boolean | undefined;
-                    metadata?: {} | null | undefined;
-                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
-                    thumbnailUri?: import("yup").Maybe<string | undefined>;
-                    storagePath: string;
-                    url: string;
-                } | undefined;
-                backgroundColor?: string | undefined;
-                timerSeconds?: import("yup").Maybe<number | undefined>;
                 type: "steps";
                 targetSteps: number;
             } | {
@@ -464,7 +495,26 @@ export declare const regularLogFactory: import("factory.ts").Factory<{
                 } | undefined;
                 backgroundColor?: string | undefined;
                 timerSeconds?: import("yup").Maybe<number | undefined>;
-                audio?: {
+                prompt: string;
+                type: "affirmation";
+            } | {
+                createdAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                updatedAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                uid?: string | undefined;
+                description?: string | null | undefined;
+                image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     isDeleted?: boolean | undefined;
                     metadata?: {} | null | undefined;
@@ -472,9 +522,11 @@ export declare const regularLogFactory: import("factory.ts").Factory<{
                     thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
                     url: string;
-                } | null | undefined;
+                } | undefined;
+                backgroundColor?: string | undefined;
+                timerSeconds?: import("yup").Maybe<number | undefined>;
                 prompt: string;
-                type: "basic";
+                type: "task";
             } | {
                 createdAt?: {
                     isEqual?: any;
@@ -538,7 +590,7 @@ export declare const regularLogFactory: import("factory.ts").Factory<{
                 } | undefined;
                 backgroundColor?: string | undefined;
                 timerSeconds?: import("yup").Maybe<number | undefined>;
-                type: "notifySupportGroup";
+                type: "supportGroup";
                 supportGroup: import("../schema/utils/firestore").DocumentReferenceLike<unknown>;
             } | {
                 createdAt?: {
@@ -574,7 +626,13 @@ export declare const regularLogFactory: import("factory.ts").Factory<{
             };
             doc: import("../schema/utils/firestore").DocumentReferenceLike<unknown>;
         };
-    };
+    } | null | undefined;
+    senderUid?: string | null | undefined;
+    senderName?: string | null | undefined;
+    audioTranscript?: string | undefined;
+    audioTranscribedLocally?: boolean | undefined;
+    uid: string;
+    type: "user";
     date: {
         isEqual?: any;
         toMillis?: any;
@@ -585,7 +643,7 @@ export declare const regularLogFactory: import("factory.ts").Factory<{
     isDisplayable: NonNullable<boolean | undefined>;
     dateString: string;
     role: "user";
-}, "uid" | "type" | "tacticsData" | "date" | "isDisplayable" | "dateString" | "role" | ("text" | "createdAt" | "updatedAt" | "audioFile" | "skipGptResponse" | "metricData" | "behaviorData" | "senderUid" | "senderName" | "audioTranscript" | "audioTranscribedLocally")>, profileFactory: import("factory.ts").Factory<{
+}, "uid" | "type" | "date" | "isDisplayable" | "dateString" | "role" | ("text" | "createdAt" | "updatedAt" | "audioFile" | "skipGptResponse" | "metricData" | "behaviorData" | "tacticsData" | "senderUid" | "senderName" | "audioTranscript" | "audioTranscribedLocally")>, profileFactory: import("factory.ts").Factory<{
     createdAt?: {
         isEqual?: any;
         toMillis?: any;
