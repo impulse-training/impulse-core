@@ -31,10 +31,6 @@ export type TacticValue =
   | VideoTacticValue
   | NotifySupportGroupValue
   | LinkTacticValue;
-// | UrgeSurfingTacticValue
-// | EmotionsTacticValue
-// | DayReviewTacticValue
-// | RecapTacticValue;
 
 // Utility to dynamically select the correct schema based on the tactic type
 export const tacticSchemas: Record<

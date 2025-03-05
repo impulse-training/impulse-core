@@ -571,7 +571,7 @@ export declare function logBaseSchema<K extends string>(type: K): yup.ObjectSche
             };
             doc: import("../utils/firestore").DocumentReferenceLike<unknown>;
         };
-    } | undefined;
+    };
     text: string | null | undefined;
     date: {
         isEqual?: any;

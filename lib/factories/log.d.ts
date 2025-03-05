@@ -2,6 +2,7 @@ import * as Factory from 'factory.ts';
 import { TimestampLike } from '../utils/firestore/TimestampLike';
 export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) => {
     regularLogFactory: Factory.Sync.Factory<{
+        text?: string | null | undefined;
         createdAt?: {
             isEqual?: any;
             toMillis?: any;
@@ -44,15 +45,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
         behaviorData?: {
             [x: string]: {
                 color?: string | undefined;
-                data: {
-                    label?: {
-                        color?: string | undefined;
-                        text: string;
-                    } | null | undefined;
-                    counterValue?: number | undefined;
-                    timeSeconds?: number | undefined;
-                    formattedValue: string;
-                };
                 behavior: {
                     createdAt?: {
                         isEqual?: any;
@@ -314,18 +306,32 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                                 } | undefined;
                                 backgroundColor?: string | undefined;
                                 timerSeconds?: import("yup").Maybe<number | undefined>;
-                                type: "link";
                                 url: string;
+                                type: "link";
                             };
                             doc: import("../schema/utils/firestore").DocumentReferenceLike<unknown>;
                         };
                     };
                     isHelpful: boolean | null;
                 };
+                data: {
+                    counterValue?: number | undefined;
+                    timeSeconds?: number | undefined;
+                    label?: {
+                        color?: string | undefined;
+                        text: string;
+                    } | null | undefined;
+                    formattedValue: string;
+                };
             };
         } | null | undefined;
-        text?: string | null | undefined;
-        tacticsData?: {
+        senderUid?: string | null | undefined;
+        senderName?: string | null | undefined;
+        audioTranscript?: string | undefined;
+        audioTranscribedLocally?: boolean | undefined;
+        uid: string;
+        type: "user";
+        tacticsData: {
             [x: string]: {
                 data?: {
                     setAt: {
@@ -566,18 +572,12 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     } | undefined;
                     backgroundColor?: string | undefined;
                     timerSeconds?: import("yup").Maybe<number | undefined>;
-                    type: "link";
                     url: string;
+                    type: "link";
                 };
                 doc: import("../schema/utils/firestore").DocumentReferenceLike<unknown>;
             };
-        } | undefined;
-        senderUid?: string | null | undefined;
-        senderName?: string | null | undefined;
-        audioTranscript?: string | undefined;
-        audioTranscribedLocally?: boolean | undefined;
-        uid: string;
-        type: "user";
+        };
         date: {
             isEqual?: any;
             toMillis?: any;
@@ -588,5 +588,5 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
         isDisplayable: NonNullable<boolean | undefined>;
         dateString: string;
         role: "user";
-    }, "uid" | "type" | "date" | "isDisplayable" | "dateString" | "role" | ("createdAt" | "updatedAt" | "audioFile" | "skipGptResponse" | "metricData" | "behaviorData" | "text" | "tacticsData" | "senderUid" | "senderName" | "audioTranscript" | "audioTranscribedLocally")>;
+    }, "uid" | "type" | "tacticsData" | "date" | "isDisplayable" | "dateString" | "role" | ("text" | "createdAt" | "updatedAt" | "audioFile" | "skipGptResponse" | "metricData" | "behaviorData" | "senderUid" | "senderName" | "audioTranscript" | "audioTranscribedLocally")>;
 };

@@ -571,7 +571,7 @@ export declare const meetingLogSchema: yup.ObjectSchema<{
             };
             doc: import("../utils/firestore").DocumentReferenceLike<unknown>;
         };
-    } | undefined;
+    };
     text: string | null | undefined;
     date: {
         isEqual?: any;

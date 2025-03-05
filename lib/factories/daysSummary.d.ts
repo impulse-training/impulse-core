@@ -21,15 +21,6 @@ export declare const makeDaysSummaryFactory: (TimestampKlass: typeof TimestampLi
             behaviors: {
                 [x: string]: {
                     color?: string | undefined;
-                    data: {
-                        label?: {
-                            color?: string | undefined;
-                            text: string;
-                        } | null | undefined;
-                        counterValue?: number | undefined;
-                        timeSeconds?: number | undefined;
-                        formattedValue: string;
-                    };
                     behavior: {
                         createdAt?: {
                             isEqual?: any;
@@ -291,13 +282,22 @@ export declare const makeDaysSummaryFactory: (TimestampKlass: typeof TimestampLi
                                     } | undefined;
                                     backgroundColor?: string | undefined;
                                     timerSeconds?: import("yup").Maybe<number | undefined>;
-                                    type: "link";
                                     url: string;
+                                    type: "link";
                                 };
                                 doc: import("../schema/utils/firestore").DocumentReferenceLike<unknown>;
                             };
                         };
                         isHelpful: boolean | null;
+                    };
+                    data: {
+                        counterValue?: number | undefined;
+                        timeSeconds?: number | undefined;
+                        label?: {
+                            color?: string | undefined;
+                            text: string;
+                        } | null | undefined;
+                        formattedValue: string;
                     };
                 };
             };

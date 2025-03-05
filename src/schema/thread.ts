@@ -1,6 +1,8 @@
 import * as yup from 'yup';
 import { LogsById, logsById } from './day';
-import { tacticSchema } from './tactic';
+import { TacticValue, tacticSchema } from './tactic';
+import { documentReferenceSchema } from './utils/firestore';
+import { objectOf } from './utils/objectOf';
 import { optionalTimestampSchema, timestampSchema } from './utils/timestamp';
 
 export enum AgentType {
@@ -16,6 +18,22 @@ export const outcome = yup
 
 export const agentType = yup.mixed<AgentType>().oneOf(Object.values(AgentType));
 
+// Define a schema for AI suggested tactics
+export const aiSuggestionsById = objectOf(
+  yup.object({
+    tactic: tacticSchema,
+    targetDoc: documentReferenceSchema.optional(),
+  })
+);
+
+export type AiSuggestionsById = Record<
+  string,
+  {
+    tactic: TacticValue;
+    targetDoc?: any; // DocumentReferenceLike<TacticValue>
+  }
+>;
+
 export const threadSchema = yup.object({
   isDisplayable: yup.boolean().required(),
   dateString: yup.string().required(),
@@ -27,6 +45,7 @@ export const threadSchema = yup.object({
   summary: yup.string(),
   logsById,
   suggestedTactics: yup.array().of(tacticSchema),
+  aiSuggestionsById: aiSuggestionsById.optional(),
   debriefedAt: optionalTimestampSchema,
   debriefAfter: optionalTimestampSchema,
   debriefRoutineSentAt: optionalTimestampSchema,
@@ -45,4 +64,5 @@ export type ThreadValue = Omit<
   'logsById'
 > & {
   logsById: LogsById;
+  aiSuggestionsById?: AiSuggestionsById;
 };

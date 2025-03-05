@@ -328,7 +328,51 @@ export declare const logsById: yup.Lazy<{
                     };
                 };
             } | null | undefined;
-            tacticsData?: {
+            senderUid?: string | null | undefined;
+            senderName?: string | null | undefined;
+            agentConnectedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            endedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            startedSummarizingTranscriptAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            finishedSummarizingTranscriptAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            formattedDuration?: string | undefined;
+            transcriptSummary?: string | undefined;
+            transcriptItems?: {
+                text: string;
+                timestamp: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                };
+            }[] | undefined;
+            uid: string;
+            type: "call";
+            tacticsData: {
                 [x: string]: {
                     data?: {
                         setAt: {
@@ -574,51 +618,7 @@ export declare const logsById: yup.Lazy<{
                     };
                     doc: DocumentReferenceLike<unknown>;
                 };
-            } | undefined;
-            senderUid?: string | null | undefined;
-            senderName?: string | null | undefined;
-            agentConnectedAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            endedAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            startedSummarizingTranscriptAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            finishedSummarizingTranscriptAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            formattedDuration?: string | undefined;
-            transcriptSummary?: string | undefined;
-            transcriptItems?: {
-                text: string;
-                timestamp: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                };
-            }[] | undefined;
-            uid: string;
-            type: "call";
+            };
             date: {
                 isEqual?: any;
                 toMillis?: any;
@@ -953,7 +953,21 @@ export declare const logsById: yup.Lazy<{
                     };
                 };
             } | null | undefined;
-            tacticsData?: {
+            senderUid?: string | null | undefined;
+            senderName?: string | null | undefined;
+            suggestedResponses?: string[] | undefined;
+            toolCallResponses?: {
+                role: "tool";
+                tool_call_id: string;
+                content: string;
+            }[] | undefined;
+            uid: string;
+            type: "gpt";
+            message: {
+                role?: "assistant" | undefined;
+                tool_calls?: (import("openai/resources").ChatCompletionMessageToolCall | undefined)[] | undefined;
+            };
+            tacticsData: {
                 [x: string]: {
                     data?: {
                         setAt: {
@@ -1199,20 +1213,6 @@ export declare const logsById: yup.Lazy<{
                     };
                     doc: DocumentReferenceLike<unknown>;
                 };
-            } | undefined;
-            senderUid?: string | null | undefined;
-            senderName?: string | null | undefined;
-            suggestedResponses?: string[] | undefined;
-            toolCallResponses?: {
-                role: "tool";
-                tool_call_id: string;
-                content: string;
-            }[] | undefined;
-            uid: string;
-            type: "gpt";
-            message: {
-                role?: "assistant" | undefined;
-                tool_calls?: (import("openai/resources").ChatCompletionMessageToolCall | undefined)[] | undefined;
             };
             date: {
                 isEqual?: any;
@@ -1548,7 +1548,12 @@ export declare const logsById: yup.Lazy<{
                     };
                 };
             } | null | undefined;
-            tacticsData?: {
+            senderUid?: string | null | undefined;
+            senderName?: string | null | undefined;
+            triggerDoc?: DocumentReferenceLike<unknown> | undefined;
+            uid: string;
+            type: "impulse";
+            tacticsData: {
                 [x: string]: {
                     data?: {
                         setAt: {
@@ -1794,12 +1799,7 @@ export declare const logsById: yup.Lazy<{
                     };
                     doc: DocumentReferenceLike<unknown>;
                 };
-            } | undefined;
-            senderUid?: string | null | undefined;
-            senderName?: string | null | undefined;
-            triggerDoc?: DocumentReferenceLike<unknown> | undefined;
-            uid: string;
-            type: "impulse";
+            };
             date: {
                 isEqual?: any;
                 toMillis?: any;
@@ -2134,7 +2134,11 @@ export declare const logsById: yup.Lazy<{
                     };
                 };
             } | null | undefined;
-            tacticsData?: {
+            senderUid?: string | null | undefined;
+            senderName?: string | null | undefined;
+            uid: string;
+            type: "meeting";
+            tacticsData: {
                 [x: string]: {
                     data?: {
                         setAt: {
@@ -2380,11 +2384,7 @@ export declare const logsById: yup.Lazy<{
                     };
                     doc: DocumentReferenceLike<unknown>;
                 };
-            } | undefined;
-            senderUid?: string | null | undefined;
-            senderName?: string | null | undefined;
-            uid: string;
-            type: "meeting";
+            };
             date: {
                 isEqual?: any;
                 toMillis?: any;
@@ -2720,7 +2720,13 @@ export declare const logsById: yup.Lazy<{
                     };
                 };
             } | null | undefined;
-            tacticsData?: {
+            senderUid?: string | null | undefined;
+            senderName?: string | null | undefined;
+            audioTranscript?: string | undefined;
+            audioTranscribedLocally?: boolean | undefined;
+            uid: string;
+            type: "user";
+            tacticsData: {
                 [x: string]: {
                     data?: {
                         setAt: {
@@ -2966,13 +2972,7 @@ export declare const logsById: yup.Lazy<{
                     };
                     doc: DocumentReferenceLike<unknown>;
                 };
-            } | undefined;
-            senderUid?: string | null | undefined;
-            senderName?: string | null | undefined;
-            audioTranscript?: string | undefined;
-            audioTranscribedLocally?: boolean | undefined;
-            uid: string;
-            type: "user";
+            };
             date: {
                 isEqual?: any;
                 toMillis?: any;
@@ -3308,7 +3308,30 @@ export declare const logsById: yup.Lazy<{
                     };
                 };
             } | null | undefined;
-            tacticsData?: {
+            senderUid?: string | null | undefined;
+            senderName?: string | null | undefined;
+            firstNavigateToRoute?: string | undefined;
+            startButtonLabel?: string | undefined;
+            animationFileName?: string | undefined;
+            completedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            uid: string;
+            type: "showTour";
+            steps: {
+                nextOnImpulseButtonPress?: boolean | undefined;
+                borderRadius?: number | undefined;
+                innerPadding?: number | undefined;
+                description: string;
+                elementRefName: string;
+                title: string;
+                confirmButtonLabel: string;
+            }[];
+            tacticsData: {
                 [x: string]: {
                     data?: {
                         setAt: {
@@ -3554,30 +3577,7 @@ export declare const logsById: yup.Lazy<{
                     };
                     doc: DocumentReferenceLike<unknown>;
                 };
-            } | undefined;
-            senderUid?: string | null | undefined;
-            senderName?: string | null | undefined;
-            firstNavigateToRoute?: string | undefined;
-            startButtonLabel?: string | undefined;
-            animationFileName?: string | undefined;
-            completedAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            uid: string;
-            type: "showTour";
-            steps: {
-                nextOnImpulseButtonPress?: boolean | undefined;
-                borderRadius?: number | undefined;
-                innerPadding?: number | undefined;
-                description: string;
-                elementRefName: string;
-                title: string;
-                confirmButtonLabel: string;
-            }[];
+            };
             date: {
                 isEqual?: any;
                 toMillis?: any;
@@ -3912,7 +3912,11 @@ export declare const logsById: yup.Lazy<{
                     };
                 };
             } | null | undefined;
-            tacticsData?: {
+            senderUid?: string | null | undefined;
+            senderName?: string | null | undefined;
+            uid: string;
+            type: "toolCall";
+            tacticsData: {
                 [x: string]: {
                     data?: {
                         setAt: {
@@ -4158,11 +4162,7 @@ export declare const logsById: yup.Lazy<{
                     };
                     doc: DocumentReferenceLike<unknown>;
                 };
-            } | undefined;
-            senderUid?: string | null | undefined;
-            senderName?: string | null | undefined;
-            uid: string;
-            type: "toolCall";
+            };
             date: {
                 isEqual?: any;
                 toMillis?: any;
@@ -4498,7 +4498,20 @@ export declare const logsById: yup.Lazy<{
                     };
                 };
             } | null | undefined;
-            tacticsData?: {
+            senderUid?: string | null | undefined;
+            senderName?: string | null | undefined;
+            files?: yup.Maybe<{
+                localFilePath?: yup.Maybe<string | undefined>;
+                isDeleted?: boolean | undefined;
+                metadata?: {} | null | undefined;
+                thumbnailStoragePath?: yup.Maybe<string | undefined>;
+                thumbnailUri?: yup.Maybe<string | undefined>;
+                storagePath: string;
+                url: string;
+            }[] | undefined>;
+            uid: string;
+            type: "whatsappMessage";
+            tacticsData: {
                 [x: string]: {
                     data?: {
                         setAt: {
@@ -4744,20 +4757,7 @@ export declare const logsById: yup.Lazy<{
                     };
                     doc: DocumentReferenceLike<unknown>;
                 };
-            } | undefined;
-            senderUid?: string | null | undefined;
-            senderName?: string | null | undefined;
-            files?: yup.Maybe<{
-                localFilePath?: yup.Maybe<string | undefined>;
-                isDeleted?: boolean | undefined;
-                metadata?: {} | null | undefined;
-                thumbnailStoragePath?: yup.Maybe<string | undefined>;
-                thumbnailUri?: yup.Maybe<string | undefined>;
-                storagePath: string;
-                url: string;
-            }[] | undefined>;
-            uid: string;
-            type: "whatsappMessage";
+            };
             date: {
                 isEqual?: any;
                 toMillis?: any;
@@ -5091,7 +5091,11 @@ export declare const logsById: yup.Lazy<{
                     };
                 };
             } | null | undefined;
-            tacticsData?: {
+            senderUid?: string | null | undefined;
+            senderName?: string | null | undefined;
+            uid: string;
+            type: "outcome";
+            tacticsData: {
                 [x: string]: {
                     data?: {
                         setAt: {
@@ -5337,11 +5341,7 @@ export declare const logsById: yup.Lazy<{
                     };
                     doc: DocumentReferenceLike<unknown>;
                 };
-            } | undefined;
-            senderUid?: string | null | undefined;
-            senderName?: string | null | undefined;
-            uid: string;
-            type: "outcome";
+            };
             date: {
                 isEqual?: any;
                 toMillis?: any;
@@ -5696,7 +5696,51 @@ export declare const daySchema: yup.ObjectSchema<{
                         };
                     };
                 } | null | undefined;
-                tacticsData?: {
+                senderUid?: string | null | undefined;
+                senderName?: string | null | undefined;
+                agentConnectedAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                endedAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                startedSummarizingTranscriptAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                finishedSummarizingTranscriptAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                formattedDuration?: string | undefined;
+                transcriptSummary?: string | undefined;
+                transcriptItems?: {
+                    text: string;
+                    timestamp: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    };
+                }[] | undefined;
+                uid: string;
+                type: "call";
+                tacticsData: {
                     [x: string]: {
                         data?: {
                             setAt: {
@@ -5942,51 +5986,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         };
                         doc: DocumentReferenceLike<unknown>;
                     };
-                } | undefined;
-                senderUid?: string | null | undefined;
-                senderName?: string | null | undefined;
-                agentConnectedAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                endedAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                startedSummarizingTranscriptAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                finishedSummarizingTranscriptAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                formattedDuration?: string | undefined;
-                transcriptSummary?: string | undefined;
-                transcriptItems?: {
-                    text: string;
-                    timestamp: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    };
-                }[] | undefined;
-                uid: string;
-                type: "call";
+                };
                 date: {
                     isEqual?: any;
                     toMillis?: any;
@@ -6321,7 +6321,21 @@ export declare const daySchema: yup.ObjectSchema<{
                         };
                     };
                 } | null | undefined;
-                tacticsData?: {
+                senderUid?: string | null | undefined;
+                senderName?: string | null | undefined;
+                suggestedResponses?: string[] | undefined;
+                toolCallResponses?: {
+                    role: "tool";
+                    tool_call_id: string;
+                    content: string;
+                }[] | undefined;
+                uid: string;
+                type: "gpt";
+                message: {
+                    role?: "assistant" | undefined;
+                    tool_calls?: (import("openai/resources").ChatCompletionMessageToolCall | undefined)[] | undefined;
+                };
+                tacticsData: {
                     [x: string]: {
                         data?: {
                             setAt: {
@@ -6567,20 +6581,6 @@ export declare const daySchema: yup.ObjectSchema<{
                         };
                         doc: DocumentReferenceLike<unknown>;
                     };
-                } | undefined;
-                senderUid?: string | null | undefined;
-                senderName?: string | null | undefined;
-                suggestedResponses?: string[] | undefined;
-                toolCallResponses?: {
-                    role: "tool";
-                    tool_call_id: string;
-                    content: string;
-                }[] | undefined;
-                uid: string;
-                type: "gpt";
-                message: {
-                    role?: "assistant" | undefined;
-                    tool_calls?: (import("openai/resources").ChatCompletionMessageToolCall | undefined)[] | undefined;
                 };
                 date: {
                     isEqual?: any;
@@ -6916,7 +6916,12 @@ export declare const daySchema: yup.ObjectSchema<{
                         };
                     };
                 } | null | undefined;
-                tacticsData?: {
+                senderUid?: string | null | undefined;
+                senderName?: string | null | undefined;
+                triggerDoc?: DocumentReferenceLike<unknown> | undefined;
+                uid: string;
+                type: "impulse";
+                tacticsData: {
                     [x: string]: {
                         data?: {
                             setAt: {
@@ -7162,12 +7167,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         };
                         doc: DocumentReferenceLike<unknown>;
                     };
-                } | undefined;
-                senderUid?: string | null | undefined;
-                senderName?: string | null | undefined;
-                triggerDoc?: DocumentReferenceLike<unknown> | undefined;
-                uid: string;
-                type: "impulse";
+                };
                 date: {
                     isEqual?: any;
                     toMillis?: any;
@@ -7502,7 +7502,11 @@ export declare const daySchema: yup.ObjectSchema<{
                         };
                     };
                 } | null | undefined;
-                tacticsData?: {
+                senderUid?: string | null | undefined;
+                senderName?: string | null | undefined;
+                uid: string;
+                type: "meeting";
+                tacticsData: {
                     [x: string]: {
                         data?: {
                             setAt: {
@@ -7748,11 +7752,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         };
                         doc: DocumentReferenceLike<unknown>;
                     };
-                } | undefined;
-                senderUid?: string | null | undefined;
-                senderName?: string | null | undefined;
-                uid: string;
-                type: "meeting";
+                };
                 date: {
                     isEqual?: any;
                     toMillis?: any;
@@ -8088,7 +8088,13 @@ export declare const daySchema: yup.ObjectSchema<{
                         };
                     };
                 } | null | undefined;
-                tacticsData?: {
+                senderUid?: string | null | undefined;
+                senderName?: string | null | undefined;
+                audioTranscript?: string | undefined;
+                audioTranscribedLocally?: boolean | undefined;
+                uid: string;
+                type: "user";
+                tacticsData: {
                     [x: string]: {
                         data?: {
                             setAt: {
@@ -8334,13 +8340,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         };
                         doc: DocumentReferenceLike<unknown>;
                     };
-                } | undefined;
-                senderUid?: string | null | undefined;
-                senderName?: string | null | undefined;
-                audioTranscript?: string | undefined;
-                audioTranscribedLocally?: boolean | undefined;
-                uid: string;
-                type: "user";
+                };
                 date: {
                     isEqual?: any;
                     toMillis?: any;
@@ -8676,7 +8676,30 @@ export declare const daySchema: yup.ObjectSchema<{
                         };
                     };
                 } | null | undefined;
-                tacticsData?: {
+                senderUid?: string | null | undefined;
+                senderName?: string | null | undefined;
+                firstNavigateToRoute?: string | undefined;
+                startButtonLabel?: string | undefined;
+                animationFileName?: string | undefined;
+                completedAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                uid: string;
+                type: "showTour";
+                steps: {
+                    nextOnImpulseButtonPress?: boolean | undefined;
+                    borderRadius?: number | undefined;
+                    innerPadding?: number | undefined;
+                    description: string;
+                    elementRefName: string;
+                    title: string;
+                    confirmButtonLabel: string;
+                }[];
+                tacticsData: {
                     [x: string]: {
                         data?: {
                             setAt: {
@@ -8922,30 +8945,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         };
                         doc: DocumentReferenceLike<unknown>;
                     };
-                } | undefined;
-                senderUid?: string | null | undefined;
-                senderName?: string | null | undefined;
-                firstNavigateToRoute?: string | undefined;
-                startButtonLabel?: string | undefined;
-                animationFileName?: string | undefined;
-                completedAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                uid: string;
-                type: "showTour";
-                steps: {
-                    nextOnImpulseButtonPress?: boolean | undefined;
-                    borderRadius?: number | undefined;
-                    innerPadding?: number | undefined;
-                    description: string;
-                    elementRefName: string;
-                    title: string;
-                    confirmButtonLabel: string;
-                }[];
+                };
                 date: {
                     isEqual?: any;
                     toMillis?: any;
@@ -9280,7 +9280,11 @@ export declare const daySchema: yup.ObjectSchema<{
                         };
                     };
                 } | null | undefined;
-                tacticsData?: {
+                senderUid?: string | null | undefined;
+                senderName?: string | null | undefined;
+                uid: string;
+                type: "toolCall";
+                tacticsData: {
                     [x: string]: {
                         data?: {
                             setAt: {
@@ -9526,11 +9530,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         };
                         doc: DocumentReferenceLike<unknown>;
                     };
-                } | undefined;
-                senderUid?: string | null | undefined;
-                senderName?: string | null | undefined;
-                uid: string;
-                type: "toolCall";
+                };
                 date: {
                     isEqual?: any;
                     toMillis?: any;
@@ -9866,7 +9866,20 @@ export declare const daySchema: yup.ObjectSchema<{
                         };
                     };
                 } | null | undefined;
-                tacticsData?: {
+                senderUid?: string | null | undefined;
+                senderName?: string | null | undefined;
+                files?: yup.Maybe<{
+                    localFilePath?: yup.Maybe<string | undefined>;
+                    isDeleted?: boolean | undefined;
+                    metadata?: {} | null | undefined;
+                    thumbnailStoragePath?: yup.Maybe<string | undefined>;
+                    thumbnailUri?: yup.Maybe<string | undefined>;
+                    storagePath: string;
+                    url: string;
+                }[] | undefined>;
+                uid: string;
+                type: "whatsappMessage";
+                tacticsData: {
                     [x: string]: {
                         data?: {
                             setAt: {
@@ -10112,20 +10125,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         };
                         doc: DocumentReferenceLike<unknown>;
                     };
-                } | undefined;
-                senderUid?: string | null | undefined;
-                senderName?: string | null | undefined;
-                files?: yup.Maybe<{
-                    localFilePath?: yup.Maybe<string | undefined>;
-                    isDeleted?: boolean | undefined;
-                    metadata?: {} | null | undefined;
-                    thumbnailStoragePath?: yup.Maybe<string | undefined>;
-                    thumbnailUri?: yup.Maybe<string | undefined>;
-                    storagePath: string;
-                    url: string;
-                }[] | undefined>;
-                uid: string;
-                type: "whatsappMessage";
+                };
                 date: {
                     isEqual?: any;
                     toMillis?: any;
@@ -10459,7 +10459,11 @@ export declare const daySchema: yup.ObjectSchema<{
                         };
                     };
                 } | null | undefined;
-                tacticsData?: {
+                senderUid?: string | null | undefined;
+                senderName?: string | null | undefined;
+                uid: string;
+                type: "outcome";
+                tacticsData: {
                     [x: string]: {
                         data?: {
                             setAt: {
@@ -10705,11 +10709,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         };
                         doc: DocumentReferenceLike<unknown>;
                     };
-                } | undefined;
-                senderUid?: string | null | undefined;
-                senderName?: string | null | undefined;
-                uid: string;
-                type: "outcome";
+                };
                 date: {
                     isEqual?: any;
                     toMillis?: any;

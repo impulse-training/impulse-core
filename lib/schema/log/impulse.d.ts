@@ -571,7 +571,7 @@ export declare const impulseLogSchema: yup.ObjectSchema<{
             };
             doc: import("../utils/firestore").DocumentReferenceLike<unknown>;
         };
-    } | undefined;
+    };
     text: string | null | undefined;
     date: {
         isEqual?: any;
