@@ -1,8 +1,5 @@
 import * as yup from 'yup';
 import { LogsById, logsById } from './day';
-import { TacticValue, tacticSchema } from './tactic';
-import { documentReferenceSchema } from './utils/firestore';
-import { optionalObjectOf } from './utils/objectOf';
 import { optionalTimestampSchema, timestampSchema } from './utils/timestamp';
 
 export enum AgentType {
@@ -18,22 +15,6 @@ export const outcome = yup
 
 export const agentType = yup.mixed<AgentType>().oneOf(Object.values(AgentType));
 
-// Define a schema for AI suggested tactics
-export const aiSuggestionsById = optionalObjectOf(
-  yup.object({
-    tactic: tacticSchema,
-    targetDoc: documentReferenceSchema.optional(),
-  })
-);
-
-export type AiSuggestionsById = Record<
-  string,
-  {
-    tactic: TacticValue;
-    targetDoc?: any; // DocumentReferenceLike<TacticValue>
-  }
->;
-
 export const threadSchema = yup.object({
   isDisplayable: yup.boolean().required(),
   dateString: yup.string().required(),
@@ -44,14 +25,19 @@ export const threadSchema = yup.object({
   navigationTitle: yup.string().required(),
   summary: yup.string(),
   logsById,
-  suggestedTactics: yup.array().of(tacticSchema),
-  aiSuggestionsById: aiSuggestionsById,
   debriefedAt: optionalTimestampSchema,
   debriefAfter: optionalTimestampSchema,
   debriefRoutineSentAt: optionalTimestampSchema,
   agentType: agentType.nonNullable().required(),
   hasImpulse: yup.boolean(),
   outcome,
+
+  // We maintain the count of suggested tactics here, and also write to a boolean here. We do both
+  // because a calling function that's adding a tactic may also immediately write hasTactics=true,
+  // but we still maintain a server-side count of tactics (which may have a lag due to cold starts)
+  tacticsCount: yup.number(),
+  hasTactics: yup.boolean(),
+
   // Instead of a boolean, this is a timestamp of when a message was sent to ZARA. This allows us to
   // have a simple timeout on showing a processing spinner without a scheduled callback.
   zaraResponseStartedProcessingAt: optionalTimestampSchema,
@@ -64,5 +50,4 @@ export type ThreadValue = Omit<
   'logsById'
 > & {
   logsById: LogsById;
-  aiSuggestionsById?: AiSuggestionsById;
 };

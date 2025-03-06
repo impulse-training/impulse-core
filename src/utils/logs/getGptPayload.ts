@@ -22,9 +22,9 @@ export function getGptPayload(
     return [
       {
         role: 'assistant',
-        content: `<SYSTEM>USER VIEWED AN APP FEATURE DEMO: ${log.steps
+        content: `<SYSTEM>DEMO SHOWN: ${log.steps
           .map(step => step.title)
-          .join(', ')}</SYSTEM>`,
+          .join(', ')}. CONTINUE.</SYSTEM>`,
       },
     ];
   }
@@ -34,7 +34,7 @@ export function getGptPayload(
       {
         role: 'user',
         content:
-          "<SYSTEM>IMPULSE BUTTON PRESSED IN-APP. I'M HAVING AN URGE OR CRAVING</SYSTEM>",
+          "<SYSTEM>IMPULSE BUTTON PRESSED, MEANING: I'M HAVING AN URGE OR CRAVING</SYSTEM>",
       },
     ];
   }
