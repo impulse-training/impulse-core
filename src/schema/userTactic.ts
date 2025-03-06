@@ -46,6 +46,25 @@ const userTacticSchemas: Record<
   return acc;
 }, {} as Record<TacticValue['type'], yup.ObjectSchema<any>>);
 
+// Define the user tactic extension properties type
+type UserTacticExtension = {
+  allBehaviors: boolean;
+  behaviorDocs: Array<any>; // Using 'any' for document reference
+  routineDocs: Array<any>; // Using 'any' for document reference
+  completedAt?: any; // For timestamp
+  sourceId?: string;
+  customizations?: {
+    backgroundColor?: string;
+    reminderTime?: any; // For timestamp
+    notes?: string;
+  };
+  usageStats?: {
+    timesUsed: number;
+    lastUsed?: any; // For timestamp
+    effectiveness?: number;
+  };
+};
+
 // Create a lazy schema that selects the appropriate extended schema based on type
 export const userTacticSchema = yup.lazy(value => {
   if (typeof value.type === 'string' && value.type in userTacticSchemas) {
@@ -63,7 +82,7 @@ export const userTacticSchema = yup.lazy(value => {
 
 // Type representing all possible user tactic types
 export type UserTacticTypes = {
-  [K in TacticValue['type']]: yup.InferType<(typeof userTacticSchemas)[K]>;
+  [K in TacticValue['type']]: TacticValue & UserTacticExtension;
 };
 
 // The union type of all possible user tactic values
